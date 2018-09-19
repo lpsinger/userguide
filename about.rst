@@ -1,2 +1,2 @@
-About Public Alert
-==================
+About Public Alerts
+===================
