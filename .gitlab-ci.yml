@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+image: python:slim
+
+build:
+  stage: build
+  script:
+    - pip install sphinx
+    - make
+  artifacts:
+    paths:
+      - _build/html
+
+pages:
+  stage: deploy
+  script:
+    - mv _build/html public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  only:
+    - master
+  dependencies:
+    - build
