@@ -10,11 +10,15 @@ LIGO/Virgo Open Public Alerts User Guide
    :maxdepth: 2
    :caption: Contents:
 
+   about
+   capabilities
+   procedures
+   content
+   technical
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
