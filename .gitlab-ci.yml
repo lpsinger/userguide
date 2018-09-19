@@ -8,7 +8,7 @@ build:
   stage: build
   script:
     - pip install sphinx
-    - make
+    - sphinx-build -M html . _build
   artifacts:
     paths:
       - _build/html
