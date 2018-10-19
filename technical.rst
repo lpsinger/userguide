@@ -1,6 +1,19 @@
 Technical Reference
 ===================
 
+Public LIGO/Virgo alerts are distributed using the Gamma-ray Coordinates
+Network/Transient Astronomy Network (`GCN/TAN`_). The machine-readable alerts
+are called GCN Notices.
+
+GCN Notices are available over several different protocols and in several
+different formats. LIGO/Virgo strongly recommends using the VOEvent Transport
+Protocol (`vTCP`_) to receive notices in `VOEvent`_ XML format because it is
+anonymous, configuration-free, and easy to parse.
+
+.. _`GCN/TAN`: http://gcn.gsfc.nasa.gov/
+.. _`vTCP`: http://www.ivoa.net/documents/Notes/VOEventTransport/
+.. _`VOEvent`: http://www.ivoa.net/documents/VOEvent/
+
 Alert Schema
 ------------
 
