@@ -6,5 +6,5 @@ Here, we give the essential so that astronomers can have start quicky to receive
   * Link to GCN alerts registration
   * Link to content of the notices and alerts 
   * Link to gracedb database
-  * anything else ?
+  * anything else ? lv-em forum
 
