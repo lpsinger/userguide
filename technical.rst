@@ -39,7 +39,7 @@ Alert Schema
 | - **Sky map**         | URL of HEALPix FITS localization file                                                 |
 +-----------------------+-------------------------------------------+-------------------------------------------+
 | - **Distance**,       | *a posteriori* mean and standard          | N/A                                       |
-|   **DistanceError**   |                                           |                                           |
+|   **DistanceError**   | deviation of luminosity distance          |                                           |
 +-----------------------+-------------------------------------------+                                           |
 | - **ProbHasNS**       | Probability (0–1) that the less massive   |                                           |
 |                       | companion has mass :math:`<3 M_\odot`     |                                           |
