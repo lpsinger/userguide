@@ -14,7 +14,7 @@ Within 5 min after GW trigger time: No human inspection !
 ---------------------------------------------------------
 
 1) First `preliminary notice`_ will be sent fully autonomously (not necessary attached to localization). The trigger will be immediately visible under the LIGO/Virgo GW database `GraceDB`_.
-2) Second and others preliminaries: same content but does contain a localization (bayestar ?, LAL inference ? ).
+2) Second and others preliminaries: same content but does contain a localization (BAYESTAR for CBC events).
 
 Beware! Some preliminary alerts may be retracted after human inspection for data quality, instrumental conditions, and pipeline behavior.
 
