@@ -8,6 +8,7 @@ Should mention:
   * Working schedule for O3 and dates for ER13 and ER14:
       LIGO-Virgo's Engineering runs (ER13 and ER14) are scheduled to be in
       December 2018 - January 2019
+      Keep in mind https://dcc.ligo.org/DocDB/0152/G1800889/005/G1800889-v5.pdf
   * Prospects for observation and localization sensitivity:
       O3 is expected to be a year long run with the LIGO detectors and the Virgo
       detector. The LIGO detectors are expected to have BNS range of 20-170 Mpc
