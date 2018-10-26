@@ -20,6 +20,9 @@ Should mention:
       these events to have 90% credible regions smaller than 20 square degrees.
       For more information regarding prospects of observation please see:
       https://arxiv.org/abs/1304.0670
+      As well as https://link.springer.com/article/10.1007%2Fs41114-018-0012-9
+      And https://wiki.ligo.org/LSC/JRPComm/ObservingScenario 
+      Contact Marica for the new release https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext
   * KAGRA:
       It is expected that Kagra will join, and be fully operational by early
       2019 and will become part of the global network with full data sharing
