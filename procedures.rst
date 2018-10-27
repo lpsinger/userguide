@@ -10,10 +10,10 @@ Here, we described the sequence of the GW alert distributed the Gamma-ray Coordi
 .. _`Technical`: https://emfollow.docs.ligo.org/userguide/technical.html
 .. _`GraceDB`: https://gracedb.ligo.org/
 
-Within 5 min after GW trigger time: No human inspection !
+Within 5 min after GW trigger time: No human inspection!
 ---------------------------------------------------------
 
-1) First `preliminary notice`_ will be sent fully autonomously (not necessary attached to localization). The trigger will be immediately visible under the LIGO/Virgo GW database `GraceDB`_.
+1) The first `preliminary notice`_ will be sent fully autonomously (not necessary attached to localization). The trigger will be immediately visible under the LIGO/Virgo GW database `GraceDB`_.
 2) Second and others preliminaries: same content but does contain a localization (BAYESTAR for CBC events).
 
 Beware! Some preliminary alerts may be retracted after human inspection for data quality, instrumental conditions, and pipeline behavior.
@@ -29,11 +29,11 @@ After 4 hours : manual updates for sky localization area
 --------------------------------------------------------
 
 * Sent whenever localization or significance accuracy improves (e.g. as a  result of improved calibration, de-glitching, or computationally deeper parameter estimation)
-* Updates will sent up until the position is determined more accurately by public announcement of an unambiguous counterpart, at which point they stop until publication of the event
+* Updates will be sent up until the position is determined more accurately by public announcement of an unambiguous counterpart, at which point they will stop until publication of the event
 
 
 Special case : promotion of sub-thresholds candidates
 -----------------------------------------------------
  
 * We can elect to promote a candidate that does not pass our OPA thresholds if it is compellingly associated with a multimessenger signal (e.g. GRB, core-collapse SN)
-* The procedure will start from `Initial notices and circulars`_ sequence.
+* The procedure will start from the `Initial notices and circulars`_ sequence.
