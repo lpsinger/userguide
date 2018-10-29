@@ -41,11 +41,10 @@ Alert Schema
 | - Distance,       | *a posteriori* mean and standard          | N/A                                       |
 |   DistanceError   | deviation of luminosity distance          |                                           |
 +-------------------+-------------------------------------------+                                           |
-| - ProbHasNS       | Probability (0–1) that the less massive   |                                           |
-|                   | companion has mass :math:`<3 M_\odot`     |                                           |
-+-------------------+-------------------------------------------+                                           |
-| - ProhHasRemnant  | Probability (0–1) that the system ejected |                                           |
-|                   | a significant amount of NS material       |                                           |
+| - ProbHasNS,      | Probability (0–1) that the less massive   |                                           |
+|   ProbHasRemnant  | companion has mass :math:`<3 M_\odot`,    |                                           |
+|                   | and that the system ejected a significant |                                           |
+|                   | amount of NS material, respectively       |                                           |
 +-------------------+-------------------------------------------+-------------------------------------------+
 
 Python Sample Code
