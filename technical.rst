@@ -11,7 +11,7 @@ Protocol (`VTP`_) to receive notices in `VOEvent`_ XML format because it is
 anonymous, configuration-free, and easy to parse.
 
 .. _`GCN/TAN`: http://gcn.gsfc.nasa.gov/
-.. _`vTCP`: http://www.ivoa.net/documents/Notes/VOEventTransport/
+.. _`VTP`: http://www.ivoa.net/documents/Notes/VOEventTransport/
 .. _`VOEvent`: http://www.ivoa.net/documents/VOEvent/
 
 Alert Schema
