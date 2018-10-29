@@ -1,0 +1,4 @@
+/* Wrap code samples in reStructuredText tables. */
+table.docutils code {
+    word-break: break-word;
+}
