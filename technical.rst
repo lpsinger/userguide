@@ -16,13 +16,8 @@ You will need to install a few third-party Python packages to run the example co
 
   * Python >= 3.5
   * pygcn_ for connecting to GCN (alternatives: comet_)
-  * requests_ for easy HTTP downloads in Python (many alternatives in the
-    :mod:`urllib` module from the Python standard library)
   * astropy-healpix_ for decoding HEALPix coordinates (alternatives: DS9_,
     Aladin_, `official C/C++/Fortran/Java/IDL HEALPix bindings`_)
-  * astropy_ version 1.0.1 or newer (optional, for computing observability
-    windows, etc.)
-  * numpy_ and matplotlib_, popular math and plotting packages for Python
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
 of the above with the following command::
@@ -70,6 +65,62 @@ Alert Schema
 
 Python Sample Code
 ------------------
+
+Imports::
+
+    import gcn
+    import gcn.handlers
+    import gcn.notice_types
+    from astropy_healpix import HEALPix
+    from astropy.coordinates import ICRS
+    from astropy.table import Table
+
+Handler::
+
+    def get_skymap(url):
+        """Download and parse a FITS HEALPix sky map."""
+        # Download FITS file and read it into an Astropy table.
+        table = Table.read(url)
+
+        # Create a HEALPix object for coordinate transformations.
+        hpx = HEALPix(nside=table.meta['NSIDE'],
+                      order=table.meta['ORDERING'],
+                      frame=ICRS())
+
+        # Done!
+        return table, hpx
+
+
+    # Function to call every time a GCN is received.
+    # Run only for notices of type LVC_INITIAL or LVC_UPDATE.
+    @gcn.handlers.include_notice_types(
+        gcn.notice_types.LVC_PRELIMINARY,
+        gcn.notice_types.LVC_INITIAL,
+        gcn.notice_types.LVC_UPDATE)
+    def process_gcn(payload, root):
+        # Print the alert
+        print('Got VOEvent:')
+        print(payload)
+
+        # Parse a few useful parameters out of the notice.
+        role = root.attrib['role']
+        group = root.find(".//Param[@name='Group']").attrib['value']
+        skymap_url = root.find(".//Param[@name='SKYMAP_URL_FITS']").attrib['value']
+
+        # Respond only to 'test' events.
+        # VERY IMPORTANT! Replce with the following line of code
+        # to respond to only real 'observation' events.
+        # if role != 'observation': return
+        if role != 'test': return
+
+        # Respond only to 'CBC' events.
+        # Change 'CBC' to "Burst' to respond to only
+        # unmodeled burst events.
+        if group != 'CBC': return
+
+        # Read sky map.
+        table, hpx = get_skymap(skymap_url)
+
 * How to subcribe to GCN, receive and send alerts https://dcc.ligo.org/public/0118/G1500442/010/ligo-virgo-emfollowup-tutorial.html
 * Interaction with GraceDB 
 
@@ -79,13 +130,9 @@ Python Sample Code
 .. _VOEvent: http://www.ivoa.net/documents/VOEvent/
 .. _pygcn: https://pypi.org/project/pygcn/
 .. _comet: https://pypi.org/project/Comet/
-.. _requests: https://pypi.org/project/requests/
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _DS9: http://ds9.si.edu
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _`official C/C++/Fortran/Java/IDL HEALPix bindings`: https://healpix.sourceforge.io
-.. _astropy: https://pypi.org/project/astropy/
-.. _numpy: https://pypi.org/project/numpy/
-.. _matplotlib: https://pypi.org/project/matplotlib/
 .. _MacPorts: https://www.macports.org
 .. _pip: https://pip.pypa.io
