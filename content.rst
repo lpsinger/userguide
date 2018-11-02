@@ -15,12 +15,12 @@ Alerts are distributed as `Global Coordinate Network <https://gcn.gsfc.nasa.gov/
 
 
 Preliminary Alert
-=================
+-----------------
 
 Within minutes after a gravitational wave trigger an automated, **preliminary alert** will be issued, in the form of a GCN *notice* only. It will contain the `event name`_, trigger time and a link to the localization "skymap" (if available). Being the result of a fully autonomous pipeline, this preliminary notice might be subsequently *retracted* after human vetting.
 
 Initial Alert
-=============
+-------------
 
 Within 4 hours of the preliminary alert, after vetting by human instrument scientists and data analysts, an **initial alert** will be issued in the form of both a GCN *circular* and a *notice*. Such initial alert could contain the possible *retraction* of the candidate, in case of e.g. data quality issues. The initial alert GCN circular is considered as the first publication of a candidate, and it can be cited as such.
 
@@ -37,26 +37,26 @@ The alert may also contain a `data quality assessment`_ .
 The alerts are not going to release quantitative estimates of intrinsic properties such as masses and spins, nor contain information on the GW strain or reconstructed waveforms. 
 
 Alert update
-============
+------------
 
 Whenever refined GW data analysis leads to improved estimates of the event localization, significance or classification, an alert update can be issued. The alert update is issued both as a circular and a notice, with the updated information. The update may also contain a retraction of the candidate.
 
 
-Event name
-----------
+Content description
+-------------------
+
+**Event name**
 .. _`event name`:
 
 Events will be labeled based on the trigger time (...).
 
 
-Significance
-------------
+**Significance**
 .. _significance:
 
 The significance of the event will be given in the form of a associated False Alarm Rate (FAR), that is the expected rate of events with the same significance due to noise only. If the estimated FAR is less than one in a hundred years, the event will be simply described as "highly significant". Otherwise, the FAR number will be stated in the circular.
 
-Source classification
----------------------
+**Source classification**
 .. _`source classification`:
 
 If the event is identified as a Compact Binary Coalescence (CBC), a source classification is provided. The classification is a qualitative statement whether the signal is consistent with a Binary of two Neutron Stars (BNS), of a Black Hole and a Neutron Star (NSBH or BHNS) or of two Black Holes (BBH). Additional information may be provided, if available: 
@@ -72,14 +72,12 @@ P_astro computes the posterior conditional probability that a candidate event is
 
 We plan to combine P_astro and EM-Bright under one umbrella of source classification in the near future. The probabiity of the presence of neutron star in the binary from the EM-Bright pipeline and the source type classification (BNS/NSBH/BBH) from the P_astro pipeline will be used for consistency checks. 
 
-Source localization
--------------------
+**Source localization**
 .. _`source localization`:
 
 The source localization estimate is a posterior probability of the source projected position in the sky ("2D localization") or of the source position in space ("3D localization", currently only available if the source is a CBC). The probability distribution is encoded as a FITS file (...provide link to skymap documentation...).
 
-Data quality assessment
------------------------
+**Data quality assessment**
 .. _`data quality assessment`:
 
 Circulars may contain concise descriptions of any instrument or data quality issues that may affect the significance estimates or the GW parameter inferences. Unresolved data quality issues could mean that localization estimates may shift after they have been mitigated, but does not mean that they will. This is to be considered as advisory information.
