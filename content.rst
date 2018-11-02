@@ -10,6 +10,7 @@ Alert Content
 Alerts are distributed as `Global Coordinate Network <https://gcn.gsfc.nasa.gov/>`_ (GCN) *circulars* and *notices*.
 
 **Circulars** are human-readable bulletins. 
+
 **Notices** are machine-readable packets, available in many formats: VOEvent XML, binary, plain text. 
 
 
@@ -17,12 +18,12 @@ Alerts are distributed as `Global Coordinate Network <https://gcn.gsfc.nasa.gov/
 Preliminary Alert
 -----------------
 
-Within minutes after a gravitational wave trigger an automated, **preliminary alert** will be issued, in the form of a GCN *notice* only. It will contain the `event name`_, trigger time and a link to the localization "skymap" (if available). Being the result of a fully autonomous pipeline, this preliminary notice might be subsequently *retracted* after human vetting.
+Within minutes after a gravitational wave trigger an automated, **preliminary alert** will be issued, in the form of a *notice* only. It will contain the `event name`_, trigger time and a link to the `source localization`_ "skymap" (if available). Being the result of a fully autonomous pipeline, this preliminary notice might be subsequently *retracted* after human vetting.
 
 Initial Alert
 -------------
 
-Within 4 hours of the preliminary alert, after vetting by human instrument scientists and data analysts, an **initial alert** will be issued in the form of both a GCN *circular* and a *notice*. Such initial alert could contain the possible *retraction* of the candidate, in case of e.g. data quality issues. The initial alert GCN circular is considered as the first publication of a candidate, and it can be cited as such.
+Within 4 hours of the preliminary alert, after vetting by human instrument scientists and data analysts, an **initial alert** will be issued in the form of both a *circular* and a *notice*. Such initial alert could contain the possible *retraction* of the candidate, in case of e.g. data quality issues. The initial alert GCN circular is considered as the first publication of a candidate, and it can be cited as such.
 
 The initial alert circular and notice contain the following information:
 
