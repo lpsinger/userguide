@@ -34,36 +34,6 @@ with ``pip``, run the following command::
 
     $ pip install pygcn requests astropy-healpix
 
-Alert Schema
-------------
-
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-|                   | CBC                                       | Burst                                                 |
-+===================+===========================================+=======================================================+
-| **IVORN**         | :samp:`ivo://nasa.gsfc.gcn/LVC#S{YYMMDDabc}-{{1,2,3}}-{{Preliminary,Initial,Update,Retraction}}`  |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| **Who**           | :samp:`LIGO Scientific Collaboration and Virgo Collaboration`                                     |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| **WhereWhen**     | Arrival time (UTC, ISO-8601), e.g. :samp:`2010-08-27T19:21:13.982800`                             |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| **What**          | GraceDB ID: :samp:`S{YYMMDDabc}`                                                                  |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - Search          | :samp:`CBC`                               | :samp:`Burst`                                         |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - Pipeline        | :samp:`{{Gstlal,MBTA,PyCBC,SPIIR}}`       | :samp:`{{cWB,oLIB}}`                                  |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - FAR             | Estimated false alarm rate in Hz                                                                  |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - Network         | Flag for each detector (:samp:`LHO_participated`, etc.)                                           |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - Sky map         | URL of HEALPix FITS localization file                                                             |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-| - ProbHasNS,      | Probability (0–1) that the less massive   |                                                       |
-|   ProbHasRemnant  | companion has mass :math:`<3 M_\odot`,    |                                                       |
-|                   | and that the system ejected a significant |                                                       |
-|                   | amount of NS material, respectively       |                                                       |
-+-------------------+-------------------------------------------+-------------------------------------------------------+
-
 Python Sample Code
 ------------------
 
@@ -99,6 +69,34 @@ certain notice types. There are three notice types:
 In the following example, we will process all three alert types. The following
 handler function will parse out the URL of the FITS file, download it, and
 extract the probability sky map.
+
+    # Function to call every time a GCN is received.
+    # Run only for notices of type
+    # LVC_PRELIMINARY, LVC_INITIAL, or LVC_UPDATE.
+    @gcn.handlers.include_notice_types(
+        gcn.notice_types.LVC_PRELIMINARY,
+        gcn.notice_types.LVC_INITIAL,
+        gcn.notice_types.LVC_UPDATE)
+    def process_gcn(payload, root):
+        # Print the alert
+        print('Got VOEvent:')
+        print(payload)
+
+        # Respond only to 'test' events.
+        # VERY IMPORTANT! Replce with the following line of code
+        # to respond to only real 'observation' events.
+        # if root.attrib['role'] != 'observation': return
+        if root.attrib['role'] != 'test': return
+
+        # Respond only to 'CBC' events. Change 'CBC' to "Burst' to respond to only
+        # unmodeled burst events.
+        if root.find(".//Param[@name='Group']").attrib['value'] != 'CBC': return
+
+        # Read out integer notice type (note: not doing anythin with this right now)
+        notice_type = int(root.find(".//Param[@name='Packet_Type']").attrib['value'])
+
+        # Read sky map
+        skymap, header = get_skymap(root)
 
 .. important::
    Note that mock or 'test' observations are denoted by the ``role="test"``
@@ -148,34 +146,6 @@ detected by model-independent methods. Most users will want to receive only
         # Done!
         return skymap, header
 
-
-    # Function to call every time a GCN is received.
-    # Run only for notices of type
-    # LVC_PRELIMINARY, LVC_INITIAL, or LVC_UPDATE.
-    @gcn.handlers.include_notice_types(
-        gcn.notice_types.LVC_PRELIMINARY,
-        gcn.notice_types.LVC_INITIAL,
-        gcn.notice_types.LVC_UPDATE)
-    def process_gcn(payload, root):
-        # Print the alert
-        print('Got VOEvent:')
-        print(payload)
-
-        # Respond only to 'test' events.
-        # VERY IMPORTANT! Replce with the following line of code
-        # to respond to only real 'observation' events.
-        # if root.attrib['role'] != 'observation': return
-        if root.attrib['role'] != 'test': return
-
-        # Respond only to 'CBC' events. Change 'CBC' to "Burst' to respond to only
-        # unmodeled burst events.
-        if root.find(".//Param[@name='Group']").attrib['value'] != 'CBC': return
-
-        # Read out integer notice type (note: not doing anythin with this right now)
-        notice_type = int(root.find(".//Param[@name='Packet_Type']").attrib['value'])
-
-        # Read sky map
-        skymap, header = get_skymap(root)
 
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
