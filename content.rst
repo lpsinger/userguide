@@ -32,9 +32,9 @@ The initial alert circular and notice contain the following information:
   * `source localization`_
   * (...)
 
-The alert may also contain a `data quality assessment`_ .
+The alert may also contain a `data quality assessment`_.
 
-The alerts are not going to release quantitative estimates of intrinsic properties such as masses and spins, nor contain information on the GW strain or reconstructed waveforms. 
+The purpose of the alerts is to allow for an effective electro-magnetic follow-up of the candidates: `quantitative intrinsic infomation on the sources that is not vital to this purpose`_ is thus not provided in the alerts.
 
 Alert update
 ------------
@@ -45,19 +45,19 @@ Whenever refined GW data analysis leads to improved estimates of the event local
 Content description
 -------------------
 
-**Event name**
 .. _`event name`:
+**Event name**
 
 Events will be labeled based on the trigger time (...).
 
 
-**Significance**
 .. _significance:
+**Significance**
 
 The significance of the event will be given in the form of a associated False Alarm Rate (FAR), that is the expected rate of events with the same significance due to noise only. If the estimated FAR is less than one in a hundred years, the event will be simply described as "highly significant". Otherwise, the FAR number will be stated in the circular.
 
-**Source classification**
 .. _`source classification`:
+**Source classification**
 
 If the event is identified as a Compact Binary Coalescence (CBC), a source classification is provided. The classification is a qualitative statement whether the signal is consistent with a Binary of two Neutron Stars (BNS), of a Black Hole and a Neutron Star (NSBH or BHNS) or of two Black Holes (BBH). Additional information may be provided, if available: 
 
@@ -72,16 +72,17 @@ P_astro computes the posterior conditional probability that a candidate event is
 
 We plan to combine P_astro and EM-Bright under one umbrella of source classification in the near future. The probabiity of the presence of neutron star in the binary from the EM-Bright pipeline and the source type classification (BNS/NSBH/BBH) from the P_astro pipeline will be used for consistency checks. 
 
-**Source localization**
 .. _`source localization`:
+**Source localization**
 
 The source localization estimate is a posterior probability of the source projected position in the sky ("2D localization") or of the source position in space ("3D localization", currently only available if the source is a CBC). The probability distribution is encoded as a FITS file (...provide link to skymap documentation...).
 
-**Data quality assessment**
 .. _`data quality assessment`:
+**Data quality assessment**
 
 Circulars may contain concise descriptions of any instrument or data quality issues that may affect the significance estimates or the GW parameter inferences. Unresolved data quality issues could mean that localization estimates may shift after they have been mitigated, but does not mean that they will. This is to be considered as advisory information.
 
+.. _`quantitative intrinsic infomation on the sources that is not vital to this purpose`:
 What will *not* be included in the alerts
 -----------------------------------------
 
