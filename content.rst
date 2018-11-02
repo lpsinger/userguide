@@ -26,8 +26,11 @@ Source classification
 If the event is identified as a Compact Binary Coalescence (CBC), a source classification is provided. The classification is a qualitative statement whether the signal is consistent with a Binary of two Neutron Stars (BNS), of a Black Hole and a Neutron Star (NSBH or BHNS) or of two Black Holes (BBH). Additional information may be provided, if available: 
 
   * the probability that the least massive member of the binary has a mass consistent with a Neutron Star (NS);
-  * the probability that some mass is left outside the remnant (we label this probability "EM bright", since the presence of mass makes the possibility of electro-magnetic emission more likely);
+  * the probability that some mass is left outside the remnant (we label this probability "Disk-Mass-Probability", since the presence of mass makes the possibility of electro-magnetic emission more likely);
+  * the first two probabilities are clubbed together under the broader name of "EM-Bright" probability.
   * the probability ("P_astro") that the event is of astrophysical origin based on both the noise background properties and the observed CBC rate.
+ 
+ For the computation of the EM-Bright probability we use a fitting formula proposed by Foucart, Hinderer and Nissanke (arXiv:1807.00011). Both the EM-Bright probability and the probability of the secondary object being a neutron star are computed for the detection pipeline point estimates. We are  in the process of integrating a new functionality that will allow supervised learning to compute the probabilities in a robust fashion. This improves the previous method based on ellipsoids on multiple counts. First, it could be several orders of magnitude faster. The ellipsoid method could take as much as tens of minutes for low mass systems, while the supervised learning method computes the probability practically instantaneously. Second, the supervised learning method shows evidence of being more robust to pipeline systematics. Third, supervised learning will enable us to incorporate rates of events from the "P_astro" pipeline directly in the training process. This method requires injection campaigns for training. 
 
 Data quality assessment
 -----------------------
