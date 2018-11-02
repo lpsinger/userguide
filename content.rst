@@ -1,16 +1,29 @@
 Alert Content
 =============
 
-Should mention:
+.. Should mention:
+.. 
+..  * Description of the notices: https://wiki.ligo.org/Bursts/EMFollow/O3GCNnotices
+..  * Description of the circulars
+.. * also some info here https://dcc.ligo.org/LIGO-G1800404/public
 
-  * Description of the notices: https://wiki.ligo.org/Bursts/EMFollow/O3GCNnotices
-  * Description of the circulars
-  * also some info here https://dcc.ligo.org/LIGO-G1800404/public
+Alerts are distributed as `Global Coordinate Network <https://gcn.gsfc.nasa.gov/>`_ (GCN) *circulars* and *notices*.
+
+**Circulars** are human-readable bulletins. 
+**Notices** are machine-readable packets, available in many formats: VOEvent XML, binary, plain text. 
 
 
 
+Preliminary Alert
+=================
+
+Within minutes after a gravitational wave trigger an automated, preliminary alert will be issued, in the form of a GCN *notice* only. It will contain the `event name`_, trigger time and a link to the 3D localization "skymap" (if available).
+
+
+.. _`event name`:
 Event name
 ----------
+
 
 Events will be labeled based on the trigger time (...).
 
