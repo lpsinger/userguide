@@ -10,7 +10,7 @@ Here, we described the sequence of the GW alert distributed the Gamma-ray Coordi
 .. _`Technical`: https://emfollow.docs.ligo.org/userguide/technical.html
 .. _`GraceDB`: https://gracedb.ligo.org/
 
-Within 5 min after GW trigger time: No human inspection!
+Within minutes after GW trigger time: No human inspection!
 ---------------------------------------------------------
 
 1) The first `preliminary notice`_ will be sent fully autonomously (not necessary attached to localization). The trigger will be immediately visible under the LIGO/Virgo GW database `GraceDB`_.
@@ -22,14 +22,16 @@ Within 4 hours after the GW trigger time: vetted by human instrument scientists 
 --------------------------------------------------------------------------------------------
 
 * `Initial notices and circulars`_ with an update for the sky localization area and the source classification. 
-* Possible **retractation** (data are unsuitable) or **confirmation** of the event.
+* Possible **retractation** (data are unsuitable) or **confirmation** of the event for BNS or Burst triggers
 Note that the initial Circular is considered the first publication of a GW candidate, appropriate to cite in publications
+
 
 After 4 hours : manual updates for sky localization area
 --------------------------------------------------------
 
 * Sent whenever localization or significance accuracy improves (e.g. as a  result of improved calibration, de-glitching, or computationally deeper parameter estimation)
 * Updates will be sent up until the position is determined more accurately by public announcement of an unambiguous counterpart, at which point they will stop until publication of the event
+* Possible retractation for BBH events within a day
 
 
 Special case : promotion of sub-thresholds candidates
