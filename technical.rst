@@ -26,13 +26,13 @@ You will need to install a few third-party Python packages to run the example co
 If you are on a Mac and use the MacPorts_ package manager, you can install all
 of the above with the following command::
 
-    $ sudo port install py37-gcn py37-requests py37-astropy-healpix
+    $ sudo port install py37-gcn py37-requests py37-healpy
 
 Otherwise, the fastest way to install the dependencies is with pip_, a package
 manager that comes with most Python distributions. To install these packages
 with ``pip``, run the following command::
 
-    $ pip install pygcn requests astropy-healpix
+    $ pip install pygcn requests healpy
 
 Python Sample Code
 ------------------
