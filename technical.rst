@@ -14,6 +14,7 @@ Prerequisites
 
 You will need to install a few third-party Python packages to run the example code below. These include:
 
+  * A POSIX-like operating system (Linux or macOS)
   * Python >= 3.5
   * pygcn_ for connecting to GCN (alternatives: comet_)
   * requests_ for easy HTTP downloads in Python (many alternatives in the
