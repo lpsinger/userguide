@@ -279,6 +279,16 @@ by having Python call `curl` on the command line::
         'curl', '-O',
         'https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz'])
 
+Next, we need to read in the file with Healpy::
+
+    hpx = hp.read_map('bayestar.fits.gz')
+
+You can suppress printing informational messages while loading the file by
+passing the keyword argument ``verbose=False``. You can read both the HEALPix
+image data and the FITS header by passing the ``h=True`` keyword argument::
+
+    hpx, header = hp.read_map('bayestar.fits.gz', h=True, verbose=False)
+
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _astropy: https://pypi.org/project/astropy/
