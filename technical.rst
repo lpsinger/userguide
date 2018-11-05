@@ -38,6 +38,12 @@ Imports
 
 Now we'll write a GCN handler script. First, some imports:
 
+    import gcn
+    import gcn.handlers
+    import gcn.notice_types
+    import healpy as hp
+    import numpy as np
+
 GCN Handler
 -----------
 
