@@ -141,13 +141,13 @@ Listen for GCNs
 ~~~~~~~~~~~~~~~
 
 Finally, we will start the VOEvent client to listen for GCNs using the
-`gcn.listen` function. By default, this will connect to the anonymous, public
-GCN server. You just need to tell `gcn.listen` what function to call whenever
-it receives an GCN; in this example, that is the `process_gcn` handler that we
-defined above.
+``gcn.listen`` function. By default, this will connect to the anonymous, public
+GCN server. You just need to tell ``gcn.listen`` what function to call whenever
+it receives an GCN; in this example, that is the ``process_gcn`` handler that
+we defined above.
 
 .. note::
-   `gcn.listen` will try to automatically reconnect if the network connection
+   ``gcn.listen`` will try to automatically reconnect if the network connection
    is ever broken.
 
 ::
