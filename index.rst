@@ -7,7 +7,7 @@ LIGO/Virgo Open Public Alerts User Guide
 ========================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
    about

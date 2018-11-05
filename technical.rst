@@ -34,7 +34,7 @@ with ``pip``, run the following command::
     $ pip install pygcn healpy
 
 Imports
--------
+~~~~~~~
 
 Now we'll write a GCN handler script. First, some imports:
 
@@ -44,8 +44,8 @@ Now we'll write a GCN handler script. First, some imports:
     import healpy as hp
     import numpy as np
 
-GCN Handler
------------
+Receiving GCNs
+--------------
 
 Next, we'll write a GCN handler function that we want PyGCN to call every time
 it receives a GCN notice. We :term:`decorate <decorator>` the handler with
@@ -101,8 +101,8 @@ the FITS file, download it, and extract the probability sky map::
 
 The ``get_skymap`` function will be defined in the next section.
 
-Download sky map
-----------------
+Download the sky map
+~~~~~~~~~~~~~~~~~~~~
 
 Now we will define the function ``get_skymap`` get the sky map URL from the
 VOEvent, download it, and read it with Healpy.
@@ -138,7 +138,7 @@ VOEvent, download it, and read it with Healpy.
         return skymap, header
 
 Listen for GCNs
----------------
+~~~~~~~~~~~~~~~
 
 Finally, we will start the VOEvent client to listen for GCNs using the
 `gcn.listen` function. By default, this will connect to the anonymous, public
@@ -447,8 +447,8 @@ Other useful Healpy functions include :func:`hp.ud_grade
 bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 <healpy:tutorial>` for other useful operations.
 
-Basic observability calculations with Astropy
----------------------------------------------
+Basic observability calculations
+--------------------------------
 
 Now we are going to teach our GCN handler how to determine whether a
 gravitational-wave event is observable. We are going to use the
