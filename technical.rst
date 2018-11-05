@@ -561,6 +561,15 @@ Let's run the new GCN handler now...
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
 
+Distance, 3D Sky Maps
+---------------------
+
+All localization FITS files for CBC events are three dimensional: they include
+both the sky probability map and a directionally dependent distance estimate.
+This can be useful for identifying possible host galaxies using a galaxy
+redshift catalog. For further details see `Singer et al. 2016a`_ and for sample
+code see `Singer et al. 2016b`_.
+
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astroplan: https://astroplan.readthedocs.io/
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
@@ -586,3 +595,5 @@ Let's run the new GCN handler now...
 .. _VTP: http://www.ivoa.net/documents/Notes/VOEventTransport/
 .. _WCSTools: http://tdc-www.harvard.edu/wcstools/
 .. _`Calabretta & Roukema 2007`: https://adsabs.harvard.edu/abs/2007MNRAS.381..865C
+.. _`Singer et al. 2016a`: https://doi.org/10.3847/2041-8205/829/1/L15
+.. _`Singer et al. 2016b`: https://doi.org/10.3847/0067-0049/226/1/10
