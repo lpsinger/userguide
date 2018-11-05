@@ -162,4 +162,9 @@ texinfo_documents = [
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+intersphinx_mapping = {
+    'astropy': ('http://docs.astropy.org/en/stable/', None),
+    'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
+    'python': ('https://docs.python.org/', None),
+    'requests': ('http://docs.python-requests.org/en/stable/', None)
+}

@@ -24,13 +24,13 @@ operating system (Linux or macOS) and a few third-party Python packages:
 If you are on a Mac and use the MacPorts_ package manager, you can install all
 of the above with the following command::
 
-    $ sudo port install py37-gcn py37-requests py37-healpy
+    $ sudo port install py37-gcn py37-healpy
 
 Otherwise, the fastest way to install the dependencies is with pip_, a package
 manager that comes with most Python distributions. To install these packages
 with ``pip``, run the following command::
 
-    $ pip install pygcn requests healpy
+    $ pip install pygcn healpy
 
 Imports
 -------
@@ -103,6 +103,16 @@ The ``get_skymap`` function will be defined in the next section.
 Download sky map
 ----------------
 
+Now we will define the function ``get_skymap`` get the sky map URL from the
+VOEvent, download it, and read it with Healpy.
+
+.. note::
+   We do not have to explicitly download the FITS file because the
+   :func:`hp.read_map() <healpy.fitsfunc.read_map>` function works with either
+   URLs or filenames. However, you could download and save the FITS file in
+   order to save it locally using :func:`astropy.utils.data.download_file`,
+   :func:`requests.get`, or :func:`urllib.request.urlopen`.
+
 ::
 
     def get_skymap(root):
@@ -118,11 +128,32 @@ Download sky map
 
         # Read the sky map.
         # Note: this works on filenames or URLs.
+        # The `h=True` argument instructs Healpy to also return the metadata
+        # from the FITS header, and the `verbose=False` argument suppresses
+        # printing of some diagnostic information.
         skymap, header = hp.read_map(skymap_url, h=True, verbose=False)
 
         # Done!
         return skymap, header
 
+Listen for GCNs
+---------------
+
+Finally, we will start the VOEvent client to listen for GCNs using the
+`gcn.listen` function. By default, this will connect to the anonymous, public
+GCN server. You just need to tell `gcn.listen` what function to call whenever
+it receives an GCN; in this example, that is the `process_gcn` handler that we
+defined above.
+
+.. note::
+   `gcn.listen` will try to automatically reconnect if the network connection
+   is ever broken.
+
+::
+
+    # Listen for GCNs until the program is interrupted
+    # (killed or interrupted with control-C).
+    gcn.listen(handler=process_gcn)
 
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
