@@ -553,7 +553,7 @@ Let's run the new GCN handler now...
 
     # Listen for GCNs until the program is interrupted
     # (killed or interrupted with control-C).
-    gcn.listen(port=8096, handler=process_gcn)
+    gcn.listen(handler=process_gcn)
 
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astroplan: https://astroplan.readthedocs.io/
