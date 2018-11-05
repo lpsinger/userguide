@@ -12,10 +12,9 @@ anonymous, configuration-free, and easy to parse.
 Prerequisites
 -------------
 
-You will need to install a few third-party Python packages to run the example code below. These include:
+In order to run this sample code, you will need Python >= 3.5 on a Unix-like
+operating system (Linux or macOS) and a few third-party Python packages:
 
-  * A POSIX-like operating system (Linux or macOS)
-  * Python >= 3.5
   * PyGCN_ for connecting to GCN (alternatives: comet_)
   * healpy_ for decoding HEALPix coordinates (alternatives: astropy-healpix_,
     `official C/C++/Fortran/Java/IDL HEALPix bindings`_, DS9_, Aladin_)
