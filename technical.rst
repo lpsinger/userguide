@@ -36,13 +36,7 @@ with ``pip``, run the following command::
 Imports
 -------
 
-Now we'll write a GCN handler script. First, some imports::
-
-    import gcn
-    import gcn.handlers
-    import gcn.notice_types
-    import healpy as hp
-    import numpy as np
+Now we'll write a GCN handler script. First, some imports:
 
 GCN Handler
 -----------
@@ -270,24 +264,182 @@ languages, including C, C++, Fortran, IDL, and Java. However, since this is a
 Python tutorial, we are going to demonstrate how to manipulate HEALPix maps
 with the official Python library, healpy_.
 
+Reading sky maps
+~~~~~~~~~~~~~~~~
+
 First, if you have not already downloaded an example sky map, you can do so now
-by having Python call `curl` on the command line::
+by having Python call `curl` on the command line:
 
-    # Download sky map
-    import subprocess
-    subprocess.check_call([
-        'curl', '-O',
-        'https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz'])
+    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
 
-Next, we need to read in the file with Healpy::
+.. plot::
+    :context: reset
+    :nofigs:
 
-    hpx = hp.read_map('bayestar.fits.gz')
+    import healpy as hp
+    import numpy as np
+    url = 'https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz'
+    hpx = hp.read_map(url)
+
+Next, we need to read in the file in Python with Healpy:
+
+    >>> hpx = hp.read_map('bayestar.fits.gz')
+    NSIDE = 256
+    ORDERING = NESTED in fits file
+    INDXSCHM = IMPLICIT
+    Ordering converted to RING
+
 
 You can suppress printing informational messages while loading the file by
 passing the keyword argument ``verbose=False``. You can read both the HEALPix
-image data and the FITS header by passing the ``h=True`` keyword argument::
+image data and the FITS header by passing the ``h=True`` keyword argument:
 
-    hpx, header = hp.read_map('bayestar.fits.gz', h=True, verbose=False)
+    >>> hpx, header = hp.read_map('bayestar.fits.gz', h=True, verbose=False)
+
+Manipulating HEALPix coordinates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The image data is a 1D array of values:
+
+    >>> hpx
+    array([6.22405744e-25, 1.46981290e-25, 1.94449365e-25, ...,
+           2.33147793e-20, 6.78207416e-21, 3.07118068e-22])
+
+Healpy has :doc:`several useful plotting routines <healpy:healpy_visu>`
+including :func:`hp.mollview <healpy.visufunc.mollview>` for plotting a
+Mollweide-projection all-sky map:
+
+.. plot::
+    :include-source:
+    :context: close-figs
+
+    >>> hp.mollview(hpx)
+
+Each entry in the array represents the probability contained within a
+quadrilateral pixel whose position on the sky is uniquely specified by the
+index in the array and the array's length. Because HEALPix pixels are equal
+area, we can find the number of pixels per square degree just from the length
+of the HEALPix array:
+
+    >>> npix = len(hpx)
+    >>> sky_area = 4 * 180**2 / np.pi
+    >>> sky_area / npix
+    0.052455852825697924
+
+The function :func:`hp.pix2ang <healpy.pixelfunc.pix2ang>` converts from pixel
+index to spherical polar coordinates; the function :func:`hp.ang2pix
+<healpy.pixelfunc.ang2pix>` does the reverse.
+
+Both :func:`hp.pix2ang <healpy.pixelfunc.pix2ang>` and :func:`hp.ang2pix
+<healpy.pixelfunc.ang2pix>` take, as their first argument, ``nside``, the
+lateral resolution fo the HEALPix map. You can find ``nside`` from the length
+of the image array by calling :func:`hp.npix2nside
+<healpy.pixelfunc.npix2nside>`:
+
+    >>> nside = hp.npix2nside(npix)
+    >>> nside
+    256
+
+Let's look up the right ascension and declination of pixel number 123. We'll
+call :func:`hp.pix2ang <healpy.pixelfunc.pix2ang>` to get the spherical polar
+coordinates :math:`(\theta, \phi)` in radians, and then use :obj:`np.rad2deg
+<numpy.rad2deg>` to convert these to right ascension and declination in degrees.
+
+    >>> ipix = 123
+    >>> theta, phi = hp.pix2ang(nside, ipix)
+    >>> ra = np.rad2deg(phi)
+    >>> dec = np.rad2deg(0.5 * np.pi - theta)
+    >>> ra, dec
+    (129.375, 88.5380288373519)
+
+Let's find which pixel contains the point RA=194.95, Dec=27.98.
+
+    >>> ra = 194.95
+    >>> dec = 27.98
+    >>> theta = 0.5 * np.pi - np.deg2rad(dec)
+    >>> phi = np.deg2rad(ra)
+    >>> ipix = hp.ang2pix(nside, theta, phi)
+    >>> ipix
+    208938
+
+Most probable (maximum *a posteriori*) sky location
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Let's find the highest probability pixel. What is the probability inside it?
+
+    >>> ipix_max = np.argmax(hpx)
+    >>> hpx[ipix_max]
+    9.35702310989353e-05
+
+Where is the highest probability pixel on the sky? Use :func:`hp.pix2ang
+<healpy.pixelfunc.pix2ang>`.
+
+    >>> theta, phi = hp.pix2ang(nside, ipix_max)
+    >>> ra = np.rad2deg(phi)
+    >>> dec = np.rad2deg(0.5 * np.pi - theta)
+    >>> ra, dec
+    (90.87890625, -40.620185190672686)
+
+Integrated probability in a circle
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+How do we find the probability that the source is contained within a circle on
+the sky? First we find the pixels that are contained within the circle using
+:func:`hp.query_disc <healpy.query_disc>`. Note that this function takes as its
+arguments the Cartesian coordinates of the center of the circle, and its radius
+in radians. Then, we sum the values of the HEALPix image array contained at
+those pixels.
+
+First, we define the RA, Dec, and radius of circle in degrees:
+
+    >>> ra = 213.22
+    >>> dec = -37.45
+    >>> radius = 3.1
+
+Then we convert to spherical polar coordinates and radius of circle in radians:
+
+    >>> theta = 0.5 * np.pi - np.deg2rad(dec)
+    >>> phi = np.deg2rad(ra)
+    >>> radius = np.deg2rad(radius)
+
+Then we calculate the Cartesian coordinates of the center of circle:
+
+    >>> xyz = hp.ang2vec(theta, phi)
+
+We call :func:`hp.query_disc <healpy.query_disc>`, which returns an array of
+the indices of the pixels that are inside the circle:
+
+    >>> ipix_disc = hp.query_disc(nside, xyz, radius)
+
+Finally, we sum the probability in all of the matching pixels:
+
+    >>> hpx[ipix_disc].sum()
+    9.522375325439142e-06
+
+Integrated probability in a polygon
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Similarly, we can use the :func:`hp.query_polygon <healpy.query_polygon>`
+function to look up the indices of the pixels within a polygon (defined by the
+Cartesian coordinates of its vertices), and then compute the probability that
+the source is inside that polygon by summing the values of the pixels.
+
+    >>> xyz = [[-0.69601758, -0.41315628, -0.58724902],
+    ...        [-0.68590811, -0.40679797, -0.60336181],
+    ...        [-0.69106913, -0.39820114, -0.60320752],
+    ...        [-0.7011786 , -0.40455945, -0.58709473]]
+    >>> ipix_poly = hp.query_polygon(nside, xyz)
+    >>> hpx[ipix_poly].sum()
+    3.935524328237466e-11
+
+These are all of the HEALPix functions from Healpy that we will need for the
+remainder of the this tutorial.
+
+Other useful Healpy functions include :func:`hp.ud_grade
+<healpy.pixelfunc.ud_grade>` for upsampling or downsampling a sky map and
+:func:`hp.get_interp_val <healpy.pixelfunc.get_interp_val>` for performing
+bilinear interpolation between pixels. See the :doc:`Healpy tutorial
+<healpy:tutorial>` for other useful operations.
 
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/

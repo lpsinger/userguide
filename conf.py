@@ -40,7 +40,9 @@ release = ''
 # ones.
 extensions = [
     'sphinx.ext.intersphinx',
-    'sphinx.ext.mathjax'
+    'sphinx.ext.mathjax',
+    'matplotlib.sphinxext.plot_directive',
+    'sphinx.ext.napoleon'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -165,6 +167,7 @@ texinfo_documents = [
 intersphinx_mapping = {
     'astropy': ('http://docs.astropy.org/en/stable/', None),
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
+    'numpy': ('https://docs.scipy.org/doc/numpy/', None),
     'python': ('https://docs.python.org/', None),
     'requests': ('http://docs.python-requests.org/en/stable/', None)
 }
