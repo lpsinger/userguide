@@ -1,5 +1,5 @@
 Quick start
-===============
+===========
 
 Here, we give the essential so that astronomers can have start quicky to receive and respond to O3 alerts
 
