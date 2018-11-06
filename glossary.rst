@@ -4,12 +4,12 @@ Glossary
 .. glossary::
 
     LHO
-        LIGO Hanford Observatory (see `observatory home page
+        LIGO Hanford Observatory (see `LHO observatory home page
         <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
         detector in Hanford, Washington, USA.
 
     LLO
-        LIGO Livingston Observatory (see `observatory home page
+        LIGO Livingston Observatory (see `LLO observatory home page
         <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
         detector in Livingston, Louisiana, USA.
 
@@ -30,7 +30,16 @@ Glossary
         Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
         the official public marshal portal for LIGO/Virgo candidates.
 
+    HEALPix
+        Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
+        positions on the unit sphere.
+
     Virgo
-        Virgo Observatory (see `observatory home page
+        Virgo Observatory (see `Virgo observatory home page
         <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
         in Cascina, Italy.
+
+    VTP
+        VOEvent Transport Protocol, a simple TCP-based protocol for sending and
+        receiving VOEvents, used by :term:`GCN`. See the `IVOA recommendation
+        <http://www.ivoa.net/documents/Notes/VOEventTransport/>`_ for details.

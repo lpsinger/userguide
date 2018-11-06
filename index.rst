@@ -46,7 +46,7 @@ Contents
    capabilities
    procedures
    content
-   technical
+   tutorial/index
 
 Appendix
 --------

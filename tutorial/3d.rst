@@ -1,0 +1,14 @@
+Distance and 3D Sky Maps
+========================
+
+All localization FITS files for CBC events are three dimensional: they include
+both the sky probability map and a directionally dependent distance estimate.
+This can be useful for identifying possible host galaxies using a galaxy
+redshift catalog. For further details see `Singer et al. (2016a)`_ and for
+sample code see `Singer et al. (2016b)`_.
+
+.. image:: https://dcc.ligo.org/public/0119/P1500071/007/demonstration.png
+.. image:: https://dcc.ligo.org/public/0119/P1500071/007/proj3d.png
+
+.. _`Singer et al. (2016a)`: https://doi.org/10.3847/2041-8205/829/1/L15
+.. _`Singer et al. (2016b)`: https://doi.org/10.3847/0067-0049/226/1/10

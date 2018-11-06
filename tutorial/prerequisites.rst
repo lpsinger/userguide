@@ -1,0 +1,46 @@
+Prerequisites
+=============
+
+In order to run this sample code, you will need Python >= 3.5 on a Unix-like
+operating system (Linux or macOS) and a few third-party Python packages:
+
+  * PyGCN_ for connecting to GCN (alternatives: comet_)
+  * :doc:`Healpy <healpy:index>` for decoding :term:`HEALPix` coordinates
+    (alternatives: astropy-healpix_, the official C/C++/Fortran/Java/IDL
+    HEALPix bindings for HEALPix_, DS9_, Aladin_)
+  * astropy_ for astronomical coordinate transformations, observability, etc.
+  * numpy_ and matplotlib_, popular math and plotting packages for Python
+
+If you are on a Mac and use the MacPorts_ package manager, you can install all
+of the above with the following command::
+
+    $ sudo port install py37-gcn py37-healpy
+
+Otherwise, the fastest way to install the dependencies is with pip_, a package
+manager that comes with most Python distributions. To install these packages
+with ``pip``, run the following command::
+
+    $ pip install pygcn healpy
+
+Imports
+-------
+
+Now we'll write a GCN handler script. First, some imports::
+
+    import gcn
+    import gcn.handlers
+    import gcn.notice_types
+    import healpy as hp
+    import numpy as np
+
+.. _Aladin: https://aladin.u-strasbg.fr
+.. _astropy-healpix: https://pypi.org/project/astropy-healpix/
+.. _astropy: https://pypi.org/project/astropy/
+.. _comet: https://pypi.org/project/Comet/
+.. _DS9: http://ds9.si.edu
+.. _HEALPix: https://healpix.sourceforge.io
+.. _MacPorts: https://www.macports.org
+.. _matplotlib: https://pypi.org/project/matplotlib/
+.. _numpy: https://pypi.org/project/numpy/
+.. _pip: https://pip.pypa.io
+.. _PyGCN: https://pypi.org/project/pygcn/
