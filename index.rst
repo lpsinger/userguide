@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-LIGO/Virgo Open Public Alerts User Guide
-========================================
+LIGO/Virgo Public Alerts User Guide
+===================================
 
 .. toctree::
    :maxdepth: 1

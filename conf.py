@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'LIGO/Virgo Open Public Alerts User Guide'
+project = 'LIGO/Virgo Public Alerts User Guide'
 copyright = '2018, LIGO Scientific Collaboration, Virgo Collaboration'
 author = 'LIGO Scientific Collaboration, Virgo Collaboration'
 
@@ -84,7 +84,11 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'description': '*DRAFT* Guide to real-time public alerts and low-latency data products from the LIGO and Virgo gravitational-wave observatories.',
+    'fixed_sidebar': True,
+    'show_relbars': True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -107,7 +111,7 @@ html_sidebars = {
     ],
     '**': [
         'about.html',
-        'navigation.html',
+        'localtoc.html',
         'sourcelink.html',
         'searchbox.html'
     ]
@@ -117,7 +121,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LIGOVirgoOpenPublicAlertsUserGuidedoc'
+htmlhelp_basename = 'LIGOVirgoPublicAlertsUserGuidedoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -144,7 +148,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'LIGOVirgoOpenPublicAlertsUserGuide.tex', 'LIGO/Virgo Open Public Alerts User Guide Documentation',
+    (master_doc, 'LIGOVirgoPublicAlertsUserGuide.tex', 'LIGO/Virgo Public Alerts User Guide Documentation',
      'LIGO Scientific Collaboration, Virgo Collaboration', 'manual'),
 ]
 
@@ -154,7 +158,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ligovirgoopenpublicalertsuserguide', 'LIGO/Virgo Open Public Alerts User Guide Documentation',
+    (master_doc, 'ligovirgoopenpublicalertsuserguide', 'LIGO/Virgo Public Alerts User Guide Documentation',
      [author], 1)
 ]
 
@@ -165,8 +169,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'LIGOVirgoOpenPublicAlertsUserGuide', 'LIGO/Virgo Open Public Alerts User Guide Documentation',
-     author, 'LIGOVirgoOpenPublicAlertsUserGuide', 'One line description of project.',
+    (master_doc, 'LIGOVirgoPublicAlertsUserGuide', 'LIGO/Virgo Public Alerts User Guide Documentation',
+     author, 'LIGOVirgoPublicAlertsUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]
 
