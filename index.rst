@@ -14,6 +14,5 @@ LIGO/Virgo Open Public Alerts User Guide
    quickstart
    capabilities
    procedures
-   pipelines
    content
    technical

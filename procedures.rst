@@ -1,6 +1,12 @@
 Procedures
 ==========
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+   pipelines
+
 Here, we described the sequence of the GW alert distributed the Gamma-ray Coordinates Network/Transient Astronomy Network (`GCN/TAN`_) via notices and circulars (`Alert content`_ and `Technical`_). Alerts should contain all of the information that is useful for searching for a counterpart 
 
 .. _`GCN/TAN`: http://gcn.gsfc.nasa.gov/
