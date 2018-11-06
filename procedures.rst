@@ -9,8 +9,8 @@ Procedures
 
 Here, we described the sequence of the GW alert distributed the Gamma-ray
 Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
-content <content>` and :doc:`Technical <technical>`). Alerts should contain all
-of the information that is useful for searching for a counterpart
+content <content>` and :doc:`Technical <tutorial/index>`). Alerts should
+contain all of the information that is useful for searching for a counterpart
 
 Within minutes after GW trigger time: No human inspection!
 ----------------------------------------------------------
