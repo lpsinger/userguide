@@ -25,7 +25,7 @@ Alert Schema
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 | **WhereWhen**     | Arrival time (UTC, ISO-8601), e.g. :samp:`2010-08-27T19:21:13.982800`                             |
 +-------------------+-------------------------------------------+-------------------------------------------------------+
-| **What**          | GraceDB ID: :samp:`S{YYMMDDabc}`                                                                  |
+| **What**          | GraceDb ID: :samp:`S{YYMMDDabc}`                                                                  |
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 | - Search          | :samp:`CBC`                               | :samp:`Burst`                                         |
 +-------------------+-------------------------------------------+-------------------------------------------------------+
@@ -55,7 +55,7 @@ Within 4 hours of the preliminary alert, after vetting by human instrument scien
 
 The initial alert circular and notice contain the following information:
 
-  * `event name`_ and GraceDB identifier(s)
+  * `event name`_ and GraceDb identifier(s)
   * event significance_
   * `source classification`_
   * `source localization`_

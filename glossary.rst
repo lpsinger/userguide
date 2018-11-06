@@ -26,6 +26,10 @@ Glossary
     GCN Notice
         A machine-readable alert distributed through :term:`GCN`.
 
+    GraceDb
+        Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
+        the official public marshal portal for LIGO/Virgo candidates.
+
     Virgo
         Virgo Observatory (see `observatory home page
         <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
