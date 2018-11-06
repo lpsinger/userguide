@@ -31,3 +31,6 @@ Should mention:
       expect that Kagra will join with a BNS range of 8-25 Mpc.
 
   * Reference to white paper ?
+
+.. image:: https://www.ligo.org/scientists/G1801056-v3.png
+   :alt: Current observing schedule
