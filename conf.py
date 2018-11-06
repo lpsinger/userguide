@@ -41,8 +41,7 @@ release = ''
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
-    'matplotlib.sphinxext.plot_directive',
-    'sphinx.ext.napoleon'
+    'matplotlib.sphinxext.plot_directive'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
