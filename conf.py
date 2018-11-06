@@ -88,7 +88,7 @@ html_theme_options = {
     'description': '*DRAFT* Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
     'fixed_sidebar': True,
     'logo': 'lsc.gif',
-    'show_related': True
+    'show_relbars': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
