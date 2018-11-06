@@ -12,7 +12,7 @@ Building
 --------
 
 To render the HTML version of the User Guide on your own computer, run the
-following commands:
+following commands::
 
     $ git clone https://git.ligo.org/emfollow/userguide.git
     $ cd userguide
