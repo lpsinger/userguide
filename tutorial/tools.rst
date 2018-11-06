@@ -4,14 +4,16 @@ Additional tools
 The :doc:`ligo.skymap <ligo.skymap:index>` package includes a number of
 advanced tools for working with GW probability sky maps.
 
-* Publication-quality astronomical mapmaking built on Astropy (:mod:`ligo.skymap.plot.allsky`)
+* Publication-quality astronomical mapmaking built on Astropy
+  (:mod:`ligo.skymap.plot.allsky`)
 
   .. image:: https://lscsoft.docs.ligo.org/ligo.skymap/_images/allsky-1.png
      :alt: A figure made with ligo.skymap.plot.allsky
 
 * Functions for manipulating distance posteriors (:mod:`ligo.skymap.distance`)
 
-* Probabilistic airmass plots (:doc:`ligo-skymap-plot-airmass <ligo.skymap:ligo/skymap/tool/ligo_skymap_plot_airmass>`)
+* Probabilistic airmass plots (:doc:`ligo-skymap-plot-airmass
+  <ligo.skymap:ligo/skymap/tool/ligo_skymap_plot_airmass>`)
 
   .. image:: https://lscsoft.docs.ligo.org/ligo.skymap/_images/ligo_skymap_plot_airmass-1.png
      :alt: A probabilistic airmass plot.
