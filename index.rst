@@ -17,10 +17,3 @@ LIGO/Virgo Open Public Alerts User Guide
    pipelines
    content
    technical
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
