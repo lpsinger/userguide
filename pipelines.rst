@@ -1,18 +1,10 @@
 Online pipelines and alert distribution 	
 =======================================
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
-
-
 Should mention:
 
   * References to O2 paper for the online and few lines about the pipelines + joint searchs (RAVEN)
   * Threshold for public alerts (purity for CBC, equivalent for Burst)
-
-Pipelines
-=========
 
 During the third LIGO observation run a number of search pipelines will be running in a low latency, online mode. These can be divided into two groups, modeled and unmodeled. The modeled (CBC) searches specifically look for signals from compact binary mergers of neutron stars and black holes (BNS, NS-BH, and BBH systems). The unmodeled (Burst) searches on the other hand, are capable of detecting signals from a wide variety of astrophysical sources in addition to compact binary mergers: core-collapse of massive stars, magnetar starquakes, and more speculative sources such as intersecting cosmic strings or as-yet unknown GW sources.
 
