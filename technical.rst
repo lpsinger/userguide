@@ -1,5 +1,5 @@
-Technical Reference
-===================
+Sample Code
+===========
 
 Public LIGO/Virgo alerts are distributed using the Gamma-ray Coordinates
 Network (GCN_). The machine-readable alerts are called GCN Notices.
