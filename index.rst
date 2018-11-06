@@ -36,15 +36,23 @@ instructions and sample code for receiving GCN Notices and decoding GW sky maps.
    document regularly for announcements and updates.
 
 
+Contents
+--------
+
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
 
    quickstart
    capabilities
    procedures
    content
    technical
-   glossary
+
+Appendix
+--------
+
+* :doc:`glossary`
+* :ref:`search`
+* `Report issues <contact+emfollow/userguide@support.ligo.org>`_
 
 .. _Virgo: http://www.virgo-gw.eu
