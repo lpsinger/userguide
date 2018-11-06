@@ -6,17 +6,28 @@
 LIGO/Virgo Public Alerts User Guide
 ===================================
 
-Welcome to the LIGO Scientific Collaboration's and the Virgo Collaboration's
-user guide to public alerts. This document is intended for both professional
-astronomers and science enthusiasts who are interested in receiving alerts and
-real-time data products related to gravitational-wave events.
+Welcome to the LIGO/Virgo Public Alerts User Guide! This document is intended
+for both professional astronomers and science enthusiasts who are interested in
+receiving alerts and real-time data products related to gravitational-wave (GW)
+events.
 
-Very brief - small introduction and should mention:
-  * Dates of O3
-  * PUBLIC
-  * Two types of alerts under GCN (Circular and notices)
-  * PROMPT First alert < 5 min and updates
-  * From two searchs (CBC and Burst)
+Three sites (:term:`LHO`, :term:`LLO`, :term:`Virgo`) together form a global
+network of ground-based GW detectors. The `LIGO Scientific Collaboration
+<https://ligo.org/>`_ and the `Virgo Collaboration
+<http://public.virgo-gw.eu/the-virgo-collaboration/>`_ jointly analyze the data
+in real time to detect and localize transients from compact binary mergers and
+other sources GW bursts. When a signal candidate is found, an alert is sent to
+astronomers in order to search for counterparts (electromagnetic waves or
+neutrinos).
+
+Advanced LIGO and Advanced Virgo are preparing for their third observing run
+(O3) in early 2019. For the first time, *LIGO/Virgo alerts will be public*.
+Alerts will be distributed through NASA's Gamma-ray Coordinates Network
+(:term:`GCN`). There are two types of alerts: human-readable :term:`GCN
+Circulars <GCN Circular>` and machine-readable :term:`GCN Notices <GCN
+Notice>`. This document provides a brief overview of the procedures for vetting
+and sending GW alerts, describes their contents and format, and includes
+instructions and sample code for receiving GCN Notices and decoding GW sky maps.
 
 .. warning::
    Some technical details of LIGO/Virgo public alerts may change before the
@@ -34,3 +45,6 @@ Very brief - small introduction and should mention:
    procedures
    content
    technical
+   glossary
+
+.. _Virgo: http://www.virgo-gw.eu
