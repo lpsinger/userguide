@@ -85,9 +85,10 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'description': '*DRAFT* Guide to real-time public alerts and low-latency data products from the LIGO and Virgo gravitational-wave observatories.',
+    'description': '*DRAFT* Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
     'fixed_sidebar': True,
-    'show_relbars': True
+    'logo': 'lsc.gif',
+    'show_related': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -106,13 +107,11 @@ html_static_path = ['_static']
 html_sidebars = {
     'index': [
         'about.html',
-        'sourcelink.html',
         'searchbox.html'
     ],
     '**': [
         'about.html',
         'localtoc.html',
-        'sourcelink.html',
         'searchbox.html'
     ]
 }
