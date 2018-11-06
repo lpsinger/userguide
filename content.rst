@@ -66,11 +66,11 @@ candidate, and it can be cited as such.
 
 The initial alert circular and notice contain the following information:
 
-  * `event name`_ and GraceDb identifier(s)
-  * event significance_
-  * `source classification`_
-  * `source localization`_
-  * (...)
+* `event name`_ and GraceDb identifier(s)
+* event significance_
+* `source classification`_
+* `source localization`_
+* (...)
 
 The alert may also contain a `data quality assessment`_.
 

@@ -83,17 +83,17 @@ tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
 
 There are several useful pieces of information here:
 
-  * ``COORDSYS=C``, telling you that the :term:`HEALPix` projection is in the
-    Celestial (equatorial, ICRS) frame, as all LIGO/Virgo probability sky maps
-    will be.
-  * ``OBJECT``, the unique LIGO/Virgo identifier for the event.
-  * ``REFERENC``, a link to the candidate page in :term:`GraceDb`.
-  * ``INSTRUME``, a list of gravitational-wave sites that triggered on the
-    event: `H1` for LIGO Hanford, `L1` for LIGO Livingston, and `V1` for Virgo.
-  * ``DATE-OBS``, the UTC time of the event. In the case of a compact binary
-    coalescence candidate, this is the time that the signal from the merger
-    passed through the geocenter.
-  * ``MJD-OBS``, same as `DATE-OBS`, but given as a modified Julian day.
+* ``COORDSYS=C``, telling you that the :term:`HEALPix` projection is in the
+  Celestial (equatorial, ICRS) frame, as all LIGO/Virgo probability sky maps
+  will be.
+* ``OBJECT``, the unique LIGO/Virgo identifier for the event.
+* ``REFERENC``, a link to the candidate page in :term:`GraceDb`.
+* ``INSTRUME``, a list of gravitational-wave sites that triggered on the
+  event: `H1` for LIGO Hanford, `L1` for LIGO Livingston, and `V1` for Virgo.
+* ``DATE-OBS``, the UTC time of the event. In the case of a compact binary
+  coalescence candidate, this is the time that the signal from the merger
+  passed through the geocenter.
+* ``MJD-OBS``, same as `DATE-OBS`, but given as a modified Julian day.
 
 You can view the sky map in many common FITS image viewers such as
 Aladin_:

@@ -3,8 +3,8 @@ Online pipelines and alert distribution
 
 Should mention:
 
-  * References to O2 paper for the online and few lines about the pipelines + joint searchs (RAVEN)
-  * Threshold for public alerts (purity for CBC, equivalent for Burst)
+* References to O2 paper for the online and few lines about the pipelines + joint searchs (RAVEN)
+* Threshold for public alerts (purity for CBC, equivalent for Burst)
 
 During the third LIGO observation run a number of search pipelines will be running in a low latency, online mode. These can be divided into two groups, modeled and unmodeled. The modeled (CBC) searches specifically look for signals from compact binary mergers of neutron stars and black holes (BNS, NS-BH, and BBH systems). The unmodeled (Burst) searches on the other hand, are capable of detecting signals from a wide variety of astrophysical sources in addition to compact binary mergers: core-collapse of massive stars, magnetar starquakes, and more speculative sources such as intersecting cosmic strings or as-yet unknown GW sources.
 
@@ -12,10 +12,10 @@ During the third LIGO observation run a number of search pipelines will be runni
         A coincident analysis is performed by each pipeline, where candidate events are extracted separately at each detector via matched-filtering and later combined across
 detectors. Of the three pipelines, GstLAL and MBTAOnline use several matched filters to cover the detector bandwidth, i.e., the matched filter is split across multiple frequency bands. All pipelines also implement different kinds of signal-based vetoes to reject instrumental transients which cause large SNR values but can otherwise be easily distinguished from compact binary coalescence signals.
 
- * Gstlal-inspiral: The gstlal-based inspiral pipeline is a matched-filter pipeline designed to find gravitational-waves from compact binaries in low-latency. It uses the likelihood-ratio, which increases monotonically with signal probability, to rank candidates, and then uses Monte Carlo sampling methods to estimate the distribution of likelihood-ratios in noise. This distribution can then be used to compute a false alarm rate and p-value. [1] [2] [3]
- * Gstlal-spiir: 
- * MBTA (MultiBand Template Analysis): MBTAOnline constructs its background by making every possible coincidence from single detector triggers over few hours of recent data. It then folds in the probability of a pair of triggers passing the time coincidence test. 
- * Pycbc: PyCBC Live estimates the background of accidental coincidences through the process of time slides between single-detector triggers. Triggers are time shifted by every possible multiple of 100 ms that is greater than the ∼10 ms of light travel time between the two LIGO detectors. All coincidences are recorded and assigned a ranking statistic in the same way a candidate event would be.
+* Gstlal-inspiral: The gstlal-based inspiral pipeline is a matched-filter pipeline designed to find gravitational-waves from compact binaries in low-latency. It uses the likelihood-ratio, which increases monotonically with signal probability, to rank candidates, and then uses Monte Carlo sampling methods to estimate the distribution of likelihood-ratios in noise. This distribution can then be used to compute a false alarm rate and p-value. [1] [2] [3]
+* Gstlal-spiir: 
+* MBTA (MultiBand Template Analysis): MBTAOnline constructs its background by making every possible coincidence from single detector triggers over few hours of recent data. It then folds in the probability of a pair of triggers passing the time coincidence test. 
+* Pycbc: PyCBC Live estimates the background of accidental coincidences through the process of time slides between single-detector triggers. Triggers are time shifted by every possible multiple of 100 ms that is greater than the ∼10 ms of light travel time between the two LIGO detectors. All coincidences are recorded and assigned a ranking statistic in the same way a candidate event would be.
 
 * Unmodeled (Burst)
 

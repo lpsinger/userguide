@@ -4,12 +4,12 @@ Prerequisites
 In order to run this sample code, you will need Python >= 3.5 on a Unix-like
 operating system (Linux or macOS) and a few third-party Python packages:
 
-  * PyGCN_ for connecting to GCN (alternatives: comet_)
-  * :doc:`Healpy <healpy:index>` for decoding :term:`HEALPix` coordinates
-    (alternatives: astropy-healpix_, the official C/C++/Fortran/Java/IDL
-    HEALPix bindings for HEALPix_, DS9_, Aladin_)
-  * astropy_ for astronomical coordinate transformations, observability, etc.
-  * numpy_ and matplotlib_, popular math and plotting packages for Python
+* PyGCN_ for connecting to GCN (alternatives: comet_)
+* :doc:`Healpy <healpy:index>` for decoding :term:`HEALPix` coordinates
+  (alternatives: astropy-healpix_, the official C/C++/Fortran/Java/IDL
+  HEALPix bindings for HEALPix_, DS9_, Aladin_)
+* astropy_ for astronomical coordinate transformations, observability, etc.
+* numpy_ and matplotlib_, popular math and plotting packages for Python
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
 of the above with the following command::
