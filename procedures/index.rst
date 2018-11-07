@@ -5,8 +5,8 @@ Procedures
    :maxdepth: 1
    :caption: Contents:
 
-   superevents
    searches
+   superevents
    classification
 
 The LIGO-Virgo Collaboration will be implementing
