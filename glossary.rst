@@ -3,6 +3,12 @@ Glossary
 
 .. glossary::
 
+    BBH
+        Binary black hole system, a binary system composed of two black holes.
+
+    BNS
+        Binary neutron star, a binary system composed of two neutron stars.
+
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
         <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
@@ -33,6 +39,10 @@ Glossary
     HEALPix
         Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
         positions on the unit sphere.
+
+    NSBH
+        Neutron star black hole, a binary system composed of one neutron star
+        and one black hole.
 
     Virgo
         Virgo Observatory (see `Virgo observatory home page
