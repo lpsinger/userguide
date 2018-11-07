@@ -1,12 +1,6 @@
 Alert Content
 =============
 
-.. Should mention:
-.. 
-..  * Description of the notices: https://wiki.ligo.org/Bursts/EMFollow/O3GCNnotices
-..  * Description of the circulars
-.. * also some info here https://dcc.ligo.org/LIGO-G1800404/public
-
 Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
