@@ -5,6 +5,8 @@ In order to run this sample code, you will need Python >= 3.5 on a Unix-like
 operating system (Linux or macOS) and a few third-party Python packages:
 
 * PyGCN_ for connecting to GCN (alternatives: comet_)
+* lxml_ parsing VOEvent XML packets (see also the voevent-parse_ and
+  VOEventLib_ helper libraries, both of which are based on lxml)
 * :doc:`Healpy <healpy:index>` for decoding :term:`HEALPix` coordinates
   (alternatives: astropy-healpix_, the official C/C++/Fortran/Java/IDL
   HEALPix bindings for HEALPix_, DS9_, Aladin_)
@@ -44,3 +46,5 @@ Now we'll write a GCN handler script. First, some imports::
 .. _numpy: https://pypi.org/project/numpy/
 .. _pip: https://pip.pypa.io
 .. _PyGCN: https://pypi.org/project/pygcn/
+.. _voevent-parse: https://pypi.org/project/voevent-parse/
+.. _VOEventLib: https://pypi.org/project/VOEventLib/
