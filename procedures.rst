@@ -51,5 +51,9 @@ Special case : promotion of sub-thresholds candidates
 * We can elect to promote a candidate that does not pass our OPA thresholds
   if it is compellingly associated with a multimessenger signal (e.g. GRB,
   core-collapse SN)
+  
 * The procedure will start from the :doc:`Initial notices and circulars
   <content>` sequence.
+  
+.. image:: /_static/Flowchartprocv2.jpg
+   :alt: Alert Flowchart
