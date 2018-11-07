@@ -22,9 +22,8 @@ alerts in the VOEvent XML format.
 GCN Notice Contents
 -------------------
 
-Like all VOEvent XML packets, LIGO/Virgo GCN Notices contain of several
-top-level sections (Who, WhereWhen, What). The table below is a diagrammatic
-representation of the contents of a LIGO/Virgo GCN Notice.
+The table below is a diagrammatic representation of the contents of a
+LIGO/Virgo GCN Notice.
 
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 |                   | CBC                                       | Burst                                                 |
