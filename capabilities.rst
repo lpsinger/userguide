@@ -25,9 +25,8 @@ Prospects for observation and localization sensitivity:
   It is also expected that the 90% median credible region of sky-localization
   for the BNS sources during O3 is 120-180 square degrees, with 12-21% of
   these events to have 90% credible regions smaller than 20 square degrees.
-  For more information regarding prospects of observation please see:
-  https://arxiv.org/abs/1304.0670
-  As well as https://link.springer.com/article/10.1007%2Fs41114-018-0012-9
+  More information is available in `Prospects of Observation <https://arxiv.org/abs/1304.0670>`_
+  as well as https://link.springer.com/article/10.1007%2Fs41114-018-0012-9
   And https://wiki.ligo.org/LSC/JRPComm/ObservingScenario 
   Contact Marica for the new release https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext
   
