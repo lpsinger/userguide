@@ -27,6 +27,21 @@ Prospects for observation and localization sensitivity:
   And https://wiki.ligo.org/LSC/JRPComm/ObservingScenario 
   Contact Marica for the new release https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext
   
+  Interferometer Capabilities
+---------------------------
+
++-------------------+-------------------------------------------+-------------------------------------------------------+
+|      IFO          |   BNS-Range (Mpc)                           |   Burst-Range (Mpc)                                 |
++===================+===========================================+=======================================================+
+| **LIGO-Hanford**  | 	20-170									|	75-90				  								|
++-------------------+-------------------------------------------+-------------------------------------------------------+
+| **Virgo**         |   65-85                                	|	40-50 											    |
++-------------------+-------------------------------------------+-------------------------------------------------------+
+| **Kagra**         |   8-25                                	|	    											    |
++-------------------+-------------------------------------------+-------------------------------------------------------+
+
+
+  
   We expect that Kagra will join with a BNS range of 8-25 Mpc.
 
 * The White paper provides an overview of current and near-future work by members of the LIGO Scientific Collaboration and Virgo Collaboration to analyze gravitational-wave data and produce astrophysical results: 
