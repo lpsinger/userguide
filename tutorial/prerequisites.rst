@@ -41,6 +41,7 @@ Now we'll write a GCN handler script. First, some imports::
 .. _comet: https://pypi.org/project/Comet/
 .. _DS9: http://ds9.si.edu
 .. _HEALPix: https://healpix.sourceforge.io
+.. _lxml: https://pypi.org/project/lxml/
 .. _MacPorts: https://www.macports.org
 .. _matplotlib: https://pypi.org/project/matplotlib/
 .. _numpy: https://pypi.org/project/numpy/
