@@ -26,9 +26,9 @@ Prospects for observation and localization sensitivity:
   for the BNS sources during O3 is 120-180 square degrees, with 12-21% of
   these events to have 90% credible regions smaller than 20 square degrees.
   More information is available in `Prospects of Observation <https://arxiv.org/abs/1304.0670>`_
-  as well as https://link.springer.com/article/10.1007%2Fs41114-018-0012-9
-  And https://wiki.ligo.org/LSC/JRPComm/ObservingScenario 
-  Contact Marica for the new release https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext
+  as well as `here <https://link.springer.com/article/10.1007%2Fs41114-018-0012-9>`_
+  And in this `wiki <https://wiki.ligo.org/LSC/JRPComm/ObservingScenario>`_ 
+  Contact Marica Branchesi for the `new release <https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext>`_
   
 Interferometer Capabilities
 ---------------------------
