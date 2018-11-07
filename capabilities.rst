@@ -27,13 +27,13 @@ Prospects for observation and localization sensitivity:
   And https://wiki.ligo.org/LSC/JRPComm/ObservingScenario 
   Contact Marica for the new release https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext
   
-  Interferometer Capabilities
+Interferometer Capabilities
 ---------------------------
 
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 |      IFO          |   BNS-Range (Mpc)                         |   Burst-Range (Mpc)                                 	|
 +===================+===========================================+=======================================================+
-| **LIGO-Hanford**  | 	20-170					|	75-90			  			|
+| **LIGO**  	    | 	20-170					|	75-90			  			|
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 | **Virgo**         |   65-85                                	|	40-50 						|
 +-------------------+-------------------------------------------+-------------------------------------------------------+
