@@ -5,17 +5,18 @@ Procedures
    :maxdepth: 1
    :caption: Contents:
 
-   pipelines
+   searches
+   classification
 
 Here, we described the sequence of the GW alert distributed the Gamma-ray
 Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
-content <content>` and :doc:`Technical <tutorial/index>`). Alerts should
+content </content>` and :doc:`Technical </tutorial/index>`). Alerts should
 contain all of the information that is useful for searching for a counterpart
 
 Within minutes after GW trigger time: No human inspection!
 ----------------------------------------------------------
 
-1. The first :doc:`preliminary notice <content>` will be sent fully
+1. The first :doc:`preliminary notice </content>` will be sent fully
    autonomously (not necessary attached to localization). The trigger will be
    immediately visible under the LIGO/Virgo GW database :term:`GraceDb`.
 2. Second and others preliminaries: same content but does contain a
@@ -27,7 +28,7 @@ data quality, instrumental conditions, and pipeline behavior.
 Within 4 hours after the GW trigger time: vetted by human instrument scientists and analysts
 --------------------------------------------------------------------------------------------
 
-* :doc:`Initial notices and circulars <content>` with an update for the sky
+* :doc:`Initial notices and circulars </content>` with an update for the sky
   localization area and the source classification.
 * Possible **retractation** (data are unsuitable) or **confirmation** of the
   event for BNS or Burst triggers Note that the initial Circular is
@@ -53,7 +54,7 @@ Special case : promotion of sub-thresholds candidates
   core-collapse SN)
   
 * The procedure will start from the :doc:`Initial notices and circulars
-  <content>` sequence.
+  </content>` sequence.
   
-.. image:: _static/Flowchartprocv2.jpg
+.. image:: /_static/Flowchartprocv2.jpg
    :alt: Alert Flowchart

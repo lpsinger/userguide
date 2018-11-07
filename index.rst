@@ -44,7 +44,7 @@ Contents
 
    quickstart
    capabilities
-   procedures
+   procedures/index
    content
    tutorial/index
 
