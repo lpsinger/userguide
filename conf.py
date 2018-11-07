@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
+    'sphinx_tabs.tabs',
     'matplotlib.sphinxext.plot_directive'
 ]
 

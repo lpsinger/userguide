@@ -155,3 +155,30 @@ What will *not* be included in the alerts
 The alerts are not going to release quantitative estimates of intrinsic
 properties such as masses and spins, nor contain information on the GW strain
 or reconstructed waveforms.
+
+Example Alerts
+--------------
+
+Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
+
+.. tabs::
+
+   .. tab:: Preliminary
+
+      .. literalinclude:: _static/MS181101abc-1-Preliminary.xml
+         :language: xml
+
+   .. tab:: Initial
+
+      .. literalinclude:: _static/MS181101abc-2-Initial.xml
+         :language: xml
+
+   .. tab:: Update
+
+      .. literalinclude:: _static/MS181101abc-3-Update.xml
+         :language: xml
+
+   .. tab:: Retraction
+
+      .. literalinclude:: _static/MS181101abc-4-Retraction.xml
+         :language: xml
