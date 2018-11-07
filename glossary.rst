@@ -39,7 +39,13 @@ Glossary
         <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
         in Cascina, Italy.
 
+    VOEvent
+        An XML format for describing astronomical transients. For the
+        specification, see the official `VOEvent IVOA Recommendation
+        <http://www.ivoa.net/documents/VOEvent/index.html>`_.
+
     VTP
         VOEvent Transport Protocol, a simple TCP-based protocol for sending and
-        receiving VOEvents, used by :term:`GCN`. See the `IVOA recommendation
-        <http://www.ivoa.net/documents/Notes/VOEventTransport/>`_ for details.
+        receiving VOEvents, used by :term:`GCN`. For the specification, see the
+        official `VTP IVOA recommendation
+        <http://www.ivoa.net/documents/Notes/VOEventTransport/>`_.
