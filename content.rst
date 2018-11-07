@@ -1,22 +1,29 @@
-Alert Content
-=============
-
-.. Should mention:
-.. 
-..  * Description of the notices: https://wiki.ligo.org/Bursts/EMFollow/O3GCNnotices
-..  * Description of the circulars
-.. * also some info here https://dcc.ligo.org/LIGO-G1800404/public
+Alert Contents
+==============
 
 Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
-* **Circulars** are human-readable astronomical bulletins.
+**GCN Circulars** are short human-readable astronomical bulletins. They are written
+in a certain well-established `format and style`_. You can `subscribe to GCN
+Circulars`_ to receive and post them by email, or you can view them in the
+public `GCN Circulars archive`_.
 
-* **Notices** are machine-readable packets, available as VOEvent XML and
-  several legacy plain text and binary formats.
+**GCN Notices** are machine-readable packets. They are available as :term:`VOEvent`
+XML and `several other formats`_. We strongly recommend receiving LIGO/Virgo
+alerts in the VOEvent XML format.
 
-Alert Schema
-------------
+.. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
+.. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
+.. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
+.. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
+.. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+
+GCN Notice Contents
+-------------------
+
+The table below is a diagrammatic representation of the contents of a
+LIGO/Virgo GCN Notice.
 
 +-------------------+-------------------------------------------+-------------------------------------------------------+
 |                   | CBC                                       | Burst                                                 |
