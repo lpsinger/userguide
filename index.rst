@@ -21,7 +21,7 @@ astronomers in order to search for counterparts (electromagnetic waves or
 neutrinos).
 
 Advanced LIGO and Advanced Virgo are preparing for their third observing run
-(O3) in early 2019. For the first time, *LIGO/Virgo alerts will be public*.
+(O3) in early 2019. For the first time, **LIGO/Virgo alerts will be public**.
 Alerts will be distributed through NASA's Gamma-ray Coordinates Network
 (:term:`GCN`). There are two types of alerts: human-readable :term:`GCN
 Circulars <GCN Circular>` and machine-readable :term:`GCN Notices <GCN
