@@ -20,11 +20,8 @@ Different Observatories
 Prospects for observation and localization sensitivity:
 -------------------------------------------------------
 
-* The LIGO detectors are expected to have BNS range of 20-170 Mpc
-  where as the Virgo detector is expected to have BNS range of 65-85 Mpc for
-  CBC sources. For burst sources, the LIGO and the Virgo detectors are
-  expected to have BNS range of 75-90 Mpc and 40-50 Mpc respectively. These
-  results in a total of 1-50 BNS events during their operation.
+* With expected ranges of the LIGO, Virgo and Kagra detectors as supplied in the
+  the table below, a total of 1-50 BNS events during their operation is anticipated.
   It is also expected that the 90% median credible region of sky-localization
   for the BNS sources during O3 is 120-180 square degrees, with 12-21% of
   these events to have 90% credible regions smaller than 20 square degrees.
