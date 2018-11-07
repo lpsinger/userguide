@@ -55,5 +55,5 @@ Special case : promotion of sub-thresholds candidates
 * The procedure will start from the :doc:`Initial notices and circulars
   <content>` sequence.
   
-.. image:: /_static/Flowchartprocv2.jpg
+.. image:: _static/Flowchartprocv2.jpg
    :alt: Alert Flowchart
