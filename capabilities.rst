@@ -2,6 +2,7 @@ Observational Capabilities
 ==========================
 
 Timeline
+--------
 
 * To prepare the Observation Run, we schedule two differents Engineering runs. The first one (ER13) will be attempted to start on Monday, the 17th of December, to last around 5 days. The second one (ER14) is scheduled for the middle of January, and without interruption will switch to the Observing Run.
 * The third Observational run of aLIGO/AdV called O3 is scheduled to begin in February 2019. O3 is expected to be a year long run with the LIGO detectors and the Virgo detector. 
@@ -11,11 +12,13 @@ Timeline
    :alt: Current observing schedule
 
 Different Observatories
+-----------------------
 
 * While aLIGO and AdV will follow the same schedule, they might be join by KAGRA (link?). It will be fully operational by early
   2019 and will become part of the global network with full data sharing once its sensitivities are commensurate to that of LIGO and Virgo. 
 
 Prospects for observation and localization sensitivity:
+-------------------------------------------------------
 
 * The LIGO detectors are expected to have BNS range of 20-170 Mpc
   where as the Virgo detector is expected to have BNS range of 65-85 Mpc for
