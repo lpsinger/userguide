@@ -14,8 +14,7 @@ Timeline
 Different Observatories
 -----------------------
 
-* While aLIGO and AdV will follow the same schedule, they might be joined by KAGRA (link?). It will be fully operational by early
-  2019 and will become part of the global network with full data sharing once its sensitivities are commensurate to that of LIGO and Virgo. 
+* While aLIGO and AdV will follow the same schedule, they might be joined by KAGRA in 2019 (link?).
 
 Prospects for observation and localization sensitivity:
 -------------------------------------------------------
@@ -25,9 +24,7 @@ Prospects for observation and localization sensitivity:
   It is also expected that the 90% median credible region of sky-localization
   for the BNS sources during O3 is 120-180 square degrees, with 12-21% of
   these events to have 90% credible regions smaller than 20 square degrees.
-  More information is available in `Prospects of Observation <https://arxiv.org/abs/1304.0670>`_
-  as well as `here <https://link.springer.com/article/10.1007%2Fs41114-018-0012-9>`_,
-  and in this `wiki <https://wiki.ligo.org/LSC/JRPComm/ObservingScenario>`_.
+  More information is available in this `Living Review Article <https://link.springer.com/article/10.1007%2Fs41114-018-0012-9>`_.
   Contact `Marica Branchesi <marica.branchesi@ligo.org>`_ for the
   `new release <https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext>`_
   
@@ -37,7 +34,7 @@ Interferometer Capabilities
 +-----------+-------------------+-------------------+
 | Detector  | BNS Range (Mpc)   | Burst Range (Mpc) |
 +===========+===================+===================+
-| **LIGO**  | 20-170            | 75-90             |
+| **LIGO**  | 120-170           | 75-90             |
 +-----------+-------------------+-------------------+
 | **Virgo** | 65-85             | 40-50             |
 +-----------+-------------------+-------------------+
