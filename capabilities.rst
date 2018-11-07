@@ -6,7 +6,7 @@ Timeline
 
 * To prepare the Observation Run, we schedule two differents Engineering runs. The first one (ER13) will be attempted to start on Monday, the 17th of December, to last around 5 days. The second one (ER14) is scheduled for the middle of January, and without interruption will switch to the Observing Run.
 * The third Observational run of aLIGO/AdV called O3 is scheduled to begin in February 2019. O3 is expected to be a year long run with the LIGO detectors and the Virgo detector. 
-* Updtated schedule `schedule <https://dcc.ligo.org/DocDB/0152/G1800889/005/G1800889-v5.pdf>`_ is available online.
+* Updated schedule `schedule <https://dcc.ligo.org/DocDB/0152/G1800889/005/G1800889-v5.pdf>`_ is available online.
 
 .. image:: https://www.ligo.org/scientists/G1801056-v3.png
    :alt: Current observing schedule
@@ -14,7 +14,7 @@ Timeline
 Different Observatories
 -----------------------
 
-* While aLIGO and AdV will follow the same schedule, they might be join by KAGRA (link?). It will be fully operational by early
+* While aLIGO and AdV will follow the same schedule, they might be joined by KAGRA (link?). It will be fully operational by early
   2019 and will become part of the global network with full data sharing once its sensitivities are commensurate to that of LIGO and Virgo. 
 
 Prospects for observation and localization sensitivity:
