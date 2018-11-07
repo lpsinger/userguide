@@ -1,4 +1,3 @@
 healpy
 pygcn
 sphinx
-sphinxcontrib-mermaid
