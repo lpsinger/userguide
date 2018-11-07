@@ -6,7 +6,7 @@ Timeline
 
 * To prepare the Observation Run, we schedule two differents Engineering runs. The first one (ER13) will be attempted to start on Monday, the 17th of December, to last around 5 days. The second one (ER14) is scheduled for the middle of January, and without interruption will switch to the Observing Run.
 * The third Observational run of aLIGO/AdV called O3 is scheduled to begin in February 2019. O3 is expected to be a year long run with the LIGO detectors and the Virgo detector. 
-* Updtated schedule available online: https://dcc.ligo.org/DocDB/0152/G1800889/005/G1800889-v5.pdf
+* Updtated schedule `schedule <https://dcc.ligo.org/DocDB/0152/G1800889/005/G1800889-v5.pdf>`_ is available online.
 
 .. image:: https://www.ligo.org/scientists/G1801056-v3.png
    :alt: Current observing schedule
@@ -43,6 +43,5 @@ Interferometer Capabilities
 | **Kagra** | 8-25              |                   |
 +-----------+-------------------+-------------------+
 
-* The White paper provides an overview of current and near-future work by members of the LIGO Scientific Collaboration and Virgo Collaboration to analyze gravitational-wave data and produce astrophysical results: 
-https://dcc.ligo.org/LIGO-T1800058/public
+* The `White paper <https://dcc.ligo.org/LIGO-T1800058/public>`_ provides an overview of current and near-future work by members of the LIGO Scientific Collaboration and Virgo Collaboration to analyze gravitational-wave data and produce astrophysical results.
 
