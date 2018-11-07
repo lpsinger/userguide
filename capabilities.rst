@@ -27,8 +27,9 @@ Prospects for observation and localization sensitivity:
   these events to have 90% credible regions smaller than 20 square degrees.
   More information is available in `Prospects of Observation <https://arxiv.org/abs/1304.0670>`_
   as well as `here <https://link.springer.com/article/10.1007%2Fs41114-018-0012-9>`_
-  And in this `wiki <https://wiki.ligo.org/LSC/JRPComm/ObservingScenario>`_ 
-  Contact Marica Branchesi for the `new release <https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext>`_
+  And in this `wiki <https://wiki.ligo.org/LSC/JRPComm/ObservingScenario>`_.
+  Contact `Marica Branchesi <marica.branchesi@ligo.org>`_ for the
+  `new release <https://wiki.ligo.org/LSC/JRPComm/ObsScenarioUpdateNext>`_
   
 Interferometer Capabilities
 ---------------------------
