@@ -65,7 +65,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
             <Description>Probability that the event is consistent with an NSBH </Description>
         </Param>
         <Param name="P_bbh" dataType="float" value="1.0" ucd="stat.probability" unit="">
-            <Description>Probability that the event is consistent with an BBH </Description>
+            <Description>Probability that the event is consistent with a BBH </Description>
         </Param>
         <Group type="GW_SKYMAP" name="bayestar">
             <Param name="skymap_fits" dataType="string" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz" ucd="meta.ref.url" unit="">
