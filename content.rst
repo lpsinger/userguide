@@ -98,21 +98,22 @@ LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Pipeline          | :samp:`{{Gstlal,MBTA,PyCBC,SPIIR}}`                       | :samp:`{{cWB,oLIB}}`                                      |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| P_bns, P_nsbh,    | Classification: probability that the source is a          | N/A                                                       |
-| P_bbh             | :term:`BNS`, :term:`NSBH`, or :term:`NSBH` merger,        |                                                           |
-|                   | respectively                                              |                                                           |
-+-------------------+-----------------------------------------------------------+                                                           |
-| ProbHasNS         | Probability that the less massive companion has mass      |                                                           |
-|                   | :math:`<3 M_\odot`                                        |                                                           |
-+-------------------+-----------------------------------------------------------+                                                           +
-| ProbHasRemnant    | Probability that the system ejected a significant amount  |                                                           |
-|                   | of neutron star material                                  |                                                           |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | CentralFreq       | N/A                                                       | Central frequency in Hz                                   |
 +-------------------+                                                           +-----------------------------------------------------------+
 | Duration          |                                                           | Duration of burst in Hz                                   |
 +-------------------+                                                           +-----------------------------------------------------------+
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
++-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| **Why**           | Inference about the source                                                                                            |
++-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
+| Noise             | :term:`NSBH`, :term:`NSBH` merger, or just noise,         |                                                           |
+|                   | respectively (mutually exclusive)                         |                                                           |
++-------------------+-----------------------------------------------------------+                                                           +
+| HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
+|                   | noise, that at least one of the compact objects was a     |                                                           |
+|                   | neutron star, and that the system ejected a nonzero amount|                                                           |
+|                   | of neutron star matter, respectively.                     |                                                           |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 
 .. _`event name`:
