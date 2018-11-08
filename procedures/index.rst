@@ -9,9 +9,13 @@ Procedures
    superevents
    classification
 
-The LIGO-Virgo Collaboration will be implementing
-:doc:`Superevents </procedures/superevents>` from the beginning of the third
-observing run. All alerts are sent corresponding to the superevent.
+In this section we describe the different online searches looking for GW signal. 
+The corresponding triggers from multiple pipelines close enough in time will be 
+considered at originating from the same physical event and will be grouped in a 
+unique superevent. The alert will be then distributed as shown below.
+
+Alert timeline
+---------------
 
 Here, we described the sequence of the GW alert distributed the Gamma-ray
 Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
