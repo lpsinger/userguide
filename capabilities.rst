@@ -7,58 +7,68 @@ to the anticipated commissioning and observing schedule, sensitivity to
 gravitational-wave transients, and sky localization accuracy, as described in
 the following external documents:
 
-* `LSC-Virgo White Paper on Gravitational Wave Data Analysis and Astrophysics,
-  2018-2019 edition <https://dcc.ligo.org/LIGO-T1800058/public>`_
-* `Living Review: Prospects for Observing and Localizing Gravitational-Wave
-  Transients with Advanced LIGO, Advanced Virgo, and KAGRA
-  <https://doi.org/10.1007/s41114-018-0012-9>`_
-* `LIGO-VIRGO Working Plan Towards O3
-  <https://dcc.ligo.org/LIGO-G1801056/public>`_
+* `White Paper`_ on gravitational-wave data analysis and astrophysics
+* `Living Review`_: Prospects for observing and localizing gravitational-wave
+  transients with Advanced LIGO, Advanced Virgo, and KAGRA
+* `Working Plan Towards O3`_
 
 Timeline
 --------
 
-There will be two Engineering Runs as LIGO/Virgo transitions from commissioning
-to full-time observations. Engineering Run 13 (ER13) is scheduled to start
-2017-12-17 and last about 5 days. Engineering Run 14 (ER14) is scheduled for
-the middle of January and will transition without interruption to Observing Run
-3 (O3).
-
-During both Engineering Runs, the detectors and analysis software will
-be changing frequently. Consequently, during the Engineering Runs, we will send
-public alerts only for highly confident and scientifically significant events
-and with longer than normal latency.
-
-Advanced LIGO and Advanced Virgo's third observing run (O3) is scheduled to
-begin in February 2019. We expect that all three detectors will observe
-continuously and without significant interruptions for one year.
-
-It is possible that the Japanese KAGRA detector may come online and become part
-of the joint gravitational-wave analysis at some point during O3.
-
-The observing schedule as it is currently envisioned is shown in the timeline
+The gravitational-wave observing schedules is divided into Observing Runs,
+epochs of months to years of operation at fixed sensitivity; down time for
+construction and commissioning, and transitional Engineering Runs between
+commissioning and observing runs. The long-term observing schedule is shown
 below.
+
+.. image:: https://media.springernature.com/original/springer-static/image/art%3A10.1007%2Fs41114-018-0012-9/MediaObjects/41114_2018_12_Fig2_HTML.gif
+   :alt: Long-term observing schedule
+
+Engineering Run 13 (ER13) is scheduled to start 2017-12-17 and last about 5
+days. Engineering Run 14 (ER14) is scheduled for the middle of January 2018 and
+will transition without interruption to Observing Run 3 (O3).
+
+O3 is scheduled to begin in February 2019. We expect that all three detectors
+will observe continuously and without significant interruptions for one year.
+It is possible that the Japanese KAGRA detector may come online and become part
+of the joint gravitational-wave analysis at some point during O3. The near-term
+observing schedule is shown below.
 
 .. image:: https://www.ligo.org/scientists/G1801056-v3.png
    :alt: Current observing schedule
 
+.. important::
+   During both Engineering Runs, the detector configuration and analysis
+   software will be changing frequently. Consequently, during the Engineering
+   Runs, we will send public alerts only for highly confident and
+   scientifically significant events and with longer than normal latency.
+   However, at the transition to O3 occurs, we will switch to routine
+   low-latency data analysis and sending public alerts for all significant
+   gravitational-wave events.
+
 Sensitivity and Localization Accuracy
 -------------------------------------
 
-With expected ranges of the LIGO, Virgo and Kagra detectors as supplied in the
-the table below, a total of 1-50 BNS events during their operation is
-anticipated. It is also expected that the 90% median credible region of
-sky-localization for the BNS sources during O3 is 120-180 square degrees, with
-12-21% of these events to have 90% credible regions smaller than 20 square
-degrees. More information is available in this `Living Review Article
-<https://link.springer.com/article/10.1007%2Fs41114-018-0012-9>`_.
+The following O3 projections are adapted from the `Living Review`_ on prospects
+for observing and localizing gravitational-wave transients with Advanced LIGO,
+Advanced Virgo, and KAGRA. The range (luminosity distance of detectable
+sources, averaged over sky position and source orientation) given the
+detectors' anticipated sensitivity are listed in the table below.
 
 +-----------+-------------------+-------------------+
 | Detector  | BNS Range (Mpc)   | Burst Range (Mpc) |
-+===========+===================+===================+
-| **LIGO**  | 120-170           | 75-90             |
++===========+===================+===================+ 
+| **LIGO**  | 120–170           | 75–90             |
 +-----------+-------------------+-------------------+
-| **Virgo** | 65-85             | 40-50             |
+| **Virgo** | 65–85             | 40–50             |
 +-----------+-------------------+-------------------+
-| **Kagra** | 8-25              |                   |
+| **Kagra** | 8–25              |                   |
 +-----------+-------------------+-------------------+
+
+We expect 1–50 :term:`BNS` events over the course of O3. For BNS events, the
+median localization accuracy of in terms of the 90% credible area will be
+120–180 deg². 12–21% of BNS mergers will be localized to less than 20 deg².
+
+.. _`White Paper`: https://dcc.ligo.org/LIGO-T1800058/public
+.. _`Living Review`: https://doi.org/10.1007/s41114-018-0012-9
+.. _`Working Plan Towards O3`: https://dcc.ligo.org/LIGO-G1801056/public
