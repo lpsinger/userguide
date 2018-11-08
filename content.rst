@@ -19,7 +19,38 @@ alerts in the VOEvent XML format.
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
 .. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 
-GCN Notice Contents
+GCN Notice Types
+----------------
+
+For each event, there are up to 4 kinds of GCN Notices:
+
+A **Preliminary GCN Notice** is issued automatically within minutes after a
+gravitational-wave candidate is detected. The candidate must have passed some
+automated data quality checks, but it may later be `retracted <retraction>`_
+after human vetting.
+
+An **Initial GCN Notice** is issued within 4 hours of the preliminary alert,
+after vetting by human instrument scientists and data analysts. If the signal
+does not pass human vetting (i.e., it is a glitch), then instead of an initial
+alert there will be a retraction_.
+
+An **Update GCN Notice** is issued whenever further analysis leads to improved
+estimates of the source localization, significance, or classification. There
+may be multiple updates for a given event, and updates may be issued hours,
+days, or even weeks after the event.
+
+.. _retraction:
+
+Lastly, a **Retraction GCN Notice** is issued if the candidate is rejected as a
+result of vetting by human instrument scientists and data analysts. A
+retraction indicates that the candidate has been withdrawn because it is
+probably not astrophysical.
+
+.. note::
+   All types of GCN Notices *except for Preliminary notices* are accompanied by
+   human-readable GCN Circulars.
+
+Content description
 -------------------
 
 The table below is a diagrammatic representation of the contents of a
@@ -72,51 +103,6 @@ LIGO/Virgo GCN Notice.
 +-------------------+                                                           +-----------------------------------------------------------+
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-
-Preliminary Alert
------------------
-
-Within minutes after a gravitational wave trigger an automated, **preliminary
-alert** will be issued, in the form of a *notice* only. It will contain the
-`event name`_, trigger time and a link to the `source localization`_ "skymap"
-(if available). Being the result of a fully autonomous pipeline, this
-preliminary notice might be subsequently *retracted* after human vetting.
-
-Initial Alert
--------------
-
-Within 4 hours of the preliminary alert, after vetting by human instrument
-scientists and data analysts, an **initial alert** will be issued in the form
-of both a *circular* and a *notice*. Such initial alert could contain the
-possible *retraction* of the candidate, in case of e.g. data quality issues.
-The initial alert GCN circular is considered as the first publication of a
-candidate, and it can be cited as such.
-
-The initial alert circular and notice contain the following information:
-
-* `event name`_ and GraceDb identifier(s)
-* event significance_
-* `source classification`_
-* `source localization`_
-* (...)
-
-The alert may also contain a `data quality assessment`_.
-
-The purpose of the alerts is to allow for an effective electro-magnetic
-follow-up of the candidates: `quantitative intrinsic infomation on the sources
-that is not vital to this purpose`_ is thus not provided in the alerts.
-
-Alert update
-------------
-
-Whenever refined GW data analysis leads to improved estimates of the event
-localization, significance or classification, an alert update can be issued.
-The alert update is issued both as a circular and a notice, with the updated
-information. The update may also contain a retraction of the candidate.
-
-
-Content description
--------------------
 
 .. _`event name`:
 
