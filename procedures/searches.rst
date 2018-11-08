@@ -1,5 +1,5 @@
-Online pipelines and alert distribution 	
-=======================================
+Online pipelines 
+================
 
 
 During the third LIGO observation run a number of search pipelines will be
