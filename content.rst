@@ -22,17 +22,20 @@ alerts in the VOEvent XML format.
 GCN Notice Types
 ----------------
 
-For each event, there are up to 4 kinds of GCN Notices:
+For each event, there are up to four kinds of GCN Notices:
 
 A **Preliminary GCN Notice** is issued automatically within minutes after a
 gravitational-wave candidate is detected. The candidate must have passed some
-automated data quality checks, but it may later be `retracted <retraction>`_
-after human vetting.
+automated data quality checks, but it may later be :ref:`retracted
+<retraction>` after human vetting. There is no accompanying GCN Circular at
+this stage.
 
 An **Initial GCN Notice** is issued within 4 hours of the preliminary alert,
 after vetting by human instrument scientists and data analysts. If the signal
 does not pass human vetting (i.e., it is a glitch), then instead of an initial
-alert there will be a retraction_.
+alert there will be a retraction_. The initial alert is also accompanied by a
+GCN Circular which should be considered as the first formal publication of the
+candidate and can be cited as such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
 estimates of the source localization, significance, or classification. There
@@ -46,11 +49,19 @@ result of vetting by human instrument scientists and data analysts. A
 retraction indicates that the candidate has been withdrawn because it is
 probably not astrophysical.
 
-.. note::
-   All types of GCN Notices *except for Preliminary notices* are accompanied by
-   human-readable GCN Circulars.
+All types of GCN Notices *except for Retraction notices* contain the following
+information:
 
-Content description
+* `event name`_ and GraceDb identifier(s)
+* event significance_
+* `source classification`_
+* `source localization`_
+
+All types of GCN Notices *except for Preliminary notices* are accompanied by
+human-readable GCN Circulars, which restates all of the above information as
+well as a `data quality assessment`_.
+
+Content Description
 -------------------
 
 The table below is a diagrammatic representation of the contents of a
@@ -147,9 +158,11 @@ Additional information may be provided, if available:
 
 The source localization estimate is a posterior probability of the source
 projected position in the sky ("2D localization") or of the source position in
-space ("3D localization", currently only available if the source is a CBC). The
-probability distribution is encoded as a FITS file (...provide link to skymap
-documentation...).
+space ("3D localization", only available if the source is a CBC). The
+probability distribution is encoded using the :term:`HEALPix` projection and
+saved in a :term:`FITS` file whose URL is included in the GCN Notice. See
+:doc:`sample code for working with LIGO/Virgo source localization maps
+</tutorial/skymaps>`.
 
 .. _`data quality assessment`:
 
@@ -163,12 +176,13 @@ will. This is to be considered as advisory information.
 
 .. _`quantitative intrinsic infomation on the sources that is not vital to this purpose`:
 
-What will *not* be included in the alerts
------------------------------------------
+What will *not* be included in alerts
+-------------------------------------
 
-The alerts are not going to release quantitative estimates of intrinsic
-properties such as masses and spins, nor contain information on the GW strain
-or reconstructed waveforms.
+The alerts will not contain quantitative estimates of intrinsic properties such
+as masses and spins, nor contain information on the GW strain or reconstructed
+waveforms. After final analysis, those data products are released through the
+`Gravitational Wave Open Science Center <https://www.gw-openscience.org/>`_.
 
 Example Alerts
 --------------

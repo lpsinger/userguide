@@ -9,6 +9,10 @@ Glossary
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
 
+    FITS
+        Flexible Image Transport System, a format for astronomical tables,
+        images, and multidimensional data sets.
+
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
         <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
