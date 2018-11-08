@@ -18,48 +18,18 @@ Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
 content </content>` and :doc:`Technical </tutorial/index>`). Alerts should
 contain all of the information that is useful for searching for a counterpart.
 
-Within minutes after GW trigger time: No human inspection!
-----------------------------------------------------------
 
-1. The first :doc:`preliminary notice </content>` will be sent fully
-   autonomously (not necessary attached to localization). The trigger will be
-   immediately visible under the LIGO/Virgo GW database :term:`GraceDb`.
-2. Second and others preliminaries: same content but does contain a
-   localization (BAYESTAR for CBC events).
+**Within minutes after GW trigger time**, the first :doc:`preliminary notice </content>` will be sent fully autonomously (not necessary attached to localization). The trigger will be immediately visible under the LIGO/Virgo GW database :term:`GraceDb`. As soon as the skymap localization area is available, a second preliminary notice is sent. The procedure is fully automatic and some preliminary alerts may be retracted after human inspection for data quality, instrumental conditions, and pipeline behavior.
 
-Beware! Some preliminary alerts may be retracted after human inspection for
-data quality, instrumental conditions, and pipeline behavior.
+**Within 4 hours after the GW trigger time**, the :doc:`Initial notices and circulars </content>` will be distributed with an update for the sky
+  localization area and the source classification. They are vetted by human instrument scientists and analysts. In case of a binary coalescence including a neutron star or a burst trigger, the initial circular can labeled as **retractated** (data are unsuitable) or **confirmed**. Note that the initial circular is considered the first LIGO/Virgo publication of a GW candidate, appropriate to cite in publications.
 
-Within 4 hours after the GW trigger time: vetted by human instrument scientists and analysts
---------------------------------------------------------------------------------------------
+**Within a day**, black hole mergers will be fully vetted by experts and retraction or confirmation status will be reported.
 
-* :doc:`Initial notices and circulars </content>` with an update for the sky
-  localization area and the source classification.
-* Possible **retractation** (data are unsuitable) or **confirmation** of the
-  event for BNS or Burst triggers Note that the initial Circular is
-  considered the first publication of a GW candidate, appropriate to cite in
-  publications
+:doc:`Update notice and circulars </content>  are sent whenever the sky localization area or significance accuracy improves (e.g. as a result of improved calibration, de-glitching, or computationally deeper parameter estimation).  Updates will be sent up until the position is determined more accurately by public announcement of an unambiguous counterpart. At which point they will stop until publication of the event.
 
-After 4 hours : manual updates for sky localization area
---------------------------------------------------------
 
-* Sent whenever localization or significance accuracy improves (e.g. as a
-  result of improved calibration, de-glitching, or computationally deeper
-  parameter estimation)
-* Updates will be sent up until the position is determined more accurately by
-  public announcement of an unambiguous counterpart, at which point they will
-  stop until publication of the event
-* Possible retraction for BBH events within a day
-
-Special case : promotion of sub-thresholds candidates
------------------------------------------------------
- 
-* We can elect to promote a candidate that does not pass our OPA thresholds
-  if it is compellingly associated with a multimessenger signal (e.g. GRB,
-  core-collapse SN)
-  
-* The procedure will start from the :doc:`Initial notices and circulars
-  </content>` sequence.
+**Any time**, we can elect to promote an extraordinary candidate that does not pass our OPA thresholds if it is compellingly associated with a multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial notices and circulars </content> will be distributed.
   
 .. image:: /_static/Flowchartprocv2.jpg
    :alt: Alert Flowchart
