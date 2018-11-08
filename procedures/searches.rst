@@ -32,7 +32,7 @@ different kinds of signal-based vetoes to reject instrumental transients
 which cause large SNR values but can otherwise be easily distinguished from
 compact binary coalescence signals.
 
-**GSTLAL** `[1]`_ , `[2]`_ ,`[3]`_ is a matched-filter pipeline designed to 
+**GSTLAL** `[1]`_ , `[2]`_ , `[3]`_ is a matched-filter pipeline designed to 
 find gravitational-waves from compact binaries in low-latency. It uses the 
 likelihood-ratio, which increases monotonically with signal probability, to rank 
 candidates, and then uses Monte Carlo sampling methods to estimate the 
