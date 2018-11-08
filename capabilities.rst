@@ -1,5 +1,5 @@
-Observational Capabilities
-==========================
+Observing Capabilities
+======================
 
 This section summarizes the observing capabilities of the global
 gravitational-wave detector network as of late 2018. This as a quick reference
