@@ -54,8 +54,8 @@ information, which are described in further detail below:
 
 * Name_: a unique identifier for the candidate
 * Significance_: estimated false alarm rate
+* Localization_: inferred sky position and (:term:`CBC` candidates only) distance
 * Inference_: inferred source classification and properties (:term:`CBC` candidates only)
-* Localization_: sky position and (:term:`CBC` candidates only) distance
 
 All types of GCN Notices *except for Preliminary notices* are accompanied by
 human-readable GCN Circulars, which restates all of the above information as
@@ -142,37 +142,48 @@ any astrophysical signals. If the estimated FAR is less than
 event as "highly significant." Otherwise, the value of the FAR will be stated
 in the Circular.
 
-Inference
-~~~~~~~~~
-
-If the event is identified as a Compact Binary Coalescence (CBC), a source
-classification is provided. The classification is a qualitative statement
-whether the signal is consistent with a Binary of two Neutron Stars (BNS), of a
-Black Hole and a Neutron Star (NSBH or BHNS) or of two Black Holes (BBH).
-Additional information may be provided, if available:
-
-* the probability that the least massive member of the binary has a mass
-  consistent with a Neutron Star (NS);
-* the probability that some mass is left outside the remnant (we label this
-  probability "Disk-Mass-Probability", since the presence of mass makes the
-  possibility of electro-magnetic emission more likely);
-* the first two probabilities are clubbed together under the broader name of
-  "EM-Bright" probability.
-* the probability ("P_astro") that the event is of astrophysical origin based
-  on both the noise background properties and the observed CBC rate.
-
 Localization
 ~~~~~~~~~~~~
 
-The source localization estimate is a posterior probability of the source
-projected position in the sky ("2D localization") or of the source position in
-space ("3D localization", only available if the source is a CBC). The
-probability distribution is encoded using the :term:`HEALPix` projection and
-saved in a :term:`FITS` file whose URL is included in the GCN Notice. See
-:doc:`sample code for working with LIGO/Virgo source localization maps
-</tutorial/skymaps>`.
+The localization is consists of the posterior probability distribution of the
+source's sky position ("2D localization") or of the source's sky position and
+luminosity distance ("3D localization," available only for :term:`CBC` events).
+The GCN Notice and Circular will provide a URL for the localization file stored
+in GraceDb. The localization is saved a :term:`FITS` file as a :term:`HEALPix`
+all-sky image. See our :doc:`sample code </tutorial/skymaps>` for instructions
+on working with localization files.
 
-.. _`data quality assessment`:
+Inference
+~~~~~~~~~
+
+The inference section is present for :term:`CBC` events *only*. It has two
+parts:
+
+**Classification**: Four numbers, summing to unity, giving probability that the
+source belongs to the following four categories:
+
+* :term:`BNS` merger
+* :term:`NSBH` merger
+* :term:`BBH` merger
+* noise (i.e., a chance background fluctuation or a glitch)
+
+**Properties**: Probabilities that the source has each of the following
+properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
+NSBH, or BBH merger):
+
+* **HasNS**: The mass of one or more of the binary's two companion compact
+  objects is consistent with a neutron star.
+* **HasRemnant**: A nonzero amount of neutron star material remained outside
+  the final remnant compact object (a necessary but not sufficient condition to
+  produce certain kinds of electromagnetic emission such as a short GRB or a
+  kilonova).
+
+All of the quantities in the Classification and Properties sections are model
+dependent to some extent: the Classification section takes into consideration
+prior knowledge of astrophysical compact binary merger rates from previous
+LIGO/Virgo observations, and both the Classification and Properties sections
+depend on details of neutron star physics (e.g. maximum NS mass, equation of
+state).
 
 Data quality assessment
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -182,8 +193,6 @@ issues that may affect the significance estimates or the GW parameter
 inferences. Unresolved data quality issues could mean that localization
 estimates may shift after they have been mitigated, but does not mean that they
 will. This is to be considered as advisory information.
-
-.. _`quantitative intrinsic infomation on the sources that is not vital to this purpose`:
 
 What is *not* included in alerts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
