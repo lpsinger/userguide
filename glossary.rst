@@ -9,6 +9,9 @@ Glossary
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
 
+    CBC
+        Compact binary coalescence.
+
     FITS
         Flexible Image Transport System, a format for astronomical tables,
         images, and multidimensional data sets.

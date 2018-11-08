@@ -19,8 +19,8 @@ alerts in the VOEvent XML format.
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
 .. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 
-GCN Notice Types
-----------------
+Notice Types
+------------
 
 For each event, there are up to four kinds of GCN Notices:
 
@@ -50,19 +50,19 @@ retraction indicates that the candidate has been withdrawn because it is
 probably not astrophysical.
 
 All types of GCN Notices *except for Retraction notices* contain the following
-information:
+information, which are described in further detail below:
 
-* `event name`_ and GraceDb identifier(s)
-* event significance_
-* `source classification`_
-* `source localization`_
+* Name_: a unique identifier for the candidate
+* Significance_: estimated false alarm rate
+* Inference_: inferred source classification and properties (:term:`CBC` candidates only)
+* Localization_: sky position and (:term:`CBC` candidates only) distance
 
 All types of GCN Notices *except for Preliminary notices* are accompanied by
 human-readable GCN Circulars, which restates all of the above information as
 well as a `data quality assessment`_.
 
-Content Description
--------------------
+Notice Contents
+---------------
 
 The table below is a diagrammatic representation of the contents of a
 LIGO/Virgo GCN Notice.
@@ -84,7 +84,7 @@ LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | **What**                                                                                                                                  |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| GraceID           | GraceDb ID: :samp:`[{{T,M}}]S{YYMMDDabc}`                                                                             |
+| GraceID           | GraceDb ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                               |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Packet Type       | GCN Notice type: :samp:`{{Preliminary,Initial,Update}}`                                                               |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
@@ -116,26 +116,34 @@ LIGO/Virgo GCN Notice.
 |                   | of neutron star matter, respectively.                     |                                                           |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 
-.. _`event name`:
+Name
+~~~~
 
-**Event name**
+The name of an event is its :term:`GraceDb` ID, a uniquely assigned identifier
+such as :samp:`MS181101abc`. A GraceDb ID has three parts:
 
-Events will be labeled based on the trigger time (...).
+* Prefix: ``S`` for normal candidates and ``MS`` or ``TS`` for mock or test
+  events respectively. The S stands for `superevent <superevents>`_.
 
+* Date: The six-digit UTC date of the event consisting of a two-digit year,
+  month, and day of month.
 
-.. _significance:
+* Suffix: A lowercase alphabetic string that is incremented automatically
+  (``a``, ``b``, ..., ``z``, ``aa``, ``ab``, ... ``az``, ``aaa``, etc.)
+  whenever a candidate on a given date is added to GraceDb.
 
-**Significance**
+Significance
+~~~~~~~~~~~~
 
-The significance of the event will be given in the form of a associated False
-Alarm Rate (FAR), that is the expected rate of events with the same
-significance due to noise only. If the estimated FAR is less than one in a
-hundred years, the event will be simply described as "highly significant".
-Otherwise, the FAR number will be stated in the circular.
+The significance of the event is quantified by its false alarm rate (FAR): the
+expected rate of events with equal or greater significance in the absence of
+any astrophysical signals. If the estimated FAR is less than
+:math:`(100\,\mathrm{yr})^{-1}`, then the Circular will simply describe the
+event as "highly significant." Otherwise, the value of the FAR will be stated
+in the Circular.
 
-.. _`source classification`:
-
-**Source classification**
+Inference
+~~~~~~~~~
 
 If the event is identified as a Compact Binary Coalescence (CBC), a source
 classification is provided. The classification is a qualitative statement
@@ -153,9 +161,8 @@ Additional information may be provided, if available:
 * the probability ("P_astro") that the event is of astrophysical origin based
   on both the noise background properties and the observed CBC rate.
 
-.. _`source localization`:
-
-**Source localization**
+Localization
+~~~~~~~~~~~~
 
 The source localization estimate is a posterior probability of the source
 projected position in the sky ("2D localization") or of the source position in
@@ -167,7 +174,8 @@ saved in a :term:`FITS` file whose URL is included in the GCN Notice. See
 
 .. _`data quality assessment`:
 
-**Data quality assessment**
+Data quality assessment
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Circulars may contain concise descriptions of any instrument or data quality
 issues that may affect the significance estimates or the GW parameter
@@ -177,16 +185,16 @@ will. This is to be considered as advisory information.
 
 .. _`quantitative intrinsic infomation on the sources that is not vital to this purpose`:
 
-What will *not* be included in alerts
--------------------------------------
+What is *not* included in alerts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The alerts will not contain quantitative estimates of intrinsic properties such
 as masses and spins, nor contain information on the GW strain or reconstructed
 waveforms. After final analysis, those data products are released through the
 `Gravitational Wave Open Science Center <https://www.gw-openscience.org/>`_.
 
-Example Alerts
---------------
+Examples
+--------
 
 Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
