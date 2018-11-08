@@ -32,7 +32,7 @@ different kinds of signal-based vetoes to reject instrumental transients
 which cause large SNR values but can otherwise be easily distinguished from
 compact binary coalescence signals.
 
-**GSTLAL** (`[1]`_,`[2]`_,`[3]`_) is a matched-filter pipeline designed to 
+**GSTLAL** `[1]`_ , `[2]`_ ,`[3]`_ is a matched-filter pipeline designed to 
 find gravitational-waves from compact binaries in low-latency. It uses the 
 likelihood-ratio, which increases monotonically with signal probability, to rank 
 candidates, and then uses Monte Carlo sampling methods to estimate the 
@@ -41,11 +41,11 @@ to compute a false alarm rate and p-value.
 
 **SPIIR** is TBcompleted.
 
-**MBTA** (`[4]`_) constructs its background by making every possible coincidence 
+**MBTA** `[4]`_ constructs its background by making every possible coincidence 
 from single detector triggers over few hours of recent data. It then folds in 
 the probability of a pair of triggers passing the time coincidence test.
 
-**PyCBC Live** (`[5]`_,`[6]`_) estimates the background of accidental 
+**PyCBC Live** `[5]`_ , `[6]`_ estimates the background of accidental 
 coincidences through the process of time slides between single-detector 
 triggers. Triggers are time shifted by every possible multiple of 100 ms that is
 greater than the ∼10 ms of light travel time between the two LIGO
@@ -55,7 +55,7 @@ in the same way a candidate event would be.
 Unmodeled search
 ----------------
 
-**cWB** (`[7]`_) is a power excess algorithm focused to identify 
+**cWB** `[7]`_ is a power excess algorithm focused to identify 
 gravitational-like signals with short time duration. It uses a wavelet 
 transformation to identify time-frequency pixels which can be grouped in a 
 single cluster if they satisfy neighbouring conditions. A tuned version for 
@@ -66,7 +66,7 @@ the event, in particular the probability of the source direction and the
 coherent network signal-to-noise ratio. The last one is used to assign detection 
 significance to the found events.
 
-**oLIB** (`[8]`_) uses Q transform to decompose GW strain data into 
+**oLIB** `[8]`_ uses Q transform to decompose GW strain data into 
 several time-frequency planes of constant quality factors Q, where Q ∼ τf0. 
 The pipeline flags data segments containing excess power and searches for 
 clusters of these segments with identical f0 and Q spaced within 100 ms 
