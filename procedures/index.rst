@@ -50,9 +50,9 @@ accurately by public announcement of an unambiguous counterpart. At which point
 they will stop until publication of the event.
 
 **Any time**, we can **promote** an extraordinary candidate that does not pass
-our OPA thresholds if it is compellingly associated with a multimessenger
-signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial notices and
-circulars </content>` will be distributed.
+our public alert thresholds if it is compellingly associated with a
+multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial
+notices and circulars </content>` will be distributed.
   
 .. image:: /_static/Flowchartprocv2.jpg
    :alt: Alert Flowchart
