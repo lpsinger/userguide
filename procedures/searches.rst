@@ -66,14 +66,14 @@ the event, in particular the probability of the source direction and the
 coherent network signal-to-noise ratio. The last one is used to assign detection
 significance to the found events.
 
-**oLIB** `[8]`_ uses Q transform to decompose GW strain data into
-several time-frequency planes of constant quality factors Q, where Q ∼ τf0.
-The pipeline flags data segments containing excess power and searches for
-clusters of these segments with identical f0 and Q spaced within 100 ms
-of each other. Coincidences among the detector network of clusters with a
-time-of-flight window up to 10 ms are then analyzed with a coherent (i.e.,
-correlated across the detector network) signal model to identify possible GW
-candidate events.
+**oLIB** `[8]`_ uses Q transform to decompose GW strain data into several
+time-frequency planes of constant quality factors :math:`Q`, where
+:math:`Q \sim \tau f_0`. The pipeline flags data segments containing excess
+power and searches for clusters of these segments with identical :math:`f_0`
+and :math:`Q` spaced within 100 ms of each other. Coincidences among the
+detector network of clusters with a time-of-flight window up to 10 ms are then
+analyzed with a coherent (i.e., correlated across the detector network) signal
+model to identify possible GW candidate events.
 
 .. _`[1]`: https://doi.org/10.1103/PhysRevD.95.042001
 .. _`[2]`: https://dcc.ligo.org/LIGO-P1700411
