@@ -183,7 +183,7 @@ dependent to some extent: the Classification section takes into consideration
 prior knowledge of astrophysical compact binary merger rates from previous
 LIGO/Virgo observations, and both the Classification and Properties sections
 depend on details of neutron star physics (e.g. maximum NS mass, equation of
-state). See the earlier :doc:`procedures </procedures/classification>` for
+state). See the earlier :doc:`procedures </procedures/inference>` for
 implementation details.
 
 Data quality assessment

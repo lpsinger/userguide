@@ -7,7 +7,7 @@ Procedures
 
    searches
    superevents
-   classification
+   inference
 
 In this section we describe the different online searches looking for GW signal. 
 The corresponding triggers from multiple pipelines close enough in time will be 

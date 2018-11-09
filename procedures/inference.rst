@@ -1,5 +1,5 @@
-Source Classification
-=====================
+Inference
+=========
 
 For the computation of the EM-Bright probability we use a fitting formula
 proposed by Foucart, Hinderer and Nissanke (arXiv:1807.00011). Both the
