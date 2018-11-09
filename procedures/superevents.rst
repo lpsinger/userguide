@@ -1,32 +1,36 @@
 Superevents
 ===========
 
-*Superevents* are a new abstraction of gravitational-wave candidates introduced
-in the third LIGO/Virgo observing (O3). Each superevent is intended to represent
-a single astrophysical event. A superevent consists of one or more event
-candidates, possibly from :doc:`different pipelines </procedures/searches>`,
-that are neighbors in `gpstime`. One event belonging to the superevent is
-identified as the preferred event.
+Superevents are a new abstraction to unify gravitational-wave candidates from
+multiple search pipelines. Each superevent is intended to represent a single
+astrophysical event.
 
-In the event of multiple triggers from the different low-latency search pipelines,
-the *preferred event* is selected based on the following:
+A superevent consists of one or more event candidates, possibly from
+:doc:`different pipelines </procedures/searches>`, that are neighbors in time.
+At any given time, one event belonging to the superevent is identified as the
+*preferred event*. The superevent inherits properties from the preferred event
+such as time, significance, localization, and classification.
 
-* Superevents corresponding to single-interferometer events are created if search
-  pipelines upload such an event.
-* A multi-interferometer trigger is always preferred over a single-interferometer
-  trigger irrespective of the type of search.
-* When comparing multi-interferometer triggers, modeled searches from CBC
-  search pipelines are preferred over unmodeled Burst searches.
-  (see :doc:`Searches </procedures/searches>` for details on search types).
-* When comparing multi-interferometer triggers from the same search category, the
-  tie is broken based on the false alarm rate (FAR) statistic for Burst and
-  the signal to noise ratio (SNR) for CBC.
+When multiple online searches report events at the same time, the preferred
+event is decided by applying the following rules, in order:
 
+1. Events that are detected in multiple interferometers are preferred over an
+   events from a single interferometer.
+2. Events from modeled :term:`CBC` searches are preferred over events from
+   unmodeled Burst searches (see :doc:`Searches </procedures/searches>` for
+   details on search pipelines).
+3. In the case of multiple CBC events, the event with the highest signal to
+   noise ratio (SNR) is preferred. In the case of multiple Burst events, the
+   event with the lowest false alarm rate (FAR) is preferred.
 
-Notes
------
-Preliminary GCN is issued for superevents when events meet a significance lower
-than a false alarm rate threshold.
-The preferred event is subjected to change as search pipelines upload triggers.
-In case of an *offline* trigger upload from a pipeline, no preliminary GCN will
-be sent.
+.. note::
+   A Preliminary GCN is automatically issued for superevents when the false
+   alarm rate is lower than a threshold value.
+
+.. note::
+   The preferred event may change after a preliminary alert has been sent, but
+   the name of the superevent will stay the same.
+
+.. note::
+   In case of an *offline* trigger upload from a pipeline, no
+   preliminary GCN will be sent.
