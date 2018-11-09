@@ -24,9 +24,9 @@ below.
 .. image:: https://media.springernature.com/original/springer-static/image/art%3A10.1007%2Fs41114-018-0012-9/MediaObjects/41114_2018_12_Fig2_HTML.gif
    :alt: Long-term observing schedule
 
-Engineering Run 13 (ER13) is scheduled to start 2017-12-17 and last about 5
-days. Engineering Run 14 (ER14) is scheduled for the middle of January 2018 and
-will transition without interruption to Observing Run 3 (O3).
+Engineering Run 13 (ER13) is scheduled to start 2018-12-17 and last about 5
+days. Engineering Run 14 (ER14) is scheduled not before end of Frebruary 2019 
+and will transition without interruption to Observing Run 3 (O3).
 
 O3 is scheduled to begin in February 2019. We expect that all three detectors
 will observe continuously and without significant interruptions for one year.
