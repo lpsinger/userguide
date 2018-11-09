@@ -36,4 +36,4 @@ star in the binary from the **EM-Bright** pipeline and the source type
 classification (BNS/NSBH/BBH) from the **P_astro** pipeline will be used for
 consistency checks.
 
-.. _`Foucart et al. (2018)`: https://arxiv.org/abs/1807.00011
+.. _`Foucart et al. 2018`: https://arxiv.org/abs/1807.00011
