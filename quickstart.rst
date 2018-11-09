@@ -1,4 +1,4 @@
-Quick start
+Quick Start
 ===========
 
 Here, we give the essential so that astronomers can have start quickly to
