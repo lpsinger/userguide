@@ -31,7 +31,7 @@ compute astrophysical probabilities for each new candidate event -- this step
 is what determines the latency of P_astro, which is negligible ( << 1 second)
 
 We plan to combine P_astro and EM-Bright under one umbrella of source
-classification in the near future. The probabiity of the presence of neutron
+classification in the near future. The probability of the presence of neutron
 star in the binary from the EM-Bright pipeline and the source type
 classification (BNS/NSBH/BBH) from the P_astro pipeline will be used for
 consistency checks.
