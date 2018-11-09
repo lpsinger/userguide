@@ -1,10 +1,55 @@
-Quick Start
-===========
+Getting Started Checklist
+=========================
 
-Here, we give the essential so that astronomers can have start quickly to
-receive and respond to O3 alerts
+In addition to reading this user guide, we encourage you to sign up for a
+certain e-mail lists and community resources. Make sure that you have completed
+the items on this checklist.
 
-* Link to GCN alerts registration
-* Link to content of the notices and alerts 
-* Link to gracedb database
-* anything else ? lv-em forum
+.. rubric:: 1. Read This User Guide
+
+Pay particular attention to the :doc:`content` section of this user guide to
+familiarize yourself with the contents of machine-readable LIGO/Virgo
+:term:`GCN Notices <GCN Notice>`. Play with the :doc:`tutorial/index` to
+receive example GCN Notices and practice working with :doc:`localization maps
+<tutorial/skymaps>`.
+
+.. rubric:: 2. Subscribe to GCN Circulars
+
+`Subscribe to GCN Circulars`_ and review the `instructions for posting GCN
+Circulars`_. A :term:`GCN Circular` is a short, public bulletin to rapidly
+report an astronomical observation. GCN Circulars are distributed by email and
+`archived online`_. [#f1]_ LIGO/Virgo uses GCN Circulars to announce
+detections, and the astronomy community expects participants to promptly
+disseminate preliminary reports of follow-up observations of LIGO/Virgo
+counterparts using GCN Circulars as well.
+
+.. important::
+   GCN Circulars can only be posted from registered email addresses. You
+   *must* sign up for GCN Circulars *in advance* in order to post to the list.
+
+.. rubric:: 3. Join the LV-EM Forum
+
+Register for the `LV-EM Forum`_. LIGO/Virgo will use this email list to share
+important announcements and solicit input. It is also a great place to ask
+question or discuss issues related to LIGO/Virgo public alerts.
+
+.. rubric:: 4. Visit GraceDb
+
+Familiarize yourself with GraceDb_, LIGO/Virgo's online portal for alerts and
+real-time results.
+
+.. note::
+   The public interface of GraceDb is under development and will be complete
+   some time before O3 starts. Please check back periodically.
+
+.. [#f1] GCN Circulars are similar to `Astronomer's Telegrams`_ (ATels). By
+         longstanding convention, the gamma-ray burst and gravitational-wave
+         anstronomy communities use GCNs, whereas the supernova community uses
+         ATels.
+
+.. _`Subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
+.. _`instructions for posting GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
+.. _`archived online`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
+.. _`LV-EM Forum`: https://gw-astronomy.org/
+.. _GraceDb: https://gracedb.ligo.org
+.. _`Astronomer's Telegrams`: http://www.astronomerstelegram.org
