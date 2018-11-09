@@ -75,12 +75,12 @@ time-of-flight window up to 10 ms are then analyzed with a coherent (i.e.,
 correlated across the detector network) signal model to identify possible GW 
 candidate events.
 
-.. _`[1]`: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.95.042001
+.. _`[1]`: https://doi.org/10.1103/PhysRevD.95.042001
 .. _`[2]`: https://dcc.ligo.org/LIGO-P1700411
 .. _`[3]`: https://dcc.ligo.org/LIGO-P1700412
-.. _`[4]`: http://iopscience.iop.org/article/10.1088/0264-9381/33/17/175012/meta
-.. _`[5]`: http://iopscience.iop.org/article/10.3847/1538-4357/aa8f50/meta
+.. _`[4]`: http://doi.org/10.1088/0264-9381/33/17/175012
+.. _`[5]`: https://doi.org/10.3847/1538-4357/aa8f50
 .. _`[6]`: https://arxiv.org/abs/1705.01845
-.. _`[7]`: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.93.042004
-.. _`[8]`: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.95.104046
+.. _`[7]`: https://doi.org/10.1103/PhysRevD.93.042004
+.. _`[8]`: https://doi.org/10.1103/PhysRevD.95.104046
 
