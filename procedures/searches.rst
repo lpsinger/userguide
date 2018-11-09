@@ -20,7 +20,7 @@ analysis pipelines that rapidly identify compact binary merger events, with
 sub-minute to ∼1 minute latencies. They use discrete banks of waveform templates 
 to cover the target parameter space of compact binaries, with all pipelines 
 covering the mass ranges corresponding to BNS, NS-BH, and stellar mass BBH 
-systems. However, GstLAL and PyCBC Live also include intermediatemass BBH 
+systems. However, GstLAL and PyCBC Live also include intermediate-mass BBH 
 systems and the O2 banks differ in detail from pipeline to pipeline.
 
 A coincident analysis is performed by each pipeline, where candidate events
@@ -58,7 +58,7 @@ Unmodeled search
 **cWB** `[7]`_ is a power excess algorithm focused to identify 
 gravitational-like signals with short time duration. It uses a wavelet 
 transformation to identify time-frequency pixels which can be grouped in a 
-single cluster if they satisfy neighbouring conditions. A tuned version for 
+single cluster if they satisfy neighboring conditions. A tuned version for 
 compact-binary coalescences chooses the time-frequency pixels if they mainly 
 follow a frequency increasing pattern. A maximum-likelihood-statistics 
 calculated over the cluster is used to identify the proper parameter of 
