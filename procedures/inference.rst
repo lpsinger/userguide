@@ -21,7 +21,7 @@ involves:
 
 EM_Bright
 ---------
-**EM-Bright** gives two probablities: that of the secondary object being
+**EM-Bright** gives two probabilities: that of the secondary object being
 a neutron star, `HasNS` and that of having remnant matter after
 merger, `HasRemnant`.
 
