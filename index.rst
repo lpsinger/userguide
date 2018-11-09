@@ -51,6 +51,11 @@ Contents
 Appendix
 --------
 
+.. toctree::
+   :hidden:
+
+   glossary
+
 * :doc:`glossary`
 * :ref:`search`
 * `Report issues <contact+emfollow/userguide@support.ligo.org>`_
