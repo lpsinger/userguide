@@ -1,38 +1,45 @@
 Inference
 =========
 
-P_astro
--------
+For :term:`CBC` events, we calculate a number of quantities that are inferred
+from the signal. In preliminary alerts, these quantities are based on the
+candidate significance and the matched-filter estimates of the source
+parameters. Once parameter estimation has been completed, updated values will
+be provided based on samples drawn from the posterior probability distribution.
 
-**P_astro** gives the categorical (BBH, BNS, NSBH) posterior probabilities
-that a candidate event is of astrophysical origin. The underlying principle
-involves:
+Classification
+--------------
 
-* The assumption that terrestrial and astrophysical events occur as
-  independent Poisson processes.
- 
-* Mass-based weighting of templates, which are used to compute the
-  mean of the expected counts associated with the categories. These
-  weights are dynamic and are determined on a weekly basis.
+The classification consists of four numbers, summing to unity, that give the
+probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
+or terrestrial (i.e. a background fluctuation or a glitch).
 
-* The mean values are then used to predict the category for a
-  new trigger uploaded by :doc:`search pipelines </procedures/searches>`.
+This assumes that terrestrial and astrophysical events occur as independent
+Poisson processes. A mass-based weighting of matched-filter templates
+represents the expected counts associated with each of these four categories.
+These weights are updated weekly based on observed matched-filter count rates.
+The mean values are then used to predict the category for new triggers
+uploaded by :doc:`search pipelines </procedures/searches>`.
 
+Properties
+----------
 
-EM_Bright
----------
-**EM-Bright** gives two probabilities: that of the secondary object being
-a neutron star, `HasNS` and that of having remnant matter after
-merger, `HasRemnant`.
+The source properties consist of a set of numbers, each between zero and unity,
+that give the probabilities that the source satisfies certain conditions. These
+conditions are:
 
-* For the computation of `HasNS`, we simply report the probability of
-  the secondary mass component satifying, :math:`m_2 \leq 3 M_{\odot}`.
+**HasNS**: At least one of the compact objects in the binary (that is, the less
+massive or *secondary* compact object) has a mass that is consistent with a
+neutron star. Specifically, we define this as the probability that the
+secondary mass satisfies :math:`m_2 \leq 3 M_{\odot}`.
 
-* For `HasRemnant`, we use a fitting formula for the remnant disk mass
-  proposed by `Foucart et al. 2018`_ (see Eq. 4 therein).
+**HasRemnant**: The probability that the source ejected a nonzero mass outside
+the final remnant compact object. This is calculated using the disk mass
+fitting formula from `Foucart et al. 2018`_ (Equation 4).
 
-* We use supervised learning to compute the probabilities.
-
-* The training is done assuming rate of events reported by the **P_astro**.
+For preliminary estimates based on the matched-filter pipeline results, the
+source properties are calculated using a supervised learning technique;
+mass-dependent rates are the same as those used for the classification. For
+parameter estimation, updated properties are calculated from posterior samples.
 
 .. _`Foucart et al. 2018`: https://arxiv.org/abs/1807.00011
