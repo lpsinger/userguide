@@ -6,6 +6,8 @@ image: python:slim
 
 build:
   stage: build
+  variables:
+    SPHINXOPTS: -W
   script:
     - pip install -r requirements.txt
     - sphinx-build -M html . _build
