@@ -3,7 +3,7 @@ Inference
 
 **P_astro** computes the posterior conditional probability that a candidate
 event is of astrophysical origin, given a list of :doc:`online pipelines
-</procedures/searches>, assuming that terrestrial and astrophysical events
+</procedures/searches>`, assuming that terrestrial and astrophysical events
 occur as independent Poisson processes. In addition, with the help of
 mass-based template-weights computed using either injection campaigns or some
 other possibly analytical method, this astrophysical probability is
