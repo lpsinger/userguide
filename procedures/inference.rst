@@ -1,39 +1,38 @@
 Inference
 =========
 
-**P_astro** computes the posterior conditional probability that a candidate
-event is of astrophysical origin, given a list of :doc:`online pipelines
-</procedures/searches>`, assuming that terrestrial and astrophysical events
-occur as independent Poisson processes. In addition, with the help of
-mass-based template-weights computed using either injection campaigns or some
-other possibly analytical method, this astrophysical probability is
-redistributed across CBC source-types (BNS, NSBH and BBH). There are two
-aspects to the computation of **P_astro**. The first involves the computation
-of the mean values of the Poisson expected counts for each source-category,
-using all available GW triggers above a predefined ranking-statistic
-threshold. This is planned to take place once a week during maintenance of
-detectors. The second involves using these mean values to compute
-astrophysical probabilities for each new candidate event -- this step is what
-determines the latency of **P_astro**, which is negligible ( << 1 second)
+P_astro
+-------
 
-For the computation of the **EM-Bright** probability during O3, we use a
-fitting formula proposed by `Foucart et al. 2018`_. Both the EM-Bright
-probability and the probability of the secondary object being a neutron star
-are computed for the detection pipeline point estimates. We are in the process
-of integrating a new functionality that will allow supervised learning to
-compute the probabilities in a robust fashion. This improves the previous
-method based on ellipsoids on multiple counts. First, it could be several
-orders of magnitude faster. The ellipsoid method could take as much as tens of
-minutes for low mass systems, while the supervised learning method computes
-the probability practically instantaneously. Second, the supervised learning
-method shows evidence of being more robust to pipeline systematics. Third,
-supervised learning will enable us to incorporate rates of events from the
-**P_astro** pipeline directly in the training process.
+**P_astro** gives the categorical (BBH, BNS, NSBH) posterior probabilities
+that a candidate event is of astrophysical origin. The underlying principle
+involves:
 
-We plan to combine **P_astro** and **EM-Bright** under one umbrella of source
-classification in the near future. The probabiity of the presence of neutron
-star in the binary from the **EM-Bright** pipeline and the source type
-classification (BNS/NSBH/BBH) from the **P_astro** pipeline will be used for
-consistency checks.
+* The assumption that terrestrial and astrophysical events occur as
+  independent Poisson processes.
+ 
+* Mass-based weighting of templates, which are used to compute the
+  mean of the expected counts associated with the categories. These
+  weights are dynamic and are determined on a weekly basis.
+
+* The mean values are then used to predict the category for a
+  new trigger uploaded by :doc:`search pipelines </procedures/searches>`.
+
+
+EM_Bright
+---------
+**EM-Bright** gives two probablities: that of the secondary object being
+a neutron star, `HasNS` and that of having remnant matter after
+merger, `HasRemnant`.
+
+* For the computation of `HasNS`, we simply report the probability of
+  the secondary mass component satifying, :math:`m_2 \leq 3 M_{\odot}`.
+
+* For `HasRemnant`, we use a fitting formula for the remnant disk mass
+  proposed by `Foucart et al. 2018`_ (see Eq. 4 therein).
+
+* We use supervised learning to compute the probabilities.
+
+* The training is done assuming rate of events reported by the **P_astro**.
 
 .. _`Foucart et al. 2018`: https://arxiv.org/abs/1807.00011
