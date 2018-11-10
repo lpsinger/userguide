@@ -1,4 +1,4 @@
-Online pipelines
+Online Pipelines
 ================
 
 
@@ -13,7 +13,7 @@ compact binary mergers: core-collapse of massive stars, magnetar starquakes,
 and more speculative sources such as intersecting cosmic strings or as-yet
 unknown GW sources.
 
-Modeled search
+Modeled Search
 --------------
 
 **GstLAL**, **MBTAOnline**, **PyCBC Live** and **SPIIR** are matched-filtering
@@ -66,7 +66,7 @@ All such coincidences are recorded and assigned a ranking statistic; the
 false alarm rate is then estimated by counting accidental coincidences
 louder than a given candidate, i.e. with a higher statistic value.
 
-Unmodeled search
+Unmodeled Search
 ----------------
 
 **cWB** `[9]`_ is a power excess algorithm focused to identify
