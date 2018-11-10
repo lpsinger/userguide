@@ -1,18 +1,20 @@
 Procedures
 ==========
 
+In this section we describe the different online searches looking for GW
+signals. The corresponding triggers from multiple pipelines close enough in
+time will be considered at originating from the same physical event and will be
+grouped in a unique :doc:`superevent <superevents>`. See the following pages
+for technical details.
+
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
 
    searches
    superevents
    inference
 
-In this section we describe the different online searches looking for GW signal. 
-The corresponding triggers from multiple pipelines close enough in time will be 
-considered at originating from the same physical event and will be grouped in a 
-unique superevent. The alert will be then distributed as shown below.
+The timeline for distribution of alerts is described below.
 
 Alert timeline
 ---------------
