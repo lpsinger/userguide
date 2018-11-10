@@ -12,6 +12,7 @@ for technical details.
 
    searches
    superevents
+   parameter_estimation
    inference
 
 The timeline for distribution of alerts is described below.
