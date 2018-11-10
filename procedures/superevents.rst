@@ -11,6 +11,13 @@ At any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, localization, and classification.
 
+The preferred event may change after a preliminary alert has been sent, but the
+name of the superevent will stay the same. The naming scheme is described in
+the `alert contents <../content.html#name>`_ section.
+
+Selection of the Preferred Event
+--------------------------------
+
 When multiple online searches report events at the same time, the preferred
 event is decided by applying the following rules, in order:
 
@@ -26,10 +33,6 @@ event is decided by applying the following rules, in order:
 .. note::
    A Preliminary GCN is automatically issued for superevents when the false
    alarm rate is lower than a threshold value.
-
-.. note::
-   The preferred event may change after a preliminary alert has been sent, but
-   the name of the superevent will stay the same.
 
 .. note::
    In case of an *offline* trigger upload from a pipeline, no
