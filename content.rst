@@ -186,7 +186,7 @@ depend on details of neutron star physics (e.g. maximum NS mass, equation of
 state). See the earlier :doc:`procedures </procedures/inference>` for
 implementation details.
 
-Data quality assessment
+Data Quality Assessment
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Circulars may contain concise descriptions of any instrument or data quality
@@ -195,8 +195,8 @@ inferences. Unresolved data quality issues could mean that localization
 estimates may shift after they have been mitigated, but does not mean that they
 will. This is to be considered as advisory information.
 
-What is *not* included in alerts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*Not* Included in Alerts
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 The alerts will not contain quantitative estimates of intrinsic properties such
 as masses and spins, nor contain information on the GW strain or reconstructed
