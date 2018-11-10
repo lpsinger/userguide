@@ -16,8 +16,8 @@ for technical details.
 
 The timeline for distribution of alerts is described below.
 
-Alert timeline
----------------
+Alert Timeline
+--------------
 
 Here, we described the sequence of the GW alert distributed the Gamma-ray
 Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
