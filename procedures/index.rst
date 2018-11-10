@@ -60,3 +60,81 @@ notices and circulars </content>` will be distributed.
   
 .. image:: /_static/Flowchartprocv2.jpg
    :alt: Alert Flowchart
+
+.. digraph:: flowchart
+
+    compound = true
+    nodesep = 0.1
+    ranksep = 0.5
+
+    node [
+        fillcolor = white
+        shape = box
+        style = filled
+        target = "_top"
+    ]
+
+    graph [
+        labeljust = "left"
+        style = filled
+        target = "_top"
+    ]
+
+    subgraph minutes {
+        label = <<B><FONT face="Within minutes">handle</FONT></B>>
+
+        online_searches [
+            label = "Online searches\n(few minutes)"
+        ]
+
+        preferred_event [
+            label = "Get preferred event\n(seconds)"
+        ]
+
+        first_skymap [
+            label = "First skymap"
+            shape = diamond
+        ]
+
+        preliminary_notice [
+            label = "Preliminary notice(s)"
+        ]
+
+        online_searches -> preferred_event;
+        preferred_event -> first_skymap;
+        first_skymap -> preliminary_notice;
+    }
+
+    subgraph hours {
+        label = <<B><FONT face="Within four hours">handle</FONT></B>>
+
+        updates_skymaps [
+            label = "Updates skymaps"
+        ]
+
+        human_vetting [
+            label = "<B>Human vetting</B>\nSmall DQ analysis for BBH\nPossible retraction if BNS"
+        ]
+
+        initial_1 [
+            label = "Initial notice and circular"
+        ]
+
+        updates_skymaps -> human vetting;
+        human_vetting -> initial_1;
+    }
+
+    subgraph day {
+        label = <<B><FONT face="Within one day">handle</FONT></B>>
+
+        sub_thres [
+            label = "Sub-thresholds triggers\nwith EM or extraordinary triggers"
+        ]
+
+        initial_2 [
+            label = "Initial notice and circular"
+        ]
+
+        sub_thres -> initial_2;
+    }
+
