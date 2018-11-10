@@ -34,24 +34,24 @@ bands. All pipelines also implement different kinds of signal-based vetoes to
 reject instrumental transients which cause large SNR values but can otherwise
 be easily distinguished from compact binary coalescence signals
 
-**GSTLAL** `[1]`_, `[2]`_, `[3]`_ is a matched-filter pipeline designed to
-find gravitational-waves from compact binaries in low-latency. It uses the
+**GSTLAL** `[1]`_ is a matched-filter pipeline designed to find
+gravitational-waves from compact binaries in low-latency. It uses the
 likelihood-ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
 distribution of likelihood-ratios in noise. This distribution can then be used
 to compute a false alarm rate and p-value.
 
-**SPIIR** `[4]`_, `[5]`_ applies zero-latency SPIIR filters to approximate
+**SPIIR** `[2]`_, `[3]`_ applies zero-latency SPIIR filters to approximate
 matched-filtering results. It selects high-SNR events from each detector and
 find coherent responses from other detectors. It constructs background by
 time-shifting detector data one hundred times over a week to form a background
 statistic distribution used to evaluate foreground candidate significance.
 
-**MBTA** `[6]`_ constructs its background by making every possible coincidence
+**MBTA** `[4]`_ constructs its background by making every possible coincidence
 from single detector triggers over few hours of recent data. It then folds in
 the probability of a pair of triggers passing the time coincidence test.
 
-**PyCBC Live** `[7]`_, `[8]`_ estimates the noise background by performing
+**PyCBC Live** `[5]`_, `[6]`_ estimates the noise background by performing
 time-shifted analyses using triggers from a few hours of recent data.
 Single-detector triggers from one of the LIGO detectors are time shifted by
 every possible multiple of 100 ms, thus any resulting coincidence must be
@@ -63,7 +63,7 @@ candidate, i.e. with a higher statistic value.
 Unmodeled Search
 ----------------
 
-**cWB** `[9]`_ is a power excess algorithm focused to identify
+**cWB** `[7]`_ is a power excess algorithm focused to identify
 gravitational-like signals with short time duration. It uses a wavelet
 transformation to identify time-frequency pixels which can be grouped in a
 single cluster if they satisfy neighboring conditions. A tuned version for
@@ -74,7 +74,7 @@ event, in particular the probability of the source direction and the coherent
 network signal-to-noise ratio. The last one is used to assign detection
 significance to the found events.
 
-**oLIB** `[10]`_ uses Q transform to decompose GW strain data into several
+**oLIB** `[8]`_ uses Q transform to decompose GW strain data into several
 time-frequency planes of constant quality factors :math:`Q`, where :math:`Q
 \sim \tau f_0`. The pipeline flags data segments containing excess power and
 searches for clusters of these segments with identical :math:`f_0` and
@@ -84,12 +84,10 @@ with a coherent (i.e., correlated across the detector network) signal model to
 identify possible GW candidate events.
 
 .. _`[1]`: https://doi.org/10.1103/PhysRevD.95.042001
-.. _`[2]`: https://dcc.ligo.org/LIGO-P1700411
-.. _`[3]`: https://dcc.ligo.org/LIGO-P1700412
-.. _`[4]`: https://doi.org/10.1103/PhysRevD.86.024012
-.. _`[5]`: https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
-.. _`[6]`: http://doi.org/10.1088/0264-9381/33/17/175012
-.. _`[7]`: https://doi.org/10.3847/1538-4357/aa8f50
-.. _`[8]`: https://arxiv.org/abs/1705.01845
-.. _`[9]`: https://doi.org/10.1103/PhysRevD.93.042004
-.. _`[10]`: https://doi.org/10.1103/PhysRevD.95.104046
+.. _`[2]`: https://doi.org/10.1103/PhysRevD.86.024012
+.. _`[3]`: https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
+.. _`[4]`: http://doi.org/10.1088/0264-9381/33/17/175012
+.. _`[5]`: https://doi.org/10.3847/1538-4357/aa8f50
+.. _`[6]`: https://arxiv.org/abs/1705.01845
+.. _`[7]`: https://doi.org/10.1103/PhysRevD.93.042004
+.. _`[8]`: https://doi.org/10.1103/PhysRevD.95.104046
