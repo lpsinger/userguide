@@ -13,8 +13,8 @@ for technical details.
    searches
    parameter_estimation
    superevents
-   vetting
    inference
+   vetting
 
 The timeline for distribution of alerts is described below.
 
