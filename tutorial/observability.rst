@@ -88,7 +88,7 @@ Finally, we need to update our GCN handler to call this function::
         # VERY IMPORTANT! Replce with the following line of code
         # to respond to only real 'observation' events.
         # if root.attrib['role'] != 'observation':
-            return
+        #    return
         if root.attrib['role'] != 'test':
             return
 
@@ -101,7 +101,7 @@ Finally, we need to update our GCN handler to call this function::
 
         skymap, header = hp.read_map(skymap_url, h=True, verbose=False)
         prob = prob_observable(skymap, header)
-        print('Source has a {:d}%% chance of being observable now'.format(
+        print('Source has a {:d}% chance of being observable now'.format(
             int(round(100 * prob))))
         if prob > 0.5:
             pass # FIXME: perform some action
@@ -113,5 +113,11 @@ Let's run the new GCN handler now...
     # Listen for GCNs until the program is interrupted
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
+
+When you run this script, each time you receive a sample LIGO/Virgo GCN Notice,
+it will print something like the following (note that probability will change
+as a function of time):
+
+    Source has a 76% chance of being observable now
 
 .. _astroplan: https://astroplan.readthedocs.io/
