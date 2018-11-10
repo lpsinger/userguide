@@ -34,14 +34,14 @@ bands. All pipelines also implement different kinds of signal-based vetoes to
 reject instrumental transients which cause large SNR values but can otherwise
 be easily distinguished from compact binary coalescence signals
 
-**GSTLAL** `[1]`_ , `[2]`_ , `[3]`_ is a matched-filter pipeline designed to
+**GSTLAL** `[1]`_, `[2]`_, `[3]`_ is a matched-filter pipeline designed to
 find gravitational-waves from compact binaries in low-latency. It uses the
 likelihood-ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
 distribution of likelihood-ratios in noise. This distribution can then be used
 to compute a false alarm rate and p-value.
 
-**SPIIR** `[4]`_ , `[5]`_ applies zero-latency SPIIR filters to approximate
+**SPIIR** `[4]`_, `[5]`_ applies zero-latency SPIIR filters to approximate
 matched-filtering results. It selects high-SNR events from each detector and
 find coherent responses from other detectors. It constructs background by
 time-shifting detector data one hundred times over a week to form a background
@@ -51,7 +51,7 @@ statistic distribution used to evaluate foreground candidate significance.
 from single detector triggers over few hours of recent data. It then folds in
 the probability of a pair of triggers passing the time coincidence test.
 
-**PyCBC Live** `[7]`_ , `[8]`_ estimates the noise background by performing
+**PyCBC Live** `[7]`_, `[8]`_ estimates the noise background by performing
 time-shifted analyses using triggers from a few hours of recent data.
 Single-detector triggers from one of the LIGO detectors are time shifted by
 every possible multiple of 100 ms, thus any resulting coincidence must be
