@@ -104,7 +104,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
                 <Concept>HasNS</Concept>
                 <Description>Probability that at least one object in the binary has a mass that is less than 3 solar masses</Description>
             </Inference>
-            <Inference value="0.91">
+            <Inference probability="0.91">
                 <Concept>HasRemnant</Concept>
                 <Description>Probability that a nonzero mass was ejected outside the central remnant object</Description>
             </Inference>
