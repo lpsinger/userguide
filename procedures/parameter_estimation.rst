@@ -53,7 +53,7 @@ as a superposition of wavelets and jointly models the background with both a
 stationary noise component and glitches composed of wavelets that are present
 in individual detectors.
 
-.. |cqg| replace:: *Class. Quantum Grav.**
+.. |cqg| replace:: *Class. Quantum Grav.*
 .. |prd| replace:: *Phys. Rev. D*
 
 .. [#BAYESTAR]
