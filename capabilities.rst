@@ -69,6 +69,13 @@ We expect 1–50 :term:`BNS` events over the course of O3. For BNS events, the
 median localization accuracy of in terms of the 90% credible area will be
 120–180 deg². 12–21% of BNS mergers will be localized to less than 20 deg².
 
+Event Rates
+-----------
+
+See the `rates presentation`_ from recent Town Hall meeting for LIGO and
+Virgo's most current estimates of astrophysical rates of compact binary mergers.
+
 .. _`White Paper`: https://dcc.ligo.org/LIGO-T1800058/public
 .. _`Living Review`: https://doi.org/10.1007/s41114-018-0012-9
 .. _`Working Plan Towards O3`: https://dcc.ligo.org/LIGO-G1801056/public
+.. _`rates presentation`: https://wiki.gw-astronomy.org/pub/OpenLVEM/TownHallMeetings2018/O3_rates_amsterdam.pdf
