@@ -1,4 +1,4 @@
-Additional tools
+Additional Tools
 ================
 
 The :doc:`ligo.skymap <ligo.skymap:index>` package includes a number of

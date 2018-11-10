@@ -1,4 +1,4 @@
-Working with probability sky maps
+Working with Probability Sky Maps
 =================================
 
 Let's take a look at what is inside one of the LIGO/Virgo probability sky maps.
@@ -113,7 +113,7 @@ languages, including C, C++, Fortran, IDL, and Java. However, since this is a
 Python tutorial, we are going to demonstrate how to manipulate HEALPix maps
 with the official Python library, :doc:`Healpy <healpy:index>`.
 
-Reading sky maps
+Reading Sky Maps
 ----------------
 
 First, if you have not already downloaded an example sky map, you can do so now
@@ -145,7 +145,7 @@ image data and the FITS header by passing the ``h=True`` keyword argument:
 
     >>> hpx, header = hp.read_map('bayestar.fits.gz', h=True, verbose=False)
 
-Manipulating HEALPix coordinates
+Manipulating HEALPix Coordinates
 --------------------------------
 
 The image data is a 1D array of values:
@@ -211,7 +211,7 @@ Let's find which pixel contains the point RA=194.95, Dec=27.98.
     >>> ipix
     208938
 
-Most probable sky location
+Most Probable Sky Location
 --------------------------
 
 Let's find the highest probability pixel. What is the probability inside it?
@@ -229,7 +229,7 @@ Where is the highest probability pixel on the sky? Use :func:`hp.pix2ang
     >>> ra, dec
     (90.87890625, -40.620185190672686)
 
-Integrated probability in a circle
+Integrated Probability in a Circle
 ----------------------------------
 
 How do we find the probability that the source is contained within a circle on
@@ -265,7 +265,7 @@ Finally, we sum the probability in all of the matching pixels:
     >>> hpx[ipix_disc].sum()
     9.522375325439142e-06
 
-Integrated probability in a polygon
+Integrated Probability in a Polygon
 -----------------------------------
 
 Similarly, we can use the :func:`hp.query_polygon <healpy.query_polygon>`

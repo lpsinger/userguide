@@ -55,7 +55,7 @@ the FITS file, download it, and extract the probability sky map::
 
 The ``get_skymap`` function will be defined in the next section.
 
-Download the sky map
+Download the Sky Map
 --------------------
 
 Now we will define the function ``get_skymap`` get the sky map URL from the

@@ -7,7 +7,7 @@ modeled and unmodeled. The modeled (CBC) searches specifically look for signals
 from compact binary mergers of neutron stars and black holes (BNS, NS-BH, and
 BBH systems). The unmodeled (Burst) searches on the other hand, are capable of
 detecting signals from a wide variety of astrophysical sources in addition to
-compact binary mergers: core-collapse of massive stars, magnetar starquakes,
+compact binary mergers: core-collapse of massive stars, magnetar star-quakes,
 and more speculative sources such as intersecting cosmic strings or as-yet
 unknown GW sources.
 
@@ -27,7 +27,7 @@ A coincident analysis is performed by GSTLAL, PyCBC Live, and MBTAOnline, where
 candidate events are extracted separately at each detector via
 matched-filtering and later combined across detectors. SPIIR extract candidates
 of each detector via matched-filtering and look for coherent responses in other
-detectors that a skymap of the source can be constructed. Of the four
+detectors that a localization of the source can be constructed. Of the four
 pipelines, GstLAL and MBTAOnline use several matched filters to cover the
 detector bandwidth i.e., the matched filter is split across multiple frequency
 bands. All pipelines also implement different kinds of signal-based vetoes to

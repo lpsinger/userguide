@@ -29,8 +29,8 @@ contain all of the information that is useful for searching for a counterpart.
 **Within minutes after GW trigger time**, the first :doc:`preliminary notice
 </content>` will be sent fully autonomously (not necessary attached to
 localization). The trigger will be immediately visible under the LIGO/Virgo GW
-database :term:`GraceDb`. As soon as the skymap localization area is available,
-a second preliminary notice is sent. The procedure is fully automatic and some
+database :term:`GraceDb`. As soon as the localization area is available, a
+second preliminary notice is sent. The procedure is fully automatic and some
 preliminary alerts may be retracted after human inspection for data quality,
 instrumental conditions, and pipeline behavior.
 
@@ -39,7 +39,7 @@ circulars </content>` will be distributed with an update for the sky
 localization area and the source classification. They are vetted by human
 instrument scientists and analysts. In case of a binary coalescence including a
 neutron star or a burst trigger, the initial circular can labeled as
-**retractated** (data are unsuitable) or **confirmed**. Note that the initial
+**retracted** (data are unsuitable) or **confirmed**. Note that the initial
 circular is considered the first LIGO/Virgo publication of a GW candidate,
 appropriate to cite in publications.
 

@@ -44,7 +44,7 @@ real-time results.
 
 .. [#f1] GCN Circulars are similar to `Astronomer's Telegrams`_ (ATels). By
          longstanding convention, the gamma-ray burst and gravitational-wave
-         anstronomy communities use GCNs, whereas the supernova community uses
+         astronomy communities use GCNs, whereas the supernova community uses
          ATels.
 
 .. _`Subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html

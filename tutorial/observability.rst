@@ -1,4 +1,4 @@
-Basic observability calculations
+Basic Observability Calculations
 ================================
 
 Now we are going to teach our GCN handler how to determine whether a
