@@ -11,8 +11,9 @@ for technical details.
    :maxdepth: 1
 
    searches
-   superevents
    parameter_estimation
+   superevents
+   vetting
    inference
 
 The timeline for distribution of alerts is described below.
