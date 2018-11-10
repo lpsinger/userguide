@@ -15,11 +15,11 @@ probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
 or terrestrial (i.e. a background fluctuation or a glitch).
 
 This assumes that terrestrial and astrophysical events occur as independent
-Poisson processes. A mass-based weighting of matched-filter templates
-represents the expected counts associated with each of these four categories.
-These weights are updated weekly based on observed matched-filter count rates.
-The mean values are then used to predict the category for new triggers
-uploaded by :doc:`search pipelines </procedures/searches>`.
+Poisson processes. A source-dependent weighting of matched-filter 
+templates is used to compute the mean values of expected counts associated 
+with each of these four categories. The mean values are updated weekly based on 
+observed matched-filter count rates. They are then used to predict the category 
+for new triggers uploaded by :doc:`search pipelines </procedures/searches>`.
 
 Properties
 ----------
