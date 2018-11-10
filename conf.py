@@ -193,3 +193,8 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/', None),
     'requests': ('http://docs.python-requests.org/en/stable/', None)
 }
+
+# -- Options for plot_directive extension ------------------------------------
+
+plot_html_show_source_link = False
+plot_html_show_formats = False
