@@ -19,6 +19,14 @@ based on this. The example below will handle only 'CBC' events.
    **only** to 'test' events. When preparing for actual observations, you
    **must remember to switch to 'observation' events**.
 
+.. note::
+   Observe in the example below that we do not have to explicitly download the
+   FITS file because the :func:`hp.read_map() <healpy.fitsfunc.read_map>`
+   function works with either URLs or filenames. However, you could download
+   and save the FITS file in order to save it locally using
+   :func:`astropy.utils.data.download_file`, :func:`requests.get`,
+   :func:`urllib.request.urlopen`, or even curl_.
+
 The following basic handler function will parse out the URL of
 the FITS file, download it, and extract the probability sky map::
 
@@ -30,10 +38,6 @@ the FITS file, download it, and extract the probability sky map::
         gcn.notice_types.LVC_INITIAL,
         gcn.notice_types.LVC_UPDATE)
     def process_gcn(payload, root):
-        # Print the alert
-        print('Got VOEvent:')
-        print(payload)
-
         # Respond only to 'test' events.
         # VERY IMPORTANT! Replace with the following code
         # to respond to only real 'observation' events.
@@ -42,59 +46,39 @@ the FITS file, download it, and extract the probability sky map::
         if root.attrib['role'] != 'test':
             return
 
+        # Read all of the VOEvent parameters from the "What" section.
+        params = {elem.attrib['name']:
+                  elem.attrib['value']
+                  for elem in root.iterfind('.//Param')}
+
+        # Read all of the VOEvent inference fields from the "Why" section.
+        inference = {elem.find('Concept').text:
+                     float(elem.attrib['probability'])
+                     for elem in root.iterfind('.//Inference')}
+
         # Respond only to 'CBC' events. Change 'CBC' to "Burst'
         # to respond to only unmodeled burst events.
-        if root.find(".//Param[@name='Group']").attrib['value'] != 'CBC':
+        if params['Group'] != 'CBC':
             return
 
-        # Read out integer notice type (note: not doing anythin with this right now)
-        notice_type = int(root.find(".//Param[@name='Packet_Type']").attrib['value'])
+        # Print parameters and inference values.
+        for key, value in params.items():
+            print(key, '=', value)
+        for key, value in inference.items():
+            print(key, '=', value)
 
-        # Read sky map
-        skymap, header = get_skymap(root)
+        # Read the HEALPix sky map and the FITS header.
+        skymap, header = hp.read_map(params['skymap_fits'],
+                                     h=True, verbose=False)
+        header = dict(header)
 
-The ``get_skymap`` function will be defined in the next section.
-
-Download the Sky Map
---------------------
-
-Now we will define the function ``get_skymap`` get the sky map URL from the
-VOEvent, download it, and read it with Healpy.
-
-.. note::
-   We do not have to explicitly download the FITS file because the
-   :func:`hp.read_map() <healpy.fitsfunc.read_map>` function works with either
-   URLs or filenames. However, you could download and save the FITS file in
-   order to save it locally using :func:`astropy.utils.data.download_file`,
-   :func:`requests.get`, :func:`urllib.request.urlopen`, or even curl_.
-
-::
-
-    def get_skymap(root):
-        """
-        Look up URL of sky map in VOEvent XML document,
-        download sky map, and parse FITS file.
-        """
-        # Read out URL of sky map.
-        # This will be something like
-        # https://gracedb.ligo.org/api/events/M131141/files/bayestar.fits.gz
-        skymap_url = root.find(
-            ".//Param[@name='skymap_fits']").attrib['value']
-
-        # Read the sky map.
-        # Note: this works on filenames or URLs.
-        # The `h=True` argument instructs Healpy to also return the metadata
-        # from the FITS header, and the `verbose=False` argument suppresses
-        # printing of some diagnostic information.
-        skymap, header = hp.read_map(skymap_url, h=True, verbose=False)
-
-        # Done!
-        return skymap, header
+        # Print some values from the FITS header.
+        print('Distance =', header['DISTMEAN'], '+/-', header['DISTSTD'])
 
 Listen for GCNs
 ---------------
 
-Finally, we will start the VOEvent client to listen for GCNs using the
+Now, we will start the VOEvent client to listen for GCNs using the
 ``gcn.listen`` function. By default, this will connect to the anonymous, public
 GCN server. You just need to tell ``gcn.listen`` what function to call whenever
 it receives an GCN; in this example, that is the ``process_gcn`` handler that
@@ -109,5 +93,35 @@ we defined above.
     # Listen for GCNs until the program is interrupted
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
+
+When you run this script, you should receive a sample LIGO/Virgo GCN Notice
+every few minutes. For each sample notice, you should see output that looks
+like this::
+
+    internal = 0
+    Packet_Type = 150
+    Pkt_Ser_Num = 1
+    GraceID = MS181101abc
+    AlertType = Preliminary
+    Retraction = false
+    HardwareInj = 0
+    Vetted = 0
+    OpenAlert = 1
+    EventPage = https://example.org/superevents/MS181101abc/view/
+    Instruments = H1,L1
+    FAR = 9.11069936486e-14
+    Group = CBC
+    Pipeline = gstlal
+    Search = MDC
+    skymap_fits = https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
+    skymap_png = https://emfollow.docs.ligo.org/userguide/_static/bayestar.png
+    BNS = 0.95
+    NSBH = 0.01
+    BBH = 0.03
+    Noise = 0.01
+    HasNS = 0.95
+    HasRemnant = 0.91
+    Distance = 141.1453950128411 +/- 39.09548411497191
+
 
 .. _curl: https://curl.haxx.se

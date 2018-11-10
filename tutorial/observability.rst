@@ -84,23 +84,25 @@ Finally, we need to update our GCN handler to call this function::
         gcn.notice_types.LVC_INITIAL,
         gcn.notice_types.LVC_UPDATE)
     def process_gcn(payload, root):
-        # Print the alert
-        print('Got VOEvent:')
-        print(payload)
-
         # Respond only to 'test' events.
         # VERY IMPORTANT! Replce with the following line of code
         # to respond to only real 'observation' events.
-        # if root.attrib['role'] != 'observation': return
-        if root.attrib['role'] != 'test': return
+        # if root.attrib['role'] != 'observation':
+            return
+        if root.attrib['role'] != 'test':
+            return
 
-        # Respond only to 'CBC' events. Change 'CBC' to "Burst' to respond to only
-        # unmodeled burst events.
-        if root.find("./What/Param[@name='Group']").attrib['value'] != 'CBC': return
+        # Respond only to 'CBC' events. Change 'CBC' to "Burst'
+        # to respond to only unmodeled burst events.
+        if root.find(".//Param[@name='Group']").attrib['value'] != 'CBC':
+            return
 
-        skymap, header = get_skymap(root)
+        skymap_url = root.find(".//Param[@name='skymap_fits']").attrib['value']
+
+        skymap, header = hp.read_map(skymap_url, h=True, verbose=False)
         prob = prob_observable(skymap, header)
-        print('Source has a %d%% chance of being observable now' % round(100 * prob))
+        print('Source has a {:d}%% chance of being observable now'.format(
+            int(round(100 * prob))))
         if prob > 0.5:
             pass # FIXME: perform some action
 
