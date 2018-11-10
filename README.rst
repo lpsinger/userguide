@@ -15,11 +15,11 @@ To render the HTML version of the User Guide on your own computer, make sure
 that you have a working Python environment with Python >= 3.5. Then run the
 following commands::
 
-    $ git clone https://git.ligo.org/emfollow/userguide.git
-    $ cd userguide
-    $ python -m venv env
-    $ source env/bin/activate
-    $ pip install -r requirements.txt
-    $ make html
+    git clone https://git.ligo.org/emfollow/userguide.git
+    cd userguide
+    python -m venv env
+    source env/bin/activate
+    pip install -r requirements.txt
+    make html
 
 Then open the main page _build/html/index.html in your favorite browser.
