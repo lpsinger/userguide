@@ -177,7 +177,19 @@ notices and circulars </content>` will be distributed.
         sub_thres [
             label = "Sub-thresholds triggers\nwith EM or extraordinary triggers"
         ]
+
+        sky_local_improve [
+            label = "Sky localization or \nsignificance area \n improves"
+        ]
+
+        update [
+            label = "Update notice and circular"
+            shape = egg
+        ]
+
         sub_thres -> initial;
+        sub_thres -> sky_local_improve [style=invis]
+        sky_local_improve -> update
         label = "Any time"
     }
 
