@@ -80,8 +80,10 @@ notices and circulars </content>` will be distributed.
         target = "_top"
     ]
 
-    subgraph minutes {
-        label = <<B><FONT face="Within minutes">handle</FONT></B>>
+    subgraph cluster_minutes {
+        style = filled;
+        color = lightgrey;
+        node [style=filled,color=white];
 
         online_searches [
             label = "Online searches\n(few minutes)"
@@ -102,11 +104,15 @@ notices and circulars </content>` will be distributed.
 
         online_searches -> preferred_event;
         preferred_event -> first_skymap;
+        preferred_event -> preliminary_notice;
         first_skymap -> preliminary_notice;
+        label = <<B><FONT face="Within minutes">handle</FONT></B>>
     }
 
-    subgraph hours {
-        label = <<B><FONT face="Within four hours">handle</FONT></B>>
+    subgraph cluster_hours {
+        style = filled;
+        color = lightgrey;
+        node [style=filled,color=white];
 
         updates_skymaps [
             label = "Updates skymaps"
@@ -122,10 +128,13 @@ notices and circulars </content>` will be distributed.
 
         updates_skymaps -> human_vetting;
         human_vetting -> initial_1;
+        label = <<B><FONT face="Within four hours">handle</FONT></B>>
     }
 
-    subgraph day {
-        label = <<B><FONT face="Within one day">handle</FONT></B>>
+    subgraph cluster_day {
+        style = filled;
+        color = lightgrey;
+        node [style=filled,color=white];
 
         sub_thres [
             label = "Sub-thresholds triggers\nwith EM or extraordinary triggers"
@@ -136,5 +145,6 @@ notices and circulars </content>` will be distributed.
         ]
 
         sub_thres -> initial_2;
+        label = <<B><FONT face="Within one day">handle</FONT></B>>
     }
 
