@@ -93,19 +93,32 @@ notices and circulars </content>` will be distributed.
             label = "Get preferred event\n(seconds)"
         ]
 
-        first_skymap [
-            label = "First skymap"
+        skymap_available [
+            label = "Skymap available?"
+            shape = diamond
         ]
 
-        preliminary_notice [
-            label = "Preliminary notice(s)"
+        preliminary_notice_map [
+            label = "Preliminary notice \nwith skymap"
+            shape = egg
+        ]
+
+        preliminary_notice_nomap [
+            label = "Preliminary notice \nwithout skymap"
+            shape = egg
+        ]
+
+        preliminary_notice_2_map [
+            label = "Second preliminary notice \nwith skymap"
+            shape = egg
         ]
 
         online_searches -> preferred_event;
-        preferred_event -> first_skymap;
-        preferred_event -> preliminary_notice;
-        first_skymap -> preliminary_notice;
-        label = <<B><FONT face="monospace">Within minutes</FONT></B>>
+        preferred_event -> skymap_available;
+        skymap_available -> preliminary_notice_map [label = Yes];
+        skymap_available -> preliminary_notice_nomap [label = No];
+        preliminary_notice_nomap -> preliminary_notice_2_map [label = "Skymap available"];
+        label = "Within minutes: fully automatic"
     }
 
     subgraph cluster_hours {
@@ -113,21 +126,47 @@ notices and circulars </content>` will be distributed.
         color = lightgrey;
         node [style=filled,color=white];
 
-        updates_skymaps [
-            label = "Updates skymaps"
+        updated_skymaps [
+            label = "Updated skymaps and \nsource classification"
         ]
 
         human_vetting [
-            label = "Human vetting\nSmall DQ analysis for BBH\nPossible retraction if BNS"
+            label = "Human vetting"
         ]
 
-        initial_1 [
+        trigger_type [
+            label = "Type of trigger"
+            shape = diamond
+        ]
+        
+        data_good [
+            label = "Data good?"
+            shape = diamond
+        ]
+
+        initial [
             label = "Initial notice and circular"
+            shape = egg
         ]
 
-        updates_skymaps -> human_vetting;
-        human_vetting -> initial_1;
-        label = <<B><FONT face="monospace">Within four hours</FONT></B>>
+        retraction [
+            label = "Initial notice (retraction)"
+            shape = egg
+        ]
+
+        confirm [
+            label = "Initial notice (confirmation)"
+            shape = egg
+        ]
+
+        updated_skymaps -> human_vetting;
+        human_vetting -> trigger_type;
+        trigger_type -> initial [label=BBH];
+        trigger_type -> data_good [label="BNS, NSBH,\n or burst"]
+        data_good -> confirm [label=Yes]
+        data_good -> retraction [label=No]
+
+        label = "Within four hours: human vetting"
     }
 
     subgraph cluster_day {
@@ -138,12 +177,9 @@ notices and circulars </content>` will be distributed.
         sub_thres [
             label = "Sub-thresholds triggers\nwith EM or extraordinary triggers"
         ]
-
-        initial_2 [
-            label = "Initial notice and circular"
-        ]
-
-        sub_thres -> initial_2;
-        label = <<B><FONT face="monospace">Within one day</FONT></B>>
+        sub_thres -> initial;
+        label = "Any time"
     }
+
+}
 
