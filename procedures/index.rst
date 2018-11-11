@@ -113,14 +113,14 @@ notices and circulars </content>` will be distributed.
         ]
 
         human_vetting [
-            label = "<B>Human vetting</B>\nSmall DQ analysis for BBH\nPossible retraction if BNS"
+            label = "Human vetting\nSmall DQ analysis for BBH\nPossible retraction if BNS"
         ]
 
         initial_1 [
             label = "Initial notice and circular"
         ]
 
-        updates_skymaps -> human vetting;
+        updates_skymaps -> human_vetting;
         human_vetting -> initial_1;
     }
 
