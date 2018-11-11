@@ -81,7 +81,7 @@ notices and circulars </content>` will be distributed.
     ]
 
     subgraph cluster_minutes {
-        style = filled;
+        style = "filled, rounded";
         color = lightgrey;
         node [style=filled,color=white];
 
@@ -95,7 +95,6 @@ notices and circulars </content>` will be distributed.
 
         first_skymap [
             label = "First skymap"
-            shape = diamond
         ]
 
         preliminary_notice [
@@ -106,11 +105,11 @@ notices and circulars </content>` will be distributed.
         preferred_event -> first_skymap;
         preferred_event -> preliminary_notice;
         first_skymap -> preliminary_notice;
-        label = <<B><FONT face="Within minutes">handle</FONT></B>>
+        label = <<B><FONT face="monospace">Within minutes</FONT></B>>
     }
 
     subgraph cluster_hours {
-        style = filled;
+        style = "filled, rounded";
         color = lightgrey;
         node [style=filled,color=white];
 
@@ -128,11 +127,11 @@ notices and circulars </content>` will be distributed.
 
         updates_skymaps -> human_vetting;
         human_vetting -> initial_1;
-        label = <<B><FONT face="Within four hours">handle</FONT></B>>
+        label = <<B><FONT face="monospace">Within four hours</FONT></B>>
     }
 
     subgraph cluster_day {
-        style = filled;
+        style = "filled, rounded";
         color = lightgrey;
         node [style=filled,color=white];
 
@@ -145,6 +144,6 @@ notices and circulars </content>` will be distributed.
         ]
 
         sub_thres -> initial_2;
-        label = <<B><FONT face="Within one day">handle</FONT></B>>
+        label = <<B><FONT face="monospace">Within one day</FONT></B>>
     }
 
