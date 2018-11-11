@@ -181,5 +181,4 @@ notices and circulars </content>` will be distributed.
         label = "Any time"
     }
 
-}
-
+    preliminary_notice_2_map -> updated_skymaps [style=invis]
