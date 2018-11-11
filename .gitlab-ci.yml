@@ -9,6 +9,8 @@ build:
   variables:
     SPHINXOPTS: -W
   script:
+    - apt-get update
+    - apt-get install -y --no-install-recommends graphviz
     - pip install -r requirements.txt
     - sphinx-build -M html . _build
   artifacts:
