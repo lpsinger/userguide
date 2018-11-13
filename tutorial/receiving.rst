@@ -95,7 +95,7 @@ we defined above.
     gcn.listen(handler=process_gcn)
 
 When you run this script, you should receive a sample LIGO/Virgo GCN Notice
-every few minutes. For each sample notice, you should see output that looks
+every 15 minutes. For each sample notice, you should see output that looks
 like this::
 
     internal = 0
