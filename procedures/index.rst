@@ -38,12 +38,15 @@ contain all of the information that is useful for searching for a counterpart.
     quantity_support()
 
     plot_data = [[['Rapid Localization', 10 * u.second, 20 * u.second],
+                  ['Classification', 26 * u.second, 1 * u.second],
                   ['Automated Vetting', 25 * u.second, 1 * u.second],
                   ['Set Preferred Event', 10 * u.second, 15 * u.second],
                   ['GraceDb Upload', 0.001 * u.second, 9.999 * u.second]],
-                 [['Human Vetting', 5 * u.minute, 4 * u.hour],
+                 [['Classification', 4 * u.hour, 10 * u.minute],
+                  ['Human Vetting', 5 * u.minute, 4 * u.hour],
                   ['Automated Parameter Estimation', 25 * u.second, 4 * u.hour]],
-                 [['Manual Parameter Estimation', 4 * u.hour, 6 * u.day]]]
+                 [['Classification', 6 * u.day, 1 * u.hour],
+                  ['Manual Parameter Estimation', 4 * u.hour, 6 * u.day]]]
 
     alert_labels = ['Preliminary\nAlert Sent',
                     'Initial Alert or\nRetraction Sent',
@@ -53,7 +56,7 @@ contain all of the information that is useful for searching for a counterpart.
     fig, axs = plt.subplots(
         len(plot_data),
         sharex=True,
-        figsize=(8, 2.5),
+        figsize=(8, 3),
         gridspec_kw=dict(
             height_ratios=[len(_) + 1 - bar_height for _ in plot_data],
             top=0.9, left=0, right=1, hspace=0.05, bottom=0.2
