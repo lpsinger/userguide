@@ -6,6 +6,9 @@
 LIGO/Virgo Public Alerts User Guide
 ===================================
 
+.. image:: _static/banner.png
+   :alt: GW170817/GRB170817A discovery images
+
 Welcome to the LIGO/Virgo Public Alerts User Guide! This document is intended
 for both professional astronomers and science enthusiasts who are interested in
 receiving alerts and real-time data products related to gravitational-wave (GW)
