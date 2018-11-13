@@ -89,7 +89,8 @@ html_theme_options = {
     'description': '*DRAFT* Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
     'fixed_sidebar': True,
     'logo': 'logo.png',
-    'show_relbars': True
+    'show_relbars': True,
+    'sidebar_collapse': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -106,15 +107,9 @@ html_static_path = ['_static']
 # 'searchbox.html']``.
 #
 html_sidebars = {
-    'index': [
-        'about.html',
-        'navigation.html',
-        'contact.html',
-        'searchbox.html'
-    ],
     '**': [
         'about.html',
-        'localtoc.html',
+        'navigation.html',
         'contact.html',
         'searchbox.html'
     ]

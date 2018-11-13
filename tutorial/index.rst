@@ -8,9 +8,6 @@ recommends using the VOEvent Transport Protocol (:term:`VTP`) to receive
 notices in :term:`VOEvent` XML format because it is anonymous,
 configuration-free, and easy to parse.
 
-Contents
---------
-
 .. toctree::
    :maxdepth: 1
 
