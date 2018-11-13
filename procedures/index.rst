@@ -26,38 +26,6 @@ Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
 content </content>` and :doc:`Technical </tutorial/index>`). Alerts should
 contain all of the information that is useful for searching for a counterpart.
 
-**Within minutes after GW trigger time**, the first :doc:`preliminary notice
-</content>` will be sent fully autonomously (not necessary attached to
-localization). The trigger will be immediately visible under the LIGO/Virgo GW
-database :term:`GraceDb`. As soon as the localization area is available, a
-second preliminary notice is sent. The procedure is fully automatic and some
-preliminary alerts may be retracted after human inspection for data quality,
-instrumental conditions, and pipeline behavior.
-
-**Within 4 hours after the GW trigger time**, the :doc:`Initial notices and
-circulars </content>` will be distributed with an update for the sky
-localization area and the source classification. They are vetted by human
-instrument scientists and analysts. In case of a binary coalescence including a
-neutron star or a burst trigger, the initial circular can labeled as
-**retracted** (data are unsuitable) or **confirmed**. Note that the initial
-circular is considered the first LIGO/Virgo publication of a GW candidate,
-appropriate to cite in publications.
-
-**Within a day**, black hole mergers will be fully vetted by experts and
-retraction or confirmation status will be reported.
-
-:doc:`Update notice and circulars </content>` are sent whenever the sky
-localization area or significance accuracy improves (e.g. as a result of
-improved calibration, de-glitching, or computationally deeper parameter
-estimation). Updates will be sent up until the position is determined more
-accurately by public announcement of an unambiguous counterpart. At which point
-they will stop until publication of the event.
-
-**Any time**, we can **promote** an extraordinary candidate that does not pass
-our public alert thresholds if it is compellingly associated with a
-multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial
-notices and circulars </content>` will be distributed.
-
 .. plot::
     :alt: Timeline for sending gravitational-wave alerts
 
@@ -123,3 +91,35 @@ notices and circulars </content>` will be distributed.
         ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
     ax.minorticks_off()
     ax.set_xlabel('Time since GW signal')
+
+**Within minutes after GW trigger time**, the first :doc:`preliminary notice
+</content>` will be sent fully autonomously (not necessary attached to
+localization). The trigger will be immediately visible under the LIGO/Virgo GW
+database :term:`GraceDb`. As soon as the localization area is available, a
+second preliminary notice is sent. The procedure is fully automatic and some
+preliminary alerts may be retracted after human inspection for data quality,
+instrumental conditions, and pipeline behavior.
+
+**Within 4 hours after the GW trigger time**, the :doc:`Initial notices and
+circulars </content>` will be distributed with an update for the sky
+localization area and the source classification. They are vetted by human
+instrument scientists and analysts. In case of a binary coalescence including a
+neutron star or a burst trigger, the initial circular can labeled as
+**retracted** (data are unsuitable) or **confirmed**. Note that the initial
+circular is considered the first LIGO/Virgo publication of a GW candidate,
+appropriate to cite in publications.
+
+**Within a day**, black hole mergers will be fully vetted by experts and
+retraction or confirmation status will be reported.
+
+:doc:`Update notice and circulars </content>` are sent whenever the sky
+localization area or significance accuracy improves (e.g. as a result of
+improved calibration, de-glitching, or computationally deeper parameter
+estimation). Updates will be sent up until the position is determined more
+accurately by public announcement of an unambiguous counterpart. At which point
+they will stop until publication of the event.
+
+**Any time**, we can **promote** an extraordinary candidate that does not pass
+our public alert thresholds if it is compellingly associated with a
+multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial
+notices and circulars </content>` will be distributed.
