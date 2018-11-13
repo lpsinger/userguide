@@ -37,16 +37,16 @@ contain all of the information that is useful for searching for a counterpart.
 
     quantity_support()
 
-    plot_data = [[['Rapid Localization', 10 * u.second, 20 * u.second],
-                  ['Classification', 26 * u.second, 1 * u.second],
-                  ['Automated Vetting', 25 * u.second, 1 * u.second],
-                  ['Set Preferred Event', 10 * u.second, 15 * u.second],
-                  ['GraceDb Upload', 0.001 * u.second, 9.999 * u.second]],
+    plot_data = [[['Rapid Localization', 60 * u.second, 20 * u.second],
+                  ['Classification', 75 * u.second, 5 * u.second],
+                  ['Automated Vetting', 75 * u.second, 5 * u.second],
+                  ['Set Preferred Event', 60 * u.second, 15 * u.second],
+                  ['Original Detection', 0.001 * u.second, 59.999 * u.second]],
                  [['Classification', 4 * u.hour, 10 * u.minute],
                   ['Human Vetting', 5 * u.minute, 4 * u.hour],
-                  ['Automated Parameter Estimation', 25 * u.second, 4 * u.hour]],
-                 [['Classification', 6 * u.day, 1 * u.hour],
-                  ['Manual Parameter Estimation', 4 * u.hour, 6 * u.day]]]
+                  ['Parameter Estimation', 75 * u.second, 4 * u.hour]],
+                 [['Classification', 6 * u.day, 6 * u.hour],
+                  ['Parameter Estimation', 4 * u.hour, 6 * u.day]]]
 
     alert_labels = ['Preliminary\nAlert Sent',
                     'Initial Alert or\nRetraction Sent',
@@ -81,14 +81,14 @@ contain all of the information that is useful for searching for a counterpart.
 
         ax.barh(np.arange(len(labels)), width=durations, left=starts, height=bar_height)
         for i, (start, duration, label) in enumerate(zip(starts, durations, labels)):
-            ax.text(max(start, 10 * u.second), i,
+            ax.text(max(start, 1 * u.minute), i,
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
 
     fig.suptitle('Time since gravitational-wave signal')
     ax.set_xscale('log')
-    ax.set_xlim(1e-1 * u.second, 100 * u.day)
-    ticks = [1 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
+    ax.set_xlim(3 * u.second, 100 * u.day)
+    ticks = [10 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
     ax.set_xticks(ticks)
     ax.set_xticklabels(
         ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
