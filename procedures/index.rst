@@ -57,140 +57,69 @@ they will stop until publication of the event.
 our public alert thresholds if it is compellingly associated with a
 multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial
 notices and circulars </content>` will be distributed.
-  
-.. image:: /_static/Flowchartprocv2.jpg
-   :alt: Alert Flowchart
 
-.. digraph:: flowchart
+.. plot::
+    :alt: Timeline for sending gravitational-wave alerts
 
-    compound = true
-    nodesep = 0.1
-    ranksep = 0.5
+    from astropy.visualization import quantity_support
+    from astropy import units as u
+    from matplotlib import pyplot as plt
+    from matplotlib.transforms import blended_transform_factory
+    import numpy as np
 
-    node [
-        fillcolor = white
-        shape = box
-        style = filled
-        target = "_top"
-    ]
+    quantity_support()
 
-    graph [
-        labeljust = "left"
-        style = filled
-        target = "_top"
-    ]
+    plot_data = [[['Rapid Localization', 10 * u.second, 20 * u.second],
+                  ['Automated Vetting', 25 * u.second, 1 * u.second],
+                  ['Set Preferred Event', 10 * u.second, 15 * u.second],
+                  ['GraceDb Upload', 0.001 * u.second, 9.999 * u.second]],
+                 [['Human Vetting', 5 * u.minute, 4 * u.hour],
+                  ['Automated Parameter Estimation', 25 * u.second, 4 * u.hour]],
+                 [['Manual Parameter Estimation', 4 * u.hour, 6 * u.day]]]
 
-    subgraph cluster_minutes {
-        style = "filled, rounded";
-        color = lightgrey;
-        node [style=filled,color=white];
+    alert_labels = ['Preliminary\nAlert Sent',
+                    'Initial Alert or\nRetraction Sent',
+                    'Update Alert']
+    bar_height = 0.8
 
-        online_searches [
-            label = "Online searches\n(few minutes)"
-        ]
+    fig, axs = plt.subplots(
+        len(plot_data),
+        sharex=True,
+        figsize=(8, 2.5),
+        gridspec_kw=dict(
+            height_ratios=[len(_) + 1 - bar_height for _ in plot_data],
+            top=0.9, left=0, right=1, hspace=0.05, bottom=0.2
+        ))
 
-        preferred_event [
-            label = "Get preferred event\n(seconds)"
-        ]
+    for ax, data, alert_label in zip(axs, plot_data, alert_labels):
+        ax.spines['left'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.set_yticks([])
+        ax.xaxis.label.set_visible(False)
 
-        skymap_available [
-            label = "Skymap available?"
-            shape = diamond
-        ]
+        labels, starts, durations = zip(*data)
+        starts = u.Quantity(starts).to(u.second)
+        durations = u.Quantity(durations).to(u.second)
 
-        preliminary_notice_map [
-            label = "Preliminary notice \nwith skymap"
-            shape = egg
-        ]
+        t = max(starts + durations) * 1.1
+        ax.axvline(t, color='black')
+        ax.axvspan(1e-2 * u.second, t, color='lightgray')
+        ax.text(t * 1.15, 0.5, alert_label,
+                transform=blended_transform_factory(ax.transData, ax.transAxes),
+                fontweight='bold', va='center')
 
-        preliminary_notice_nomap [
-            label = "Preliminary notice \nwithout skymap"
-            shape = egg
-        ]
+        ax.barh(np.arange(len(labels)), width=durations, left=starts, height=bar_height)
+        for i, (start, duration, label) in enumerate(zip(starts, durations, labels)):
+            ax.text(max(start, 10 * u.second), i,
+                    ' ' + label + ' ', ha='right', va='center')
+        ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
 
-        preliminary_notice_2_map [
-            label = "Second preliminary notice \nwith skymap"
-            shape = egg
-        ]
-
-        online_searches -> preferred_event;
-        preferred_event -> skymap_available;
-        skymap_available -> preliminary_notice_map [label = Yes];
-        skymap_available -> preliminary_notice_nomap [label = No];
-        preliminary_notice_nomap -> preliminary_notice_2_map [label = "Skymap available"];
-        label = "Within minutes: fully automatic"
-    }
-
-    subgraph cluster_hours {
-        style = "filled, rounded";
-        color = lightgrey;
-        node [style=filled,color=white];
-
-        updated_skymaps [
-            label = "Updated skymaps and \nsource classification"
-        ]
-
-        human_vetting [
-            label = "Human vetting"
-        ]
-
-        trigger_type [
-            label = "Type of trigger"
-            shape = diamond
-        ]
-        
-        data_good [
-            label = "Data good?"
-            shape = diamond
-        ]
-
-        initial [
-            label = "Initial notice and circular"
-            shape = egg
-        ]
-
-        retraction [
-            label = "Initial notice (retraction)"
-            shape = egg
-        ]
-
-        confirm [
-            label = "Initial notice (confirmation)"
-            shape = egg
-        ]
-
-        updated_skymaps -> human_vetting;
-        human_vetting -> trigger_type;
-        trigger_type -> initial [label=BBH];
-        trigger_type -> data_good [label="BNS, NSBH,\n or burst"]
-        data_good -> confirm [label=Yes]
-        data_good -> retraction [label=No]
-
-        label = "Within four hours: human vetting"
-    }
-
-    subgraph cluster_day {
-        style = "filled, rounded";
-        color = lightgrey;
-        node [style=filled,color=white];
-
-        sub_thres [
-            label = "Sub-thresholds triggers\nwith EM or extraordinary triggers"
-        ]
-
-        sky_local_improve [
-            label = "Sky localization or \nsignificance area \n improves"
-        ]
-
-        update [
-            label = "Update notice and circular"
-            shape = egg
-        ]
-
-        sub_thres -> initial;
-        sub_thres -> sky_local_improve [style=invis]
-        sky_local_improve -> update
-        label = "Any time"
-    }
-
-    preliminary_notice_2_map -> updated_skymaps [style=invis]
+    fig.suptitle('Time since gravitational-wave signal')
+    ax.set_xscale('log')
+    ax.set_xlim(1e-1 * u.second, 100 * u.day)
+    ticks = [1 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
+    ax.set_xticks(ticks)
+    ax.set_xticklabels(
+        ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
+    ax.minorticks_off()
+    ax.set_xlabel('Time since GW signal')
