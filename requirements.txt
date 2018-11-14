@@ -1,4 +1,4 @@
-healpy
+healpy==1.12.4
 pygcn
 sphinx
 sphinx-tabs
