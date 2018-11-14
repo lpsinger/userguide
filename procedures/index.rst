@@ -56,10 +56,10 @@ contain all of the information that is useful for searching for a counterpart.
     fig, axs = plt.subplots(
         len(plot_data),
         sharex=True,
-        figsize=(8, 3),
+        figsize=(8, 4),
         gridspec_kw=dict(
             height_ratios=[len(_) + 1 - bar_height for _ in plot_data],
-            top=0.9, left=0, right=1, hspace=0.05, bottom=0.2
+            top=0.9, left=0, right=1, hspace=0.05, bottom=0.1
         ))
 
     for ax, data, alert_label in zip(axs, plot_data, alert_labels):
@@ -85,9 +85,9 @@ contain all of the information that is useful for searching for a counterpart.
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
 
-    fig.suptitle('Time since gravitational-wave signal')
+    fig.suptitle(r'Time since gravitational-wave signal $\rightarrow$')
     ax.set_xscale('log')
-    ax.set_xlim(3 * u.second, 100 * u.day)
+    ax.set_xlim(1 * u.second, 100 * u.day)
     ticks = [10 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
     ax.set_xticks(ticks)
     ax.set_xticklabels(
