@@ -5,7 +5,8 @@ In addition to reading this user guide, we encourage you to sign up for a
 certain e-mail lists and community resources. Make sure that you have completed
 the items on this checklist.
 
-.. rubric:: 1. Read This User Guide
+1. Read This User Guide
+-----------------------
 
 Pay particular attention to the :doc:`content` section of this user guide to
 familiarize yourself with the contents of machine-readable LIGO/Virgo
@@ -13,7 +14,8 @@ familiarize yourself with the contents of machine-readable LIGO/Virgo
 receive example GCN Notices and practice working with :doc:`localization maps
 <tutorial/skymaps>`.
 
-.. rubric:: 2. Subscribe to GCN Circulars
+2. Subscribe to GCN Circulars
+-----------------------------
 
 `Subscribe to GCN Circulars`_ and review the `instructions for posting GCN
 Circulars`_. A :term:`GCN Circular` is a short, public bulletin to rapidly
@@ -27,13 +29,15 @@ counterparts using GCN Circulars as well.
    GCN Circulars can only be posted from registered email addresses. You
    *must* sign up for GCN Circulars *in advance* in order to post to the list.
 
-.. rubric:: 3. Join the LV-EM Forum
+3. Join the LV-EM Forum
+-----------------------
 
 Register for the `LV-EM Forum`_. LIGO/Virgo will use this email list to share
 important announcements and solicit input. It is also a great place to ask
 question or discuss issues related to LIGO/Virgo public alerts.
 
-.. rubric:: 4. Visit GraceDb
+4. Visit GraceDb
+----------------
 
 Familiarize yourself with GraceDb_, LIGO/Virgo's online portal for alerts and
 real-time results.
