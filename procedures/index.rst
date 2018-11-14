@@ -37,6 +37,8 @@ contain all of the information that is useful for searching for a counterpart.
 
     quantity_support()
 
+    gradient = np.linspace(0, 1, 256)[np.newaxis, :]**0.5
+
     plot_data = [[['Rapid Localization', 60 * u.second, 20 * u.second],
                   ['Classification', 75 * u.second, 5 * u.second],
                   ['Automated Vetting', 75 * u.second, 5 * u.second],
@@ -86,6 +88,7 @@ contain all of the information that is useful for searching for a counterpart.
             ax.text(max(start, 1 * u.minute), i,
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
+        ax.imshow(gradient, extent=[t.value, (10 * t).value, -10, 10], cmap='Greys_r', vmin=-1, vmax=1)
 
     fig.suptitle('Time since gravitational-wave signal')
     ax.set_xscale('log')
