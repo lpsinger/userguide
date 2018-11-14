@@ -291,7 +291,7 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 <healpy:tutorial>` for other useful operations.
 
 .. _Aladin: https://aladin.u-strasbg.fr
-.. _`Calabretta & Roukema (2007)`: https://adsabs.harvard.edu/abs/2007MNRAS.381..865C
+.. _`Calabretta & Roukema (2007)`: https://doi.org/10.1111/j.1365-2966.2007.12297.x
 .. _curl: https://curl.haxx.se
 .. _DS9: http://ds9.si.edu
 .. _funhead: https://linux.die.net/man/1/funhead
