@@ -94,6 +94,8 @@ contain all of the information that is useful for searching for a counterpart.
         ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
     ax.minorticks_off()
     ax.set_xlabel('Time since GW signal')
+    for ax in axs[:-1]:
+        plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
 **Within minutes after GW trigger time**, the first :doc:`preliminary notice
 </content>` will be sent fully autonomously (not necessary attached to
