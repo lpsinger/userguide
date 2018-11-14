@@ -78,15 +78,25 @@ the FITS file, download it, and extract the probability sky map::
 Listen for GCNs
 ---------------
 
+.. important::
+   GCN's configuration for LIGO/Virgo O3 is not yet complete and sample events
+   are not yet being distributed. In the mean time, you can test your handler
+   function using the following code::
+
+        import astropy.utils.data
+        import lxml.etree
+
+        url = 'https://emfollow.docs.ligo.org/userguide/_static/MS181101abc-1-Preliminary.xml'
+        payload = astropy.utils.data.get_file_contents(url)
+        root = lxml.etree.fromstring(payload)
+
+        process_gcn(payload, root)
+
 Now, we will start the VOEvent client to listen for GCNs using the
 ``gcn.listen`` function. By default, this will connect to the anonymous, public
 GCN server. You just need to tell ``gcn.listen`` what function to call whenever
 it receives an GCN; in this example, that is the ``process_gcn`` handler that
 we defined above.
-
-.. note::
-   ``gcn.listen`` will try to automatically reconnect if the network connection
-   is ever broken.
 
 ::
 
@@ -95,7 +105,13 @@ we defined above.
     gcn.listen(handler=process_gcn)
 
 When you run this script, you should receive a sample LIGO/Virgo GCN Notice
-every 15 minutes. For each sample notice, you should see output that looks
+every 15 minutes.
+
+.. note::
+   ``gcn.listen`` will try to automatically reconnect if the network connection
+   is ever broken.
+
+For each sample notice, you should see output that looks
 like this::
 
     internal = 0
