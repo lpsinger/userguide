@@ -50,7 +50,7 @@ contain all of the information that is useful for searching for a counterpart.
 
     alert_labels = ['Preliminary\nAlert Sent',
                     'Initial Alert or\nRetraction Sent',
-                    'Update Alert']
+                    'Update\nAlert Sent']
     bar_height = 0.8
 
     fig, axs = plt.subplots(
