@@ -106,7 +106,7 @@ contain all of the information that is useful for searching for a counterpart.
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
-**Within minutes after GW trigger time**, the first :doc:`preliminary notice
+**Within 1–10 minutes after GW trigger time**, the first :doc:`preliminary notice
 </content>` will be sent fully autonomously (not necessary attached to
 localization). The trigger will be immediately visible under the LIGO/Virgo GW
 database :term:`GraceDb`. As soon as the localization area is available, a
