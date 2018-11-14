@@ -114,8 +114,9 @@ second preliminary notice is sent. The procedure is fully automatic and some
 preliminary alerts may be retracted after human inspection for data quality,
 instrumental conditions, and pipeline behavior.
 
-**Within 4 hours after the GW trigger time**, the :doc:`Initial notices and
-circulars </content>` will be distributed with an update for the sky
+**Within 24 hours after the GW trigger time** (possibly within 4 hours for
+:term:`BNS` or :term:`NSBH` sources, to be decided), the :doc:`Initial notices
+and circulars </content>` will be distributed with an update for the sky
 localization area and the source classification. They are vetted by human
 instrument scientists and analysts. In case of a binary coalescence including a
 neutron star or a burst trigger, the initial circular can labeled as
