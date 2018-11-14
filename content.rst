@@ -137,10 +137,7 @@ Significance
 
 The significance of the event is quantified by its false alarm rate (FAR): the
 expected rate of events with equal or greater significance in the absence of
-any astrophysical signals. If the estimated FAR is less than
-:math:`(100\,\mathrm{yr})^{-1}`, then the Circular will simply describe the
-event as "highly significant." Otherwise, the value of the FAR will be stated
-in the Circular.
+any astrophysical signals.
 
 Localization
 ~~~~~~~~~~~~
