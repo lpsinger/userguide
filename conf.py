@@ -85,7 +85,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'description': '*DRAFT* Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
+    'description': 'Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
     'fixed_sidebar': True,
     'logo': 'logo.png',
     'show_relbars': True,
