@@ -209,20 +209,20 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
    .. tab:: Preliminary
 
-      .. literalinclude:: _static/MS181101abc-1-Preliminary.xml
+      .. literalinclude:: _static/MS181101ab-1-Preliminary.xml
          :language: xml
 
    .. tab:: Initial
 
-      .. literalinclude:: _static/MS181101abc-2-Initial.xml
+      .. literalinclude:: _static/MS181101ab-2-Initial.xml
          :language: xml
 
    .. tab:: Update
 
-      .. literalinclude:: _static/MS181101abc-3-Update.xml
+      .. literalinclude:: _static/MS181101ab-3-Update.xml
          :language: xml
 
    .. tab:: Retraction
 
-      .. literalinclude:: _static/MS181101abc-4-Retraction.xml
+      .. literalinclude:: _static/MS181101ab-4-Retraction.xml
          :language: xml

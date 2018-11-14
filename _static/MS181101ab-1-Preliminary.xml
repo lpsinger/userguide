@@ -2,9 +2,9 @@
 <voe:VOEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0"
 xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd"
- version="2.0" role="test" ivorn="ivo://gwnet/gcn_sender#MS181101abc-2-Initial">
+ version="2.0" role="test" ivorn="ivo://gwnet/gcn_sender#MS181101ab-1-Preliminary">
     <Who>
-        <Date>2018-11-01T22:36:25</Date>
+        <Date>2018-11-01T22:34:49</Date>
         <Author>
             <contactName>LIGO Scientific Collaboration and Virgo Collaboration</contactName>
         </Author>
@@ -13,14 +13,14 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="internal" dataType="int" value="0">
             <Description>Indicates whether this event should be distributed to LSC/Virgo members only</Description>
         </Param>
-        <Param name="Packet_Type" dataType="int" value="152">
-            <Description>The Notice Type number is assigned/used within GCN, eg type=151 is an LVC_INITIAL notice</Description>
+        <Param name="Packet_Type" dataType="int" value="150">
+            <Description>The Notice Type number is assigned/used within GCN, eg type=150 is an LVC_PRELIMINARY notice</Description>
         </Param>
-        <Param name="Pkt_Ser_Num" dataType="string" value="3"/>
-        <Param name="GraceID" dataType="string" value="MS181101abc" ucd="meta.id">
+        <Param name="Pkt_Ser_Num" dataType="string" value="1"/>
+        <Param name="GraceID" dataType="string" value="MS181101ab" ucd="meta.id">
             <Description>Identifier in GraceDB</Description>
         </Param>
-        <Param name="AlertType" dataType="string" value="Update" ucd="meta.version" unit="">
+        <Param name="AlertType" dataType="string" value="Preliminary" ucd="meta.version" unit="">
             <Description>VOEvent alert type</Description>
         </Param>
         <Param name="Retraction" dataType="string" value="false" ucd="meta.code" unit="">
@@ -29,7 +29,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number" unit="">
             <Description>Indicates that this event is a hardware injection if 1, no if 0</Description>
         </Param>
-        <Param name="Vetted" dataType="int" value="1" ucd="meta.number" unit="">
+        <Param name="Vetted" dataType="int" value="0" ucd="meta.number" unit="">
             <Description>Indicates whether this candidate has undergone basic vetting by humans</Description>
         </Param>
         <Param name="OpenAlert" dataType="int" value="1" ucd="meta.number" unit="">
