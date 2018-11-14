@@ -30,12 +30,12 @@ automated data quality checks, but it may later be :ref:`retracted
 <retraction>` after human vetting. There is no accompanying GCN Circular at
 this stage.
 
-An **Initial GCN Notice** is issued within 4 hours of the preliminary alert,
-after vetting by human instrument scientists and data analysts. If the signal
-does not pass human vetting (i.e., it is a glitch), then instead of an initial
-alert there will be a retraction_. The initial alert is also accompanied by a
-GCN Circular which should be considered as the first formal publication of the
-candidate and can be cited as such.
+An **Initial GCN Notice** is issued after human vetting (see
+:doc:`/procedures/vetting`). If the signal does not pass human vetting (i.e.,
+it is a glitch), then instead of an initial alert there will be a retraction_.
+The initial alert is also accompanied by a GCN Circular which should be
+considered as the first formal publication of the candidate and can be cited as
+such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
 estimates of the source localization, significance, or classification. There
