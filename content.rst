@@ -108,7 +108,7 @@ LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
 | Noise             | :term:`NSBH`, :term:`NSBH` merger, or just noise,         |                                                           |
-|                   | respectively (mutually exclusive)                         |                                                           |
+|                   | respectively                                              |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
 |                   | noise, that at least one of the compact objects was a     |                                                           |
