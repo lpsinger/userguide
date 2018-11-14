@@ -192,3 +192,4 @@ intersphinx_mapping = {
 
 plot_html_show_source_link = False
 plot_html_show_formats = False
+plot_formats = [('svg', 300)]
