@@ -14,6 +14,12 @@ for both professional astronomers and science enthusiasts who are interested in
 receiving alerts and real-time data products related to gravitational-wave (GW)
 events.
 
+.. warning::
+   Some technical details of LIGO/Virgo public alerts may change before the
+   start of Observing Run 3 (O3) in 2019. In particular, details of the alert
+   format and the :term:`GraceDb` public portal may evolve. Please check this
+   document regularly for announcements and updates.
+
 Three sites (:term:`LHO`, :term:`LLO`, :term:`Virgo`) together form a global
 network of ground-based GW detectors. The `LIGO Scientific Collaboration
 <https://ligo.org/>`_ and the `Virgo Collaboration
@@ -31,12 +37,6 @@ Circulars <GCN Circular>` and machine-readable :term:`GCN Notices <GCN
 Notice>`. This document provides a brief overview of the procedures for vetting
 and sending GW alerts, describes their contents and format, and includes
 instructions and sample code for receiving GCN Notices and decoding GW sky maps.
-
-.. warning::
-   Some technical details of LIGO/Virgo public alerts may change before the
-   start of Observing Run 3 (O3) in 2019. In particular, details of the alert
-   format and the :term:`GraceDb` public portal may evolve. Please check this
-   document regularly for announcements and updates.
 
 
 Contents
