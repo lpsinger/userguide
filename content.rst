@@ -137,8 +137,8 @@ Significance
 ~~~~~~~~~~~~
 
 The significance of the event is quantified by its false alarm rate (FAR): the
-expected rate of events with equal or greater significance in the absence of
-any astrophysical signals.
+expected rate of events from the pipeline that produced the preferred event
+with equal or greater significance in the absence of any astrophysical signals.
 
 Localization
 ~~~~~~~~~~~~
