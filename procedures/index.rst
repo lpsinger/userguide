@@ -62,7 +62,7 @@ contain all of the information that is useful for searching for a counterpart.
             top=0.9, left=0, right=1, hspace=0.05, bottom=0.1
         ))
 
-    for ax, data, alert_label in zip(axs, plot_data, alert_labels):
+    for ax, data, alert_label, props in zip(axs, plot_data, alert_labels, axs[0]._get_lines.prop_cycler):
         ax.spines['left'].set_visible(False)
         ax.spines['right'].set_visible(False)
         ax.set_yticks([])
@@ -79,7 +79,9 @@ contain all of the information that is useful for searching for a counterpart.
                 transform=blended_transform_factory(ax.transData, ax.transAxes),
                 fontweight='bold', va='center')
 
-        ax.barh(np.arange(len(labels)), width=durations, left=starts, height=bar_height)
+        ax.barh(np.arange(len(labels)), width=durations,
+                left=starts, height=bar_height,
+                facecolor=props['color'])
         for i, (start, duration, label) in enumerate(zip(starts, durations, labels)):
             ax.text(max(start, 1 * u.minute), i,
                     ' ' + label + ' ', ha='right', va='center')
