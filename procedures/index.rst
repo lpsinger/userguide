@@ -41,7 +41,7 @@ contain all of the information that is useful for searching for a counterpart.
                   ['Classification', 75 * u.second, 5 * u.second],
                   ['Automated Vetting', 75 * u.second, 5 * u.second],
                   ['Set Preferred Event', 60 * u.second, 15 * u.second],
-                  ['Original Detection', 0.001 * u.second, 59.999 * u.second]],
+                  ['Original Detection', 0 * u.second, 59.999 * u.second]],
                  [['Classification', 4 * u.hour, 10 * u.minute],
                   ['Human Vetting', 5 * u.minute, 4 * u.hour],
                   ['Parameter Estimation', 75 * u.second, 4 * u.hour]],
@@ -74,14 +74,14 @@ contain all of the information that is useful for searching for a counterpart.
 
         t = max(starts + durations) * 1.1
         ax.axvline(t, color='black')
-        ax.axvspan(1e-2 * u.second, t, color='lightgray')
+        ax.axvspan(1e-2 * u.second, t, color='0.95')
         ax.text(t * 1.15, 0.5, alert_label,
                 transform=blended_transform_factory(ax.transData, ax.transAxes),
                 fontweight='bold', va='center')
 
         ax.barh(np.arange(len(labels)), width=durations,
                 left=starts, height=bar_height,
-                facecolor=props['color'])
+                facecolor=props['color'], edgecolor='black')
         for i, (start, duration, label) in enumerate(zip(starts, durations, labels)):
             ax.text(max(start, 1 * u.minute), i,
                     ' ' + label + ' ', ha='right', va='center')
