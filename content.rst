@@ -146,9 +146,9 @@ Localization
 The localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
 The GCN Notice and Circular will provide a URL for the localization file stored
-in GraceDb. The localization is saved a :term:`FITS` file as a :term:`HEALPix`
-all-sky image. See our :doc:`sample code </tutorial/skymaps>` for instructions
-on working with localization files.
+in GraceDb. The localization is saved in a :term:`FITS` file as a
+:term:`HEALPix` all-sky image. See our :doc:`sample code </tutorial/skymaps>`
+for instructions on working with localization files.
 
 Inference
 ~~~~~~~~~
