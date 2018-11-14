@@ -143,7 +143,7 @@ with equal or greater significance in the absence of any astrophysical signals.
 Localization
 ~~~~~~~~~~~~
 
-The localization is consists of the posterior probability distribution of the
+The localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
 The GCN Notice and Circular will provide a URL for the localization file stored
 in GraceDb. The localization is saved a :term:`FITS` file as a :term:`HEALPix`
