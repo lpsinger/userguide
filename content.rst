@@ -107,8 +107,8 @@ LIGO/Virgo GCN Notice.
 | **Why**           | Inference about the source                                                                                            |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
-| Noise             | :term:`NSBH`, :term:`NSBH` merger, or just noise,         |                                                           |
-|                   | respectively                                              |                                                           |
+| Noise             | :term:`NSBH`, :term:`NSBH` merger, or terrestrial (i.e.,  |                                                           |
+|                   | noise) respectively                                       |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
 |                   | noise, that at least one of the compact objects was a     |                                                           |
@@ -162,7 +162,7 @@ source belongs to the following four categories:
 * :term:`BNS` merger
 * :term:`NSBH` merger
 * :term:`BBH` merger
-* noise (i.e., a chance background fluctuation or a glitch)
+* Terrestrial (i.e., a chance background fluctuation or a glitch)
 
 **Properties**: Probabilities that the source has each of the following
 properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,

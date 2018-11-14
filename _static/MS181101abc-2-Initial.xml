@@ -93,7 +93,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
                 <Concept>BBH</Concept>
             </Inference>
             <Inference probability="0.01">
-                <Concept>Noise</Concept>
+                <Concept>Terrestrial</Concept>
             </Inference>
         </Group>
         <Group name="Properties">
