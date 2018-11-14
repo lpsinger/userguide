@@ -12,3 +12,7 @@ detector characterization and data quality investigation for each event. It
 provides a variety of metrics based on auxiliary instrumental and environmental
 sensors. It provides a dashboard and checklist that is used by a rapid response
 team in order to make a decision of whether to confirm or retract a candidate.
+
+The rapid response team consists of commissioning, computing, and calibration
+experts from each of the detector sites, pipeline experts, detector
+characterization experts, and follow-up advocates.
