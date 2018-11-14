@@ -1,5 +1,5 @@
-Working with Probability Sky Maps
-=================================
+Working with Sky Maps
+=====================
 
 Let's take a look at what is inside one of the LIGO/Virgo probability sky maps.
 They are FITS image files and can be manipulated and viewed with many
