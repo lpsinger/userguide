@@ -87,7 +87,7 @@ contain all of the information that is useful for searching for a counterpart.
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
 
-    fig.suptitle(r'Time since gravitational-wave signal $\rightarrow$')
+    fig.suptitle('Time since gravitational-wave signal')
     ax.set_xscale('log')
     ax.set_xlim(1 * u.second, 100 * u.day)
     ticks = [10 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
@@ -96,6 +96,13 @@ contain all of the information that is useful for searching for a counterpart.
         ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
     ax.minorticks_off()
     ax.set_xlabel('Time since GW signal')
+    axs[-1].arrow(0, 0, 1, 0,
+                  transform=ax.transAxes, clip_on=False,
+                  head_width=0.1, head_length=0.01,
+                  linewidth=axs[-1].spines['bottom'].get_linewidth(),
+                  edgecolor=axs[-1].spines['bottom'].get_edgecolor(),
+                  facecolor=axs[-1].spines['bottom'].get_edgecolor(),
+                  length_includes_head=True)
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
