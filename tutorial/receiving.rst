@@ -78,7 +78,7 @@ the FITS file, download it, and extract the probability sky map::
 Listen for GCNs
 ---------------
 
-.. important::
+.. warning::
    GCN's configuration for LIGO/Virgo O3 is not yet complete and sample events
    are not yet being distributed. In the mean time, you can test your handler
    function using the following code::
