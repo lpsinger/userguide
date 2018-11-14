@@ -24,12 +24,11 @@ below.
 .. image:: https://media.springernature.com/original/springer-static/image/art%3A10.1007%2Fs41114-018-0012-9/MediaObjects/41114_2018_12_Fig2_HTML.gif
    :alt: Long-term observing schedule
 
-Engineering Run 13 (ER13) is scheduled to start 2018-12-14 and last about 5
-days. Engineering Run 14 (ER14) is scheduled not before end of February 2019 
+Engineering Run 13 (ER13) is scheduled to start Friday, the 14th of December 2018 from 8am PT and last until Tuesday, the 18th of December at 6am PT. 
+Engineering Run 14 (ER14) is scheduled not before March 2019 for around 4 weeks
 and will transition without interruption to Observing Run 3 (O3).
 
-O3 is scheduled to begin in March 2019. We expect that all three detectors
-will observe continuously and without significant interruptions for one year.
+During O3, we expect that all three detectors will observe continuously and without significant interruptions for one year.
 It is possible that the Japanese KAGRA detector may come online and become part
 of the joint gravitational-wave analysis at some point during O3. The near-term
 observing schedule is shown below.
