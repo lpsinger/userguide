@@ -4,20 +4,14 @@ Alert Contents
 Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
-**GCN Circulars** are short human-readable astronomical bulletins. They are written
-in a certain well-established `format and style`_. You can `subscribe to GCN
-Circulars`_ to receive and post them by email, or you can view them in the
-public `GCN Circulars archive`_.
-
 **GCN Notices** are machine-readable packets. They are available as :term:`VOEvent`
 XML and `several other formats`_. We strongly recommend receiving LIGO/Virgo
 alerts in the VOEvent XML format.
 
-.. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
-.. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
-.. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
-.. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
-.. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+**GCN Circulars** are short human-readable astronomical bulletins. They are written
+in a certain well-established `format and style`_. You can `subscribe to GCN
+Circulars`_ to receive and post them by email, or you can view them in the
+public `GCN Circulars archive`_.
 
 Notice Types
 ------------
@@ -183,6 +177,11 @@ depend on details of neutron star physics (e.g. maximum NS mass, equation of
 state). See the earlier :doc:`procedures </procedures/inference>` for
 implementation details.
 
+Circular Contents
+-----------------
+
+The following information will be present in the human-readable GCN Circulars.
+
 Data Quality Assessment
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -192,8 +191,20 @@ inferences. Unresolved data quality issues could mean that localization
 estimates may shift after they have been mitigated, but does not mean that they
 will. This is to be considered as advisory information.
 
+Localization Ellipse
+~~~~~~~~~~~~~~~~~~~~
+
+Generally, GW localizations are irregularly shaped. However, for particularly
+accurately localized events, the localization region can be well described by
+an ellipse. For well-localized events, the GCN Circulars will include a 90%
+containment ellipse in the format of a `DS9 region string`_ (right ascension,
+declination, semi-major axis, semi-minor axis, position angle of the semi-minor
+axis), for instance::
+
+    icrs; ellipse(03h08m25s, -45d08m14s, 9d, 3d, 112d)
+
 *Not* Included in Alerts
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 The alerts will not contain quantitative estimates of intrinsic properties such
 as masses and spins, nor contain information on the GW strain or reconstructed
@@ -226,3 +237,10 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
       .. literalinclude:: _static/MS181101ab-4-Retraction.xml
          :language: xml
+
+.. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
+.. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
+.. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
+.. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
+.. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+.. _`DS9 region string`: http://ds9.si.edu/doc/ref/region.html
