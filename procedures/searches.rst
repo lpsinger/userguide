@@ -88,10 +88,10 @@ identify possible GW candidate events.
 Coincident with External Trigger Search
 ---------------------------------------
 
-**RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent 
-Coincidence Monitor (RAVEN), a fast search for coincidence between GW online 
-pipeline events and gamma-ray bursts or galactic supernova notifications. A 
-similar approach is under development for High Energy neutrinos.
+**RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
+Coincidence Monitor (RAVEN), a fast search for coincidence between GW online
+pipeline events and gamma-ray bursts or galactic supernova notifications. A
+similar approach is under development for high energy neutrinos.
 
 .. |apj| replace:: *Astrophys. J.*
 .. |cqg| replace:: *Class. Quantum Grav.*
@@ -106,7 +106,7 @@ similar approach is under development for High Energy neutrinos.
    https://doi.org/10.1103/PhysRevD.86.024012
 
 .. [#SPIIRThesis]
-   Chu, Q. 2017, Ph.D. thesis.
+   Chu, Q. 2017, Ph.D. Thesis.
    https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
 
 .. [#MBTA]
@@ -130,5 +130,5 @@ similar approach is under development for High Energy neutrinos.
    https://doi.org/10.1103/PhysRevD.95.104046
 
 .. [#RAVEN]
-   Urban, Alexander L. PhD Thesis, University of Wisconsin Milwaulkee, 2016,
+   Urban, A. L. 2016, Ph.D. Thesis.
    http://adsabs.harvard.edu/abs/2016PhDT.........8U
