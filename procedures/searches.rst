@@ -85,6 +85,14 @@ network of clusters with a time-of-flight window up to 10 ms are then analyzed
 with a coherent (i.e., correlated across the detector network) signal model to
 identify possible GW candidate events.
 
+Coincident with External Trigger Search
+---------------------------------------
+
+**RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent 
+Coincidence Monitor (RAVEN), a fast search for coincidence between GW online 
+pipeline events and gamma-ray bursts or galactic supernova notifications. A 
+similar approach is under development for High Energy neutrinos.
+
 .. |apj| replace:: *Astrophys. J.*
 .. |cqg| replace:: *Class. Quantum Grav.*
 .. |prd| replace:: *Phys. Rev. D*
@@ -120,3 +128,7 @@ identify possible GW candidate events.
 .. [#oLIB]
    Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |prd|, 95, 104046.
    https://doi.org/10.1103/PhysRevD.95.104046
+
+.. [#RAVEN]
+   Urban, Alexander L. PhD Thesis, University of Wisconsin Milwaulkee, 2016,
+   http://adsabs.harvard.edu/abs/2016PhDT.........8U
