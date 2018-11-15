@@ -51,20 +51,13 @@ the FITS file, download it, and extract the probability sky map::
                   elem.attrib['value']
                   for elem in root.iterfind('.//Param')}
 
-        # Read all of the VOEvent inference fields from the "Why" section.
-        inference = {elem.find('Concept').text:
-                     float(elem.attrib['probability'])
-                     for elem in root.iterfind('.//Inference')}
-
         # Respond only to 'CBC' events. Change 'CBC' to "Burst'
         # to respond to only unmodeled burst events.
         if params['Group'] != 'CBC':
             return
 
-        # Print parameters and inference values.
+        # Print all parameters.
         for key, value in params.items():
-            print(key, '=', value)
-        for key, value in inference.items():
             print(key, '=', value)
 
         # Read the HEALPix sky map and the FITS header.

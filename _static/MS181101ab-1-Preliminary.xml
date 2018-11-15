@@ -61,6 +61,34 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
                 <Description>Sky Map image</Description>
             </Param>
         </Group>
+        <Group type="Classification">
+            <Description>
+                Source classification: binary neutron star (BNS), neutron star-black hole (NSBH), binary black hole (BBH), or terrestrial (noise)
+            </Description>
+            <Param name="BNS" dataType="float" value="0.95" ucd="stat.probability" unit="">
+                <Description>Probability that the source is a binary neutron star merger</Description>
+            </Param>
+            <Param name="NSBH" dataType="float" value="0.01" ucd="stat.probability" unit="">
+                <Description>Probability that the source is a neutron star - black hole merger</Description>
+            </Param>
+            <Param name="BBH" dataType="float" value="0.03" ucd="stat.probability" unit="">
+                <Description>Probability that the source is a binary black hole merger</Description>
+            </Param>
+            <Param name="Terrestrial" dataType="float" value="0.01" ucd="stat.probability" unit="">
+                <Description>Probability that the source is terrestrial (i.e., a background noise fluctuation or a glitch)</Description>
+            </Param>
+        </Group>
+        <Group type="Properties">
+            <Description>
+                Qualitative properties of the source, conditioned on the assumption that the signal is an astrophysical compact binary merger
+            </Description>
+            <Param name="HasNS" dataType="float" value="0.95" ucd="stat.probability" unit="">
+                <Description>Probability that at least one object in the binary has a mass that is less than 3 solar masses</Description>
+            </Param>
+            <Param name="HasRemnant" dataType="float" value="0.91" ucd="stat.probability" unit="">
+                <Description>Probability that a nonzero mass was ejected outside the central remnant object</Description>
+            </Param>
+        </Group>
     </What>
     <WhereWhen>
         <ObsDataLocation>
@@ -77,39 +105,6 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
             </ObservationLocation>
         </ObsDataLocation>
     </WhereWhen>
-    <Why>
-        <Concept>Gravitational-wave transient</Concept>
-        <Group name="Classification">
-            <Description>
-                Source classification: binary neutron star (BNS), neutron star-black hole (NSBH), binary black hole (BBH), or noise
-            </Description>
-            <Inference probability="0.95">
-                <Concept>BNS</Concept>
-            </Inference>
-            <Inference probability="0.01">
-                <Concept>NSBH</Concept>
-            </Inference>
-            <Inference probability="0.03">
-                <Concept>BBH</Concept>
-            </Inference>
-            <Inference probability="0.01">
-                <Concept>Terrestrial</Concept>
-            </Inference>
-        </Group>
-        <Group name="Properties">
-            <Description>
-                Qualitative properties of the source, conditioned on the assumption that the signal is an astrophysical compact binary merger
-            </Description>
-            <Inference probability="0.95">
-                <Concept>HasNS</Concept>
-                <Description>Probability that at least one object in the binary has a mass that is less than 3 solar masses</Description>
-            </Inference>
-            <Inference probability="0.91">
-                <Concept>HasRemnant</Concept>
-                <Description>Probability that a nonzero mass was ejected outside the central remnant object</Description>
-            </Inference>
-        </Group>
-    </Why>
     <How>
         <Description>Candidate gravitational wave event identified by low-latency analysis</Description>
         <Description>H1: LIGO Hanford 4 km gravitational wave detector</Description>

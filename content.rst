@@ -98,8 +98,6 @@ LIGO/Virgo GCN Notice.
 +-------------------+                                                           +-----------------------------------------------------------+
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| **Why**           | Inference about the source                                                                                            |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
 | Noise             | :term:`NSBH`, :term:`NSBH` merger, or terrestrial (i.e.,  |                                                           |
 |                   | noise) respectively                                       |                                                           |

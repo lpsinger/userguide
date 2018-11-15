@@ -12,7 +12,6 @@ validate-voevents:
     - echo 99ba1e3b8351a6f792a2499d3acc70695898ae82588165b6599712a85df1a795  VOEvent-v2.0.xsd > hash
     - sha256sum --check hash
     - xmllint --schema VOEvent-v2.0.xsd _static/*.xml
-  allow_failure: true
 
 build:
   stage: build
