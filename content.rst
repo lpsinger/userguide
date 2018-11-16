@@ -156,6 +156,66 @@ source belongs to the following four categories:
 * :term:`BBH` merger
 * Terrestrial (i.e., a chance background fluctuation or a glitch)
 
+The figure below shows the extent of the three astrophysical categories (BNS,
+NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
+
+.. plot::
+   :alt: Mass parameter space
+
+    from matplotlib import pyplot as plt
+    from matplotlib.patches import Rectangle
+    from matplotlib.ticker import FormatStrFormatter
+    import seaborn
+
+    def get_center(bbox):
+        return 0.5 * (bbox.x0 + bbox.x1), 0.5 * (bbox.y0 + bbox.y1)
+
+    ns_max_mass = 3
+    max_mass = 10
+    ax = plt.axes(aspect=1)
+    ax.set_xlim(0, max_mass)
+    ax.set_ylim(0, max_mass)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.set_xticks([0, ns_max_mass])
+    ax.set_yticks([0, ns_max_mass])
+    ax.set_xticklabels([r'0 $M_\odot$', r'{} $M_\odot$'.format(ns_max_mass)])
+    ax.set_yticklabels(['', r'{} $M_\odot$'.format(ns_max_mass)])
+    ax.set_xlabel(r'$m_1$')
+    ax.set_ylabel(r'$m_2$', rotation=0, ha='right')
+    ax.xaxis.set_label_coords(1.0, -0.025)
+    ax.yaxis.set_label_coords(-0.025, 1.0)
+
+    bns_color, nsbh_color, bbh_color = seaborn.color_palette('pastel', 3)
+
+    p = ax.add_patch(Rectangle((0, 0),
+                               ns_max_mass, ns_max_mass,
+                               color=bns_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'BNS', ha='center', va='center')
+
+    p = ax.add_patch(Rectangle((ns_max_mass, ns_max_mass),
+                               max_mass - ns_max_mass, max_mass - ns_max_mass,
+                               color=bbh_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'BBH', ha='center', va='center')
+
+    p = ax.add_patch(Rectangle((0, ns_max_mass),
+                     ns_max_mass, max_mass - ns_max_mass,
+                     color=nsbh_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
+
+    p = ax.add_patch(Rectangle((ns_max_mass, 0),
+                               max_mass - ns_max_mass, ns_max_mass,
+                               color=nsbh_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
+
+    for args in [[1, 0, 0.025, 0], [0, 1, 0, 0.025]]:
+        ax.arrow(*args,
+                 transform=ax.transAxes, clip_on=False,
+                 head_width=0.025, head_length=0.025, width=0,
+                 linewidth=ax.spines['bottom'].get_linewidth(),
+                 edgecolor=ax.spines['bottom'].get_edgecolor(),
+                 facecolor=ax.spines['bottom'].get_edgecolor())
+
 **Properties**: Probabilities that the source has each of the following
 properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
 NSBH, or BBH merger):
