@@ -57,8 +57,10 @@ Appendix
 .. toctree::
    :hidden:
 
+   changes
    glossary
 
+* :doc:`changes`
 * :doc:`glossary`
 * :ref:`search`
 * `Report issues <contact+emfollow/userguide@support.ligo.org>`_
