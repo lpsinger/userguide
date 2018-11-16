@@ -10,6 +10,10 @@ Version 1 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+* Change the expected number of BNS events in O3 from 1-50, as stated in the
+  latest version of the Living Review, to 1-10 events, as stated in the more
+  recent rates presentation.
+
 .. rubric:: Procedures
 
 .. rubric:: Alert Contents

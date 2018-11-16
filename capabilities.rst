@@ -67,7 +67,7 @@ table below.
 | **Kagra** | 8–25              |                   |
 +-----------+-------------------+-------------------+
 
-We expect 1–50 :term:`BNS` events over the course of O3. For BNS events, the
+We expect 1–10 :term:`BNS` events over the course of O3. For BNS events, the
 median localization accuracy of in terms of the 90% credible area will be
 120–180 deg². 12–21% of BNS mergers will be localized to less than 20 deg².
 
