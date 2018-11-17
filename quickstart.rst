@@ -29,12 +29,14 @@ counterparts using GCN Circulars as well.
    GCN Circulars can only be posted from registered email addresses. You
    *must* sign up for GCN Circulars *in advance* in order to post to the list.
 
-3. Join the LV-EM Forum
------------------------
+3. The OpenLVEM Community
+-------------------------
 
-Register for the `LV-EM Forum`_. LIGO/Virgo will use this email list to share
-important announcements and solicit input. It is also a great place to ask
-question or discuss issues related to LIGO/Virgo public alerts.
+Sign up to the OpenLVEM mailing list by following the `OpenLVEM instructions`_.
+LIGO/Virgo will use this list to make announcements and
+solicit input. It is also a great place to ask questions or discuss issues
+related to LIGO/Virgo public alerts. Documents relating to teleconferences 
+and in-person meetings are available at `OpenLVEM wiki`_
 
 4. Visit GraceDb
 ----------------
@@ -54,6 +56,7 @@ real-time results.
 .. _`Subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
 .. _`instructions for posting GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
 .. _`archived online`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
-.. _`LV-EM Forum`: https://gw-astronomy.org/
+.. _`OpenLVEM instructions`: https://gw-astronomy.org/registry/pages/public/openlvem
+.. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM
 .. _GraceDb: https://gracedb.ligo.org
 .. _`Astronomer's Telegrams`: http://www.astronomerstelegram.org
