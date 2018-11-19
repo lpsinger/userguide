@@ -8,7 +8,7 @@ Version 1 (unreleased)
 
 .. rubric:: Getting Started Checklist
 
-* Changed to Join the OpenLVEM Community instead of the old LV-EM Collaboration. 
+* Updated instructions for joining the OpenLVEM Community.
 
 .. rubric:: Observing Capabilities
 

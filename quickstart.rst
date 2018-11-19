@@ -30,13 +30,13 @@ counterparts using GCN Circulars as well.
    *must* sign up for GCN Circulars *in advance* in order to post to the list.
 
 3. Join the OpenLVEM Community
--------------------------
+------------------------------
 
 Sign up to the OpenLVEM mailing list by following the `OpenLVEM instructions`_.
-LIGO/Virgo will use this list to make announcements and
-solicit input. It is also a great place to ask questions or discuss issues
-related to LIGO/Virgo public alerts. Documents relating to teleconferences 
-and in-person meetings are available at `OpenLVEM wiki`_
+LIGO/Virgo will use this list to make announcements and solicit input. It is
+also a great place to ask questions or discuss issues related to LIGO/Virgo
+public alerts. Documents relating to teleconferences and in-person meetings are
+available at `OpenLVEM wiki`_.
 
 4. Visit GraceDb
 ----------------
