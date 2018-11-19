@@ -29,7 +29,7 @@ counterparts using GCN Circulars as well.
    GCN Circulars can only be posted from registered email addresses. You
    *must* sign up for GCN Circulars *in advance* in order to post to the list.
 
-3. The OpenLVEM Community
+3. Join the OpenLVEM Community
 -------------------------
 
 Sign up to the OpenLVEM mailing list by following the `OpenLVEM instructions`_.

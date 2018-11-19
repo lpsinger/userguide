@@ -8,6 +8,8 @@ Version 1 (unreleased)
 
 .. rubric:: Getting Started Checklist
 
+* Changed to Join the OpenLVEM Community instead of the old LV-EM Collaboration. 
+
 .. rubric:: Observing Capabilities
 
 * Change the expected number of BNS events in O3 from 1-50, as stated in the
