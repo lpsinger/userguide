@@ -71,20 +71,6 @@ the FITS file, download it, and extract the probability sky map::
 Listen for GCNs
 ---------------
 
-.. warning::
-   GCN's configuration for LIGO/Virgo O3 is not yet complete and sample events
-   are not yet being distributed. In the mean time, you can test your handler
-   function using the following code::
-
-        import astropy.utils.data
-        import lxml.etree
-
-        url = 'https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml'
-        payload = astropy.utils.data.get_file_contents(url)
-        root = lxml.etree.fromstring(payload)
-
-        process_gcn(payload, root)
-
 Now, we will start the VOEvent client to listen for GCNs using the
 ``gcn.listen`` function. By default, this will connect to the anonymous, public
 GCN server. You just need to tell ``gcn.listen`` what function to call whenever
@@ -98,7 +84,7 @@ we defined above.
     gcn.listen(handler=process_gcn)
 
 When you run this script, you should receive a sample LIGO/Virgo GCN Notice
-every 15 minutes.
+every hour.
 
 .. note::
    ``gcn.listen`` will try to automatically reconnect if the network connection
@@ -132,5 +118,22 @@ like this::
     HasRemnant = 0.91
     Distance = 141.1453950128411 +/- 39.09548411497191
 
+Offline Testing
+---------------
+
+Sometimes it is convenient to be able to explicitly call the GCN handler with a
+sample input, rather than waiting for the next broadcast of a sample alert. You
+can download the `example GCN notices <../content.html#examples>`_ from this
+documentation and pass it into your GCN handler at any time. First, download
+the sample GCN notice using curl::
+
+    curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
+
+Then you can manually invoke your GCN handler using this Python code::
+
+    import lxml.etree
+    payload = open('MS181101abc-1-Preliminary.xml', 'rb').read()
+    root = lxml.etree.fromstring(payload)
+    process_gcn(payload, root)
 
 .. _curl: https://curl.haxx.se

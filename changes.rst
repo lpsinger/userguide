@@ -27,6 +27,10 @@ Version 2 (unreleased)
 
 .. rubric:: Sample Code
 
+* GCN has now begun publicly broadcasting sample LIGO/Virgo GCN Notices.
+  Updated the sample code accordingly with instructions for receiving live
+  sample notices.
+
 Version 1 (2018-11-27)
 ----------------------
 
