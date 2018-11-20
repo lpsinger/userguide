@@ -12,7 +12,7 @@ Version 1 (unreleased)
 
 .. rubric:: Observing Capabilities
 
-* Change the expected number of BNS events in O3 from 1-50, as stated in the
+* Changed the expected number of BNS events in O3 from 1-50, as stated in the
   latest version of the Living Review, to 1-10 events, as stated in the more
   recent rates presentation.
 
@@ -20,7 +20,7 @@ Version 1 (unreleased)
 
 .. rubric:: Alert Contents
 
-* In the example VOEvents, move the Classification and Inference quantities
+* In the example VOEvents, moved the Classification and Inference quantities
   from the ``<Why>`` section to the ``<What>`` section so that they validate
   against the VOEvent 2.0 schema.
 
