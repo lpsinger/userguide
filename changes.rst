@@ -1,10 +1,8 @@
 Change Log
 ==========
 
-Version 1 (unreleased)
+Version 1 (2018-11-27)
 ----------------------
-
-.. rubric:: General
 
 .. rubric:: Getting Started Checklist
 
@@ -16,12 +14,8 @@ Version 1 (unreleased)
   latest version of the Living Review, to 1-10 events, as stated in the more
   recent rates presentation.
 
-.. rubric:: Procedures
-
 .. rubric:: Alert Contents
 
 * In the example VOEvents, moved the Classification and Inference quantities
   from the ``<Why>`` section to the ``<What>`` section so that they validate
   against the VOEvent 2.0 schema.
-
-.. rubric:: Sample Code
