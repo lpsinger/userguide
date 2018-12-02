@@ -79,7 +79,7 @@ Listen for GCNs
         import astropy.utils.data
         import lxml.etree
 
-        url = 'https://emfollow.docs.ligo.org/userguide/_static/MS181101abc-1-Preliminary.xml'
+        url = 'https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml'
         payload = astropy.utils.data.get_file_contents(url)
         root = lxml.etree.fromstring(payload)
 
