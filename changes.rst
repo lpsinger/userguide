@@ -19,6 +19,10 @@ Version 2 (unreleased)
   redundant beacuse by definition Preliminary events have not been vetted
   and all Initial and Update alerts have been vetted.
 
+* The type of the ``Retraction`` parameter in the GCN Notices was changed from
+  a string (``false`` or ``true``) to an integer (``0`` or ``1``) for
+  consistency with other flag-like parameters.
+
 .. rubric:: Sample Code
 
 Version 1 (2018-11-27)
