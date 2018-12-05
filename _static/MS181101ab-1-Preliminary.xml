@@ -29,9 +29,6 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number" unit="">
             <Description>Indicates that this event is a hardware injection if 1, no if 0</Description>
         </Param>
-        <Param name="Vetted" dataType="int" value="0" ucd="meta.number" unit="">
-            <Description>Indicates whether this candidate has undergone basic vetting by humans</Description>
-        </Param>
         <Param name="OpenAlert" dataType="int" value="1" ucd="meta.number" unit="">
             <Description>Indicates that this event is an open alert if 1, no if 0</Description>
         </Param>

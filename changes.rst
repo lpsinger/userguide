@@ -14,6 +14,11 @@ Version 2 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Removed the ``Vetted`` parameter from GCN Notices. It was intended to
+  indicate whether the event had passed human vetting. However, it was
+  redundant beacuse by definition Preliminary events have not been vetted
+  and all Initial and Update alerts have been vetted.
+
 .. rubric:: Sample Code
 
 Version 1 (2018-11-27)
