@@ -23,6 +23,8 @@ Version 2 (unreleased)
   a string (``false`` or ``true``) to an integer (``0`` or ``1``) for
   consistency with other flag-like parameters.
 
+* Remove the ``units`` attribute from parameters that are not numbers.
+
 .. rubric:: Sample Code
 
 Version 1 (2018-11-27)

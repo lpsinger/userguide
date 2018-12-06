@@ -20,16 +20,16 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="GraceID" dataType="string" value="MS181101ab" ucd="meta.id">
             <Description>Identifier in GraceDB</Description>
         </Param>
-        <Param name="AlertType" dataType="string" value="Preliminary" ucd="meta.version" unit="">
+        <Param name="AlertType" dataType="string" value="Preliminary" ucd="meta.version">
             <Description>VOEvent alert type</Description>
         </Param>
-        <Param name="Retraction" dataType="int" value="1" unit="">
+        <Param name="Retraction" dataType="int" value="1">
             <Description>Set to 1 if the event is retracted.</Description>
         </Param>
-        <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number" unit="">
+        <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number">
             <Description>Indicates that this event is a hardware injection if 1, no if 0</Description>
         </Param>
-        <Param name="OpenAlert" dataType="int" value="1" ucd="meta.number" unit="">
+        <Param name="OpenAlert" dataType="int" value="1" ucd="meta.number">
             <Description>Indicates that this event is an open alert if 1, no if 0</Description>
         </Param>
         <Param name="EventPage" dataType="string" value="https://example.org/superevents/MS181101abc/view/" ucd="meta.ref.url">
