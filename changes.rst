@@ -14,6 +14,10 @@ Version 3 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Remove the ``skymap_png`` parameter from the VOEVents. The sky map plots take
+  longer to generate than the FITS files themselves, so they would have
+  needlessly delayed the preliminary alerts.
+
 .. rubric:: Sample Code
 
 Version 2 (2018-12-13)
