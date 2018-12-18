@@ -26,6 +26,10 @@ Version 3 (unreleased)
   O2, and is likely to change in the future with the commissioning of
   additional gravitational-wave facilities.
 
+* Retraction notices now get a separate GCN notice packet type,
+  ``LVC_RETRACTION=164``. The ``Retraction`` parameter has been removed from
+  the ``<What>`` section.
+
 .. rubric:: Sample Code
 
 Version 2 (2018-12-13)

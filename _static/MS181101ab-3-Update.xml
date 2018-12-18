@@ -23,9 +23,6 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="AlertType" dataType="string" value="Update" ucd="meta.version">
             <Description>VOEvent alert type</Description>
         </Param>
-        <Param name="Retraction" dataType="int" value="0">
-            <Description>Set to 1 if the event is retracted.</Description>
-        </Param>
         <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number">
             <Description>Indicates that this event is a hardware injection if 1, no if 0</Description>
         </Param>
