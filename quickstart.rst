@@ -44,10 +44,6 @@ available at `OpenLVEM wiki`_.
 Familiarize yourself with GraceDb_, LIGO/Virgo's online portal for alerts and
 real-time results.
 
-.. note::
-   The public interface of GraceDb is under development and will be complete
-   some time before O3 starts. Please check back periodically.
-
 .. [#f1] GCN Circulars are similar to `Astronomer's Telegrams`_ (ATels). By
          longstanding convention, the gamma-ray burst and gravitational-wave
          astronomy communities use GCNs, whereas the supernova community uses
