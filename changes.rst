@@ -18,6 +18,14 @@ Version 3 (unreleased)
   longer to generate than the FITS files themselves, so they would have
   needlessly delayed the preliminary alerts.
 
+* Change the IVORN prefix from ``ivo://gwnet/gcn_sender`` to
+  ``ivo://gwnet/LVC``, because GCN traditionally uses the text after the ``/``
+  to indicate the name of the mission, which most closely corresponds to "LVC,"
+  short for "LIGO/Virgo Collaboration." Note that this IVORN is used for
+  historical purposes and continuity with the GCN notice format used in O1 and
+  O2, and is likely to change in the future with the commissioning of
+  additional gravitational-wave facilities.
+
 .. rubric:: Sample Code
 
 Version 2 (2018-12-13)
