@@ -155,7 +155,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ligovirgoopenpublicalertsuserguide', 'LIGO/Virgo Public Alerts User Guide Documentation',
+    (master_doc, 'ligovirgopublicalertsuserguide', 'LIGO/Virgo Public Alerts User Guide Documentation',
      [author], 1)
 ]
 
