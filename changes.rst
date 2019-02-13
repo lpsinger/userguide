@@ -1,16 +1,8 @@
 Change Log
 ==========
 
-Version 3 (unreleased)
+Version 3 (2019-02-13)
 ----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Procedures
 
 .. rubric:: Alert Contents
 
@@ -29,8 +21,6 @@ Version 3 (unreleased)
 * Retraction notices now get a separate GCN notice packet type,
   ``LVC_RETRACTION=164``. The ``Retraction`` parameter has been removed from
   the ``<What>`` section.
-
-.. rubric:: Sample Code
 
 Version 2 (2018-12-13)
 ----------------------
