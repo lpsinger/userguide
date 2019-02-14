@@ -98,7 +98,6 @@ like this::
     Pkt_Ser_Num = 1
     GraceID = MS181101abc
     AlertType = Preliminary
-    Retraction = false
     HardwareInj = 0
     Vetted = 0
     OpenAlert = 1
