@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 4 (unreleased)
+Version 4 (2019-02-15)
 ----------------------
 
 .. rubric:: General
@@ -22,10 +22,6 @@ Version 4 (unreleased)
 
 * Add Live Status section, listing some public web pages that provide real-time
   detector status.
-
-.. rubric:: Procedures
-
-.. rubric:: Alert Contents
 
 .. rubric:: Sample Code
 
