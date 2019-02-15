@@ -132,10 +132,9 @@ Upon running this, you should see:
     internal = 0
     Packet_Type = 150
     Pkt_Ser_Num = 1
-    GraceID = MS181101abc
+    GraceID = MS181101ab
     AlertType = Preliminary
     HardwareInj = 0
-    Vetted = 0
     OpenAlert = 1
     EventPage = https://example.org/superevents/MS181101ab/view/
     Instruments = H1,L1
@@ -147,7 +146,7 @@ Upon running this, you should see:
     BNS = 0.95
     NSBH = 0.01
     BBH = 0.03
-    Noise = 0.01
+    Terrestrial = 0.01
     HasNS = 0.95
     HasRemnant = 0.91
     Distance = 141.1453950128411 +/- 39.09548411497191
