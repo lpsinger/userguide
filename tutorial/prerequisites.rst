@@ -14,13 +14,17 @@ operating system (Linux or macOS) and a few third-party Python packages:
 * numpy_ and matplotlib_, popular math and plotting packages for Python
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
-of the above with the following command::
+of the above with the following command:
+
+.. code-block:: shell-session
 
     $ sudo port install py37-gcn py37-healpy
 
 Otherwise, the fastest way to install the dependencies is with pip_, a package
 manager that comes with most Python distributions. To install these packages
-with ``pip``, run the following command::
+with ``pip``, run the following command:
+
+.. code-block:: shell-session
 
     $ pip install pygcn healpy
 

@@ -13,14 +13,18 @@ source is within that pixel.
 .. image:: https://healpix.jpl.nasa.gov/images/healpixGridRefinement.jpg
    :alt: HEALPix projection
 
-Let's download an example FITS file with curl_::
+Let's download an example FITS file with curl_:
+
+.. code-block:: shell-session
 
     $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
 
 We can look at the metadata inside the FITS file by printing its header with
 tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
 :mod:`~astropy.io.fits.scripts.fitsheader` from :doc:`Astropy
-<astropy:index>`::
+<astropy:index>`:
+
+.. code-block:: shell-session
 
     $ fitsheader bayestar.fits.gz
     # HDU 0 in bayestar.fits.gz:
@@ -118,6 +122,8 @@ Reading Sky Maps
 
 First, if you have not already downloaded an example sky map, you can do so now
 by having Python call `curl` on the command line:
+
+.. code-block:: shell-session
 
     $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
 

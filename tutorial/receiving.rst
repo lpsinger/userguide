@@ -106,9 +106,11 @@ Sometimes it is convenient to be able to explicitly call the GCN handler with a
 sample input, rather than waiting for the next broadcast of a sample alert. You
 can download the `example GCN notices <../content.html#examples>`_ from this
 documentation and pass it into your GCN handler at any time. First, download
-the sample GCN notice::
+the sample GCN notice:
 
-    curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
+.. code-block:: shell-session
+
+    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
 
 Then you can manually invoke your GCN handler using this Python code:
 
