@@ -24,17 +24,6 @@ with ``pip``, run the following command::
 
     $ pip install pygcn healpy
 
-Imports
--------
-
-Now we'll write a GCN handler script. First, some imports::
-
-    import gcn
-    import gcn.handlers
-    import gcn.notice_types
-    import healpy as hp
-    import numpy as np
-
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _astropy: https://pypi.org/project/astropy/

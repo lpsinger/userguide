@@ -29,7 +29,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="OpenAlert" dataType="int" value="1" ucd="meta.number">
             <Description>Indicates that this event is an open alert if 1, no if 0</Description>
         </Param>
-        <Param name="EventPage" dataType="string" value="https://example.org/superevents/MS181101abc/view/" ucd="meta.ref.url">
+        <Param name="EventPage" dataType="string" value="https://example.org/superevents/MS181101ab/view/" ucd="meta.ref.url">
             <Description>Web page for evolving status of this GW candidate</Description>
         </Param>
         <Param name="Instruments" dataType="string" value="H1,L1" ucd="meta.code">

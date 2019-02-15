@@ -13,17 +13,23 @@ validate-voevents:
     - sha256sum --check hash
     - xmllint --schema VOEvent-v2.0.xsd _static/*.xml
 
-build:
+.sphinx: &sphinx
   stage: build
   image: python:slim
   variables:
     SPHINXOPTS: -W
   script:
     - pip install -r requirements.txt
-    - sphinx-build -M html . _build
+    - sphinx-build -M $CI_JOB_NAME . _build
   artifacts:
     paths:
-      - _build/html
+      - _build/$CI_JOB_NAME
+
+html:
+  <<: *sphinx
+
+doctest:
+  <<: *sphinx
 
 pages:
   stage: deploy

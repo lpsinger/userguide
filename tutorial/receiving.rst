@@ -28,7 +28,12 @@ based on this. The example below will handle only 'CBC' events.
    :func:`urllib.request.urlopen`, or even curl_.
 
 The following basic handler function will parse out the URL of
-the FITS file, download it, and extract the probability sky map::
+the FITS file, download it, and extract the probability sky map:
+
+.. testcode::
+
+    import gcn
+    import healpy as hp
 
     # Function to call every time a GCN is received.
     # Run only for notices of type
@@ -60,13 +65,14 @@ the FITS file, download it, and extract the probability sky map::
         for key, value in params.items():
             print(key, '=', value)
 
-        # Read the HEALPix sky map and the FITS header.
-        skymap, header = hp.read_map(params['skymap_fits'],
-                                     h=True, verbose=False)
-        header = dict(header)
+        if 'skymap_fits' in params:
+            # Read the HEALPix sky map and the FITS header.
+            skymap, header = hp.read_map(params['skymap_fits'],
+                                         h=True, verbose=False)
+            header = dict(header)
 
-        # Print some values from the FITS header.
-        print('Distance =', header['DISTMEAN'], '+/-', header['DISTSTD'])
+            # Print some values from the FITS header.
+            print('Distance =', header['DISTMEAN'], '+/-', header['DISTSTD'])
 
 Listen for GCNs
 ---------------
@@ -84,14 +90,44 @@ we defined above.
     gcn.listen(handler=process_gcn)
 
 When you run this script, you should receive a sample LIGO/Virgo GCN Notice
-every hour.
+every hour. For each event received, it will print output that looks like what
+is shown in the :ref:`offline-testing` example below.
 
 .. note::
    ``gcn.listen`` will try to automatically reconnect if the network connection
    is ever broken.
 
-For each sample notice, you should see output that looks
-like this::
+.. _offline-testing:
+
+Offline Testing
+---------------
+
+Sometimes it is convenient to be able to explicitly call the GCN handler with a
+sample input, rather than waiting for the next broadcast of a sample alert. You
+can download the `example GCN notices <../content.html#examples>`_ from this
+documentation and pass it into your GCN handler at any time. First, download
+the sample GCN notice::
+
+    curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
+
+Then you can manually invoke your GCN handler using this Python code:
+
+.. testsetup::
+
+    import os
+    old_dir = os.getcwd()
+    os.chdir('_static')
+
+.. testcode::
+
+    import lxml.etree
+    payload = open('MS181101ab-1-Preliminary.xml', 'rb').read()
+    root = lxml.etree.fromstring(payload)
+    process_gcn(payload, root)
+
+Upon running this, you should see:
+
+.. testoutput::
 
     internal = 0
     Packet_Type = 150
@@ -101,7 +137,7 @@ like this::
     HardwareInj = 0
     Vetted = 0
     OpenAlert = 1
-    EventPage = https://example.org/superevents/MS181101abc/view/
+    EventPage = https://example.org/superevents/MS181101ab/view/
     Instruments = H1,L1
     FAR = 9.11069936486e-14
     Group = CBC
@@ -116,22 +152,8 @@ like this::
     HasRemnant = 0.91
     Distance = 141.1453950128411 +/- 39.09548411497191
 
-Offline Testing
----------------
+.. testcleanup::
 
-Sometimes it is convenient to be able to explicitly call the GCN handler with a
-sample input, rather than waiting for the next broadcast of a sample alert. You
-can download the `example GCN notices <../content.html#examples>`_ from this
-documentation and pass it into your GCN handler at any time. First, download
-the sample GCN notice using curl::
-
-    curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
-
-Then you can manually invoke your GCN handler using this Python code::
-
-    import lxml.etree
-    payload = open('MS181101abc-1-Preliminary.xml', 'rb').read()
-    root = lxml.etree.fromstring(payload)
-    process_gcn(payload, root)
+    os.chdir(old_dir)
 
 .. _curl: https://curl.haxx.se
