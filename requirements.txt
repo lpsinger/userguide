@@ -1,3 +1,4 @@
+pygcn
 healpy
 seaborn
 sphinx
