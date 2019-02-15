@@ -15,6 +15,9 @@ Version 4 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+* Update planned dates for Engineering Run 14 (ER14; starts 2019-03-04) and
+  Observing Run 3 (O3; starts 2019-04-01).
+
 .. rubric:: Procedures
 
 .. rubric:: Alert Contents
