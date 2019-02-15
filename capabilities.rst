@@ -57,8 +57,9 @@ LIGO/Virgo detectors and alert infrastructure.
 *  | **GWIStat**: Real-time detector up/down status.
    | https://ldas-jobs.ligo.caltech.edu/~gwistat/gwistat/gwistat.html
 
-*  | **LIGO Data Grid Status**: Live detector, computing, and analysis dashboard.
-     Status of the LIGO/Virgo alert pipeline is indicated by the "EMFollow" box.
+*  | **LIGO Data Grid Status**: Live dashboard showing up/down status of the
+     detectors and online analyses. Status of the LIGO/Virgo alert pipeline is
+     indicated by the "EMFollow" box.
    | http://monitor.ligo.org/gwstatus
 
 Sensitivity and Localization Accuracy
