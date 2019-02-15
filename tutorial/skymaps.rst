@@ -136,6 +136,14 @@ by having Python call `curl` on the command line:
     url = 'https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz'
     hpx = hp.read_map(url)
 
+.. testsetup::
+
+    import healpy as hp
+    import numpy as np
+    import os
+    old_dir = os.getcwd()
+    os.chdir('_static')
+
 Next, we need to read in the file in Python with Healpy:
 
     >>> hpx = hp.read_map('bayestar.fits.gz')
@@ -295,6 +303,10 @@ Other useful Healpy functions include :func:`hp.ud_grade
 :func:`hp.get_interp_val <healpy.pixelfunc.get_interp_val>` for performing
 bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 <healpy:tutorial>` for other useful operations.
+
+.. testcleanup::
+
+    os.chdir(old_dir)
 
 .. _Aladin: https://aladin.u-strasbg.fr
 .. _`Calabretta & Roukema (2007)`: https://doi.org/10.1111/j.1365-2966.2007.12297.x
