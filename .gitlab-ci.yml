@@ -42,4 +42,4 @@ pages:
   only:
     - tags
   dependencies:
-    - build
+    - html
