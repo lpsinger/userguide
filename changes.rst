@@ -6,6 +6,11 @@ Version 4 (unreleased)
 
 .. rubric:: General
 
+* Changed the contact email to <emfollow-userguide@support.ligo.org> because
+  some mail clients had trouble with the slash in the old contact email
+  address, <contact+emfollow/userguide@support.ligo.org>. (The old address will
+  also still work.)
+
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
@@ -15,6 +20,13 @@ Version 4 (unreleased)
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code
+
+* Update the example GCN notice handler so that it does not fail if the notice
+  is missing a sky map, because as we have specified them, ``LVC_RETRACTION``
+  notices never contain sky maps and ``LVC_PRELIMINARY`` notices may or may not
+  contain sky maps.
+
+* When building the documentation, test all of the sample code automatically.
 
 Version 3 (2019-02-13)
 ----------------------
