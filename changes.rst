@@ -18,6 +18,9 @@ Version 4 (unreleased)
 * Update planned dates for Engineering Run 14 (ER14; starts 2019-03-04) and
   Observing Run 3 (O3; starts 2019-04-01).
 
+* Add Live Status section, listing some public web pages that provide real-time
+  detector status.
+
 .. rubric:: Procedures
 
 .. rubric:: Alert Contents

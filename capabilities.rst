@@ -45,6 +45,22 @@ schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
    routine low-latency data analysis and sending public alerts for all
    significant gravitational-wave events.
 
+Live Status
+-----------
+
+There are a handful of public web pages that report live status of the
+LIGO/Virgo detectors and alert infrastructure.
+
+*  | **Detector Status Portal**: Daily summary of detector performance.
+   | https://www.gw-openscience.org/detector_status/
+
+*  | **GWIStat**: Real-time detector up/down status.
+   | https://ldas-jobs.ligo.caltech.edu/~gwistat/gwistat/gwistat.html
+
+*  | **LIGO Data Grid Status**: Live detector, computing, and analysis dashboard.
+     Status of the LIGO/Virgo alert pipeline is indicated by the "EMFollow" box.
+   | http://monitor.ligo.org/gwstatus
+
 Sensitivity and Localization Accuracy
 -------------------------------------
 
