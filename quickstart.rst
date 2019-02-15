@@ -52,7 +52,7 @@ real-time results.
 .. _`Subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
 .. _`instructions for posting GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
 .. _`archived online`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
-.. _`OpenLVEM instructions`: https://gw-astronomy.org/registry/pages/public/openlvem
-.. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM
+.. _`OpenLVEM instructions`: https://wiki.gw-astronomy.org/OpenLVEM/OpenLVEMSignUp
+.. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM/WebHome
 .. _GraceDb: https://gracedb.ligo.org
 .. _`Astronomer's Telegrams`: http://www.astronomerstelegram.org
