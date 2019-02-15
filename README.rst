@@ -6,7 +6,7 @@ User Guide. For the latest HTML edition of the User Guide, visit
 http://emfollow.docs.ligo.org/userguide/.
 
 We welcome feedback and suggestions. To report an issue related to the User
-Guide, please send an e-mail to contact+emfollow/userguide@support.ligo.org.
+Guide, please send an e-mail to emfollow-userguide@support.ligo.org.
 
 Building
 --------

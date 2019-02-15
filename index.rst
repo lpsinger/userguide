@@ -63,6 +63,6 @@ Appendix
 * :doc:`changes`
 * :doc:`glossary`
 * :ref:`search`
-* `Report issues <contact+emfollow/userguide@support.ligo.org>`_
+* `Report issues <emfollow-userguide@support.ligo.org>`_
 
 .. _Virgo: http://www.virgo-gw.eu
