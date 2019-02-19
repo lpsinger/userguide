@@ -41,7 +41,8 @@ the FITS file, download it, and extract the probability sky map:
     @gcn.handlers.include_notice_types(
         gcn.notice_types.LVC_PRELIMINARY,
         gcn.notice_types.LVC_INITIAL,
-        gcn.notice_types.LVC_UPDATE)
+        gcn.notice_types.LVC_UPDATE,
+        gcn.notice_types.LVC_RETRACTION)
     def process_gcn(payload, root):
         # Respond only to 'test' events.
         # VERY IMPORTANT! Replace with the following code
