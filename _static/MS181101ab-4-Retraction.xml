@@ -20,7 +20,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="GraceID" dataType="string" value="MS181101ab" ucd="meta.id">
             <Description>Identifier in GraceDB</Description>
         </Param>
-        <Param name="AlertType" dataType="string" value="Preliminary" ucd="meta.version">
+        <Param name="AlertType" dataType="string" value="Retraction" ucd="meta.version">
             <Description>VOEvent alert type</Description>
         </Param>
         <Param name="HardwareInj" dataType="int" value="0" ucd="meta.number">
