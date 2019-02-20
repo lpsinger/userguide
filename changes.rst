@@ -20,6 +20,8 @@ Version 5 (unreleased)
   Update notices in order to cite all prior VOEvents. GraceDb already includes
   this metadata, but it was missing from the examples.
 
+* Add MassGap classification for compact binary mergers.
+
 .. rubric:: Sample Code
 
 Version 4 (2019-02-15)

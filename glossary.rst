@@ -9,6 +9,11 @@ Glossary
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
 
+    MassGap
+        Compact binary systems with at least one compact object whose mass is 
+        in the hypothetical "mass gap" between neutron stars and black holes, 
+        defined here as 3-5 solar masses.
+
     CBC
         Compact binary coalescence.
 

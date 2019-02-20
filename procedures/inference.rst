@@ -12,7 +12,8 @@ Classification
 
 The classification consists of four numbers, summing to unity, that give the
 probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
-or terrestrial (i.e. a background fluctuation or a glitch).
+falls in :term:`mass gap <MassGap>` or terrestrial (i.e. a background fluctuation 
+or a glitch).
 
 This assumes that terrestrial and astrophysical events occur as independent
 Poisson processes. A source-dependent weighting of matched-filter templates is

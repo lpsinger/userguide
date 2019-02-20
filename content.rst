@@ -99,8 +99,8 @@ LIGO/Virgo GCN Notice.
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
-| Terrestrial       | :term:`NSBH`, :term:`NSBH` merger, or terrestrial (i.e.,  |                                                           |
-|                   | noise) respectively                                       |                                                           |
+| MassGap, Noise    | :term:`NSBH`, :term:`BBH` merger, :term:`MassGap` or      |                                                           |
+|                   | terrestrial (i.e, noise) respectively                     |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
 |                   | noise, that at least one of the compact objects was a     |                                                           |
@@ -172,14 +172,15 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
 
     min_mass = 1
     ns_max_mass = 3
-    max_mass = 9
+    bh_min_mass = 5
+    max_mass = 11
     ax = plt.axes(aspect=1)
     ax.set_xlim(min_mass, max_mass)
     ax.set_ylim(min_mass, max_mass)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
 
-    ticks = [min_mass, ns_max_mass]
+    ticks = [min_mass, ns_max_mass, bh_min_mass]
     ax.set_xticks(ticks)
     ax.set_yticks(ticks)
 
@@ -193,27 +194,39 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
     ax.xaxis.set_label_coords(1.0, -0.025)
     ax.yaxis.set_label_coords(-0.025, 1.0)
 
-    bns_color, nsbh_color, bbh_color = seaborn.color_palette('pastel', 3)
+    bns_color, nsbh_color, gap_color, bbh_color = seaborn.color_palette(
+        'pastel', 4)
 
     p = ax.add_patch(Rectangle((min_mass, min_mass),
                                ns_max_mass - min_mass, ns_max_mass - min_mass,
                                color=bns_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'BNS', ha='center', va='center')
 
-    p = ax.add_patch(Rectangle((ns_max_mass, ns_max_mass),
-                               max_mass - ns_max_mass, max_mass - ns_max_mass,
+    p = ax.add_patch(Rectangle((bh_min_mass, bh_min_mass),
+                               max_mass - bh_min_mass, max_mass - bh_min_mass,
                                color=bbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'BBH', ha='center', va='center')
 
-    p = ax.add_patch(Rectangle((min_mass, ns_max_mass),
-                     ns_max_mass - min_mass, max_mass - ns_max_mass,
-                     color=nsbh_color, linewidth=0))
-    ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
-
-    p = ax.add_patch(Rectangle((ns_max_mass, min_mass),
-                               max_mass - ns_max_mass, ns_max_mass - min_mass,
+    p = ax.add_patch(Rectangle((min_mass, bh_min_mass),
+                               ns_max_mass - min_mass, max_mass - bh_min_mass,
                                color=nsbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
+
+    p = ax.add_patch(Rectangle((bh_min_mass, min_mass),
+                               max_mass - bh_min_mass, ns_max_mass - min_mass,
+                               color=nsbh_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
+
+    ax.add_patch(Rectangle((min_mass, ns_max_mass),
+                           max_mass - min_mass, bh_min_mass - ns_max_mass,
+                           color=gap_color, linewidth=0))
+    ax.add_patch(Rectangle((ns_max_mass, min_mass),
+                           bh_min_mass - ns_max_mass, max_mass - min_mass,
+                           color=gap_color, linewidth=0))
+    p = ax.add_patch(Rectangle((ns_max_mass, ns_max_mass),
+                               bh_min_mass - ns_max_mass, bh_min_mass - ns_max_mass,
+                               color=gap_color, linewidth=0))
+    ax.text(*get_center(p.get_bbox()), 'MassGap', ha='center', va='center')
 
     for args in [[1, 0, 0.025, 0], [0, 1, 0, 0.025]]:
         ax.arrow(*args,
