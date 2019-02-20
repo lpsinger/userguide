@@ -170,17 +170,24 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
     def get_center(bbox):
         return 0.5 * (bbox.x0 + bbox.x1), 0.5 * (bbox.y0 + bbox.y1)
 
+    min_mass = 1
     ns_max_mass = 3
-    max_mass = 10
+    max_mass = 9
     ax = plt.axes(aspect=1)
-    ax.set_xlim(0, max_mass)
-    ax.set_ylim(0, max_mass)
+    ax.set_xlim(min_mass, max_mass)
+    ax.set_ylim(min_mass, max_mass)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
-    ax.set_xticks([0, ns_max_mass])
-    ax.set_yticks([0, ns_max_mass])
-    ax.set_xticklabels([r'0 $M_\odot$', r'{} $M_\odot$'.format(ns_max_mass)])
-    ax.set_yticklabels(['', r'{} $M_\odot$'.format(ns_max_mass)])
+
+    ticks = [min_mass, ns_max_mass]
+    ax.set_xticks(ticks)
+    ax.set_yticks(ticks)
+
+    ticklabels = [r'{} $M_\odot$'.format(tick) for tick in ticks]
+    ax.set_xticklabels(ticklabels)
+    ticklabels[0] = ''
+    ax.set_yticklabels(ticklabels)
+
     ax.set_xlabel(r'$m_1$')
     ax.set_ylabel(r'$m_2$', rotation=0, ha='right')
     ax.xaxis.set_label_coords(1.0, -0.025)
@@ -188,8 +195,8 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
 
     bns_color, nsbh_color, bbh_color = seaborn.color_palette('pastel', 3)
 
-    p = ax.add_patch(Rectangle((0, 0),
-                               ns_max_mass, ns_max_mass,
+    p = ax.add_patch(Rectangle((min_mass, min_mass),
+                               ns_max_mass - min_mass, ns_max_mass - min_mass,
                                color=bns_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'BNS', ha='center', va='center')
 
@@ -198,13 +205,13 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
                                color=bbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'BBH', ha='center', va='center')
 
-    p = ax.add_patch(Rectangle((0, ns_max_mass),
-                     ns_max_mass, max_mass - ns_max_mass,
+    p = ax.add_patch(Rectangle((min_mass, ns_max_mass),
+                     ns_max_mass - min_mass, max_mass - ns_max_mass,
                      color=nsbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
 
-    p = ax.add_patch(Rectangle((ns_max_mass, 0),
-                               max_mass - ns_max_mass, ns_max_mass,
+    p = ax.add_patch(Rectangle((ns_max_mass, min_mass),
+                               max_mass - ns_max_mass, ns_max_mass - min_mass,
                                color=nsbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
 
