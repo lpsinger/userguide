@@ -99,7 +99,7 @@ LIGO/Virgo GCN Notice.
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
-| Noise             | :term:`NSBH`, :term:`NSBH` merger, or terrestrial (i.e.,  |                                                           |
+| Terrestrial       | :term:`NSBH`, :term:`NSBH` merger, or terrestrial (i.e.,  |                                                           |
 |                   | noise) respectively                                       |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
