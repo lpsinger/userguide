@@ -103,6 +103,10 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Description>H1: LIGO Hanford 4 km gravitational wave detector</Description>
         <Description>L1: LIGO Livingston 4 km gravitational wave detector</Description>
     </How>
+    <Citations>
+        <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-1-Preliminary</EventIVORN>
+        <Description>Updated localization is now available</Description>
+    </Citations>
     <Description>Report of a candidate gravitational wave event</Description>
 </voe:VOEvent>
 

@@ -16,6 +16,10 @@ Version 5 (unreleased)
 
 * Add a human-readable description to the ``Pkt_Ser_Num`` parameter.
 
+* Add ``<EventIVORN cite="supersedes">`` elements to the sample Initial and
+  Update notices in order to cite all prior VOEvents. GraceDb already includes
+  this metadata, but it was missing from the examples.
+
 .. rubric:: Sample Code
 
 Version 4 (2019-02-15)
