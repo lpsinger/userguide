@@ -14,6 +14,8 @@ Version 5 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Add a human-readable description to the ``Pkt_Ser_Num`` parameter.
+
 .. rubric:: Sample Code
 
 Version 4 (2019-02-15)

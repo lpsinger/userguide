@@ -16,7 +16,9 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="Packet_Type" dataType="int" value="164">
             <Description>The Notice Type number is assigned/used within GCN, eg type=164 is an LVC_RETRACTION notice</Description>
         </Param>
-        <Param name="Pkt_Ser_Num" dataType="string" value="4"/>
+        <Param name="Pkt_Ser_Num" dataType="string" value="4">
+            <Description>A number that increments by 1 each time a new revision is issued for this event</Description>
+        </Param>
         <Param name="GraceID" dataType="string" value="MS181101ab" ucd="meta.id">
             <Description>Identifier in GraceDB</Description>
         </Param>
