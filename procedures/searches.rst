@@ -34,7 +34,7 @@ bands. All pipelines also implement different kinds of signal-based vetoes to
 reject instrumental transients which cause large SNR values but can otherwise
 be easily distinguished from compact binary coalescence signals
 
-**GSTLAL** [#GSTLAL]_ is a matched-filter pipeline designed to find
+**GSTLAL** [#GSTLAL1]_ [#GSTLAL2]_ is a matched-filter pipeline designed to find
 gravitational-waves from compact binaries in low-latency. It uses the
 likelihood-ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
@@ -97,9 +97,13 @@ similar approach is under development for high energy neutrinos.
 .. |cqg| replace:: *Class. Quantum Grav.*
 .. |prd| replace:: *Phys. Rev. D*
 
-.. [#GSTLAL]
+.. [#GSTLAL1]
    Messick, C., Blackburn, K., Brady, P., et al. 2017, |prd|, 95, 042001.
    https://doi.org/10.1103/PhysRevD.95.042001
+   
+.. [#GSTLAL2]
+   Sachdev, S., Caudill, S., Fong, H., et al. 2019, arXiv, 1901.08580.
+   https://arxiv.org/abs/1901.08580
 
 .. [#SPIIR]
    Hooper, S., Chung, S. K., Luan, J., et al. 2012, |prd|, 86, 024012.
