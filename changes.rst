@@ -1,16 +1,8 @@
 Change Log
 ==========
 
-Version 5 (unreleased)
+Version 5 (2019-03-01)
 ----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Procedures
 
 .. rubric:: Alert Contents
 
@@ -21,8 +13,6 @@ Version 5 (unreleased)
   this metadata, but it was missing from the examples.
 
 * Add MassGap classification for compact binary mergers.
-
-.. rubric:: Sample Code
 
 Version 4 (2019-02-15)
 ----------------------
