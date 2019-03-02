@@ -1,6 +1,21 @@
 Change Log
 ==========
 
+Version 6 (unreleased)
+----------------------
+
+.. rubric:: General
+
+.. rubric:: Getting Started Checklist
+
+.. rubric:: Observing Capabilities
+
+.. rubric:: Procedures
+
+.. rubric:: Alert Contents
+
+.. rubric:: Sample Code
+
 Version 5 (2019-03-01)
 ----------------------
 
