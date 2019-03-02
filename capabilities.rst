@@ -2,7 +2,7 @@ Observing Capabilities
 ======================
 
 This section summarizes the observing capabilities of the global
-gravitational-wave detector network as of late 2018. This as a quick reference
+gravitational-wave detector network as of early 2019. This as a quick reference
 to the anticipated commissioning and observing schedule, sensitivity to
 gravitational-wave transients, and sky localization accuracy, as described in
 the following external documents:
@@ -18,7 +18,7 @@ Timeline
 
 The gravitational-wave observing schedules is divided into Observing Runs,
 epochs of months to years of operation at fixed sensitivity; down time for
-construction and commissioning, and transitional Engineering Runs between
+construction and commissioning; and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below.
 

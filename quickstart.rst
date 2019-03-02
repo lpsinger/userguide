@@ -1,9 +1,9 @@
 Getting Started Checklist
 =========================
 
-In addition to reading this user guide, we encourage you to sign up for a
-certain e-mail lists and community resources. Make sure that you have completed
-the items on this checklist.
+In addition to reading this user guide, we encourage you to sign up for certain
+e-mail lists and community resources. Make sure that you have completed the
+items on this checklist.
 
 1. Read This User Guide
 -----------------------

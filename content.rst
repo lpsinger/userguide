@@ -4,14 +4,14 @@ Alert Contents
 Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
-**GCN Notices** are machine-readable packets. They are available as :term:`VOEvent`
-XML and `several other formats`_. We strongly recommend receiving LIGO/Virgo
-alerts in the VOEvent XML format.
+**GCN Notices** are machine-readable packets. They are available as
+:term:`VOEvent` XML and `several other formats`_. We strongly recommend
+receiving LIGO/Virgo alerts in the VOEvent XML format.
 
-**GCN Circulars** are short human-readable astronomical bulletins. They are written
-in a certain well-established `format and style`_. You can `subscribe to GCN
-Circulars`_ to receive and post them by email, or you can view them in the
-public `GCN Circulars archive`_.
+**GCN Circulars** are short human-readable astronomical bulletins. They are
+written in a certain well-established `format and style`_. You can `subscribe
+to GCN Circulars`_ to receive and post them by email, or you can view them in
+the public `GCN Circulars archive`_.
 
 Notice Types
 ------------
@@ -49,7 +49,8 @@ information, which are described in further detail below:
 * Name_: a unique identifier for the candidate
 * Significance_: estimated false alarm rate
 * Localization_: inferred sky position and (:term:`CBC` candidates only) distance
-* Inference_: inferred source classification and properties (:term:`CBC` candidates only)
+* Inference_: inferred source classification and properties (:term:`CBC`
+  candidates only)
 
 All types of GCN Notices *except for Preliminary notices* are accompanied by
 human-readable GCN Circulars, which restates all of the above information as

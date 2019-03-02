@@ -2,10 +2,10 @@ Procedures
 ==========
 
 In this section we describe the different online searches looking for GW
-signals. The corresponding triggers from multiple pipelines close enough in
-time will be considered at originating from the same physical event and will be
-grouped in a unique :doc:`superevent <superevents>`. See the following pages
-for technical details.
+signals. When multiple candidates from different pipelines are close enough
+together in time, they will be considered as originating from the same physical
+event and will be grouped into a single :doc:`superevent <superevents>`. See
+the following pages for technical details.
 
 .. toctree::
    :maxdepth: 1
@@ -21,10 +21,10 @@ The timeline for distribution of alerts is described below.
 Alert Timeline
 --------------
 
-Here, we described the sequence of the GW alert distributed the Gamma-ray
-Coordinates Network (:term:`GCN`) via notices and circulars (:doc:`Alert
-content </content>` and :doc:`Technical </tutorial/index>`). Alerts should
-contain all of the information that is useful for searching for a counterpart.
+Here, we describe the sequence of LIGO/Virgo alerts for a single event that
+will be distributed through the Gamma-ray Coordinates Network (:term:`GCN`) via
+notices and circulars (:doc:`Alert content </content>` and :doc:`Technical
+</tutorial/index>`).
 
 .. plot::
     :alt: Timeline for sending gravitational-wave alerts
@@ -109,23 +109,20 @@ contain all of the information that is useful for searching for a counterpart.
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
-**Within 1–10 minutes after GW trigger time**, the first :doc:`preliminary notice
-</content>` will be sent fully autonomously (not necessary attached to
-localization). The trigger will be immediately visible under the LIGO/Virgo GW
-database :term:`GraceDb`. As soon as the localization area is available, a
-second preliminary notice is sent. The procedure is fully automatic and some
-preliminary alerts may be retracted after human inspection for data quality,
-instrumental conditions, and pipeline behavior.
+**Within 1–10 minutes after GW trigger time**, the first :doc:`preliminary
+notice </content>` will be sent fully autonomously. Preliminary notices may or
+may not include a sky localization. The trigger will be immediately and
+publicly visible in the :term:`GraceDb` database. Since the procedure is fully
+automatic, some preliminary alerts may be retracted after human inspection for
+data quality, instrumental conditions, and pipeline behavior.
 
 **Within 24 hours after the GW trigger time** (possibly within 4 hours for
-:term:`BNS` or :term:`NSBH` sources, to be decided), the :doc:`Initial notices
-and circulars </content>` will be distributed with an update for the sky
-localization area and the source classification. They are vetted by human
-instrument scientists and analysts. In case of a binary coalescence including a
-neutron star or a burst trigger, the initial circular can labeled as
-**retracted** (data are unsuitable) or **confirmed**. Note that the initial
-circular is considered the first LIGO/Virgo publication of a GW candidate,
-appropriate to cite in publications.
+:term:`BNS` or :term:`NSBH` sources, to be decided), the :doc:`Initial or
+Retraction notice and circular </content>` will be distributed. It will include
+an updated sky localization and source classification. At this stage, the event
+will have been vetted by human instrument scientists and analysts. The
+candidate will either be **confirmed** by an Initial notice and circular or
+withdrawn by a Retraction notice and circular if the data quality is unsuitable.
 
 **Within a day**, black hole mergers will be fully vetted by experts and
 retraction or confirmation status will be reported.
@@ -134,8 +131,9 @@ retraction or confirmation status will be reported.
 localization area or significance accuracy improves (e.g. as a result of
 improved calibration, de-glitching, or computationally deeper parameter
 estimation). Updates will be sent up until the position is determined more
-accurately by public announcement of an unambiguous counterpart. At which point
-they will stop until publication of the event.
+accurately by public announcement of an unambiguous counterpart. At that point,
+there will be no further localization updates until the publication of the
+event.
 
 **At any time**, we can **promote** an extraordinary candidate that does not
 pass our public alert thresholds if it is compellingly associated with a

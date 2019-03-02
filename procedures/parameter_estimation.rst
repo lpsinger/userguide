@@ -34,7 +34,7 @@ chain Monte Carlo and nested sampling. For all events, there is an automated
 LALInference analysis that uses the least expensive CBC waveform models and
 completes within hours and may be included in a subsequent alert. More
 time-consuming analyses with more sophisticated waveform models are started at
-the discretion of human analysts, and complete days or weeks later.
+the discretion of human analysts, and will complete days or weeks later.
 
 Unmodeled Events
 ----------------

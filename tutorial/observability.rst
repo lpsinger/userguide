@@ -3,8 +3,8 @@ Basic Observability Calculations
 
 Now we are going to teach our GCN handler how to determine whether a
 gravitational-wave event is observable. We are going to use the
-:doc:`astropy.coordinates <astropy:coordinates/index>`. (See also the Astropy
-example on :doc:`observation planning in Python
+:doc:`astropy.coordinates <astropy:coordinates/index>` module. (See also the
+Astropy example on :doc:`observation planning in Python
 <astropy:generated/examples/coordinates/plot_obs-planning>`.) First, we will
 need to import a few extra Python modules::
 

@@ -25,7 +25,7 @@ network of ground-based GW detectors. The `LIGO Scientific Collaboration
 <https://ligo.org/>`_ and the `Virgo Collaboration
 <http://public.virgo-gw.eu/the-virgo-collaboration/>`_ jointly analyze the data
 in real time to detect and localize transients from compact binary mergers and
-other sources GW bursts. When a signal candidate is found, an alert is sent to
+other sources. When a signal candidate is found, an alert is sent to
 astronomers in order to search for counterparts (electromagnetic waves or
 neutrinos).
 
