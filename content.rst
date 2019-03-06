@@ -159,7 +159,7 @@ source belongs to the following five categories:
 * Terrestrial (i.e., a chance background fluctuation or a glitch)
 
 The figure below shows the extent of the three astrophysical categories (BNS,
-NSBH, BBH, MassGap) in terms of the component masses :math:`m_1` and :math:`m_2`.
+NSBH, BBH and MassGap) in terms of the component masses :math:`m_1` and :math:`m_2`.
 
 .. plot::
    :alt: Mass parameter space
