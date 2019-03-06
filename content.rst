@@ -149,16 +149,17 @@ Inference
 The inference section is present for :term:`CBC` events *only*. It has two
 parts:
 
-**Classification**: Four numbers, summing to unity, giving probability that the
-source belongs to the following four categories:
+**Classification**: Five numbers, summing to unity, giving probability that the
+source belongs to the following five categories:
 
 * :term:`BNS` merger
 * :term:`NSBH` merger
 * :term:`BBH` merger
+* :term:`MassGap` merger
 * Terrestrial (i.e., a chance background fluctuation or a glitch)
 
 The figure below shows the extent of the three astrophysical categories (BNS,
-NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
+NSBH, BBH, MassGap) in terms of the component masses :math:`m_1` and :math:`m_2`.
 
 .. plot::
    :alt: Mass parameter space
@@ -239,7 +240,7 @@ NSBH, and BBH) in terms of the component masses :math:`m_1` and :math:`m_2`.
 
 **Properties**: Probabilities that the source has each of the following
 properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
-NSBH, or BBH merger):
+NSBH, BBH or MassGap merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
   objects is consistent with a neutron star.
