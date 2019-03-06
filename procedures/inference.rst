@@ -10,15 +10,14 @@ be provided based on samples drawn from the posterior probability distribution.
 Classification
 --------------
 
-The classification consists of four numbers, summing to unity, that give the
+The classification consists of five numbers, summing to unity, that give the
 probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
-in the :term:`mass gap <MassGap>`, or terrestrial (i.e. a background
-fluctuation or a glitch).
+or contains at least one :term:`MassGap <MassGap>` component, or is of terrestrial (i.e. a background fluctuation or a glitch) origin.
 
 This assumes that terrestrial and astrophysical events occur as independent
 Poisson processes. A source-dependent weighting of matched-filter templates is
 used to compute the mean values of expected counts associated with each of
-these four categories. The mean values are updated weekly based on observed
+these five categories. The mean values are updated weekly based on observed
 matched-filter count rates. They are then used to predict the category for new
 triggers uploaded by :doc:`search pipelines </procedures/searches>`.
 
