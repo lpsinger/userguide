@@ -159,7 +159,7 @@ source belongs to the following five categories:
 * Terrestrial (i.e., a chance background fluctuation or a glitch)
 
 The figure below shows the extent of the three astrophysical categories (BNS,
-NSBH, BBH and MassGap) in terms of the component masses :math:`m_1` and
+NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 :math:`m_2`.
 
 .. plot::
@@ -241,7 +241,7 @@ NSBH, BBH and MassGap) in terms of the component masses :math:`m_1` and
 
 **Properties**: Probabilities that the source has each of the following
 properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
-NSBH, BBH or MassGap merger):
+NSBH, BBH, or MassGap merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
   objects is consistent with a neutron star.
