@@ -12,7 +12,8 @@ Classification
 
 The classification consists of five numbers, summing to unity, that give the
 probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
-or contains at least one :term:`MassGap <MassGap>` component, or is of terrestrial (i.e. a background fluctuation or a glitch) origin.
+or contains at least one :term:`MassGap <MassGap>` component,
+or is of terrestrial (i.e. a background fluctuation or a glitch) origin.
 
 This assumes that terrestrial and astrophysical events occur as independent
 Poisson processes. A source-dependent weighting of matched-filter templates is
