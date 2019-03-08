@@ -14,6 +14,9 @@ Version 6 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Switch to the GW170817 Hanford-Livingston-Virgo localization for the example
+  sky map.
+
 .. rubric:: Sample Code
 
 Version 5 (2019-03-01)

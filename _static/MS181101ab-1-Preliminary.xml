@@ -34,7 +34,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Param name="EventPage" dataType="string" value="https://example.org/superevents/MS181101ab/view/" ucd="meta.ref.url">
             <Description>Web page for evolving status of this GW candidate</Description>
         </Param>
-        <Param name="Instruments" dataType="string" value="H1,L1" ucd="meta.code">
+        <Param name="Instruments" dataType="string" value="H1,L1,V1" ucd="meta.code">
             <Description>List of instruments used in analysis to identify this event</Description>
         </Param>
         <Param name="FAR" dataType="float" value="9.11069936486e-14" ucd="arith.rate;stat.falsealarm" unit="Hz">
@@ -101,6 +101,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Description>Candidate gravitational wave event identified by low-latency analysis</Description>
         <Description>H1: LIGO Hanford 4 km gravitational wave detector</Description>
         <Description>L1: LIGO Livingston 4 km gravitational wave detector</Description>
+        <Description>V1: Virgo 3 km gravitational wave detector</Description>
     </How>
     <Description>Report of a candidate gravitational wave event</Description>
 </voe:VOEvent>

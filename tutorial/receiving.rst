@@ -140,7 +140,7 @@ Upon running this, you should see:
     HardwareInj = 0
     OpenAlert = 1
     EventPage = https://example.org/superevents/MS181101ab/view/
-    Instruments = H1,L1
+    Instruments = H1,L1,V1
     FAR = 9.11069936486e-14
     Group = CBC
     Pipeline = gstlal
