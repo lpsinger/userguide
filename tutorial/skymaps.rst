@@ -24,7 +24,15 @@ tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
 :mod:`~astropy.io.fits.scripts.fitsheader` from :doc:`Astropy
 <astropy:index>`:
 
-.. code-block:: shell-session
+.. testcode::
+   :hide:
+   :options: +NORMALIZE_WHITESPACE
+
+   from astropy.io.fits.scripts.fitsheader import main
+   print('$ fitsheader bayestar.fits.gz')
+   main(['bayestar.fits.gz'])
+
+.. testoutput::
 
     $ fitsheader bayestar.fits.gz
     # HDU 0 in bayestar.fits.gz:
