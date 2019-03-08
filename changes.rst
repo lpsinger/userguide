@@ -1,23 +1,13 @@
 Change Log
 ==========
 
-Version 6 (unreleased)
-----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Procedures
+Version 5.1 (2019-03-08)
+------------------------
 
 .. rubric:: Alert Contents
 
 * Switch to the GW170817 Hanford-Livingston-Virgo localization for the example
   sky map.
-
-.. rubric:: Sample Code
 
 Version 5 (2019-03-01)
 ----------------------
