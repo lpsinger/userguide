@@ -89,8 +89,14 @@ Coincident with External Trigger Search
 
 **RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
 Coincidence Monitor (RAVEN), a fast search for coincidences between GW online
-pipeline events and gamma-ray bursts or galactic supernova notifications. A
-similar approach is under development for high energy neutrinos.
+pipeline events and gamma-ray bursts or galactic supernova notifications.
+
+**LLAMA** [#LLAMA1]_ [#LLAMA2]_ The `Low-Latency Algorithm for Multi-messenger
+Astrophysics <http://gwhen.com>`__
+is a an online search pipeline combining LIGO/Virgo GW triggers with High
+Energy Neutrino (HEN) triggers from IceCube. It finds temporally-coincident
+subthreshold IceCube neutrinos and performs a detailed Bayesian significance
+calculation to find joint GW+HEN triggers.
 
 .. |apj| replace:: *Astrophys. J.*
 .. |cqg| replace:: *Class. Quantum Grav.*
@@ -135,3 +141,11 @@ similar approach is under development for high energy neutrinos.
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
    http://adsabs.harvard.edu/abs/2016PhDT.........8U
+   
+.. [#LLAMA1]
+   Bartos, I., Veske, D., Keivani, A., et al. 2018, arXiv, 1810.11467.
+   https://arxiv.org/abs/1810.11467
+   
+.. [#LLAMA2]
+   Countryman, S., Keivani, A., Bartos, I., et al. 2019, arXiv, 1901.05486.
+   https://arxiv.org/abs/1901.05486

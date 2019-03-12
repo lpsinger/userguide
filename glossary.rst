@@ -52,6 +52,10 @@ Glossary
         Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
         positions on the unit sphere.
 
+    HEN
+        High Energy Neutrino, particularly in the context of multi-messenger
+        GW+HEN follow-up.
+
     NSBH
         Neutron star black hole, a binary system composed of one neutron star
         and one black hole.

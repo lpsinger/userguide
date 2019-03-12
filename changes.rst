@@ -12,6 +12,9 @@ Version 7 (unreleased)
 
 .. rubric:: Procedures
 
+* Add Gravitational Wave/High Energy Neutrino search to the list of
+  multi-messenger search pipelines.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code
