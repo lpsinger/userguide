@@ -23,12 +23,12 @@ Glossary
 
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
-        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
+        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
         detector in Hanford, Washington, USA.
 
     LLO
         LIGO Livingston Observatory (see `LLO observatory home page
-        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
+        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
         detector in Livingston, Louisiana, USA.
 
     GCN
