@@ -277,14 +277,16 @@ Localization Ellipse
 
 Generally, GW localizations are irregularly shaped. However, for particularly
 accurately localized events, the localization region can be well described by
-an ellipse. For details of the ellipse fitting algorithm, see
+an ellipse. When the area of the 90% ellipse is less than 1.35 times the area
+of the *smallest possible 90% credible region*, the GCN Circular will provide a
+90% containment ellipse. For details of the ellipse fitting algorithm, see
 :mod:`ligo.skymap.postprocess.ellipse`.
 
-For well-localized events, the GCN Circulars will include a 90% containment
-ellipse in the format of a `DS9 region string`_, which can be read by many
-tools including `DS9`_, `Aladin`_, `astropy-regions`_, and `pyregion`_. The
-region string contains the right ascension, declination, semi-major axis,
-semi-minor axis, position angle of the semi-minor axis). Here is an example::
+The ellipse is described in the format of a `DS9 region string`_. Many tools
+can read DS9 region strings, including `DS9`_, `Aladin`_, `astropy-regions`_,
+and `pyregion`_. The region string contains the right ascension, declination,
+semi-major axis, semi-minor axis, position angle of the semi-minor axis). Here
+is an example::
 
     icrs; ellipse(03h08m25s, -45d08m14s, 9d, 3d, 112d)
 
