@@ -148,14 +148,14 @@ by having Python call `curl` on the command line:
 
 .. testsetup::
 
-    import healpy as hp
-    import numpy as np
     import os
     old_dir = os.getcwd()
     os.chdir('_static')
 
 Next, we need to read in the file in Python with Healpy:
 
+    >>> import healpy as hp
+    >>> import numpy as np
     >>> hpx = hp.read_map('bayestar.fits.gz')
     NSIDE = 2048
     ORDERING = NESTED in fits file
