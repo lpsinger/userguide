@@ -277,10 +277,14 @@ Localization Ellipse
 
 Generally, GW localizations are irregularly shaped. However, for particularly
 accurately localized events, the localization region can be well described by
-an ellipse. For well-localized events, the GCN Circulars will include a 90%
-containment ellipse in the format of a `DS9 region string`_ (right ascension,
-declination, semi-major axis, semi-minor axis, position angle of the semi-minor
-axis), for instance::
+an ellipse. For details of the ellipse fitting algorithm, see
+:mod:`ligo.skymap.postprocess.ellipse`.
+
+For well-localized events, the GCN Circulars will include a 90% containment
+ellipse in the format of a `DS9 region string`_, which can be read by many
+tools including `DS9`_, `Aladin`_, `astropy-regions`_, and `pyregion`_. The
+region string contains the right ascension, declination, semi-major axis,
+semi-minor axis, position angle of the semi-minor axis). Here is an example::
 
     icrs; ellipse(03h08m25s, -45d08m14s, 9d, 3d, 112d)
 
@@ -325,3 +329,7 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
 .. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 .. _`DS9 region string`: http://ds9.si.edu/doc/ref/region.html
+.. _`DS9`: http://ds9.si.edu/
+.. _`Aladin`: https://aladin.u-strasbg.fr/
+.. _`astropy-regions`: https://astropy-regions.readthedocs.io/
+.. _`pyregion`: https://pyregion.readthedocs.io/
