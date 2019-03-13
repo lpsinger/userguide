@@ -111,7 +111,8 @@ html_sidebars = {
         'about.html',
         'navigation.html',
         'contact.html',
-        'searchbox.html'
+        'searchbox.html',
+        'funding.html'
     ]
 }
 
