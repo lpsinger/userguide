@@ -194,3 +194,7 @@ plot_formats = [('png', 300)]
 plot_html_show_source_link = False
 plot_html_show_formats = False
 plot_rcparams = {'font.size': 12}
+
+
+def setup(app):
+    app.add_javascript('copybutton.js')
