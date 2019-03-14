@@ -42,7 +42,7 @@ The near-term observing schedule is shown below, reproduced from
    During both Engineering Runs, the detector configuration and analysis
    software will be changing frequently. We will send public alerts only for
    highly confident and scientifically significant events and with longer than
-   normal latency. However, at the transition to O3 occurs, we will switch to
+   normal latency. However, when the transition to O3 occurs, we will switch to
    routine low-latency data analysis and sending public alerts for all
    significant gravitational-wave events.
 
