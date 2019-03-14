@@ -247,8 +247,8 @@ NSBH, BBH, or MassGap merger):
   objects is consistent with a neutron star.
 * **HasRemnant**: A nonzero amount of neutron star material remained outside
   the final remnant compact object (a necessary but not sufficient condition to
-  produce certain kinds of electromagnetic emission such as a short GRB or a
-  kilonova).
+  produce certain kinds of electromagnetic emission such as a short :term:`GRB`
+  or a kilonova).
 
 All of the quantities in the Classification and Properties sections are model
 dependent to some extent: the Classification section takes into consideration

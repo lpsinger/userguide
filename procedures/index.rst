@@ -137,5 +137,5 @@ event in a peer-reviewed journal.
 
 **At any time**, we can **promote** an extraordinary candidate that does not
 pass our public alert thresholds if it is compellingly associated with a
-multimessenger signal (e.g. GRB, core-collapse SN). In this case, :doc:`Initial
-notices and circulars </content>` will be distributed.
+multimessenger signal (e.g. :term:`GRB`, core-collapse :term:`SN`). In this
+case, :doc:`Initial notices and circulars </content>` will be distributed.

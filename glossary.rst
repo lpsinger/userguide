@@ -48,6 +48,9 @@ Glossary
         Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
         the official public marshal portal for LIGO/Virgo candidates.
 
+    GRB
+        Gamma-ray burst.
+
     HEALPix
         Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
         positions on the unit sphere.
@@ -59,6 +62,9 @@ Glossary
     NSBH
         Neutron star black hole, a binary system composed of one neutron star
         and one black hole.
+
+    SN
+        Supernova.
 
     Virgo
         Virgo Observatory (see `Virgo observatory home page
