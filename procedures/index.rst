@@ -23,8 +23,8 @@ Alert Timeline
 
 Here, we describe the sequence of LIGO/Virgo alerts for a single event that
 will be distributed through the Gamma-ray Coordinates Network (:term:`GCN`) via
-notices and circulars (:doc:`Alert content </content>` and :doc:`Technical
-</tutorial/index>`).
+notices and circulars (see the :doc:`/content` and :doc:`/tutorial/index`
+sections for details).
 
 .. plot::
     :alt: Timeline for sending gravitational-wave alerts
