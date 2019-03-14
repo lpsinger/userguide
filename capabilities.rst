@@ -44,7 +44,7 @@ The near-term observing schedule is shown below, reproduced from
    highly confident and scientifically significant events and with longer than
    normal latency. However, when the transition to O3 occurs, we will switch to
    routine low-latency data analysis and sending public alerts for all
-   significant gravitational-wave events.
+   gravitational-wave events.
 
 Live Status
 -----------
