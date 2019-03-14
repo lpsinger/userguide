@@ -28,11 +28,12 @@ below.
 Engineering Run 14 (ER14) is scheduled to start on 2019-03-04. The transition
 into Observing Run 3 (O3) is planned for 2019-04-01.
 
-During O3, we expect that all three detectors will observe continuously and
-without significant interruptions for one year. It is possible that the
-Japanese KAGRA detector may come online and become part of the joint
-gravitational-wave analysis at some point during O3. The near-term observing
-schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
+During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
+Virgo) will observe continuously and without significant interruptions for one
+year. It is possible that the Japanese KAGRA detector may come online and
+become part of the joint gravitational-wave analysis at some point during O3.
+The near-term observing schedule is shown below, reproduced from
+[#WorkingPlanTowardsO3]_.
 
 .. image:: _static/G1801056-v4.png
    :alt: Current observing schedule
