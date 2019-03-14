@@ -70,7 +70,7 @@ The following O3 projections are adapted from the Living Review
 [#LivingReview]_ on prospects for observing and localizing gravitational-wave
 transients with Advanced LIGO, Advanced Virgo, and KAGRA. The range (luminosity
 distance of detectable sources, averaged over sky position and source
-orientation) given the detectors' anticipated sensitivity are listed in the
+orientation) given the detectors' anticipated sensitivities are listed in the
 table below.
 
 +-----------+-------------------+-------------------+
