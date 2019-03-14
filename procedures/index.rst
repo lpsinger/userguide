@@ -133,7 +133,7 @@ improved calibration, de-glitching, or computationally deeper parameter
 estimation). Updates will be sent up until the position is determined more
 accurately by public announcement of an unambiguous counterpart. At that point,
 there will be no further localization updates until the publication of the
-event.
+event in a peer-reviewed journal.
 
 **At any time**, we can **promote** an extraordinary candidate that does not
 pass our public alert thresholds if it is compellingly associated with a
