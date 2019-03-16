@@ -38,10 +38,10 @@ also a great place to ask questions or discuss issues related to LIGO/Virgo
 public alerts. Documents relating to teleconferences and in-person meetings are
 available at `OpenLVEM wiki`_.
 
-4. Visit GraceDb
+4. Visit GraceDB
 ----------------
 
-Familiarize yourself with GraceDb_, LIGO/Virgo's online portal for alerts and
+Familiarize yourself with GraceDB_, LIGO/Virgo's online portal for alerts and
 real-time results.
 
 .. [#f1] GCN Circulars are similar to `Astronomer's Telegrams`_ (ATels). By
@@ -54,5 +54,5 @@ real-time results.
 .. _`archived online`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
 .. _`OpenLVEM instructions`: https://wiki.gw-astronomy.org/OpenLVEM/OpenLVEMSignUp
 .. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM/WebHome
-.. _GraceDb: https://gracedb.ligo.org
+.. _GraceDB: https://gracedb.ligo.org
 .. _`Astronomer's Telegrams`: http://www.astronomerstelegram.org

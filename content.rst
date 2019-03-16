@@ -79,7 +79,7 @@ LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | **What**                                                                                                                                  |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| GraceID           | GraceDb ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                               |
+| GraceID           | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                               |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Packet Type       | GCN Notice type: :samp:`{{Preliminary,Initial,Update,Retraction}}`                                                    |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
@@ -112,8 +112,8 @@ LIGO/Virgo GCN Notice.
 Name
 ~~~~
 
-The name of an event is its :term:`GraceDb` ID, a uniquely assigned identifier
-such as :samp:`MS181101abc`. A GraceDb ID has three parts:
+The name of an event is its :term:`GraceDB` ID, a uniquely assigned identifier
+such as :samp:`MS181101abc`. A GraceDB ID has three parts:
 
 * Prefix: ``S`` for normal candidates and ``MS`` or ``TS`` for mock or test
   events respectively. The S stands for 
@@ -124,7 +124,7 @@ such as :samp:`MS181101abc`. A GraceDb ID has three parts:
 
 * Suffix: A lowercase alphabetic string that is incremented automatically
   (``a``, ``b``, ..., ``z``, ``aa``, ``ab``, ... ``az``, ``aaa``, etc.)
-  whenever a candidate on a given date is added to GraceDb.
+  whenever a candidate on a given date is added to GraceDB.
 
 Significance
 ~~~~~~~~~~~~
@@ -139,7 +139,7 @@ Localization
 The localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
 The GCN Notice and Circular will provide a URL for the localization file stored
-in GraceDb. The localization is saved in a :term:`FITS` file as a
+in GraceDB. The localization is saved in a :term:`FITS` file as a
 :term:`HEALPix` all-sky image. See our :doc:`sample code </tutorial/skymaps>`
 for instructions on working with localization files.
 

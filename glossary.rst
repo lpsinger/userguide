@@ -44,7 +44,7 @@ Glossary
     GCN Notice
         A machine-readable alert distributed through :term:`GCN`.
 
-    GraceDb
+    GraceDB
         Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
         the official public marshal portal for LIGO/Virgo candidates.
 

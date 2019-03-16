@@ -101,7 +101,7 @@ There are several useful pieces of information here:
   Celestial (equatorial, ICRS) frame, as all LIGO/Virgo probability sky maps
   will be.
 * ``OBJECT``, the unique LIGO/Virgo identifier for the event.
-* ``REFERENC``, a link to the candidate page in :term:`GraceDb`.
+* ``REFERENC``, a link to the candidate page in :term:`GraceDB`.
 * ``INSTRUME``, a list of gravitational-wave sites that triggered on the
   event: `H1` for LIGO Hanford, `L1` for LIGO Livingston, and `V1` for Virgo.
 * ``DATE-OBS``, the UTC time of the event. In the case of a compact binary

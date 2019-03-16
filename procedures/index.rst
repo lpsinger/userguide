@@ -112,7 +112,7 @@ sections for details).
 **Within 1–10 minutes after GW trigger time**, the first :doc:`preliminary
 notice </content>` will be sent fully autonomously. Preliminary notices may or
 may not include a sky localization. The trigger will be immediately and
-publicly visible in the :term:`GraceDb` database. Since the procedure is fully
+publicly visible in the :term:`GraceDB` database. Since the procedure is fully
 automatic, some preliminary alerts may be retracted after human inspection for
 data quality, instrumental conditions, and pipeline behavior.
 

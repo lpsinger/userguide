@@ -17,7 +17,7 @@ events.
 .. warning::
    Some technical details of LIGO/Virgo public alerts may change before the
    start of Observing Run 3 (O3) in 2019. In particular, details of the alert
-   format and the :term:`GraceDb` public portal may evolve. Please check this
+   format and the :term:`GraceDB` public portal may evolve. Please check this
    document regularly for announcements and updates.
 
 Three sites (:term:`LHO`, :term:`LLO`, :term:`Virgo`) together form a global

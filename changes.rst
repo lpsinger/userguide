@@ -35,7 +35,7 @@ Version 5 (2019-03-01)
 * Add a human-readable description to the ``Pkt_Ser_Num`` parameter.
 
 * Add ``<EventIVORN cite="supersedes">`` elements to the sample Initial and
-  Update notices in order to cite all prior VOEvents. GraceDb already includes
+  Update notices in order to cite all prior VOEvents. GraceDB already includes
   this metadata, but it was missing from the examples.
 
 * Add MassGap classification for compact binary mergers.
