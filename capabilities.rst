@@ -10,7 +10,8 @@ the following external documents:
 * White Paper [#WhitePaper]_ on gravitational-wave data analysis and
   astrophysics
 * Living Review [#LivingReview]_ on prospects for observing and localizing
-  gravitational-wave transients with Advanced LIGO, Advanced Virgo, and KAGRA
+  gravitational-wave transients with Advanced LIGO, Advanced Virgo, and
+  :term:`KAGRA`
 * Working Plan Towards O3 [#WorkingPlanTowardsO3]_
 
 Timeline
@@ -83,7 +84,7 @@ sensitivities are listed in the table below.
 +-----------+-----------+-----------+
 | **Virgo** | 65–85     | 40–50     |
 +-----------+-----------+-----------+
-| **Kagra** | 8–25      |           |
+| **KAGRA** | 8–25      |           |
 +-----------+-----------+-----------+
 
 We expect 1–10 :term:`BNS` events over the course of O3. For BNS events, the

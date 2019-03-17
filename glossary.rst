@@ -70,6 +70,10 @@ Glossary
         <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
         detector in Livingston, Louisiana, USA.
 
+    KAGRA
+        Kamioka Gravitational Wave Detector, an underground gravitational-wave
+        detector in the Kamioka mine in Japan.
+
     MassGap
         Compact binary systems with at least one compact object whose mass is
         in the hypothetical "mass gap" between neutron stars and black holes,
