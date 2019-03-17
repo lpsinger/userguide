@@ -25,27 +25,12 @@ Glossary
         detectable with a signal to noise ratio of 8. Seel also :term:`BNS
         range`.
 
-    MassGap
-        Compact binary systems with at least one compact object whose mass is 
-        in the hypothetical "mass gap" between neutron stars and black holes, 
-        defined here as 3-5 solar masses.
-
     CBC
         Compact binary coalescence.
 
     FITS
         Flexible Image Transport System, a format for astronomical tables,
         images, and multidimensional data sets.
-
-    LHO
-        LIGO Hanford Observatory (see `LHO observatory home page
-        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
-        detector in Hanford, Washington, USA.
-
-    LLO
-        LIGO Livingston Observatory (see `LLO observatory home page
-        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
-        detector in Livingston, Louisiana, USA.
 
     GCN
         The Gamma-ray Coordinates Network (https://gcn.gsfc.nasa.gov), a portal
@@ -74,6 +59,21 @@ Glossary
     HEN
         High Energy Neutrino, particularly in the context of multi-messenger
         GW+HEN follow-up.
+
+    LHO
+        LIGO Hanford Observatory (see `LHO observatory home page
+        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
+        detector in Hanford, Washington, USA.
+
+    LLO
+        LIGO Livingston Observatory (see `LLO observatory home page
+        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
+        detector in Livingston, Louisiana, USA.
+
+    MassGap
+        Compact binary systems with at least one compact object whose mass is
+        in the hypothetical "mass gap" between neutron stars and black holes,
+        defined here as 3-5 solar masses.
 
     NSBH
         Neutron star black hole, a binary system composed of one neutron star
