@@ -11,10 +11,10 @@ Glossary
 
     BNS range
         A figure of merit to describe the sensitivity of a gravitational-wave
-        detector to compact binary mergers, defined as the average luminosity
-        distance at which the merger of two 1.4 :math:`M_\odot` neutron stars
-        that would be detectable with a signal to noise ratio of 8. Seel also
-        :term:`Burst range`.
+        detector to :term:`BNS` mergers, defined as the average luminosity
+        distance at which the merger of two 1.4 :math:`M_\odot` objects would
+        be detectable with a signal to noise ratio of 8. Seel also :term:`Burst
+        range`.
 
     Burst range
         A figure of merit to describe the sensitivity of a gravitational-wave
