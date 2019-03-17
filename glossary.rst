@@ -9,6 +9,22 @@ Glossary
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
 
+    BNS range
+        A figure of merit to describe the sensitivity of a gravitational-wave
+        detector to compact binary mergers, defined as the average luminosity
+        distance at which the merger of two 1.4 :math:`M_\odot` neutron stars
+        that would be detectable with a signal to noise ratio of 8. Seel also
+        :term:`Burst range`.
+
+    Burst range
+        A figure of merit to describe the sensitivity of a gravitational-wave
+        detector to unmodeled bursts, defined with reference to optimistic
+        models of gravitational wave emissions from stellar collapse as the
+        average luminosity distance at which a monochromatic burst at 150 Hz
+        with a fluence of :math:`E_\mathrm{GW} = 10^{-2} M_\odot c^2` would be
+        detectable with a signal to noise ratio of 8. Seel also :term:`BNS
+        range`.
+
     MassGap
         Compact binary systems with at least one compact object whose mass is 
         in the hypothetical "mass gap" between neutron stars and black holes, 

@@ -68,20 +68,22 @@ Sensitivity and Localization Accuracy
 
 The following O3 projections are adapted from the Living Review
 [#LivingReview]_ on prospects for observing and localizing gravitational-wave
-transients with Advanced LIGO, Advanced Virgo, and KAGRA. The range (luminosity
-distance of detectable sources, averaged over sky position and source
-orientation) given the detectors' anticipated sensitivities are listed in the
-table below.
+transients with Advanced LIGO, Advanced Virgo, and KAGRA. The :term:`BNS range`
+and :term:`burst range` (luminosity distance of detectable sources, averaged
+over sky position and source orientation) given the detectors' anticipated
+sensitivities are listed in the table below.
 
-+-----------+-------------------+-------------------+
-| Detector  | BNS Range (Mpc)   | Burst Range (Mpc) |
-+===========+===================+===================+ 
-| **LIGO**  | 120–170           | 75–90             |
-+-----------+-------------------+-------------------+
-| **Virgo** | 65–85             | 40–50             |
-+-----------+-------------------+-------------------+
-| **Kagra** | 8–25              |                   |
-+-----------+-------------------+-------------------+
++-----------+-----------+-----------+
+| Detector  | Range (Mpc)           |
+|           +-----------+-----------+
+|           | BNS       | Burst     |
++===========+===========+===========+
+| **LIGO**  | 120–170   | 75–90     |
++-----------+-----------+-----------+
+| **Virgo** | 65–85     | 40–50     |
++-----------+-----------+-----------+
+| **Kagra** | 8–25      |           |
++-----------+-----------+-----------+
 
 We expect 1–10 :term:`BNS` events over the course of O3. For BNS events, the
 median localization accuracy of in terms of the 90% credible area will be
