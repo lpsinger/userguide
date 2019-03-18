@@ -20,7 +20,7 @@ with sub-minute to ∼1 minute latencies. They use discrete banks of waveform
 templates to cover the target parameter space of compact binaries, with all
 pipelines covering the mass ranges corresponding to BNS, NS-BH, and stellar
 mass BBH systems. However, GstLAL and PyCBC Live and SPIIR also include
-intermediate-mass BBH systems and the O2 banks differ in detail from pipeline
+intermediate-mass BBH systems and the O3 banks differ in detail from pipeline
 to pipeline.
 
 A coincident analysis is performed by GSTLAL, PyCBC Live, and MBTAOnline, where
