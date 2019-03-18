@@ -2,3 +2,11 @@
 table.docutils code {
     word-break: break-word;
 }
+
+div.footer {
+    width: auto;
+}
+
+div.footer>span+span::before {
+    content: ' | ';
+}
