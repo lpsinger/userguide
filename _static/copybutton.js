@@ -4,6 +4,7 @@ $(document).ready(function() {
      * copyable. */
     var div = $('.highlight-python .highlight,' +
                 '.highlight-python3 .highlight,' +
+                '.highlight-shell-session .highlight,' +
                 '.highlight-default .highlight')
     var pre = div.find('pre');
 

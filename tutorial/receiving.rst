@@ -7,10 +7,10 @@ it receives a GCN notice. We :term:`decorate <decorator>` the handler with
 certain GCN notice types (``LVC_PRELIMINARY``, ``LVC_INITIAL``, and
 ``LVC_UDPATE``).
 
-Events come in two very general flavors: 'CBC' or compact binary coalescence
-candidates detected by matched filtering, and generic 'Burst' candidates
-detected by model-independent methods. Your handler can take different actions
-based on this. The example below will handle only 'CBC' events.
+Events come in two very general flavors: 'CBC' for compact binary coalescence
+candidates detected by matched filtering, and 'Burst' for candidates detected
+by model-independent methods. Your handler can take different actions based on
+this. The example below will handle only 'CBC' events.
 
 .. important::
    Note that mock or 'test' observations are denoted by the ``role="test"``
@@ -90,8 +90,8 @@ we defined above.
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
 
-When you run this script, you should receive a sample LIGO/Virgo GCN Notice
-every hour. For each event received, it will print output that looks like what
+When you run this script you should receive a sample LIGO/Virgo GCN Notice
+every hour. For each event received it will print output that looks like what
 is shown in the :ref:`offline-testing` example below.
 
 .. note::

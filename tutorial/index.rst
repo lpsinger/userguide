@@ -9,8 +9,8 @@ notices in :term:`VOEvent` XML format because it is anonymous,
 configuration-free, and easy to parse.
 
 This tutorial will walk you through writing a Python script to receive and
-process example LIGO/Virgo GCN notice that are sent every hour. The tutorial is
-broken into the following subsections:
+process the example LIGO/Virgo GCN notices that are sent every hour. The
+tutorial is broken into the following subsections:
 
 .. toctree::
    :maxdepth: 1
