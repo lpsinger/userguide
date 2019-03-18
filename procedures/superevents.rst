@@ -1,7 +1,7 @@
 Superevents
 ===========
 
-Superevents are a new abstraction to unify gravitational-wave candidates from
+Superevents are an abstraction to unify gravitational-wave candidates from
 multiple search pipelines. Each superevent is intended to represent a single
 astrophysical event.
 
@@ -21,9 +21,9 @@ Selection of the Preferred Event
 When multiple online searches report events at the same time, the preferred
 event is decided by applying the following rules, in order:
 
-1. Events that are detected in multiple interferometers are preferred over an
-   events from a single interferometer.
-2. Events from modeled :term:`CBC` searches are preferred over events from
+1. An event detected in multiple interferometers is preferred over an
+   event from a single interferometer.
+2. An event from modeled :term:`CBC` searches are preferred over an event from
    unmodeled Burst searches (see :doc:`Searches </procedures/searches>` for
    details on search pipelines).
 3. In the case of multiple CBC events, the event with the highest signal to
@@ -31,9 +31,9 @@ event is decided by applying the following rules, in order:
    event with the lowest false alarm rate (FAR) is preferred.
 
 .. note::
-   A Preliminary GCN is automatically issued for superevents when the false
-   alarm rate is lower than a threshold value.
-
-.. note::
-   In case of an *offline* trigger upload from a pipeline, no
-   preliminary GCN will be sent.
+   * A Preliminary GCN is automatically issued for superevents when the false
+     alarm rate is lower than a threshold value.
+   * In case of an event created by a pipeline due to an *offline* analysis, no
+     preliminary GCN will be sent.
+   * The signal to noise (SNR) is used to select the `preferred_event` among `CBC`
+     candidates because higher SNR implies better estimates from low-latency searches.
