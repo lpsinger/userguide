@@ -27,12 +27,12 @@ A coincident analysis is performed by GSTLAL, PyCBC Live, and MBTAOnline, where
 candidate events are extracted separately at each detector via
 matched-filtering and later combined across detectors. SPIIR extract candidates
 of each detector via matched-filtering and look for coherent responses in other
-detectors so that a localization of the source can be constructed. Of the four
-pipelines, GstLAL and MBTAOnline use several banks of matched filters to cover
-the detector bandwidth, i.e., the templates are split across multiple frequency
-bands. All pipelines also implement different kinds of signal-based vetoes to
-reject instrumental transients which cause large SNR values but can otherwise
-be easily distinguished from compact binary coalescence signals.
+detectors so that a sky localization of the source can be constructed. Of the
+four pipelines, GstLAL and MBTAOnline use several banks of matched filters to
+cover the detector bandwidth, i.e., the templates are split across multiple
+frequency bands. All pipelines also implement different kinds of signal-based
+vetoes to reject instrumental transients which cause large SNR values but can
+otherwise be easily distinguished from compact binary coalescence signals.
 
 **GSTLAL** [#GSTLAL1]_ [#GSTLAL2]_ is a matched-filter pipeline designed to
 find gravitational waves from compact binaries in low-latency. It uses a

@@ -1,28 +1,28 @@
-Localization and Parameter Estimation
-=====================================
+Sky Localization and Parameter Estimation
+=========================================
 
 Immediately after one of the :doc:`search pipelines <searches>` reports an
-event, localization and parameter estimation analyses begin. These analyses all
-use Bayesian inference to calculate the posterior probability distribution over
-the parameters (sky location, distance, and/or intrinsic properties of the
+event, sky localization and parameter estimation analyses begin. These analyses
+all use Bayesian inference to calculate the posterior probability distribution
+over the parameters (sky location, distance, and/or intrinsic properties of the
 source) given the observed gravitational-wave signal.
 
 There are different parameter estimation methods for modeled (CBC) and
 unmodeled (Burst) events. However, in both cases there is a rapid analysis that
-estimates only the localization, and is ready in seconds, and a refined
+estimates only the sky localization, and is ready in seconds, and a refined
 analysis that explores a larger parameter space and completes up to hours or a
 day later.
 
 Modeled Events
 --------------
 
-**BAYESTAR** [#BAYESTAR]_ is the rapid CBC localization algorithm. It reads in
-the matched-filter time series from the :doc:`search pipeline <searches>` and
-calculates the posterior probability distribution over the sky location and
+**BAYESTAR** [#BAYESTAR]_ is the rapid CBC sky localization algorithm. It reads
+in the matched-filter time series from the :doc:`search pipeline <searches>`
+and calculates the posterior probability distribution over the sky location and
 distance of the source by coherently modeling the response of the
 gravitational-wave detector network. It explores the parameter space using
 Gaussian quadrature, lookup tables, and sampling on an adaptively refined
-HEALPix grid. The localization takes tens of seconds and is included in the
+HEALPix grid. The sky localization takes tens of seconds and is included in the
 preliminary alert.
 
 **LALInference** [#LALInference]_ is the full CBC parameter estimation
@@ -40,13 +40,13 @@ Unmodeled Events
 ----------------
 
 **cWB**, the burst :doc:`search pipeline <searches>`, also performs a rapid
-localization based on its coherent reconstruction of the gravitational-wave
+sky localization based on its coherent reconstruction of the gravitational-wave
 signal using a wavelet basis and the response of the gravitational-wave
-detector network [#cWBLocalization]_. The cWB localization is included in the
-preliminary alert.
+detector network [#cWBLocalization]_. The cWB sky localization is included in
+the preliminary alert.
 
-Refined localizations for unmodeled bursts are provided by two algorithms that
-use the same MCMC and nested sampling methodology as LALInference.
+Refined sky localizations for unmodeled bursts are provided by two algorithms
+that use the same MCMC and nested sampling methodology as LALInference.
 **LALInference Burst (LIB)** [#oLIB]_ models the signal as a single
 sinusoidally modulated Gaussian. **BayesWave** [#BayesWave]_ models the signal
 as a superposition of wavelets and jointly models the background with both a

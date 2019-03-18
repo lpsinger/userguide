@@ -32,7 +32,7 @@ considered as the first formal publication of the candidate and can be cited as
 such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
-estimates of the source localization, significance, or classification. There
+estimates of the sky localization, significance, or classification. There
 may be multiple updates for a given event, and updates may be issued hours,
 days, or even weeks after the event.
 
@@ -48,7 +48,8 @@ information, which are described in further detail below:
 
 * Name_: a unique identifier for the candidate
 * Significance_: estimated false alarm rate
-* Localization_: inferred sky position and (:term:`CBC` candidates only) distance
+* `Sky localization`_: inferred sky position and (:term:`CBC` candidates only)
+  distance
 * Inference_: inferred source classification and properties (:term:`CBC`
   candidates only)
 
@@ -87,7 +88,7 @@ LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | FAR               | Estimated false alarm rate in Hz                                                                                      |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Sky Map           | URL of HEALPix FITS localization file                                                                                 |
+| Sky Map           | URL of HEALPix FITS sky localization file                                                                             |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Group             | :samp:`CBC`                                               | :samp:`Burst`                                             |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
@@ -133,15 +134,15 @@ The significance of the event is quantified by its false alarm rate (FAR): the
 expected rate of events from the pipeline that produced the preferred event
 with equal or greater significance in the absence of any astrophysical signals.
 
-Localization
-~~~~~~~~~~~~
+Sky Localization
+~~~~~~~~~~~~~~~~
 
-The localization consists of the posterior probability distribution of the
+The sky localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
-The GCN Notice and Circular will provide a URL for the localization file stored
-in GraceDB. The localization is saved in a :term:`FITS` file as a
+The GCN Notice and Circular will provide a URL for the sky localization file
+stored in GraceDB. The sky localization is saved in a :term:`FITS` file as a
 :term:`HEALPix` all-sky image. See our :doc:`sample code </tutorial/skymaps>`
-for instructions on working with localization files.
+for instructions on working with sky localization files.
 
 Inference
 ~~~~~~~~~
@@ -268,19 +269,19 @@ Data Quality Assessment
 
 Circulars may contain concise descriptions of any instrument or data quality
 issues that may affect the significance estimates or the GW parameter
-inferences. Unresolved data quality issues could mean that localization
+inferences. Unresolved data quality issues could mean that sky localization
 estimates may shift after they have been mitigated, but does not mean that they
 will. This is to be considered as advisory information.
 
-Localization Ellipse
-~~~~~~~~~~~~~~~~~~~~
+Sky Localization Ellipse
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Generally, GW localizations are irregularly shaped. However, for particularly
-accurately localized events, the localization region can be well described by
-an ellipse. When the area of the 90% ellipse is less than 1.35 times the area
-of the *smallest possible 90% credible region*, the GCN Circular will provide a
-90% containment ellipse. For details of the ellipse fitting algorithm, see
-:mod:`ligo.skymap.postprocess.ellipse`.
+Generally, GW sky localizations are irregularly shaped. However, for
+particularly accurately localized events, the sky localization region can be
+well described by an ellipse. When the area of the 90% ellipse is less than
+1.35 times the area of the *smallest possible 90% credible region*, the GCN
+Circular will provide a 90% containment ellipse. For details of the ellipse
+fitting algorithm, see :mod:`ligo.skymap.postprocess.ellipse`.
 
 The ellipse is described in the format of a `DS9 region string`_. Many tools
 can read DS9 region strings, including `DS9`_, `Aladin`_, `astropy-regions`_,

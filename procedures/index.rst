@@ -39,7 +39,7 @@ sections for details).
 
     gradient = np.linspace(0, 1, 256)[np.newaxis, :]**0.5
 
-    plot_data = [[['Rapid Localization', 60 * u.second, 20 * u.second],
+    plot_data = [[['Rapid Sky Localization', 60 * u.second, 20 * u.second],
                   ['Classification', 75 * u.second, 5 * u.second],
                   ['Automated Vetting', 75 * u.second, 5 * u.second],
                   ['Set Preferred Event', 60 * u.second, 15 * u.second],
@@ -132,7 +132,7 @@ localization area or significance accuracy improves (e.g. as a result of
 improved calibration, de-glitching, or computationally deeper parameter
 estimation). Updates will be sent up until the position is determined more
 accurately by public announcement of an unambiguous counterpart. At that point,
-there will be no further localization updates until the publication of the
+there will be no further sky localization updates until the publication of the
 event in a peer-reviewed journal.
 
 **At any time**, we can **promote** an extraordinary candidate that does not

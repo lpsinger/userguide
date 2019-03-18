@@ -18,10 +18,10 @@ advanced tools for working with GW probability sky maps.
   .. image:: https://lscsoft.docs.ligo.org/ligo.skymap/_images/ligo_skymap_plot_airmass-1.png
      :alt: A probabilistic airmass plot.
 
-* The rapid localization code :doc:`BAYESTAR
+* The rapid sky localization code :doc:`BAYESTAR
   <ligo.skymap:ligo/skymap/bayestar>`, which is used to produce the initial
   sky maps for CBC events but can also be used to created :doc:`simulated
-  localizations <ligo.skymap:quickstart/bayestar-injections>`.
+  sky localizations <ligo.skymap:quickstart/bayestar-injections>`.
 
 * The postprocessing tool that creates updated sky maps from MCMC samples
   (:doc:`ligo-skymap-from-samples

@@ -4,8 +4,9 @@ Candidate Vetting
 :doc:`GWCelery <gwcelery:index>` orchestrates and supervises performing basic
 data quality and detector state checks, grouping of events from individual
 pipelines into :doc:`superevents <superevents>`, initiating automated
-:doc:`localization and parameter estimation <parameter_estimation>`, inferring
-:doc:`classification and source properties <inference>`, and sending alerts.
+:doc:`sky localization and parameter estimation <parameter_estimation>`,
+inferring :doc:`classification and source properties <inference>`, and sending
+alerts.
 
 A Data Quality Report is prepared that consists of a semi-automated detector
 characterization and data quality investigation for each event. It provides a

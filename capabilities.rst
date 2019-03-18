@@ -64,8 +64,8 @@ LIGO/Virgo detectors and alert infrastructure.
      indicated by the "EMFollow" box.
    | http://monitor.ligo.org/gwstatus
 
-Sensitivity and Localization Accuracy
--------------------------------------
+Sensitivity and Sky Localization Accuracy
+-----------------------------------------
 
 The following O3 projections are adapted from the Living Review
 [#LivingReview]_ on prospects for observing and localizing gravitational-wave
@@ -87,7 +87,7 @@ sensitivities are listed in the table below.
 +-----------+-----------+-----------+
 
 We expect 1–10 :term:`BNS` events over the course of O3. For BNS events, the
-median localization accuracy of in terms of the 90% credible area will be
+median sky localization accuracy of in terms of the 90% credible area will be
 120–180 deg². 12–21% of BNS mergers will be localized to less than 20 deg².
 
 Event Rates
