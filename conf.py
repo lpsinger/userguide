@@ -12,9 +12,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+from pkg_resources import parse_version
+from versioneer import get_version
 
 
 # -- Project information -----------------------------------------------------
@@ -23,10 +26,10 @@ project = 'LIGO/Virgo Public Alerts User Guide'
 copyright = '2018, LIGO Scientific Collaboration, Virgo Collaboration'
 author = 'LIGO Scientific Collaboration, Virgo Collaboration'
 
-# The short X.Y version
-version = ''
 # The full version, including alpha/beta/rc tags
-release = ''
+release = get_version()
+# The short X.Y version
+version = parse_version(release).base_version
 
 
 # -- General configuration ---------------------------------------------------
