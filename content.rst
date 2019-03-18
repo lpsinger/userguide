@@ -25,7 +25,7 @@ automated data quality checks, but it may later be :ref:`retracted
 this stage.
 
 An **Initial GCN Notice** is issued after human vetting (see
-:doc:`/procedures/vetting`). If the signal does not pass human vetting (i.e.,
+:doc:`/procedures/vetting`). If the signal does not pass human vetting (e.g.,
 it is a glitch), then instead of an initial alert there will be a retraction_.
 The initial alert is also accompanied by a GCN Circular which should be
 considered as the first formal publication of the candidate and can be cited as
@@ -53,15 +53,16 @@ information, which are described in further detail below:
 * Inference_: inferred source classification and properties (:term:`CBC`
   candidates only)
 
-All types of GCN Notices *except for Preliminary notices* are accompanied by
-human-readable GCN Circulars, which restates all of the above information as
-well as a `data quality assessment`_.
+Of the above fields, Retraction notices provide only the name.
+
+Initial and Update notices are accompanied by human-readable GCN Circulars,
+which restate all of the above information and also may include a `data quality
+assessment`_.
 
 Notice Contents
 ---------------
 
-The table below is a diagrammatic representation of the contents of a
-LIGO/Virgo GCN Notice.
+The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | **Root**                                                                                                                                  |
@@ -101,13 +102,13 @@ LIGO/Virgo GCN Notice.
 | Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
-| MassGap, Noise    | :term:`NSBH`, :term:`BBH` merger, :term:`MassGap` or      |                                                           |
+| MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                           |
 |                   | terrestrial (i.e, noise) respectively                     |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
 |                   | noise, that at least one of the compact objects was a     |                                                           |
-|                   | neutron star, and that the system ejected a nonzero amount|                                                           |
-|                   | of neutron star matter, respectively.                     |                                                           |
+|                   | neutron star, and that the system ejected a non-zero      |                                                           |
+|                   | amount of neutron star matter, respectively.              |                                                           |
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 
 Name
@@ -246,7 +247,7 @@ NSBH, BBH, or MassGap merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
   objects is consistent with a neutron star.
-* **HasRemnant**: A nonzero amount of neutron star material remained outside
+* **HasRemnant**: A non-zero amount of neutron star material remained outside
   the final remnant compact object (a necessary but not sufficient condition to
   produce certain kinds of electromagnetic emission such as a short :term:`GRB`
   or a kilonova).
