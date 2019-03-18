@@ -27,8 +27,8 @@ signals, this figure gives the :term:`BNS range` for each observing run.
 .. image:: https://media.springernature.com/original/springer-static/image/art%3A10.1007%2Fs41114-018-0012-9/MediaObjects/41114_2018_12_Fig2_HTML.gif
    :alt: Long-term observing schedule
 
-Engineering Run 14 (ER14) is scheduled to start on 2019-03-04. The transition
-into Observing Run 3 (O3) is planned for 2019-04-01.
+Engineering Run 14 (ER14) started on 2019-03-04. The transition into Observing
+Run 3 (O3) is planned for 2019-04-01.
 
 During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
 Virgo) will observe for one year. It is possible that the Japanese KAGRA
