@@ -164,6 +164,8 @@ The figure below shows the extent of the three astrophysical categories (BNS,
 NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 :math:`m_2`.
 
+.. _classification-diagram:
+
 .. plot::
    :alt: Mass parameter space
 
