@@ -25,6 +25,8 @@ these five categories. The mean values are updated weekly based on observed
 matched-filter count rates. They are then used to predict the category for new
 triggers uploaded by :doc:`search pipelines </procedures/searches>`.
 
+For details, see [#Pastro]_, especially Section II E. and Equation 18 therein.
+
 Properties
 ----------
 
@@ -51,3 +53,7 @@ parameter estimation, updated properties are calculated from posterior samples.
 .. [#DiskMass]
    Foucart, F., Hinderer, T. & Nissanke, S. 2018, |prd|, 98, 081501.
    https://doi.org/10.1103/PhysRevD.98.081501
+
+.. [#Pastro]
+   Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2019, 
+   arXiv:1903.06881, https://arxiv.org/abs/1903.06881
