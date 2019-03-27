@@ -19,6 +19,9 @@ Version 7 (unreleased)
 
 .. rubric:: Sample Code
 
+* Add instructions for installing required packages using the Anaconda Python
+  distribution.
+
 Version 6 (2019-03-08)
 ----------------------
 
