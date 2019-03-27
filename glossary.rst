@@ -12,7 +12,7 @@ Glossary
     BNS range
         A figure of merit to describe the sensitivity of a gravitational-wave
         detector to :term:`BNS` mergers, defined as the average luminosity
-        distance at which the merger of two 1.4 :math:`M_\odot` objects would
+        distance at which the merger of two :math:`1.4~M_\odot` objects would
         be detectable with a signal to noise ratio of 8. Seel also :term:`Burst
         range`.
 
@@ -20,7 +20,7 @@ Glossary
         A figure of merit to describe the sensitivity of a gravitational-wave
         detector to unmodeled bursts, defined with reference to optimistic
         models of gravitational wave emissions from stellar collapse as the
-        average luminosity distance at which a monochromatic burst at 150 Hz
+        average luminosity distance at which a monochromatic burst at 150 Hz
         with a fluence of :math:`E_\mathrm{GW} = 10^{-2} M_\odot c^2` would be
         detectable with a signal to noise ratio of 8. Seel also :term:`BNS
         range`.
@@ -62,12 +62,12 @@ Glossary
 
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
-        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
+        <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
         detector in Hanford, Washington, USA.
 
     LLO
         LIGO Livingston Observatory (see `LLO observatory home page
-        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
+        <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
         detector in Livingston, Louisiana, USA.
 
     KAGRA
@@ -88,7 +88,7 @@ Glossary
 
     Virgo
         Virgo Observatory (see `Virgo observatory home page
-        <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
+        <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
         in Cascina, Italy.
 
     VOEvent
