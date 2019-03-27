@@ -28,8 +28,9 @@ with ``pip``, run the following command:
 
     $ pip install pygcn healpy
 
-Another option the `Anaconda Python distribution`_. To install these packages
-using Anaconda, run the following commands:
+Another option is the `Anaconda`_ Python distribution. To install these
+packages using Anaconda, first :doc:`install conda
+<conda:user-guide/install/index>` and then run the following commands:
 
 .. code-block:: shell-session
 
@@ -37,7 +38,7 @@ using Anaconda, run the following commands:
     $ conda install pygcn healpy
 
 .. _Aladin: https://aladin.u-strasbg.fr
-.. _`Anaconda Python distribution`: https://www.anaconda.com/distribution/
+.. _`Anaconda`: https://www.anaconda.com/
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _astropy: https://pypi.org/project/astropy/
 .. _comet: https://pypi.org/project/Comet/

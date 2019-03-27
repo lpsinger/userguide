@@ -184,6 +184,7 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     'astropy': ('http://docs.astropy.org/en/stable/', None),
+    'conda': ('https://docs.conda.io/projects/conda/en/latest/', None),
     'gwcelery': ('https://gwcelery.readthedocs.io/en/latest/', None),
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),
