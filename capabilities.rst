@@ -32,9 +32,9 @@ Run 3 (O3) is planned for 2019-04-01.
 
 During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
 Virgo) will observe for one year. It is possible that the Japanese KAGRA
-detector may come online and become part of the joint gravitational-wave
-analysis at some point during O3. The near-term observing schedule is shown
-below, reproduced from [#WorkingPlanTowardsO3]_.
+detector may come online and become part of the international
+gravitational-wave network at some point during O3. The near-term observing
+schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
 
 .. image:: _static/G1801056-v4.png
    :alt: Current observing schedule
