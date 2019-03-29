@@ -60,6 +60,10 @@ Glossary
         High Energy Neutrino, particularly in the context of multi-messenger
         GW+HEN follow-up.
 
+    KAGRA
+        Kamioka Gravitational Wave Detector, an underground gravitational-wave
+        detector in the Kamioka mine in Japan.
+
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
         <https://www.ligo.caltech.edu/WA>`_), site of a 4 km gravitational-wave
@@ -69,10 +73,6 @@ Glossary
         LIGO Livingston Observatory (see `LLO observatory home page
         <https://www.ligo.caltech.edu/LA>`_), site of a 4 km gravitational-wave
         detector in Livingston, Louisiana, USA.
-
-    KAGRA
-        Kamioka Gravitational Wave Detector, an underground gravitational-wave
-        detector in the Kamioka mine in Japan.
 
     MassGap
         Compact binary systems with at least one compact object whose mass is
