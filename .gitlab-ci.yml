@@ -15,7 +15,7 @@ validate-voevents:
 
 .sphinx: &sphinx
   stage: build
-  image: python:slim
+  image: python
   variables:
     SPHINXOPTS: -W
   script:
