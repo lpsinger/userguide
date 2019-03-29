@@ -1,5 +1,5 @@
 pygcn
 healpy
 seaborn
-sphinx
+sphinx < 2  # breaks sphinx-tabs
 sphinx-tabs
