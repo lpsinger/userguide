@@ -23,16 +23,16 @@ mass BBH systems. However, GstLAL and PyCBC Live and SPIIR also include
 intermediate-mass BBH systems and the O3 banks differ in detail from pipeline
 to pipeline.
 
-A coincident analysis is performed by GSTLAL, PyCBC Live, and MBTAOnline, where
-candidate events are extracted separately at each detector via
-matched-filtering and later combined across detectors. SPIIR extract candidates
-of each detector via matched-filtering and look for coherent responses in other
-detectors so that a sky localization of the source can be constructed. Of the
-four pipelines, GstLAL and MBTAOnline use several banks of matched filters to
-cover the detector bandwidth, i.e., the templates are split across multiple
-frequency bands. All pipelines also implement different kinds of signal-based
-vetoes to reject instrumental transients which cause large SNR values but can
-otherwise be easily distinguished from compact binary coalescence signals.
+A coincident analysis is performed by all pipelines, where candidate events are
+extracted separately from each detector via matched-filtering and later
+combined across detectors. SPIIR extracts candidates from each detector via
+matched-filtering and looks for coherent responses from the other detectors to
+provide source localization. Of the four pipelines, GstLAL and MBTAOnline use
+several banks of matched filters to cover the detectors bandwidth, i.e., the
+templates are split across multiple frequency bands. All pipelines also
+implement different kinds of signal-based vetoes to reject instrumental
+transients that cause large SNR values but can otherwise be easily
+distinguished from compact binary coalescence signals.
 
 **GSTLAL** [#GSTLAL1]_ [#GSTLAL2]_ is a matched-filter pipeline designed to
 find gravitational waves from compact binaries in low-latency. It uses a
@@ -40,13 +40,6 @@ likelihood ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
 distribution of likelihood-ratios in noise. This distribution can then be used
 to compute a false alarm rate and p-value.
-
-**SPIIR** [#SPIIR]_ [#SPIIRThesis]_ applies summed parallel infinite impulse
-response (IIR) filters to approximate matched-filtering results. It selects
-high-SNR events from each detector and find coherent responses from other
-detectors. It constructs background by time-shifting detector data one hundred
-times over a week to form a background statistic distribution used to evaluate
-foreground candidate significance.
 
 **MBTA** [#MBTA]_ constructs its background by making every possible
 coincidence from single detector triggers over a few hours of recent data. It
@@ -62,25 +55,33 @@ coincidences are recorded and assigned a ranking statistic; the false alarm
 rate is then estimated by counting accidental coincidences louder than a given
 candidate, i.e. with a higher statistic value.
 
+**SPIIR** [#SPIIR]_ [#SPIIRThesis]_ applies summed parallel infinite impulse
+response (IIR) filters to approximate matched-filtering results. It selects
+high-SNR events from each detector and finds coherent responses from other
+detectors. It constructs a background statistical distribution by time-shifting
+detector data one hundred times over a week to evaluate foreground candidate
+significance.
+
 Unmodeled Search
 ----------------
 
 **cWB** [#cWB]_ is an excess power algorithm to identify short-duration
-gravitational wave-like signals. It uses a wavelet transformation to identify
-time-frequency pixels which can be grouped in a single cluster if they satisfy
+gravitational wave signals. It uses a wavelet transformation to identify
+time-frequency pixels that can be grouped in a single cluster if they satisfy
 neighboring conditions. A tuned version for compact-binary coalescences chooses
 the time-frequency pixels if they mainly follow a pattern that increases in
 frequency. A maximum-likelihood-statistics calculated over the cluster is used
 to identify the proper parameter of the event, in particular the probability of
-the source direction and the coherent network signal-to-noise ratio. The last
-one is used to assign detection significance to the found events.
+the source direction and the coherent network signal-to-noise ratio. The
+largest likelihood value is used to assign detection significance to the found
+events.
 
 **oLIB** [#oLIB]_ uses the Q transform to decompose GW strain data into several
 time-frequency planes of constant quality factors :math:`Q`, where :math:`Q
 \sim \tau f_0`. The pipeline flags data segments containing excess power and
 searches for clusters of these segments with identical :math:`f_0` and
 :math:`Q` spaced within 100 ms of each other. Coincidences among the detector
-network of clusters with a time-of-flight window up to 10 ms are then analyzed
+network of clusters within a 10 ms light travel time window are then analyzed
 with a coherent (i.e., correlated across the detector network) signal model to
 identify possible GW candidate events.
 
@@ -105,7 +106,7 @@ calculation to find joint GW+HEN triggers.
 .. [#GSTLAL1]
    Messick, C., Blackburn, K., Brady, P., et al. 2017, |prd|, 95, 042001.
    https://doi.org/10.1103/PhysRevD.95.042001
-   
+
 .. [#GSTLAL2]
    Sachdev, S., Caudill, S., Fong, H., et al. 2019, arXiv, 1901.08580.
    https://arxiv.org/abs/1901.08580
@@ -141,11 +142,11 @@ calculation to find joint GW+HEN triggers.
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
    http://adsabs.harvard.edu/abs/2016PhDT.........8U
-   
+
 .. [#LLAMA1]
    Bartos, I., Veske, D., Keivani, A., et al. 2018, arXiv, 1810.11467.
    https://arxiv.org/abs/1810.11467
-   
+
 .. [#LLAMA2]
    Countryman, S., Keivani, A., Bartos, I., et al. 2019, arXiv, 1901.05486.
    https://arxiv.org/abs/1901.05486
