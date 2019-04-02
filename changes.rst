@@ -1,12 +1,8 @@
 Change Log
 ==========
 
-Version 7 (unreleased)
+Version 7 (2019-03-02)
 ----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
@@ -16,8 +12,6 @@ Version 7 (unreleased)
 
 * Add Gravitational Wave/High Energy Neutrino search to the list of
   multi-messenger search pipelines.
-
-.. rubric:: Alert Contents
 
 .. rubric:: Sample Code
 
