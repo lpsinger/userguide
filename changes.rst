@@ -10,6 +10,8 @@ Version 7 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+* Record the official start of O3.
+
 .. rubric:: Procedures
 
 * Add Gravitational Wave/High Energy Neutrino search to the list of
