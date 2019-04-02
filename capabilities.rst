@@ -39,14 +39,6 @@ schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
 .. image:: _static/G1801056-v4.png
    :alt: Current observing schedule
 
-.. important::
-   During both Engineering Runs, the detector configuration and analysis
-   software will be changing frequently. We will send public alerts only for
-   highly confident and scientifically significant events and with longer than
-   normal latency. However, when the transition to O3 occurs, we will switch to
-   routine low-latency data analysis and sending public alerts for all
-   gravitational-wave events.
-
 Live Status
 -----------
 
