@@ -1,6 +1,21 @@
 Change Log
 ==========
 
+Version 8 (unreleased)
+----------------------
+
+.. rubric:: General
+
+.. rubric:: Getting Started Checklist
+
+.. rubric:: Observing Capabilities
+
+.. rubric:: Procedures
+
+.. rubric:: Alert Contents
+
+.. rubric:: Sample Code
+
 Version 7.1 (2019-03-02)
 ------------------------
 
