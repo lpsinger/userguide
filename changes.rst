@@ -1,20 +1,11 @@
 Change Log
 ==========
 
-Version 8 (unreleased)
-----------------------
+Version 7.1 (2019-03-02)
+------------------------
 
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Procedures
-
-.. rubric:: Alert Contents
-
-.. rubric:: Sample Code
+* Remove the warning on the front page about significant changes to this
+  document occurring before the start of O3.
 
 Version 7 (2019-03-02)
 ----------------------
