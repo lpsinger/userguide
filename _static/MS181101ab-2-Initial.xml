@@ -75,7 +75,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
         <Group type="Properties">
             <Description>Qualitative properties of the source, conditioned on the assumption that the signal is an astrophysical compact binary merger</Description>
             <Param name="HasNS" dataType="float" value="0.95" ucd="stat.probability">
-                <Description>Probability that at least one object in the binary has a mass that is less than 2.83 solar masses</Description>
+                <Description>Probability that at least one object in the binary has a mass that is less than 3 solar masses</Description>
             </Param>
             <Param name="HasRemnant" dataType="float" value="0.91" ucd="stat.probability">
                 <Description>Probability that a nonzero mass was ejected outside the central remnant object</Description>

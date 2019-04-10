@@ -14,6 +14,13 @@ Version 8 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Update the description of the ``HasNS`` property in the sample GCN Notices.
+  Previously, it was defined as the probability that at least one object in the
+  binary has a mass that is less than 2.83 solar masses. Now, for consistency
+  with the source classification definitions, it is defined as the probability
+  that at least one object in the binary has a mass that is less than 3 solar
+  masses.
+
 .. rubric:: Sample Code
 
 Version 7.1 (2019-03-02)
