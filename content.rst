@@ -300,7 +300,8 @@ is an example::
 The alerts will not contain quantitative estimates of intrinsic properties such
 as masses and spins, nor contain information on the GW strain or reconstructed
 waveforms. After final analysis, those data products are released through the
-`Gravitational Wave Open Science Center <https://www.gw-openscience.org/>`_.
+`Gravitational Wave Open Science Center
+<https://www.gw-openscience.org/about/>`_.
 
 Examples
 --------
