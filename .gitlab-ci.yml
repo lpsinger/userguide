@@ -33,6 +33,7 @@ doctest:
 
 linkcheck:
   <<: *sphinx
+  allow_failure: true
 
 pages:
   stage: deploy
