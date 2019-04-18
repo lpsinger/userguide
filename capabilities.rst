@@ -54,7 +54,7 @@ LIGO/Virgo detectors and alert infrastructure.
 *  | **LIGO Data Grid Status**: Live dashboard showing up/down status of the
      detectors and online analyses. Status of the LIGO/Virgo alert pipeline is
      indicated by the "EMFollow" box.
-   | http://monitor.ligo.org/gwstatus
+   | https://monitor.ligo.org/gwstatus
 
 Sensitivity and Sky Localization Accuracy
 -----------------------------------------
