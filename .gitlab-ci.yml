@@ -31,6 +31,9 @@ html:
 doctest:
   <<: *sphinx
 
+linkcheck:
+  <<: *sphinx
+
 pages:
   stage: deploy
   script:
