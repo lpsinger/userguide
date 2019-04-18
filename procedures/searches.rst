@@ -121,7 +121,7 @@ calculation to find joint GW+HEN triggers.
 
 .. [#MBTA]
    Adams, T., Buskulic, D., Germain, V., et al. 2016, |cqg|, 33, 175012.
-   http://doi.org/10.1088/0264-9381/33/17/175012
+   https://doi.org/10.1088/0264-9381/33/17/175012
 
 .. [#PyCBC1]
    Nitz, A. H., Dent, T., Dal Canton, T., Fairhurst, S., & Brown, D. A. 2017, |apj|, 849, 118.
