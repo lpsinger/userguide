@@ -48,7 +48,7 @@ packages using Anaconda, first :doc:`install conda
 .. _MacPorts: https://www.macports.org
 .. _matplotlib: https://pypi.org/project/matplotlib/
 .. _numpy: https://pypi.org/project/numpy/
-.. _pip: https://pip.pypa.io
+.. _pip: https://pip.pypa.io/en/stable/
 .. _PyGCN: https://pypi.org/project/pygcn/
 .. _voevent-parse: https://pypi.org/project/voevent-parse/
 .. _VOEventLib: https://pypi.org/project/VOEventLib/
