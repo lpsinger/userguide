@@ -36,7 +36,7 @@ latexpdf:
   allow_failure: true
   before_script:
     - apt-get update
-    - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended
+    - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended
 
 linkcheck:
   <<: *sphinx
