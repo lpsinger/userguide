@@ -33,6 +33,10 @@ doctest:
 
 latexpdf:
   <<: *sphinx
+  allow_failure: true
+  before_scipt:
+    - apt-get update
+    - apt-get -y install --no-install-recommends latexmk
 
 linkcheck:
   <<: *sphinx
