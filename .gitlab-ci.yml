@@ -34,7 +34,7 @@ doctest:
 latexpdf:
   <<: *sphinx
   allow_failure: true
-  before_scipt:
+  before_script:
     - apt-get update
     - apt-get -y install --no-install-recommends latexmk
 
