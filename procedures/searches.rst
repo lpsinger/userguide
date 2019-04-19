@@ -16,7 +16,7 @@ Modeled Search
 
 **GstLAL**, **MBTAOnline**, **PyCBC Live** and **SPIIR** are matched-filtering
 based analysis pipelines that rapidly identify compact binary merger events,
-with sub-minute to ∼1 minute latencies. They use discrete banks of waveform
+with :math:`\lesssim 1` minute latencies. They use discrete banks of waveform
 templates to cover the target parameter space of compact binaries, with all
 pipelines covering the mass ranges corresponding to BNS, NS-BH, and stellar
 mass BBH systems. However, GstLAL and PyCBC Live and SPIIR also include
@@ -50,10 +50,10 @@ coincidence test.
 performing time-shifted analyses using triggers from a few hours of recent
 data. Single-detector triggers from one of the LIGO detectors are time shifted
 by every possible multiple of 100 ms, thus any resulting coincidence must be
-unphysical given the ∼10 ms light travel time between detectors. All such
-coincidences are recorded and assigned a ranking statistic; the false alarm
-rate is then estimated by counting accidental coincidences louder than a given
-candidate, i.e. with a higher statistic value.
+unphysical given the :math:`\sim 10` ms light travel time between detectors.
+All such coincidences are recorded and assigned a ranking statistic; the false
+alarm rate is then estimated by counting accidental coincidences louder than a
+given candidate, i.e. with a higher statistic value.
 
 **SPIIR** [#SPIIR]_ [#SPIIRThesis]_ applies summed parallel infinite impulse
 response (IIR) filters to approximate matched-filtering results. It selects

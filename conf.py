@@ -195,7 +195,7 @@ intersphinx_mapping = {
 
 # -- Options for plot_directive extension ------------------------------------
 
-plot_formats = [('svg', 300)]
+plot_formats = [('svg', 300), ('pdf', 300)]
 plot_html_show_source_link = False
 plot_html_show_formats = False
 plot_rcparams = {'font.size': 12}
