@@ -34,6 +34,9 @@ doctest:
 latexpdf:
   <<: *sphinx
   allow_failure: true
+  artifacts:
+    paths:
+      - _build/latex
   before_script:
     - apt-get update
     - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
