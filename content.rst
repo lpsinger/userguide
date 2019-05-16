@@ -145,6 +145,35 @@ stored in GraceDB. The sky localization is saved in a :term:`FITS` file as a
 :term:`HEALPix` all-sky image. See our :doc:`sample code </tutorial/skymaps>`
 for instructions on working with sky localization files.
 
+..  important::
+    We generally provide localizations in two HEALPix formats, distinguished by
+    file extension:
+
+    ..  rubric:: ``*.fits.gz``
+
+    A subset of the standard HEALPix-in-FITS format (see semi-official
+    specifications `from the HEALPix team`_ and :ref:`from the gamma-ray
+    community <gamma-astro-data-formats:healpix_skymap>`) that is recognized by
+    a wide variety of astronomical imaging programs including DS9_ and Aladin_.
+    It uses HEALPix :ref:`implicit indexing
+    <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering scheme`_.
+    **This is the primary and preferred format, and the only format that is
+    explicitly listed in the GCN Notices and Circulars.**
+
+    ..  rubric:: ``*.multiorder.fits``
+
+    A new variant of the HEALPix format that is designed to overcome
+    limitations of the ``*.fits.gz`` format for well-localized events from
+    three-detector operations and future gravitational-wave facilities (see
+    `rationale`_). It uses HEALPix :ref:`explicit indexing
+    <gamma-astro-data-formats:hpx_explicit>` and the `NUNIQ numbering scheme`_,
+    which is closely related to `multi-order coverage (MOC) maps`_ in Aladin.
+    This is the internal format that is used by the LIGO/Virgo low-latency
+    alert pipeline. **This is an experimental format, and it is currently
+    recommended only for advanced users.**
+
+    Both formats always use celestial (equatorial, J2000) coordinates.
+
 Inference
 ~~~~~~~~~
 
@@ -330,6 +359,11 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
       .. literalinclude:: _static/MS181101ab-4-Retraction.xml
          :language: xml
 
+.. _`from the HEALPix team`: https://healpix.sourceforge.io/data/examples/healpix_fits_specs.pdf
+.. _`NESTED numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION410
+.. _`NUNIQ numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION420
+.. _`multi-order coverage (MOC) maps`: http://ivoa.net/documents/MOC/
+.. _`rationale`: https://dcc.ligo.org/LIGO-G1800186/public
 .. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
 .. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
 .. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html

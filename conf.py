@@ -185,6 +185,7 @@ texinfo_documents = [
 intersphinx_mapping = {
     'astropy': ('http://docs.astropy.org/en/stable/', None),
     'conda': ('https://docs.conda.io/projects/conda/en/latest/', None),
+    'gamma-astro-data-formats': ('https://gamma-astro-data-formats.readthedocs.io/en/latest/', None),
     'gwcelery': ('https://gwcelery.readthedocs.io/en/latest/', None),
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),

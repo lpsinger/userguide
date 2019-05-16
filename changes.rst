@@ -21,6 +21,10 @@ Version 8 (unreleased)
   that at least one object in the binary has a mass that is less than 3 solar
   masses.
 
+* Describe the two localization formats, the official ``*.fits.gz``
+  HEALPix-in-FITS format and the experimental multi-resolution HEALPix
+  ``*.multiorder.fits`` format.
+
 .. rubric:: Sample Code
 
 Version 7.1 (2019-03-02)
