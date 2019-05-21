@@ -33,6 +33,11 @@ Version 8 (unreleased)
   **The multi-resolution format is experimental, and it is currently
   recommended only for advanced users.**
 
+* Add some shading to the source classification diagram to make it clear that
+  the definitions of the source classes are symmetric under exchange of the
+  component masses, but that by convention the component masses are defined
+  such that :math:`m_1 \geq m_2`.
+
 .. rubric:: Sample Code
 
 Version 7.1 (2019-03-02)

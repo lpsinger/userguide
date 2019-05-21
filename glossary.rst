@@ -83,6 +83,16 @@ Glossary
         Neutron star black hole, a binary system composed of one neutron star
         and one black hole.
 
+    primary
+        When referring to the two component compact objects or the masses of
+        the two component compact objects in a binary, the `primary` is the
+        more massive one, i.e., :math:`m_1 \geq m_2`. See :term:`secondary`.
+
+    secondary
+        When referring to the two component compact objects or the masses of
+        the two component compact objects in a binary, the `secondary` is the
+        less massive one, i.e., :math:`m_2 \leq m_1`. See :term:`primary`.
+
     SN
         Supernova.
 

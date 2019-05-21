@@ -193,12 +193,24 @@ The figure below shows the extent of the three astrophysical categories (BNS,
 NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 :math:`m_2`.
 
+.. note::
+   By convention, the component masses are defined such that :math:`m_1 \geq
+   m_2`, so that the :term:`primary` compact object in the binary (i.e.,
+   component 1), is always more massive than the :term:`secondary` compact
+   object (i.e., component 2).
+
+   In the mass diagram below, the upper diagonal region :math:`m_1 < m_2` is
+   lightly shaded in order to indicate that the definitions of four mass
+   classes (BNS, NSBH, BBH, MassGap) are *symmetric* in :math:`m_1` and
+   :math:`m_2`.
+
 .. _classification-diagram:
 
 .. plot::
    :alt: Mass parameter space
 
     from matplotlib import pyplot as plt
+    from matplotlib import patheffects
     from matplotlib.patches import Rectangle
     from matplotlib.ticker import FormatStrFormatter
     import seaborn
@@ -236,17 +248,20 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
     p = ax.add_patch(Rectangle((min_mass, min_mass),
                                ns_max_mass - min_mass, ns_max_mass - min_mass,
                                color=bns_color, linewidth=0))
-    ax.text(*get_center(p.get_bbox()), 'BNS', ha='center', va='center')
+    ax.text(0.25 * min_mass + 0.75 * ns_max_mass, 0.5 * min_mass + 0.5 * ns_max_mass,
+            'BNS', ha='center', va='center',
+            path_effects=[patheffects.Stroke(linewidth=2, foreground=bns_color),
+                          patheffects.Normal()])
 
     p = ax.add_patch(Rectangle((bh_min_mass, bh_min_mass),
                                max_mass - bh_min_mass, max_mass - bh_min_mass,
                                color=bbh_color, linewidth=0))
-    ax.text(*get_center(p.get_bbox()), 'BBH', ha='center', va='center')
+    ax.text(0.5 * (bh_min_mass + max_mass), 0.75 * bh_min_mass + 0.25 * max_mass,
+            'BBH', ha='center', va='center')
 
     p = ax.add_patch(Rectangle((min_mass, bh_min_mass),
                                ns_max_mass - min_mass, max_mass - bh_min_mass,
                                color=nsbh_color, linewidth=0))
-    ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
 
     p = ax.add_patch(Rectangle((bh_min_mass, min_mass),
                                max_mass - bh_min_mass, ns_max_mass - min_mass,
@@ -262,7 +277,24 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
     p = ax.add_patch(Rectangle((ns_max_mass, ns_max_mass),
                                bh_min_mass - ns_max_mass, bh_min_mass - ns_max_mass,
                                color=gap_color, linewidth=0))
-    ax.text(*get_center(p.get_bbox()), 'MassGap', ha='center', va='center')
+    ax.text(0.5 * (bh_min_mass + max_mass), 0.5 * (ns_max_mass + bh_min_mass),
+            'MassGap', ha='center', va='center')
+
+    ax.fill_between([min_mass, max_mass],
+                    [min_mass, max_mass],
+                    [max_mass, max_mass],
+                    color='white', linewidth=0, alpha=0.75, zorder=1.5)
+    ax.plot([min_mass, max_mass], [min_mass, max_mass], '--k')
+
+    ax.annotate('',
+                xy=(0.975, 1.025), xycoords='axes fraction',
+                xytext=(1.025, 0.975), textcoords='axes fraction',
+                ha='center', va='center',
+                arrowprops=dict(
+                    arrowstyle='->', shrinkA=0, shrinkB=0,
+                    connectionstyle='angle,angleA=90,angleB=180,rad=7'))
+    ax.text(0.975, 1.025, '$m_1 \geq m_2$ by definition  ',
+            ha='right', va='center', transform=ax.transAxes, fontsize='small')
 
     for args in [[1, 0, 0.025, 0], [0, 1, 0, 0.025]]:
         ax.arrow(*args,
