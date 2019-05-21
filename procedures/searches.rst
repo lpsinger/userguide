@@ -116,7 +116,7 @@ calculation to find joint GW+HEN triggers.
    https://doi.org/10.1103/PhysRevD.86.024012
 
 .. [#SPIIRThesis]
-   Chu, Q. 2017, Ph.D. Thesis.
+   Chu, Q. 2017, Ph.D. Thesis, The University of Western Australia.
    https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
 
 .. [#MBTA]
