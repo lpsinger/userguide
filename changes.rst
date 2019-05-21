@@ -25,6 +25,14 @@ Version 8 (unreleased)
   HEALPix-in-FITS format and the experimental multi-resolution HEALPix
   ``*.multiorder.fits`` format.
 
+  The multi-resolution file suffix has been renamed from ``*.fits`` to
+  ``*.multiorder.fits``. The old ``*.fits`` suffix had caused confusion because
+  the multi-resolution format is *not* the same as the ``*.fits.gz`` files
+  without gzip compression.
+
+  **The multi-resolution format is experimental, and it is currently
+  recommended only for advanced users.**
+
 .. rubric:: Sample Code
 
 Version 7.1 (2019-03-02)
