@@ -47,6 +47,10 @@ linkcheck:
 
 spelling:
   <<: *sphinx
+  allow_failure: true
+  before_script:
+    - apt-get update
+    - apt-get -y install enchant
 
 pages:
   stage: deploy
