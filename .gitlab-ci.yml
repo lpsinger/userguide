@@ -51,6 +51,7 @@ spelling:
   before_script:
     - apt-get update
     - apt-get -y install enchant
+    - pip install sphinxcontrib-spelling
 
 pages:
   stage: deploy
