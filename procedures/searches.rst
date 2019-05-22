@@ -96,7 +96,7 @@ pipeline events and gamma-ray bursts or galactic supernova notifications.
 Astrophysics <http://gwhen.com>`__
 is a an online search pipeline combining LIGO/Virgo GW triggers with High
 Energy Neutrino (HEN) triggers from IceCube. It finds temporally-coincident
-subthreshold IceCube neutrinos and performs a detailed Bayesian significance
+sub-threshold IceCube neutrinos and performs a detailed Bayesian significance
 calculation to find joint GW+HEN triggers.
 
 .. |apj| replace:: *Astrophys. J.*
