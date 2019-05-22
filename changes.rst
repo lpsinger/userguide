@@ -143,7 +143,7 @@ Version 2 (2018-12-13)
 
 * Removed the ``Vetted`` parameter from GCN Notices. It was intended to
   indicate whether the event had passed human vetting. However, it was
-  redundant beacuse by definition Preliminary events have not been vetted
+  redundant because by definition Preliminary events have not been vetted
   and all Initial and Update alerts have been vetted.
 
 * The type of the ``Retraction`` parameter in the GCN Notices was changed from
