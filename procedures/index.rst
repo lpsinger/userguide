@@ -129,7 +129,7 @@ retraction or confirmation status will be reported.
 
 :doc:`Update notice and circulars </content>` are sent whenever the sky
 localization area or significance accuracy improves (e.g. as a result of
-improved calibration, de-glitching, or computationally deeper parameter
+improved calibration, glitch removal, or computationally deeper parameter
 estimation). Updates will be sent up until the position is determined more
 accurately by public announcement of an unambiguous counterpart. At that point,
 there will be no further sky localization updates until the publication of the
