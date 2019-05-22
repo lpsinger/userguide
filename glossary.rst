@@ -13,7 +13,7 @@ Glossary
         A figure of merit to describe the sensitivity of a gravitational-wave
         detector to :term:`BNS` mergers, defined as the average luminosity
         distance at which the merger of two :math:`1.4~M_\odot` objects would
-        be detectable with a signal to noise ratio of 8. Seel also :term:`Burst
+        be detectable with a signal to noise ratio of 8. See also :term:`Burst
         range`.
 
     Burst range
@@ -22,7 +22,7 @@ Glossary
         models of gravitational wave emissions from stellar collapse as the
         average luminosity distance at which a monochromatic burst at 150 Hz
         with a fluence of :math:`E_\mathrm{GW} = 10^{-2} M_\odot c^2` would be
-        detectable with a signal to noise ratio of 8. Seel also :term:`BNS
+        detectable with a signal to noise ratio of 8. See also :term:`BNS
         range`.
 
     CBC
