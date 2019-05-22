@@ -1,5 +1,6 @@
 Aladin
 arXiv
+capabilities
 downsampling
 fluence
 geocenter
