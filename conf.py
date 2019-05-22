@@ -193,6 +193,7 @@ extlinks = {
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     'astropy': ('http://docs.astropy.org/en/stable/', None),
+    'astropy-healpix': ('https://astropy-healpix.readthedocs.io/en/stable/', None),
     'conda': ('https://docs.conda.io/projects/conda/en/latest/', None),
     'gamma-astro-data-formats': ('https://gamma-astro-data-formats.readthedocs.io/en/latest/', None),
     'gwcelery': ('https://gwcelery.readthedocs.io/en/latest/', None),

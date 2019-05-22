@@ -10,3 +10,9 @@ div.footer {
 div.footer>span+span::before {
     content: ' | ';
 }
+
+.image-reference img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

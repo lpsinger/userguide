@@ -1,12 +1,15 @@
+Aitoff
 al
 Aladin
 Astropy
 ATel
 ATels
 Bartos
+Boch
 Buskulic
 capabilities
 Calabretta
+carée
 Cascina
 Caudill
 Chu
@@ -15,11 +18,13 @@ downsampling
 Drago
 Essick
 Fairhurst
+Fernique
 fluence
 Fong
 Foucart
 geocenter
 glitching
+Górski
 Hanford
 Healpy
 Holz
@@ -51,6 +56,7 @@ postprocessing
 programmatically
 Roukema
 Sachdev
+steradian
 superevent
 superevents
 timeline
@@ -61,3 +67,4 @@ Veitch
 vertices
 Veske
 Vitale
+Wandelt

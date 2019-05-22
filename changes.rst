@@ -16,6 +16,8 @@ Version 9 (unreleased)
 
 .. rubric:: Sample Code
 
+* Add tutorial on working with multi-resolution sky maps.
+
 Version 8 (2019-05-22)
 ----------------------
 

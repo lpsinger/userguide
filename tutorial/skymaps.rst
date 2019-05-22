@@ -246,11 +246,14 @@ Let's find which pixel contains the point RA=194.95, Dec=27.98.
 Most Probable Sky Location
 --------------------------
 
-Let's find the highest probability pixel. What is the probability inside it?
+Let's find the highest probability pixel.
 
     >>> ipix_max = np.argmax(hpx)
-    >>> hpx[ipix_max]
-    6.413682624069577e-05
+
+What is the probability density per square degree at that position?
+
+    >>> hpx[ipix_max] / hp.nside2pixarea(nside, degrees=True)
+    0.0782516470191411
 
 Where is the highest probability pixel on the sky? Use :func:`hp.pix2ang
 <healpy.pixelfunc.pix2ang>`.

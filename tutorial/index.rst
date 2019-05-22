@@ -18,6 +18,7 @@ tutorial is broken into the following subsections:
    prerequisites
    receiving
    skymaps
+   multiorder_skymaps
    observability
    3d
    tools
