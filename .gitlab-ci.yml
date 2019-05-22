@@ -45,6 +45,9 @@ linkcheck:
   <<: *sphinx
   allow_failure: true
 
+spelling:
+  <<: *sphinx
+
 pages:
   stage: deploy
   script:

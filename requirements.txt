@@ -2,4 +2,5 @@ pygcn
 healpy
 seaborn
 sphinx < 2  # breaks sphinx-tabs
+sphinxcontrib-spelling
 sphinx-tabs
