@@ -52,6 +52,11 @@ spelling:
     - apt-get update
     - apt-get -y install enchant
     - pip install sphinxcontrib-spelling
+  script:
+    - pip install -r requirements.txt
+    - sphinx-build -M $CI_JOB_NAME . _build
+    # Fail if there were spelling errors.
+    - test -a _build/spelling/output.txt
 
 pages:
   stage: deploy
