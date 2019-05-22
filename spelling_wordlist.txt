@@ -24,6 +24,7 @@ Healpy
 Holz
 IDL
 indices
+isoLatitude
 Kamioka
 Kapadia
 Katsavounidis

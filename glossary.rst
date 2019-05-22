@@ -53,7 +53,7 @@ Glossary
         Gamma-ray burst.
 
     HEALPix
-        Hierarchical Equal Area iso-Latitude Pixelation, a scheme for indexing
+        Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
         positions on the unit sphere.
 
     HEN
