@@ -49,13 +49,6 @@ extensions = [
     'matplotlib.sphinxext.plot_directive'
 ]
 
-try:
-    import sphinxcontrib.spelling
-except ImportError:
-    pass
-else:
-    extensions += ['sphinxcontrib.spelling']
-
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -200,6 +193,18 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/', None),
     'requests': ('http://docs.python-requests.org/en/stable/', None)
 }
+
+# -- Options for sphinxcontrib.spelling extension ----------------------------
+
+try:
+    import sphinxcontrib.spelling
+except ImportError:
+    pass
+else:
+    extensions += ['sphinxcontrib.spelling']
+
+    from enchant.tokenize import URLFilter
+    spelling_filters = [URLFilter]
 
 # -- Options for plot_directive extension ------------------------------------
 
