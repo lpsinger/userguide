@@ -1,9 +1,13 @@
+Aladin
+arXiv
 downsampling
 fluence
 geocenter
 glitching
 indices
+kilonova
 macOS
+magnetar
 mapmaking
 metadata
 Mollweide
@@ -16,6 +20,7 @@ programmatically
 postprocessing
 superevent
 superevents
+timeline
 unmodeled
 upsampling
 vertices
