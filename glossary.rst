@@ -96,6 +96,12 @@ Glossary
     SN
         Supernova.
 
+    SNR
+        Signal-to-noise ratio, here applied to gravitational-wave signals. It
+        is defined the square root of the integral over frequency of the power
+        spectral density of the gravitational-wave signal over the integral
+        over frequency of the average power spectral density of the noise.
+
     Virgo
         Virgo Observatory (see `Virgo observatory home page
         <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector

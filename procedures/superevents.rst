@@ -26,14 +26,15 @@ event is decided by applying the following rules, in order:
 2. An event from modeled :term:`CBC` searches are preferred over an event from
    unmodeled Burst searches (see :doc:`Searches </procedures/searches>` for
    details on search pipelines).
-3. In the case of multiple CBC events, the event with the highest signal to
-   noise ratio (SNR) is preferred. In the case of multiple Burst events, the
-   event with the lowest false alarm rate (FAR) is preferred.
+3. In the case of multiple CBC events, the event with the highest :term:`SNR`
+   is preferred. In the case of multiple Burst events, the event with the
+   lowest false alarm rate (FAR) is preferred.
 
 .. note::
    * A Preliminary GCN is automatically issued for superevents when the false
      alarm rate is lower than a threshold value.
    * In case of an event created by a pipeline due to an *offline* analysis, no
      preliminary GCN will be sent.
-   * The signal to noise (SNR) is used to select the `preferred_event` among `CBC`
-     candidates because higher SNR implies better estimates from low-latency searches.
+   * The :term:`SNR` is used to select the `preferred_event` among `CBC`
+     candidates because higher :term:`SNR` implies better estimates from
+     low-latency searches.

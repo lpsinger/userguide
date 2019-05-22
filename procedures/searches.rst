@@ -31,7 +31,7 @@ provide source localization. Of the four pipelines, GstLAL and MBTAOnline use
 several banks of matched filters to cover the detectors bandwidth, i.e., the
 templates are split across multiple frequency bands. All pipelines also
 implement different kinds of signal-based vetoes to reject instrumental
-transients that cause large SNR values but can otherwise be easily
+transients that cause large :term:`SNR` values but can otherwise be easily
 distinguished from compact binary coalescence signals.
 
 **GSTLAL** [#GSTLAL1]_ [#GSTLAL2]_ is a matched-filter pipeline designed to
@@ -57,10 +57,10 @@ given candidate, i.e. with a higher statistic value.
 
 **SPIIR** [#SPIIR]_ [#SPIIRThesis]_ applies summed parallel infinite impulse
 response (IIR) filters to approximate matched-filtering results. It selects
-high-SNR events from each detector and finds coherent responses from other
-detectors. It constructs a background statistical distribution by time-shifting
-detector data one hundred times over a week to evaluate foreground candidate
-significance.
+high-:term:`SNR` events from each detector and finds coherent responses from
+other detectors. It constructs a background statistical distribution by
+time-shifting detector data one hundred times over a week to evaluate
+foreground candidate significance.
 
 Unmodeled Search
 ----------------
