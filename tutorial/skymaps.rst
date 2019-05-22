@@ -205,7 +205,7 @@ index to spherical polar coordinates; the function :func:`hp.ang2pix
 
 Both :func:`hp.pix2ang <healpy.pixelfunc.pix2ang>` and :func:`hp.ang2pix
 <healpy.pixelfunc.ang2pix>` take, as their first argument, ``nside``, the
-lateral resolution fo the HEALPix map. You can find ``nside`` from the length
+lateral resolution of the HEALPix map. You can find ``nside`` from the length
 of the image array by calling :func:`hp.npix2nside
 <healpy.pixelfunc.npix2nside>`:
 
