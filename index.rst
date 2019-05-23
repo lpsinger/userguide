@@ -24,13 +24,13 @@ astronomers in order to search for counterparts (electromagnetic waves or
 neutrinos).
 
 Advanced LIGO and Advanced Virgo began their third observing run (O3) on April
-1, 2019. For the first time, **LIGO/Virgo alerts will be public**. Alerts will
-be distributed through NASA's Gamma-ray Coordinates Network (:term:`GCN`).
-There are two types of alerts: human-readable :term:`GCN Circulars <GCN
-Circular>` and machine-readable :term:`GCN Notices <GCN Notice>`. This document
-provides a brief overview of the procedures for vetting and sending GW alerts,
-describes their contents and format, and includes instructions and sample code
-for receiving GCN Notices and decoding GW sky maps.
+1, 2019. For the first time, **LIGO/Virgo alerts are public**. Alerts are
+distributed through NASA's Gamma-ray Coordinates Network (:term:`GCN`). There
+are two types of alerts: human-readable :term:`GCN Circulars <GCN Circular>`
+and machine-readable :term:`GCN Notices <GCN Notice>`. This document provides a
+brief overview of the procedures for vetting and sending GW alerts, describes
+their contents and format, and includes instructions and sample code for
+receiving GCN Notices and decoding GW sky maps.
 
 
 Contents
