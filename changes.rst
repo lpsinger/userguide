@@ -24,8 +24,8 @@ Version 8 (unreleased)
   ``*.fits.gz`` files without gzip compression.
 
   **The multi-resolution format is currently recommended only for advanced
-  users.** Tutorials and sample code will be included in the next version of
-  the User Guide.
+  users.** Tutorials and sample code will soon be included in an upcoming
+  version of the User Guide.
 
 * Update the description of the ``HasNS`` property in the sample GCN Notices.
   Previously, it was defined as the probability that at least one object in the
