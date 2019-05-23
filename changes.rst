@@ -14,13 +14,6 @@ Version 8 (unreleased)
 
 .. rubric:: Alert Contents
 
-* Update the description of the ``HasNS`` property in the sample GCN Notices.
-  Previously, it was defined as the probability that at least one object in the
-  binary has a mass that is less than 2.83 solar masses. Now, for consistency
-  with the source classification definitions, it is defined as the probability
-  that at least one object in the binary has a mass that is less than 3 solar
-  masses.
-
 * Describe the two localization formats, the official ``*.fits.gz``
   HEALPix-in-FITS format and the experimental multi-resolution HEALPix
   ``*.multiorder.fits`` format.
@@ -33,6 +26,13 @@ Version 8 (unreleased)
   **The multi-resolution format is experimental, and it is currently
   recommended only for advanced users.** Tutorials and sample code will be
   included in the next version of the User Guide.
+
+* Update the description of the ``HasNS`` property in the sample GCN Notices.
+  Previously, it was defined as the probability that at least one object in the
+  binary has a mass that is less than 2.83 solar masses. Now, for consistency
+  with the source classification definitions, it is defined as the probability
+  that at least one object in the binary has a mass that is less than 3 solar
+  masses.
 
 * Add some shading to the source classification diagram to make it clear that
   the definitions of the source classes are symmetric under exchange of the
