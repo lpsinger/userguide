@@ -31,7 +31,8 @@ Version 8 (unreleased)
   without gzip compression.
 
   **The multi-resolution format is experimental, and it is currently
-  recommended only for advanced users.**
+  recommended only for advanced users.** Tutorials and sample code will be
+  included in the next version of the User Guide.
 
 * Add some shading to the source classification diagram to make it clear that
   the definitions of the source classes are symmetric under exchange of the
