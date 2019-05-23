@@ -37,6 +37,8 @@ Germain
 glitching
 gnomonic
 Górski
+Gehrels
+GW
 Hanford
 Healpy
 Hinderer
@@ -78,6 +80,7 @@ Robinet
 Roukema
 Sachdev
 sinusoidally
+spatial-temporal
 steradian
 superevent
 superevents

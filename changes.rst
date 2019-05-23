@@ -12,6 +12,10 @@ Version 10 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Add a more detailed description of the RAVEN pipeline. Previously just
+   mentioned types of searches but now has information on external
+   experiments, coincident searches, and coincident false alarm rates.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code

@@ -87,8 +87,38 @@ Coincident with External Trigger Search
 ---------------------------------------
 
 **RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
-Coincidence Monitor (RAVEN), a fast search for coincidences between GW online
-pipeline events and gamma-ray bursts or galactic supernova notifications.
+Coincidence Monitor (RAVEN), a fast search for coincidences between GW and non-GW 
+events external to the LIGO collaboration. RAVEN will process alerts for
+gamma-ray bursts (GRBs) from both the *Fermi*-GBM instrument and the Neil
+Gehrels Swift Observatory, as well as galactic supernova alerts from the
+SNEWS collaboration. Two astronomical events are considered coincident if they
+are within a particular time window of each other, which varies depending on
+which two types of events are being considered (see the table below). Note
+that these time windows are centered on the GW, e.g., [-1,5] s means we
+consider GRBs up to one second before or up to 5 seconds after the GW.
+
++-----------------------+-----------+-----------+-----------------------------------------------------------------+
+| Event Type            | Time window (s)       |     | Notice Type Considered                                    |
+|                       |                       |     | (`see full list`_)                                        |
+|                       +-----------+-----------+                                                                 |
+|                       | CBC       | Burst     |     .. _see full list: http://gcn.gsfc.nasa.gov/filtering.html  |
++=======================+===========+===========+=================================================================+
+| | GRB                 | [-1,5]    | [-60,600] |    | FERMI_GBM_ALERT                                            |
+| | (*Fermi*, *Swift*)  |           |           |    | FERMI_GBM_FIN_POS                                          |
+|                       |           |           |    | FERMI_GBM_FLT_POS                                          |
+|                       |           |           |    | FERMI_GBM_GND_POS                                          |
+|                       |           |           |    | FERMI_GBM_SUBTHRESH                                        |
+|                       |           |           |    | SWIFT_BAT_GRB_ALERT                                        |
+|                       |           |           |    | SWIFT_BAT_GRB_LC                                           |
++-----------------------+-----------+-----------+-----------------------------------------------------------------+
+| | Low-energy Neutrinos| [-10,10]  | [-10,10]  |     SNEWS                                                       |
+| | (SNEWS)             |           |           |                                                                 |
++-----------------------+-----------+-----------+-----------------------------------------------------------------+
+
+In addition, RAVEN will calculate coincident false alarm rates, one including
+only timing information (temporal) and one including GRB/GW sky map
+information (space-time) as well. RAVEN is currently under review
+and is planned to be able to trigger preliminary alerts once this is finished.
 
 **LLAMA** [#LLAMA1]_ [#LLAMA2]_ The `Low-Latency Algorithm for Multi-messenger
 Astrophysics <http://gwhen.com>`__
@@ -139,7 +169,7 @@ calculation to find joint GW+HEN triggers.
 
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
-   http://adsabs.harvard.edu/abs/2016PhDT.........8U
+   https://dc.uwm.edu/etd/1218/
 
 .. [#LLAMA1]
    Bartos, I., Veske, D., Keivani, A., et al. 2018.
