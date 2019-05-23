@@ -1,16 +1,8 @@
 Change Log
 ==========
 
-Version 8 (unreleased)
+Version 8 (2019-05-22)
 ----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Procedures
 
 .. rubric:: Alert Contents
 
@@ -38,8 +30,6 @@ Version 8 (unreleased)
   the definitions of the source classes are symmetric under exchange of the
   component masses, but that by convention the component masses are defined
   such that :math:`m_1 \geq m_2`.
-
-.. rubric:: Sample Code
 
 Version 7.1 (2019-03-02)
 ------------------------
