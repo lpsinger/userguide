@@ -51,10 +51,9 @@ parameter estimation, updated properties are calculated from posterior samples.
 .. |prd| replace:: *Phys. Rev. D*
 
 .. [#Pastro]
-   Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2019,
-   arXiv:1903.06881.
-   https://arxiv.org/abs/1903.06881
+   Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2019.
+   :arxiv:`1903.06881`
 
 .. [#DiskMass]
    Foucart, F., Hinderer, T. & Nissanke, S. 2018, |prd|, 98, 081501.
-   https://doi.org/10.1103/PhysRevD.98.081501
+   :doi:`10.1103/PhysRevD.98.081501`

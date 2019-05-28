@@ -43,6 +43,7 @@ version = parse_version(release).base_version
 # ones.
 extensions = [
     'sphinx.ext.doctest',
+    'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx_tabs.tabs',
@@ -178,6 +179,14 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
+
+# -- Options for extlinks extension ------------------------------------------
+
+extlinks = {
+    'arxiv': ('https://arxiv.org/abs/%s', 'arXiv:'),
+    'doi': ('https://doi.org/%s', 'doi:')
+}
+
 
 # -- Options for intersphinx extension ---------------------------------------
 

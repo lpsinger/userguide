@@ -105,15 +105,15 @@ calculation to find joint GW+HEN triggers.
 
 .. [#GSTLAL1]
    Messick, C., Blackburn, K., Brady, P., et al. 2017, |prd|, 95, 042001.
-   https://doi.org/10.1103/PhysRevD.95.042001
+   :doi:`10.1103/PhysRevD.95.042001`
 
 .. [#GSTLAL2]
-   Sachdev, S., Caudill, S., Fong, H., et al. 2019, arXiv, 1901.08580.
-   https://arxiv.org/abs/1901.08580
+   Sachdev, S., Caudill, S., Fong, H., et al. 2019.
+   :arxiv:`1901.08580`
 
 .. [#SPIIR]
    Hooper, S., Chung, S. K., Luan, J., et al. 2012, |prd|, 86, 024012.
-   https://doi.org/10.1103/PhysRevD.86.024012
+   :doi:`10.1103/PhysRevD.86.024012`
 
 .. [#SPIIRThesis]
    Chu, Q. 2017, Ph.D. Thesis, The University of Western Australia.
@@ -121,32 +121,32 @@ calculation to find joint GW+HEN triggers.
 
 .. [#MBTA]
    Adams, T., Buskulic, D., Germain, V., et al. 2016, |cqg|, 33, 175012.
-   https://doi.org/10.1088/0264-9381/33/17/175012
+   :doi:`10.1088/0264-9381/33/17/175012`
 
 .. [#PyCBC1]
    Nitz, A. H., Dent, T., Dal Canton, T., Fairhurst, S., & Brown, D. A. 2017, |apj|, 849, 118.
-   https://doi.org/10.3847/1538-4357/aa8f50
+   :doi:`10.3847/1538-4357/aa8f50`
 
 .. [#PyCBC2]
    Dal Canton, T., & Harry, I. W. 2017.
-   https://arxiv.org/abs/1705.01845
+   :arxiv:`1705.01845`
 
 .. [#cWB]
    Klimenko, S., Vedovato, G., Drago, M., et al. 2016, |prd|, 93, 042004.
-   https://doi.org/10.1103/PhysRevD.93.042004
+   :doi:`10.1103/PhysRevD.93.042004`
 
 .. [#oLIB]
    Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |prd|, 95, 104046.
-   https://doi.org/10.1103/PhysRevD.95.104046
+   :doi:`10.1103/PhysRevD.95.104046`
 
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
    http://adsabs.harvard.edu/abs/2016PhDT.........8U
 
 .. [#LLAMA1]
-   Bartos, I., Veske, D., Keivani, A., et al. 2018, arXiv, 1810.11467.
-   https://arxiv.org/abs/1810.11467
+   Bartos, I., Veske, D., Keivani, A., et al. 2018.
+   :arxiv:`1810.11467`
 
 .. [#LLAMA2]
-   Countryman, S., Keivani, A., Bartos, I., et al. 2019, arXiv, 1901.05486.
-   https://arxiv.org/abs/1901.05486
+   Countryman, S., Keivani, A., Bartos, I., et al. 2019.
+   :arxiv:`1901.05486`

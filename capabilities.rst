@@ -98,7 +98,7 @@ Virgo's most current estimates of astrophysical rates of compact binary mergers.
 
 .. [#LivingReview]
    Abbott, B. P., Abbott, R., Abbott, T. D., et al. 2018, |LRR|, 21, 3.
-   https://doi.org/10.1007/s41114-018-0012-9
+   :doi:`10.1007/s41114-018-0012-9`
 
 .. [#WorkingPlanTowardsO3]
    LIGO Scientific Collaboration & Virgo Collaboration 2018, *LIGO-Virgo

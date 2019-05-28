@@ -1,12 +1,12 @@
 al
 Aladin
-arXiv
 Astropy
 ATel
 ATels
 Bartos
 Buskulic
 capabilities
+Calabretta
 Cascina
 Caudill
 Chu
@@ -49,6 +49,7 @@ online
 pixelation
 postprocessing
 programmatically
+Roukema
 Sachdev
 superevent
 superevents

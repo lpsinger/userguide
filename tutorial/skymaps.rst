@@ -116,7 +116,7 @@ Aladin_:
    :alt: Aladin screenshot
 
 or DS9_ (although DS9 shows HEALPix sky maps in an unusual orientation; see
-Figure 4 of `Calabretta & Roukema (2007)`_ for more information.
+Figure 4 of [#MappingOnHEALPix]_ for more information.
 
 .. image:: /_static/ds9-screenshot.png
    :alt: DS9 screenshot
@@ -319,7 +319,6 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
     os.chdir(old_dir)
 
 .. _Aladin: https://aladin.u-strasbg.fr
-.. _`Calabretta & Roukema (2007)`: https://doi.org/10.1111/j.1365-2966.2007.12297.x
 .. _curl: https://curl.haxx.se
 .. _DS9: http://ds9.si.edu
 .. _funhead: https://linux.die.net/man/1/funhead
@@ -329,3 +328,9 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 .. _imhead: https://linux.die.net/man/1/imhead
 .. _Planck: https://www.esa.int/Our_Activities/Space_Science/Planck
 .. _WCSTools: http://tdc-www.harvard.edu/wcstools/
+
+.. |mnras| replace:: *Mon. Notices Royal Astron. Soc.*
+
+.. [#MappingOnHEALPix]
+   Calabretta, M. R., & Roukema, B. F. 2007, |mnras|, 381, 865.
+   :doi:`10.1111/j.1365-2966.2007.12297.x`
