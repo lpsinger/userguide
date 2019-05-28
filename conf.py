@@ -194,6 +194,7 @@ intersphinx_mapping = {
     'requests': ('http://docs.python-requests.org/en/stable/', None)
 }
 
+
 # -- Options for sphinxcontrib.spelling extension ----------------------------
 
 try:
@@ -205,6 +206,7 @@ else:
 
     from enchant.tokenize import URLFilter
     spelling_filters = [URLFilter]
+
 
 # -- Options for plot_directive extension ------------------------------------
 
