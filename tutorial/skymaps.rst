@@ -151,6 +151,8 @@ by having Python call `curl` on the command line:
 
 .. testsetup::
 
+    import healpy as hp
+    import numpy as np
     import os
     old_dir = os.getcwd()
     os.chdir('_static')
