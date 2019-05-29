@@ -143,7 +143,7 @@ by having Python call `curl` on the command line:
 
     import healpy as hp
     import numpy as np
-    url = 'https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz'
+    url = '../_static/bayestar.fits.gz'
     hpx = hp.read_map(url)
 
 .. testsetup::
