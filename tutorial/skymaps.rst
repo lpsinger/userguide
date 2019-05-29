@@ -154,6 +154,7 @@ by having Python call `curl` on the command line:
     import os
     old_dir = os.getcwd()
     os.chdir('_static')
+    hpx = hp.read_map('bayestar.slim.fits.gz')
 
 Next, we need to read in the file in Python with Healpy:
 
