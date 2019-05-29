@@ -143,7 +143,10 @@ by having Python call `curl` on the command line:
 
     import healpy as hp
     import numpy as np
-    url = '../_static/bayestar.fits.gz'
+    # FIXME: This is a copy of bayestar.fits.gz that excludes distance layers
+    # because they cause us to exceed the memory limit of 1 GB on
+    # readthedocs.org. See https://github.com/rtfd/readthedocs.org/issues/5717.
+    url = '../_static/bayestar.slim.fits.gz'
     hpx = hp.read_map(url)
 
 .. testsetup::
@@ -153,6 +156,8 @@ by having Python call `curl` on the command line:
     os.chdir('_static')
 
 Next, we need to read in the file in Python with Healpy:
+
+.. code-block:: pycon
 
     >>> import healpy as hp
     >>> import numpy as np
