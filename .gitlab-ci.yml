@@ -33,7 +33,6 @@ doctest:
 
 latexpdf:
   <<: *sphinx
-  allow_failure: true
   artifacts:
     paths:
       - _build/latex
