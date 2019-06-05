@@ -2,4 +2,4 @@ pygcn
 healpy
 seaborn
 sphinx
-git+https://github.com/lpsinger/sphinx-tabs@app-warn-deprecated#egg=sphinx-tabs
+git+https://github.com/djungelorm/sphinx-tabs@a2507e20b3ccae8d76adfcc39b4ca2515773ea19#egg=sphinx-tabs  # https://github.com/djungelorm/sphinx-tabs/pull/43
