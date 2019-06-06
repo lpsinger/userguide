@@ -158,7 +158,8 @@ for instructions on working with sky localization files.
     It uses HEALPix :ref:`implicit indexing
     <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering scheme`_.
     **This is the primary and preferred format, and the only format that is
-    explicitly listed in the GCN Notices and Circulars.**
+    explicitly listed in the GCN Notices and Circulars.** See the section
+    :doc:`/tutorial/skymaps` for details.
 
     ..  rubric:: ``*.multiorder.fits``
 
@@ -170,7 +171,8 @@ for instructions on working with sky localization files.
     which is closely related to `multi-order coverage (MOC) maps`_ in Aladin.
     This is the internal format that is used by the LIGO/Virgo low-latency
     alert pipeline. **This is an experimental format, and it is currently
-    recommended only for advanced users.**
+    recommended only for advanced users.** See the section
+    :doc:`/tutorial/multiorder_skymaps` for details.
 
     Both formats always use celestial (equatorial, J2000) coordinates.
 
