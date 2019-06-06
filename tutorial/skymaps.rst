@@ -243,6 +243,73 @@ Let's find which pixel contains the point RA=194.95, Dec=27.98.
     >>> ipix
     13361492
 
+Test if a Sky Location is in the 90% Credible Region
+----------------------------------------------------
+
+You can easily test if a given sky position is in the 90% credible region.
+Let's continue using the sky position from the previous example, for which we
+have already determined the pixel index.
+
+Use the following simple algorithm to construct a map that gives the *credible
+level of each pixel*:
+
+1.   Sort the pixels by descending probability density.
+2.   Cumulatively sum the pixels' probability.
+3.   Return the pixels to their original order.
+
+In Python, you can use this simple recipe:
+
+    >>> i = np.flipud(np.argsort(hpx))
+    >>> sorted_credible_levels = np.cumsum(hpx[i])
+    >>> credible_levels = np.empty_like(sorted_credible_levels)
+    >>> credible_levels[i] = sorted_credible_levels
+    >>> credible_levels
+    array([1., 1., 1., ..., 1., 1., 1.])
+
+.. note::
+
+   Observe that the values in the resulting *credible level map* vary inversely
+   with probability density: the most probable pixel is assigned to the
+   credible level 0.0, and the least likely pixel is assigned the credible
+   level 1.0.
+
+.. tip::
+
+   This recipe is implemented in the package
+   :doc:`ligo.skymap <ligo.skymap:index>` as the function
+   :func:`~ligo.skymap.postprocess.util.find_greedy_credible_levels`:
+
+       >>> from ligo.skymap.postprocess import find_greedy_credible_levels
+       >>> credible_levels = find_greedy_credible_levels(hpx)
+       >>> credible_levels
+       array([1., 1., 1., ..., 1., 1., 1.])
+
+To check if the pixel that we identified in the previous section is within the
+90% credible level, simply test if the value of the credible level map is less
+than or equal to 0.9 at that pixel:
+
+    >>> credible_levels[ipix]
+    0.9999999999947833
+    >>> credible_levels[ipix] <= 0.9
+    False
+
+The credible level map has a value greater than 0.9 at that sky location,
+therefore the sky location is outside the 90% credible region.
+
+Find the Area of the 90% Credible Region
+----------------------------------------
+
+Since we just found the credible level map, it's easy to compute the 90%
+credible area by counting the number of pixels inside the 90% credible region
+and multiplying by the area per pixel.
+
+In the Python expression below, note that ``(credible_levels <= 0.9)``
+evaluates to a binary array; when it is summed over, true values are treated as
+1 and false values are treated as 0.
+
+    >>> np.sum(credible_levels <= 0.9) * hp.nside2pixarea(nside, degrees=True)
+    30.979279207076633
+
 Most Probable Sky Location
 --------------------------
 

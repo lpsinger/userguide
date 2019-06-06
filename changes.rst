@@ -18,6 +18,10 @@ Version 9 (unreleased)
 
 * Add tutorial on working with multi-resolution sky maps.
 
+* Add sample code to test whether a sky position is in the 90% credible region.
+
+* Add sample code to find the area of the 90% credible region.
+
 Version 8 (2019-05-22)
 ----------------------
 
