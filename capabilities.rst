@@ -86,7 +86,7 @@ Event Rates
 -----------
 
 See the `rates presentation`_ from recent Town Hall meeting for LIGO and
-Virgo's most current estimates of astrophysical rates of compact binary mergers.
+Virgo's most current estimates of astrophysical rates of compact binary mergers. The detection rate estimates contained in [#LivingReview]_ and later updated in the `rates presentation`_ embody estimates derived from the knowledge of mass, spin, and rate distributions available at the time. These estimates are regularly revised as our understanding of those distributions is enhanced with additional detections. Updates will also take into account the network evolution and actual advancement of the sensitivity of the instruments compared to projections in [#LivingReview]_.
 
 .. |LRR| replace:: *Living Rev. Rel.*
 
