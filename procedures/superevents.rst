@@ -35,6 +35,6 @@ event is decided by applying the following rules, in order:
      alarm rate is lower than a threshold value.
    * In case of an event created by a pipeline due to an *offline* analysis, no
      preliminary GCN will be sent.
-   * The :term:`SNR` is used to select the `preferred_event` among `CBC`
+   * The :term:`SNR` is used to select the preferred event among `CBC`
      candidates because higher :term:`SNR` implies better estimates from
      low-latency searches.
