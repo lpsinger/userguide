@@ -10,7 +10,11 @@ Version 9 (unreleased)
 
 .. rubric:: Observing Capabilities
 
-.. rubric:: Procedures
+.. rubric:: Data Analysis
+
+* Renamed this section from "Procedures" to "Data Analysis" and reordered its
+  subsections to better reflect the chronological order of the steps of the
+  analysis.
 
 .. rubric:: Alert Contents
 

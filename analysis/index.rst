@@ -1,20 +1,23 @@
-Procedures
-==========
+Data Analysis
+=============
 
 In this section we describe the different online searches looking for GW
-signals. When multiple candidates from different pipelines are close enough
-together in time, they will be considered as originating from the same physical
-event and will be grouped into a single :doc:`superevent <superevents>`. See
-the following pages for technical details.
+signals, the selection and vetting of candidates, and parameter estimation
+analysis.
+
+When multiple candidates from different pipelines are close enough together in
+time, they will be considered as originating from the same physical event and
+will be grouped into a single :doc:`superevent <superevents>`. See the
+following pages for technical details.
 
 .. toctree::
    :maxdepth: 1
 
    searches
-   parameter_estimation
    superevents
-   inference
    vetting
+   parameter_estimation
+   inference
 
 The timeline for distribution of alerts is described below.
 

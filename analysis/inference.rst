@@ -23,7 +23,7 @@ Poisson processes. A source-dependent weighting of matched-filter templates is
 used to compute the mean values of expected counts associated with each of
 these five categories. The mean values are updated weekly based on observed
 matched-filter count rates. They are then used to predict the category for new
-triggers uploaded by :doc:`search pipelines </procedures/searches>`.
+triggers uploaded by :doc:`search pipelines </analysis/searches>`.
 
 For details, see [#Pastro]_, especially Section II E. and Equation 18 therein.
 

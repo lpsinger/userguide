@@ -6,7 +6,7 @@ multiple search pipelines. Each superevent is intended to represent a single
 astrophysical event.
 
 A superevent consists of one or more event candidates, possibly from
-:doc:`different pipelines </procedures/searches>`, that are neighbors in time.
+:doc:`different pipelines </analysis/searches>`, that are neighbors in time.
 At any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
@@ -24,7 +24,7 @@ event is decided by applying the following rules, in order:
 1. An event detected in multiple interferometers is preferred over an
    event from a single interferometer.
 2. An event from modeled :term:`CBC` searches are preferred over an event from
-   unmodeled Burst searches (see :doc:`Searches </procedures/searches>` for
+   unmodeled Burst searches (see :doc:`Searches </analysis/searches>` for
    details on search pipelines).
 3. In the case of multiple CBC events, the event with the highest :term:`SNR`
    is preferred. In the case of multiple Burst events, the event with the

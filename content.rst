@@ -25,11 +25,10 @@ automated data quality checks, but it may later be :ref:`retracted
 this stage.
 
 An **Initial GCN Notice** is issued after human vetting (see
-:doc:`/procedures/vetting`). If the signal does not pass human vetting (e.g.,
-it is a glitch), then instead of an initial alert there will be a retraction_.
-The initial alert is also accompanied by a GCN Circular which should be
-considered as the first formal publication of the candidate and can be cited as
-such.
+:doc:`/analysis/vetting`). If the signal does not pass human vetting (e.g., it
+is a glitch), then instead of an initial alert there will be a retraction_. The
+initial alert is also accompanied by a GCN Circular which should be considered
+as the first formal publication of the candidate and can be cited as such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
 estimates of the sky localization, significance, or classification. There
@@ -119,7 +118,7 @@ such as :samp:`MS181101abc`. A GraceDB ID has three parts:
 
 * Prefix: ``S`` for normal candidates and ``MS`` or ``TS`` for mock or test
   events respectively. The S stands for 
-  :doc:`superevent </procedures/superevents>`.
+  :doc:`superevent </analysis/superevents>`.
 
 * Date: The six-digit UTC date of the event consisting of a two-digit year,
   month, and day of month.
@@ -322,8 +321,8 @@ dependent to some extent: the Classification section takes into consideration
 prior knowledge of astrophysical compact binary merger rates from previous
 LIGO/Virgo observations, and both the Classification and Properties sections
 depend on details of neutron star physics (e.g. maximum NS mass, equation of
-state). See the earlier :doc:`procedures </procedures/inference>` for
-implementation details.
+state). See the earlier subsection of the :doc:`Data Analysis
+</analysis/inference>` section for implementation details.
 
 Circular Contents
 -----------------
