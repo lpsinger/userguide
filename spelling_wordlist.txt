@@ -49,6 +49,7 @@ IDL
 indices
 interferometer
 interferometers
+ipix
 isoLatitude
 Kamioka
 Kapadia
@@ -78,7 +79,9 @@ Ph
 pixelation
 postprocessing
 programmatically
+runtime
 redshift
+redshifts
 Robinet
 Roukema
 Sachdev

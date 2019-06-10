@@ -22,3 +22,4 @@ tutorial is broken into the following subsections:
    observability
    3d
    tools
+   aladin
