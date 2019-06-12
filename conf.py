@@ -92,7 +92,6 @@ html_theme = 'alabaster'
 html_theme_options = {
     'description': 'Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
     'fixed_sidebar': True,
-    'logo': 'logo.png',
     'show_relbars': True,
     'sidebar_collapse': True
 }
