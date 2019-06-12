@@ -18,10 +18,8 @@ Modeled Search
 based analysis pipelines that rapidly identify compact binary merger events,
 with :math:`\lesssim 1` minute latencies. They use discrete banks of waveform
 templates to cover the target parameter space of compact binaries, with all
-pipelines covering the mass ranges corresponding to BNS, NS-BH, and stellar
-mass BBH systems. However, GstLAL and PyCBC Live and SPIIR also include
-intermediate-mass BBH systems and the O3 banks differ in detail from pipeline
-to pipeline.
+pipelines covering the mass ranges corresponding to :term:`BNS`, :term:`NSBH`,
+and :term:`BBH` systems.
 
 A coincident analysis is performed by all pipelines, where candidate events are
 extracted separately from each detector via matched-filtering and later
