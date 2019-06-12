@@ -6,6 +6,10 @@ Version 9 (unreleased)
 
 .. rubric:: General
 
+* There is now a shorter URL for the Public Alerts User Guide, which can now be
+  found at either https://emfollow.docs.ligo.org or
+  https://emfollow.docs.ligo.org/userguide.
+
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
