@@ -34,7 +34,7 @@
           {% endblock %}
 
           <div class="footer">
-            <span>Version {{ release }}</span>
+            <span><a href="{{ pathto('changes') }}">Version {{ release }}</a></span>
             <span>{% if show_copyright %}&copy;{{ copyright }}.{% endif %}</span>
             {% if theme_show_powered_by|lower == 'true' %}
             <span>
