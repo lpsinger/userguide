@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 9 (unreleased)
+Version 9 (2019-06-13)
 ----------------------
 
 .. rubric:: General
@@ -10,17 +10,11 @@ Version 9 (unreleased)
   found at either https://emfollow.docs.ligo.org or
   https://emfollow.docs.ligo.org/userguide.
 
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
 .. rubric:: Data Analysis
 
 * Renamed this section from "Procedures" to "Data Analysis" and reordered its
   subsections to better reflect the chronological order of the steps of the
   analysis.
-
-.. rubric:: Alert Contents
 
 .. rubric:: Sample Code
 
