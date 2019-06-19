@@ -68,6 +68,7 @@ Mpc
 multimessenger
 Nissanke
 Nitz
+Numpy
 observability
 offline
 online

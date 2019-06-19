@@ -20,6 +20,31 @@ Version 10 (unreleased)
 
 .. rubric:: Alert Contents
 
+* Changed the data type of the ``UNIQ`` column of the multi-order sky map
+  format from an unsigned integer to a signed integer as specified by the
+  `MOC-in-FITS standard`_.
+
+  This will improve interoperability with the `mrdfits`_ function from the `IDL
+  Astronomy User's Library`_ and the `fv FITS Viewer`_ from `FTOOLS`_, both of
+  which were reported to have problems with the old unsigned integer column. It
+  will also make it simpler to work with Numpy indexing operations, since Numpy
+  uses a signed integer type for indexing.
+
+  This change will go into effect in the LIGO/Virgo low-latency alert system on
+  2019-08-06.
+
+  Users of `ligo.skymap`_ should update to version 0.1.8 or newer because older
+  versions will be unable to read old files with unsigned ``UNIQ`` columns. The
+  new version of ``ligo.skymap`` can read files with either signed or unsigned
+  ``UNIQ`` columns.
+
+.. _`MOC-in-FITS standard`: http://www.ivoa.net/documents/MOC/
+.. _`mrdfits`: https://idlastro.gsfc.nasa.gov/ftp/pro/fits/mrdfits.pro
+.. _`IDL Astronomy User's Library`: https://idlastro.gsfc.nasa.gov/homepage.html
+.. _`fv FITS Viewer`: https://heasarc.gsfc.nasa.gov/ftools/fv/
+.. _`FTOOLS`: https://heasarc.gsfc.nasa.gov/ftools/
+.. _`ligo.skymap`: https://lscsoft.docs.ligo.org/ligo.skymap/
+
 .. rubric:: Sample Code
 
 Version 9 (2019-06-13)
