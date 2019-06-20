@@ -26,7 +26,7 @@ data by the following features:
 * The probability regions can subtend large angles.
 * They can wrap around the whole sky.
 * They can have multiple widely separated modes.
-* They can consist of have irregular shapes or have interference-like fringes.
+* They can have irregular shapes or interference-like fringes.
 
 As a consequence of these features, it is difficult to pick a good partial-sky
 projection (e.g. gnomonic, orthographic) in the general case. Traditional
