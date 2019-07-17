@@ -152,8 +152,8 @@ calculation to find joint GW+HEN triggers.
    :doi:`10.1088/0264-9381/33/17/175012`
 
 .. [#PyCBC1]
-   Nitz, A. H., Dent, T., Dal Canton, T., Fairhurst, S., & Brown, D. A. 2017, |apj|, 849, 118.
-   :doi:`10.3847/1538-4357/aa8f50`
+   Nitz, A. H., Dal Canton, T., Davis, D. & Reyes, S. 2018, |prd|, 98, 024050.
+   :doi:`10.1103/PhysRevD.98.024050`
 
 .. [#PyCBC2]
    Dal Canton, T., & Harry, I. W. 2017.

@@ -16,6 +16,8 @@ Version 10 (unreleased)
    mentioned types of searches but now has information on external
    experiments, coincident searches, and coincident false alarm rates.
 
+* Fixed PyCBC Live reference.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code
