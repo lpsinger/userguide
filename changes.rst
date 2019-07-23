@@ -28,6 +28,8 @@ Version 17 (unreleased)
 
 *  Add RAVEN spacetime coincidence FAR to alert example.
 
+*  Add Integral into Notice Types considered by RAVEN.
+
 .. rubric:: Sample Code
 
 *  Removed MassGap category from source classification.

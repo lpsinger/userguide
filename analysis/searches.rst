@@ -43,7 +43,7 @@ templates to cover the target parameter space of compact binaries, with all
 pipelines covering the mass ranges corresponding to :term:`BNS`, :term:`NSBH`,
 and :term:`BBH` systems.
 
-A coincident analysis is performed by all pipelines, where candidate events are
+A coincident analysis is performed by all pipelines, where candidate events are
 extracted separately from each detector via matched-filtering and later
 combined across detectors. SPIIR extracts candidates from each detector via
 matched-filtering and looks for coherent responses from the other detectors to
@@ -118,9 +118,11 @@ Coincident with External Trigger Search
 
 **RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
 Coincidence Monitor (RAVEN), a fast search for coincidences between GW and
-non-GW events. RAVEN will process alerts for gamma-ray bursts (GRBs) from both
-the *Fermi*-GBM instrument and the Neil Gehrels Swift Observatory, as well as
-galactic supernova alerts from the SNEWS collaboration. Two astronomical events
+non-GW events. RAVEN will process alerts for gamma-ray bursts (GRBs) from the
+Gamma-ray Burst Monitor (GBM) onboard Fermi, the Burst Alert Telescope (BAT)
+onboard the Neil Gehrels Swift Observatory, and the Mini-Calorimeter (MCAL)
+onboard AGILE, as well as galactic supernova alerts from the
+SNEWS collaboration. Two astronomical events
 are considered coincident if they are within a particular time window of each
 other, which varies depending on which two types of events are being considered
 (see the table below). Note that these time windows are centered on the GW,
@@ -134,12 +136,16 @@ seconds after the GW.
 |                       | CBC       | Burst     |                           |
 +=======================+===========+===========+===========================+
 | | GRB                 | [-1,5]    | [-60,600] |    | FERMI_GBM_ALERT      |
-| | (*Fermi*, *Swift*)  |           |           |    | FERMI_GBM_FIN_POS    |
-|                       |           |           |    | FERMI_GBM_FLT_POS    |
-|                       |           |           |    | FERMI_GBM_GND_POS    |
+| | (*Fermi*, *Swift*,  |           |           |    | FERMI_GBM_FIN_POS    |
+|    *INTEGRAL*,        |           |           |    | FERMI_GBM_FLT_POS    |
+|    *AGILE*)           |           |           |    | FERMI_GBM_GND_POS    |
 |                       |           |           |    | FERMI_GBM_SUBTHRESH  |
 |                       |           |           |    | SWIFT_BAT_GRB_ALERT  |
 |                       |           |           |    | SWIFT_BAT_GRB_LC     |
+|                       |           |           |    | INTEGRAL_WAKEUP      |
+|                       |           |           |    | INTEGRAL_REFINED     |
+|                       |           |           |    | INTEGRAL_OFFLINE     |
+|                       |           |           |    | AGILE_MCAL_ALERT     |
 +-----------------------+-----------+-----------+---------------------------+
 | | Low-energy Neutrinos| [-10,10]  | [-10,10]  |     SNEWS                 |
 | | (SNEWS)             |           |           |                           |
