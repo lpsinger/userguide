@@ -105,4 +105,3 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
     </How>
     <Description>Report of a candidate gravitational wave event</Description>
 </voe:VOEvent>
-
