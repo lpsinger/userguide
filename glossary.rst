@@ -102,6 +102,13 @@ Glossary
         spectral density of the gravitational-wave signal over the integral
         over frequency of the average power spectral density of the noise.
 
+    Terrestrial
+        Classification for signals in gravitational-wave detectors that are of
+        instrumental or environmental origin. Terrestrial signals are not
+        astrophysical and not due to gravitational waves. Some examples of
+        sources of terrestrial signals are statistical noise fluctuations,
+        detector glitches, and ground motion.
+
     Virgo
         Virgo Observatory (see `Virgo observatory home page
         <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector

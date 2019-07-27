@@ -102,7 +102,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
 | MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                           |
-|                   | terrestrial (i.e, noise) respectively                     |                                                           |
+|                   | :term:`terrestrial` (i.e, noise) respectively             |                                                           |
 +-------------------+-----------------------------------------------------------+                                                           +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
 |                   | noise, that at least one of the compact objects was a     |                                                           |
@@ -188,7 +188,7 @@ source belongs to the following five categories:
 * :term:`NSBH` merger
 * :term:`BBH` merger
 * :term:`MassGap` merger
-* Terrestrial (i.e., a chance background fluctuation or a glitch)
+* :term:`Terrestrial` (i.e., a chance background fluctuation or a glitch)
 
 The figure below shows the extent of the three astrophysical categories (BNS,
 NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
