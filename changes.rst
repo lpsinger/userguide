@@ -1,14 +1,8 @@
 Change Log
 ==========
 
-Version 10 (unreleased)
+Version 10 (2019-07-31)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
 
 .. rubric:: Data Analysis
 
@@ -44,8 +38,6 @@ Version 10 (unreleased)
 .. _`fv FITS Viewer`: https://heasarc.gsfc.nasa.gov/ftools/fv/
 .. _`FTOOLS`: https://heasarc.gsfc.nasa.gov/ftools/
 .. _`ligo.skymap`: https://lscsoft.docs.ligo.org/ligo.skymap/
-
-.. rubric:: Sample Code
 
 Version 9 (2019-06-13)
 ----------------------
