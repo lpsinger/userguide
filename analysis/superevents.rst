@@ -21,14 +21,20 @@ Selection of the Preferred Event
 When multiple online searches report events at the same time, the preferred
 event is decided by applying the following rules, in order:
 
-1. An event detected in multiple interferometers is preferred over an
-   event from a single interferometer.
-2. An event from modeled :term:`CBC` searches are preferred over an event from
+1. An event from modeled :term:`CBC` searches are preferred over an event from
    unmodeled Burst searches (see :doc:`Searches </analysis/searches>` for
    details on search pipelines).
-3. In the case of multiple CBC events, the event with the highest :term:`SNR`
-   is preferred. In the case of multiple Burst events, the event with the
-   lowest false alarm rate (FAR) is preferred.
+2. In the case of multiple CBC events, three-interferometer events are
+   preferred over two-interferometer events, and two-interferometer events are
+   preferred over single-interferometer events.
+3. In the case of multiple CBC events with the same number of participating
+   interferometers, the event with the highest :term:`SNR` is preferred. In the
+   case of multiple Burst events, the event with the lowest false alarm rate
+   (FAR) is preferred.
+
+See also the :ref:`preferred event selection flow chart
+<gwcelery.tasks.superevents:Selection of the preferred event>` in our software
+documentation.
 
 .. note::
    * A Preliminary GCN is automatically issued for superevents when the false

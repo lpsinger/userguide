@@ -12,6 +12,11 @@ Version 11 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Update the documentation about superevents describing the criteria by which
+   the preferred event is selected. For CBC events, events with three detectors
+   are preferred over two detectors, and events with two detectors are
+   preferred over events with one detector.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code

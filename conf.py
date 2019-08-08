@@ -42,6 +42,7 @@ version = parse_version(release).base_version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.doctest',
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
@@ -178,6 +179,11 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
+
+# -- Options for autosectionlabel extension -------------------------------
+
+autosectionlabel_prefix_document = True
+
 
 # -- Options for extlinks extension ------------------------------------------
 
