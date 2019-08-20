@@ -6,6 +6,7 @@ Aladin
 Astropy
 ATel
 ATels
+Banday
 Bartos
 bilinear
 Boch
@@ -42,6 +43,7 @@ GW
 Hanford
 Healpy
 Hinderer
+Hivon
 Holz
 IDL
 indices
