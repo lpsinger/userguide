@@ -10,8 +10,12 @@ for hierarchical, progressively refined, all-sky survey images (HiPS_). Second,
 the value stored at each pixel is the probability that the gravitational-wave
 source is within that pixel.
 
-.. image:: https://healpix.jpl.nasa.gov/images/healpixGridRefinement.jpg
+.. figure:: https://healpix.jpl.nasa.gov/images/healpixGridRefinement.jpg
    :alt: HEALPix projection
+
+   An illustration of the first four HEALPix tesselations (``nside=1``,
+   ``nside=2``, ``nside=4``, and ``nside=8``). Reproduced from
+   https://healpix.jpl.nasa.gov.
 
 Let's download an example FITS file with curl_:
 
