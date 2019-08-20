@@ -19,7 +19,13 @@ Version 11 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Add references to the HEALPix paper (Górski et al. 2005,
+   :doi:`https://doi.org/10.1086/427976`).
+
 .. rubric:: Sample Code
+
+*  Add attribution for a HEALPix illustration that was reproduced from
+   https://healpix.jpl.nasa.gov.
 
 Version 10 (2019-07-31)
 -----------------------
