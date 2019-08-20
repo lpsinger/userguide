@@ -5,10 +5,10 @@ Let's take a look at what is inside one of the LIGO/Virgo probability sky maps.
 They are FITS image files and can be manipulated and viewed with many
 commonplace FITS tools. However, they are a little unusual in two regards.
 First, since they are all-sky images, they are stored in the :term:`HEALPix`
-projection, a format that is used for Planck_ all-sky CMB maps and by Aladin
-for hierarchical, progressively refined, all-sky survey images (HiPS_). Second,
-the value stored at each pixel is the probability that the gravitational-wave
-source is within that pixel.
+[#HEALPixFramework]_ projection, a format that is used for Planck_ all-sky CMB
+maps and by Aladin for hierarchical, progressively refined, all-sky survey
+images (HiPS_). Second, the value stored at each pixel is the probability that
+the gravitational-wave source is within that pixel.
 
 .. figure:: https://healpix.jpl.nasa.gov/images/healpixGridRefinement.jpg
    :alt: HEALPix projection
@@ -409,7 +409,12 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 .. _Planck: https://www.esa.int/Our_Activities/Space_Science/Planck
 .. _WCSTools: http://tdc-www.harvard.edu/wcstools/
 
+.. |apj| replace:: *Astrophys. J.*
 .. |mnras| replace:: *Mon. Notices Royal Astron. Soc.*
+
+.. [#HEALPixFramework]
+   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |apj|, 622, 759.
+   :doi:`https://doi.org/10.1086/427976`
 
 .. [#MappingOnHEALPix]
    Calabretta, M. R., & Roukema, B. F. 2007, |mnras|, 381, 865.

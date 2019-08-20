@@ -141,8 +141,8 @@ The sky localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
 The GCN Notice and Circular will provide a URL for the sky localization file
 stored in GraceDB. The sky localization is saved in a :term:`FITS` file as a
-:term:`HEALPix` all-sky image. See our :doc:`sample code </tutorial/skymaps>`
-for instructions on working with sky localization files.
+:term:`HEALPix` [#HEALPixFramework]_ all-sky image. See our :doc:`sample code
+</tutorial/skymaps>` for instructions on working with sky localization files.
 
 ..  important::
     We generally provide localizations in two HEALPix formats, distinguished by
@@ -407,3 +407,9 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`Aladin`: https://aladin.u-strasbg.fr/
 .. _`astropy-regions`: https://astropy-regions.readthedocs.io/
 .. _`pyregion`: https://pyregion.readthedocs.io/
+
+.. |apj| replace:: *Astrophys. J.*
+
+.. [#HEALPixFramework]
+   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |apj|, 622, 759.
+   :doi:`https://doi.org/10.1086/427976`
