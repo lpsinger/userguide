@@ -20,7 +20,7 @@ Version 11 (unreleased)
 .. rubric:: Alert Contents
 
 *  Add references to the HEALPix paper (Górski et al. 2005,
-   :doi:`https://doi.org/10.1086/427976`).
+   :doi:`10.1086/427976`).
 
 .. rubric:: Sample Code
 

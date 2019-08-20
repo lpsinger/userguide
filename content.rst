@@ -412,4 +412,4 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
 .. [#HEALPixFramework]
    Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |apj|, 622, 759.
-   :doi:`https://doi.org/10.1086/427976`
+   :doi:`10.1086/427976`
