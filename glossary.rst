@@ -54,7 +54,7 @@ Glossary
 
     HEALPix
         Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
-        positions on the unit sphere.
+        positions on the unit sphere. See https://healpix.sourceforge.io.
 
     HEN
         High Energy Neutrino, particularly in the context of multi-messenger

@@ -22,8 +22,8 @@ and calculates the posterior probability distribution over the sky location and
 distance of the source by coherently modeling the response of the
 gravitational-wave detector network. It explores the parameter space using
 Gaussian quadrature, lookup tables, and sampling on an adaptively refined
-HEALPix grid. The sky localization takes tens of seconds and is included in the
-preliminary alert.
+:term:`HEALPix` grid. The sky localization takes tens of seconds and is
+included in the preliminary alert.
 
 **LALInference** [#LALInference]_ is the full CBC parameter estimation
 algorithm. It explores a greatly expanded parameter space including sky

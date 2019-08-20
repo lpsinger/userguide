@@ -13,9 +13,9 @@ need to import a few extra Python modules::
     import astropy.units as u
 
 The LIGO/Virgo probability sky maps are always in equatorial coordinates. Once
-we have looked up the coordinates of the HEALPix pixels, we will use Astropy to
-transform those coordinates to a horizontal (altitude–azimuth) frame for a
-particular site on the Earth at a particular time. Then we can quickly
+we have looked up the coordinates of the :term:`HEALPix` pixels, we will use
+Astropy to transform those coordinates to a horizontal (altitude–azimuth) frame
+for a particular site on the Earth at a particular time. Then we can quickly
 determine which pixels are visible from that site at that time, and integrate
 (sum) the probability contained in those pixels.
 

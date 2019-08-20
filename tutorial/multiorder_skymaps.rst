@@ -1,9 +1,10 @@
 Multi-Order Sky Maps (For Advanced Users)
 =========================================
 
-For most events, LIGO/Virgo distributes both the standard HEALPix format with
-the file extension ``.fits.gz``, as well as an experimental multi-resolution
-HEALPix format, distinguished by the file extension ``.multiorder.fits``.
+For most events, LIGO/Virgo distributes both the standard :term:`HEALPix`
+format with the file extension ``.fits.gz``, as well as an experimental
+multi-resolution HEALPix format, distinguished by the file extension
+``.multiorder.fits``.
 
 What Problem Do Multi-Resolution Sky Maps Solve?
 ------------------------------------------------
