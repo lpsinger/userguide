@@ -27,6 +27,9 @@ Version 11 (unreleased)
 *  Add attribution for a HEALPix illustration that was reproduced from
    https://healpix.jpl.nasa.gov.
 
+*  Fix the example image for ``hp.mollview()``, which was distorted due to a
+   file conversion issue.
+
 Version 10 (2019-07-31)
 -----------------------
 
