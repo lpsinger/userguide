@@ -10,6 +10,9 @@ Version 12 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+*  Update ranges/rates based on up-to-date O3 analysis. Add BBH and NSBH
+   ranges. Update O3 and range schedule figures.
+
 .. rubric:: Data Analysis
 
 .. rubric:: Alert Contents

@@ -24,7 +24,7 @@ commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
 signals, this figure gives the :term:`BNS range` for each observing run.
 
-.. image:: _static/observing-scenarios-timeline.*
+.. figure:: _static/Scripts_Figure2_ObsScen_fig2_final.*
    :alt: Long-term observing schedule
 
 Engineering Run 14 (ER14) started on 2019-03-04. The transition into Observing
@@ -36,7 +36,7 @@ detector may come online and become part of the international
 gravitational-wave network at some point during O3. The near-term observing
 schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
 
-.. image:: _static/G1801056-v4.png
+.. figure:: _static/O3Schedule.*
    :alt: Current observing schedule
 
 Live Status
@@ -66,27 +66,35 @@ and :term:`burst range` (luminosity distance of detectable sources, averaged
 over sky position and source orientation) given the detectors' anticipated
 sensitivities are listed in the table below.
 
-+-----------+-----------+-----------+
-| Detector  | Range (Mpc)           |
-|           +-----------+-----------+
-|           | BNS       | Burst     |
-+===========+===========+===========+
-| **LIGO**  | 120–170   | 75–90     |
-+-----------+-----------+-----------+
-| **Virgo** | 65–85     | 40–50     |
-+-----------+-----------+-----------+
-| **KAGRA** | 8–25      |           |
-+-----------+-----------+-----------+
++-----------+-----------+-----------+-----------+-----------+
+| Detector  | Range (Mpc)                                   |
+|           +-----------+-----------+-----------+-----------+
+|           | BNS       | BBH       | NSBH      | Burst     |
++===========+===========+===========+===========+===========+
+| **LIGO**  | 110–130   | 990-1200  | 190-240   | 80–90     |
++-----------+-----------+-----------+-----------+-----------+
+| **Virgo** | 50        | 500       | 90        | 35        |
++-----------+-----------+-----------+-----------+-----------+
+| **KAGRA** | 8–25      | 80-260    | 15-45     | 5-25      |
++-----------+-----------+-----------+-----------+-----------+
 
-We expect 1–10 :term:`BNS` events over the course of O3. For BNS events, the
+We expect of order 10 :term:`BNS` events over the course of O3. For BNS events, the
 median sky localization accuracy of in terms of the 90% credible area will be
-120–180 deg². 12–21% of BNS mergers will be localized to less than 20 deg².
+250–320 deg². 10–15% of BNS mergers will be localized to less than 20 deg².
 
 Event Rates
 -----------
 
-See the `rates presentation`_ from recent Town Hall meeting for LIGO and
-Virgo's most current estimates of astrophysical rates of compact binary mergers. The detection rate estimates contained in [#LivingReview]_ and later updated in the `rates presentation`_ embody estimates derived from the knowledge of mass, spin, and rate distributions available at the time. These estimates are regularly revised as our understanding of those distributions is enhanced with additional detections. Updates will also take into account the network evolution and actual advancement of the sensitivity of the instruments compared to projections in [#LivingReview]_.
+
+See the O3 Observing Scenarios [#O3ObservingScenarios]_ paper for LIGO and
+Virgo's most current estimates of astrophysical rates of compact binary mergers.
+The detection rate estimates contained in [#LivingReview]_ and later updated in the
+O3 Observing Scenarios [#O3ObservingScenarios]_ paper embody estimates derived from the knowledge of mass,
+spin, and rate distributions available at the time. These estimates are regularly
+revised as our understanding of those distributions is enhanced with additional
+detections. Updates will also take into account the network evolution and actual
+advancement of the sensitivity of the instruments compared to projections in
+[#LivingReview]_.
 
 .. |LRR| replace:: *Living Rev. Rel.*
 
@@ -105,4 +113,8 @@ Virgo's most current estimates of astrophysical rates of compact binary mergers.
    Working Plan Towards O3*, LIGO Document G1801056-v4.
    https://dcc.ligo.org/LIGO-G1801056/public
 
-.. _`rates presentation`: https://wiki.gw-astronomy.org/pub/OpenLVEM/TownHallMeetings2018/O3_rates_amsterdam.pdf
+.. [#O3ObservingScenarios]
+   LIGO Scientific Collaboration & Virgo Collaboration 2018, *Prospects for
+   Observing and Localizing Gravitational-Wave Transients with Advanced LIGO,
+   Advanced Virgo and KAGRA*. https://arxiv.org/abs/1304.0670
+
