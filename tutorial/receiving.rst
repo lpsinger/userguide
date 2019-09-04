@@ -145,7 +145,7 @@ Upon running this, you should see:
     Group = CBC
     Pipeline = gstlal
     Search = MDC
-    skymap_fits = https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
+    skymap_fits = https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0
     BNS = 0.95
     NSBH = 0.01
     BBH = 0.03

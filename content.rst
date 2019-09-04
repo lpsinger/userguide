@@ -63,52 +63,54 @@ Notice Contents
 
 The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| **Root**                                                                                                                                  |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| IVORN             | :samp:`ivo://gwnet/LVC#[{{T,M}}]S{YYMMDDabc}-{{1,2,3}}-{{Preliminary,Initial,Update,Retraction}}`                     |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Role              | :samp:`{{observation,test}}`                                                                                          |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| **Who**                                                                                                                                   |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Date              | Time sent (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:34:49`                                                           |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Author            | :samp:`LIGO Scientific Collaboration and Virgo Collaboration`                                                         |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| **WhereWhen**     | Time of signal (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654437`                                               |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| **What**                                                                                                                                  |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| GraceID           | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                               |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Packet Type       | GCN Notice type: :samp:`{{Preliminary,Initial,Update,Retraction}}`                                                    |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Notice Type       | Numerical equivalent of GCN Notice type: :samp:`{{150,151,152,164}}`                                                  |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| FAR               | Estimated false alarm rate in Hz                                                                                      |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Sky Map           | URL of HEALPix FITS sky localization file                                                                             |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Group             | :samp:`CBC`                                               | :samp:`Burst`                                             |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Pipeline          | :samp:`{{Gstlal,MBTAOnline,PyCBC,SPIIR}}`                 | :samp:`{{cWB,oLIB}}`                                      |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| CentralFreq       | N/A                                                       | Central frequency in Hz                                   |
-+-------------------+                                                           +-----------------------------------------------------------+
-| Duration          |                                                           | Duration of burst in s                                    |
-+-------------------+                                                           +-----------------------------------------------------------+
-| Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`       |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                       |
-| MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                           |
-|                   | :term:`terrestrial` (i.e, noise) respectively             |                                                           |
-+-------------------+-----------------------------------------------------------+                                                           +
-| HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                           |
-|                   | noise, that at least one of the compact objects was a     |                                                           |
-|                   | neutron star, and that the system ejected a non-zero      |                                                           |
-|                   | amount of neutron star matter, respectively.              |                                                           |
-+-------------------+-----------------------------------------------------------+-----------------------------------------------------------+
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **Root**                                                                                                                                          |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| IVORN             | :samp:`ivo://gwnet/LVC#[{{T,M}}]S{YYMMDDabc}-{{1,2,3}}-{{Preliminary,Initial,Update,Retraction}}`                             |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Role              | :samp:`{{observation,test}}`                                                                                                  |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **Who**                                                                                                                                           |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Date              | Time sent (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:34:49`                                                                   |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Author            | :samp:`LIGO Scientific Collaboration and Virgo Collaboration`                                                                 |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **WhereWhen**     | Time of signal (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654437`                                                       |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **What**                                                                                                                                          |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| GraceID           | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                                       |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Packet Type       | GCN Notice type: :samp:`{{Preliminary,Initial,Update,Retraction}}`                                                            |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Notice Type       | Numerical equivalent of GCN Notice type: :samp:`{{150,151,152,164}}`                                                          |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| FAR               | Estimated false alarm rate in Hz                                                                                              |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Sky Map           | Versioned URL of HEALPix FITS sky localization file in the format                                                             |
+|                   | :samp:`https://gracedb.ligo.org/api/superevents/[{{T,M}}]S{YYMMDDabc}/files/{{bayestar,LALInference,cWB}}.fits.gz,{[0-8]}`.   |
+|                   | Example: :samp:`https://gracedb.ligo.org/api/superevents/S190901ap/files/bayestar.fits.gz,0`                                  |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Group             | :samp:`CBC`                                               | :samp:`Burst`                                                     |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| Pipeline          | :samp:`{{Gstlal,MBTAOnline,PyCBC,SPIIR}}`                 | :samp:`{{cWB,oLIB}}`                                              |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| CentralFreq       | N/A                                                       | Central frequency in Hz                                           |
++-------------------+                                                           +-------------------------------------------------------------------+
+| Duration          |                                                           | Duration of burst in s                                            |
++-------------------+                                                           +-------------------------------------------------------------------+
+| Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`               |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                               |
+| MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                                   |
+|                   | :term:`terrestrial` (i.e, noise) respectively             |                                                                   |
++-------------------+-----------------------------------------------------------+                                                                   +
+| HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                                   |
+|                   | noise, that at least one of the compact objects was a     |                                                                   |
+|                   | neutron star, and that the system ejected a non-zero      |                                                                   |
+|                   | amount of neutron star matter, respectively.              |                                                                   |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 
 Name
 ~~~~
@@ -143,6 +145,18 @@ The GCN Notice and Circular will provide a URL for the sky localization file
 stored in GraceDB. The sky localization is saved in a :term:`FITS` file as a
 :term:`HEALPix` [#HEALPixFramework]_ all-sky image. See our :doc:`sample code
 </tutorial/skymaps>` for instructions on working with sky localization files.
+
+The sky map URL will generally be of the form
+:samp:`https://gracedb.ligo.org/api/superevents/{sid}/files/{method}.fits.gz,{v}`,
+where :samp:`{sid}` is the :doc:`superevent </analysis/superevents>` ID,
+:samp:`{method}` is the sky localization algorithm (usually :samp:`bayestar`,
+:samp:`LALInference`, or :samp:`cWB`), and :samp:`{v}` is an integer that
+uniquely identifies different versions of the localization. The version number
+is automatically assigned by GraceDB, starting from 0, and increments for each
+file of the same name. For example, the first FITS file with the name
+``bayestar.fits.gz`` becomes ``bayestar.fits.gz,0``, then the next one is
+``bayestar.fits.gz,1``, and so on. The filename without the version suffix,
+such as ``bayestar.fits.gz``, always points to the most recent version.
 
 ..  important::
     We generally provide localizations in two HEALPix formats, distinguished by

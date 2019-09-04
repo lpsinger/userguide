@@ -21,7 +21,7 @@ Let's download an example FITS file with curl_:
 
 .. code-block:: shell-session
 
-    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
+    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0
 
 We can look at the metadata inside the FITS file by printing its header with
 tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
@@ -32,20 +32,20 @@ tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
    :hide:
 
    from astropy.io.fits.scripts.fitsheader import main
-   print('$ fitsheader bayestar.fits.gz')
-   main(['bayestar.fits.gz'])
+   print('$ fitsheader bayestar.fits.gz,0')
+   main(['bayestar.fits.gz,0'])
 
 .. testoutput::
    :options: +NORMALIZE_WHITESPACE
 
-   $ fitsheader bayestar.fits.gz
-   # HDU 0 in bayestar.fits.gz:
+   $ fitsheader bayestar.fits.gz,0
+   # HDU 0 in bayestar.fits.gz,0:
    SIMPLE  =                    T / conforms to FITS standard
    BITPIX  =                    8 / array data type
    NAXIS   =                    0 / number of array dimensions
    EXTEND  =                    T
 
-   # HDU 1 in bayestar.fits.gz:
+   # HDU 1 in bayestar.fits.gz,0:
    XTENSION= 'BINTABLE'           / binary table extension
    BITPIX  =                    8 / array data type
    NAXIS   =                    2 / number of array dimensions
@@ -137,7 +137,7 @@ by having Python call `curl` on the command line:
 
 .. code-block:: shell-session
 
-    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz
+    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0
 
 .. plot::
     :context: reset
@@ -166,7 +166,7 @@ Next, we need to read in the file in Python with Healpy:
 
     >>> import healpy as hp
     >>> import numpy as np
-    >>> hpx = hp.read_map('bayestar.fits.gz')
+    >>> hpx = hp.read_map('bayestar.fits.gz,0')
     NSIDE = 2048
     ORDERING = NESTED in fits file
     INDXSCHM = IMPLICIT
@@ -177,7 +177,7 @@ You can suppress printing informational messages while loading the file by
 passing the keyword argument ``verbose=False``. You can read both the HEALPix
 image data and the FITS header by passing the ``h=True`` keyword argument:
 
-    >>> hpx, header = hp.read_map('bayestar.fits.gz', h=True, verbose=False)
+    >>> hpx, header = hp.read_map('bayestar.fits.gz,0', h=True, verbose=False)
 
 Manipulating HEALPix Coordinates
 --------------------------------

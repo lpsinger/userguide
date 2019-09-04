@@ -22,6 +22,13 @@ Version 11 (unreleased)
 *  Add references to the HEALPix paper (Górski et al. 2005,
    :doi:`10.1086/427976`).
 
+*  Add version number suffixes to sky map FITS filenames in GCN notices to
+   distinguish between different sky maps with the same filename. For example,
+   the first file with the name ``bayestar.fits.gz`` will be referred to as
+   ``bayestar.fits.gz,0``, then the next will be ``bayestar.fits.gz,1``, and so
+   on. The filename with no version suffix always points to the most recent
+   version.
+
 .. rubric:: Sample Code
 
 *  Add attribution for a HEALPix illustration that was reproduced from

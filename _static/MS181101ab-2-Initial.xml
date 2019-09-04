@@ -50,7 +50,7 @@ xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml
             <Description>Specific low-latency search</Description>
         </Param>
         <Group type="GW_SKYMAP" name="bayestar">
-            <Param name="skymap_fits" dataType="string" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz" ucd="meta.ref.url">
+            <Param name="skymap_fits" dataType="string" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0" ucd="meta.ref.url">
                 <Description>Sky Map FITS</Description>
             </Param>
         </Group>
