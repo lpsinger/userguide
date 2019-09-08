@@ -5,8 +5,20 @@ Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
 **GCN Notices** are machine-readable packets. They are available as
-:term:`VOEvent` XML and `several other formats`_. We strongly recommend
-receiving LIGO/Virgo alerts in the VOEvent XML format.
+:term:`VOEvent` XML and `several other formats`_. See the
+:doc:`/tutorial/index` section for instructions on receiving GCNs in VOEvent
+format.
+
+.. warning::
+   We recommend receiving LIGO/Virgo alerts in the VOEvent XML format using one
+   of `GCN's anonymous VOEvent brokers`_. VOEvent over anonymous :term:`VTP` is
+   the **only GCN format and distribution method that is fully supported by
+   LIGO/Virgo.**
+
+   The VOEvent XML alerts are official data products of LIGO/Virgo. GCN
+   produces `several other legacy formats`_ from them, in particular a
+   text-based "full format" and binary format. LIGO/Virgo performs only limited
+   quality control of the legacy formats.
 
 **GCN Circulars** are short human-readable astronomical bulletins. They are
 written in a certain well-established `format and style`_. You can `subscribe
@@ -415,6 +427,8 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
 .. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+.. _`several other distribution methods`: https://gcn.gsfc.nasa.gov/tech_describe.html
+.. _`GCN's anonymous VOEvent brokers`: https://gcn.gsfc.nasa.gov/voevent.html#tc2
 .. _`DS9 region string`: http://ds9.si.edu/doc/ref/region.html
 .. _`DS9`: http://ds9.si.edu/
 .. _`Aladin`: https://aladin.u-strasbg.fr/

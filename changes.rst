@@ -14,6 +14,11 @@ Version 13 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Add a warning that :term:`VOEvent` over anonymous :term:`VTP` is the only
+   GCN format and distribution method that is fully supported by LIGO/Virgo. In
+   particular, LIGO/Virgo performs only limited quality control control checks
+   for the textual "full format" and the binary format.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources
