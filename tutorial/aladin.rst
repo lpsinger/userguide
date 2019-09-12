@@ -17,7 +17,7 @@ multi-scale mapping based on HEALPix sky tessellation.
 
 The data structure maps irregular and complex sky regions into hierarchically
 grouped predefined cells. Each MOC cell is defined by two numbers: the
-hierarchy level (HEALPIx order) and the pixel index (HEALPIx ipix). The
+hierarchy level (HEALPix order) and the pixel index (HEALPix ipix). The
 ``NUNIQ`` scheme defines an algorithm for packing an (order, ipix) pair into a
 single integer for compactness. MOCs are serialized as FITS or JSON files. The
 MOC resolution is determined by the map resolution parameter ``nside``, which
