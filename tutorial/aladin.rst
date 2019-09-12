@@ -99,7 +99,7 @@ loaded and showed in the Aladin Stack. The threshold input represents the
 percentage of the credible region in decimal (ranging from 0 to 1). Press the
 :guilabel:`CREATE` button to generate the resulting credible region. The
 credible region is created and loaded in the Aladin Stack. The credible region
-obtained so far are decoded in the Multi Order Coverage map (MOC) and each new
+obtained so far are encoded in the Multi Order Coverage map (MOC) and each new
 level can be independently used.
 
 4. :guilabel:`Properties` Window
