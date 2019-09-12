@@ -87,7 +87,7 @@ Coincident with External Trigger Search
 ---------------------------------------
 
 **RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
-Coincidence Monitor (RAVEN), a fast search for coincidences between GW and non-GW 
+Coincidence Monitor (RAVEN), a fast search for coincidences between GW and non-GW
 events external to the LIGO collaboration. RAVEN will process alerts for
 gamma-ray bursts (GRBs) from both the *Fermi*-GBM instrument and the Neil
 Gehrels Swift Observatory, as well as galactic supernova alerts from the

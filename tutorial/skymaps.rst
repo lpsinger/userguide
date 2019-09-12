@@ -118,7 +118,7 @@ Aladin_:
    :alt: Aladin screenshot
 
 or DS9_ (although DS9 shows HEALPix sky maps in an unusual orientation; see
-Figure 4 of [#MappingOnHEALPix]_ for more information. 
+Figure 4 of [#MappingOnHEALPix]_ for more information.
 
 .. image:: /_static/ds9-screenshot.png
    :alt: DS9 screenshot

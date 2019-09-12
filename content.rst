@@ -117,7 +117,7 @@ The name of an event is its :term:`GraceDB` ID, a uniquely assigned identifier
 such as :samp:`MS181101abc`. A GraceDB ID has three parts:
 
 * Prefix: ``S`` for normal candidates and ``MS`` or ``TS`` for mock or test
-  events respectively. The S stands for 
+  events respectively. The S stands for
   :doc:`superevent </analysis/superevents>`.
 
 * Date: The six-digit UTC date of the event consisting of a two-digit year,
