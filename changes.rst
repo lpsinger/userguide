@@ -30,6 +30,8 @@ Version 11 (unreleased)
 *  Fix the example image for ``hp.mollview()``, which was distorted due to a
    file conversion issue.
 
+*  Add section on sky map visualization and credible regions in Aladin.
+
 Version 10 (2019-07-31)
 -----------------------
 
