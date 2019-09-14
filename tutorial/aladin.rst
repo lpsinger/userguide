@@ -7,71 +7,64 @@ localizations in `Aladin Desktop`_. The following main topics are addressed.
 .. contents:: :local:
 
 MOC and GW Sky Localizations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 The enclosed area within a given probability level contour of a GW sky map can
-be effectively described through the Multi-Order Coverage (:term:`MOC`) method
-[#Fernique15]_. It is a standard of the Virtual Observatory which provides a
-multi-scale mapping based on :term:`HEALPix` sky tessellation.
+be effectively described with a Multi-Order Coverage (:term:`MOC`) map
+[#Fernique15]_. MOC is a standard of the Virtual Observatory which provides a
+representation of arbitrary regions on the unit sphere using the
+:term:`HEALPix` sky tessellation.
 
-The data structure maps irregular and complex sky regions into hierarchically
-grouped predefined cells. Each MOC cell is defined by two numbers: the
-hierarchy level (HEALPix order) and the pixel index (HEALPix ipix). The
-``NUNIQ`` scheme defines an algorithm for packing an (order, ipix) pair into a
-single integer for compactness. MOCs are serialized as FITS or JSON files. The
-MOC resolution is determined by the map resolution parameter ``nside``, which
-is used for defining the resolution of the grid. For a typical ``nside=512``
-(:math:`6.871'` per pixel), the MOC order resolution is ``order = 9``
-
-.. math::
-   \mathit{nside} = 2^\mathit{order}.
+The MOC data structure encodes irregular sky regions as a hierarchy of HEALPix
+pixels. Each MOC cell is defined by two numbers: the hierarchy level (HEALPix
+:math:`\mathit{order}`) and the pixel index (HEALPix :math:`\mathit{ipix}`).
+MOCs are serialized as FITS or JSON files. The finest level of refinement
+within the MOC hierarchy is determined by the HEALPix :math:`\mathit{order}`
+parameter or the equivalent :math:`\mathit{nside}` parameter, related by
+:math:`\mathit{nside} = 2^\mathit{order}`. For example, ``order=9`` corresponds
+to ``nside=512``, and a resolution of :math:`6.9'` per pixel.
 
 The MOC maps make database queries for retrieving objects and logical operation
-(such as union, intersection, subtraction, difference) extremely simple and
-fast even for very complex sky regions. If databases are adapted to support MOC
-based queries, such as `VizieR`_, they offer a useful method allowing any
-support of sky region query.
+(such as union, intersection, subtraction, difference) extremely fast even for
+very complex sky regions.
 
-The resolution of a GW sky localization with three or more detectors can reach
-a resolution considerably large. To mitigate the computational time, a new
-variant of the HEALPix format is designed and annotated with the file extension
-``.multiorder.fits``. See the section :doc:`/tutorial/multiorder_skymaps` for
-details. Although the FITS format for LIGO/Virgo multi-resolution sky maps uses
-the **UNIQ** indexing scheme and is a superset of the FITS serialization for
-MOC map, operationally, they are defined as follows. With *MOC map*, we
-indicate the method to map complex regions for fast queries and sky map
-comparisons, while, with *multi-order sky map*, we refer to a new HEALPix
-format to deal with computational challenges related to highly accurate
-localizations. Future Aladin releases will support the LIGO/Virgo
-multi-resolution sky maps.
+MOC maps and :doc:`multi-order sky maps </tutorial/multiorder_skymaps>` are
+closely related. They use similar multi-resolution HEALPix data structures. The
+main distinction is that MOC maps encode *regions on the sphere*, whereas
+multi-order sky maps encode *sampled images or functions on the sphere*. The
+multi-order sky map FITS format is a superset of the MOC FITS format, the only
+difference being that a multi-order sky map has values attached to each cell
+(probability density, distance estimates) whereas a MOC map does not. Future
+Aladin releases will support the LIGO/Virgo multi-resolution sky maps.
 
-1. Running Aladin Desktop
--------------------------
+Running Aladin Desktop
+----------------------
 
-Aladin is developed in Java. As any Java tool, Aladin Desktop requires a `Java
-Virtual Machine`_ (JVM) and a classical installation on the user machine
-according with your operating system. More details in the `Download
-instructions`_.
+Aladin Desktop is a Java application. To run it, you must first have the `Java
+Virtual Machine`_ (JVM) installed. More details are in Aladin's `download
+page`_.
 
 .. note::
-   If Aladin fails during operation with a message that says something about a
-   ``java.lang.OutOfMemoryError``, then your heap size is too small for what
-   you are trying to do. You will have to run Java with a bigger heap size. You
-   can increase the maximum memory size used by your Java runtime environment
-   by following the instructions below.
+   Aladin may fail to load some LIGO/Virgo sky maps and display a
+   ``java.lang.OutOfMemoryError`` error message. This is because the highest
+   resolution LIGO/Virgo sky maps do not fit inside Aladin's default memory
+   size.
 
-   Download the ``Aladin.jar`` file from `here`_ and execute it from a terminal
-   by typing::
+   You can increase the maximum memory size used by your Java runtime
+   environment by following the instructions below.
+
+   Download the Aladin.jar from the Aladin `download page`_. Execute it from a
+   terminal by typing::
 
        $ java -Xmx2g -jar Aladin.jar
 
    The flag ``-Xmx< ammount of memory >`` specifies the maximum memory
-   allocation pool for a Java Virtual Machine (JVM). Here 2GB of memory is
-   allocated. For GW sky localizations with ``NSIDE = 2048``, increase the
-   memory allocated up to 3GB, ``-Xmx3g``.
+   allocation pool for a JVM. Here 2GB of memory is allocated. For GW sky
+   localizations with ``nside=2048``, increase the memory allocated up to 3GB,
+   ``-Xmx3g``.
 
-2. Loading a GW Sky Localization
---------------------------------
+Loading a GW Sky Localization
+-----------------------------
 
 You can copy and paste the sky map URL from the `GraceDB`_ or drag and drop a
 HEALPix FITS file from your operating system's file browser in the main Aladin
@@ -79,30 +72,29 @@ window. Aladin recognizes only the standard HEALPix format with the file
 extension ``.fits.gz``. Here we will work with the `LALinference sky map of
 GW170817`_.
 
-3. Building a Credible Region
------------------------------
+Building a Credible Region
+--------------------------
 
 The sequence of the Aladin Desktop commands to create a credible region at a
-defined confidence level is reported below. From the main menu press
+defined confidence level is described below. From the menu bar, select
 :menuselection:`Coverage --> Generate a MOC based on --> The current
-probability skymap --> MOC generation`
+probability skymap`
 
 .. figure:: /_static/aladin_fig1.png
    :alt: Create a MOC from a GW sky localization
 
-The :guilabel:`MOC generation` window requires two mandatory parameters 1) the
-probability sky map and 2) the threshold. The probability sky map entry, that
-means the GW sky localization in our context, can be selected from the
-drop-down menu. The drop-down menu contains the GW sky localization previously
-loaded and showed in the Aladin Stack. The threshold input represents the
-percentage of the credible region in decimal (ranging from 0 to 1). Press the
-:guilabel:`CREATE` button to generate the resulting credible region. The
-credible region is created and loaded in the Aladin Stack. The credible region
-obtained so far are encoded in the Multi Order Coverage map (MOC) and each new
-level can be independently used.
+The :guilabel:`MOC generation` window has two options: the probability sky map
+and the threshold. Make sure that the GW sky map that we loaded in the previous
+step is selected in the probably sky maps dropdown menu. The drop-down menu
+contains the GW sky localization previously loaded and showed in the Aladin
+Stack. Then enter a probability threshold between 0 and 1. Finally, press the
+:guilabel:`CREATE` button. The MOC for the credible region is created and
+loaded in the Aladin Stack. If you repeat this process multiple times for
+different credible levels, then you can select each MOC independently from the
+Aladin stack.
 
-4. :guilabel:`Properties` Window
---------------------------------
+:guilabel:`Properties` Window
+-----------------------------
 
 To open the :guilabel:`Properties` window, right click on the selected plan in
 the Aladin stack. The associated :guilabel:`Properties` windows allows to
@@ -122,8 +114,8 @@ list aggregator`_ or you can generate your own HiPS from image/cube data. For
 doing this, from the main menu press :menuselection:`Tool --> Generate a HiPS
 based on --> An image collections (FITS, JPEG, PNG)`
 
-5. Querying and Filtering a Galaxy Catalog
-------------------------------------------
+Querying and Filtering a Galaxy Catalog
+---------------------------------------
 
 Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a
 three-dimensional probability estimates of sky location and luminosity distance
@@ -183,8 +175,7 @@ Aladin stack any image background to obtain the corresponding galaxy images.
 .. _`Aladin Desktop`:  https://aladin.u-strasbg.fr/AladinDesktop/
 .. _`VizieR`:  http://vizier.u-strasbg.fr/index.gml
 .. _`Java Virtual Machine`: https://www.java.com/en/
-.. _`Download instructions`: https://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=downloading
-.. _`here`: https://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=downloading
+.. _`download page`: https://aladin.u-strasbg.fr/java/nph-aladin.pl?frame=downloading
 .. _`script launcher`: https://aladin.u-strasbg.fr/java/Aladin
 .. _`GraceDB`: https://gracedb.ligo.org/
 .. _`LALinference sky map of GW170817`: https://dcc.ligo.org/public/0157/P1800381/006/GW170817_skymap.fits.gz
