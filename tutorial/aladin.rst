@@ -1,5 +1,5 @@
-Sky Map Visualizations and Credible Regions
-===========================================
+Sky Map Visualizations and Credible Regions in Aladin
+=====================================================
 
 In this section, we demonstrate some basic strategies for working with
 gravitational-wave sky localizations in `Aladin Desktop`_. The following main
