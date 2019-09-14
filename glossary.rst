@@ -79,6 +79,12 @@ Glossary
         in the hypothetical "mass gap" between neutron stars and black holes,
         defined here as 3-5 solar masses.
 
+    MOC
+        Multi-Order Coverage map, a format to describe the coverage of an
+        arbitrary region on the unit sphere. A MOC consists of a list of
+        :term:`HEALPix` cells at different depths. For the specification, see
+        the `HiPS IVOA Recommendation <http://www.ivoa.net/documents/HiPS/>`_.
+
     NSBH
         Neutron star black hole, a binary system composed of one neutron star
         and one black hole.

@@ -11,7 +11,7 @@ MOC and GW Sky Localizations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The enclosed area within a given probability level contour of a GW sky map can
-be effectively described through the Multi-Order Coverage (MOC) method
+be effectively described through the Multi-Order Coverage (:term:`MOC`) method
 [#Fernique15]_. It is a standard of the Virtual Observatory which provides a
 multi-scale mapping based on HEALPix sky tessellation.
 
