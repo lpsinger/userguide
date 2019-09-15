@@ -118,8 +118,23 @@ Then you can manually invoke your GCN handler using this Python code:
 .. testsetup::
 
     import os
+    import unittest.mock
+    import urllib.parse
+    from urllib.request import urlopen
+
     old_dir = os.getcwd()
     os.chdir('_static')
+
+    def patched_urlopen(url, *args, **kwargs):
+        parsed_url = urllib.parse.urlparse(url)
+        dirname, basename = os.path.split(parsed_url.path)
+        if parsed_url.netloc != 'emfollow.docs.ligo.org' \
+                or dirname != '/userguide/_static':
+            return urlopen(url, *args, **kwargs)
+        return urlopen('file:{}'.format(basename), 'rb')
+
+    patcher = unittest.mock.patch('urllib.request.urlopen', patched_urlopen)
+    patcher.start()
 
 .. testcode::
 
@@ -158,5 +173,6 @@ Upon running this, you should see:
 .. testcleanup::
 
     os.chdir(old_dir)
+    patcher.stop()
 
 .. _curl: https://curl.haxx.se
