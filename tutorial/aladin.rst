@@ -82,6 +82,7 @@ probability skymap`.
 
 .. figure:: /_static/aladin_fig1.png
    :alt: Create a MOC from a GW sky localization
+   :width: 800
 
 The :guilabel:`MOC generation` window has two options: the probability sky map
 and the threshold. Make sure that the GW sky map that we loaded in the previous
@@ -106,6 +107,7 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 
 .. figure:: /_static/aladin_fig2.png
    :alt: Properties window
+   :width: 800
 
 ..  Querying and Filtering a Galaxy Catalog
     ---------------------------------------
@@ -129,6 +131,7 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 
     .. figure:: /_static/aladin_fig3.png
        :alt:  Aladin data collection tree
+       :width: 800
 
     Now we can filter the galaxy catalog. From the main menu press
 
@@ -145,6 +148,7 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 
     .. figure:: /_static/aladin_filter.png
        :alt: Aladin filter
+       :width: 800
 
     Finally, make thumbnails of the selected galaxies. From the main menu press
     :menuselection:`Tool --> Thumbnail view generator` download and select in the
@@ -152,6 +156,7 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 
     .. figure:: /_static/aladin_fig4.png
        :alt: Thumbnail view generator
+       :width: 800
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
 .. |A&A|  replace:: *Astronomy & Astrophysics*
