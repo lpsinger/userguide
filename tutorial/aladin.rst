@@ -107,51 +107,51 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 .. figure:: /_static/aladin_fig2.png
    :alt: Properties window
 
-Querying and Filtering a Galaxy Catalog
----------------------------------------
+..  Querying and Filtering a Galaxy Catalog
+    ---------------------------------------
 
-Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a
-three-dimensional probability estimates of sky location and luminosity distance
-from observations of binary compact object mergers with Advanced LIGO and
-Virgo. Combining the reconstructed gravitational wave volumes with positions
-and redshifts of possible host galaxies provides a filtered list of sky
-location targets to search for the electromagnetic counterpart of the
-gravitational wave signal. At present it is not implemented in Aladin a catalog
-query by the GW three-dimensional posterior probability distribution. What we
-can currently achieve is to query the entire galaxy catalog and, afterwards, to
-filter the selection. Here a cut-distance filter is applied taking into account
-the marginal distance posterior distribution integrated over the whole sky.
-These tasks are efficiently performed in the Aladin Desktop using the data
-collections tree and the filter methods as follows.
+    Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a
+    three-dimensional probability estimates of sky location and luminosity distance
+    from observations of binary compact object mergers with Advanced LIGO and
+    Virgo. Combining the reconstructed gravitational wave volumes with positions
+    and redshifts of possible host galaxies provides a filtered list of sky
+    location targets to search for the electromagnetic counterpart of the
+    gravitational wave signal. At present it is not implemented in Aladin a catalog
+    query by the GW three-dimensional posterior probability distribution. What we
+    can currently achieve is to query the entire galaxy catalog and, afterwards, to
+    filter the selection. Here a cut-distance filter is applied taking into account
+    the marginal distance posterior distribution integrated over the whole sky.
+    These tasks are efficiently performed in the Aladin Desktop using the data
+    collections tree and the filter methods as follows.
 
-:menuselection:`Aladin data collections tree --> Select --> click on the
-catalog item --> in the popup window check --> by region & MOC`
+    :menuselection:`Aladin data collections tree --> Select --> click on the
+    catalog item --> in the popup window check --> by region & MOC`
 
-.. figure:: /_static/aladin_fig3.png
-   :alt:  Aladin data collection tree
+    .. figure:: /_static/aladin_fig3.png
+       :alt:  Aladin data collection tree
 
-Now we can filter the galaxy catalog. From the main menu press
+    Now we can filter the galaxy catalog. From the main menu press
 
-:menuselection:`Catalog --> Create a filter--> Properties --> Advanced mode -->
-Or enter your filter definition`
+    :menuselection:`Catalog --> Create a filter--> Properties --> Advanced mode -->
+    Or enter your filter definition`
 
-An example about the Aladin filter using as galaxy selection the marginal
-distance posterior distribution integrated over the whole sky is reported
-below: ``${Dist} > DISTMEAN-DISTSTD && ${Dist} < DISTMEAN+DISTSTD {draw}``. The
-posterior mean distance (Mpc) and the posterior standard deviation of distance
-(Mpc) are reported in the fits file header with the keywords ``DISTMEAN`` and
-``DISTSTD``. Click on ``Apply`` and then ``Export`` to create a new plane
-consisting only of sources selected by the filter.
+    An example about the Aladin filter using as galaxy selection the marginal
+    distance posterior distribution integrated over the whole sky is reported
+    below: ``${Dist} > DISTMEAN-DISTSTD && ${Dist} < DISTMEAN+DISTSTD {draw}``. The
+    posterior mean distance (Mpc) and the posterior standard deviation of distance
+    (Mpc) are reported in the fits file header with the keywords ``DISTMEAN`` and
+    ``DISTSTD``. Click on ``Apply`` and then ``Export`` to create a new plane
+    consisting only of sources selected by the filter.
 
-.. figure:: /_static/aladin_filter.png
-   :alt: Aladin filter
+    .. figure:: /_static/aladin_filter.png
+       :alt: Aladin filter
 
-Finally, make thumbnails of the selected galaxies. From the main menu press
-:menuselection:`Tool --> Thumbnail view generator` download and select in the
-Aladin stack any image background to obtain the corresponding galaxy images.
+    Finally, make thumbnails of the selected galaxies. From the main menu press
+    :menuselection:`Tool --> Thumbnail view generator` download and select in the
+    Aladin stack any image background to obtain the corresponding galaxy images.
 
-.. figure:: /_static/aladin_fig4.png
-   :alt: Thumbnail view generator
+    .. figure:: /_static/aladin_fig4.png
+       :alt: Thumbnail view generator
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
 .. |A&A|  replace:: *Astronomy & Astrophysics*
@@ -161,9 +161,9 @@ Aladin stack any image background to obtain the corresponding galaxy images.
    Fernique, P., Allen, et al. 2015, |A&A|, 578, A114.
    :doi:`10.1051/0004-6361/201526075`
 
-.. [#Singer16b]
-   Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |apjl|, 829, L15.
-   :doi:`10.3847/2041-8205/829/1/L15`
+..  .. [#Singer16b]
+       Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |apjl|, 829, L15.
+       :doi:`10.3847/2041-8205/829/1/L15`
 
 .. _`Aladin Desktop`:  https://aladin.u-strasbg.fr/AladinDesktop/
 .. _`VizieR`:  http://vizier.u-strasbg.fr/index.gml
