@@ -78,20 +78,19 @@ Building a Credible Region
 The sequence of the Aladin Desktop commands to create a credible region at a
 defined confidence level is described below. From the menu bar, select
 :menuselection:`Coverage --> Generate a MOC based on --> The current
-probability skymap`
+probability skymap`.
 
 .. figure:: /_static/aladin_fig1.png
    :alt: Create a MOC from a GW sky localization
 
 The :guilabel:`MOC generation` window has two options: the probability sky map
 and the threshold. Make sure that the GW sky map that we loaded in the previous
-step is selected in the probably sky maps dropdown menu. The drop-down menu
-contains the GW sky localization previously loaded and showed in the Aladin
-Stack. Then enter a probability threshold between 0 and 1. Finally, press the
-:guilabel:`CREATE` button. The MOC for the credible region is created and
-loaded in the Aladin Stack. If you repeat this process multiple times for
-different credible levels, then you can select each MOC independently from the
-Aladin stack.
+step is selected in the :guilabel:`Proba skymap` dropdown menu. Then enter a
+number between 0 and 1 for the credible level in the :guilabel:`Probability
+threshold` box. Finally, press the :guilabel:`CREATE` button. The MOC for the
+credible region is created and loaded in the Aladin Stack. If you repeat this
+process multiple times for different credible levels, then you can select each
+MOC independently from the Aladin stack.
 
 :guilabel:`Properties` Window
 -----------------------------
