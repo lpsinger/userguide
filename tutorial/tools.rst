@@ -20,7 +20,7 @@ advanced tools for working with GW probability sky maps.
 
 * The rapid sky localization code :doc:`BAYESTAR
   <ligo.skymap:ligo/skymap/bayestar>`, which is used to produce the initial
-  sky maps for CBC events but can also be used to created :doc:`simulated
+  sky maps for CBC events but can also be used to create :doc:`simulated
   sky localizations <ligo.skymap:quickstart/bayestar-injections>`.
 
 * The postprocessing tool that creates updated sky maps from MCMC samples
