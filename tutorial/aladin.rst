@@ -127,7 +127,7 @@ collections tree and the filter methods as follows.
 :menuselection:`Aladin data collections tree --> Select --> click on the
 catalog item --> in the popup window check --> by region & MOC`
 
-  .. figure:: /_static/aladin_fig3.png
+.. figure:: /_static/aladin_fig3.png
    :alt:  Aladin data collection tree
 
 Now we can filter the galaxy catalog. From the main menu press
@@ -143,14 +143,14 @@ posterior mean distance (Mpc) and the posterior standard deviation of distance
 ``DISTSTD``. Click on ``Apply`` and then ``Export`` to create a new plane
 consisting only of sources selected by the filter.
 
-  .. figure:: /_static/aladin_filter.png
+.. figure:: /_static/aladin_filter.png
    :alt: Aladin filter
 
 Finally, make thumbnails of the selected galaxies. From the main menu press
 :menuselection:`Tool --> Thumbnail view generator` download and select in the
 Aladin stack any image background to obtain the corresponding galaxy images.
 
-  .. figure:: /_static/aladin_fig4.png
+.. figure:: /_static/aladin_fig4.png
    :alt: Thumbnail view generator
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
