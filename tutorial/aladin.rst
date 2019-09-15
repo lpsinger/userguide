@@ -58,7 +58,7 @@ page`_.
 
        $ java -Xmx2g -jar Aladin.jar
 
-   The flag ``-Xmx< ammount of memory >`` specifies the maximum memory
+   The flag :samp:`-Xmx{<ammount of memory>}` specifies the maximum memory
    allocation pool for a JVM. Here 2GB of memory is allocated. For GW sky
    localizations with ``nside=2048``, increase the memory allocated up to 3GB,
    ``-Xmx3g``.
