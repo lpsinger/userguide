@@ -108,11 +108,6 @@ windows.
 .. figure:: /_static/aladin_fig2.png
    :alt: Properties window
 
-You can overlap a large data set of image backgrounds provided by the `HiPS
-list aggregator`_ or you can generate your own HiPS from image/cube data. For
-doing this, from the main menu press :menuselection:`Tool --> Generate a HiPS
-based on --> An image collections (FITS, JPEG, PNG)`
-
 Querying and Filtering a Galaxy Catalog
 ---------------------------------------
 
