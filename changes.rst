@@ -1,14 +1,8 @@
 Change Log
 ==========
 
-Version 11 (unreleased)
+Version 11 (2019-09-15)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
 
 .. rubric:: Data Analysis
 
