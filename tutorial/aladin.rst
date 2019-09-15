@@ -92,18 +92,17 @@ credible region is created and loaded in the Aladin Stack. If you repeat this
 process multiple times for different credible levels, then you can select each
 MOC independently from the Aladin stack.
 
-:guilabel:`Properties` Window
+Area Within a Credible Region
 -----------------------------
 
-To open the :guilabel:`Properties` window, right click on the selected plan in
-the Aladin stack. The associated :guilabel:`Properties` windows allows to
-change the drawing methods in perimeter in order to simultaneously visualize
-multiple confidence levels. This operation facilitates tiling operations by
-telescopes monitoring the highest probability areas. The enclosed sky area in
-square degrees and the percentage of the sky coverage are quoted for each
-credible region either **i)** by leaving the cursor on the corresponding plan
-loaded in the Aladin stack or **ii)** by opening the associated Properties
-windows.
+There are two ways to get the area within a MOC credible region. If you hover
+over the cursor over the MOC name in the Aladin stack, then the area in square
+degrees and the percentage of the sky are shown in the top-right corner of the
+Aladin window. Alternatively, you can right-click the MOC in the Aladin stack
+and select :guilabel:`Properties` from the contextual menu. The area and
+percentage of the sky are shown in the :guilabel:`Properties` dialog box. From
+this dialog box, you can also control the appearance and color of the MOC,
+which is useful for distinguishing multiple MOCs for different credible levels.
 
 .. figure:: /_static/aladin_fig2.png
    :alt: Properties window
