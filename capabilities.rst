@@ -116,5 +116,6 @@ advancement of the sensitivity of the instruments compared to projections in
 .. [#O3ObservingScenarios]
    LIGO Scientific Collaboration & Virgo Collaboration 2018, *Prospects for
    Observing and Localizing Gravitational-Wave Transients with Advanced LIGO,
-   Advanced Virgo and KAGRA*. https://arxiv.org/abs/1304.0670
+   Advanced Virgo and KAGRA*.
+   :arxiv:`1304.0670`
 
