@@ -100,8 +100,7 @@ advancement of the sensitivity of the instruments compared to projections in
 
 .. [#WhitePaper]
    LIGO Scientific Collaboration & Virgo Collaboration 2018, *The LSC-Virgo
-   White Paper on Gravitational Wave Data Analysis and Astrophysics*, LIGO
-   Document T1800058-v1.
+   White Paper on Gravitational Wave Data Analysis and Astrophysics*.
    :dcc:`T1800058-v1`
 
 .. [#LivingReview]
@@ -110,8 +109,7 @@ advancement of the sensitivity of the instruments compared to projections in
 
 .. [#CurrentO3Schedule]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Current O3
-   Schedule*, LIGO Document G1901531-v1.
-   :dcc:`G1901531-v1`
+   Schedule*. :dcc:`G1901531-v1`
 
 .. [#O3ObservingScenarios]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Prospects for
