@@ -179,7 +179,7 @@ such as ``bayestar.fits.gz``, always points to the most recent version.
     A new variant of the HEALPix format that is designed to overcome
     limitations of the ``*.fits.gz`` format for well-localized events from
     three-detector operations and future gravitational-wave facilities (see
-    `rationale`_). It uses HEALPix :ref:`explicit indexing
+    rationale in :dcc:`G1800186`). It uses HEALPix :ref:`explicit indexing
     <gamma-astro-data-formats:hpx_explicit>` and the `NUNIQ numbering scheme`_,
     which is closely related to `multi-order coverage (MOC) maps`_ in Aladin.
     This is the internal format that is used by the LIGO/Virgo low-latency
@@ -410,7 +410,6 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`NESTED numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION410
 .. _`NUNIQ numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION420
 .. _`multi-order coverage (MOC) maps`: http://ivoa.net/documents/MOC/
-.. _`rationale`: https://dcc.ligo.org/LIGO-G1800186/public
 .. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
 .. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
 .. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html

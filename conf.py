@@ -189,6 +189,7 @@ autosectionlabel_prefix_document = True
 
 extlinks = {
     'arxiv': ('https://arxiv.org/abs/%s', 'arXiv:'),
+    'dcc': ('https://dcc.ligo.org/%s/public', 'LIGO-'),
     'doi': ('https://doi.org/%s', 'doi:')
 }
 
