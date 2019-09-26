@@ -12,7 +12,7 @@ the following external documents:
 * Living Review [#LivingReview]_ on prospects for observing and localizing
   gravitational-wave transients with Advanced LIGO, Advanced Virgo, and
   :term:`KAGRA`
-* Working Plan Towards O3 [#WorkingPlanTowardsO3]_
+* Current O3 Schedule [#CurrentO3Schedule]_
 
 Timeline
 --------
@@ -34,7 +34,7 @@ During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
 Virgo) will observe for one year. It is possible that the Japanese KAGRA
 detector may come online and become part of the international
 gravitational-wave network at some point during O3. The near-term observing
-schedule is shown below, reproduced from [#WorkingPlanTowardsO3]_.
+schedule is shown below, reproduced from [#CurrentO3Schedule]_.
 
 .. figure:: _static/O3Schedule.*
    :alt: Current observing schedule
@@ -108,10 +108,10 @@ advancement of the sensitivity of the instruments compared to projections in
    Abbott, B. P., Abbott, R., Abbott, T. D., et al. 2018, |LRR|, 21, 3.
    :doi:`10.1007/s41114-018-0012-9`
 
-.. [#WorkingPlanTowardsO3]
-   LIGO Scientific Collaboration & Virgo Collaboration 2018, *LIGO-Virgo
-   Working Plan Towards O3*, LIGO Document G1801056-v4.
-   :dcc:`G1801056-v4`
+.. [#CurrentO3Schedule]
+   LIGO Scientific Collaboration & Virgo Collaboration 2019, *Current O3
+   Schedule*, LIGO Document G1901531-v1.
+   :dcc:`G1901531-v1`
 
 .. [#O3ObservingScenarios]
    LIGO Scientific Collaboration & Virgo Collaboration 2018, *Prospects for
