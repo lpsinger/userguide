@@ -17,7 +17,7 @@ the following external documents:
 Timeline
 --------
 
-The gravitational-wave observing schedules is divided into Observing Runs,
+The gravitational-wave observing schedule is divided into Observing Runs,
 epochs of months to years of operation at fixed sensitivity; down time for
 construction and commissioning; and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
