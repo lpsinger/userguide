@@ -207,7 +207,7 @@ intersphinx_mapping = {
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),
     'numpy': ('https://docs.scipy.org/doc/numpy/', None),
     'python': ('https://docs.python.org/', None),
-    'requests': ('http://docs.python-requests.org/en/stable/', None)
+    'requests': ('https://requests.readthedocs.io/en/stable/', None)
 }
 
 
