@@ -107,51 +107,71 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 .. figure:: /_static/aladin_fig2.png
    :alt: Properties window
 
-..  Querying and Filtering a Galaxy Catalog
-    ---------------------------------------
+Querying and Filtering a Galaxy Catalog
+---------------------------------------
+Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a 
+three-dimensional probability estimates of sky location and luminosity distance
+from binary compact object mergers. Combining the reconstructed gravitational 
+wave volumes with positions and redshifts of possible host galaxies provides 
+a filtered list of targets. Aladin does not implemented yet a query by the GW 
+three-dimensional posterior probability distribution. Currently, the entire
+catalog is loaded in a credible region and, afterwards, a cut-distance filter 
+is applied. 
 
-    Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a
-    three-dimensional probability estimates of sky location and luminosity distance
-    from observations of binary compact object mergers with Advanced LIGO and
-    Virgo. Combining the reconstructed gravitational wave volumes with positions
-    and redshifts of possible host galaxies provides a filtered list of sky
-    location targets to search for the electromagnetic counterpart of the
-    gravitational wave signal. At present it is not implemented in Aladin a catalog
-    query by the GW three-dimensional posterior probability distribution. What we
-    can currently achieve is to query the entire galaxy catalog and, afterwards, to
-    filter the selection. Here a cut-distance filter is applied taking into account
-    the marginal distance posterior distribution integrated over the whole sky.
-    These tasks are efficiently performed in the Aladin Desktop using the data
-    collections tree and the filter methods as follows.
+Here we query the galaxies collected in the `GLADE catalog`_ inside the 90% 
+credible region of GW170817. Next, they will be filtered according with the 
+marginal distance posterior distribution integrated over the whole sky.
 
-    :menuselection:`Aladin data collections tree --> Select --> click on the
-    catalog item --> in the popup window check --> by region & MOC`
+All data sets published in the Virtual Observatory (over 20,000 data sets) are 
+directly accessible with the left-panel of the main Aladin window. 
+Such element of the GUI is named :guilabel:`data collections tree`.
+The bottom of the :guilabel:`data collections tree` contains a
+box (:guilabel:`select`) and the dropdown menu (:guilabel:`from`) to facilitate 
+archive searches. 
 
-    .. figure:: /_static/aladin_fig3.png
-       :alt:  Aladin data collection tree
+In our context that means to type *GLADE* in the box and 
+choose *-- all collections --* in the dropdown menu. Press :command:`ENTER` 
+to access to the catalog releases. By click on the corresponding item,
+a new contextual window is opened. Taking into account our purpose to query a galaxy
+catalog from a specific credible region, we check the box :guilabel:`by region & MOC`.
+Press the button :guilabel:`LOAD` to complete the task.
 
-    Now we can filter the galaxy catalog. From the main menu press
+.. figure:: /_static/aladin_fig3.png
+   :alt:  Aladin data collection tree
 
-    :menuselection:`Catalog --> Create a filter--> Properties --> Advanced mode -->
-    Or enter your filter definition`
+Now we filter the galaxy list. The posterior mean distance and the posterior 
+standard deviation of distance are reported in the FITS file header with the 
+keywords ``DISTMEAN`` and ``DISTSTD``, respectively. In the case under 
+examination ``DISTMEAN = 38.0 Mpc`` and ``DISTSTD = 7.5 Mpc`` .
 
-    An example about the Aladin filter using as galaxy selection the marginal
-    distance posterior distribution integrated over the whole sky is reported
-    below: ``${Dist} > DISTMEAN-DISTSTD && ${Dist} < DISTMEAN+DISTSTD {draw}``. The
-    posterior mean distance (Mpc) and the posterior standard deviation of distance
-    (Mpc) are reported in the fits file header with the keywords ``DISTMEAN`` and
-    ``DISTSTD``. Click on ``Apply`` and then ``Export`` to create a new plane
-    consisting only of sources selected by the filter.
+Following the `Aladin filter syntax`_, a cut-filter at 1-sigma distance can be 
+written as ``${Dist} > 30.5 && ${Dist} < 45.5 {draw}``. ``Dist`` is the column
+in the GLADE catalog corresponding to the distance in Mpc.
 
-    .. figure:: /_static/aladin_filter.png
-       :alt: Aladin filter
+Once the filter is defined, it can be applied as follows.
+:menuselection:`Catalog --> Create a filter`.
+The :guilabel:`Properties` dialog box contains two tabs; select the 
+:guilabel:`Advanced mode` tab and copy the filter statement in the main box.
+Click on :guilabel:`Apply` and then on :guilabel:`Export` to create a new level
+in the Aladin stack consisting only of sources selected by the filter.
 
-    Finally, make thumbnails of the selected galaxies. From the main menu press
-    :menuselection:`Tool --> Thumbnail view generator` download and select in the
-    Aladin stack any image background to obtain the corresponding galaxy images.
+.. figure:: /_static/aladin_filter.png
+   :alt: Aladin filter
 
-    .. figure:: /_static/aladin_fig4.png
-       :alt: Thumbnail view generator
+Thumbnail View Generator
+------------------------
+Finally, we make a mosaic of the filtered galaxies. 
+:menuselection:`Tool --> Thumbnail view generator`. 
+Here the thumbnails are color composition images of the Digitized Sky Surveys 
+(`DSS`_). 
+
+.. figure:: /_static/aladin_fig4.png
+   :alt: Thumbnail view generator
+
+You can load additional surveys from the `HiPS list aggregator`_.
+As an example, for loading the Two Micron All Sky Survey (`2MASS`_), you just 
+need to copy and paste in the Aladin :guilabel:`Command` box the **Base URL** 
+(http://alasky.u-strasbg.fr/2MASS/Color) reported in the `2MASS preview page`_.
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
 .. |A&A|  replace:: *Astronomy & Astrophysics*
@@ -161,9 +181,9 @@ which is useful for distinguishing multiple MOCs for different credible levels.
    Fernique, P., Allen, et al. 2015, |A&A|, 578, A114.
    :doi:`10.1051/0004-6361/201526075`
 
-..  .. [#Singer16b]
-       Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |apjl|, 829, L15.
-       :doi:`10.3847/2041-8205/829/1/L15`
+.. [#Singer16b]
+   Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |apjl|, 829, L15.
+   :doi:`10.3847/2041-8205/829/1/L15`
 
 .. _`Aladin Desktop`:  https://aladin.u-strasbg.fr/AladinDesktop/
 .. _`VizieR`:  http://vizier.u-strasbg.fr/index.gml
@@ -172,4 +192,10 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 .. _`script launcher`: https://aladin.u-strasbg.fr/java/Aladin
 .. _`GraceDB`: https://gracedb.ligo.org/
 .. _`LALinference sky map of GW170817`: https://dcc.ligo.org/public/0157/P1800381/006/GW170817_skymap.fits.gz
+.. _`GLADE catalog`: http://aquarius.elte.hu/glade/index.html
+.. _`Aladin filter syntax`: http://cdsweb.u-strasbg.fr/boch/doc/filters.htx
+.. _`2MASS preview page` : http://alasky.u-strasbg.fr/2MASS/Color/
 .. _`HiPS list aggregator`: https://aladin.unistra.fr/hips/list
+.. _`DSS`: http://archive.stsci.edu/dss/index.html
+.. _`2MASS`: http://www.ipac.caltech.edu/2mass/
+.. _`preview page`: http://alasky.u-strasbg.fr/2MASS/Color/

@@ -19,6 +19,9 @@ Version 12 (unreleased)
 
 .. rubric:: Sample Code
 
+*  Add instructions for cross-matching sky localizations with galaxy catalogs
+   in Aladin Desktop.
+
 Version 11 (2019-09-15)
 -----------------------
 
