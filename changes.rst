@@ -22,6 +22,8 @@ Version 12 (unreleased)
 *  Remove the documentation for the Fluence parameter from burst alerts because
    it is not currently present in the VOEvents.
 
+*  Update the list of pipeline names that can appear in GCN Notices.
+
 .. rubric:: Sample Code
 
 *  Add instructions for cross-matching sky localizations with galaxy catalogs
