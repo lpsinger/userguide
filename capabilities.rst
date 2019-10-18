@@ -24,7 +24,7 @@ commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
 signals, this figure gives the :term:`BNS range` for each observing run.
 
-.. figure:: _static/Scripts_Figure2_ObsScen_fig2_final.*
+.. figure:: _static/observing-scenarios-timeline.*
    :alt: Long-term observing schedule
 
 Engineering Run 14 (ER14) started on 2019-03-04. The transition into Observing
