@@ -109,68 +109,70 @@ which is useful for distinguishing multiple MOCs for different credible levels.
 
 Querying and Filtering a Galaxy Catalog
 ---------------------------------------
-Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a 
-three-dimensional probability estimates of sky location and luminosity distance
-from binary compact object mergers. Combining the reconstructed gravitational 
-wave volumes with positions and redshifts of possible host galaxies provides 
-a filtered list of targets. Aladin does not implemented yet a query by the GW 
-three-dimensional posterior probability distribution. Currently, the entire
-catalog is loaded in a credible region and, afterwards, a cut-distance filter 
-is applied. 
 
-Here we query the galaxies collected in the `GLADE catalog`_ inside the 90% 
-credible region of GW170817. Next, they will be filtered according with the 
+Singer et al. [#Singer16b]_ discuss a fast algorithm for obtaining a
+three-dimensional probability estimates of sky location and luminosity distance
+from binary compact object mergers. Combining the reconstructed gravitational
+wave volumes with positions and redshifts of possible host galaxies provides
+a filtered list of targets. Aladin does not implemented yet a query by the GW
+three-dimensional posterior probability distribution. Currently, the entire
+catalog is loaded in a credible region and, afterwards, a cut-distance filter
+is applied.
+
+Here we query the galaxies collected in the `GLADE catalog`_ inside the 90%
+credible region of GW170817. Next, they will be filtered according with the
 marginal distance posterior distribution integrated over the whole sky.
 
-All data sets published in the Virtual Observatory (over 20,000 data sets) are 
-directly accessible with the left-panel of the main Aladin window. 
+All data sets published in the Virtual Observatory (over 20,000 data sets) are
+directly accessible with the left-panel of the main Aladin window.
 Such element of the GUI is named :guilabel:`data collections tree`.
 The bottom of the :guilabel:`data collections tree` contains a
-box (:guilabel:`select`) and the dropdown menu (:guilabel:`from`) to facilitate 
-archive searches. 
+box (:guilabel:`select`) and the dropdown menu (:guilabel:`from`) to facilitate
+archive searches.
 
-In our context that means to type *GLADE* in the box and 
-choose *-- all collections --* in the dropdown menu. Press :command:`ENTER` 
-to access to the catalog releases. By click on the corresponding item,
-a new contextual window is opened. Taking into account our purpose to query a galaxy
-catalog from a specific credible region, we check the box :guilabel:`by region & MOC`.
-Press the button :guilabel:`LOAD` to complete the task.
+In our context that means to type *GLADE* in the box and choose *-- all
+collections --* in the dropdown menu. Press :command:`ENTER` to access to the
+catalog releases. By click on the corresponding item, a new contextual window
+is opened. Taking into account our purpose to query a galaxy catalog from a
+specific credible region, we check the box :guilabel:`by region & MOC`. Press
+the button :guilabel:`LOAD` to complete the task.
 
 .. figure:: /_static/aladin_fig3.png
    :alt:  Aladin data collection tree
 
-Now we filter the galaxy list. The posterior mean distance and the posterior 
-standard deviation of distance are reported in the FITS file header with the 
-keywords ``DISTMEAN`` and ``DISTSTD``, respectively. In the case under 
+Now we filter the galaxy list. The posterior mean distance and the posterior
+standard deviation of distance are reported in the FITS file header with the
+keywords ``DISTMEAN`` and ``DISTSTD``, respectively. In the case under
 examination ``DISTMEAN = 38.0 Mpc`` and ``DISTSTD = 7.5 Mpc`` .
 
-Following the `Aladin filter syntax`_, a cut-filter at 1-sigma distance can be 
+Following the `Aladin filter syntax`_, a cut-filter at 1-sigma distance can be
 written as ``${Dist} > 30.5 && ${Dist} < 45.5 {draw}``. ``Dist`` is the column
 in the GLADE catalog corresponding to the distance in Mpc.
 
 Once the filter is defined, it can be applied as follows.
-:menuselection:`Catalog --> Create a filter`.
-The :guilabel:`Properties` dialog box contains two tabs; select the 
-:guilabel:`Advanced mode` tab and copy the filter statement in the main box.
-Click on :guilabel:`Apply` and then on :guilabel:`Export` to create a new level
-in the Aladin stack consisting only of sources selected by the filter.
+:menuselection:`Catalog --> Create a filter`. The :guilabel:`Properties` dialog
+box contains two tabs; select the :guilabel:`Advanced mode` tab and copy the
+filter statement in the main box. Click on :guilabel:`Apply` and then on
+:guilabel:`Export` to create a new level in the Aladin stack consisting only of
+sources selected by the filter.
 
 .. figure:: /_static/aladin_filter.png
    :alt: Aladin filter
 
 Thumbnail View Generator
 ------------------------
-Finally, we make a mosaic of the filtered galaxies. 
-:menuselection:`Tool --> Thumbnail view generator`. 
-Here the thumbnails are color composition images of the Digitized Sky Surveys 
-(`DSS`_). 
+
+Finally, we make a mosaic of the filtered galaxies.
+:menuselection:`Tool --> Thumbnail view generator`.
+Here the thumbnails are color composition images of the Digitized Sky Surveys
+(`DSS`_).
 
 .. figure:: /_static/aladin_fig4.png
    :alt: Thumbnail view generator
 
 You can load additional surveys from the `HiPS list aggregator`_.
-As an example, for loading the Two Micron All Sky Survey (`2MASS`_), you just 
-need to copy and paste in the Aladin :guilabel:`Command` box the **Base URL** 
+As an example, for loading the Two Micron All Sky Survey (`2MASS`_), you just
+need to copy and paste in the Aladin :guilabel:`Command` box the **Base URL**
 (http://alasky.u-strasbg.fr/2MASS/Color) reported in the `2MASS preview page`_.
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
