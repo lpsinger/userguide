@@ -169,23 +169,23 @@ marginal distance posterior distribution integrated over the whole sky.
    .. figure:: /_static/aladin_filter.png
       :alt: Aladin filter
 
-Thumbnail View Generator
-------------------------
-
-Finally, we make a mosaic of the filtered galaxies. Select :menuselection:`Tool
---> Thumbnail view generator` from the menubar, then click the :guilabel:`Ok`
-button in the dialog box.
-
-Here the thumbnails are color composition images of the Digitized Sky Surveys
-(`DSS`_).
-
-.. figure:: /_static/aladin_fig4.png
-   :alt: Thumbnail view generator
-
-You can load additional surveys from the `HiPS list aggregator`_.
-As an example, for loading the Two Micron All Sky Survey (`2MASS`_), you just
-need to copy and paste in the Aladin :guilabel:`Command` box the **Base URL**
-(http://alasky.u-strasbg.fr/2MASS/Color) reported in the `2MASS preview page`_.
+.. Thumbnail View Generator
+   ------------------------
+   
+   Finally, we make a mosaic of the filtered galaxies. Select :menuselection:`Tool
+   --> Thumbnail view generator` from the menubar, then click the :guilabel:`Ok`
+   button in the dialog box.
+   
+   Here the thumbnails are color composition images of the Digitized Sky Surveys
+   (`DSS`_).
+   
+   .. figure:: /_static/aladin_fig4.png
+      :alt: Thumbnail view generator
+   
+   You can load additional surveys from the `HiPS list aggregator`_.
+   As an example, for loading the Two Micron All Sky Survey (`2MASS`_), you just
+   need to copy and paste in the Aladin :guilabel:`Command` box the **Base URL**
+   (http://alasky.u-strasbg.fr/2MASS/Color) reported in the `2MASS preview page`_.
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
 .. |A&A|  replace:: *Astronomy & Astrophysics*
