@@ -19,6 +19,9 @@ Version 12 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Remove the documentation for the Fluence parameter from burst alerts because
+   it is not currently present in the VOEvents.
+
 .. rubric:: Sample Code
 
 *  Add instructions for cross-matching sky localizations with galaxy catalogs

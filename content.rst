@@ -99,8 +99,6 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 | CentralFreq       | N/A                                                       | Central frequency in Hz                                           |
 +-------------------+                                                           +-------------------------------------------------------------------+
 | Duration          |                                                           | Duration of burst in s                                            |
-+-------------------+                                                           +-------------------------------------------------------------------+
-| Fluence           |                                                           | Gravitational-wave fluence in erg cm\ :math:`^{-2}`               |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                               |
 | MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                                   |
