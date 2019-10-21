@@ -13,6 +13,8 @@ Version 12 (unreleased)
 *  Update ranges/rates based on up-to-date O3 analysis. Add BBH and NSBH
    ranges. Update O3 and range schedule figures.
 
+*  Add the end date of Observing Run 3 (O3) on 2019-04-01.
+
 .. rubric:: Data Analysis
 
 .. rubric:: Alert Contents
