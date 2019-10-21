@@ -152,7 +152,7 @@ marginal distance posterior distribution integrated over the whole sky.
    keywords ``DISTMEAN`` and ``DISTSTD``, respectively. In the case of
    GW170817, they have the values ``DISTMEAN = 38.0`` and ``DISTSTD = 7.5``.
 
-   Select :menuselection:`Catalog --> Create a filter` from the menubar. This
+   Select :menuselection:`Catalog --> Create a filter` from the menu bar. This
    opens the :guilabel:`Properties` dialog box contains two tabs. Select the
    :guilabel:`Advanced mode` tab and copy the following text into the filter
    definition box::
@@ -173,7 +173,7 @@ marginal distance posterior distribution integrated over the whole sky.
    ------------------------
    
    Finally, we make a mosaic of the filtered galaxies. Select :menuselection:`Tool
-   --> Thumbnail view generator` from the menubar, then click the :guilabel:`Ok`
+   --> Thumbnail view generator` from the menu bar, then click the :guilabel:`Ok`
    button in the dialog box.
    
    Here the thumbnails are color composition images of the Digitized Sky Surveys
