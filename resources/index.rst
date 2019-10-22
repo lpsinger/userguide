@@ -8,3 +8,4 @@ Here are a few additional resources for working with LIGO/Virgo alerts.
 
    ligo.skymap
    aladin
+   app

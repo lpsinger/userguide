@@ -40,6 +40,8 @@ Version 12 (unreleased)
 *  Add instructions for cross-matching sky localizations with galaxy catalogs
    in Aladin Desktop.
 
+*  Add the unofficial iOS Gravitational Wave Events app.
+
 Version 11 (2019-09-15)
 -----------------------
 
