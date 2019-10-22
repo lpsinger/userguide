@@ -80,10 +80,6 @@ below.
 | **KAGRA** | 8–25      | 80-260    | 15-45     | 5-25      |
 +-----------+-----------+-----------+-----------+-----------+
 
-We expect of order 10 :term:`BNS` events over the course of O3. For BNS events, the
-median sky localization accuracy of in terms of the 90% credible area will be
-250–320 deg². 10–15% of BNS mergers will be localized to less than 20 deg².
-
 Event Rates
 -----------
 
@@ -117,4 +113,3 @@ advancement of the sensitivity of the instruments compared to projections in
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Prospects for
    Observing and Localizing Gravitational-Wave Transients with Advanced LIGO,
    Advanced Virgo and KAGRA*. :arxiv:`1304.0670`
-
