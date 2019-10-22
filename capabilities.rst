@@ -22,7 +22,7 @@ epochs of months to years of operation at fixed sensitivity, down time for
 construction and commissioning, and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
-signals, this figure gives the :term:`BNS range` for each observing run.
+signals, this figure gives the BNS :term:`range` for each observing run.
 
 .. figure:: _static/observing-scenarios-timeline.*
    :alt: Long-term observing schedule
@@ -63,22 +63,36 @@ Sensitivity and Sky Localization Accuracy
 The following O3 projections are adapted from the preprint version of the
 Living Review [#O3ObservingScenarios]_ on prospects for observing and
 localizing gravitational-wave transients with Advanced LIGO, Advanced Virgo,
-and KAGRA. The :term:`BNS range` and :term:`burst range` (luminosity distance
-of detectable sources, averaged over sky position and source orientation) given
-the individual detectors' anticipated sensitivities are listed in the table
-below.
+and KAGRA. The table below gives the :term:`range` of each individual detector
+for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers, and unmodeled
+:term:`bursts <burst>`.
 
 +-----------+-----------+-----------+-----------+-----------+
-| Detector  | Range (Mpc)                                   |
+| Detector  | :term:`Range` (Mpc)                           |
 |           +-----------+-----------+-----------+-----------+
-|           | BNS       | BBH       | NSBH      | Burst     |
+|           | BNS       | NSBH      | BBH       | Burst     |
 +===========+===========+===========+===========+===========+
-| **LIGO**  | 110–130   | 990-1200  | 190-240   | 80–90     |
+| **LIGO**  | 110–130   | 190-240   | 990-1200  | 80–90     |
 +-----------+-----------+-----------+-----------+-----------+
-| **Virgo** | 50        | 500       | 90        | 35        |
+| **Virgo** | 50        | 90        | 500       | 35        |
 +-----------+-----------+-----------+-----------+-----------+
-| **KAGRA** | 8–25      | 80-260    | 15-45     | 5-25      |
+| **KAGRA** | 8–25      | 15-45     | 80-260    | 5-25      |
 +-----------+-----------+-----------+-----------+-----------+
+
+These ranges are given for the following fiducial signals:
+
+* BNS: a :math:`1.4 M_\odot + 1.4 M_\odot` merger
+* NSBH: a :math:`10 M_\odot + 1.4 M_\odot` merger
+* BBH: a :math:`30 M_\odot + 30 M_\odot` merger
+* Burst: a monochromatic signal at a frequency of 140 Hz carrying an energy of
+  :math:`E_\mathrm{GW}=10^{-2} M_\odot c^2`.
+
+.. note::
+   The :term:`range` is defined in relation to the :term:`sensitive volume`, or
+   the surveyed space-time volume per unit detector time. The range is neither
+   a luminosity distance nor a comoving distance. Care must be taken when
+   interpreting the range for source classes that are detectable out to
+   cosmologically significant distances (particularly BBH mergers).
 
 Event Rates
 -----------
@@ -113,3 +127,7 @@ advancement of the sensitivity of the instruments compared to projections in
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Prospects for
    Observing and Localizing Gravitational-Wave Transients with Advanced LIGO,
    Advanced Virgo and KAGRA*. :arxiv:`1304.0670`
+
+.. [#DistanceMeasuresInGWCosmology]
+   Chen, H.-Y., Holz, D. E., et al. 2017, *Distance measures in
+   gravitational-wave astrophysics and cosmology*. :arxiv:`1709.08079`

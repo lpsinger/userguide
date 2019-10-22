@@ -9,21 +9,12 @@ Glossary
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
 
-    BNS range
-        A figure of merit to describe the sensitivity of a gravitational-wave
-        detector to :term:`BNS` mergers, defined as the average luminosity
-        distance at which the merger of two :math:`1.4~M_\odot` objects would
-        be detectable with a signal to noise ratio of 8. See also :term:`Burst
-        range`.
-
-    Burst range
-        A figure of merit to describe the sensitivity of a gravitational-wave
-        detector to unmodeled bursts, defined with reference to optimistic
-        models of gravitational wave emissions from stellar collapse as the
-        average luminosity distance at which a monochromatic burst at 150 Hz
-        with a fluence of :math:`E_\mathrm{GW} = 10^{-2} M_\odot c^2` would be
-        detectable with a signal to noise ratio of 8. See also :term:`BNS
-        range`.
+    burst
+        In the context of gravitational waves, a signal candidate that is
+        detected without a template and without prior knowledge of the
+        waveform. Examples of potential sources of gravitational-wave bursts
+        include high mass :term:`BBH` mergers, core-collapse supernovae, and
+        cosmic string cusps.
 
     CBC
         Compact binary coalescence.
@@ -94,10 +85,48 @@ Glossary
         the two component compact objects in a binary, the `primary` is the
         more massive one, i.e., :math:`m_1 \geq m_2`. See :term:`secondary`.
 
+    range
+        A figure of merit to describe the sensitivity of a gravitational-wave
+        detector to a given source population at cosmologically significant
+        distances. It is defined as the radius :math:`R` of a Euclidean sphere
+        with the volume equal to the :term:`sensitive volume` :math:`V_z`. It
+        may be written as:
+
+        .. math::
+
+           R = \left(\frac{3 V_z}{4 \pi}\right)^{1/3}.
+
     secondary
         When referring to the two component compact objects or the masses of
         the two component compact objects in a binary, the `secondary` is the
         less massive one, i.e., :math:`m_2 \leq m_1`. See :term:`primary`.
+
+    sensitive volume
+        A figure of merit for the sensitivity of a gravitational-wave detector
+        or a network of detectors. It is defined as the space-time volume
+        surveyed per unit detector time, and may be expressed as (cf.
+        [#DistanceMeasuresInGWCosmology]_):
+
+        .. math::
+
+           V_\mathrm{z}
+               = \frac{
+                   \int_{z < z^*(\Theta)} p(\Theta) \frac{dV_C}{dz} \frac{dz}{1 + z}
+               }{\int p(\Theta) d\Theta}.
+
+        Here, :math:`\Theta` is the set of parameters that describe the
+        gravitational-wave signal (merger time, sky location, orbital elements,
+        masses, and spins) and :math:`p(\Theta)` is the redshift-independent
+        population model for those parameters. The term :math:`\frac{dV_C}{dz}`
+        is differential comoving volume per unit redshift. The function
+        :math:`z^*(\Theta)` is the *threshold redshift*, or the redshift at
+        which a binary with parameters :math:`\Theta` is just at the limit of
+        detection. The factor of :math:`{1 + z}` in the denominator accounts
+        for time dilation from the source frame to the detector frame.
+
+        If a population of sources occurs at a fixed rate per unit comoving
+        volume per unit proper time :math:`\dot{n}`, then the rate of observed
+        events in the detector frame is :math:`\dot{n} V_z`.
 
     SN
         Supernova.
@@ -130,3 +159,7 @@ Glossary
         receiving VOEvents, used by :term:`GCN`. For the specification, see the
         official `VTP IVOA recommendation
         <http://www.ivoa.net/documents/Notes/VOEventTransport/>`_.
+
+.. [#DistanceMeasuresInGWCosmology]
+   Chen, H.-Y., Holz, D. E., et al. 2017, *Distance measures in
+   gravitational-wave astrophysics and cosmology*. :arxiv:`1709.08079`

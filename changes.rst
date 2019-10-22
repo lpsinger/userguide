@@ -13,6 +13,9 @@ Version 12 (unreleased)
 *  Update ranges/rates based on up-to-date O3 analysis. Add BBH and NSBH
    ranges. Update O3 and range schedule figures.
 
+*  Generalize the definition of the range so that it is unambiguous at high
+   redshift. It is now defined as in :arxiv:`1709.08079`.
+
 *  Add the end date of Observing Run 3 (O3) on 2019-04-01.
 
 .. rubric:: Data Analysis
