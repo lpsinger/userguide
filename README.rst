@@ -2,7 +2,7 @@ LIGO/Virgo Public Alerts User Guide
 ===================================
 
 This Git repository contains the source code for the LIGO/Virgo Public Alerts
-User Guide. For the latest HTML edition of the User Guide, visit
+User Guide. For most recently released HTML edition of the User Guide, visit
 http://emfollow.docs.ligo.org/.
 
 We welcome feedback and suggestions. To report an issue related to the User
