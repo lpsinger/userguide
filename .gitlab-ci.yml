@@ -77,8 +77,11 @@ pages:
     paths:
       - public
     expire_in: 100 years
+  # Only run for stable version tags (e.g. v1.2.3)
   only:
-    - tags
+    - /^v\d+(\.\d+)*$/
+  except:
+    - branches
   dependencies:
     - html
     - latexpdf
