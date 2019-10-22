@@ -19,6 +19,13 @@ Glossary
     CBC
         Compact binary coalescence.
 
+    FAR
+        False alarm rate, a statistic that is used to describe the significance
+        of a gravitational-wave event. It is defined as the rate of accidental
+        events due to detector noise or glitches, in the absence of any
+        astrophysical sources, that are as loud as or louder than the event in
+        question.
+
     FITS
         Flexible Image Transport System, a format for astronomical tables,
         images, and multidimensional data sets.

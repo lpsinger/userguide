@@ -46,7 +46,7 @@ All types of GCN Notices *except for Retraction notices* contain the following
 information, which are described in further detail below:
 
 * Name_: a unique identifier for the candidate
-* Significance_: estimated false alarm rate
+* Significance_: estimated false alarm rate (:term:`FAR`)
 * `Sky localization`_: inferred sky position and (:term:`CBC` candidates only)
   distance
 * Inference_: inferred source classification and properties (:term:`CBC`
@@ -86,7 +86,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Notice Type       | Numerical equivalent of GCN Notice type: :samp:`{{150,151,152,164}}`                                                          |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
-| FAR               | Estimated false alarm rate in Hz                                                                                              |
+| FAR               | Estimated :term:`FAR` in Hz                                                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Sky Map           | Versioned URL of HEALPix FITS sky localization file in the format                                                             |
 |                   | :samp:`https://gracedb.ligo.org/api/superevents/[{{T,M}}]S{YYMMDDabc}/files/{{bayestar,LALInference,cWB}}.fits.gz,{[0-8]}`.   |

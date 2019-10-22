@@ -29,8 +29,8 @@ event is decided by applying the following rules, in order:
    preferred over single-interferometer events.
 3. In the case of multiple CBC events with the same number of participating
    interferometers, the event with the highest :term:`SNR` is preferred. In the
-   case of multiple Burst events, the event with the lowest false alarm rate
-   (FAR) is preferred.
+   case of multiple Burst events, the event with the lowest :term:`FAR` is
+   preferred.
 
 See also the :ref:`preferred event selection flow chart
 <gwcelery.tasks.superevents:Selection of the preferred event>` in our software

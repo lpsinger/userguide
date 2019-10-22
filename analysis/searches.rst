@@ -37,7 +37,7 @@ find gravitational waves from compact binaries in low-latency. It uses a
 likelihood ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
 distribution of likelihood-ratios in noise. This distribution can then be used
-to compute a false alarm rate and p-value.
+to compute a :term:`FAR` and p-value.
 
 **MBTA** [#MBTA]_ constructs its background by making every possible
 coincidence from single detector triggers over a few hours of recent data. It
@@ -115,10 +115,10 @@ consider GRBs up to one second before or up to 5 seconds after the GW.
 | | (SNEWS)             |           |           |                                                                 |
 +-----------------------+-----------+-----------+-----------------------------------------------------------------+
 
-In addition, RAVEN will calculate coincident false alarm rates, one including
-only timing information (temporal) and one including GRB/GW sky map
-information (space-time) as well. RAVEN is currently under review
-and is planned to be able to trigger preliminary alerts once this is finished.
+In addition, RAVEN will calculate coincident :term:`FARs <FAR>`, one including
+only timing information (temporal) and one including GRB/GW sky map information
+(space-time) as well. RAVEN is currently under review and is planned to be able
+to trigger preliminary alerts once this is finished.
 
 **LLAMA** [#LLAMA1]_ [#LLAMA2]_ The `Low-Latency Algorithm for Multi-messenger
 Astrophysics <http://gwhen.com>`__

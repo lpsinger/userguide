@@ -20,6 +20,8 @@ Version 12 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Document the false alarm rate threshold for public alerts.
+
 .. rubric:: Alert Contents
 
 *  Remove the documentation for the Fluence parameter from burst alerts because
