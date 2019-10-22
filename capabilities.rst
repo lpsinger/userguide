@@ -99,12 +99,13 @@ Event Rates
 
 
 See the O3 Observing Scenarios [#O3ObservingScenarios]_ paper for LIGO and
-Virgo's most current estimates of astrophysical rates of compact binary mergers.
-The detection rate estimates contained in [#LivingReview]_ and later updated in the
-O3 Observing Scenarios [#O3ObservingScenarios]_ paper embody estimates derived from the knowledge of mass,
-spin, and rate distributions available at the time. These estimates are regularly
-revised as our understanding of those distributions is enhanced with additional
-detections. Updates will also take into account the network evolution and actual
+Virgo's most current estimates of astrophysical rates of compact binary
+mergers. The detection rate estimates contained in [#LivingReview]_ and later
+updated in the O3 Observing Scenarios [#O3ObservingScenarios]_ paper embody
+estimates derived from the knowledge of mass, spin, and rate distributions
+available at the time. These estimates are regularly revised as our
+understanding of those distributions is enhanced with additional detections.
+Updates will also take into account the network evolution and actual
 advancement of the sensitivity of the instruments compared to projections in
 [#LivingReview]_.
 
