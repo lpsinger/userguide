@@ -62,7 +62,7 @@ Keivani
 kilonova
 Klimenko
 latencies
-ligo.skymap
+ligo
 Littenberg
 localizations
 Luan
@@ -91,6 +91,7 @@ redshifts
 Robinet
 Roukema
 Sachdev
+skymap
 sinusoidally
 spatial-temporal
 steradian
