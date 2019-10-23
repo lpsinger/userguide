@@ -90,9 +90,7 @@ These ranges are given for the following fiducial signals:
 .. note::
    The :term:`range` is defined in relation to the :term:`sensitive volume`, or
    the surveyed space-time volume per unit detector time. The range is neither
-   a luminosity distance nor a comoving distance. Care must be taken when
-   interpreting the range for source classes that are detectable out to
-   cosmologically significant distances (particularly BBH mergers).
+   a luminosity distance nor a comoving distance.
 
 Event Rates
 -----------
