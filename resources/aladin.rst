@@ -114,11 +114,11 @@ Each gravitational-wave sky map for a :term:`CBC` event provides a
 three-dimensional probability distribution as a function of sky position and
 distance [#Singer16b]_. Cross-matching that distribution with positions and
 redshifts of a galaxy catalog provides a filtered list of of possible host
-galaxies (see :doc:`3d`). Aladin does not yet implement a galaxy catalog query
-by the three-dimensional posterior probability distribution. However, it is
-currently possible in Aladin to search for galaxies within the 2D credible
-region on the sky and, afterwards, apply a distance cut that it independent of
-sky position.
+galaxies (see :doc:`/tutorial/3d`). Aladin does not yet implement a galaxy
+catalog query by the three-dimensional posterior probability distribution.
+However, it is currently possible in Aladin to search for galaxies within the
+2D credible region on the sky and, afterwards, apply a distance cut that it
+independent of sky position.
 
 Here we query the galaxies collected in the `GLADE catalog`_ inside the 90%
 credible region of GW170817. Then we filter those galaxies according to the

@@ -1,7 +1,7 @@
-Additional Tools
-================
+ligo.skymap: Advanced Python Tools for Probability Sky Maps
+===========================================================
 
-The :doc:`ligo.skymap <ligo.skymap:index>` package includes a number of
+The :doc:`ligo.skymap <ligo.skymap:index>` Python package includes a number of
 advanced tools for working with GW probability sky maps.
 
 * Publication-quality astronomical mapmaking built on Astropy

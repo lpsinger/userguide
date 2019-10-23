@@ -21,5 +21,3 @@ tutorial is broken into the following subsections:
    multiorder_skymaps
    observability
    3d
-   aladin
-   tools

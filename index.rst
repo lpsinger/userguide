@@ -42,6 +42,7 @@ Contents
    analysis/index
    content
    tutorial/index
+   resources/index
 
 Appendix
 --------

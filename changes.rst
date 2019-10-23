@@ -29,6 +29,12 @@ Version 12 (unreleased)
 
 .. rubric:: Sample Code
 
+.. rubric:: Additional Resources
+
+*  Created a new section for additional and contributed tools. The
+   :doc:`ligo.skymap </resources/ligo.skymap>` and :doc:`Aladin
+   </resources/aladin>` pages have been moved into this section.
+
 *  Add instructions for cross-matching sky localizations with galaxy catalogs
    in Aladin Desktop.
 
