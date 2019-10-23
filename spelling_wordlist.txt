@@ -62,6 +62,7 @@ Keivani
 kilonova
 Klimenko
 latencies
+ligo.skymap
 Littenberg
 localizations
 Luan
