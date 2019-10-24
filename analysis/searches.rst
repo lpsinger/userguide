@@ -87,15 +87,15 @@ Coincident with External Trigger Search
 ---------------------------------------
 
 **RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
-Coincidence Monitor (RAVEN), a fast search for coincidences between GW and non-GW
-events external to the LIGO collaboration. RAVEN will process alerts for
-gamma-ray bursts (GRBs) from both the *Fermi*-GBM instrument and the Neil
-Gehrels Swift Observatory, as well as galactic supernova alerts from the
-SNEWS collaboration. Two astronomical events are considered coincident if they
-are within a particular time window of each other, which varies depending on
-which two types of events are being considered (see the table below). Note
-that these time windows are centered on the GW, e.g., [-1,5] s means we
-consider GRBs up to one second before or up to 5 seconds after the GW.
+Coincidence Monitor (RAVEN), a fast search for coincidences between GW and
+non-GW events. RAVEN will process alerts for gamma-ray bursts (GRBs) from both
+the *Fermi*-GBM instrument and the Neil Gehrels Swift Observatory, as well as
+galactic supernova alerts from the SNEWS collaboration. Two astronomical events
+are considered coincident if they are within a particular time window of each
+other, which varies depending on which two types of events are being considered
+(see the table below). Note that these time windows are centered on the GW,
+e.g., [-1,5] s means we consider GRBs up to one second before or up to 5
+seconds after the GW.
 
 +-----------------------+-----------+-----------+-----------------------------------------------------------------+
 | Event Type            | Time window (s)       |     | Notice Type Considered                                    |
