@@ -115,9 +115,9 @@ advancement of the sensitivity of the instruments compared to projections in
 .. |LRR| replace:: *Living Rev. Rel.*
 
 .. [#WhitePaper]
-   LIGO Scientific Collaboration & Virgo Collaboration 2018, *The LSC-Virgo
+   LIGO Scientific Collaboration & Virgo Collaboration 2019, *The LSC-Virgo
    White Paper on Gravitational Wave Data Analysis and Astrophysics*.
-   :dcc:`T1800058-v1`
+   :dcc:`T1900541-v2`
 
 .. [#LivingReview]
    Abbott, B. P., Abbott, R., Abbott, T. D., et al. 2018, |LRR|, 21, 3.
