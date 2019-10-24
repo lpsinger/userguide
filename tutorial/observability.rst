@@ -25,7 +25,7 @@ determine which pixels are visible from that site at that time, and integrate
    example will illustrate one key function of HEALPix (looking up coordinates
    of the grid with :func:`hp.pix2ang <healpy.pixelfunc.pix2ang>`) and some of
    the key positional astronomy functions with Astropy. For more advanced
-   functionality, we recommend the astroplan_ package.
+   functionality, we recommend the :doc:`astroplan <astroplan:index>` package.
 
 ::
 
@@ -119,5 +119,3 @@ it will print something like the following (note that probability will change
 as a function of time):
 
     Source has a 76% chance of being observable now
-
-.. _astroplan: https://astroplan.readthedocs.io/

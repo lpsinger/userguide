@@ -361,10 +361,10 @@ Circular will provide a 90% containment ellipse. For details of the ellipse
 fitting algorithm, see :mod:`ligo.skymap.postprocess.ellipse`.
 
 The ellipse is described in the format of a `DS9 region string`_. Many tools
-can read DS9 region strings, including `DS9`_, `Aladin`_, `astropy-regions`_,
-and `pyregion`_. The region string contains the right ascension, declination,
-semi-major axis, semi-minor axis, position angle of the semi-minor axis). Here
-is an example::
+can read DS9 region strings, including `DS9`_, `Aladin`_, :doc:`astropy-regions
+<astropy-regions:index>`, and :doc:`pyregion <pyregion:index>`. The region
+string contains the right ascension, declination, semi-major axis, semi-minor
+axis, position angle of the semi-minor axis). Here is an example::
 
     icrs; ellipse(03h08m25s, -45d08m14s, 9d, 3d, 112d)
 
@@ -416,8 +416,6 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`DS9 region string`: http://ds9.si.edu/doc/ref/region.html
 .. _`DS9`: http://ds9.si.edu/
 .. _`Aladin`: https://aladin.u-strasbg.fr/
-.. _`astropy-regions`: https://astropy-regions.readthedocs.io/
-.. _`pyregion`: https://pyregion.readthedocs.io/
 
 .. |apj| replace:: *Astrophys. J.*
 
