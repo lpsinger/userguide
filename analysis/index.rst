@@ -120,12 +120,12 @@ automatic, some preliminary alerts may be retracted after human inspection for
 data quality, instrumental conditions, and pipeline behavior.
 
 **Within 24 hours after the GW trigger time** (possibly within 4 hours for
-:term:`BNS` or :term:`NSBH` sources, to be decided), the :doc:`Initial or
-Retraction notice and circular </content>` will be distributed. It will include
-an updated sky localization and source classification. At this stage, the event
-will have been vetted by human instrument scientists and analysts. The
-candidate will either be **confirmed** by an Initial notice and circular or
-withdrawn by a Retraction notice and circular if the data quality is unsuitable.
+:term:`BNS` or :term:`NSBH` sources), the :doc:`Initial or Retraction notice
+and circular </content>` will be distributed. It will include an updated sky
+localization and source classification. At this stage, the event will have been
+vetted by human instrument scientists and analysts. The candidate will either
+be **confirmed** by an Initial notice and circular or withdrawn by a Retraction
+notice and circular if the data quality is unsuitable.
 
 **Within a day**, black hole mergers will be fully vetted by experts and
 retraction or confirmation status will be reported.
