@@ -46,12 +46,15 @@ coincidence test.
 
 **PyCBC Live** [#PyCBC1]_ [#PyCBC2]_ estimates the noise background by
 performing time-shifted analyses using triggers from a few hours of recent
-data. Single-detector triggers from one of the LIGO detectors are time shifted
-by every possible multiple of 100 ms, thus any resulting coincidence must be
-unphysical given the :math:`\sim 10` ms light travel time between detectors.
-All such coincidences are recorded and assigned a ranking statistic; the false
-alarm rate is then estimated by counting accidental coincidences louder than a
-given candidate, i.e. with a higher statistic value.
+data. Single-detector triggers from one detector are time shifted by every
+possible multiple of 100 ms, thus any resulting coincidence must be unphysical
+given the :math:`\sim 10` ms light travel time between detectors.  All such
+coincidences are recorded and assigned a ranking statistic. The false alarm
+rate is then estimated by counting accidental coincidences ranked higher than a
+given candidate, i.e. with a higher statistic value. When three detectors are
+observing at the time of a particular candidate, the most significant double
+coincidence is selected, and its false alarm rate is modified to take into
+account the data from the remaining detector.
 
 **SPIIR** [#SPIIR]_ [#SPIIRThesis]_ applies summed parallel infinite impulse
 response (IIR) filters to approximate matched-filtering results. It selects
