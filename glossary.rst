@@ -59,8 +59,9 @@ Glossary
         GW+HEN follow-up.
 
     KAGRA
-        Kamioka Gravitational Wave Detector, an underground gravitational-wave
-        detector in the Kamioka mine in Japan.
+        Kamioka Gravitational Wave Detector (see `KAGRA home page
+        <https://gwcenter.icrr.u-tokyo.ac.jp/en/>`_), an underground
+        gravitational-wave detector in the Kamioka mine in Japan.
 
     LHO
         LIGO Hanford Observatory (see `LHO observatory home page
