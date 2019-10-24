@@ -5,9 +5,14 @@ Glossary
 
     BBH
         Binary black hole system, a binary system composed of two black holes.
+        See :term:`BH`.
+
+    BH
+        Black hole.
 
     BNS
         Binary neutron star, a binary system composed of two neutron stars.
+        See :term:`NS`.
 
     burst
         In the context of gravitational waves, a signal candidate that is
@@ -84,9 +89,12 @@ Glossary
         :term:`HEALPix` cells at different depths. For the specification, see
         the `HiPS IVOA Recommendation <http://www.ivoa.net/documents/HiPS/>`_.
 
+    NS
+        Neutron star.
+
     NSBH
         Neutron star black hole, a binary system composed of one neutron star
-        and one black hole.
+        and one black hole. See :term:`NS`, :term:`BH`.
 
     primary
         When referring to the two component compact objects or the masses of

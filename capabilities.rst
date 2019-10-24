@@ -81,11 +81,16 @@ for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers, and unmodeled
 
 These ranges are given for the following fiducial signals:
 
-* BNS: a :math:`1.4 M_\odot + 1.4 M_\odot` merger
-* NSBH: a :math:`10 M_\odot + 1.4 M_\odot` merger
-* BBH: a :math:`30 M_\odot + 30 M_\odot` merger
-* Burst: a monochromatic signal at a frequency of 140 Hz carrying an energy of
-  :math:`E_\mathrm{GW}=10^{-2} M_\odot c^2`.
+BNS
+    A merger of two :math:`1.4 M_\odot` :term:`NSs <NS>`.
+NSBH
+    A merger of a :math:`10 M_\odot` :term:`BH` and a
+    :math:`1.4 M_\odot` :term:`NS`.
+BBH
+    A merger of two :math:`30 M_\odot` :term:`BHs <BH>`.
+Burst
+    A monochromatic signal at a frequency of 140 Hz carrying an energy of
+    :math:`E_\mathrm{GW}=10^{-2} M_\odot c^2`.
 
 .. note::
    The :term:`range` is defined in relation to the :term:`sensitive volume`, or
