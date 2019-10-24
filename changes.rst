@@ -10,8 +10,8 @@ Version 12 (unreleased)
 
 .. rubric:: Observing Capabilities
 
-*  Update ranges/rates based on up-to-date O3 analysis. Add BBH and NSBH
-   ranges. Update O3 and range schedule figures.
+*  Update ranges and rates based on up-to-date O3 analysis. Add BBH and NSBH
+   ranges. Update range and observing schedule figures.
 
 *  Generalize the definition of the range so that it is unambiguous at high
    redshift. It is now defined as in :arxiv:`1709.08079`.
