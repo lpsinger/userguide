@@ -1,12 +1,8 @@
 Change Log
 ==========
 
-Version 12 (unreleased)
+Version 12 (2019-10-24)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
@@ -28,8 +24,6 @@ Version 12 (unreleased)
    it is not currently present in the VOEvents.
 
 *  Update the list of pipeline names that can appear in GCN Notices.
-
-.. rubric:: Sample Code
 
 .. rubric:: Additional Resources
 
