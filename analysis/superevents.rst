@@ -11,9 +11,17 @@ At any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
 
-The preferred event may change after a preliminary alert has been sent, but the
-name of the superevent will stay the same. The naming scheme is described in
+The naming scheme is described in
 the `alert contents <../content.html#name>`_ section.
+The superevent accumulates event candidates from the
+:doc:`search pipelines </analysis/searches>` and updates its preferred event as
+more significant event candidates are reported (see :ref:`preferred-event`). The
+name of the superevent does not change. The naming scheme is described
+in the `alert contents <../content.html#name>`_ section. Once a preferred event
+passes the public alert threshold, a preliminary is sent. After this, the preferred
+event is frozen.
+
+.. _preferred-event:
 
 Selection of the Preferred Event
 --------------------------------
