@@ -16,7 +16,7 @@ Version 12 (unreleased)
 *  Generalize the definition of the range so that it is unambiguous at high
    redshift. It is now defined as in :arxiv:`1709.08079`.
 
-*  Add the end date of Observing Run 3 (O3) on 2019-04-01.
+*  Add the end date of Observing Run 3 (O3) on 2020-04-30.
 
 .. rubric:: Data Analysis
 
