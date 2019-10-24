@@ -37,8 +37,9 @@ See also the :ref:`preferred event selection flow chart
 documentation.
 
 .. note::
-   * A Preliminary GCN is automatically issued for superevents when the false
-     alarm rate is lower than a threshold value.
+   * A Preliminary GCN is automatically issued for a superevent if the
+     preferred event's :term:`FAR` is less than the threshold value stated in
+     the :ref:`alert-threshold` section.
    * In case of an event created by a pipeline due to an *offline* analysis, no
      preliminary GCN will be sent.
    * The :term:`SNR` is used to select the preferred event among `CBC`

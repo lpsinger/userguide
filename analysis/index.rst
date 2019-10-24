@@ -143,6 +143,8 @@ pass our public alert thresholds if it is compellingly associated with a
 multimessenger signal (e.g. :term:`GRB`, core-collapse :term:`SN`). In this
 case, :doc:`Initial notices and circulars </content>` will be distributed.
 
+.. _alert-threshold:
+
 Alert Threshold
 ---------------
 
