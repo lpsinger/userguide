@@ -107,7 +107,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                                   |
 |                   | noise, that at least one of the compact objects was a     |                                                                   |
 |                   | neutron star, and that the system ejected a non-zero      |                                                                   |
-|                   | amount of neutron star matter, respectively.              |                                                                   |
+|                   | amount of neutron star matter, respectively               |                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 
 Name
@@ -194,7 +194,7 @@ The inference section is present for :term:`CBC` events *only*. It has two
 parts:
 
 **Classification**: Five numbers, summing to unity, giving probability that the
-source belongs to the following five categories:
+source belongs to the following five mutually exclusive categories:
 
 * :term:`BNS` merger
 * :term:`NSBH` merger
@@ -322,7 +322,9 @@ properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
 NSBH, BBH, or MassGap merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
-  objects is consistent with a neutron star.
+  objects is consistent with a neutron star. Equivalently, the mass of the
+  *secondary* or less massive compact object is consistent with a neutron star,
+  :math:`m_2 \leq 3 M_\odot`.
 * **HasRemnant**: A non-zero amount of neutron star material remained outside
   the final remnant compact object (a necessary but not sufficient condition to
   produce certain kinds of electromagnetic emission such as a short :term:`GRB`

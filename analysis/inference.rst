@@ -11,8 +11,8 @@ Classification
 --------------
 
 The classification consists of five numbers, summing to unity, that give the
-probability that the source is a :term:`BNS`, :term:`NSBH`, :term:`BBH` merger,
-or contains at least one :term:`MassGap <MassGap>` component, or is of
+probability that the source is either a :term:`BNS`, :term:`NSBH`, :term:`BBH`
+merger, or contains at least one :term:`MassGap <MassGap>` component, or is of
 :term:`terrestrial` (i.e. a background fluctuation or a glitch) origin. See the
 :ref:`figure in the alert contents section <classification-diagram>` for the
 boundaries of the source classification categories in the :math:`(m_1, m_2)`
