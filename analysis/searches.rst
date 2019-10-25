@@ -14,9 +14,9 @@ sources.
 Modeled Search
 --------------
 
-**GstLAL**, **MBTAOnline**, **PyCBC Live** and **SPIIR** are matched-filtering
-based analysis pipelines that rapidly identify compact binary merger events,
-with :math:`\lesssim 1` minute latencies. They use discrete banks of waveform
+**GstLAL**, **MBTA**, **PyCBC Live** and **SPIIR** are matched-filtering based
+analysis pipelines that rapidly identify compact binary merger events, with
+:math:`\lesssim 1` minute latencies. They use discrete banks of waveform
 templates to cover the target parameter space of compact binaries, with all
 pipelines covering the mass ranges corresponding to :term:`BNS`, :term:`NSBH`,
 and :term:`BBH` systems.
@@ -25,14 +25,14 @@ A coincident analysis is performed by all pipelines, where candidate events are
 extracted separately from each detector via matched-filtering and later
 combined across detectors. SPIIR extracts candidates from each detector via
 matched-filtering and looks for coherent responses from the other detectors to
-provide source localization. Of the four pipelines, GstLAL and MBTAOnline use
-several banks of matched filters to cover the detectors bandwidth, i.e., the
-templates are split across multiple frequency bands. All pipelines also
-implement different kinds of signal-based vetoes to reject instrumental
-transients that cause large :term:`SNR` values but can otherwise be easily
-distinguished from compact binary coalescence signals.
+provide source localization. Of the four pipelines, GstLAL and MBTA use several
+banks of matched filters to cover the detectors bandwidth, i.e., the templates
+are split across multiple frequency bands. All pipelines also implement
+different kinds of signal-based vetoes to reject instrumental transients that
+cause large :term:`SNR` values but can otherwise be easily distinguished from
+compact binary coalescence signals.
 
-**GSTLAL** [#GSTLAL1]_ [#GSTLAL2]_ is a matched-filter pipeline designed to
+**GstLAL** [#GstLAL1]_ [#GstLAL2]_ is a matched-filter pipeline designed to
 find gravitational waves from compact binaries in low-latency. It uses a
 likelihood ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
@@ -131,11 +131,11 @@ calculation to find joint GW+HEN triggers.
 .. |cqg| replace:: *Class. Quantum Grav.*
 .. |prd| replace:: *Phys. Rev. D*
 
-.. [#GSTLAL1]
+.. [#GstLAL1]
    Messick, C., Blackburn, K., Brady, P., et al. 2017, |prd|, 95, 042001.
    :doi:`10.1103/PhysRevD.95.042001`
 
-.. [#GSTLAL2]
+.. [#GstLAL2]
    Sachdev, S., Caudill, S., Fong, H., et al. 2019.
    :arxiv:`1901.08580`
 
