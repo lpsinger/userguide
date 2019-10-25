@@ -46,7 +46,7 @@ detector network [#cWBLocalization]_. The cWB sky localization is included in
 the preliminary alert.
 
 Refined sky localizations for unmodeled bursts are provided by two algorithms
-that use the same MCMC and nested sampling methodology as LALInference.
+that use the same :term:`MCMC` and nested sampling methodology as LALInference.
 **LALInference Burst (LIB)** [#oLIB]_ models the signal as a single
 sinusoidally modulated Gaussian. **BayesWave** [#BayesWave]_ models the signal
 as a superposition of wavelets and jointly models the background with both a

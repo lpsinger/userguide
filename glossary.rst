@@ -83,6 +83,12 @@ Glossary
         in the hypothetical "mass gap" between neutron stars and black holes,
         defined here as 3-5 solar masses.
 
+    MCMC
+        Markov chain Monte Carlo. A numerical algorithm for sampling complex,
+        multidimensional probability distributions, or for integrating
+        functions of many variables. Used extensively in gravitational-wave
+        parameter estimation.
+
     MOC
         Multi-Order Coverage map, a format to describe the coverage of an
         arbitrary region on the unit sphere. A MOC consists of a list of

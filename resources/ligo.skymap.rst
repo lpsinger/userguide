@@ -23,6 +23,6 @@ advanced tools for working with GW probability sky maps.
   sky maps for CBC events but can also be used to create :doc:`simulated
   sky localizations <ligo.skymap:quickstart/bayestar-injections>`.
 
-* The postprocessing tool that creates updated sky maps from MCMC samples
-  (:doc:`ligo-skymap-from-samples
+* The postprocessing tool that creates updated sky maps from :term:`MCMC`
+  samples (:doc:`ligo-skymap-from-samples
   <ligo.skymap:ligo/skymap/tool/ligo_skymap_from_samples>`)
