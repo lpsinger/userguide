@@ -24,6 +24,7 @@ validate-voevents:
   artifacts:
     paths:
       - _build/$CI_JOB_NAME
+    expire_in: 2 weeks  # P&P circulation period
 
 html:
   <<: *sphinx
