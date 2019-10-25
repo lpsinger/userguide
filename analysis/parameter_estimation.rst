@@ -8,10 +8,10 @@ over the parameters (sky location, distance, and/or intrinsic properties of the
 source) given the observed gravitational-wave signal.
 
 There are different parameter estimation methods for modeled (CBC) and
-unmodeled (Burst) events. However, in both cases there is a rapid analysis that
-estimates only the sky localization, and is ready in seconds, and a refined
-analysis that explores a larger parameter space and completes up to hours or a
-day later.
+unmodeled (:term:`burst`) events. However, in both cases there is a rapid
+analysis that estimates only the sky localization, and is ready in seconds, and
+a refined analysis that explores a larger parameter space and completes up to
+hours or a day later.
 
 Modeled Events
 --------------
