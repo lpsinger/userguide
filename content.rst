@@ -27,7 +27,7 @@ this stage.
 An **Initial GCN Notice** is issued after human vetting (see
 :doc:`/analysis/vetting`). If the signal does not pass human vetting (e.g., it
 is a glitch), then instead of an initial alert there will be a retraction_. The
-initial alert is also accompanied by a GCN Circular which should be considered
+initial alert is also accompanied by a GCN Circular, which should be considered
 as the first formal publication of the candidate and can be cited as such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
@@ -49,8 +49,8 @@ information, which are described in further detail below:
 * Significance_: estimated false alarm rate (:term:`FAR`)
 * `Sky localization`_: inferred sky position and (:term:`CBC` candidates only)
   distance
-* Inference_: inferred source classification and properties (:term:`CBC`
-  candidates only)
+* Inference_: (:term:`CBC` candidates only) inferred source classification and
+  properties
 
 Of the above fields, Retraction notices provide only the name.
 
