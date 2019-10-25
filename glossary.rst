@@ -4,8 +4,8 @@ Glossary
 .. glossary::
 
     BBH
-        Binary black hole system, a binary system composed of two black holes.
-        See :term:`BH`.
+        Binary black hole, a binary system composed of two black holes. See
+        :term:`BH`.
 
     BH
         Black hole.
@@ -33,7 +33,9 @@ Glossary
 
     FITS
         Flexible Image Transport System, a format for astronomical tables,
-        images, and multidimensional data sets.
+        images, and multidimensional data sets. See NASA's FITS Support Office
+        (https://fits.gsfc.nasa.gov) for specifications, software, and
+        documentation.
 
     GCN
         The Gamma-ray Coordinates Network (https://gcn.gsfc.nasa.gov), a portal
