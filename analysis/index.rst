@@ -150,10 +150,12 @@ Alert Threshold
 ---------------
 
 Automated preliminary alerts are sent for all events that pass a false alarm
-rate (:term:`FAR`) threshold. The :term:`FAR` threshold is :math:`4.8 \times
-10^{-8}` Hz (one per 8 months) for :term:`CBC` searches and is :math:`1.1
-\times 10^{-8}` (one per 3 years) for unmodeled burst searches. Since there are
+rate (:term:`FAR`) threshold. The :term:`FAR` threshold is :math:`3.8 \times
+10^{-8}` Hz (one per 10 months) for :term:`CBC` searches and is :math:`7.9
+\times 10^{-9}` (one per 4 years) for unmodeled burst searches. Since there are
 4 independent :term:`CBC` searches and 3 independent :term:`burst` searches,
+as well as a coincidence search :doc:`RAVEN <searches>` that looks at the
+results from both the aforementioned :term:`CBC` and :term:`burst` searches,
 the effective rate of false alarms for :term:`CBC` sources is :math:`1.9 \times
 10^{-7}` Hz (one per 2 months), and for unmodeled bursts is :math:`3.2 \times
 10^{-8}` Hz (one per year).

@@ -12,6 +12,8 @@ Version 14 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Change FAR threshold due to the additional trials from RAVEN.
+
 .. rubric:: Alert Contents
 
 *  Add VOEvent documentation and examples for gravitational-wave events that
