@@ -29,8 +29,8 @@ included in the preliminary alert.
 algorithm. It explores a greatly expanded parameter space including sky
 location, distance, masses, and spins, and performs full forward modeling of
 the gravitational-wave signal and the strain calibration of the
-gravitational-wave detectors. It explores the parameter space using Markov
-chain Monte Carlo and nested sampling. For all events, there is an automated
+gravitational-wave detectors. It explores the parameter space using
+:term:`MCMC` and nested sampling. For all events, there is an automated
 LALInference analysis that uses the least expensive CBC waveform models and
 completes within hours and may be included in a subsequent alert. More
 time-consuming analyses with more sophisticated waveform models are started at
