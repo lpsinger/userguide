@@ -16,8 +16,14 @@ The superevent accumulates event candidates from the
 more significant event candidates are reported (see :ref:`preferred-event`). The
 name of the superevent does not change. The naming scheme is described
 in the `alert contents <../content.html#name>`_ section. Once a preferred event
-passes the public alert threshold, a preliminary is sent. After this, the preferred
-event is frozen.
+candidate passes the public alert threshold (see :ref:`alert-threshold`), it is
+frozen and a preliminary alert is queued using the data products of this preferred
+event. New event candidates are still allowed to be added to the superevent as
+the necessary annotations are completed. Once the preliminary alert
+is received by the GCN broker, the preferred event is revised after
+a `timeout <https://gwcelery.readthedocs.io/en/latest/gwcelery.conf.html#gwcelery.conf.superevent_clean_up_timeout>`_
+and a second preliminary notice is issued. Note that the latter is issued even
+if the preferred event candidate remains unchanged.
 
 .. _preferred-event:
 
@@ -27,13 +33,15 @@ Selection of the Preferred Event
 When multiple online searches report events at the same time, the preferred
 event is decided by applying the following rules, in order:
 
-1. An event from modeled :term:`CBC` searches are preferred over an event from
+1. A *publishable* event, meeting the public alert threshold, is given
+   preference over one that does not meet the criteria.
+2. An event from modeled :term:`CBC` searches is preferred over an event from
    unmodeled Burst searches (see :doc:`Searches </analysis/searches>` for
    details on search pipelines).
-2. In the case of multiple CBC events, three-interferometer events are
+3. In the case of multiple CBC events, three-interferometer events are
    preferred over two-interferometer events, and two-interferometer events are
    preferred over single-interferometer events.
-3. In the case of multiple CBC events with the same number of participating
+4. In the case of multiple CBC events with the same number of participating
    interferometers, the event with the highest :term:`SNR` is preferred. In the
    case of multiple Burst events, the event with the lowest :term:`FAR` is
    preferred.
@@ -46,6 +54,12 @@ documentation.
    * A Preliminary GCN is automatically issued for a superevent if the
      preferred event's :term:`FAR` is less than the threshold value stated in
      the :ref:`alert-threshold` section.
+   * A second Preliminary GCN is usually issued automatically after the first
+     one is successfully dispatched to the GCN broker. However, this may not
+     be sent if the superevent is vetoed on grounds of data quality before the
+     alert is sent.
+   * An additional preliminary notice may be issued by human intervention
+     in case of unexpected circumstances to help in time-sensitive follow-up operations.
    * In case of an event created by a pipeline due to an *offline* analysis, no
      preliminary GCN will be sent.
    * The :term:`SNR` is used to select the preferred event among `CBC`
