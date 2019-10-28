@@ -45,15 +45,17 @@ sections for details).
     plot_data = [[['Rapid Sky Localization', 60 * u.second, 20 * u.second],
                   ['Classification', 75 * u.second, 5 * u.second],
                   ['Automated Vetting', 75 * u.second, 5 * u.second],
-                  ['Set Preferred Event', 60 * u.second, 15 * u.second],
                   ['Original Detection', 0 * u.second, 59.999 * u.second]],
+                 [['Re-annotate', 3.6 * u.min, 1 * u.min], 
+                  ['Cluster additional events', 2.5 * u.min, 1 * u.min]], 
                  [['Classification', 4 * u.hour, 10 * u.minute],
                   ['Human Vetting', 5 * u.minute, 4 * u.hour],
                   ['Parameter Estimation', 75 * u.second, 4 * u.hour]],
                  [['Classification', 6 * u.day, 6 * u.hour],
                   ['Parameter Estimation', 4 * u.hour, 6 * u.day]]]
 
-    alert_labels = ['Preliminary\nAlert Sent',
+    alert_labels = ['1st Preliminary\nAlert Sent',
+                    '2nd Preliminary\nAlert Sent',
                     'Initial Alert or\nRetraction Sent',
                     'Update\nAlert Sent']
     bar_height = 0.8
@@ -112,10 +114,9 @@ sections for details).
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
-**Within 1–10 minutes after GW trigger time**, the first :doc:`preliminary
-notice </content>` will be sent fully autonomously. Preliminary notices may or
-may not include a sky localization. The trigger will be immediately and
-publicly visible in the :term:`GraceDB` database. Since the procedure is fully
+**Within 1–10 minutes after GW trigger time**, the first and second :doc:`preliminary
+notices </content>` will be sent fully autonomously. The trigger will be immediately
+and publicly visible in the :term:`GraceDB` database. Since the procedure is fully
 automatic, some preliminary alerts may be retracted after human inspection for
 data quality, instrumental conditions, and pipeline behavior.
 
