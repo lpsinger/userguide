@@ -37,7 +37,7 @@ the FITS file, download it, and extract the probability sky map:
 
     # Function to call every time a GCN is received.
     # Run only for notices of type
-    # LVC_PRELIMINARY, LVC_INITIAL, or LVC_UPDATE.
+    # LVC_PRELIMINARY, LVC_INITIAL, LVC_UPDATE, or LVC_RETRACTION.
     @gcn.handlers.include_notice_types(
         gcn.notice_types.LVC_PRELIMINARY,
         gcn.notice_types.LVC_INITIAL,
