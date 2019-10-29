@@ -57,7 +57,7 @@ the FITS file, download it, and extract the probability sky map:
                   elem.attrib['value']
                   for elem in root.iterfind('.//Param')}
 
-        # Respond only to 'CBC' events. Change 'CBC' to "Burst'
+        # Respond only to 'CBC' events. Change 'CBC' to 'Burst'
         # to respond to only unmodeled burst events.
         if params['Group'] != 'CBC':
             return
