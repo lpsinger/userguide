@@ -57,6 +57,10 @@ the FITS file, download it, and extract the probability sky map:
                   elem.attrib['value']
                   for elem in root.iterfind('.//Param')}
 
+        if params['AlertType'] == 'Retraction':
+            print(params['GraceID'], 'was retracted')
+            return
+
         # Respond only to 'CBC' events. Change 'CBC' to 'Burst'
         # to respond to only unmodeled burst events.
         if params['Group'] != 'CBC':
