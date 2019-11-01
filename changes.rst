@@ -18,6 +18,9 @@ Version 13 (unreleased)
 
 .. rubric:: Additional Resources
 
+*  Add the `Chirp <https://www.laserlabs.org/chirp.php>`_ mobile app for iOS
+   and Android by Laser Labs.
+
 Version 12 (2019-10-24)
 -----------------------
 
