@@ -11,8 +11,6 @@ At any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
 
-The naming scheme is described in
-the `alert contents <../content.html#name>`_ section.
 The superevent accumulates event candidates from the
 :doc:`search pipelines </analysis/searches>` and updates its preferred event as
 more significant event candidates are reported (see :ref:`preferred-event`). The
