@@ -86,6 +86,8 @@ network of clusters within a 10 ms light travel time window are then analyzed
 with a coherent (i.e., correlated across the detector network) signal model to
 identify possible GW candidate events.
 
+.. note:: oLIB is not currently in operation.
+
 Coincident with External Trigger Search
 ---------------------------------------
 

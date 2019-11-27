@@ -16,6 +16,8 @@ Version 13 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Add a note that the oLIB search is not currently in operation.
+
 .. rubric:: Alert Contents
 
 *  Add a warning that :term:`VOEvent` over anonymous :term:`VTP` is the only
