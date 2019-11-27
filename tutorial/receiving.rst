@@ -14,8 +14,8 @@ this. The example below will handle only 'CBC' events.
 
 .. important::
    Note that mock or 'test' observations are denoted by the ``role="test"``
-   VOEvent attribute. Alerts resulting from real LIGO/Virgo science data will
-   always have ``role="observation"``. The sample code below will respond
+   VOEvent attribute. Alerts resulting from real LIGO/Virgo/KAGRA science data
+   will always have ``role="observation"``. The sample code below will respond
    **only** to 'test' events. When preparing for actual observations, you
    **must remember to switch to 'observation' events**.
 
@@ -94,9 +94,9 @@ we defined above.
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
 
-When you run this script you should receive a sample LIGO/Virgo GCN Notice
-every hour. For each event received it will print output that looks like what
-is shown in the :ref:`offline-testing` example below.
+When you run this script you should receive a sample LIGO/Virgo/KAGRA GCN
+Notice every hour. For each event received it will print output that looks like
+what is shown in the :ref:`offline-testing` example below.
 
 .. note::
    ``gcn.listen`` will try to automatically reconnect if the network connection

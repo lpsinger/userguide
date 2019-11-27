@@ -1,7 +1,7 @@
 Multi-Order Sky Maps (For Advanced Users)
 =========================================
 
-For most events, LIGO/Virgo distributes both the standard :term:`HEALPix`
+For most events, LIGO/Virgo/KAGRA distributes both the standard :term:`HEALPix`
 format with the file extension ``.fits.gz``, as well as an experimental
 multi-resolution HEALPix format, distinguished by the file extension
 ``.multiorder.fits``.
@@ -19,10 +19,10 @@ GW170817. It will get slowly worse as we approach design sensitivity. It’s
 already a major pain if you are studying future detector networks with
 simulations.
 
-It is worth reviewing why LIGO/Virgo has adopted HEALPix rather than a more
-commonplace image format for sky maps in the first place. Gravitational-wave
-localizations are distinguished from many other kinds of astronomical image
-data by the following features:
+It is worth reviewing why LIGO/Virgo/KAGRA has adopted HEALPix rather than a
+more commonplace image format for sky maps in the first place.
+Gravitational-wave localizations are distinguished from many other kinds of
+astronomical image data by the following features:
 
 * The probability regions can subtend large angles.
 * They can wrap around the whole sky.
@@ -45,9 +45,9 @@ gravitational-wave detectors improve in sensitivity and additional detectors
 come online, finer resolutions will be required.
 
 Fortunately, the increased resolution will come at little to no computational
-cost for actually producing localizations because most LIGO/Virgo parameter
-estimation analyses use a simple multi-resolution adaptive mesh refinement
-scheme that limits them to sampling the sky at only about 20k points.
+cost for actually producing localizations because most LIGO/Virgo/KAGRA
+parameter estimation analyses use a simple multi-resolution adaptive mesh
+refinement scheme that limits them to sampling the sky at only about 20k points.
 
 .. figure:: /_static/healpix-mesh-refinement.*
    :alt: HEALPix mesh refinement scheme
@@ -76,8 +76,8 @@ and in terms of memory (up to several gigabytes). The time and memory will
 worsen as localization accuracy improves.
 
 The multi-resolution format is immune to these issues because it is a direct
-representation of the adaptive mesh produced by the LIGO/Virgo localization
-algorithms.
+representation of the adaptive mesh produced by the LIGO/Virgo/KAGRA
+localization algorithms.
 
 The UNIQ Indexing Scheme
 ------------------------
@@ -115,11 +115,11 @@ The inverse is:
 FITS Format for Multi-Order Sky Maps
 ------------------------------------
 
-The FITS format for LIGO/Virgo multi-resolution sky maps uses the **UNIQ**
-indexing scheme and is a superset of the FITS serialization for Multi-Order
-Coverage (MOC) maps specified by IVOA [#HiPSStandard]_ as part of the
-Hierarchical Progressive Survey (HiPS) capability [#HiPSPaper]_, notably used
-by Aladin for storing and display all-sky image mosaics.
+The FITS format for LIGO/Virgo/KAGRA multi-resolution sky maps uses the
+**UNIQ** indexing scheme and is a superset of the FITS serialization for
+Multi-Order Coverage (MOC) maps specified by IVOA [#HiPSStandard]_ as part of
+the Hierarchical Progressive Survey (HiPS) capability [#HiPSPaper]_, notably
+used by Aladin for storing and display all-sky image mosaics.
 
 Let's download an example multi-order FITS file with curl:
 
@@ -187,7 +187,7 @@ Let's look at the FITS header:
    MJD-OBS =    58423.93248442635 / modified Julian date of the observation
    DATE    = '2018-11-01T22:34:49.000000' / UTC date of file creation
    CREATOR = 'BAYESTAR'           / Program that created this file
-   ORIGIN  = 'LIGO/Virgo'         / Organization responsible for this FITS file
+   ORIGIN  = 'LIGO/Virgo/KAGRA'         / Organization responsible for this FITS file
    RUNTIME =     3.24746292643249 / Runtime in seconds of the CREATOR program
    DISTMEAN=    39.76999609489013 / Posterior mean distance (Mpc)
    DISTSTD =    8.308435058808886 / Posterior standard deviation of distance (Mpc)
@@ -317,7 +317,7 @@ The following binary search method of looking up a pixel by sky position
 exploits the algebraic properties of HEALPix. It has a complexity of
 :math:`O(\log N)` where :math:`N` is the number of multi-resolution pixels. It
 assumes that every sky position is mapped on to exactly one multi-resolution
-tile, which is true for LIGO/Virgo multi-resolution sky maps.
+tile, which is true for LIGO/Virgo/KAGRA multi-resolution sky maps.
 
 1.  First, find the **NESTED** pixel index of every multi-resolution tile,
     at an arbitrarily high resolution. (``nside = 2**29`` works nicely

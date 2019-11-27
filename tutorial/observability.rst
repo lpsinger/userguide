@@ -12,12 +12,12 @@ need to import a few extra Python modules::
     import astropy.time
     import astropy.units as u
 
-The LIGO/Virgo probability sky maps are always in equatorial coordinates. Once
-we have looked up the coordinates of the :term:`HEALPix` pixels, we will use
-Astropy to transform those coordinates to a horizontal (altitude–azimuth) frame
-for a particular site on the Earth at a particular time. Then we can quickly
-determine which pixels are visible from that site at that time, and integrate
-(sum) the probability contained in those pixels.
+The LIGO/Virgo/KAGRA probability sky maps are always in equatorial coordinates.
+Once we have looked up the coordinates of the :term:`HEALPix` pixels, we will
+use Astropy to transform those coordinates to a horizontal (altitude–azimuth)
+frame for a particular site on the Earth at a particular time. Then we can
+quickly determine which pixels are visible from that site at that time, and
+integrate (sum) the probability contained in those pixels.
 
 .. note::
    You may want to do something more sophisticated like determine how much of
@@ -114,8 +114,8 @@ Let's run the new GCN handler now...
     # (killed or interrupted with control-C).
     gcn.listen(handler=process_gcn)
 
-When you run this script, each time you receive a sample LIGO/Virgo GCN Notice,
-it will print something like the following (note that probability will change
-as a function of time):
+When you run this script, each time you receive a sample LIGO/Virgo/KAGRA GCN
+Notice, it will print something like the following (note that probability will
+change as a function of time):
 
     Source has a 76% chance of being observable now

@@ -3,7 +3,7 @@
   <Who>
     <Date>2018-11-01T22:34:20</Date>
     <Author>
-      <contactName>LIGO Scientific Collaboration and Virgo Collaboration</contactName>
+      <contactName>LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration</contactName>
     </Author>
   </Who>
   <What>
@@ -11,7 +11,7 @@
       <Description>The Notice Type number is assigned/used within GCN, eg type=163 is an LVC_EARLY_WARNING notice</Description>
     </Param>
     <Param dataType="int" name="internal" value="0">
-      <Description>Indicates whether this event should be distributed to LSC/Virgo members only</Description>
+      <Description>Indicates whether this event should be distributed to LSC/Virgo/KAGRA members only</Description>
     </Param>
     <Param dataType="int" name="Pkt_Ser_Num" value="1">
       <Description>A number that increments by 1 each time a new revision is issued for this event</Description>
@@ -78,7 +78,7 @@
   </What>
   <WhereWhen>
     <ObsDataLocation>
-      <ObservatoryLocation id="LIGO Virgo"/>
+      <ObservatoryLocation id="LIGO Virgo KAGRA"/>
       <ObservationLocation>
         <AstroCoordSystem id="UTC-FK5-GEO"/>
         <AstroCoords coord_system_id="UTC-FK5-GEO">
@@ -97,5 +97,6 @@
     <Description>H1: LIGO Hanford 4 km gravitational wave detector</Description>
     <Description>L1: LIGO Livingston 4 km gravitational wave detector</Description>
     <Description>V1: Virgo 3 km gravitational wave detector</Description>
+    <Description>K1: KAGRA 3 km gravitational wave detector</Description>
   </How>
 </voe:VOEvent>

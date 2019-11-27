@@ -1,8 +1,8 @@
 Working with Sky Maps
 =====================
 
-Let's take a look at what is inside one of the LIGO/Virgo probability sky maps.
-They are FITS image files and can be manipulated and viewed with many
+Let's take a look at what is inside one of the LIGO/Virgo/KAGRA probability sky
+maps. They are FITS image files and can be manipulated and viewed with many
 commonplace FITS tools. However, they are a little unusual in two regards.
 First, since they are all-sky images, they are stored in the :term:`HEALPix`
 [#HEALPixFramework]_ projection, a format that is used for Planck_ all-sky CMB
@@ -78,7 +78,7 @@ tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
    MJD-OBS =    58423.93248442613 / modified Julian date of the observation
    DATE    = '2018-11-01T22:34:49.000000' / UTC date of file creation
    CREATOR = 'BAYESTAR'           / Program that created this file
-   ORIGIN  = 'LIGO/Virgo'         / Organization responsible for this FITS file
+   ORIGIN  = 'LIGO/Virgo/KAGRA'         / Organization responsible for this FITS file
    RUNTIME =     3.24746292643249 / Runtime in seconds of the CREATOR program
    DISTMEAN=    39.76999609489013 / Posterior mean distance (Mpc)
    DISTSTD =    8.308435058808886 / Posterior standard deviation of distance (Mpc)
@@ -100,12 +100,13 @@ tools like funhead_ from Funtools_, imhead_ from WCSTools_, or
 There are several useful pieces of information here:
 
 * ``COORDSYS=C``, telling you that the :term:`HEALPix` projection is in the
-  Celestial (equatorial, ICRS) frame, as all LIGO/Virgo probability sky maps
-  will be.
-* ``OBJECT``, the unique LIGO/Virgo identifier for the event.
+  Celestial (equatorial, ICRS) frame, as all LIGO/Virgo/KAGRA probability sky
+  maps will be.
+* ``OBJECT``, the unique LIGO/Virgo/KAGRA identifier for the event.
 * ``REFERENC``, a link to the candidate page in :term:`GraceDB`.
 * ``INSTRUME``, a list of gravitational-wave sites that triggered on the
-  event: `H1` for LIGO Hanford, `L1` for LIGO Livingston, and `V1` for Virgo.
+  event: `H1` for LIGO Hanford, `L1` for LIGO Livingston, `V1` for Virgo, and
+  `K1` for KAGRA.
 * ``DATE-OBS``, the UTC time of the event. In the case of a compact binary
   coalescence candidate, this is the time that the signal from the merger
   passed through the geocenter.

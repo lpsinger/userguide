@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=LIGOVirgoPublicAlertsUserGuide
+set SPHINXPROJ=LIGOVirgoKAGRAPublicAlertsUserGuide
 
 if "%1" == "" goto help
 

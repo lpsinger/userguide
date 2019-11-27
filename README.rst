@@ -1,9 +1,9 @@
-LIGO/Virgo Public Alerts User Guide
-===================================
+LIGO/Virgo/KAGRA Public Alerts User Guide
+=========================================
 
-This Git repository contains the source code for the LIGO/Virgo Public Alerts
-User Guide. For most recently released HTML edition of the User Guide, visit
-http://emfollow.docs.ligo.org/.
+This Git repository contains the source code for the LIGO/Virgo/KAGRA Public
+Alerts User Guide. For most recently released HTML edition of the User Guide,
+visit http://emfollow.docs.ligo.org/.
 
 We welcome feedback and suggestions. To report an issue related to the User
 Guide, please send an e-mail to emfollow-userguide@support.ligo.org.
@@ -75,12 +75,12 @@ When you are ready to publish a new version, follow these steps:
 5.  **Send an announcement to the OpenLVEM list.** Compose an email starting
     from `a recent example`_ or from the template below:
 
-        Subject: Announcing version *NN* of the LIGO/Virgo Public Alerts User
-        Guide, including *BRIEF PHRASE DESCRIBING MAJOR CHANGES*
+        Subject: Announcing version *NN* of the LIGO/Virgo/KAGRA Public Alerts
+        User Guide, including *BRIEF PHRASE DESCRIBING MAJOR CHANGES*
         
         Dear colleagues,
         
-        We made some changes to the LIGO/Virgo Public Alerts User Guide
+        We made some changes to the LIGO/Virgo/KAGRA Public Alerts User Guide
         (https://emfollow.docs.ligo.org/). The most significant update is *A
         FEW WORDS CALLING ATTENTION TO THE MOST IMPORTANT CHANGES*.
         
@@ -92,7 +92,7 @@ When you are ready to publish a new version, follow these steps:
         
         | Sincerely yours,
         | *YOUR NAME HERE*
-        | for the LIGO and Virgo Collaborations
+        | for the LIGO, Virgo, and KAGRA Collaborations
         |
 
         Version *NN* (*YYYY*-*MM*-*DD*)

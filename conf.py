@@ -22,9 +22,9 @@ from versioneer import get_version
 
 # -- Project information -----------------------------------------------------
 
-project = 'LIGO/Virgo Public Alerts User Guide'
-copyright = '2018-2020, LIGO Scientific Collaboration, Virgo Collaboration'
-author = 'LIGO Scientific Collaboration, Virgo Collaboration'
+project = 'LIGO/Virgo/KAGRA Public Alerts User Guide'
+copyright = '2018-2022, LIGO Scientific Collaboration, Virgo Collaboration, KAGRA Collaboration'
+author = 'LIGO Scientific Collaboration, Virgo Collaboration, KAGRA Collaboration'
 
 # The full version, including alpha/beta/rc tags
 release = get_version()
@@ -91,7 +91,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'description': 'Primer on public alerts for astronomers from the LIGO and Virgo gravitational-wave observatories.',
+    'description': 'Primer on public alerts for astronomers from the LIGO, Virgo, and KAGRA gravitational-wave observatories.',
     'fixed_sidebar': True,
     'show_relbars': True,
     'sidebar_collapse': True
@@ -124,7 +124,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LIGOVirgoPublicAlertsUserGuidedoc'
+htmlhelp_basename = 'LIGOVirgoKAGRAPublicAlertsUserGuidedoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -151,8 +151,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'LIGOVirgoPublicAlertsUserGuide.tex', project,
-     'LIGO Scientific Collaboration, Virgo Collaboration', 'manual'),
+    (master_doc, 'LIGOVirgoKAGRAPublicAlertsUserGuide.tex', project,
+     'LIGO Scientific Collaboration, Virgo Collaboration, KAGRA Collaboration', 'manual'),
 ]
 
 latex_elements = {
@@ -171,7 +171,7 @@ latex_elements['preamble'] = '\DeclareUnicodeCharacter{2728}{New: }'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ligovirgopublicalertsuserguide', project,
+    (master_doc, 'ligovirgokagrapublicalertsuserguide', project,
      [author], 1)
 ]
 
@@ -182,8 +182,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'LIGOVirgoPublicAlertsUserGuide', project,
-     author, 'LIGOVirgoPublicAlertsUserGuide', 'One line description of project.',
+    (master_doc, 'LIGOVirgoKAGRAPublicAlertsUserGuide', project,
+     author, 'LIGOVirgoKAGRAPublicAlertsUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]
 

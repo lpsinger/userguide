@@ -59,7 +59,7 @@ Glossary
 
     GraceDB
         Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
-        the official public marshal portal for LIGO/Virgo candidates.
+        the official public marshal portal for LIGO/Virgo/KAGRA candidates.
 
     GRB
         Gamma-ray burst.

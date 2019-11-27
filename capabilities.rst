@@ -28,19 +28,9 @@ signals, this figure gives the BNS :term:`range` for each observing run.
 .. figure:: _static/observing-scenarios-timeline.*
    :alt: Long-term observing schedule
 
-Engineering Run 14 (ER14) started on 2019-03-04. The transition into Observing
-Run 3 (O3) occurred on 2019-04-01. O3 had been scheduled to end on 2020-04-30,
-but was suspended early on March 27, 2020, due to the COVID-19 pandemic
-[#LIGOEndingO3Observations]_. When it becomes safe to resume normal activities,
-there may be a short period of additional O3 observations before an extended
-shutdown to prepare for the next observing run (O4). Updates will be posted in
-this document as they become available.
-
-During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
-Virgo) will observe for one year. It is possible that the Japanese KAGRA
-detector may come online and become part of the international
-gravitational-wave network at some point during O3. The near-term observing
-schedule is shown below, reproduced from [#CurrentO3Schedule]_.
+During O4, we expect that three facilities (:term:`LHO`, :term:`LLO`,
+:term:`Virgo`, and :term:`KAGRA`) will observe for one year. The near-term
+observing schedule is shown below, reproduced from [#CurrentO3Schedule]_.
 
 .. figure:: _static/O3Schedule.*
    :alt: Current observing schedule
@@ -49,7 +39,7 @@ Live Status
 -----------
 
 There are a handful of public web pages that report live status of the
-LIGO/Virgo detectors and alert infrastructure.
+LIGO/Virgo/KAGRA detectors and alert infrastructure.
 
 *  | **Detector Status Portal**: Daily summary of detector performance.
    | https://www.gw-openscience.org/detector_status/
@@ -58,8 +48,8 @@ LIGO/Virgo detectors and alert infrastructure.
    | https://ldas-jobs.ligo.caltech.edu/~gwistat/gwistat/gwistat.html
 
 *  | **LIGO Data Grid Status**: Live dashboard showing up/down status of the
-     detectors and online analyses. Status of the LIGO/Virgo alert pipeline is
-     indicated by the "EMFollow" box.
+     detectors and online analyses. Status of the LIGO/Virgo/KAGRA alert
+     pipeline is indicated by the "EMFollow" box.
    | https://monitor.ligo.org/gwstatus
 
 Sensitivity

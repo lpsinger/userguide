@@ -6,6 +6,9 @@ Version 17 (unreleased)
 
 .. rubric:: General
 
+*  Change the name of this document from "LIGO/Virgo Public Alerts User Guide"
+   to "LIGO/Virgo/KAGRA Public Alerts User Guide".
+
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
@@ -84,8 +87,8 @@ Version 13 (2019-12-16)
 .. rubric:: Alert Contents
 
 *  Add a warning that :term:`VOEvent` over anonymous :term:`VTP` is the only
-   GCN format and distribution method that is fully supported by LIGO/Virgo. In
-   particular, LIGO/Virgo performs only limited quality control control checks
+   GCN format and distribution method that is fully supported by LIGO/Virgo/KAGRA. In
+   particular, LIGO/Virgo/KAGRA performs only limited quality control control checks
    for the textual "full format" and the binary format.
 
 *  In the VOEvent alert schema, add a ``name`` attribute to each ``<Group>``
@@ -197,7 +200,7 @@ Version 10 (2019-07-31)
   will also make it simpler to work with Numpy indexing operations, since Numpy
   uses a signed integer type for indexing.
 
-  This change will go into effect in the LIGO/Virgo low-latency alert system on
+  This change will go into effect in the LIGO/Virgo/KAGRA low-latency alert system on
   2019-08-06.
 
   Users of `ligo.skymap`_ should update to version 0.1.8 or newer because older
@@ -352,7 +355,7 @@ Version 3 (2019-02-13)
 * Change the IVORN prefix from ``ivo://gwnet/gcn_sender`` to
   ``ivo://gwnet/LVC``, because GCN traditionally uses the text after the ``/``
   to indicate the name of the mission, which most closely corresponds to "LVC,"
-  short for "LIGO/Virgo Collaboration." Note that this IVORN is used for
+  short for "LIGO/Virgo/KAGRA Collaboration." Note that this IVORN is used for
   historical purposes and continuity with the GCN notice format used in O1 and
   O2, and is likely to change in the future with the commissioning of
   additional gravitational-wave facilities.
@@ -379,7 +382,7 @@ Version 2 (2018-12-13)
 
 .. rubric:: Sample Code
 
-* GCN has now begun publicly broadcasting sample LIGO/Virgo GCN Notices.
+* GCN has now begun publicly broadcasting sample LIGO/Virgo/KAGRA GCN Notices.
   Updated the sample code accordingly with instructions for receiving live
   sample notices.
 

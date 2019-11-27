@@ -1,8 +1,8 @@
 Alert Contents
 ==============
 
-Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
-Network (:term:`GCN`). There are two types of alerts:
+Public LIGO/Virgo/KAGRA alerts are distributing using NASA's Gamma-ray
+Coordinates Network (:term:`GCN`). There are two types of alerts:
 
 **GCN Notices** are machine-readable packets. They are available as
 :term:`VOEvent` XML and `several other legacy formats`_. See the
@@ -10,15 +10,15 @@ Network (:term:`GCN`). There are two types of alerts:
 format.
 
 .. warning::
-   We recommend receiving LIGO/Virgo alerts in the VOEvent XML format using one
-   of `GCN's anonymous VOEvent brokers`_. VOEvent over anonymous :term:`VTP` is
-   the **only GCN format and distribution method that is fully supported by
-   LIGO/Virgo.**
+   We recommend receiving LIGO/Virgo/KAGRA alerts in the VOEvent XML format
+   using one of `GCN's anonymous VOEvent brokers`_. VOEvent over anonymous
+   :term:`VTP` is the **only GCN format and distribution method that is fully
+   supported by LIGO/Virgo/KAGRA.**
 
-   The VOEvent XML alerts are official data products of LIGO/Virgo. GCN
+   The VOEvent XML alerts are official data products of LIGO/Virgo/KAGRA. GCN
    produces `several other legacy formats`_ from them, in particular a
-   text-based "full format" and binary format. LIGO/Virgo performs only limited
-   quality control of the legacy formats.
+   text-based "full format" and binary format. LIGO/Virgo/KAGRA performs only
+   limited quality control of the legacy formats.
 
 **GCN Circulars** are short human-readable astronomical bulletins. They are
 written in a certain well-established `format and style`_. You can `subscribe
@@ -86,7 +86,8 @@ assessment`_.
 Notice Contents
 ---------------
 
-The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
+The table below is a representation of the contents of a LIGO/Virgo/KAGRA GCN
+Notice.
 
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | **Root**                                                                                                                                          |
@@ -99,7 +100,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Date              | Time sent (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:34:49`                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
-| Author            | :samp:`LIGO Scientific Collaboration and Virgo Collaboration`                                                                 |
+| Author            | :samp:`LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration`                                           |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | **What**                                                                                                                                          |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
@@ -138,6 +139,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 |                   | :samp:`H1: LIGO Hanford 4 km gravitational wave detector`,                                                                    |
 |                   | :samp:`L1: LIGO Livingston 4 km gravitational wave detector` and                                                              |
 |                   | :samp:`V1: Virgo 3 km gravitational wave detector`                                                                            |
+|                   | :samp:`K1: KAGRA 3 km gravitational wave detector`                                                                            |
 |                   | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the preferred event            |
 |                   | for that particular :doc:`superevent </analysis/superevents>`                                                                 |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
@@ -236,9 +238,9 @@ such as ``bayestar.fits.gz``, always points to the most recent version.
     rationale in :dcc:`G1800186`). It uses HEALPix :ref:`explicit indexing
     <gamma-astro-data-formats:hpx_explicit>` and the `NUNIQ numbering scheme`_,
     which is closely related to `multi-order coverage (MOC) maps`_ in Aladin.
-    This is the internal format that is used by the LIGO/Virgo low-latency
-    alert pipeline. **This is an experimental format, and it is currently
-    recommended only for advanced users.** See the section
+    This is the internal format that is used by the LIGO/Virgo/KAGRA
+    low-latency alert pipeline. **This is an experimental format, and it is
+    currently recommended only for advanced users.** See the section
     :doc:`/tutorial/multiorder_skymaps` for details.
 
     Both formats always use celestial (equatorial, J2000) coordinates.
@@ -375,9 +377,9 @@ NSBH, or BBH merger):
 All of the quantities in the Classification and Properties sections are model
 dependent to some extent: the Classification section takes into consideration
 prior knowledge of astrophysical compact binary merger rates from previous
-LIGO/Virgo observations, and both the Classification and Properties sections
-depend on details of neutron star physics (e.g. maximum NS mass, equation of
-state). See the earlier subsection of the :doc:`Data Analysis
+LIGO/Virgo/KAGRA observations, and both the Classification and Properties
+sections depend on details of neutron star physics (e.g. maximum NS mass,
+equation of state). See the earlier subsection of the :doc:`Data Analysis
 </analysis/inference>` section for implementation details.
 
 Circular Contents

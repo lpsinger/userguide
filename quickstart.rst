@@ -9,7 +9,7 @@ items on this checklist.
 -----------------------
 
 Pay particular attention to the :doc:`content` section of this user guide to
-familiarize yourself with the contents of machine-readable LIGO/Virgo
+familiarize yourself with the contents of machine-readable LIGO/Virgo/KAGRA
 :term:`GCN Notices <GCN Notice>`. Play with the :doc:`tutorial/index` to
 receive example GCN Notices and practice working with :doc:`sky localization
 maps <tutorial/skymaps>`.
@@ -20,9 +20,9 @@ maps <tutorial/skymaps>`.
 `Subscribe to GCN Circulars`_ and review the `instructions for posting GCN
 Circulars`_. A :term:`GCN Circular` is a short, public bulletin to rapidly
 report an astronomical observation. GCN Circulars are distributed by email and
-`archived online`_. [#f1]_ LIGO/Virgo uses GCN Circulars to announce
+`archived online`_. [#f1]_ LIGO/Virgo/KAGRA uses GCN Circulars to announce
 detections, and the astronomy community expects participants to promptly
-disseminate preliminary reports of follow-up observations of LIGO/Virgo
+disseminate preliminary reports of follow-up observations of LIGO/Virgo/KAGRA
 counterparts using GCN Circulars as well.
 
 .. important::
@@ -33,16 +33,16 @@ counterparts using GCN Circulars as well.
 ------------------------------
 
 Sign up to the OpenLVEM mailing list by following the `OpenLVEM instructions`_.
-LIGO/Virgo will use this list to make announcements and solicit input. It is
-also a great place to ask questions or discuss issues related to LIGO/Virgo
-public alerts. Documents relating to teleconferences and in-person meetings are
-available at `OpenLVEM wiki`_.
+LIGO/Virgo/KAGRA will use this list to make announcements and solicit input. It
+is also a great place to ask questions or discuss issues related to
+LIGO/Virgo/KAGRA public alerts. Documents relating to teleconferences and
+in-person meetings are available at `OpenLVEM wiki`_.
 
 4. Visit GraceDB
 ----------------
 
-Familiarize yourself with GraceDB_, LIGO/Virgo's online portal for alerts and
-real-time results.
+Familiarize yourself with GraceDB_, LIGO/Virgo/KAGRA's online portal for alerts
+and real-time results.
 
 .. [#f1] GCN Circulars are similar to `Astronomer's Telegrams`_ (ATels). By
          longstanding convention, the gamma-ray burst and gravitational-wave

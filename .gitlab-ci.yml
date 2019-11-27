@@ -69,7 +69,7 @@ latexpdf:
     expose_as: pdf
     expire_in: 2 weeks  # P&P circulation period
     paths:
-      - latex/LIGOVirgoPublicAlertsUserGuide.pdf
+      - latex/LIGOVirgoKAGRAPublicAlertsUserGuide.pdf
 
 linkcheck:
   <<: *sphinx
@@ -96,7 +96,7 @@ pages:
   stage: deploy
   script:
     - mv html public/
-    - mv latex/LIGOVirgoPublicAlertsUserGuide.pdf public/
+    - mv latex/LIGOVirgoKAGRAPublicAlertsUserGuide.pdf public/
   artifacts:
     paths:
       - public

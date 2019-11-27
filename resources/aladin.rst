@@ -35,7 +35,7 @@ multi-order sky maps encode *sampled images or functions on the sphere*. The
 multi-order sky map FITS format is a superset of the MOC FITS format, the only
 difference being that a multi-order sky map has values attached to each cell
 (probability density, distance estimates) whereas a MOC map does not. 
-Aladin version v11 supports the LIGO/Virgo multi-resolution sky maps.
+Aladin version v11 supports the LIGO/Virgo/KAGRA multi-resolution sky maps.
 
 Running Aladin Desktop
 ----------------------
@@ -45,10 +45,10 @@ Virtual Machine`_ (JVM) installed. More details are in Aladin's `download
 page`_.
 
 .. note::
-   Aladin may fail to load some LIGO/Virgo sky maps and display a
+   Aladin may fail to load some LIGO/Virgo/KAGRA sky maps and display a
    ``java.lang.OutOfMemoryError`` error message. This is because the highest
-   resolution LIGO/Virgo sky maps do not fit inside Aladin's default memory
-   size.
+   resolution LIGO/Virgo/KAGRA sky maps do not fit inside Aladin's default
+   memory size.
 
    You can increase the maximum memory size used by your Java runtime
    environment by following the instructions below.
