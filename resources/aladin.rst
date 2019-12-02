@@ -178,12 +178,11 @@ color composition images of the Digitized Sky Surveys (`DSS`_).
 .. figure:: /_static/aladin_fig4.png
    :alt: Thumbnail view generator
 
-To get this, we load the DSS colored survey from the data collections tree. Then
-select :menuselection:`Tool
---> Thumbnail view generator` from the menu bar, and click the :guilabel:`Ok`
-button in the dialog box. Aladin will generate thumbnail views from the current 
-image in the main window. To change it, check the corresponding plan in the 
-Aladin stack.
+To get this, we load the DSS colored survey from the data collections tree.
+Then select :menuselection:`Tool --> Thumbnail view generator` from the menu
+bar, and click the :guilabel:`Ok` button in the dialog box. Aladin will
+generate thumbnail views from the current image in the main window. To change
+it, check the corresponding plan in the Aladin stack.
 
 .. |apjl| replace:: *Astrophys. J. Lett.*
 .. |A&A|  replace:: *Astronomy & Astrophysics*
