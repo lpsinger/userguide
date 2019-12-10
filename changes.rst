@@ -25,6 +25,20 @@ Version 13 (unreleased)
    particular, LIGO/Virgo performs only limited quality control control checks
    for the textual "full format" and the binary format.
 
+*  In the VOEvent alert schema, add a ``name`` attribute to each ``<Group>``
+   tag so that parameter groups are recognized by the
+   :func:`~voeventparse.convenience.get_grouped_params` function from the
+   :doc:`voevent-parse:index` package. For backwards compatibility, both the
+   ``name`` attribute and the ``type`` attribute will be set to the same value.
+
+   The groups are now denoted as follows:
+
+   *  ``<Group name="GW_SKYMAP" type="GW_SKYMAP">`` for localization parameters
+   *  ``<Group name="Classification" type="Classification">`` for compact
+      binary source classification parameters
+   *  ``<Group name="Properties" type="Properties">`` for compact binary source
+      properties parameters
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources

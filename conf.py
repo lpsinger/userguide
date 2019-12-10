@@ -210,7 +210,8 @@ intersphinx_mapping = {
     'numpy': ('https://docs.scipy.org/doc/numpy/', None),
     'pyregion': ('https://pyregion.readthedocs.io/en/latest/', None),
     'python': ('https://docs.python.org/', None),
-    'requests': ('https://requests.readthedocs.io/en/stable/', None)
+    'requests': ('https://requests.readthedocs.io/en/stable/', None),
+    'voevent-parse': ('https://voevent-parse.readthedocs.io/en/stable/', None)
 }
 
 

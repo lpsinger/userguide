@@ -151,8 +151,8 @@ Upon running this, you should see:
 
 .. testoutput::
 
-    internal = 0
     Packet_Type = 150
+    internal = 0
     Pkt_Ser_Num = 1
     GraceID = MS181101ab
     AlertType = Preliminary
