@@ -43,7 +43,6 @@ glitching
 gnomonic
 Górski
 Gehrels
-Gpc
 GW
 Hanford
 Healpy

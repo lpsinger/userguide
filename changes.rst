@@ -10,10 +10,6 @@ Version 13 (unreleased)
 
 .. rubric:: Observing Capabilities
 
-*  Update ranges, rates, and localization statistics based on the most
-   up-to-date simulations for O3 and O4. Add BBH and NSBH ranges. Update O3 and
-   range schedule figures.
-
 .. rubric:: Data Analysis
 
 *  Add a note that the oLIB search is not currently in operation.
