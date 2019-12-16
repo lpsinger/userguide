@@ -1,14 +1,8 @@
 Change Log
 ==========
 
-Version 13 (unreleased)
+Version 13 (2019-12-16)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
 
 .. rubric:: Data Analysis
 
@@ -34,8 +28,6 @@ Version 13 (unreleased)
       binary source classification parameters
    *  ``<Group name="Properties" type="Properties">`` for compact binary source
       properties parameters
-
-.. rubric:: Sample Code
 
 .. rubric:: Additional Resources
 
