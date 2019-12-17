@@ -14,6 +14,9 @@ Version 14 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Add VOEvent documentation and examples for gravitational-wave events that
+   are coincident with GRBs.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources

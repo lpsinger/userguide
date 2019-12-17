@@ -122,6 +122,28 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 |                   | amount of neutron star matter, respectively               |                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 
+In the event of a coincidence between a gravitational-wave candidate and an
+alert from a third party (e.g. a gamma-ray burst or neutrino trigger), the
+following fields will also be present:
+
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| External GCN Notice ID                | :samp:`{{583417860, 583327924}}`                                                                                      |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| External IVORN                        | External IVORN identification field                                                                                   |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| External Observatory                  | :samp:`{{Fermi,Swift}}`                                                                                               |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| External Search                       | :samp:`{{GRB,SubGRB}}`                                                                                                |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| Time Coincidence FAR                  | Estimated coincidence false alarm rate in Hz using timing                                                             |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| Time and Sky Position Coincidence FAR | Estimated coincidence false alarm rate in Hz using timing and sky position                                            |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| Combined Sky Map                      | URL of combined GW-External HEALPix FITS sky localization file                                                        |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+| Time Difference                       | Time between source and external event in seconds                                                                     |
++---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
+
 Name
 ~~~~
 
@@ -416,6 +438,11 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
    .. tab:: Retraction
 
       .. literalinclude:: _static/MS181101ab-4-Retraction.xml
+         :language: xml
+
+   .. tab:: External Coincidence Alert
+
+      .. literalinclude:: _static/MS181101ab-5-Update.xml
          :language: xml
 
 .. _`from the HEALPix team`: https://healpix.sourceforge.io/data/examples/healpix_fits_specs.pdf
