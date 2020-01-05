@@ -12,7 +12,8 @@ Version 14 (unreleased)
 
 .. rubric:: Data Analysis
 
-*  Change FAR threshold due to the additional trials from RAVEN.
+*  Change FAR threshold due to the additional trials from the GRB coincidence
+   search.
 
 .. rubric:: Alert Contents
 
