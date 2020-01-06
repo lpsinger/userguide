@@ -124,13 +124,16 @@ Then you can manually invoke your GCN handler using this Python code:
     import os
     import unittest.mock
     import urllib.parse
-    from urllib.request import urlopen
+    from urllib.request import urlopen, Request
 
     old_dir = os.getcwd()
     os.chdir('_static')
 
     def patched_urlopen(url, *args, **kwargs):
-        parsed_url = urllib.parse.urlparse(url)
+        new_url = url
+        if isinstance(new_url, Request):
+            new_url = new_url.full_url
+        parsed_url = urllib.parse.urlparse(new_url)
         dirname, basename = os.path.split(parsed_url.path)
         if parsed_url.netloc != 'emfollow.docs.ligo.org' \
                 or dirname != '/userguide/_static':
