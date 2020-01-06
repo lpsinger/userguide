@@ -440,7 +440,7 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
       .. literalinclude:: _static/MS181101ab-4-Retraction.xml
          :language: xml
 
-   .. tab:: External Coincidence Alert
+   .. tab:: External Coincidence
 
       .. literalinclude:: _static/MS181101ab-5-Update.xml
          :language: xml
