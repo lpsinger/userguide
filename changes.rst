@@ -1,14 +1,8 @@
 Change Log
 ==========
 
-Version 14 (unreleased)
+Version 14 (2020-01-06)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
 
 .. rubric:: Data Analysis
 
@@ -19,10 +13,6 @@ Version 14 (unreleased)
 
 *  Add VOEvent documentation and examples for gravitational-wave events that
    are coincident with GRBs.
-
-.. rubric:: Sample Code
-
-.. rubric:: Additional Resources
 
 Version 13 (2019-12-16)
 -----------------------
