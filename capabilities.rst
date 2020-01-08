@@ -99,7 +99,6 @@ Burst
 Event Rates
 -----------
 
-
 See the O3 Observing Scenarios [#O3ObservingScenarios]_ paper for LIGO and
 Virgo's most current estimates of astrophysical rates of compact binary
 mergers. The detection rate estimates contained in [#LivingReview]_ and later
