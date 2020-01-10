@@ -10,9 +10,11 @@ Version 15 (unreleased)
 
 .. rubric:: Observing Capabilities
 
-*  Update ranges, rates, and localization statistics based on the most
-   up-to-date simulations for O3 and O4. Add BBH and NSBH ranges. Update O3 and
-   range schedule figures.
+*  Add sensitivity, detection rate, and localization accuracy statistics for O3
+   and O4 from the most recent arXiv submission of the LIGO/Virgo/KAGRA
+   observing scenarios paper, :arxiv:`1304.0670`. Add ranges for BBH and NSBH
+   sources. Update O3 timeline and range schedule figures. Expect another
+   update in the next few weeks incorporating O3a.
 
 .. rubric:: Data Analysis
 
