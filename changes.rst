@@ -1,12 +1,8 @@
 Change Log
 ==========
 
-Version 15 (unreleased)
+Version 15 (2020-01-15)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
@@ -15,14 +11,6 @@ Version 15 (unreleased)
    observing scenarios paper, :arxiv:`1304.0670`. Add ranges for BBH and NSBH
    sources. Update O3 timeline and range schedule figures. Expect another
    update in the next few weeks incorporating O3a.
-
-.. rubric:: Data Analysis
-
-.. rubric:: Alert Contents
-
-.. rubric:: Sample Code
-
-.. rubric:: Additional Resources
 
 Version 14 (2020-01-06)
 -----------------------
