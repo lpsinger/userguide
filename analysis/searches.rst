@@ -66,16 +66,20 @@ foreground candidate significance.
 Unmodeled Search
 ----------------
 
-**cWB** [#cWB]_ is an excess power algorithm to identify short-duration
-gravitational wave signals. It uses a wavelet transformation to identify
-time-frequency pixels that can be grouped in a single cluster if they satisfy
-neighboring conditions. A tuned version for compact-binary coalescences chooses
-the time-frequency pixels if they mainly follow a pattern that increases in
-frequency. A maximum-likelihood-statistics calculated over the cluster is used
-to identify the proper parameter of the event, in particular the probability of
-the source direction and the coherent network signal-to-noise ratio. The
-largest likelihood value is used to assign detection significance to the found
-events.
+**cWB** [#cWB1]_ [#cWB2]_ searches for and reconstructs gravitational-wave 
+transient signals without relying on a specific waveform model.
+cWB searches for signals with durations of up to a few seconds that 
+are coincident in multiple detectors. The analysis
+is performed on the time-frequency data obtained with a wavelet
+transform. cWB selects wavelet amplitudes above the fluctuations of
+the detector noise and groups them into clusters. Tuned versions for 
+binary black holes (search name BBH and IMBH) choose time-frequency patterns with
+frequency increasing in time. For clusters correlated in multiple
+detectors, cWB reconstructs the direction to the source and the signal
+waveforms with the constrained maximum likelihood method. To assign 
+detection significance to the found events, cWB ranks them by
+the coherent signal-to-noise ratio obtained from cross-correlation of
+the signal waveforms reconstructed in different detectors.
 
 **oLIB** [#oLIB]_ uses the Q transform to decompose GW strain data into several
 time-frequency planes of constant quality factors :math:`Q`, where :math:`Q
@@ -164,7 +168,11 @@ calculation to find joint GW+HEN triggers.
    Dal Canton, T., & Harry, I. W. 2017.
    :arxiv:`1705.01845`
 
-.. [#cWB]
+.. [#cWB1]
+   Klimenko, S., Mohanty, S., Rakhmanov, M., Mitselmakher, |prd|,  72, 122002. 
+   :doi:`10.1103/PhysRevD.72.122002`
+
+.. [#cWB2]
    Klimenko, S., Vedovato, G., Drago, M., et al. 2016, |prd|, 93, 042004.
    :doi:`10.1103/PhysRevD.93.042004`
 
