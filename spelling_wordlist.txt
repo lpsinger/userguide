@@ -28,6 +28,7 @@ directionally
 downsampling
 dropdown
 Drago
+durations
 Essick
 et
 Fairhurst
@@ -73,6 +74,8 @@ magnetar
 mapmaking
 Messick
 metadata
+Mitselmakher
+Mohanty
 Mollweide
 Mpc
 multimessenger
@@ -88,11 +91,12 @@ pixelation
 postprocessing
 preprint
 programmatically
-runtime
+Rakhmanov
 redshift
 redshifts
 Robinet
 Roukema
+runtime
 Sachdev
 skymap
 sinusoidally
