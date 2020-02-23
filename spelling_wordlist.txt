@@ -4,11 +4,13 @@ Aitoff
 al
 Aladin
 arXiv
+Ashton
 Astropy
 ATel
 ATels
 Banday
 Bartos
+Bilby
 bilinear
 Boch
 Buskulic
@@ -52,6 +54,7 @@ Healpy
 Hinderer
 Hivon
 Holz
+Hübner
 IDL
 indices
 interferometer
@@ -64,6 +67,7 @@ Katsavounidis
 Keivani
 kilonova
 Klimenko
+Lasky
 latencies
 ligo
 Littenberg

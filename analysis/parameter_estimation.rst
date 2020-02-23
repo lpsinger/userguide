@@ -25,8 +25,8 @@ Gaussian quadrature, lookup tables, and sampling on an adaptively refined
 :term:`HEALPix` grid. The sky localization takes tens of seconds and is
 included in the preliminary alert.
 
-**LALInference** [#LALInference]_ is the full CBC parameter estimation
-algorithm. It explores a greatly expanded parameter space including sky
+**LALInference** [#LALInference]_ is a full CBC parameter estimation
+pipeline. It explores a greatly expanded parameter space including sky
 location, distance, masses, and spins, and performs full forward modeling of
 the gravitational-wave signal and the strain calibration of the
 gravitational-wave detectors. It explores the parameter space using
@@ -35,6 +35,18 @@ LALInference analysis that uses the least expensive CBC waveform models and
 completes within hours and may be included in a subsequent alert. More
 time-consuming analyses with more sophisticated waveform models are started at
 the discretion of human analysts, and will complete days or weeks later.
+
+**Bilby** [#Bilby]_ is a next-generation python-based Bayesian inference
+parameter estimation code. Bilby provides a user-friendly and accessible
+interface with the latest stochastic sampling methods built-in. It can be used
+for gravitational-wave analyses to extract source properties of CBC events such
+as masses, spins, distance and sky location. These parameters are extracted by
+employing the use of stochastic sampling methods such as MCMC and nested
+sampling. An automated pipeline is used to perform a Bilby analysis on all CBC
+events. The automated parameter estimation pipeline uses less expensive default
+settings, including the use of simpler waveforms, to perform an initial
+analysis of the event. Further analyses with more complex waveforms are
+performed by a human analyst as needed.
 
 Unmodeled Events
 ----------------
@@ -62,6 +74,10 @@ in individual detectors.
 .. [#LALInference]
    Veitch, J., Raymond, V., Farr, B., et al. 2015, |PRD|, 91, 042003.
    :doi:`10.1103/PhysRevD.91.042003`
+
+.. [#Bilby]
+   Ashton, G., Hübner, M., Lasky, P. D., Talbot, C., et al. 2019, |ApJS|, 241, 27.
+   :doi:`10.3847/1538-4365/ab06fc`
 
 .. [#cWBLocalization]
    Klimenko, S., Vedovato, G., Drago, M., et al. 2011, |PRD|, 83, 102001.
