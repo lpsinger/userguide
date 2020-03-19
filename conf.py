@@ -23,7 +23,7 @@ from versioneer import get_version
 # -- Project information -----------------------------------------------------
 
 project = 'LIGO/Virgo Public Alerts User Guide'
-copyright = '2018, LIGO Scientific Collaboration, Virgo Collaboration'
+copyright = '2018-2020, LIGO Scientific Collaboration, Virgo Collaboration'
 author = 'LIGO Scientific Collaboration, Virgo Collaboration'
 
 # The full version, including alpha/beta/rc tags
