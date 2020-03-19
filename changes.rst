@@ -14,6 +14,8 @@ Version 16 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Add an example EarlyWarning GCN notice.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources

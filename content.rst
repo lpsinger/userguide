@@ -28,13 +28,20 @@ the public `GCN Circulars archive`_.
 Notice Types
 ------------
 
-For each event, there are up to four kinds of GCN Notices:
+For each event, there are up to five kinds of GCN Notices:
 
-A **Preliminary GCN Notice** is issued automatically within minutes after a
-gravitational-wave candidate is detected. The candidate must have passed some
-automated data quality checks, but it may later be :ref:`retracted
-<retraction>` after human vetting. There is no accompanying GCN Circular at
-this stage.
+An **Early Warning GCN Notice** may be issued for :term:`CBC` events up to tens
+of seconds *before* merger. The candidate must have passed some automated data
+quality checks, but it may later be :ref:`retracted <retraction>` after human
+vetting. There is no accompanying GCN Circular at this stage. Early Warning
+alerts are an experimental feature in :term:`O3`. Early Warning alerts are only
+possible for exceptionally loud and nearby :term:`CBC` events, and are expected
+to be rare.
+
+A **Preliminary GCN Notice** is issued automatically within minutes *after* a
+gravitational-wave candidate is detected. Like an **Early Warning GCN Notice*,
+the candidate must have passed automated data quality checks, but it may later
+be :ref:`retracted <retraction>`, and there is no accompanying GCN Circular.
 
 An **Initial GCN Notice** is issued after human vetting (see
 :doc:`/analysis/vetting`). If the signal does not pass human vetting (e.g., it
@@ -78,7 +85,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | **Root**                                                                                                                                          |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
-| IVORN             | :samp:`ivo://gwnet/LVC#[{{T,M}}]S{YYMMDDabc}-{{1,2,3}}-{{Preliminary,Initial,Update,Retraction}}`                             |
+| IVORN             | :samp:`ivo://gwnet/LVC#[{{T,M}}]S{YYMMDDabc}-{{1,2,3}}-{{EarlyWarning,Preliminary,Initial,Update,Retraction}}`                |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Role              | :samp:`{{observation,test}}`                                                                                                  |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
@@ -420,29 +427,34 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
 .. tabs::
 
+   .. tab:: EarlyWarning
+
+      .. literalinclude:: _static/MS181101ab-1-EarlyWarning.xml
+         :language: xml
+
    .. tab:: Preliminary
 
-      .. literalinclude:: _static/MS181101ab-1-Preliminary.xml
+      .. literalinclude:: _static/MS181101ab-2-Preliminary.xml
          :language: xml
 
    .. tab:: Initial
 
-      .. literalinclude:: _static/MS181101ab-2-Initial.xml
+      .. literalinclude:: _static/MS181101ab-3-Initial.xml
          :language: xml
 
    .. tab:: Update
 
-      .. literalinclude:: _static/MS181101ab-3-Update.xml
+      .. literalinclude:: _static/MS181101ab-4-Update.xml
          :language: xml
 
    .. tab:: Retraction
 
-      .. literalinclude:: _static/MS181101ab-4-Retraction.xml
+      .. literalinclude:: _static/MS181101ab-5-Retraction.xml
          :language: xml
 
    .. tab:: External Coincidence
 
-      .. literalinclude:: _static/MS181101ab-5-Update.xml
+      .. literalinclude:: _static/MS181101ab-6-Update.xml
          :language: xml
 
 .. _`from the HEALPix team`: https://healpix.sourceforge.io/data/examples/healpix_fits_specs.pdf

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<voe:VOEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd" version="2.0" role="test" ivorn="ivo://gwnet/LVC#MS181101ab-5-Update">
+<voe:VOEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd" version="2.0" role="test" ivorn="ivo://gwnet/LVC#MS181101ab-4-Update">
   <Who>
-    <Date>2018-11-01T22:39:25</Date>
+    <Date>2018-11-01T22:36:25</Date>
     <Author>
       <contactName>LIGO Scientific Collaboration and Virgo Collaboration</contactName>
     </Author>
@@ -13,7 +13,7 @@
     <Param dataType="int" name="internal" value="0">
       <Description>Indicates whether this event should be distributed to LSC/Virgo members only</Description>
     </Param>
-    <Param dataType="int" name="Pkt_Ser_Num" value="5">
+    <Param dataType="int" name="Pkt_Ser_Num" value="4">
       <Description>A number that increments by 1 each time a new revision is issued for this event</Description>
     </Param>
     <Param dataType="string" name="GraceID" ucd="meta.id" value="MS181101ab">
@@ -46,27 +46,6 @@
     <Param dataType="string" name="Search" ucd="meta.code" value="MDC">
       <Description>Specific low-latency search</Description>
     </Param>
-    <Group name="External Coincidence" type="External Coincidence">
-      <Param dataType="string" name="External_GCN_Notice_Id" ucd="meta.id" value="1234567">
-        <Description>GCN trigger ID of external event</Description>
-      </Param>
-      <Param dataType="string" name="External_Ivorn" ucd="meta.id" value="ivo://nasa.gsfc.gcn/Fermi#GBM_Gnd_Pos_2018-11-01T22:36:25.31_1234567_58-278">
-        <Description>IVORN of external event</Description>
-      </Param>
-      <Param dataType="string" name="External_Observatory" ucd="meta.code" value="Fermi">
-        <Description>External Observatory</Description>
-      </Param>
-      <Param dataType="string" name="External_Search" ucd="meta.code" value="GRB">
-        <Description>External astrophysical search</Description>
-      </Param>
-      <Param dataType="float" name="Time_Difference" ucd="meta.code" value="1.54">
-        <Description>Time difference between GW candidate and external event, centered on the GW candidate</Description>
-      </Param>
-      <Param dataType="float" name="Time_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="1e-16">
-        <Description>Estimated coincidence false alarm rate in Hz using timing</Description>
-      </Param>
-      <Description>Properties of joint coincidence found by RAVEN</Description>
-    </Group>
     <Group name="GW_SKYMAP" type="GW_SKYMAP">
       <Param dataType="string" name="skymap_fits" ucd="meta.ref.url" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0">
         <Description>Sky Map FITS</Description>
@@ -123,10 +102,9 @@
     <Description>V1: Virgo 3 km gravitational wave detector</Description>
   </How>
   <Citations>
-    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-4-Retraction</EventIVORN>
-    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-3-Update</EventIVORN>
-    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-2-Initial</EventIVORN>
-    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-1-Preliminary</EventIVORN>
+    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-3-Initial</EventIVORN>
+    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-2-Preliminary</EventIVORN>
+    <EventIVORN cite="supersedes">ivo://gwnet/LVC#MS181101ab-1-EarlyWarning</EventIVORN>
     <Description>Updated localization is now available</Description>
   </Citations>
 </voe:VOEvent>

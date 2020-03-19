@@ -115,7 +115,7 @@ the sample GCN notice:
 
 .. code-block:: shell-session
 
-    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-1-Preliminary.xml
+    $ curl -O https://emfollow.docs.ligo.org/userguide/_static/MS181101ab-2-Preliminary.xml
 
 Then you can manually invoke your GCN handler using this Python code:
 
@@ -146,7 +146,7 @@ Then you can manually invoke your GCN handler using this Python code:
 .. testcode::
 
     import lxml.etree
-    payload = open('MS181101ab-1-Preliminary.xml', 'rb').read()
+    payload = open('MS181101ab-2-Preliminary.xml', 'rb').read()
     root = lxml.etree.fromstring(payload)
     process_gcn(payload, root)
 
@@ -156,7 +156,7 @@ Upon running this, you should see:
 
     Packet_Type = 150
     internal = 0
-    Pkt_Ser_Num = 1
+    Pkt_Ser_Num = 2
     GraceID = MS181101ab
     AlertType = Preliminary
     HardwareInj = 0
