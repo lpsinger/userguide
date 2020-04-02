@@ -106,23 +106,23 @@ other, which varies depending on which two types of events are being considered
 e.g., [-1,5] s means we consider GRBs up to one second before or up to 5
 seconds after the GW.
 
-+-----------------------+-----------+-----------+-----------------------------------------------------------------+
-| Event Type            | Time window (s)       |     | Notice Type Considered                                    |
-|                       |                       |     | (`see full list`_)                                        |
-|                       +-----------+-----------+                                                                 |
-|                       | CBC       | Burst     |     .. _see full list: http://gcn.gsfc.nasa.gov/filtering.html  |
-+=======================+===========+===========+=================================================================+
-| | GRB                 | [-1,5]    | [-60,600] |    | FERMI_GBM_ALERT                                            |
-| | (*Fermi*, *Swift*)  |           |           |    | FERMI_GBM_FIN_POS                                          |
-|                       |           |           |    | FERMI_GBM_FLT_POS                                          |
-|                       |           |           |    | FERMI_GBM_GND_POS                                          |
-|                       |           |           |    | FERMI_GBM_SUBTHRESH                                        |
-|                       |           |           |    | SWIFT_BAT_GRB_ALERT                                        |
-|                       |           |           |    | SWIFT_BAT_GRB_LC                                           |
-+-----------------------+-----------+-----------+-----------------------------------------------------------------+
-| | Low-energy Neutrinos| [-10,10]  | [-10,10]  |     SNEWS                                                       |
-| | (SNEWS)             |           |           |                                                                 |
-+-----------------------+-----------+-----------+-----------------------------------------------------------------+
++-----------------------+-----------+-----------+---------------------------+
+| Event Type            | Time window (s)       |  Notice Type Considered   |
+|                       |                       |  (`see full list`_)       |
+|                       +-----------+-----------+                           |
+|                       | CBC       | Burst     |                           |
++=======================+===========+===========+===========================+
+| | GRB                 | [-1,5]    | [-60,600] |    | FERMI_GBM_ALERT      |
+| | (*Fermi*, *Swift*)  |           |           |    | FERMI_GBM_FIN_POS    |
+|                       |           |           |    | FERMI_GBM_FLT_POS    |
+|                       |           |           |    | FERMI_GBM_GND_POS    |
+|                       |           |           |    | FERMI_GBM_SUBTHRESH  |
+|                       |           |           |    | SWIFT_BAT_GRB_ALERT  |
+|                       |           |           |    | SWIFT_BAT_GRB_LC     |
++-----------------------+-----------+-----------+---------------------------+
+| | Low-energy Neutrinos| [-10,10]  | [-10,10]  |     SNEWS                 |
+| | (SNEWS)             |           |           |                           |
++-----------------------+-----------+-----------+---------------------------+
 
 In addition, RAVEN will calculate coincident :term:`FARs <FAR>`, one including
 only timing information (temporal) and one including GRB/GW sky map information
@@ -136,6 +136,7 @@ temporally-coincident sub-threshold IceCube neutrinos and performs a detailed
 Bayesian significance calculation to find joint GW+HEN triggers.
 
 .. _`Low-Latency Algorithm for Multi-messenger Astrophysics`: https://multimessenger.science
+.. _see full list: http://gcn.gsfc.nasa.gov/filtering.html
 
 .. |apj| replace:: *Astrophys. J.*
 .. |cqg| replace:: *Class. Quantum Grav.*
