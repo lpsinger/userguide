@@ -234,6 +234,10 @@ assumed to be non-evolving.
    :math:`R / (1 + z)`, with the factor of :math:`1 + z` accounting for time
    dilation.
 
+   See [#DistanceMeasuresInGWCosmology]_ for further discussion of cosmological
+   distance measures as they relate to sensitivity figures of merit for
+   gravitational-wave detectors.
+
 For :term:`BNS` and :term:`BBH`, the merger rate is inferred from fitting the
 observed population of LIGO/Virgo events in O1 and O2 [#O1O2Rates]_\ [#GWTC1]_.
 For :term:`NSBH`, the merger rate is taken from [#RatePredictions]_. The quoted
