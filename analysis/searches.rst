@@ -138,12 +138,10 @@ Bayesian significance calculation to find joint GW+HEN triggers.
 .. _`Low-Latency Algorithm for Multi-messenger Astrophysics`: https://multimessenger.science
 .. _see full list: http://gcn.gsfc.nasa.gov/filtering.html
 
-.. |apj| replace:: *Astrophys. J.*
-.. |cqg| replace:: *Class. Quantum Grav.*
-.. |prd| replace:: *Phys. Rev. D*
+.. include:: /journals.rst
 
 .. [#GstLAL1]
-   Messick, C., Blackburn, K., Brady, P., et al. 2017, |prd|, 95, 042001.
+   Messick, C., Blackburn, K., Brady, P., et al. 2017, |PRD|, 95, 042001.
    :doi:`10.1103/PhysRevD.95.042001`
 
 .. [#GstLAL2]
@@ -151,7 +149,7 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    :arxiv:`1901.08580`
 
 .. [#SPIIR]
-   Hooper, S., Chung, S. K., Luan, J., et al. 2012, |prd|, 86, 024012.
+   Hooper, S., Chung, S. K., Luan, J., et al. 2012, |PRD|, 86, 024012.
    :doi:`10.1103/PhysRevD.86.024012`
 
 .. [#SPIIRThesis]
@@ -159,11 +157,11 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
 
 .. [#MBTA]
-   Adams, T., Buskulic, D., Germain, V., et al. 2016, |cqg|, 33, 175012.
+   Adams, T., Buskulic, D., Germain, V., et al. 2016, |CQG|, 33, 175012.
    :doi:`10.1088/0264-9381/33/17/175012`
 
 .. [#PyCBC1]
-   Nitz, A. H., Dal Canton, T., Davis, D. & Reyes, S. 2018, |prd|, 98, 024050.
+   Nitz, A. H., Dal Canton, T., Davis, D. & Reyes, S. 2018, |PRD|, 98, 024050.
    :doi:`10.1103/PhysRevD.98.024050`
 
 .. [#PyCBC2]
@@ -171,15 +169,15 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    :arxiv:`1705.01845`
 
 .. [#cWB1]
-   Klimenko, S., Mohanty, S., Rakhmanov, M., Mitselmakher, |prd|,  72, 122002. 
+   Klimenko, S., Mohanty, S., Rakhmanov, M., Mitselmakher, |PRD|,  72, 122002.
    :doi:`10.1103/PhysRevD.72.122002`
 
 .. [#cWB2]
-   Klimenko, S., Vedovato, G., Drago, M., et al. 2016, |prd|, 93, 042004.
+   Klimenko, S., Vedovato, G., Drago, M., et al. 2016, |PRD|, 93, 042004.
    :doi:`10.1103/PhysRevD.93.042004`
 
 .. [#oLIB]
-   Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |prd|, 95, 104046.
+   Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |PRD|, 95, 104046.
    :doi:`10.1103/PhysRevD.95.104046`
 
 .. [#RAVEN]
@@ -187,7 +185,7 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    https://dc.uwm.edu/etd/1218/
 
 .. [#LLAMA1]
-   Bartos, I., Veske, D., Keivani, A., et al. 2019, |prd|, 100, 083017.
+   Bartos, I., Veske, D., Keivani, A., et al. 2019, |PRD|, 100, 083017.
    :doi:`10.1103/PhysRevD.100.083017`
 
 .. [#LLAMA2]

@@ -10,8 +10,7 @@ sample code see [#GoingTheDistanceSupplement]_.
 .. image:: https://dcc.ligo.org/public/0119/P1500071/007/demonstration.png
 .. image:: https://dcc.ligo.org/public/0119/P1500071/007/proj3d.png
 
-.. |ApJL| replace:: *Astropys. J. Lett.*
-.. |ApJS| replace:: *Astropys. J. Supp.*
+.. include:: /journals.rst
 
 .. [#GoingTheDistance]
    Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |ApJL|, 829, L15.

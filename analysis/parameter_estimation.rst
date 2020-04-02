@@ -53,25 +53,24 @@ as a superposition of wavelets and jointly models the background with both a
 stationary noise component and glitches composed of wavelets that are present
 in individual detectors.
 
-.. |cqg| replace:: *Class. Quantum Grav.*
-.. |prd| replace:: *Phys. Rev. D*
+.. include:: /journals.rst
 
 .. [#BAYESTAR]
-   Singer, L. P., & Price, L. R. 2016, |prd|, 93, 024013.
+   Singer, L. P., & Price, L. R. 2016, |PRD|, 93, 024013.
    :doi:`10.1103/PhysRevD.93.024013`
 
 .. [#LALInference]
-   Veitch, J., Raymond, V., Farr, B., et al. 2015, |prd|, 91, 042003.
+   Veitch, J., Raymond, V., Farr, B., et al. 2015, |PRD|, 91, 042003.
    :doi:`10.1103/PhysRevD.91.042003`
 
 .. [#cWBLocalization]
-   Klimenko, S., Vedovato, G., Drago, M., et al. 2011, |prd|, 83, 102001.
+   Klimenko, S., Vedovato, G., Drago, M., et al. 2011, |PRD|, 83, 102001.
    :doi:`10.1103/PhysRevD.83.102001`
 
 .. [#oLIB]
-   Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |prd|, 95, 104046.
+   Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |PRD|, 95, 104046.
    :doi:`10.1103/PhysRevD.95.104046`
 
 .. [#BayesWave]
-   Cornish, N. J., & Littenberg, T. B. 2015, |cqg|, 32, 135012.
+   Cornish, N. J., & Littenberg, T. B. 2015, |CQG|, 32, 135012.
    :doi:`10.1088/0264-9381/32/13/135012`

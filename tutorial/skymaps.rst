@@ -409,13 +409,12 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 .. _Planck: https://www.esa.int/Our_Activities/Space_Science/Planck
 .. _WCSTools: http://tdc-www.harvard.edu/wcstools/
 
-.. |apj| replace:: *Astrophys. J.*
-.. |mnras| replace:: *Mon. Notices Royal Astron. Soc.*
+.. include:: /journals.rst
 
 .. [#HEALPixFramework]
-   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |apj|, 622, 759.
+   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |ApJ|, 622, 759.
    :doi:`10.1086/427976`
 
 .. [#MappingOnHEALPix]
-   Calabretta, M. R., & Roukema, B. F. 2007, |mnras|, 381, 865.
+   Calabretta, M. R., & Roukema, B. F. 2007, |MNRAS|, 381, 865.
    :doi:`10.1111/j.1365-2966.2007.12297.x`

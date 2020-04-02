@@ -294,10 +294,7 @@ credible comoving volume of detectable events in O3 and O4.
    BBH merger (GW170818) as of this writing are shown at top as black tick
    marks.
 
-.. |LRR| replace:: *Living Rev. Rel.*
-.. |CQG| replace:: *Class. Quantum Grav.*
-.. |ApJL| replace:: *Astropys. J. Lett.*
-.. |PRX| replace:: *Phys. Rev. X*
+.. include:: /journals.rst
 
 .. [#WhitePaper]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *The LSC-Virgo

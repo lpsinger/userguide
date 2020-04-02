@@ -184,16 +184,14 @@ bar, and click the :guilabel:`Ok` button in the dialog box. Aladin will
 generate thumbnail views from the current image in the main window. To change
 it, check the corresponding plan in the Aladin stack.
 
-.. |apjl| replace:: *Astrophys. J. Lett.*
-.. |A&A|  replace:: *Astronomy & Astrophysics*
-.. |prd|  replace:: *Phys. Rev. D*
+.. include:: /journals.rst
 
 .. [#Fernique15]
    Fernique, P., Allen, et al. 2015, |A&A|, 578, A114.
    :doi:`10.1051/0004-6361/201526075`
 
 .. [#Singer16b]
-   Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |apjl|, 829, L15.
+   Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |ApJL|, 829, L15.
    :doi:`10.3847/2041-8205/829/1/L15`
 
 .. _`Aladin Desktop`:  https://aladin.u-strasbg.fr/AladinDesktop/

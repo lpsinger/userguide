@@ -48,13 +48,12 @@ source properties are calculated using a supervised learning technique;
 mass-dependent rates are the same as those used for the classification. For
 parameter estimation, updated properties are calculated from posterior samples.
 
-.. |cqg| replace:: *Class. Quantum Grav.*
-.. |prd| replace:: *Phys. Rev. D*
+.. include:: /journals.rst
 
 .. [#Pastro]
-   Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2020, |cqg|, 37, 045007.
+   Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2020, |CQG|, 37, 045007.
    :doi:`10.1088/1361-6382/ab5f2d`
 
 .. [#DiskMass]
-   Foucart, F., Hinderer, T. & Nissanke, S. 2018, |prd|, 98, 081501.
+   Foucart, F., Hinderer, T. & Nissanke, S. 2018, |PRD|, 98, 081501.
    :doi:`10.1103/PhysRevD.98.081501`

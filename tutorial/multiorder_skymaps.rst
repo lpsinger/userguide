@@ -356,11 +356,10 @@ tile, which is true for LIGO/Virgo multi-resolution sky maps.
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _`NGC 4993`: https://ned.ipac.caltech.edu/byname?objname=NGC4993
 
-.. |prd| replace:: *Phys. Rev. D*
-.. |aap| replace:: *Astron. Astrophys.*
+.. include:: /journals.rst
 
 .. [#BAYESTAR]
-   Singer, L. P., & Price, L. R. 2016, |prd|, 93, 024013.
+   Singer, L. P., & Price, L. R. 2016, |PRD|, 93, 024013.
    :doi:`10.1103/PhysRevD.93.024013`
 
 .. [#HEALPIXPrimer]
@@ -368,7 +367,7 @@ tile, which is true for LIGO/Virgo multi-resolution sky maps.
    :arxiv:`astro-ph/9905275`
 
 .. [#HiPSPaper]
-   Fernique, P., Allen, et al. 2015, |aap|, 578, A114.
+   Fernique, P., Allen, et al. 2015, |A&A|, 578, A114.
    :doi:`10.1051/0004-6361/201526075`
 
 .. [#HiPSStandard]

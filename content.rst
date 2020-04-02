@@ -472,8 +472,8 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`DS9`: http://ds9.si.edu/
 .. _`Aladin`: https://aladin.u-strasbg.fr/
 
-.. |apj| replace:: *Astrophys. J.*
+.. include:: /journals.rst
 
 .. [#HEALPixFramework]
-   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |apj|, 622, 759.
+   Górski, K.M., Hivon, E., Banday, A.J., et al. 2005, |ApJ|, 622, 759.
    :doi:`10.1086/427976`
