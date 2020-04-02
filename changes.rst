@@ -10,6 +10,12 @@ Version 16 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+*  Note suspension of Observing Run 3 (O3) on March 27, 2020, due to the
+   COVID-19 pandemic. When it becomes safe to resume normal activities, there
+   may be a short period of additional O3 observations before an extended
+   shutdown to prepare for the next observing run (O4). Updates will be posted
+   in this document as they become available.
+
 .. rubric:: Data Analysis
 
 .. rubric:: Alert Contents
