@@ -187,8 +187,8 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    https://dc.uwm.edu/etd/1218/
 
 .. [#LLAMA1]
-   Bartos, I., Veske, D., Keivani, A., et al. 2018.
-   :arxiv:`1810.11467`
+   Bartos, I., Veske, D., Keivani, A., et al. 2019, |prd|, 100, 083017.
+   :doi:`10.1103/PhysRevD.100.083017`
 
 .. [#LLAMA2]
    Countryman, S., Keivani, A., Bartos, I., et al. 2019.
