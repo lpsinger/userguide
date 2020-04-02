@@ -104,6 +104,15 @@ Glossary
         Neutron star black hole, a binary system composed of one neutron star
         and one black hole. See :term:`NS`, :term:`BH`.
 
+    O1
+        Advanced LIGO and Advanced Virgo's first observing run.
+
+    O2
+        Advanced LIGO and Advanced Virgo's second observing run.
+
+    O3
+        Advanced LIGO and Advanced Virgo's third observing run.
+
     primary
         When referring to the two component compact objects or the masses of
         the two component compact objects in a binary, the `primary` is the
