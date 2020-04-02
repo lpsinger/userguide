@@ -130,11 +130,12 @@ only timing information (temporal) and one including GRB/GW sky map information
 to trigger preliminary alerts once this is finished.
 
 **LLAMA** [#LLAMA1]_ [#LLAMA2]_ The `Low-Latency Algorithm for Multi-messenger
-Astrophysics <http://gwhen.com>`__
-is a an online search pipeline combining LIGO/Virgo GW triggers with High
-Energy Neutrino (HEN) triggers from IceCube. It finds temporally-coincident
-sub-threshold IceCube neutrinos and performs a detailed Bayesian significance
-calculation to find joint GW+HEN triggers.
+Astrophysics`_ is a an online search pipeline combining LIGO/Virgo GW triggers
+with High Energy Neutrino (HEN) triggers from IceCube. It finds
+temporally-coincident sub-threshold IceCube neutrinos and performs a detailed
+Bayesian significance calculation to find joint GW+HEN triggers.
+
+.. _`Low-Latency Algorithm for Multi-messenger Astrophysics`: https://multimessenger.science
 
 .. |apj| replace:: *Astrophys. J.*
 .. |cqg| replace:: *Class. Quantum Grav.*
