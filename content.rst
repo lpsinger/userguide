@@ -39,7 +39,7 @@ possible for exceptionally loud and nearby :term:`CBC` events, and are expected
 to be rare.
 
 A **Preliminary GCN Notice** is issued automatically within minutes *after* a
-gravitational-wave candidate is detected. Like an **Early Warning GCN Notice*,
+gravitational-wave candidate is detected. Like an **Early Warning GCN Notice**,
 the candidate must have passed automated data quality checks, but it may later
 be :ref:`retracted <retraction>`, and there is no accompanying GCN Circular.
 
