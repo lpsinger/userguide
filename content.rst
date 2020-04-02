@@ -5,7 +5,7 @@ Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
 **GCN Notices** are machine-readable packets. They are available as
-:term:`VOEvent` XML and `several other formats`_. See the
+:term:`VOEvent` XML and `several other legacy formats`_. See the
 :doc:`/tutorial/index` section for instructions on receiving GCNs in VOEvent
 format.
 
@@ -465,7 +465,7 @@ Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 .. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
 .. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
-.. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+.. _`several other legacy formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 .. _`several other distribution methods`: https://gcn.gsfc.nasa.gov/tech_describe.html
 .. _`GCN's anonymous VOEvent brokers`: https://gcn.gsfc.nasa.gov/voevent.html#tc2
 .. _`DS9 region string`: http://ds9.si.edu/doc/ref/region.html

@@ -28,6 +28,6 @@ tutorial is broken into the following subsections:
    observability
    3d
 
-.. _`several other formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
+.. _`several other legacy formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 .. _`several other distribution methods`: https://gcn.gsfc.nasa.gov/tech_describe.html
 .. _`GCN's anonymous VOEvent brokers`: https://gcn.gsfc.nasa.gov/voevent.html#tc2
