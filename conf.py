@@ -155,6 +155,9 @@ latex_documents = [
      'LIGO Scientific Collaboration, Virgo Collaboration', 'manual'),
 ]
 
+latex_elements = {
+    'releasename': 'Version'
+}
 
 # -- Options for manual page output ------------------------------------------
 
