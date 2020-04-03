@@ -151,7 +151,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'LIGOVirgoPublicAlertsUserGuide.tex', 'LIGO/Virgo Public Alerts User Guide Documentation',
+    (master_doc, 'LIGOVirgoPublicAlertsUserGuide.tex', project,
      'LIGO Scientific Collaboration, Virgo Collaboration', 'manual'),
 ]
 
@@ -161,7 +161,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'ligovirgopublicalertsuserguide', 'LIGO/Virgo Public Alerts User Guide Documentation',
+    (master_doc, 'ligovirgopublicalertsuserguide', project,
      [author], 1)
 ]
 
@@ -172,7 +172,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'LIGOVirgoPublicAlertsUserGuide', 'LIGO/Virgo Public Alerts User Guide Documentation',
+    (master_doc, 'LIGOVirgoPublicAlertsUserGuide', project,
      author, 'LIGOVirgoPublicAlertsUserGuide', 'One line description of project.',
      'Miscellaneous'),
 ]
