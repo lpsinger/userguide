@@ -94,6 +94,7 @@ sections for details).
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
         ax.imshow(gradient, extent=[t.value, (10 * t).value, -10, 10], cmap='Greys_r', vmin=-1, vmax=1)
+        ax.set_aspect('auto')
 
     fig.suptitle('Time since gravitational-wave signal')
     ax.set_xscale('log')
