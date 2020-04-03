@@ -48,11 +48,11 @@ decoding GW sky maps.
 
     .. rubric:: Appendix
 
-.. toctree::
-   :hidden:
+    .. toctree::
+       :hidden:
 
-   changes
-   glossary
+       changes
+       glossary
 
 * :doc:`changes`
 * :doc:`glossary`
