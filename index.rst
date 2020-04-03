@@ -30,8 +30,7 @@ format, and includes instructions and sample code for receiving GCN Notices and
 decoding GW sky maps.
 
 
-Contents
---------
+.. rubric:: Contents
 
 .. toctree::
    :maxdepth: 2
@@ -43,8 +42,7 @@ Contents
    tutorial/index
    resources/index
 
-Appendix
---------
+.. rubric:: Appendix
 
 .. toctree::
    :hidden:
