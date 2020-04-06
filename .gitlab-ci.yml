@@ -28,18 +28,6 @@ validate-voevents:
 
 html:
   <<: *sphinx
-  environment:
-    name: review/$CI_COMMIT_REF_SLUG
-    url: https://$CI_PROJECT_NAMESPACE.$CI_PAGES_DOMAIN/-/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/_build/$CI_JOB_NAME/
-    on_stop: stop review
-
-stop review:
-  stage: build
-  when: manual
-  environment:
-    action: stop
-    name: review/$CI_COMMIT_REF_SLUG
-  script: ["true"]  # no-op
 
 doctest:
   <<: *sphinx
