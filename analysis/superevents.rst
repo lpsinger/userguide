@@ -6,24 +6,24 @@ multiple search pipelines. Each superevent is intended to represent a single
 astrophysical event.
 
 A superevent consists of one or more event candidates, possibly from
-:doc:`different pipelines </analysis/searches>`, that are neighbors in time.
-At any given time, one event belonging to the superevent is identified as the
+:doc:`different pipelines </analysis/searches>`, that are neighbors in time. At
+any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
 
-The superevent accumulates event candidates from the
-:doc:`search pipelines </analysis/searches>` and updates its preferred event as
-more significant event candidates are reported (see :ref:`preferred-event`). The
-name of the superevent does not change. The naming scheme is described
-in the `alert contents <../content.html#name>`_ section. Once a preferred event
-candidate passes the public alert threshold (see :ref:`alert-threshold`), it is
-frozen and a preliminary alert is queued using the data products of this preferred
+The superevent accumulates event candidates from the :doc:`search pipelines
+</analysis/searches>` and updates its preferred event as more significant event
+candidates are reported (see :ref:`preferred-event`). The name of the
+superevent does not change. The naming scheme is described in the `alert
+contents <../content.html#name>`_ section. Once a preferred event candidate
+passes the public alert threshold (see :ref:`alert-threshold`), it is frozen
+and a preliminary alert is queued using the data products of this preferred
 event. New event candidates are still allowed to be added to the superevent as
-the necessary annotations are completed. Once the preliminary alert
-is received by the GCN broker, the preferred event is revised after
-a `timeout <https://gwcelery.readthedocs.io/en/latest/gwcelery.conf.html#gwcelery.conf.superevent_clean_up_timeout>`_
-and a second preliminary notice is issued. Note that the latter is issued even
-if the preferred event candidate remains unchanged.
+the necessary annotations are completed. Once the preliminary alert is received
+by the GCN broker, the preferred event is revised after a `timeout
+<https://gwcelery.readthedocs.io/en/latest/gwcelery.conf.html#gwcelery.conf.supe
+revent_clean_up_timeout>`_ and a second preliminary notice is issued. Note that
+the latter is issued even if the preferred event candidate remains unchanged.
 
 .. _preferred-event:
 
@@ -55,11 +55,12 @@ documentation.
      preferred event's :term:`FAR` is less than the threshold value stated in
      the :ref:`alert-threshold` section.
    * A second Preliminary GCN is usually issued automatically after the first
-     one is successfully dispatched to the GCN broker. However, this may not
-     be sent if the superevent is vetoed on grounds of data quality before the
+     one is successfully dispatched to the GCN broker. However, this may not be
+     sent if the superevent is vetoed on grounds of data quality before the
      alert is sent.
-   * An additional preliminary notice may be issued by human intervention
-     in case of unexpected circumstances to help in time-sensitive follow-up operations.
+   * An additional preliminary notice may be issued by human intervention in
+     case of unexpected circumstances to help in time-sensitive follow-up
+     operations.
    * In case of an event created by a pipeline due to an *offline* analysis, no
      preliminary GCN will be sent.
    * The :term:`SNR` is used to select the preferred event among `CBC`

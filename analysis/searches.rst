@@ -48,7 +48,7 @@ coincidence test.
 performing time-shifted analyses using triggers from a few hours of recent
 data. Single-detector triggers from one detector are time shifted by every
 possible multiple of 100 ms, thus any resulting coincidence must be unphysical
-given the :math:`\sim 10` ms light travel time between detectors.  All such
+given the :math:`\sim 10` ms light travel time between detectors. All such
 coincidences are recorded and assigned a ranking statistic. The false alarm
 rate is then estimated by counting accidental coincidences ranked higher than a
 given candidate, i.e. with a higher statistic value. When three detectors are
@@ -66,20 +66,19 @@ foreground candidate significance.
 Unmodeled Search
 ----------------
 
-**cWB** [#cWB1]_ [#cWB2]_ searches for and reconstructs gravitational-wave 
-transient signals without relying on a specific waveform model.
-cWB searches for signals with durations of up to a few seconds that 
-are coincident in multiple detectors. The analysis
-is performed on the time-frequency data obtained with a wavelet
-transform. cWB selects wavelet amplitudes above the fluctuations of
-the detector noise and groups them into clusters. Tuned versions for 
-binary black holes (search name BBH and IMBH) choose time-frequency patterns with
-frequency increasing in time. For clusters correlated in multiple
-detectors, cWB reconstructs the direction to the source and the signal
-waveforms with the constrained maximum likelihood method. To assign 
-detection significance to the found events, cWB ranks them by
-the coherent signal-to-noise ratio obtained from cross-correlation of
-the signal waveforms reconstructed in different detectors.
+**cWB** [#cWB1]_ [#cWB2]_ searches for and reconstructs gravitational-wave
+transient signals without relying on a specific waveform model. cWB searches
+for signals with durations of up to a few seconds that are coincident in
+multiple detectors. The analysis is performed on the time-frequency data
+obtained with a wavelet transform. cWB selects wavelet amplitudes above the
+fluctuations of the detector noise and groups them into clusters. Tuned
+versions for binary black holes (search name BBH and IMBH) choose
+time-frequency patterns with frequency increasing in time. For clusters
+correlated in multiple detectors, cWB reconstructs the direction to the source
+and the signal waveforms with the constrained maximum likelihood method. To
+assign detection significance to the found events, cWB ranks them by the
+coherent signal-to-noise ratio obtained from cross-correlation of the signal
+waveforms reconstructed in different detectors.
 
 **oLIB** [#oLIB]_ uses the Q transform to decompose GW strain data into several
 time-frequency planes of constant quality factors :math:`Q`, where :math:`Q

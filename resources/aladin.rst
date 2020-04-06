@@ -172,8 +172,8 @@ marginal distance posterior distribution integrated over the whole sky.
 Thumbnail View Generator
 ------------------------
 
-Finally, we make a mosaic of the filtered galaxies. Here the thumbnails are 
-color composition images of the Digitized Sky Surveys (`DSS`_). 
+Finally, we make a mosaic of the filtered galaxies. Here the thumbnails are
+color composition images of the Digitized Sky Surveys (`DSS`_).
 
 .. figure:: /_static/aladin_fig4.png
    :alt: Thumbnail view generator

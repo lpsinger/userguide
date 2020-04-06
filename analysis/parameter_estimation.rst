@@ -25,16 +25,16 @@ Gaussian quadrature, lookup tables, and sampling on an adaptively refined
 :term:`HEALPix` grid. The sky localization takes tens of seconds and is
 included in the preliminary alert.
 
-**LALInference** [#LALInference]_ is a full CBC parameter estimation
-pipeline. It explores a greatly expanded parameter space including sky
-location, distance, masses, and spins, and performs full forward modeling of
-the gravitational-wave signal and the strain calibration of the
-gravitational-wave detectors. It explores the parameter space using
-:term:`MCMC` and nested sampling. For all events, there is an automated
-LALInference analysis that uses the least expensive CBC waveform models and
-completes within hours and may be included in a subsequent alert. More
-time-consuming analyses with more sophisticated waveform models are started at
-the discretion of human analysts, and will complete days or weeks later.
+**LALInference** [#LALInference]_ is a full CBC parameter estimation pipeline.
+It explores a greatly expanded parameter space including sky location,
+distance, masses, and spins, and performs full forward modeling of the
+gravitational-wave signal and the strain calibration of the gravitational-wave
+detectors. It explores the parameter space using :term:`MCMC` and nested
+sampling. For all events, there is an automated LALInference analysis that uses
+the least expensive CBC waveform models and completes within hours and may be
+included in a subsequent alert. More time-consuming analyses with more
+sophisticated waveform models are started at the discretion of human analysts,
+and will complete days or weeks later.
 
 **Bilby** [#Bilby]_ is a next-generation python-based Bayesian inference
 parameter estimation code. Bilby provides a user-friendly and accessible
@@ -51,8 +51,8 @@ performed by a human analyst as needed.
 Unmodeled Events
 ----------------
 
-**cWB**, the burst :doc:`search pipeline <searches>`, also performs a rapid
-sky localization based on its coherent reconstruction of the gravitational-wave
+**cWB**, the burst :doc:`search pipeline <searches>`, also performs a rapid sky
+localization based on its coherent reconstruction of the gravitational-wave
 signal using a wavelet basis and the response of the gravitational-wave
 detector network [#cWBLocalization]_. The cWB sky localization is included in
 the preliminary alert.

@@ -115,11 +115,12 @@ sections for details).
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
 
-**Within 1–10 minutes after GW trigger time**, the first and second :doc:`preliminary
-notices </content>` will be sent fully autonomously. The trigger will be immediately
-and publicly visible in the :term:`GraceDB` database. Since the procedure is fully
-automatic, some preliminary alerts may be retracted after human inspection for
-data quality, instrumental conditions, and pipeline behavior.
+**Within 1–10 minutes after GW trigger time**, the first and second
+:doc:`preliminary notices </content>` will be sent fully autonomously. The
+trigger will be immediately and publicly visible in the :term:`GraceDB`
+database. Since the procedure is fully automatic, some preliminary alerts may
+be retracted after human inspection for data quality, instrumental conditions,
+and pipeline behavior.
 
 **Within 24 hours after the GW trigger time** (possibly within 4 hours for
 :term:`BNS` or :term:`NSBH` sources), the :doc:`Initial or Retraction notice
@@ -154,9 +155,9 @@ Automated preliminary alerts are sent for all events that pass a false alarm
 rate (:term:`FAR`) threshold. The :term:`FAR` threshold is :math:`3.8 \times
 10^{-8}` Hz (one per 10 months) for :term:`CBC` searches and is :math:`7.9
 \times 10^{-9}` (one per 4 years) for unmodeled burst searches. Since there are
-4 independent :term:`CBC` searches and 3 independent :term:`burst` searches,
-as well as a coincidence search :doc:`RAVEN <searches>` that looks at the
-results from both the aforementioned :term:`CBC` and :term:`burst` searches,
-the effective rate of false alarms for :term:`CBC` sources is :math:`1.9 \times
+4 independent :term:`CBC` searches and 3 independent :term:`burst` searches, as
+well as a coincidence search :doc:`RAVEN <searches>` that looks at the results
+from both the aforementioned :term:`CBC` and :term:`burst` searches, the
+effective rate of false alarms for :term:`CBC` sources is :math:`1.9 \times
 10^{-7}` Hz (one per 2 months), and for unmodeled bursts is :math:`3.2 \times
 10^{-8}` Hz (one per year).

@@ -50,9 +50,9 @@ initial alert is also accompanied by a GCN Circular, which should be considered
 as the first formal publication of the candidate and can be cited as such.
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
-estimates of the sky localization, significance, or classification. There
-may be multiple updates for a given event, and updates may be issued hours,
-days, or even weeks after the event.
+estimates of the sky localization, significance, or classification. There may
+be multiple updates for a given event, and updates may be issued hours, days,
+or even weeks after the event.
 
 .. _retraction:
 
@@ -208,10 +208,10 @@ such as ``bayestar.fits.gz``, always points to the most recent version.
     community <gamma-astro-data-formats:healpix_skymap>`) that is recognized by
     a wide variety of astronomical imaging programs including DS9_ and Aladin_.
     It uses HEALPix :ref:`implicit indexing
-    <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering scheme`_.
-    **This is the primary and preferred format, and the only format that is
-    explicitly listed in the GCN Notices and Circulars.** See the section
-    :doc:`/tutorial/skymaps` for details.
+    <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering
+    scheme`_. **This is the primary and preferred format, and the only format
+    that is explicitly listed in the GCN Notices and Circulars.** See the
+    section :doc:`/tutorial/skymaps` for details.
 
     ..  rubric:: ``*.multiorder.fits``
 
