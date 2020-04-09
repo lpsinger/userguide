@@ -242,4 +242,4 @@ plot_rcparams = {'font.size': 12}
 
 
 def setup(app):
-    app.add_javascript('copybutton.js')
+    app.add_js_file('copybutton.js')
