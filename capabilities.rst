@@ -321,7 +321,7 @@ credible comoving volume of detectable events in O3 and O4.
 
 .. [#CurrentO3Schedule]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Current O3
-   Schedule*. :dcc:`G1901531-v1`
+   Schedule*. :dcc:`G1901531-v3`
 
 .. [#O1O2Rates]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Binary Black Hole
