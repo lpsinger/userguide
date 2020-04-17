@@ -34,8 +34,8 @@ main distinction is that MOC maps encode *regions on the sphere*, whereas
 multi-order sky maps encode *sampled images or functions on the sphere*. The
 multi-order sky map FITS format is a superset of the MOC FITS format, the only
 difference being that a multi-order sky map has values attached to each cell
-(probability density, distance estimates) whereas a MOC map does not. Future
-Aladin releases will support the LIGO/Virgo multi-resolution sky maps.
+(probability density, distance estimates) whereas a MOC map does not. 
+Aladin version v11 supports the LIGO/Virgo multi-resolution sky maps.
 
 Running Aladin Desktop
 ----------------------
