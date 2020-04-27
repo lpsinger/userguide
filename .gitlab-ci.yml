@@ -20,26 +20,30 @@ validate-voevents:
     SPHINXOPTS: -W
   script:
     - pip install -r requirements.txt
-    - sphinx-build -M $CI_JOB_NAME . _build
-  artifacts:
-    paths:
-      - _build/$CI_JOB_NAME
-    expire_in: 2 weeks  # P&P circulation period
+    - sphinx-build -M $CI_JOB_NAME . .
 
 html:
   <<: *sphinx
+  artifacts:
+    expose_as: html
+    expire_in: 2 weeks  # P&P circulation period
+    paths:
+      - html/index.html
+      - html
 
 doctest:
   <<: *sphinx
 
 latexpdf:
   <<: *sphinx
-  artifacts:
-    paths:
-      - _build/latex
   before_script:
     - apt-get update
     - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
+  artifacts:
+    expose_as: pdf
+    expire_in: 2 weeks  # P&P circulation period
+    paths:
+      - latex/LIGOVirgoPublicAlertsUserGuide.pdf
 
 linkcheck:
   <<: *sphinx
@@ -53,15 +57,15 @@ spelling:
     - pip install sphinxcontrib-spelling
   script:
     - pip install -r requirements.txt
-    - sphinx-build -M $CI_JOB_NAME . _build
+    - sphinx-build -M $CI_JOB_NAME . .
     # Fail if there were spelling errors.
-    - test ! -s _build/spelling/output.txt
+    - test ! -s $CI_JOB_NAME/output.txt
 
 pages:
   stage: deploy
   script:
-    - mv _build/html public/
-    - mv _build/latex/LIGOVirgoPublicAlertsUserGuide.pdf public/
+    - mv html public/
+    - mv latex/LIGOVirgoPublicAlertsUserGuide.pdf public/
   artifacts:
     paths:
       - public
