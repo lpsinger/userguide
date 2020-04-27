@@ -2,10 +2,22 @@ stages:
   - build
   - deploy
 
+image: python
+cache:
+  paths:
+    - .cache
+variables:
+  PIP_CACHE_DIR: $CI_PROJECT_DIR/.cache/pip
+.before-apt: &before-apt
+  - mkdir -p .config .cache/apt
+  - export APT_CONFIG="$CI_PROJECT_DIR/.config/apt.conf"
+  - echo Dir::Cache \"$CI_PROJECT_DIR/.cache/apt\"; >> $APT_CONFIG
+  - echo Dir::State \"$CI_PROJECT_DIR/.cache/apt\"; >> $APT_CONFIG
+
 validate-voevents:
   stage: build
-  image: debian:stable-slim
   script:
+    - *before-apt
     - apt-get update
     - apt-get -y install --no-install-recommends libxml2-utils curl
     - curl -O http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd
@@ -15,7 +27,6 @@ validate-voevents:
 
 .sphinx: &sphinx
   stage: build
-  image: python:3.7
   variables:
     SPHINXOPTS: -W
   script:
@@ -37,6 +48,7 @@ doctest:
 latexpdf:
   <<: *sphinx
   before_script:
+    - *before-apt
     - apt-get update
     - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
   artifacts:
@@ -52,6 +64,7 @@ linkcheck:
 spelling:
   <<: *sphinx
   before_script:
+    - *before-apt
     - apt-get update
     - apt-get -y install enchant
     - pip install sphinxcontrib-spelling
