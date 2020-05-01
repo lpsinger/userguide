@@ -38,16 +38,22 @@ alerts are an experimental feature in :term:`O3`. Early Warning alerts are only
 possible for exceptionally loud and nearby :term:`CBC` events, and are expected
 to be rare.
 
+.. _preliminary:
+
 A **Preliminary GCN Notice** is issued automatically within minutes *after* a
 gravitational-wave candidate is detected. Like an **Early Warning GCN Notice**,
 the candidate must have passed automated data quality checks, but it may later
 be :ref:`retracted <retraction>`, and there is no accompanying GCN Circular.
+
+.. _initial:
 
 An **Initial GCN Notice** is issued after human vetting (see
 :doc:`/analysis/vetting`). If the signal does not pass human vetting (e.g., it
 is a glitch), then instead of an initial alert there will be a retraction_. The
 initial alert is also accompanied by a GCN Circular, which should be considered
 as the first formal publication of the candidate and can be cited as such.
+
+.. _update:
 
 An **Update GCN Notice** is issued whenever further analysis leads to improved
 estimates of the sky localization, significance, or classification. There may

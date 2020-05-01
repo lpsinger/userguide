@@ -43,6 +43,7 @@ decoding GW sky maps.
    content
    tutorial/index
    resources/index
+   early_warning
 
 .. only:: html
 

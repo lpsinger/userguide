@@ -21,6 +21,14 @@ Glossary
         include high mass :term:`BBH` mergers, core-collapse supernovae, and
         cosmic string cusps.
 
+    chirp mass
+        In a binary system, the chirp mass is a symmetric combination of the
+        :term:`primary` and :term:`secondary` component masses :math:`m_1` and
+        :math:`m_2` that parameterizes the leading-order time or frequency
+        evolution of the gravitational-wave signal. It is usually denoted by a
+        script "M" symbol, :math:`\mathcal{M}`, and is defined as
+        :math:`\mathcal{M} = (m_1 m_2)^{3/5} (m_1 + m_2)^{-1/5}`.
+
     CBC
         Compact binary coalescence.
 

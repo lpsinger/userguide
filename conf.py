@@ -161,6 +161,11 @@ latex_elements = {
 
 latex_appendices = ['changes', 'glossary']
 
+# LaTeX does not support emoji.
+# In LaTeX, replace the sparkle emoji (✨) used in early_warning.rst
+# with the text "New: ".
+latex_elements['preamble'] = '\DeclareUnicodeCharacter{2728}{New: }'
+
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -243,3 +248,20 @@ plot_rcparams = {'font.size': 12}
 
 def setup(app):
     app.add_js_file('copybutton.js')
+
+
+# -- Image format priority ---------------------------------------------------
+
+# Change image format priority so animated gifs are preferred over static SVGs.
+
+import sphinx.builders.dirhtml
+import sphinx.builders.singlehtml
+import sphinx.builders.html
+
+for builder_class in [sphinx.builders.dirhtml.DirectoryHTMLBuilder,
+                      sphinx.builders.singlehtml.SingleFileHTMLBuilder,
+                      sphinx.builders.html.StandaloneHTMLBuilder]:
+    builder_class.supported_image_types.remove('image/gif')
+    builder_class.supported_image_types.insert(0, 'image/gif')
+
+del builder_class

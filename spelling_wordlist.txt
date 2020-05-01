@@ -57,6 +57,7 @@ Holz
 Hübner
 IDL
 indices
+inspiral
 interferometer
 interferometers
 ipix
@@ -91,8 +92,11 @@ offline
 oLIB
 online
 Ph
+parameterize
+parameterizes
 pixelation
 postprocessing
+pre
 preprint
 programmatically
 Rakhmanov
