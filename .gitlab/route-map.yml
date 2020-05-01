@@ -1,2 +1,5 @@
+- source: ''
+  public: 'index.html'
+
 - source: /(.*).rst/
-  public: \1.html
+  public: '\1.html'
