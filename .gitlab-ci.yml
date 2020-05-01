@@ -43,7 +43,7 @@ html:
       - html
   environment:
     name: review/$CI_COMMIT_REF_SLUG
-    url: $CI_JOB_URL/artifacts/browse/html/
+    url: $CI_JOB_URL/artifacts/file/html
     on_stop: stop review
     auto_stop_in: 2 weeks
 
