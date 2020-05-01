@@ -174,28 +174,17 @@ representative events with different :term:`SNR` values.
 Detection Rate and Localization Accuracy
 ----------------------------------------
 
-This section describes the results of a simulation demonstrating the
-capabilities of the early warning pipeline. This simulation provides an
-expectation of how many events are detectable before merger, and how accurately
-they can be localized at different times leading up to the merger.
-
-We synthesized stretches of Gaussian noise with the power spectral densities of
-Advanced LIGO and Virgo at their final design sensitivities. We injected
-337,033 simulated :term:`BNS` signals distributed up to a redshift of
-:math:`z=0.2`. We ran the GstLAL early warning search on the simulated data to
-recover the injections and then produced sky localizations with BAYESTAR.
-
 In the figure below, we show predicted detection rates, distances, and
-localization uncertainties for BNS events. Of all BNS events detected by LIGO
-and Virgo, only 5-30% will be amenable for sending early warning alerts. About
-5% of all BNS events will be localized to an area of ~400 |deg2| by ~30 seconds
-before merger. At the time of merger, the sky localization will be reduced to
-about ~1 |deg2| for these events. At 60 s before merger, one event per year is
-expected to be localized to within 400 |deg2|. At 30 seconds before merger, at
-least one event per year is expected to be localized to within 40 |deg2| and ~4
-events per year are expected to be localized to within 400 |deg2|. By 10
-seconds before merger, ~10 events per year are expected to be localized to
-within 400 |deg2|.
+localization uncertainties for simulated BNS events. Of all BNS events detected
+by LIGO and Virgo, only 5-30% will be amenable for sending early warning
+alerts. About 5% of all BNS events will be localized to an area of ~400 |deg2|
+by ~30 seconds before merger. At the time of merger, the sky localization will
+be reduced to about ~1 |deg2| for these events. At 60 s before merger, one
+event per year is expected to be localized to within 400 |deg2|. At 30 seconds
+before merger, at least one event per year is expected to be localized to
+within 40 |deg2| and ~4 events per year are expected to be localized to within
+400 |deg2|. By 10 seconds before merger, ~10 events per year are expected to be
+localized to within 400 |deg2|.
 
 .. figure:: _static/areatest_log.*
     :alt: Cumulative distribution of localization area for early warning events
