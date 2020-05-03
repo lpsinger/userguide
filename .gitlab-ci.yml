@@ -4,6 +4,7 @@ stages:
 
 image: python
 cache:
+  key: shared
   paths:
     - .cache
 variables:
