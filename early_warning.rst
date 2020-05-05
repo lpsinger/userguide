@@ -192,7 +192,11 @@ localized to within 400 |deg2|.
     Cumulative distribution of localization accuracy for early warning events.
     Assuming the median BNS merger rate, the right vertical axis shows the
     number of expected events to be recovered per year as a function of the
-    90% credible area.
+    90% credible area. *The detectors are considered to be operating at design
+    sensitivity in this simulation. The volume reach of the detectors at design
+    configuration is about 6-8 times larger than the current volume reach. This
+    means that the number of events shown in the plot here are about 6-8 times
+    more than the number of events we can currently detect.*
 
 The figure below shows the cumulative fraction of recovered injections as a
 function of distance. This figure shows the distance distribution of the events
