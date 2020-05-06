@@ -9,8 +9,7 @@ Version 16 (unreleased)
 *  Add the new :doc:`early_warning` section to introduce early warning alerts
    as a public post-O3 technology demonstration. Early warning alerts are
    detections of binary neutron star merger candidates up to tens of seconds
-   before merger. Test early warning alerts will be publicly distributed
-   through GCN at a rate of about once per week over the next month.
+   before merger.
 
 .. rubric:: Getting Started Checklist
 
