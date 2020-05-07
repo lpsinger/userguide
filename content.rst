@@ -127,7 +127,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                               |
 | MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                                   |
-|                   | :term:`terrestrial` (i.e, noise) respectively             |                                                                   |
+|                   | :term:`Terrestrial` (i.e, noise) respectively             |                                                                   |
 +-------------------+-----------------------------------------------------------+                                                                   +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                                   |
 |                   | noise, that at least one of the compact objects was a     |                                                                   |

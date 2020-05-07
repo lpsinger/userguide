@@ -73,7 +73,7 @@ for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers, and unmodeled
 :term:`bursts <burst>`.
 
 +-----------+-----------+-----------+-----------+-----------+
-| Detector  | :term:`Range` (Mpc)                           |
+| Detector  | :term:`Range <range>` (Mpc)                   |
 |           +-----------+-----------+-----------+-----------+
 |           | BNS       | NSBH      | BBH       | Burst     |
 +===========+===========+===========+===========+===========+
