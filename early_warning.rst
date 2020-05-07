@@ -123,7 +123,7 @@ and bandwidth of the gravitational-wave signal. The localization improves
 slowly up until the last second before merger, and then converges rapidly in
 the last second.
 
-The animations below show the evolution of early-warning sky maps for four
+The animations below show the evolution of early-warning sky maps for three
 representative events with different :term:`SNR` values.
 
 .. only:: latex
@@ -144,32 +144,29 @@ representative events with different :term:`SNR` values.
 .. |skymap3| image:: _static/10390.*
     :alt: Animation of sky map for an event with SNR=25.2
     :target: https://emfollow.docs.ligo.org/userguide/_images/10390.gif
-.. |skymap4| image:: _static/24926.*
-    :alt: Animation of sky map for an event with SNR=35.6
-    :target: https://emfollow.docs.ligo.org/userguide/_images/24926.gif
 
-+---------------+---------------+---------------+---------------+---------------+
-| Final SNR     | 11            | 18            | 25            | 36            |
-+---------------+---------------+---------------+---------------+---------------+
-|Distance       | 250 Mpc       | 210 Mpc       | 160 Mpc       | 110 Mpc       |
-+===============+===============+===============+===============+===============+
-| **Sky map**   | |skymap1|     | |skymap2|     | |skymap3|     | |skymap4|     |
-| (animated GIF)|               |               |               |               |
-+---------------+---------------+---------------+---------------+---------------+
-| **Frequency** | **Localization accuracy** (90% credible area)                 |
-+---------------+---------------+---------------+---------------+---------------+
-| 29 Hz         | Not           | Not           | 12000 |deg2|  | 9400 |deg2|   |
-+---------------+ detected      + detected      +---------------+---------------+
-| 32 Hz         |               |               | 10000 |deg2|  | 7300 |deg2|   |
-+---------------+               +---------------+---------------+---------------+
-| 38 Hz         |               | 9200 |deg2|   | 8200  |deg2|  | 5100 |deg2|   |
-+---------------+---------------+---------------+---------------+---------------+
-| 49 Hz         | 2300 |deg2|   | 1000 |deg2|   | 730   |deg2|  | 2700 |deg2|   |
-+---------------+---------------+---------------+---------------+---------------+
-| 56 Hz         | 1000 |deg2|   | 700  |deg2|   | 250   |deg2|  | 1600 |deg2|   |
-+---------------+---------------+---------------+---------------+---------------+
-| 1024 Hz       | 10   |deg2|   | 31   |deg2|   | 5.4   |deg2|  | 34   |deg2|   |
-+---------------+---------------+---------------+---------------+---------------+
++---------------+---------------+---------------+---------------+
+| Final SNR     | 11            | 18            | 25            |
++---------------+---------------+---------------+---------------+
+|Distance       | 250 Mpc       | 210 Mpc       | 160 Mpc       |
++===============+===============+===============+===============+
+| **Sky map**   | |skymap1|     | |skymap2|     | |skymap3|     |
+| (animated GIF)|               |               |               |
++---------------+---------------+---------------+---------------+
+| **Frequency** | **Localization accuracy** (90% credible area) |
++---------------+---------------+---------------+---------------+
+| 29 Hz         | Not           | Not           | 12000 |deg2|  |
++---------------+ detected      + detected      +---------------+
+| 32 Hz         |               |               | 10000 |deg2|  |
++---------------+               +---------------+---------------+
+| 38 Hz         |               | 9200 |deg2|   | 8200  |deg2|  |
++---------------+---------------+---------------+---------------+
+| 49 Hz         | 2300 |deg2|   | 1000 |deg2|   | 730   |deg2|  |
++---------------+---------------+---------------+---------------+
+| 56 Hz         | 1000 |deg2|   | 700  |deg2|   | 250   |deg2|  |
++---------------+---------------+---------------+---------------+
+| 1024 Hz       | 10   |deg2|   | 31   |deg2|   | 5.4   |deg2|  |
++---------------+---------------+---------------+---------------+
 
 Detection Rate and Localization Accuracy
 ----------------------------------------
