@@ -30,11 +30,11 @@ signals, this figure gives the BNS :term:`range` for each observing run.
 
 Engineering Run 14 (ER14) started on 2019-03-04. The transition into Observing
 Run 3 (O3) occurred on 2019-04-01. O3 had been scheduled to end on 2020-04-30,
-but was suspended early on March 27, 2020, due to the COVID-19 pandemic. When
-it becomes safe to resume normal activities, there may be a short period of
-additional O3 observations before an extended shutdown to prepare for the next
-observing run (O4). Updates will be posted in this document as they become
-available.
+but was suspended early on March 27, 2020, due to the COVID-19 pandemic
+[#LIGOEndingO3Observations]_. When it becomes safe to resume normal activities,
+there may be a short period of additional O3 observations before an extended
+shutdown to prepare for the next observing run (O4). Updates will be posted in
+this document as they become available.
 
 During O3, we expect that three facilities (:term:`LHO`, :term:`LLO`, and
 Virgo) will observe for one year. It is possible that the Japanese KAGRA
@@ -322,6 +322,9 @@ credible comoving volume of detectable events in O3 and O4.
 .. [#CurrentO3Schedule]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Current O3
    Schedule*. :dcc:`G1901531-v3`
+
+.. [#LIGOEndingO3Observations]
+   LIGO Laboratory 2020, *LIGO Ending O3 Observations*. :dcc:`L2000133-v3`
 
 .. [#O1O2Rates]
    LIGO Scientific Collaboration & Virgo Collaboration 2019, *Binary Black Hole
