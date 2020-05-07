@@ -12,6 +12,9 @@ Version 17 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Add the reference to the source properties methods paper.
+   Provide details on the cases where the above method is used.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code

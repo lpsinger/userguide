@@ -19,6 +19,7 @@ capabilities
 carée
 Cascina
 Caudill
+Chatterjee
 Chu
 coalescences
 comoving
@@ -43,6 +44,7 @@ Fortran
 Foucart
 geocenter
 Germain
+Ghosh
 glitching
 gnomonic
 Górski

@@ -43,10 +43,21 @@ secondary mass satisfies :math:`m_2 \leq 3 M_{\odot}`.
 the final remnant compact object. This is calculated using the disk mass
 fitting formula from [#DiskMass]_ (Equation 4).
 
-For preliminary estimates based on the matched-filter pipeline results, the
-source properties are calculated using a supervised learning technique;
-mass-dependent rates are the same as those used for the classification. For
-parameter estimation, updated properties are calculated from posterior samples.
+The way that these probabilities are calculated for preliminary alerts differs
+for different search pipelines:
+
+- For GstLAL, the probabilities consider the uncertainty in the
+  matched-filter estimates of the template parameters. The probabilities are
+  calculated using supervised machine learning on a feature space consisting of
+  the masses, spins, and :term:`SNR` of the best-matching template, described
+  in [#MLEMBright]_.
+
+- For all other pipelines, the source property probabilities are reported as
+  exactly 0 or exactly 1 depending on whether the corresponding condition is
+  satisfied by the best-matching template. **In this case, these probabilities
+  do not capture uncertainty in the matched-filter estimates of the template
+  parameters, and should be interpreted with caution.**
+
 
 .. include:: /journals.rst
 
@@ -57,3 +68,7 @@ parameter estimation, updated properties are calculated from posterior samples.
 .. [#DiskMass]
    Foucart, F., Hinderer, T. & Nissanke, S. 2018, |PRD|, 98, 081501.
    :doi:`10.1103/PhysRevD.98.081501`
+
+.. [#MLEMBright]
+   Chatterjee, D., Ghosh, S., Brady, P. R., et al. 2020, |ApJ|,
+   :arXiv:`1911.00116`
