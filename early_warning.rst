@@ -49,7 +49,7 @@ type to your GCN handler::
     import gcn
 
     @gcn.handlers.include_notice_types(
-        gcn.notice_types.LVC_EARLY_WARNING  # <-- new notice type here
+        gcn.notice_types.LVC_EARLY_WARNING,  # <-- new notice type here
         gcn.notice_types.LVC_PRELIMINARY,
         gcn.notice_types.LVC_INITIAL,
         gcn.notice_types.LVC_UPDATE,
