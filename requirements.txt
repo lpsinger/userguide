@@ -3,5 +3,5 @@ pygcn
 healpy
 ligo.skymap
 seaborn
-sphinx
+sphinx >= 2.0.0
 sphinx-tabs >= 1.1.11
