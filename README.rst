@@ -97,8 +97,8 @@ When you are ready to publish a new version, follow these steps:
 
         Version *NN* (*YYYY*-*MM*-*DD*)
         
-        *INSERT VERBATIM COPY OF CURRENT CHANGE LOG, SECTION INCLUDING
-        TOP-LEVEL PAGE RUBRICS*
+        *INSERT VERBATIM COPY OF CURRENT CHANGE LOG, INCLUDING TOP-LEVEL PAGE
+        RUBRICS*
 
     Send the message to openlvem@gw-astronomy.org.
 
