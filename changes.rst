@@ -9,7 +9,9 @@ Version 16 (unreleased)
 *  Add the new :doc:`early_warning` section to introduce early warning alerts
    as a public post-O3 technology demonstration. Early warning alerts are
    detections of binary neutron star merger candidates up to tens of seconds
-   before merger.
+   before merger. **Starting on 2020-06-02, simulated early-warning alerts from
+   replayed O3 LIGO/Virgo data will be publicly distributed at a rate of
+   approximately once per day**.
 
 .. rubric:: Getting Started Checklist
 
