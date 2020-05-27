@@ -24,9 +24,9 @@ seconds after merger.**
 We are conducting a trial early warning public alert infrastructure. Since
 production analysis had to be suspended due to COVID-19 pandemic, we are
 replaying an 8-day period of saved LIGO data from O3 with a random (and
-undisclosed) time shift. **Starting on 2020-06-02, early-warning alerts arising
-from the replayed data will be publicly distributed as test alerts at a rate of
-approximately once per day.**
+undisclosed) time shift. **Starting on 2020-06-02 and lasting for one week,
+early-warning alerts arising from the replayed data will be publicly
+distributed as test alerts at a rate of approximately once per day.**
 
 Subscribe to Early-Warning Alerts
 ---------------------------------
