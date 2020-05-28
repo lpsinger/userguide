@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 16 (unreleased)
+Version 16 (2020-05-28)
 -----------------------
 
 .. rubric:: General
@@ -13,8 +13,6 @@ Version 16 (unreleased)
    early-warning alerts from replayed O3 LIGO/Virgo data will be publicly
    distributed at a rate of approximately once per day.**
 
-.. rubric:: Getting Started Checklist
-
 .. rubric:: Observing Capabilities
 
 *  Note suspension of Observing Run 3 (O3) on March 27, 2020, due to the
@@ -23,15 +21,9 @@ Version 16 (unreleased)
    shutdown to prepare for the next observing run (O4). Updates will be posted
    in this document as they become available.
 
-.. rubric:: Data Analysis
-
 .. rubric:: Alert Contents
 
 *  Add an example EarlyWarning GCN notice.
-
-.. rubric:: Sample Code
-
-.. rubric:: Additional Resources
 
 Version 15 (2020-01-15)
 -----------------------
