@@ -1,6 +1,23 @@
 Change Log
 ==========
 
+Version 17 (unreleased)
+-----------------------
+
+.. rubric:: General
+
+.. rubric:: Getting Started Checklist
+
+.. rubric:: Observing Capabilities
+
+.. rubric:: Data Analysis
+
+.. rubric:: Alert Contents
+
+.. rubric:: Sample Code
+
+.. rubric:: Additional Resources
+
 Version 16 (2020-05-28)
 -----------------------
 
