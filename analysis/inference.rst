@@ -71,4 +71,4 @@ for different search pipelines:
 
 .. [#MLEMBright]
    Chatterjee, D., Ghosh, S., Brady, P. R., et al. 2020, |ApJ|,
-   :arXiv:`1911.00116`
+   :doi:`10.3847/1538-4357/ab8dbe`
