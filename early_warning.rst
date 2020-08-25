@@ -77,9 +77,9 @@ on these analyses. Localizations will be produced with BAYESTAR; see the
 :doc:`analysis/parameter_estimation` section for details.
 
 .. note::
-    The following material describes the detection method and simulated
-    observing capabilities with GstLAL, but is also broadly applicable to
-    SPIIR and MBTA.
+    The following material, adapted from [#GstLALEarlyWarning]_, describes the
+    detection method and simulated observing capabilities with GstLAL, but is
+    also broadly applicable to SPIIR and MBTA.
 
 :term:`BNS` signals sweep up smoothly in frequency for a few minutes across the
 Advanced LIGO band. In that time, they may accumulate enough SNR to be detected
@@ -203,6 +203,10 @@ recovered at various early warning frequencies.
     :alt: Cumulative distribution of distance for early warning events
 
     Cumulative distribution of distance for early warning events.
+
+.. [#GstLALEarlyWarning]
+   Sachdev, S., Magee, R., Hanna, C., et al. 2020.
+   :arxiv:`2008.04288`
 
 .. _`Advanced LIGO`: https://ligo.caltech.edu
 .. _`Advanced Virgo`: http://www.virgo-gw.eu
