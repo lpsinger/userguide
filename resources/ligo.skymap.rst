@@ -13,16 +13,16 @@ advanced tools for working with GW probability sky maps.
 * Functions for manipulating distance posteriors (:mod:`ligo.skymap.distance`)
 
 * Probabilistic airmass plots (:doc:`ligo-skymap-plot-airmass
-  <ligo.skymap:ligo/skymap/tool/ligo_skymap_plot_airmass>`)
+  <ligo.skymap:tool/ligo_skymap_plot_airmass>`)
 
   .. image:: https://lscsoft.docs.ligo.org/ligo.skymap/_images/ligo_skymap_plot_airmass-1.png
      :alt: A probabilistic airmass plot.
 
-* The rapid sky localization code :doc:`BAYESTAR
-  <ligo.skymap:ligo/skymap/bayestar>`, which is used to produce the initial
-  sky maps for CBC events but can also be used to create :doc:`simulated
-  sky localizations <ligo.skymap:quickstart/bayestar-injections>`.
+* The rapid sky localization code :doc:`BAYESTAR <ligo.skymap:bayestar/index>`,
+  which is used to produce the initial sky maps for CBC events but can also be
+  used to create :doc:`simulated sky localizations
+  <ligo.skymap:quickstart/bayestar-injections>`.
 
 * The postprocessing tool that creates updated sky maps from :term:`MCMC`
   samples (:doc:`ligo-skymap-from-samples
-  <ligo.skymap:ligo/skymap/tool/ligo_skymap_from_samples>`)
+  <ligo.skymap:tool/ligo_skymap_from_samples>`)
