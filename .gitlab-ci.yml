@@ -86,7 +86,11 @@ spelling:
     - pip install -r requirements.txt
     - sphinx-build -M $CI_JOB_NAME . .
     # Fail and show output if there were spelling errors.
-    - if test -s $CI_JOB_NAME/output.txt; then cat $CI_JOB_NAME/output.txt; false; fi
+    - .gitlab/spelling_codeclimate.py
+  artifacts:
+    when: always
+    reports:
+      codequality: spelling.codeclimate.json 
 
 pages:
   stage: deploy
