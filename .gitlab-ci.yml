@@ -80,7 +80,7 @@ spelling:
   before_script:
     - *before-apt
     - apt-get update
-    - apt-get -y install enchant
+    - apt-get -y install enchant-2
     - pip install sphinxcontrib-spelling
   script:
     - pip install -r requirements.txt
