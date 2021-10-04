@@ -64,7 +64,7 @@ latexpdf:
   before_script:
     - *before-apt
     - apt-get update
-    - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended texlive-latex-extra
+    - apt-get -y install --no-install-recommends latexmk texlive-latex-recommended texlive-fonts-recommended tex-gyre texlive-latex-extra
   artifacts:
     expose_as: pdf
     expire_in: 2 weeks  # P&P circulation period
