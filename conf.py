@@ -217,10 +217,10 @@ intersphinx_mapping = {
     'gwcelery': ('https://gwcelery.readthedocs.io/en/latest/', None),
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),
-    'numpy': ('https://docs.scipy.org/doc/numpy/', None),
+    'numpy': ('https://numpy.org/doc/stable/', None),
     'pyregion': ('https://pyregion.readthedocs.io/en/latest/', None),
     'python': ('https://docs.python.org/', None),
-    'requests': ('https://requests.readthedocs.io/en/stable/', None),
+    'requests': ('https://docs.python-requests.org/en/stable/', None),
     'voevent-parse': ('https://voevent-parse.readthedocs.io/en/stable/', None)
 }
 
