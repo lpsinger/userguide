@@ -101,8 +101,6 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Author            | :samp:`LIGO Scientific Collaboration and Virgo Collaboration`                                                                 |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
-| **WhereWhen**     | Time of signal (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654437`                                                       |
-+-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | **What**                                                                                                                                          |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | GraceID           | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                                       |
@@ -133,6 +131,15 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 |                   | noise, that at least one of the compact objects was a     |                                                                   |
 |                   | neutron star, and that the system ejected a non-zero      |                                                                   |
 |                   | amount of neutron star matter, respectively               |                                                                   |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **WhereWhen**     | Time of signal (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654437`                                                       |
++-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
+| **How**           | List of detectors, e.g.                                                                                                       |
+|                   | :samp:`H1: LIGO Hanford 4 km gravitational wave detector`,                                                                    |
+|                   | :samp:`L1: LIGO Livingston 4 km gravitational wave detector` and                                                              |
+|                   | :samp:`V1: Virgo 3 km gravitational wave detector`                                                                            |
+|                   | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the preferred event            |
+|                   | for that particular :doc:`superevent </analysis/superevents>`                                                                 |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 
 In the event of a coincidence between a gravitational-wave candidate and an
