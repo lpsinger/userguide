@@ -53,7 +53,7 @@ When you are ready to publish a new version, follow these steps:
 2.  **Create a new version tag.** Create a new version tag to mark the release
     by running the following command (replace NN with the new version number)::
 
-        $ git vNN -m "Version NN"
+        $ git tag vNN -m "Version NN"
 
 3.  **Create a new dummy change log entry for the next version.** Go back to
     editing `changes.rst`_ and make a new section with the title ``Version MM
