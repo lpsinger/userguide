@@ -2,7 +2,7 @@ stages:
   - build
   - deploy
 
-image: python
+image: python:3.9  # Numpy etc. are not yet build for latest version, Python 3.10
 cache:
   key: shared
   paths:
