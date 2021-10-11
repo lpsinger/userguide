@@ -34,10 +34,9 @@ Glossary
 
     FAR
         False alarm rate, a statistic that is used to describe the significance
-        of a gravitational-wave event. It is defined as the rate of accidental
-        events due to detector noise or glitches, in the absence of any
-        astrophysical sources, that are as loud as or louder than the event in
-        question.
+        of a gravitational-wave event. See section
+        :ref:`false alarm rate (FAR) <far-significance>` for details.
+        FAR has units of frequency (one over time).
 
     FITS
         Flexible Image Transport System, a format for astronomical tables,

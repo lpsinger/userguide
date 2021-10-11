@@ -184,9 +184,11 @@ such as :samp:`MS181101abc`. A GraceDB ID has three parts:
 Significance
 ~~~~~~~~~~~~
 
-The significance of the event is quantified by its false alarm rate (FAR): the
-expected rate of events from the pipeline that produced the preferred event
-with equal or greater significance in the absence of any astrophysical signals.
+The significance of the event is quantified by its 
+:term:`false alarm rate <FAR>`: the expected rate of events from the
+pipeline that produced the preferred event with equal or higher
+ranking statistics, in the absence of any astrophysical signal
+(see :ref:`false alarm rate (FAR) <far-significance>`).
 
 Sky Localization
 ~~~~~~~~~~~~~~~~

@@ -11,6 +11,28 @@ mergers: core-collapse of massive stars, magnetar star-quakes, and more
 speculative sources such as intersecting cosmic strings or as-yet unknown GW
 sources.
 
+.. _far-significance:
+
+False alarm rate and significance
+---------------------------------
+
+Each search produces a set of candidate events time-stamped at or close to
+the estimated peak of GW strain amplitude. For binary merger candidates,
+this would be the time of merger.
+
+Each candidate event is assigned a ranking statistic value by the search
+pipeline that produced it: higher statistic values correspond to a higher
+probability of astrophysical (signal), as opposed to terrestrial (noise)
+origin. The statistical significance of a candidate produced by a given
+pipeline is quantified by its :term:`false alarm rate <FAR>`. This is the
+expected number of events of noise origin produced by the pipeline with a
+higher ranking statistic than the candidate, per unit of time searched.
+Since each search pipeline has an independent method of generating and ranking
+events, and of estimating the noise background, the false alarm rates assigned
+for events in the same superevent will in general be different. For an alert
+to be sent automatically, we require at least one event to have a false alarm
+rate below the :ref:`alert threshold <alert-threshold>`.
+
 Modeled Search
 --------------
 
