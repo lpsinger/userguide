@@ -1,0 +1,15 @@
+{
+    "name": "ExternalCoincInfo",
+    "namespace": "igwn.alerts.v1_0",
+    "type": "record",
+    "doc": "Information about an external coincidence.",
+    "fields": [
+        {"name": "gcn_notice_id", "type": "int", "doc": "The GCN notice ID of the coincident external event."},
+        {"name": "ivorn", "type": "string", "doc": "The VO identifier associated with the external VOEvent."},
+        {"name": "observatory", "type": "string", "doc": "The observatory reporting the coincident external event."},
+        {"name": "search", "type": "string", "doc": "The search reporting the coincident external event."},
+        {"name": "time_difference", "type": "double", "doc": "The difference in time, in seconds, between the external coincident event and the gravitational-wave event."},
+        {"name": "time_coincidence_far", "type": ["null", "double"], "doc": "The joint time coincidence FAR in units of Hz, if available."},
+        {"name": "time_sky_position_coincidence_far", "type": ["null", "double"], "doc": "The joint time and sky position coincidence FAR in units of Hz, if available."}
+    ]
+}

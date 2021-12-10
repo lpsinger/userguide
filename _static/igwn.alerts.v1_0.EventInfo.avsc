@@ -1,0 +1,17 @@
+{
+    "name": "EventInfo",
+    "namespace": "igwn.alerts.v1_0",
+    "type": "record",
+    "doc": "Information about the event.",
+    "fields": [
+        {"name": "time", "type": "string", "doc": "Time of the event in ISO 8601 format."},
+        {"name": "far", "type": "double", "doc": "False alarm rate of the event in Hz."},
+        {"name": "instruments", "type": {"type": "array", "items": "string", "default": []}, "doc": "Instruments that participated in the observation as an array."},
+        {"name": "group", "type": "string", "doc": "The data analysis working group that uploaded the event."},
+        {"name": "pipeline", "type": "string", "doc": "The data analysis pipeline that uploaded the event."},
+        {"name": "search", "type": "string", "doc": "The type of search that uploaded the event."},
+        {"name": "classification", "type": {"type": "map", "values": "double", "default": {}}, "doc": "The probabilities that the event is of terrestrial origin or originates from various astrophysical categories, only provided for events uploaded by the CBC data analysis working group."},
+        {"name": "properties", "type": {"type": "map", "values": "double", "default": {}}, "doc": "HasNS and HasRemnant probabilities."},
+        {"name": "skymap", "type": ["null", "bytes"], "doc": "A skymap in a multi-order FITS format."}
+    ]
+}
