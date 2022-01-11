@@ -5,7 +5,7 @@ Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
 **GCN Notices** are machine-readable packets. They are available as
-:term:`VOEvent` XML and `several other legacy formats`_. See the
+Kafka Avro,:term:`VOEvent` XML, and `several other legacy formats`_. See the
 :doc:`/tutorial/index` section for instructions on receiving GCNs in VOEvent
 format.
 
@@ -435,8 +435,44 @@ waveforms. After final analysis, those data products are released through the
 `Gravitational Wave Open Science Center
 <https://www.gw-openscience.org/about/>`_.
 
+
 Examples
 --------
+
+Below are some sample Kafka with Avro alerts to illustrate the formatting of the GCN Notices.
+
+.. tabs::
+
+   .. tab:: EarlyWarning
+
+      .. literalinclude:: _static/early_alert.json
+         :language: json
+
+   .. tab:: Preliminary
+
+      .. literalinclude:: _static/prelim_alert.json
+         :language: json
+
+   .. tab:: Initial
+
+      .. literalinclude:: _static/initial_alert.json
+         :language: json
+
+   .. tab:: Update
+
+      .. literalinclude:: _static/update_alert.json
+         :language: json
+
+   .. tab:: Retraction
+
+      .. literalinclude:: _static/retraction_alert.json
+         :language: json
+
+   .. tab:: External Coincidence
+
+      .. literalinclude:: _static/external_alert.json
+         :language: json
+
 
 Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
 
