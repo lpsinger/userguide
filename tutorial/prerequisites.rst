@@ -12,6 +12,11 @@ operating system (Linux or macOS) and a few third-party Python packages:
   HEALPix bindings for HEALPix_, DS9_, Aladin_)
 * astropy_ for astronomical coordinate transformations, observability, etc.
 * numpy_ and matplotlib_, popular math and plotting packages for Python
+* confluent-kafka_ a data streaming platform
+* fastavro_ a faster implementation of the avro data serialization system
+
+* You will also need the virtualization software Docker in order to run the Kafka with Avro examples.
+
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
 of the above with the following command:
