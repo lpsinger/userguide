@@ -15,7 +15,7 @@ operating system (Linux or macOS) and a few third-party Python packages:
 * confluent-kafka_ a data streaming platform
 * fastavro_ a faster implementation of the avro data serialization system
 
-* You will also need the virtualization software Docker in order to run the Kafka with Avro examples.
+* You will also need the OS virtualization software Docker in order to run the Kafka with Avro examples.
 
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
@@ -47,7 +47,10 @@ packages using Anaconda, first :doc:`install conda
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
 .. _astropy: https://pypi.org/project/astropy/
 .. _comet: https://pypi.org/project/Comet/
+.. _confluent-kafka: https://pypi.org/project/confluent-kafka/
+.. _Docker: https://docs.docker.com/get-docker/
 .. _DS9: http://ds9.si.edu
+.. _fastavro: https://pypi.org/project/fastavro/
 .. _HEALPix: https://healpix.sourceforge.io
 .. _lxml: https://pypi.org/project/lxml/
 .. _MacPorts: https://www.macports.org
