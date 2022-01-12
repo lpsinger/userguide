@@ -15,7 +15,7 @@ operating system (Linux or macOS) and a few third-party Python packages:
 * confluent-kafka_ a data streaming platform
 * fastavro_ a faster implementation of the avro data serialization system
 
-* You will also need the OS virtualization software Docker_ in order to run the Kafka with Avro examples.
+* You will also need the OS virtualization software Docker_ in order to run the examples using Kafka with Avro.
 
 
 If you are on a Mac and use the MacPorts_ package manager, you can install all
