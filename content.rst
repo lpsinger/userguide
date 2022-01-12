@@ -4,8 +4,8 @@ Alert Contents
 Public LIGO/Virgo alerts are distributing using NASA's Gamma-ray Coordinates
 Network (:term:`GCN`). There are two types of alerts:
 
-**GCN Notices** are machine-readable packets. They are available as
-Kafka Avro,:term:`VOEvent` XML, and `several other legacy formats`_. See the
+**GCN Notices** are machine-readable packets. They are available through
+Kafka with Avro, :term:`VOEvent` XML, and `several other legacy formats`_. See the
 :doc:`/tutorial/index` section for instructions on receiving GCNs in VOEvent
 format.
 
