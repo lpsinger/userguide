@@ -12,6 +12,89 @@ candidates detected by matched filtering, and 'Burst' for candidates detected
 by model-independent methods. Your handler can take different actions based on
 this. The example below will handle only 'CBC' events.
 
+Using Avro with Kafka
+=====================
+
+Avro alerts use serialized data based on schema to send and receive alerts. The different types of alerts are "EarlyWarning", "Preliminary", "Initial", "Update", and "Retraction". The JSON schema below is a representation of the GW alerts that will be serialized into an AVRO file.
+
+..testcode::
+    [
+  {
+    "name": "AlertType",
+    "namespace": "igwn.alerts",
+    "type": "enum",
+    "symbols": ["EarlyWarning", "Preliminary", "Initial", "Update", "Retraction"]
+  },
+  {
+    "name": "AlertChanged",
+    "namespace": "igwn.alerts",
+    "type": "enum",
+    "symbols": [
+      "NEW_EVENT",
+      "EVENT_RETRACTED",
+      "EVENT_CONFIRMED",
+      "EVENT_UPDATED",
+      "SKYMAP_UPDATED",
+      "CLASSIFICATION_UPDATED",
+      "PROPERTIES_UPDATED"
+    ]
+  },
+      {
+    "name": "EventInfo",
+    "namespace": "igwn.alerts",
+    "type": "record",
+    "fields": [
+      {"name": "time", "type": "string"},
+      {"name": "far", "type": "double"},
+      {"name": "instruments", "type": {"type": "array", "items": "string", "default": []}},
+      {"name": "group", "type": "string"},
+      {"name": "pipeline", "type": "string"},
+      {"name": "search", "type": "string"},
+      {"name": "classification", "type": {"type": "map", "values": "double", "default": {}}},
+      {"name": "properties", "type": {"type": "map", "values": "double", "default": {}}},
+      {"name": "skymap", "type": "bytes"}
+    ]
+  },
+  {
+    "name": "Alert",
+    "namespace": "igwn.alerts",
+    "type": "record",
+    "fields": [
+      {"name": "author", "type": "string"},
+      {"name": "alert_type", "type": "AlertType"},
+      {"name": "time_created", "type": "string"},
+      {"name": "superevent_id", "type": "string"},
+      {"name": "is_public", "type": "boolean"},
+      {"name": "is_injection", "type": "boolean"},
+      {"name": "changed", "type": "AlertChanged"},
+      {"name": "event", "type": ["null", "EventInfo"]},
+      {"name": "urls", "type": {"type": "map", "values": "string", "default": {}}},
+      {"name": "event_revision", "type": "int"},
+      {"name": "schema_version", "type": "int"}
+    ]
+  }
+ ]
+
+
+In order to send and receive alerts you will need Docker running on your machine. To start the Docker container run the following command:
+docker run -it --rm --hostname localhost -p 9092:9092 scimma/server:latest --noSecurity
+ 
+Then, download and execute the sample scripts below for sending and receiving alerts.
+python send_alerts.py
+.. literalinclude:: _static/send_alerts.py
+         :language: python
+
+python receive_alerts.py
+.. literalinclude:: _static/receive_alerts.py
+         :language: python
+ 
+Which should yield the following  message:
+ 
+{'author': 'LIGO Scientific Collaboration and Virgo Collaboration', 'alert_type': 'Update', 'time_created': '2018-11-01T22:36:25', 'superevent_id': 'MS181101ab', 'is_public': True, 'is_injection': False, 'changed': 'SKYMAP_UPDATED', 'event': {'time': '2018-11-01T22:22:46.654437', 'far': 9.11069936486e-14, 'instruments': ['H1', 'L1', 'V1'], 'group': 'CBC', 'pipeline': 'gstlal', 'search': 'MDC', 'classification': {'BNS': 0.95, 'NSBH': 0.01, 'BBH': 0.03, 'Terrestrial': 0.01}, 'properties': {'HasNS': 0.95, 'HasRemnant': 0.91}, 'skymap': None}, 'external_coinc': None, 'urls': {'gracedb': 'https://example.org/superevents/MS181101ab/view/'}, 'event_revision': 4, 'api_version': 1}
+ 
+This demonstrates generating an alert with send_alerts.py, then receiving and reading the alert with receive_alerts.py.
+
+
 .. important::
    Note that mock or 'test' observations are denoted by the ``role="test"``
    VOEvent attribute. Alerts resulting from real LIGO/Virgo science data will
