@@ -23,6 +23,8 @@ Version 17 (unreleased)
 
 *  Removed MassGap category from source classification.
 
+*  Add RAVEN spacetime coincidence FAR to alert example.
+
 .. rubric:: Sample Code
 
 *  Removed MassGap category from source classification.

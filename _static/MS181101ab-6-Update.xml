@@ -65,6 +65,9 @@
       <Param dataType="float" name="Time_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="1e-16">
         <Description>Estimated coincidence false alarm rate in Hz using timing</Description>
       </Param>
+      <Param dataType="float" name="Time_Sky_Position_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="1e-17">
+        <Description>Estimated coincidence false alarm rate in Hz using timing and sky position</Description>
+      </Param>
       <Description>Properties of joint coincidence found by RAVEN</Description>
     </Group>
     <Group name="GW_SKYMAP" type="GW_SKYMAP">
