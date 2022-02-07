@@ -10,13 +10,13 @@ be provided based on samples drawn from the posterior probability distribution.
 Classification
 --------------
 
-The classification consists of five numbers, summing to unity, that give the
-probability that the source is either a :term:`BNS`, :term:`NSBH`, :term:`BBH`
-merger, contains at least one :term:`MassGap <MassGap>` component, or is of
-:term:`Terrestrial` (i.e. a background fluctuation or a glitch) origin. See the
-:ref:`figure in the alert contents section <classification-diagram>` for the
-boundaries of the source classification categories in the :math:`(m_1, m_2)`
-plane.
+The classification consists of four numbers, summing to unity, that
+give the probability that the source is either a :term:`BNS`,
+:term:`NSBH`, :term:`BBH` merger, or is of :term:`Terrestrial` (i.e. a
+background fluctuation or a glitch) origin. See the :ref:`figure in
+the alert contents section <classification-diagram>` for the
+boundaries of the source classification categories in
+the :math:`(m_1,m_2)` plane.
 
 This assumes that terrestrial and astrophysical events occur as independent
 Poisson processes. A source-dependent weighting of matched-filter templates is

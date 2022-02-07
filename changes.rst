@@ -14,10 +14,15 @@ Version 17 (unreleased)
 
 *  Add the reference to the source properties methods paper.
    Provide details on the cases where the above method is used.
+*  Removed MassGap category from source classification.
 
 .. rubric:: Alert Contents
 
+*  Removed MassGap category from source classification.
+
 .. rubric:: Sample Code
+
+*  Removed MassGap category from source classification.
 
 .. rubric:: Additional Resources
 

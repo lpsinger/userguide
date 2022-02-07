@@ -124,7 +124,7 @@ The table below is a representation of the contents of a LIGO/Virgo GCN Notice.
 | Duration          |                                                           | Duration of burst in s                                            |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                               |
-| MassGap, Noise    | :term:`NSBH`, :term:`BBH`, or :term:`MassGap` merger, or  |                                                                   |
+| Noise             | :term:`NSBH`, :term:`BBH`, or                             |                                                                   |
 |                   | :term:`Terrestrial` (i.e, noise) respectively             |                                                                   |
 +-------------------+-----------------------------------------------------------+                                                                   +
 | HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                                   |
@@ -249,17 +249,16 @@ Inference
 The inference section is present for :term:`CBC` events *only*. It has two
 parts:
 
-**Classification**: Five numbers, summing to unity, giving probability that the
+**Classification**: Four numbers, summing to unity, giving probability that the
 source belongs to the following five mutually exclusive categories:
 
 * :term:`BNS` merger
 * :term:`NSBH` merger
 * :term:`BBH` merger
-* :term:`MassGap` merger
 * :term:`Terrestrial` (i.e., a chance background fluctuation or a glitch)
 
 The figure below shows the extent of the three astrophysical categories (BNS,
-NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
+NSBH, and BBH) in terms of the component masses :math:`m_1` and
 :math:`m_2`.
 
 .. note::
@@ -270,8 +269,7 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 
    In the mass diagram below, the upper diagonal region :math:`m_1 < m_2` is
    lightly shaded in order to indicate that the definitions of four mass
-   classes (BNS, NSBH, BBH, MassGap) are *symmetric* in :math:`m_1` and
-   :math:`m_2`.
+   classes (BNS, NSBH, BBH) are *symmetric* in :math:`m_1` and :math:`m_2`.
 
 .. _classification-diagram:
 
@@ -289,15 +287,15 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 
     min_mass = 1
     ns_max_mass = 3
-    bh_min_mass = 5
-    max_mass = 11
+    bh_min_mass = 3
+    max_mass = 6
     ax = plt.axes(aspect=1)
     ax.set_xlim(min_mass, max_mass)
     ax.set_ylim(min_mass, max_mass)
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
 
-    ticks = [min_mass, ns_max_mass, bh_min_mass]
+    ticks = [min_mass, ns_max_mass]
     ax.set_xticks(ticks)
     ax.set_yticks(ticks)
 
@@ -311,8 +309,8 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
     ax.xaxis.set_label_coords(1.0, -0.025)
     ax.yaxis.set_label_coords(-0.025, 1.0)
 
-    bns_color, nsbh_color, gap_color, bbh_color = seaborn.color_palette(
-        'pastel', 4)
+    bns_color, nsbh_color, bbh_color = seaborn.color_palette(
+        'pastel', 3)
 
     p = ax.add_patch(Rectangle((min_mass, min_mass),
                                ns_max_mass - min_mass, ns_max_mass - min_mass,
@@ -336,18 +334,6 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
                                max_mass - bh_min_mass, ns_max_mass - min_mass,
                                color=nsbh_color, linewidth=0))
     ax.text(*get_center(p.get_bbox()), 'NSBH', ha='center', va='center')
-
-    ax.add_patch(Rectangle((min_mass, ns_max_mass),
-                           max_mass - min_mass, bh_min_mass - ns_max_mass,
-                           color=gap_color, linewidth=0))
-    ax.add_patch(Rectangle((ns_max_mass, min_mass),
-                           bh_min_mass - ns_max_mass, max_mass - min_mass,
-                           color=gap_color, linewidth=0))
-    p = ax.add_patch(Rectangle((ns_max_mass, ns_max_mass),
-                               bh_min_mass - ns_max_mass, bh_min_mass - ns_max_mass,
-                               color=gap_color, linewidth=0))
-    ax.text(0.5 * (bh_min_mass + max_mass), 0.5 * (ns_max_mass + bh_min_mass),
-            'MassGap', ha='center', va='center')
 
     ax.fill_between([min_mass, max_mass],
                     [min_mass, max_mass],
@@ -375,7 +361,7 @@ NSBH, BBH, and MassGap) in terms of the component masses :math:`m_1` and
 
 **Properties**: Probabilities that the source has each of the following
 properties, *assuming that it is not noise* (e.g., assuming that it is a BNS,
-NSBH, BBH, or MassGap merger):
+NSBH, or BBH merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
   objects is consistent with a neutron star. Equivalently, the mass of the

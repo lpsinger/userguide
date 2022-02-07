@@ -56,18 +56,15 @@
         <Description>Probability that the source is a binary neutron star merger (both objects lighter than 3 solar masses)</Description>
       </Param>
       <Param dataType="float" name="NSBH" ucd="stat.probability" value="0.01">
-        <Description>Probability that the source is a neutron star-black hole merger (primary heavier than 5 solar masses, secondary lighter than 3 solar masses)</Description>
+        <Description>Probability that the source is a neutron star-black hole merger (secondary lighter than 3 solar masses)</Description>
       </Param>
       <Param dataType="float" name="BBH" ucd="stat.probability" value="0.03">
-        <Description>Probability that the source is a binary black hole merger (both objects heavier than 5 solar masses)</Description>
-      </Param>
-      <Param dataType="float" name="MassGap" ucd="stat.probability" value="0.0">
-        <Description>Probability that the source has at least one object between 3 and 5 solar masses</Description>
+        <Description>Probability that the source is a binary black hole merger (both objects heavier than 3 solar masses)</Description>
       </Param>
       <Param dataType="float" name="Terrestrial" ucd="stat.probability" value="0.01">
         <Description>Probability that the source is terrestrial (i.e., a background noise fluctuation or a glitch)</Description>
       </Param>
-      <Description>Source classification: binary neutron star (BNS), neutron star-black hole (NSBH), binary black hole (BBH), MassGap, or terrestrial (noise)</Description>
+      <Description>Source classification: binary neutron star (BNS), neutron star-black hole (NSBH), binary black hole (BBH), or terrestrial (noise)</Description>
     </Group>
     <Group name="Properties" type="Properties">
       <Param dataType="float" name="HasNS" ucd="stat.probability" value="0.95">

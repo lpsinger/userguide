@@ -171,7 +171,6 @@ Upon running this, you should see:
     BNS = 0.95
     NSBH = 0.01
     BBH = 0.03
-    MassGap = 0.0
     Terrestrial = 0.01
     HasNS = 0.95
     HasRemnant = 0.91
