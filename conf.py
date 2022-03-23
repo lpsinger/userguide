@@ -48,7 +48,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx_tabs.tabs',
-    'matplotlib.sphinxext.plot_directive'
+    'matplotlib.sphinxext.plot_directive',
+    'sphinx_immaterial_igwn',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -84,18 +85,26 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "sphinx_immaterial_igwn"
+
+# # This will show a "Last updated" on the footer
+# html_last_updated_fmt = "%H:%M %B %d %Y"
+
+# html_title = "LIGO/Virgo Public Alerts User Guide"
+# html_logo = "logo.png"
+# html_show_sourcelink = False
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
 html_theme_options = {
-    'description': 'Primer on public alerts for astronomers from the LIGO, Virgo, and KAGRA gravitational-wave observatories.',
-    'fixed_sidebar': True,
-    'show_relbars': True,
-    'sidebar_collapse': True
+    # "edit_uri": "blob/main/sphinx/docs",
+    "repo_name": "userguide",
+    "repo_url": "https://git.ligo.org/emfollow/userguide",
+    "repo_type": "gitlab",
+    "site_url": "https://emfollow.docs.ligo.org/userguide/",
 }
+html_last_updated_fmt = ""
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -112,11 +121,8 @@ html_static_path = ['_static']
 #
 html_sidebars = {
     '**': [
-        'about.html',
-        'navigation.html',
-        'contact.html',
         'searchbox.html',
-        'funding.html'
+        'globaltoc.html',
     ]
 }
 

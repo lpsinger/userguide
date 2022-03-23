@@ -26,12 +26,9 @@ format, and includes instructions and sample code for receiving GCN Notices and
 decoding GW sky maps.
 
 
-.. only:: html
-
-    .. rubric:: Contents
-
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    quickstart
    capabilities
@@ -40,21 +37,8 @@ decoding GW sky maps.
    tutorial/index
    resources/index
    early_warning
-
-.. only:: html
-
-    .. rubric:: Appendix
-
-    .. toctree::
-       :hidden:
-
-       changes
-       glossary
-
-* :doc:`changes`
-* :doc:`glossary`
-* :ref:`search`
-* `Report issues <emfollow-userguide@support.ligo.org>`_
+   changes
+   glossary
 
 .. _`LIGO Scientific Collaboration`: https://www.ligo.org/
 .. _`Virgo Collaboration`: http://public.virgo-gw.eu/the-virgo-collaboration/
