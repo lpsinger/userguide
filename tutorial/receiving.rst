@@ -181,4 +181,4 @@ Upon running this, you should see:
     os.chdir(old_dir)
     patcher.stop()
 
-.. _curl: https://curl.haxx.se
+.. _curl: https://curl.se

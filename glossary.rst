@@ -186,7 +186,7 @@ Glossary
 
     Virgo
         Virgo Observatory (see `Virgo observatory home page
-        <http://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
+        <https://www.virgo-gw.eu>`_), site of a 3 km gravitational-wave detector
         in Cascina, Italy.
 
     VOEvent

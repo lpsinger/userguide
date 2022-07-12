@@ -157,7 +157,7 @@ temporally-coincident sub-threshold IceCube neutrinos and performs a detailed
 Bayesian significance calculation to find joint GW+HEN triggers.
 
 .. _`Low-Latency Algorithm for Multi-messenger Astrophysics`: https://multimessenger.science
-.. _see full list: http://gcn.gsfc.nasa.gov/filtering.html
+.. _see full list: https://gcn.gsfc.nasa.gov/filtering.html
 
 .. include:: /journals.rst
 

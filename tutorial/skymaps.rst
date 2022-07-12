@@ -407,7 +407,7 @@ bilinear interpolation between pixels. See the :doc:`Healpy tutorial
 .. _HEALPix: https://healpix.sourceforge.io
 .. _HiPS: https://aladin.u-strasbg.fr/hips/
 .. _imhead: https://linux.die.net/man/1/imhead
-.. _Planck: https://www.esa.int/Our_Activities/Space_Science/Planck
+.. _Planck: https://www.esa.int/Science_Exploration/Space_Science/Planck
 .. _WCSTools: http://tdc-www.harvard.edu/wcstools/
 
 .. include:: /journals.rst

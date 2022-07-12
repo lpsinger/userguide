@@ -55,4 +55,4 @@ and real-time results.
 .. _`OpenLVEM instructions`: https://wiki.gw-astronomy.org/OpenLVEM/OpenLVEMSignUp
 .. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM/WebHome
 .. _GraceDB: https://gracedb.ligo.org
-.. _`Astronomer's Telegrams`: http://www.astronomerstelegram.org
+.. _`Astronomer's Telegrams`: https://www.astronomerstelegram.org

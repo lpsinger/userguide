@@ -56,7 +56,7 @@ decoding GW sky maps.
 * :ref:`search`
 * `Report issues <emfollow-userguide@support.ligo.org>`_
 
-.. _`LIGO Scientific Collaboration`: https://ligo.org/
+.. _`LIGO Scientific Collaboration`: https://www.ligo.org/
 .. _`Virgo Collaboration`: http://public.virgo-gw.eu/the-virgo-collaboration/
 .. _`KAGRA Collaboration`: https://gwcenter.icrr.u-tokyo.ac.jp/en/organization
 .. _`Advanced LIGO`: https://ligo.caltech.edu
