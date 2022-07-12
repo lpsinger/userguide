@@ -10,6 +10,5 @@ view GW alerts on your smart phone or tablet.
   by Peter Kramer
 
 * `Chirp <https://www.laserlabs.org/chirp.php>`_ for
-  `iOS <https://apps.apple.com/app/chirp-gravitational-wave-app/id1484328193>`__
-  or `Android <https://play.google.com/store/apps/details?id=org.laserlabs.chirp>`__
+  `Android <https://play.google.com/store/apps/details?id=org.laserlabs.chirp>`__
   by Laser Labs
