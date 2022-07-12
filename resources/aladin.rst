@@ -201,7 +201,7 @@ it, check the corresponding plan in the Aladin stack.
 .. _`script launcher`: https://aladin.u-strasbg.fr/java/Aladin
 .. _`GraceDB`: https://gracedb.ligo.org/
 .. _`LALinference sky map of GW170817`: https://dcc.ligo.org/public/0157/P1800381/006/GW170817_skymap.fits.gz
-.. _`GLADE catalog`: http://aquarius.elte.hu/glade/index.html
+.. _`GLADE catalog`: https://glade.elte.hu
 .. _`Aladin filter syntax`: https://cdsweb.u-strasbg.fr/boch/doc/filters.htx
 .. _`2MASS preview page`: https://alasky.u-strasbg.fr/2MASS/Color/
 .. _`HiPS list aggregator`: https://aladin.unistra.fr/hips/list
