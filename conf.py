@@ -98,7 +98,7 @@ html_theme = "sphinx_immaterial_igwn"
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    # "edit_uri": "blob/main/sphinx/docs",
+    "edit_uri": "-/blob/master",
     "repo_name": "userguide",
     "repo_url": "https://git.ligo.org/emfollow/userguide",
     "repo_type": "gitlab",
