@@ -160,7 +160,7 @@ latex_elements = {
     'releasename': 'Version'
 }
 
-latex_appendices = ['changes', 'glossary']
+latex_appendices = ['contact', 'changes', 'glossary']
 
 # LaTeX does not support emoji.
 # In LaTeX, replace the sparkle emoji (✨) used in early_warning.rst
