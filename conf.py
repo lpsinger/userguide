@@ -93,7 +93,7 @@ html_title = "IGWN | Public Alerts User Guide"
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "edit_uri": "-/blob/master",
+    "edit_uri": "-/blob/main",
     "repo_name": "userguide",
     "repo_url": "https://git.ligo.org/emfollow/userguide",
     "repo_type": "gitlab",
