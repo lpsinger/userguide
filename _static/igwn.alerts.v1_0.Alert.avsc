@@ -4,7 +4,6 @@
     "type": "record",
     "doc": "Alert schema v1.0.",
     "fields": [
-        {"name": "author", "type": "string"},
         {"name": "alert_type", "type": "igwn.alerts.v1_0.AlertType", "doc": "The type of alert; the possible values are EARLY_WARNING, PRELIMINARY, INITIAL, UPDATE, RETRACTION."},
         {"name": "time_created", "type": "string", "doc": "The time the superevent was created in ISO 8601 format."},
         {"name": "superevent_id", "type": "string", "doc": "The GraceDB superevent ID."},
