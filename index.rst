@@ -1,3 +1,5 @@
+:hero: Primer on public alerts for astronomers from the LIGO, Virgo, and KAGRA gravitational-wave observatories.
+
 LIGO/Virgo/KAGRA Public Alerts User Guide
 =========================================
 
