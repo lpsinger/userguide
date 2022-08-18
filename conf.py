@@ -87,13 +87,6 @@ pygments_style = 'sphinx'
 #
 html_theme = "sphinx_immaterial_igwn"
 
-# # This will show a "Last updated" on the footer
-# html_last_updated_fmt = "%H:%M %B %d %Y"
-
-# html_title = "LIGO/Virgo Public Alerts User Guide"
-# html_logo = "logo.png"
-# html_show_sourcelink = False
-
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
