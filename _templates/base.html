@@ -1,0 +1,42 @@
+{% extends "!base.html" %}
+{% set css_files = css_files + ['_static/css/userguide_style.css'] %}
+
+<!-- Navigation -->
+{% block site_nav %}
+
+<!-- Main navigation -->
+{% if nav %}
+{% if page and page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "navigation" in page.meta.hide %}{% endif %}
+<div
+  class="md-sidebar md-sidebar--primary"
+  data-md-component="sidebar"
+  data-md-type="navigation"
+  {{ hidden }}
+>
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">{% include "partials/nav.html" %}</div>
+    <div class="md-sidebar__inner userguide-feedback__box">
+        <p class="userguide-feedback__h1">Question? Issues? Feedback?<p>
+        <p class="userguide-feedback__p">Email <a href="mailto:emfollow-userguide@support.ligo.org">emfollow-userguide@support.ligo.org</a></p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Table of contents -->
+{% if not "toc.integrate" in features %}
+{% if page and page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "toc" in page.meta.hide %}{% endif %}
+<div
+  class="md-sidebar md-sidebar--secondary"
+  data-md-component="sidebar"
+  data-md-type="toc"
+  {{ hidden }}
+>
+  <div class="md-sidebar__scrollwrap">
+    <div class="md-sidebar__inner">{% include "partials/toc.html" %}</div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

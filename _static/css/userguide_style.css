@@ -1,0 +1,13 @@
+.userguide-feedback__box {
+    margin-top: 2em;
+    padding: 0.1em 0.6em;
+    border-top: 1px solid #515151;
+    font-size: 0.6rem;
+    color: #515151;
+}
+.userguide-feedback__h1 {
+    font-weight: bold;
+}
+.userguide-feedback__p > a {
+    word-break: keep-all;
+}
