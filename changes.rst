@@ -9,6 +9,9 @@ Version 17 (unreleased)
 *  Change the name of this document from "LIGO/Virgo Public Alerts User Guide"
    to "LIGO/Virgo/KAGRA Public Alerts User Guide".
 
+*  Use the new `sphinx-immaterial-igwn <https://pypi.org/project/sphinx-immaterial-igwn/>`_
+   theme which is common to many LIGO/Virgo/KAGRA documents.
+
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
