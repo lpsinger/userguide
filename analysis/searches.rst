@@ -43,7 +43,7 @@ templates to cover the target parameter space of compact binaries, with all
 pipelines covering the mass ranges corresponding to :term:`BNS`, :term:`NSBH`,
 and :term:`BBH` systems.
 
-A coincident analysis is performed by all pipelines, where candidate events are
+A coincident analysis is performed by all pipelines, where candidate events are
 extracted separately from each detector via matched-filtering and later
 combined across detectors. SPIIR extracts candidates from each detector via
 matched-filtering and looks for coherent responses from the other detectors to
