@@ -52,11 +52,9 @@ decoding GW sky maps.
 
        changes
        glossary
-       contact
 
     * :doc:`changes`
     * :doc:`glossary`
-    * :doc:`contact`
 
 .. _`LIGO Scientific Collaboration`: https://www.ligo.org/
 .. _`Virgo Collaboration`: http://public.virgo-gw.eu/the-virgo-collaboration/
