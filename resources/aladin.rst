@@ -35,7 +35,7 @@ multi-order sky maps encode *sampled images or functions on the sphere*. The
 multi-order sky map FITS format is a superset of the MOC FITS format, the only
 difference being that a multi-order sky map has values attached to each cell
 (probability density, distance estimates) whereas a MOC map does not. 
-Aladin version v11 supports the LIGO/Virgo/KAGRA multi-resolution sky maps.
+Aladin version v12 supports the LIGO/Virgo/KAGRA multi-resolution sky maps.
 
 Running Aladin Desktop
 ----------------------
@@ -68,8 +68,10 @@ Loading a GW Sky Localization
 
 You can copy and paste the sky map URL from the `GraceDB`_ or drag and drop a
 HEALPix FITS file from your operating system's file browser in the main Aladin
-window. Aladin recognizes only the standard HEALPix format with the file
-extension ``.fits.gz``. Here we will work with the `LALinference sky map of
+window. Aladin v12 recognizes both the standard HEALPix format with the file
+extension ``.fits.gz`` and the multi-resolution HEALPix format, distinguished 
+by the file extension ``.multiorder.fits``. Better performances are achieved with 
+the multi-resolution format. Here we will work with the `LALInference sky map of
 GW170817`_.
 
 Building a Credible Region
@@ -83,14 +85,14 @@ probability skymap`.
 .. figure:: /_static/aladin_fig1.png
    :alt: Create a MOC from a GW sky localization
 
-The :guilabel:`MOC generation` window has two options: the probability sky map
-and the threshold. Make sure that the GW sky map that we loaded in the previous
-step is selected in the :guilabel:`Proba skymap` dropdown menu. Then enter a
-number between 0 and 1 for the credible level in the :guilabel:`Probability
-threshold` box. Finally, press the :guilabel:`CREATE` button. The MOC for the
-credible region is created and loaded in the Aladin Stack. If you repeat this
-process multiple times for different credible levels, then you can select each
-MOC independently from the Aladin stack.
+The :guilabel:`MOC generation` window has three options: the probability sky map,
+the threshold, and the MOC resolution. Make sure that the GW sky map 
+that we loaded in the previous step is selected in the :guilabel:`Proba skymap` 
+dropdown menu. Then enter a number between 0 and 1 for the credible level in the
+:guilabel:`Probability threshold` box. Finally, press the :guilabel:`CREATE` button. 
+The MOC for the credible region is created and loaded in the Aladin Stack. 
+If you repeat this process multiple times for different credible levels, 
+then you can select each MOC independently from the Aladin stack.
 
 Area Within a Credible Region
 -----------------------------
@@ -184,15 +186,65 @@ bar, and click the :guilabel:`Ok` button in the dialog box. Aladin will
 generate thumbnail views from the current image in the main window. To change
 it, check the corresponding plan in the Aladin stack.
 
+Building a Spatial and Temporal Credible Region
+-----------------------------------------------
+
+Aladin v12 offers the functionality to add  temporal information in
+any spatial coverage described by the MOC data structure. The resulting
+new data structure is indicated with STMOC (Space and Time MOC) [#Fernique22]_.
+
+Click on the name of the plan corresponding to the credible region.
+``MOC 0.9 GW170817_skymap.fits`` will appear highlighted.
+From the menu bar, press
+:menuselection:`Coverage --> Generate a Space-Time MOC based on --> The selected
+space MOC`.
+The :guilabel:`Properties` is equipped with the :guilabel:`Time` section with
+two boxes in which you can select a time interval.
+The merge time of GW170817 occurs at 2017-08-17T12:41:04.43 UTC.
+Searching for coincident with external triggers, we apply a time window
+from -1 s to 5 s around the GW time i.e., from
+2017-08-17T12:41:03.43 UTC to 2017-08-17T12:41:09.43 UTC.
+
+Click on :guilabel:`Apply` to create a credible region with this time range.
+The main Aladin window shows a bottom box :guilabel:`Time plot` displaying the associated
+time line.
+
+.. figure:: /_static/aladin_fig_stmoc.png
+   :alt: Space and Time MOC creation
+
+Spatial and Temporal Coverage Intersections
+-------------------------------------------
+
+The STMOC data structure allows you to perform operations in space and
+time simultaneously. We build a new STMOC with the `error box of GRB 170817`_
+provided by the GBM instrument on board the Fermi satellite.
+GRB170817 occurred at 2017-08-17T12:41:06 UTC [#Goldstein17]_.
+ 
+The intersection is performed by opening the window :guilabel:`Logical operations`
+from :menuselection:`Coverage`. An additional MOC layer is loaded into the Aladin
+stack with information on the spatial and temporal coincident of the
+two astrophysical events.
+
+.. figure:: /_static/aladin_fig_intersection.png
+   :alt: Spatial and temporal intersection
+
 .. include:: /journals.rst
 
 .. [#Fernique15]
-   Fernique, P., Allen, et al. 2015, |A&A|, 578, A114.
+   Fernique, P., et al. 2015, |A&A|, 578, A114.
    :doi:`10.1051/0004-6361/201526075`
 
 .. [#Singer16b]
    Singer, L. P., Chen, H.-Y., Holz, D. E., et al. 2016, |ApJL|, 829, L15.
    :doi:`10.3847/2041-8205/829/1/L15`
+
+.. [#Fernique22]
+   Fernique, P., et al. 2022, IVOA Recommendation 27 July 2022.
+   :IVOA:`https://ivoa.net/documents/MOC/`
+
+.. [#Goldstein17]
+   Goldstein, A., et al. 2017, |ApJL|, 848 L14
+   :doi:`https://doi.org/10.3847/2041-8213/aa8f41`
 
 .. _`Aladin Desktop`:  https://aladin.u-strasbg.fr/AladinDesktop/
 .. _`VizieR`:  http://vizier.u-strasbg.fr/index.gml
@@ -208,3 +260,5 @@ it, check the corresponding plan in the Aladin stack.
 .. _`DSS`: https://archive.stsci.edu/dss/index.html
 .. _`2MASS`: https://www.ipac.caltech.edu/2mass/
 .. _`preview page`: https://alasky.u-strasbg.fr/2MASS/Color/
+.. _`error box of GRB 170817`: https://gammaray.nsstc.nasa.gov/gbm/science/grbs/grb170817a/gbuts_healpix_systematic.fit 
+

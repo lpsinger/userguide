@@ -47,6 +47,7 @@ Germain
 Ghosh
 glitching
 gnomonic
+Goldstein
 Górski
 Gehrels
 Gpc
@@ -58,6 +59,7 @@ Hivon
 Holz
 Hübner
 IDL
+IVOA
 indices
 inspiral
 interferometer
