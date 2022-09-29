@@ -219,6 +219,7 @@ intersphinx_mapping = {
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),
     'numpy': ('https://numpy.org/doc/stable/', None),
+    'observing-plan': ('https://observing.docs.ligo.org/plan/', None),
     'pyregion': ('https://pyregion.readthedocs.io/en/latest/', None),
     'python': ('https://docs.python.org/', None),
     'requests': ('https://requests.readthedocs.io/en/stable/', None),
@@ -242,7 +243,7 @@ else:
 # -- Options for plot_directive extension ------------------------------------
 
 plot_formats = [('svg', 300), ('pdf', 300)]
-plot_html_show_source_link = False
+plot_html_show_source_link = True
 plot_html_show_formats = False
 plot_rcparams = {'font.size': 12}
 

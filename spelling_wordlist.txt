@@ -24,6 +24,7 @@ Chu
 coalescences
 comoving
 cosmologically
+Coughlin
 cWB
 Dal
 detections
@@ -35,9 +36,11 @@ durations
 Essick
 et
 Fairhurst
+Farah
 Farr
 Fernique
 fiducial
+Fishbach
 fluence
 Fong
 Fortran
@@ -66,6 +69,7 @@ interferometer
 interferometers
 ipix
 isoLatitude
+isotropically
 Kamioka
 Kapadia
 Katsavounidis
@@ -99,7 +103,9 @@ online
 Ph
 parameterize
 parameterizes
+Petrov
 pixelation
+posteriori
 postprocessing
 pre
 preprint

@@ -16,6 +16,9 @@ Version 17 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+*  Update the observing timeline and detection and localization estimates for
+   O4 and O5.
+
 .. rubric:: Data Analysis
 
 *  Add the reference to the source properties methods paper.

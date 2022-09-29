@@ -1,22 +1,18 @@
 Observing Capabilities
 ======================
 
-This section summarizes the observing capabilities of the global
-gravitational-wave detector network as of early 2019. This as a quick reference
-to the anticipated commissioning and observing schedule, sensitivity to
-gravitational-wave transients, and sky localization accuracy, as described in
-the following external documents:
-
-* White Paper [#WhitePaper]_ on gravitational-wave data analysis and
-  astrophysics
-* Living Review [#LivingReview]_ (see preprint of revised version
-  [#O3ObservingScenarios]_) on prospects for observing and localizing
-  gravitational-wave transients with Advanced LIGO, Advanced Virgo, and
-  :term:`KAGRA`
-* Current O3 Schedule [#CurrentO3Schedule]_
+This section summarizes the projected observing capabilities of the global
+gravitational-wave detector network as of March 2023, superseding the Living
+Review [#LivingReview]_ on prospects for observing and localizing
+gravitational-wave transients with Advanced LIGO, Advanced Virgo, and KAGRA.
 
 Timeline
 --------
+
+.. note::
+   Check the :doc:`LIGO, Virgo, and KAGRA Observing Run Plans
+   <observing-plan:index>` for the latest details on scheduling of the next
+   observing run, which are summarized here.
 
 The gravitational-wave observing schedule is divided into Observing Runs or
 epochs of months to years of operation at fixed sensitivity, down time for
@@ -25,15 +21,15 @@ commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
 signals, this figure gives the BNS :term:`range` for each observing run.
 
-.. figure:: _static/observing-scenarios-timeline.*
+.. figure:: _static/ObsScen_timeline.*
    :alt: Long-term observing schedule
 
-During O4, we expect that three facilities (:term:`LHO`, :term:`LLO`,
-:term:`Virgo`, and :term:`KAGRA`) will observe for one year. The near-term
-observing schedule is shown below, reproduced from [#CurrentO3Schedule]_.
-
-.. figure:: _static/O3Schedule.*
-   :alt: Current observing schedule
+During O4, we expect that four facilities (:term:`LHO`, :term:`LLO`,
+:term:`Virgo`, and :term:`KAGRA`) will observe for one year. :term:`LHO`,
+:term:`LLO`, and :term:`Virgo` will have a one-month commissioning break in the
+middle of the run. KAGRA will begin the run with LIGO and Virgo and then return
+to extended commissioning to re-join with greater sensitivity toward the end of
+O4.
 
 Live Status
 -----------
@@ -52,63 +48,246 @@ LIGO/Virgo/KAGRA detectors and alert infrastructure.
      pipeline is indicated by the "EMFollow" box.
    | https://monitor.ligo.org/gwstatus
 
-Sensitivity
------------
-
-The following O3 projections are adapted from the preprint version of the
-Living Review [#O3ObservingScenarios]_ on prospects for observing and
-localizing gravitational-wave transients with Advanced LIGO, Advanced Virgo,
-and KAGRA. The table below gives the :term:`range` of each individual detector
-for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers, and unmodeled
-:term:`bursts <burst>`.
-
-+-----------+-----------+-----------+-----------+-----------+
-| Detector  | :term:`Range <range>` (Mpc)                   |
-|           +-----------+-----------+-----------+-----------+
-|           | BNS       | NSBH      | BBH       | Burst     |
-+===========+===========+===========+===========+===========+
-| **LIGO**  | 110–130   | 190-240   | 990-1200  | 80–90     |
-+-----------+-----------+-----------+-----------+-----------+
-| **Virgo** | 50        | 90        | 500       | 35        |
-+-----------+-----------+-----------+-----------+-----------+
-| **KAGRA** | 8–25      | 15-45     | 80-260    | 5-25      |
-+-----------+-----------+-----------+-----------+-----------+
-
-These ranges are given for the following fiducial signals:
-
-BNS
-    A merger of two 1.4 :math:`M_\odot` :term:`NSs <NS>`.
-NSBH
-    A merger of a 10 :math:`M_\odot` :term:`BH` and a
-    1.4 :math:`M_\odot` :term:`NS`.
-BBH
-    A merger of two 30 :math:`M_\odot` :term:`BHs <BH>`.
-Burst
-    A monochromatic signal at a frequency of 140 Hz carrying an energy of
-    :math:`E_\mathrm{GW}=10^{-2} M_\odot c^2`.
-
-.. note::
-   The :term:`range` is defined in relation to the :term:`sensitive volume`, or
-   the surveyed space-time volume per unit detector time. The range is neither
-   a luminosity distance nor a comoving distance.
-
 Detection Rate and Localization Accuracy
 ----------------------------------------
 
 Here we provide predicted detection rates, distances, and localization
-uncertainties for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers in O3 and
-O4, based on a Monte Carlo simulation of detection and localization of events
-in O3 and O4. Details of the simulation are described in
-[#O3ObservingScenarios]_.
+uncertainties for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers in O4 and
+O5, based on a Monte Carlo simulation of detection and localization of events.
+
+The methodology of the simulation is the same as described in [#LivingReview]_
+and [#DataDrivenExpectations]_, although the GW detector network
+configurations, sensitivity curves, astrophysical rates, and mass and spin
+distributions have been updated.
+
+**Source code to reproduce these simulations** is available at
+https://github.com/lpsinger/observing-scenarios-simulations/tree/v2 or
+https://doi.org/10.5281/zenodo.5206852.
 
 **Sky localization FITS files** from these simulations are provided at
-https://git.ligo.org/emfollow/obs-scenarios-2019-fits-files.
+:doi:`10.5281/zenodo.7026209`.
+
+Source Distribution
+~~~~~~~~~~~~~~~~~~~
+
+We draw masses and spins of compact objects from a global maximum
+*a posteriori* fit of all O3 compact binary observations [#O3b_pop]_. The
+distribution and its parameters are described below.
+
+.. rubric:: Masses
+
+The 1D source-frame component mass distribution is the
+"Power Law + Dip + Break" model based on [#Farah2021]_, and is given by:
+
+.. math::
+   \begin{aligned}
+      p(m|\lambda) \propto &\,
+      l(m|M_\mathrm{max},\eta_\mathrm{max})
+      \times h(m|M_\mathrm{min},\eta_\mathrm{min})
+      \times n(m| M^\mathrm{gap}_\mathrm{low}, M^\mathrm{gap}_\mathrm{high}, \eta_\mathrm{low}, \eta_\mathrm{high}, A) \\
+         &\times\begin{cases}
+            & \left(\frac{m}{M^\mathrm{gap}_\mathrm{high}}\right)^{\alpha_1}\text{ if }m < M^\mathrm{gap}_\mathrm{high} \\
+            & \left(\frac{m}{M^\mathrm{gap}_\mathrm{high}}\right)^{\alpha_2}\text{ if }m \geq M^\mathrm{gap}_\mathrm{high} \\
+         \end{cases},
+   \end{aligned}
+
+defined for :math:`1 \leq m / M_\odot \leq 100`. It consists of four terms:
+
+*   a high-mass tapering function
+    :math:`l(m|M_\mathrm{max},\eta_\mathrm{max}) = \left(1 + \left(m / M_\mathrm{max}\right)^{\eta_\mathrm{max}}\right)^{-1}`,
+*   a low-mass tapering function
+    :math:`h(m|M_\mathrm{min},\eta_\mathrm{min}) = 1 - l(m|M_\mathrm{min},\eta_\mathrm{min})`,
+*   a function
+    :math:`n(m| M^\mathrm{gap}_\mathrm{low}, M^\mathrm{gap}_\mathrm{high}, \eta_\mathrm{low}, \eta_\mathrm{high}, A) = 1 - A \, l(m|M^\mathrm{gap}_\mathrm{high}, \eta_\mathrm{high}) \, h(m|M^\mathrm{gap}_\mathrm{low}, \eta_\mathrm{low})`
+    that suppresses masses in the hypothetical "mass gap" between NSs and BHs, and
+*   a piecewise power law.
+
+The joint 2D distribution of the primary mass :math:`m_1` and the secondary
+mass :math:`m_2` builds on the 1D component mass distribution and adds a
+pairing function that weights binaries by mass ratio:
+
+.. math::
+    p(m_1,m_2|\Lambda)\propto\, p(m=m_1|\lambda) p(m=m_2|\lambda) \left(\frac{m_2}{m_1}\right)^{\beta},
+
+defined for
+:math:`(m_1 \geq m_2) \cap ((m_1 \leq 60 M_\odot) \cup (m_2 \geq 2.5 M_\odot))`.
+The two figures below show the 1D and joint 2D component mass distributions.
+
+.. plot::
+   :context: reset
+
+   from matplotlib import pyplot as plt
+   import numpy as np
+
+   ALPHA_1 = -2.16
+   ALPHA_2 = -1.46
+   A = 0.97
+   M_GAP_LO = 2.72
+   M_GAP_HI = 6.13
+   ETA_GAP_LO = 50
+   ETA_GAP_HI = 50
+   ETA_MIN = 50
+   ETA_MAX = 4.91
+   BETA = 1.89
+   M_MIN = 1.16
+   M_MAX = 54.38
+
+
+   def lopass(m, m_0, eta):
+      return 1 / (1 + (m / m_0)**eta)
+
+
+   def hipass(m, m_0, eta):
+      return 1 - lopass(m, m_0, eta)
+
+
+   def bandpass(m, m_lo, m_hi, eta_lo, eta_hi, A):
+      return 1 - A * hipass(m, m_lo, eta_lo) * lopass(m, m_hi, eta_hi)
+
+
+   def pairing_function(m1, m2):
+      m1, m2 = np.maximum(m1, m2), np.minimum(m1, m2)
+      return np.where((m1 <= 60) | (m2 >= 2.5), (m2 / m1) ** BETA, 0)
+
+
+   def mass_distribution_1d(m):
+      return (
+         bandpass(m, M_GAP_LO, M_GAP_HI, ETA_GAP_LO, ETA_GAP_HI, A) *
+         hipass(m, M_MIN, ETA_MIN) *
+         lopass(m, M_MAX, ETA_MAX) *
+         (m / M_GAP_HI) ** np.where(m < M_GAP_HI, ALPHA_1, ALPHA_2)
+      )
+
+
+   def mass_distribution_2d(m1, m2):
+      return (
+         mass_distribution_1d(m1) *
+         mass_distribution_1d(m2) *
+         pairing_function(m1, m2)
+      )
+
+
+   # Plot 1D distribution of component mass.
+
+   m = np.geomspace(1, 100, 200)
+   fig, ax = plt.subplots()
+   ax.set_xscale('log')
+   ax.plot(m, m * mass_distribution_1d(m))
+   ax.set_xlim(1, 100)
+   ax.set_ylim(0, None)
+   ax.set_xlabel(r'Component mass, $m$ ($M_\odot$)')
+   ax.set_ylabel(r'$m \, p(m|\lambda)$')
+   ax.set_yticks([])
+   ax2 = ax.twiny()
+   ax2.set_xlim(ax.get_xlim())
+   ax2.set_xscale(ax.get_xscale())
+   ax2.set_xticks([M_MIN, M_GAP_LO, M_GAP_HI, M_MAX])
+   ax2.set_xticklabels([r'$M_\mathrm{min}$',
+                        r'$M^\mathrm{gap}_\mathrm{low}$',
+                        r'$M^\mathrm{gap}_\mathrm{high}$',
+                        r'$M_\mathrm{max}$'])
+   ax2.set_xticks([], minor=True)
+   ax2.grid(axis='x')
+   fig.show()
+
+   # Plot joint 2D distribution of m1, m2.
+
+   m1, m2 = np.meshgrid(m, m)
+   fig, ax = plt.subplots(subplot_kw=dict(aspect=1))
+   ax.set_xlim(1, 100)
+   ax.set_ylim(1, 100)
+   ax.set_xscale('log')
+   ax.set_yscale('log')
+   ax.set_xlabel(r'Primary mass, $m_1$ ($M_\odot$)')
+   ax.set_ylabel(r'Secondary mass, $m_2$ ($M_\odot$)')
+   img = ax.pcolormesh(m, m, m1 * m2 * mass_distribution_2d(m1, m2),
+                       vmin=0, vmax=25, shading='gouraud', rasterized=True)
+   cbar = plt.colorbar(img, ax=ax)
+   cbar.set_label(r'$m_1 \, m_2 \, p(m_1, m_2 | \Lambda)$')
+   cbar.set_ticks([])
+
+   ax.fill_between([1, 100],
+                   [1, 100],
+                   [100, 100],
+                   color='white', linewidth=0, alpha=0.75, zorder=1.5)
+   ax.plot([1, 100], [1, 100], '--k')
+
+   ax.annotate('',
+               xy=(0.975, 1.025), xycoords='axes fraction',
+               xytext=(1.025, 0.975), textcoords='axes fraction',
+               ha='center', va='center',
+               arrowprops=dict(
+                   arrowstyle='->', shrinkA=0, shrinkB=0,
+                   connectionstyle='angle,angleA=90,angleB=180,rad=7'))
+   ax.text(0.975, 1.025, '$m_1 \geq m_2$ by definition  ',
+           ha='right', va='center', transform=ax.transAxes, fontsize='small')
+
+   fig.show()
+
+.. rubric:: Spins
+
+The spins of the binary component objects are isotropically oriented. Component
+objects with masses less than 2.5 :math:`M_\odot` have spin magnitudes that are
+uniformly distributed from 0 to 0.4, and components with greater masses have
+spin magnitudes that are uniformly distributed from 0 to 1.
+
+.. rubric:: Sky Location, orientation
+
+Sources are isotropically distributed on the sky and have isotropically
+oriented orbital planes.
+
+.. rubric:: Redshift
+
+Sources are uniformly distributed in differential comoving volume per unit
+proper time.
+
+.. rubric:: Rate
+
+The total rate density of mergers, integrated across all masses and spins, is
+set to :math:`240_{-140}^{+270}\,\mathrm{Gpc}^{-3}\mathrm{yr}^{-1}`
+([#O3b_pop]_, Table II, first row, last column).
+
+.. rubric:: Parameters
+
+The parameters of the mass and spin distribution are given below.
+
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| Parameter                            | Description                                                                       | Value                 |
++======================================+===================================================================================+=======================+
+| :math:`\alpha_1`                     | Spectral index for the power law of the mass distribution at low mass             | -2.16                 |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\alpha_2`                     | Spectral index for the power law of the mass distribution at high mass            | -1.46                 |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\mathrm{A}`                   | Lower mass gap depth                                                              | 0.97                  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`M^\mathrm{gap}_\mathrm{low}`  | Location of lower end of the mass gap                                             | 2.72 :math:`M_\odot`  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`M^\mathrm{gap}_\mathrm{high}` | Location of upper end of the mass gap                                             | 6.13 :math:`M_\odot`  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\eta_\mathrm{low}`            | Parameter controlling how the rate tapers at the low end of the mass gap          | 50                    |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\eta_\mathrm{high}`           | Parameter controlling how the rate tapers at the low end of the mass gap          | 50                    |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\eta_\mathrm{min}`            | Parameter controlling tapering the power law at low mass                          | 50                    |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\eta_\mathrm{max}`            | Parameter controlling tapering the power law at high mass                         | 4.91                  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`\beta`                        | Spectral index for the power law-in-mass-ratio pairing function                   | 1.89                  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`M_{\rm min}`                  | Onset location of low-mass tapering                                               | 1.16 :math:`M_\odot`  |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`M_{\rm max}`                  | Onset location of high-mass tapering                                              | 54.38 :math:`M_\odot` |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`a_{\mathrm{max, NS}}`         | Maximum allowed component spin for objects with mass :math:`< 2.5\, M_\odot`      | 0.4                   |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
+| :math:`a_{\mathrm{max, BH}}`         | Maximum allowed component spin for objects with mass :math:`\geq 2.5\, M_\odot`   | 1                     |
++--------------------------------------+-----------------------------------------------------------------------------------+-----------------------+
 
 Summary Statistics
 ~~~~~~~~~~~~~~~~~~
 
 The table below summarizes the predicted detection rate and sky localization
-accuracy in O3 and O4. All values are given as a 5% to 95% confidence
+accuracy in O4 and O5. All values are given as a 5% to 95% confidence
 intervals.
 
 +-----------+-----------+---------------+---------------+---------------+
@@ -122,24 +301,22 @@ intervals.
 |   log-normal uncertainty)                                             |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-|                       | 110-3840      | 0.60-1000     | 25-109        |
+|                       | :math:`210    | :math:`8.6    | :math:`17.1   |
+|                       | ^{+240}       | ^{+9.7}       | ^{+19.2}      |
+|                       | _{-120}`      | _{-5.0}`      | _{-10.0}`     |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
 | | **Sensitive volume: detection rate / merger rate**                  |
 | | (Gpc\ :superscript:`3`, Monte Carlo uncertainty)                    |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLV       | :math:`0.0033 | :math:`0.02   | :math:`0.34   |
-|           |           | ^{+0.00028}   | ^{+0.0016}    | ^{+0.026}     |
-|           |           | _{-0.00026}`  | _{-0.0015}`   | _{-0.025}`    |
+| O4        | HKLV      | :math:`0.172  | :math:`0.78   | :math:`15.15  |
+|           |           | ^{+0.013}     | ^{+0.14}      | ^{+0.42}      |
+|           |           | _{-0.012}`    | _{-0.13}`     | _{-0.41}`     |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLVK      | :math:`0.0034 | :math:`0.020  | :math:`0.35   |
-|           |           | ^{+0.00028}   | ^{+0.0016}    | ^{+0.026}     |
-|           |           | _{-0.00027}`  | _{-0.0015}`   | _{-0.025}`    |
-+-----------+-----------+---------------+---------------+---------------+
-| O4        | HLVK      | :math:`0.016  | :math:`0.092  | :math:`1.5    |
-|           |           | ^{+0.0014}    | ^{+0.0077}    | ^{+0.10}      |
-|           |           | _{-0.0013}`   | _{-0.0072}`   | _{-0.096}`    |
+| O5        | HKLV      | :math:`0.827  | :math:`3.65   | :math:`50.7   |
+|           |           | ^{+0.044}     | ^{+0.47}      | ^{+1.2}       |
+|           |           | _{-0.042}`    | _{-0.43}`     | _{-1.2}`      |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
 | | **Annual number of detections**                                     |
@@ -147,51 +324,39 @@ intervals.
 |   counting uncertainty)                                               |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLV       | :math:`1      | :math:`0      | :math:`17     |
-|           |           | ^{+12}        | ^{+19}        | ^{+22}        |
-|           |           | _{-1}`        | _{-0}`        | _{-11}`       |
+| O4        | HKLV      | :math:`36     | :math:`6      | :math:`260    |
+|           |           | ^{+49}        | ^{+11}        | ^{+330}       |
+|           |           | _{-22}`       | _{-5}`        | _{-150}`      |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLVK      | :math:`1      | :math:`0      | :math:`18     |
-|           |           | ^{+12}        | ^{+19}        | ^{+22}        |
-|           |           | _{-1}`        | _{-0}`        | _{-12}`       |
-+-----------+-----------+---------------+---------------+---------------+
-| O4        | HLVK      | :math:`10     | :math:`1      | :math:`79     |
-|           |           | ^{+52}        | ^{+91}        | ^{+89}        |
-|           |           | _{-10}`       | _{-1}`        | _{-44}`       |
+| O5        | HKLV      | :math:`180    | :math:`31     | :math:`870    |
+|           |           | ^{+220}       | ^{+42}        | ^{+1100}      |
+|           |           | _{-100}`      | _{-20}`       | _{-480}`      |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
 | | **Median luminosity distance**                                      |
 | | (Mpc, Monte Carlo uncertainty)                                      |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLV       | :math:`110    | :math:`210    | :math:`640    |
-|           |           | ^{+3.7}       | ^{+6.6}       | ^{+29}        |
-|           |           | _{-4.6}`      | _{-8.2}`      | _{-19}`       |
+| O4        | HKLV      | :math:`398    | :math:`770    | :math:`2685   |
+|           |           | ^{+15}        | ^{+67}        | ^{+53}        |
+|           |           | _{-14}`       | _{-70}`       | _{-40}`       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLVK      | :math:`110    | :math:`210    | :math:`630    |
-|           |           | ^{+3.8}       | ^{+7.7}       | ^{+25}        |
-|           |           | _{-4.2}`      | _{-6.9}`      | _{-23}`       |
-+-----------+-----------+---------------+---------------+---------------+
-| O4        | HLVK      | :math:`170    | :math:`330    | :math:`990    |
-|           |           | ^{+6.3}       | ^{+7.0}       | ^{+35}        |
-|           |           | _{-4.8}`      | _{-13}`       | _{-29}`       |
+| O5        | HKLV      | :math:`738    | :math:`1318   | :math:`4607   |
+|           |           | ^{+30}        | ^{+71}        | ^{+77}        |
+|           |           | _{-25}`       | _{-100}`      | _{-82}`       |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
 | | **Median 90% credible area**                                        |
 | | (deg\ :superscript:`2`, Monte Carlo uncertainty)                    |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLV       | :math:`270    | :math:`330    | :math:`280    |
-|           |           | ^{+34}        | ^{+24}        | ^{+30}        |
-|           |           | _{-20}`       | _{-31}`       | _{-23}`       |
+| O4        | HKLV      | :math:`1860   | :math:`2140   | :math:`1428   |
+|           |           | ^{+250}       | ^{+480}       | ^{+60}        |
+|           |           | _{-170}`      | _{-530}`      | _{-55}`       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLVK      | :math:`190    | :math:`240    | :math:`220    |
-|           |           | ^{+36}        | ^{+37}        | ^{+33}        |
-|           |           | _{-30}`       | _{-44}`       | _{-24}`       |
-+-----------+-----------+---------------+---------------+---------------+
-| O4        | HLVK      | :math:`33     | :math:`50     | :math:`41     |
-|           |           | ^{+4.9}       | ^{+8.0}       | ^{+7.2}       |
-|           |           | _{-5.3}`      | _{-8.4}`      | _{-5.7}`      |
+| O5        | HKLV      | :math:`2050   | :math:`2000   | :math:`1256   |
+|           |           | ^{+120}       | ^{+350}       | ^{+48}        |
+|           |           | _{-120}`      | _{-220}`      | _{-53}`       |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
 | | **Median 90% credible comoving volume**                             |
@@ -199,17 +364,13 @@ intervals.
 |   Monte Carlo uncertainty)                                            |
 |                                                                       |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLV       | :math:`120    | :math:`860    | :math:`16000  |
-|           |           | ^{+19}        | ^{+150}       | ^{+2200}      |
-|           |           | _{-24}`       | _{-150}`      | _{-2500}`     |
+| O4        | HKLV      | :math:`67.9   | :math:`232    | :math:`3400   |
+|           |           | ^{+11.3}      | ^{+101}       | ^{+310}       |
+|           |           | _{-9.9}`      | _{-50}`       | _{-240}`      |
 +-----------+-----------+---------------+---------------+---------------+
-| O3        | HLVK      | :math:`79     | :math:`560    | :math:`11000  |
-|           |           | ^{+27}        | ^{+190}       | ^{+2300}      |
-|           |           | _{-19}`       | _{-160}`      | _{-2300}`     |
-+-----------+-----------+---------------+---------------+---------------+
-| O4        | HLVK      | :math:`52     | :math:`430    | :math:`7700   |
-|           |           | ^{+9.9}       | ^{+100}       | ^{+1500}      |
-|           |           | _{-9.1}`      | _{-78}`       | _{-920}`      |
+| O5        | HKLV      | :math:`376    | :math:`1350   | :math:`8580   |
+|           |           | ^{+36}        | ^{+290}       | ^{+600}       |
+|           |           | _{-40}`       | _{-300}`      | _{-550}`      |
 +-----------+-----------+---------------+---------------+---------------+
 
 **Merger rate per unit comoving volume per unit proper time** is the
@@ -232,12 +393,6 @@ assumed to be non-evolving.
    See [#DistanceMeasuresInGWCosmology]_ for further discussion of cosmological
    distance measures as they relate to sensitivity figures of merit for
    gravitational-wave detectors.
-
-For :term:`BNS` and :term:`BBH`, the merger rate is inferred from fitting the
-observed population of LIGO/Virgo events in O1 and O2 [#O1O2Rates]_\ [#GWTC1]_.
-For :term:`NSBH`, the merger rate is taken from [#RatePredictions]_. The quoted
-confidence interval assumes that the uncertainty in the rate has a log-normal
-distribution.
 
 **Sensitive volume** is the quotient of the rate of detected events per unit
 observer time and the merger rate per unit comoving volume per unit proper
@@ -271,69 +426,43 @@ of space that has a 90% chance of containing the true location of the source.
 Cumulative Histograms
 ~~~~~~~~~~~~~~~~~~~~~
 
-Below are cumulative histograms of the 90% credible area, distance, and 90%
-credible comoving volume of detectable events in O3 and O4.
+Below are cumulative histograms of the 90% credible area, 90% credible comoving
+volume, and luminosity distance of detectable events in O3, O4, and O5.
 
-.. figure:: _static/area(90).*
+.. figure:: _static/annual-predictions.*
 
-   Distribution of 90% credible areas for simulated compact binary merger
-   events from O3 and O4. The best-localized BNS merger (GW170817) and BBH
-   merger (GW170818) as of this writing are shown at top as black tick marks.
+   Cumulative annual detection rate of simulated mergers as a function of 90%
+   credible area (left column), 90% credible comoving volume (middle column),
+   or luminosity distance (right column). Rates are given for three
+   sub-populations: BNS (top row), NSBH (middle row), and BBH (bottom row).
+   The shaded bands give the inner 90% confidence interval including
+   uncertainty in the estimated merger rate, Monte Carlo uncertainty from the
+   finite sample size of the simulation, and Poisson fluctuations in the number
+   of sources detected in one year.
 
-.. figure:: _static/distance.*
-
-   Distribution of luminosity distances for simulated compact binary merger
-   events from O3 and O4. The best-localized BNS merger (GW170817) and BBH
-   merger (GW170818) as of this writing are shown at top as black tick marks.
-
-.. figure:: _static/vol(90).*
-
-   Distribution of 90% credible comoving volumes for simulated compact binary
-   merger events from O3 and O4. The best-localized BNS merger (GW170817) and
-   BBH merger (GW170818) as of this writing are shown at top as black tick
-   marks.
+   This plot is based on Figure 2 of [#DataDrivenExpectations]_ but uses the
+   simulations described above employing the mass and spin distributions from
+   [#O3b_pop]_.
 
 .. include:: /journals.rst
 
-.. [#WhitePaper]
-   LIGO Scientific Collaboration & Virgo Collaboration 2019, *The LSC-Virgo
-   White Paper on Gravitational Wave Data Analysis and Astrophysics*.
-   :dcc:`T1900541-v2`
-
 .. [#LivingReview]
-   Abbott, B. P., Abbott, R., Abbott, T. D., et al. 2018, |LRR|, 21, 3.
-   :doi:`10.1007/s41114-018-0012-9`
+   Abbott, B. P., Abbott, R., Abbott, T. D., et al. 2020, |LRR|, 23, 3.
+   :doi:`10.1007/s41114-020-00026-9`
 
-.. [#O3ObservingScenarios]
-   LIGO Scientific Collaboration & Virgo Collaboration 2019, *Prospects for
-   Observing and Localizing Gravitational-Wave Transients with Advanced LIGO,
-   Advanced Virgo and KAGRA*. :arxiv:`1304.0670`
+.. [#DataDrivenExpectations]
+   Petrov, P., Singer, L. P., Coughlin, M. W., et al. 2022, |ApJ| 924, 54.
+   :doi:`https://doi.org/10.3847/1538-4357/ac366d`
 
-.. [#CurrentO3Schedule]
-   LIGO Scientific Collaboration & Virgo Collaboration 2019, *Current O3
-   Schedule*. :dcc:`G1901531-v3`
+.. [#O3b_pop]
+   LIGO Scientific Collaboration & Virgo Collaboration 2021, *The population of
+   merging compact binaries inferred using gravitational waves through GWTC-3*.
+   :arxiv:`2111.03634`
 
-.. [#LIGOEndingO3Observations]
-   LIGO Laboratory 2020, *LIGO Ending O3 Observations*. :dcc:`L2000133-v3`
-
-.. [#O1O2Rates]
-   LIGO Scientific Collaboration & Virgo Collaboration 2019, *Binary Black Hole
-   Population Properties Inferred from the First and Second Observing Runs of
-   Advanced LIGO and Advanced Virgo*. |ApJL|, 882, 24.
-   :doi:`10.3847/2041-8213/ab3800`
-
-.. [#GWTC1]
-   LIGO Scientific Collaboration & Virgo Collaboration 2019, *GWTC-1: A
-   Gravitational-Wave Transient Catalog of Compact Binary Mergers Observed by
-   LIGO and Virgo during the First and Second Observing Runs*. |PRX|, 9,
-   031040.
-   :doi:`10.1103/PhysRevX.9.031040`
-
-.. [#RatePredictions]
-   LIGO Scientific Collaboration & Virgo Collaboration 2010, *Predictions for
-   the rates of compact binary coalescences observable by ground-based
-   gravitational-wave detectors*. |CQG|, 27, 173001.
-   :doi:`10.1088/0264-9381/27/17/173001`
+.. [#Farah2021]
+   Farah, A., Fishbach, M., et al. 2022, *Bridging the Gap: Categorizing
+   Gravitational-wave Events at the Transition between Neutron Stars and Black
+   Holes*. |ApJ|, 931, 108. :doi:`10.3847/1538-4357/ac5f03`
 
 .. [#DistanceMeasuresInGWCosmology]
    Chen, H.-Y., Holz, D. E., et al. 2017, *Distance measures in
