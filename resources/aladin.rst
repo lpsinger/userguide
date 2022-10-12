@@ -240,7 +240,7 @@ two astrophysical events.
 
 .. [#Fernique22]
    Fernique, P., et al. 2022, IVOA Recommendation 27 July 2022.
-   :IVOA:`https://ivoa.net/documents/MOC/`
+   https://ivoa.net/documents/MOC/
 
 .. [#Goldstein17]
    Goldstein, A., et al. 2017, |ApJL|, 848 L14
