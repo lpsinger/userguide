@@ -77,12 +77,12 @@ for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers, and unmodeled
 These ranges are given for the following fiducial signals:
 
 BNS
-    A merger of two :math:`1.4 M_\odot` :term:`NSs <NS>`.
+    A merger of two 1.4 :math:`M_\odot` :term:`NSs <NS>`.
 NSBH
-    A merger of a :math:`10 M_\odot` :term:`BH` and a
-    :math:`1.4 M_\odot` :term:`NS`.
+    A merger of a 10 :math:`M_\odot` :term:`BH` and a
+    1.4 :math:`M_\odot` :term:`NS`.
 BBH
-    A merger of two :math:`30 M_\odot` :term:`BHs <BH>`.
+    A merger of two 30 :math:`M_\odot` :term:`BHs <BH>`.
 Burst
     A monochromatic signal at a frequency of 140 Hz carrying an energy of
     :math:`E_\mathrm{GW}=10^{-2} M_\odot c^2`.
