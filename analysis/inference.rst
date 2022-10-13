@@ -39,8 +39,8 @@ massive or *secondary* compact object) has a mass that is consistent with a
 neutron star. Specifically, we define this as the probability that the
 secondary mass satisfies :math:`m_2 \leq 3 M_{\odot}`.
 
-**HasRemnant**: The probability that the source ejected a nonzero mass outside
-the final remnant compact object. This is calculated using the disk mass
+**HasRemnant**: The source formed a nonzero mass outside the final remnant
+compact object. Specifically, the probability is calculated using the disk mass
 fitting formula from [#DiskMass]_ (Equation 4).
 
 The way that these probabilities are calculated for preliminary alerts differs
