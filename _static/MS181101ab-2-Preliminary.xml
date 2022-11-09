@@ -73,6 +73,9 @@
       <Param dataType="float" name="HasRemnant" ucd="stat.probability" value="0.91">
         <Description>Probability that a nonzero mass was ejected outside the central remnant object</Description>
       </Param>
+      <Param dataType="float" name="HasMassGap" ucd="stat.probability" value="0.01">
+        <Description>Probability that at least one object in the binary has a mass between 3 and 5 solar masses</Description>
+      </Param>
       <Description>Qualitative properties of the source, conditioned on the assumption that the signal is an astrophysical compact binary merger</Description>
     </Group>
   </What>

@@ -23,6 +23,7 @@ Version 17 (unreleased)
 
 *  Add the reference to the source properties methods paper.
    Provide details on the cases where the above method is used.
+*  Added HasMassGap to source properties.
 *  Removed MassGap category from source classification.
 
 .. rubric:: Alert Contents

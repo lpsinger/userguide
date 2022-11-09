@@ -128,10 +128,12 @@ Notice.
 | Noise             | :term:`NSBH`, :term:`BBH`, or                             |                                                                   |
 |                   | :term:`Terrestrial` (i.e, noise) respectively             |                                                                   |
 +-------------------+-----------------------------------------------------------+                                                                   +
-| HasNS, HasRemnant | Probability, under the assumption that the source is not  |                                                                   |
-|                   | noise, that at least one of the compact objects was a     |                                                                   |
-|                   | neutron star, and that the system ejected a non-zero      |                                                                   |
-|                   | amount of neutron star matter, respectively               |                                                                   |
+| HasNS, HasRemnant,| Probability, under the assumption that the source is not  |                                                                   |
+| HasMassGap        | noise, that at least one of the compact objects was a     |                                                                   |
+|                   | neutron star, that the system ejected a non-zero amount   |                                                                   |
+|                   | of neutron star matter, and that at least one of the      |                                                                   |
+|                   | compact objects has mass in the range 3-5 solar masses,   |                                                                   |
+|                   | respectively                                              |                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | **WhereWhen**     | Time of signal (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654437`                                                       |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+

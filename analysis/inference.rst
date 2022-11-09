@@ -16,12 +16,13 @@ give the probability that the source is either a :term:`BNS`,
 background fluctuation or a glitch) origin. See the :ref:`figure in
 the alert contents section <classification-diagram>` for the
 boundaries of the source classification categories in
-the :math:`(m_1,m_2)` plane.
+the :math:`(m_1,m_2)` plane. The boundary between NSs and BHs
+is set to :math:`3 M_{\odot}`.
 
 This assumes that terrestrial and astrophysical events occur as independent
 Poisson processes. A source-dependent weighting of matched-filter templates is
 used to compute the mean values of expected counts associated with each of
-these five categories. The mean values are updated weekly based on observed
+these four categories. The mean values are updated weekly based on observed
 matched-filter count rates. They are then used to predict the category for new
 triggers uploaded by :doc:`search pipelines </analysis/searches>`.
 
@@ -42,6 +43,10 @@ secondary mass satisfies :math:`m_2 \leq 3 M_{\odot}`.
 **HasRemnant**: The source formed a nonzero mass outside the final remnant
 compact object. Specifically, the probability is calculated using the disk mass
 fitting formula from [#DiskMass]_ (Equation 4).
+
+**HasMassGap**: At least one of the compact objects in the binary has a mass in
+the hypothetical “mass gap” between neutron stars and black holes, defined here
+as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`.
 
 The way that these probabilities are calculated for preliminary alerts differs
 for different search pipelines:

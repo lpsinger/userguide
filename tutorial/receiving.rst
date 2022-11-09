@@ -174,6 +174,7 @@ Upon running this, you should see:
     Terrestrial = 0.01
     HasNS = 0.95
     HasRemnant = 0.91
+    HasMassGap = 0.01
     Distance = 39.76999609489013 +/- 8.308435058808886
 
 .. testcleanup::
