@@ -1,1 +1,10 @@
-{"alert_type": "RETRACTION", "time_created": "2018-11-01 23:36:23", "superevent_id": "MS181101ab", "urls": {"gracedb": "https://example.org/superevents/MS181101ab/view/"}, "event": null, "external_coinc": null}
+{
+    "alert_type": "RETRACTION",
+    "time_created": "2018-11-01 23:36:23",
+    "superevent_id": "MS181101ab",
+    "urls": {
+        "gracedb": "https://example.org/superevents/MS181101ab/view/"
+    },
+    "event": null,
+    "external_coinc": null
+}
