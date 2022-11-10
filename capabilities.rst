@@ -412,16 +412,29 @@ first two sources of uncertainty).
 The remaining sections all give median values over the population of detectable
 events.
 
-**Luminosity distance** is the luminosity distance in Mpc of detectable events.
-The quoted confidence interval represents the uncertainty from the Monte Carlo
-simulation.
+**Median luminosity distance** is the median luminosity distance in Mpc of
+detectable events. The quoted confidence interval represents the uncertainty
+from the Monte Carlo simulation.
 
-**90% credible area** is the area in deg\ :math:`^2` of the smallest (not
-necessarily simply connected) region on the sky that has a 90% chance of
+.. note::
+   Although the luminosity distances for BNSs in the table above are about
+   twice as large as the BNS :term:`ranges <range>` in the figure in the
+   :ref:`capabilities:Timeline` section, the median luminosity distances should
+   be better predictors of the typical distances of events that will be
+   detectable during the corresponding observing runs.
+
+   The reason is that the BNS range is a characteristic distance for a single
+   GW detector, not a network of detectors. LIGO, Virgo, and KAGRA as a network
+   are sensitive to a greater fraction of the sky and a greater fraction of
+   binary orientations than any single detector alone.
+
+**Median 90% credible area** is the area in deg\ :math:`^2` of the smallest
+(not necessarily simply connected) region on the sky that has a 90% chance of
 containing the true location of the source.
 
-**90% credible volume** is the comoving volume enclosed in the smallest region
-of space that has a 90% chance of containing the true location of the source.
+**Median 90% credible volume** is the median comoving volume enclosed in the
+smallest region of space that has a 90% chance of containing the true location
+of the source.
 
 Cumulative Histograms
 ~~~~~~~~~~~~~~~~~~~~~
