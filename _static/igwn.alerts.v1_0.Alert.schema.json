@@ -113,9 +113,22 @@
                         "time_sky_position_coincidence_far": {
                             "type": ["null", "number"],
                             "description": "The joint time and sky position coincidence FAR in units of Hz, if available."
+                        },
+            "combined_skymap": {
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "type": "string",
+                                    "contentEncoding": "base64",
+                                    "contentMediaType": "application/fits",
+                                    "description": "A skymap in a multi-order FITS format produced by combining the GW skymap and the external coincidence skymap."
+                                }
+                            ]
                         }
                     },
-                    "required": ["gcn_notice_id", "ivorn", "observatory", "search", "time_difference", "time_coincidence_far", "time_sky_position_coincidence_far"]
+                    "required": ["gcn_notice_id", "ivorn", "observatory", "search", "time_difference", "time_coincidence_far", "time_sky_position_coincidence_far", "combined_skymap"]
                 }
             ]
         },

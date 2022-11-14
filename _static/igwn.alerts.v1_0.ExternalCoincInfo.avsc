@@ -10,6 +10,7 @@
         {"name": "search", "type": "string", "doc": "The search reporting the coincident external event."},
         {"name": "time_difference", "type": "double", "doc": "The difference in time, in seconds, between the external coincident event and the gravitational-wave event."},
         {"name": "time_coincidence_far", "type": ["null", "double"], "doc": "The joint time coincidence FAR in units of Hz, if available."},
-        {"name": "time_sky_position_coincidence_far", "type": ["null", "double"], "doc": "The joint time and sky position coincidence FAR in units of Hz, if available."}
+        {"name": "time_sky_position_coincidence_far", "type": ["null", "double"], "doc": "The joint time and sky position coincidence FAR in units of Hz, if available."},
+        {"name": "combined_skymap", "type": ["null", "bytes"], "doc": "A skymap in a multi-order FITS format produced by combining the GW skymap and the external coincidence skymap."}
     ]
 }
