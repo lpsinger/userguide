@@ -242,7 +242,7 @@ else:
 
 # -- Options for plot_directive extension ------------------------------------
 
-plot_formats = [('svg', 300), ('pdf', 300)]
+plot_formats = [('svg', 100), ('pdf', 100)]
 plot_html_show_source_link = True
 plot_html_show_formats = False
 plot_rcparams = {'font.size': 12}
