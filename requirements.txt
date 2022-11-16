@@ -1,6 +1,8 @@
 astropy-healpix
 pygcn
 fastavro
+check-jsonschema
+jsonschema[format]
 healpy
 ligo.skymap
 seaborn

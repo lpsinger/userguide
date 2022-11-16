@@ -1,0 +1,129 @@
+{
+    "$id": "http://emfollow.docs.ligo.org/_static/igwn.alerts.v1_0.Alert.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "alert_type": {
+            "description": "The type of alert.",
+            "enum": ["EARLY_WARNING", "PRELIMINARY", "INITIAL", "UPDATE", "RETRACTION"]
+        },
+        "time_created": {
+            "type": "string",
+            "format": "date-time",
+            "description": "The time this notice was created in ISO 8601 format."
+        },
+        "superevent_id": {
+            "type": "string",
+            "description": "The GraceDB superevent ID."
+        },
+        "event": {
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "object",
+                    "description": "Information about the event, if any.",
+                    "properties": {
+                        "time": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Time of the event in ISO 8601 format."
+                        },
+                        "far": {
+                            "type": "number",
+                            "description": "False alarm rate of the event in Hz."
+                        },
+                        "instruments": {
+                            "type": "array",
+                            "items": { "type": "string" },
+                            "description": "Instruments that participated in the observation as an array."
+                        },
+                        "group": {
+                            "type": "string",
+                            "description": "The data analysis working group that uploaded the event."
+                        },
+                        "pipeline": {
+                            "type": "string",
+                            "description": "The data analysis pipeline that uploaded the event."
+                        },
+                        "search": {
+                            "type": "string", "description": "The type of search that uploaded the event."},
+                        "classification": {
+                            "type": "object",
+                            "additionalProperties": { "type": "number" },
+                            "description": "The probabilities that the event is of terrestrial origin or originates from various astrophysical categories, only provided for events uploaded by the CBC data analysis working group."
+                        },
+                        "properties": {
+                            "type": "object",
+                            "additionalProperties": { "type": "number" },
+                            "description": "The probabilities that the source has various properties, assuming that the source is astrophysical."
+                        },
+                        "skymap": {
+                            "oneOf": [
+                                {
+                                    "type": "null"
+                                },
+                                {
+                                    "type": "string",
+                                    "contentEncoding": "base64",
+                                    "contentMediaType": "application/fits",
+                                    "description": "A skymap in a multi-order FITS format."
+                                }
+                            ]
+                        }
+                    },
+                    "required": ["time", "far", "instruments", "group", "pipeline", "search", "classification", "properties", "skymap"]
+                }
+            ]
+        },
+        "external_coinc": {
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "type": "object",
+                    "description": "Information about the coincidence with an non-GW event, if any.",
+                    "properties": {
+                        "gcn_notice_id": {
+                            "type": "number",
+                            "description": "The GCN notice ID of the coincident external event."
+                        },
+                        "ivorn": {
+                            "type": "string",
+                            "description": "The VO identifier associated with the external VOEvent."
+                        },
+                        "observatory": {
+                            "type": "string",
+                            "description": "The observatory reporting the coincident external event."
+                        },
+                        "search": {
+                            "type": "string",
+                            "description": "The search reporting the coincident external event."
+                        },
+                        "time_difference": {
+                            "type": "number",
+                            "description": "The difference in time, in seconds, between the external coincident event and the gravitational-wave event."
+                        },
+                        "time_coincidence_far": {
+                            "type": ["null", "number"],
+                            "description": "The joint time coincidence FAR in units of Hz, if available."
+                        },
+                        "time_sky_position_coincidence_far": {
+                            "type": ["null", "number"],
+                            "description": "The joint time and sky position coincidence FAR in units of Hz, if available."
+                        }
+                    },
+                    "required": ["gcn_notice_id", "ivorn", "observatory", "search", "time_difference", "time_coincidence_far", "time_sky_position_coincidence_far"]
+                }
+            ]
+        },
+        "urls": {
+            "type": "object",
+            "description": "URLs relevant to the event, if any.",
+            "additionalProperties": {"type": "string", "format": "uri"}
+        }
+    },
+    "required": ["superevent_id", "alert_type", "time_created", "event", "external_coinc", "urls"]
+}

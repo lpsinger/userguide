@@ -117,6 +117,15 @@ avro:
     # Fail if avro schema not valid
     - .gitlab/avro_schema_validator.py _static/*.avsc
 
+validate-jsonschema:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    # Fail if JSON Schema is not valid
+    - check-jsonschema --check-metaschema _static/*.schema.json
+    # Fail if any of the sample JSON alerts are not valid
+    - check-jsonschema --schemafile _static/igwn.alerts.v1_0.Alert.schema.json _static/MS*.json
+
 validate-kafka-notices:
   stage: build
   script:
