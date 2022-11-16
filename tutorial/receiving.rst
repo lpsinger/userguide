@@ -73,7 +73,7 @@ the FITS file, download it, and extract the probability sky map:
         if 'skymap_fits' in params:
             # Read the HEALPix sky map and the FITS header.
             skymap, header = hp.read_map(params['skymap_fits'],
-                                         h=True, verbose=False)
+                                         h=True)
             header = dict(header)
 
             # Print some values from the FITS header.

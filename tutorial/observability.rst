@@ -99,7 +99,7 @@ Finally, we need to update our GCN handler to call this function::
 
         skymap_url = root.find(".//Param[@name='skymap_fits']").attrib['value']
 
-        skymap, header = hp.read_map(skymap_url, h=True, verbose=False)
+        skymap, header = hp.read_map(skymap_url, h=True)
         prob = prob_observable(skymap, header)
         print('Source has a {:d}% chance of being observable now'.format(
             int(round(100 * prob))))

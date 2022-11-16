@@ -159,7 +159,7 @@ by having Python call `curl` on the command line:
     import os
     old_dir = os.getcwd()
     os.chdir('_static')
-    hpx = hp.read_map('bayestar.slim.fits.gz', verbose=False)
+    hpx = hp.read_map('bayestar.slim.fits.gz')
 
 Next, we need to read in the file in Python with Healpy:
 
@@ -168,17 +168,11 @@ Next, we need to read in the file in Python with Healpy:
     >>> import healpy as hp
     >>> import numpy as np
     >>> hpx = hp.read_map('bayestar.fits.gz,0')
-    NSIDE = 2048
-    ORDERING = NESTED in fits file
-    INDXSCHM = IMPLICIT
-    Ordering converted to RING
 
+You can read both the HEALPix image data and the FITS header by passing the
+``h=True`` keyword argument:
 
-You can suppress printing informational messages while loading the file by
-passing the keyword argument ``verbose=False``. You can read both the HEALPix
-image data and the FITS header by passing the ``h=True`` keyword argument:
-
-    >>> hpx, header = hp.read_map('bayestar.fits.gz,0', h=True, verbose=False)
+    >>> hpx, header = hp.read_map('bayestar.fits.gz,0', h=True)
 
 Manipulating HEALPix Coordinates
 --------------------------------
