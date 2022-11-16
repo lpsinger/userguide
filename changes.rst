@@ -14,7 +14,7 @@ Version 17 (unreleased)
    theme which is common to many LIGO/Virgo/KAGRA documents.
 
 *  Remove ``MassGap`` from source classification and add ``HasMassGap`` to
-   source properties. This change is reflected in multiple secitons:
+   source properties. This change is reflected in multiple sections:
    **Data Analysis**, **Alert Contents**, and **Sample Code**.
 
 .. rubric:: Getting Started Checklist
