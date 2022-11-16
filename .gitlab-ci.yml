@@ -90,7 +90,7 @@ spelling:
   artifacts:
     when: always
     reports:
-      codequality: spelling.codeclimate.json 
+      codequality: spelling.codeclimate.json
 
 pages:
   stage: deploy
