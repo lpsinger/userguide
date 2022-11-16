@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Parse all Avro schema in this repository.
+Parse Avro schema.
 
 Errors are output in the GNU error format
 <https://www.gnu.org/prep/standards/html_node/Errors.html>.
@@ -8,14 +8,13 @@ Errors are output in the GNU error format
 Adapted from Leo Singer's CI scripts from TACH/GCN project.
 """
 from json.decoder import JSONDecodeError
-from glob import iglob
 import sys
 
 from fastavro.schema import load_schema, SchemaParseException, UnknownType
 
 failed = False
 
-for filename in iglob('_static/*.avsc'):
+for filename in sys.argv[1:]:
     try:
         load_schema(filename)
     except JSONDecodeError as e:
