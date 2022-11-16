@@ -9,40 +9,36 @@ Version 17 (unreleased)
 *  Change the name of this document from "LIGO/Virgo Public Alerts User Guide"
    to "LIGO/Virgo/KAGRA Public Alerts User Guide".
 
-*  Use the new `sphinx-immaterial-igwn <https://pypi.org/project/sphinx-immaterial-igwn/>`_
+*  Use the new
+   `sphinx-immaterial-igwn <https://pypi.org/project/sphinx-immaterial-igwn/>`_
    theme which is common to many LIGO/Virgo/KAGRA documents.
+
+*  Remove ``MassGap`` from source classification and add ``HasMassGap`` to
+   source properties. This change is reflected in multiple secitons:
+   **Data Analysis**, **Alert Contents**, and **Sample Code**.
 
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
-*  Update the observing timeline and detection and localization estimates for
-   O4 and O5.
+*  Update the observing timeline, detection and localization estimates, and
+   sample sky maps data release for O4 and O5.
 
 .. rubric:: Data Analysis
 
-*  Add the reference to the source properties methods paper.
-   Provide details on the cases where this method is used.
+*  Several changes to source properties:
 
-*  Add details of equation of state marginalization.
+   -  Add a reference to the source properties methods paper.
 
-*  Added HasMassGap to source properties.
-
-*  Removed MassGap category from source classification.
+   -  Add details on equation of state marginalization.
 
 .. rubric:: Alert Contents
 
-*  Removed MassGap category from source classification.
+*  Add RAVEN space-time coincidence FAR to alert example.
 
-*  Add HasMassGap to source properties.
-
-*  Add RAVEN spacetime coincidence FAR to alert example.
-
-*  Add Integral into Notice Types considered by RAVEN.
+*  Add INTEGRAL to notice types considered by RAVEN.
 
 .. rubric:: Sample Code
-
-*  Removed MassGap category from source classification.
 
 .. rubric:: Additional Resources
 
