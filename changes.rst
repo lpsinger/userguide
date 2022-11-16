@@ -24,6 +24,8 @@ Version 17 (unreleased)
 *  Add the reference to the source properties methods paper.
    Provide details on the cases where this method is used.
 
+*  Add details of equation of state marginalization.
+
 *  Added HasMassGap to source properties.
 
 *  Removed MassGap category from source classification.
@@ -31,6 +33,8 @@ Version 17 (unreleased)
 .. rubric:: Alert Contents
 
 *  Removed MassGap category from source classification.
+
+*  Add HasMassGap to source properties.
 
 *  Add RAVEN spacetime coincidence FAR to alert example.
 

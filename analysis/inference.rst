@@ -38,30 +38,27 @@ conditions are:
 **HasNS**: At least one of the compact objects in the binary (that is, the less
 massive or *secondary* compact object) has a mass that is consistent with a
 neutron star. Specifically, we define this as the probability that the
-secondary mass satisfies :math:`m_2 \leq 3 M_{\odot}`.
+secondary mass satisfies :math:`m_2 \leq M_{\mathrm{max}}`, where
+:math:`M_{\mathrm{max}}` is the maximum mass allowed by the neutron star equation of
+state (:term:`EOS`). Several NS EOSs are considered and the value is marginalized by
+weighting using the Bayes factors reported in [#ModelSelection]_.
 
 **HasRemnant**: The source formed a nonzero mass outside the final remnant
 compact object. Specifically, the probability is calculated using the disk mass
-fitting formula from [#DiskMass]_ (Equation 4).
+fitting formula from [#DiskMass]_ (Equation 4). Several neutron star EOSs
+are considered to compute the remnant mass. The value is marginalized by weighting
+based on Bayes factors in reference mentioned above.
 
 **HasMassGap**: At least one of the compact objects in the binary has a mass in
 the hypothetical “mass gap” between neutron stars and black holes, defined here
 as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`.
 
-The way that these probabilities are calculated for preliminary alerts differs
-for different search pipelines:
-
-- For GstLAL, the probabilities consider the uncertainty in the
-  matched-filter estimates of the template parameters. The probabilities are
-  calculated using supervised machine learning on a feature space consisting of
-  the masses, spins, and :term:`SNR` of the best-matching template, described
-  in [#MLEMBright]_.
-
-- For all other pipelines, the source property probabilities are reported as
-  exactly 0 or exactly 1 depending on whether the corresponding condition is
-  satisfied by the best-matching template. **In this case, these probabilities
-  do not capture uncertainty in the matched-filter estimates of the template
-  parameters, and should be interpreted with caution.**
+The mass values mentioned in this section are :term:`source-frame mass`. The value reported in
+the :ref:`preliminary <preliminary>` alert is calculated using a supervised machine learning
+classifier on a feature space consisting of the masses, spins, and :term:`SNR` of the best-matching
+template, described in [#MLEMBright]_. This is to account for the uncertainty in the reported template
+parameters compared to the true parameters. The value reported in the :ref:`update <update>` alerts
+uses the :doc:`online parameter estimation <parameter_estimation>` to compute the value.
 
 
 .. include:: /journals.rst
@@ -70,10 +67,13 @@ for different search pipelines:
    Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2020, |CQG|, 37, 045007.
    :doi:`10.1088/1361-6382/ab5f2d`
 
+.. [#ModelSelection]
+   Ghosh, S., Liu, X., Creighton, J., et. al., 2021, |PRD|, 104, 083003.
+   :doi:`10.1103/PhysRevD.104.083003`
 .. [#DiskMass]
    Foucart, F., Hinderer, T. & Nissanke, S. 2018, |PRD|, 98, 081501.
    :doi:`10.1103/PhysRevD.98.081501`
 
 .. [#MLEMBright]
-   Chatterjee, D., Ghosh, S., Brady, P. R., et al. 2020, |ApJ|,
+   Chatterjee, D., Ghosh, S., Brady, P. R., et al. 2020, |ApJ|, 896, 54.
    :doi:`10.3847/1538-4357/ab8dbe`

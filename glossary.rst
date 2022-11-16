@@ -31,6 +31,11 @@ Glossary
 
     CBC
         Compact binary coalescence.
+    
+    EOS
+        Equation of state. The equation of state determines the relation between
+        mass and radius, or mass and compactness, or pressure and (mass, energy,
+        or number) density, of neutron stars.
 
     FAR
         False alarm rate, a statistic that is used to describe the significance
@@ -176,6 +181,12 @@ Glossary
         is defined the square root of the integral over frequency of the power
         spectral density of the gravitational-wave signal over the integral
         over frequency of the average power spectral density of the noise.
+
+    source-frame mass
+        Since observed frequencies of distant sources are subject to redshift by
+        :math:`f_\mathrm{obs} = (1 + z)^{-1} f_\mathrm{source}`, and gravitational-wave
+        frequency scales inversely with mass, the observer- and source-frame masses
+        are related by :math:`m_\mathrm{obs} = (1 + z) m_\mathrm{source}`.
 
     Terrestrial
         Classification for signals in gravitational-wave detectors that are of

@@ -369,12 +369,17 @@ NSBH, or BBH merger):
 
 * **HasNS**: The mass of one or more of the binary's two companion compact
   objects is consistent with a neutron star. Equivalently, the mass of the
-  *secondary* or less massive compact object is consistent with a neutron star,
-  :math:`m_2 \leq 3 M_\odot`.
+  *secondary* or less massive compact object is consistent with a neutron star.
+  The upper limit of the neutron star mass is marginalized over several neutron star
+  equations of state (:term:`EOS`).
 * **HasRemnant**: A non-zero amount of neutron star material remained outside
   the final remnant compact object (a necessary but not sufficient condition to
   produce certain kinds of electromagnetic emission such as a short :term:`GRB`
-  or a kilonova).
+  or a kilonova). Several neutron star EOSs are considered to compute the remnant mass
+  and are marginalized over.
+* **HasMassGap**: The mass of one or more of the binary's two companion object
+  lies in the hypothetical "mass gap" between neutron stars and black holes, defined
+  here as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`.
 
 All of the quantities in the Classification and Properties sections are model
 dependent to some extent: the Classification section takes into consideration
