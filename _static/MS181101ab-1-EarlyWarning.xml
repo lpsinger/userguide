@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <voe:VOEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" xsi:schemaLocation="http://www.ivoa.net/xml/VOEvent/v2.0 http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd" version="2.0" role="test" ivorn="ivo://gwnet/LVC#MS181101ab-1-EarlyWarning">
   <Who>
-    <Date>2018-11-01T22:34:20</Date>
+    <Date>2018-11-01T22:34:20Z</Date>
     <Author>
       <contactName>LIGO Scientific Collaboration, Virgo Collaboration, and KAGRA Collaboration</contactName>
     </Author>
@@ -87,7 +87,7 @@
         <AstroCoords coord_system_id="UTC-FK5-GEO">
           <Time unit="s">
             <TimeInstant>
-              <ISOTime>2018-11-01T22:22:46.654437</ISOTime>
+              <ISOTime>2018-11-01T22:22:46.654437Z</ISOTime>
             </TimeInstant>
           </Time>
         </AstroCoords>

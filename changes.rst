@@ -38,6 +38,10 @@ Version 17 (unreleased)
 
 *  Add INTEGRAL to notice types considered by RAVEN.
 
+*  Add a terminal ``Z`` to all time strings in the VOEvents to that they are
+   in the UTC time zone and to conform to the ISO 8601 date-time format. See
+   :rfc:`3339`.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources
