@@ -67,6 +67,28 @@ https://doi.org/10.5281/zenodo.5206852.
 **Sky localization FITS files** from these simulations are provided at
 :doi:`10.5281/zenodo.7026209`.
 
+Detector Network
+~~~~~~~~~~~~~~~~
+
+The detector sensitivity curves used for the simulation are available in
+:dcc:`T2200043-v3`. The filenames for each detector and observing run are given
+in the table below.
+
++-----------------+--------------------------------+--------------------------------+
+| Detector        | Observing run                                                   |
+|                 +--------------------------------+--------------------------------+
+|                 | O4                             | O5                             |
++=================+================================+================================+
+| :term:`LHO`,    | :file:`aligo_O4high.txt`       | :file:`AplusDesign.txt`        |
+| :term:`LLO`     |                                |                                |
++-----------------+--------------------------------+--------------------------------+
+| :term:`Virgo`   | :file:`avirgo_O4high_NEW.txt`  | :file:`avirgo_O5low_NEW.txt`   |
++-----------------+--------------------------------+--------------------------------+
+| :term:`KAGRA`   | :file:`kagra_10Mpc.txt`        | :file:`kagra_128Mpc.txt`       |
++-----------------+--------------------------------+--------------------------------+
+
+We assume that each detector independent observing duty cycle of 70%.
+
 Source Distribution
 ~~~~~~~~~~~~~~~~~~~
 
