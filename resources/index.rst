@@ -9,3 +9,4 @@ Here are a few additional resources for working with LIGO/Virgo/KAGRA alerts.
    ligo.skymap
    aladin
    app
+   treasuremap
