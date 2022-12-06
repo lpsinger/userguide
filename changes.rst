@@ -249,6 +249,8 @@ Version 9 (2019-06-13)
 
 .. rubric:: Sample Code
 
+* Remove MacPorts installation instructions.
+
 * Add tutorial on working with multi-resolution sky maps.
 
 * Add sample code to test whether a sky position is in the 90% credible region.

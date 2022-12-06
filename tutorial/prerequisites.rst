@@ -13,16 +13,9 @@ operating system (Linux or macOS) and a few third-party Python packages:
 * astropy_ for astronomical coordinate transformations, observability, etc.
 * numpy_ and matplotlib_, popular math and plotting packages for Python
 
-If you are on a Mac and use the MacPorts_ package manager, you can install all
-of the above with the following command:
-
-.. code-block:: shell-session
-
-    $ sudo port install py37-gcn py37-healpy
-
-Otherwise, the fastest way to install the dependencies is with pip_, a package
-manager that comes with most Python distributions. To install these packages
-with ``pip``, run the following command:
+The fastest way to install the dependencies is with pip_, a package manager
+that comes with most Python distributions. To install these packages with
+``pip``, run the following command:
 
 .. code-block:: shell-session
 
@@ -45,7 +38,6 @@ packages using Anaconda, first :doc:`install conda
 .. _DS9: http://ds9.si.edu
 .. _HEALPix: https://healpix.sourceforge.io
 .. _lxml: https://pypi.org/project/lxml/
-.. _MacPorts: https://www.macports.org
 .. _matplotlib: https://pypi.org/project/matplotlib/
 .. _numpy: https://pypi.org/project/numpy/
 .. _pip: https://pip.pypa.io/en/stable/
