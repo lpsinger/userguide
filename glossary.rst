@@ -195,9 +195,10 @@ Glossary
 
     SNR
         Signal-to-noise ratio, here applied to gravitational-wave signals. It
-        is defined the square root of the integral over frequency of the power
-        spectral density of the gravitational-wave signal over the integral
-        over frequency of the average power spectral density of the noise.
+        is defined as the square root of the integral over frequency of the
+        power spectral density of the gravitational-wave signal divided by the
+        integral over frequency of the average power spectral density of the
+        noise.
 
     source-frame mass
         Since observed frequencies of distant sources are subject to redshift by
