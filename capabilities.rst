@@ -19,7 +19,8 @@ epochs of months to years of operation at fixed sensitivity, down time for
 construction and commissioning, and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
-signals, this figure gives the BNS :term:`range` for each observing run.
+signals, this figure gives the BNS :term:`range` *for highly confident
+detections* in each observing run.
 
 .. figure:: _static/ObsScen_timeline.*
    :alt: Long-term observing schedule
@@ -48,10 +49,10 @@ LIGO/Virgo/KAGRA detectors and alert infrastructure.
      pipeline is indicated by the "EMFollow" box.
    | https://monitor.ligo.org/gwstatus
 
-Detection Rate and Localization Accuracy
-----------------------------------------
+Public Alert Rate and Localization Accuracy
+-------------------------------------------
 
-Here we provide predicted detection rates, distances, and localization
+Here we provide predicted public alert rates, distances, and localization
 uncertainties for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers in O4 and
 O5, based on a Monte Carlo simulation of detection and localization of events.
 
@@ -66,6 +67,28 @@ https://doi.org/10.5281/zenodo.5206852.
 
 **Sky localization FITS files** from these simulations are provided at
 :doi:`10.5281/zenodo.7026209`.
+
+Detection Threshold
+~~~~~~~~~~~~~~~~~~~
+
+The network :term:`SNR` threshold for detection was set to 8 in order to
+approximately reproduce the rate of *public alerts that were sent in O3* (see
+[#DataDrivenExpectations]_).
+
+.. important::
+   **This section predicts the rate of public alerts, not the rate of highly
+   confident detections. Most public alerts do not survive as confident
+   detections in the authoritative end-of-run LIGO/Virgo/KAGRA compact binary
+   catalogs.**
+
+   Previous versions of this User Guide used a network SNR threshold of
+   12, which roughly corresponds to the single-detector SNR threshold that is
+   assumed for the canonical BNS :term:`range` shown in the timeline figure
+   above.
+
+   The change in the detection threshold from 12 to 8 accounts for an increase
+   in the predicted number of events by a factor of
+   :math:`\sim (12/8)^3 = 3.375` over previous versions of this User Guide.
 
 Detector Network
 ~~~~~~~~~~~~~~~~
@@ -308,7 +331,7 @@ The parameters of the mass and spin distribution are given below.
 Summary Statistics
 ~~~~~~~~~~~~~~~~~~
 
-The table below summarizes the predicted detection rate and sky localization
+The table below summarizes the estimated public alert rate and sky localization
 accuracy in O4 and O5. All values are given as a 5% to 95% confidence
 intervals.
 
@@ -341,7 +364,7 @@ intervals.
 |           |           | _{-0.042}`    | _{-0.43}`     | _{-1.2}`      |
 +-----------+-----------+---------------+---------------+---------------+
 |                                                                       |
-| | **Annual number of detections**                                     |
+| | **Annual number of public alerts**                                  |
 | | (log-normal merger rate uncertainty :math:`\times` Poisson          |
 |   counting uncertainty)                                               |
 |                                                                       |
@@ -425,7 +448,7 @@ sensitive volume.
 The quoted confidence interval represents the uncertainty from the Monte Carlo
 simulation.
 
-**Annual number of detections** is the number of detections in one calendar
+**Annual number of public alerts** is the number of alerts in one calendar
 year of observation. The quoted confidence interval incorporates both the
 log-normal distribution of the merger rate *and* Poisson counting statistics,
 but does not include the Monte Carlo error (which is negligible compared to the
@@ -466,7 +489,7 @@ volume, and luminosity distance of detectable events in O3, O4, and O5.
 
 .. figure:: _static/annual-predictions.*
 
-   Cumulative annual detection rate of simulated mergers as a function of 90%
+   Cumulative annual public alert rate of simulated mergers as a function of 90%
    credible area (left column), 90% credible comoving volume (middle column),
    or luminosity distance (right column). Rates are given for three
    sub-populations: BNS (top row), NSBH (middle row), and BBH (bottom row).
