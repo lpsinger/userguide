@@ -3,7 +3,9 @@ pygcn
 fastavro
 check-jsonschema
 jsonschema[format]
+gcn-kafka
 healpy
+hop-client
 ligo.skymap
 seaborn
 sphinx >= 4.0.0

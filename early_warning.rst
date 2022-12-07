@@ -31,20 +31,19 @@ distributed as test alerts at a rate of approximately once per day.**
 Subscribe to Early-Warning Alerts
 ---------------------------------
 
-Early warning alerts are publicly distributed as :term:`GCN Notices <GCN
-Notice>` just like ordinary gravitational-wave alerts (see the :doc:`content`
-section). **They have exactly the same format and content** as a
-:ref:`Preliminary GCN Notice <preliminary>`. In particular, early warning GCN
-Notices have significance estimates, sky localizations, and source
-classifications. Also, like Preliminary GCN Notices, **Early Warning GCN
-Notices are sent prior to vetting by humans, and are not accompanied by a GCN
-Circular.**
+Early warning alerts are publicly distributed as :term:`Notices <Notice>` just
+like ordinary gravitational-wave alerts (see the :doc:`content` section).
+**They have exactly the same format and content** as a :ref:`Preliminary Notice
+<preliminary>`. In particular, early warning GCN Notices have significance
+estimates, sky localizations, and source classifications. Also, like
+Preliminary GCN Notices, **Early Warning Notices are sent prior to vetting
+by humans, and are not accompanied by a GCN Circular.**
 
-Early warning alerts are differentiated from ordinary alerts by the new
-``LVC_EARLY_WARNING`` GCN Notice type. If you are receiving GCN Notices via an
-anonymous VOEvent connection and you are using the Python sample code from the
-:doc:`tutorial/receiving` section, then all you have to do is add the notice
-type to your GCN handler::
+Early warning GCN Notices are differentiated from ordinary GCN Notices by the
+new ``LVC_EARLY_WARNING`` GCN Notice type. If you are receiving GCN Notices via
+an anonymous VOEvent connection and you are using the Python sample code from
+the :doc:`tutorial/receiving/classic` section, then all you have to do is add
+the notice type to your GCN handler::
 
     import gcn
 

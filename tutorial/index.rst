@@ -2,7 +2,7 @@ Sample Code
 ===========
 
 This section provides Python sample code for receiving and interacting with
-:term:`GCN Notices <GCN Notice>`. GCN Notices are available over several
+:term:`Notices <Notice>`. Notices are available over several
 different protocols and in several different formats. LIGO/Virgo/KAGRA
 recommends using the VOEvent Transport Protocol (:term:`VTP`) to receive
 notices in :term:`VOEvent` XML format because it is anonymous,
@@ -15,14 +15,14 @@ configuration-free, and easy to parse.
    limited quality control of the legacy formats.
 
 This tutorial will walk you through writing a Python script to receive and
-process the example LIGO/Virgo/KAGRA GCN notices that are sent every hour. The
+process the example LIGO/Virgo/KAGRA notices that are sent every hour. The
 tutorial is broken into the following subsections:
 
 .. toctree::
    :maxdepth: 1
 
    prerequisites
-   receiving
+   receiving/index
    skymaps
    multiorder_skymaps
    observability

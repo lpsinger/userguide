@@ -22,9 +22,9 @@ alert is sent to astronomers in order to search for counterparts
 **LIGO/Virgo/KAGRA alerts are public**. Alerts are distributed through NASA's
 Gamma-ray Coordinates Network (:term:`GCN`). There are two types of alerts:
 human-readable :term:`GCN Circulars <GCN Circular>` and machine-readable
-:term:`GCN Notices <GCN Notice>`. This document provides a brief overview of
+:term:`Notices <Notice>`. This document provides a brief overview of
 the procedures for vetting and sending GW alerts, describes their contents and
-format, and includes instructions and sample code for receiving GCN Notices and
+format, and includes instructions and sample code for receiving Notices and
 decoding GW sky maps.
 
 

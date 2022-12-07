@@ -6,6 +6,10 @@ Version 17 (unreleased)
 
 .. rubric:: General
 
+*  Add tutorial on receiving and parsing notices distributed over Kafka via GCN
+   and SCiMMA. This change is reflected in multiple sections: **Alert
+   Contents** and **Sample Code**.
+
 *  Change the name of this document from "LIGO/Virgo Public Alerts User Guide"
    to "LIGO/Virgo/KAGRA Public Alerts User Guide".
 

@@ -3,11 +3,13 @@ airmass
 Aitoff
 al
 Aladin
+AlertType
 arXiv
 Ashton
 Astropy
 ATel
 ATels
+Avro
 Banday
 Bartos
 Bilby
@@ -26,6 +28,7 @@ comoving
 cosmologically
 Coughlin
 cWB
+Cyberinfrastructure
 Dal
 detections
 directionally
@@ -35,6 +38,8 @@ Drago
 durations
 Essick
 et
+EventType
+ExternalCoincInfo
 Fairhurst
 Farah
 Farr
@@ -45,6 +50,7 @@ fluence
 Fong
 Fortran
 Foucart
+gcn
 geocenter
 Germain
 Ghosh
@@ -70,6 +76,9 @@ interferometers
 ipix
 isoLatitude
 isotropically
+ivorn
+JSON
+Kafka
 Kamioka
 Kapadia
 Katsavounidis

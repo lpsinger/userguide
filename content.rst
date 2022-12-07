@@ -1,19 +1,19 @@
 Alert Contents
 ==============
 
-Public LIGO/Virgo/KAGRA alerts are distributing using NASA's Gamma-ray
-Coordinates Network (:term:`GCN`). There are two types of alerts:
+Public LIGO/Virgo/KAGRA alerts are distributed using NASA's General Coordinates
+Network (:term:`GCN`, https://gcn.nasa.gov) and Scalable Cyberinfrastructure to
+support Multi-Messenger Astrophysics (:term:`SCiMMA`, https://scimma.org).
+There are two types of alerts:
 
-**GCN Notices** are machine-readable packets. They are available as
-:term:`VOEvent` XML and `several other legacy formats`_. See the
-:doc:`/tutorial/index` section for instructions on receiving GCNs in VOEvent
-format.
+**Notices** are machine-readable packets. They are available as :term:`JSON`,
+:term:`Avro`, :term:`VOEvent` XML, and `several other legacy formats`_. See the
+:doc:`/tutorial/index` section for instructions on receiving notices, which are
+available via :term:`Kafka` and VOEvent brokers.
 
 .. warning::
-   We recommend receiving LIGO/Virgo/KAGRA alerts in the VOEvent XML format
-   using one of `GCN's anonymous VOEvent brokers`_. VOEvent over anonymous
-   :term:`VTP` is the **only GCN format and distribution method that is fully
-   supported by LIGO/Virgo/KAGRA.**
+   The JSON, Avro, and VOEvent formats are fully supported, but the legacy
+   text, binary, and email formats are not.
 
    The VOEvent XML alerts are official data products of LIGO/Virgo/KAGRA. GCN
    produces `several other legacy formats`_ from them, in particular a
@@ -28,9 +28,9 @@ the public `GCN Circulars archive`_.
 Notice Types
 ------------
 
-For each event, there are up to five kinds of GCN Notices:
+For each event, there are up to five kinds of Notices:
 
-An **Early Warning GCN Notice** may be issued for :term:`CBC` events up to tens
+An **Early Warning Notice** may be issued for :term:`CBC` events up to tens
 of seconds *before* merger. The candidate must have passed some automated data
 quality checks, but it may later be :ref:`retracted <retraction>` after human
 vetting. There is no accompanying GCN Circular at this stage. Early Warning
@@ -40,14 +40,14 @@ to be rare.
 
 .. _preliminary:
 
-A **Preliminary GCN Notice** is issued automatically within minutes *after* a
-gravitational-wave candidate is detected. Like an **Early Warning GCN Notice**,
+A **Preliminary Notice** is issued automatically within minutes *after* a
+gravitational-wave candidate is detected. Like an **Early Warning Notice**,
 the candidate must have passed automated data quality checks, but it may later
 be :ref:`retracted <retraction>`, and there is no accompanying GCN Circular.
 
 .. _initial:
 
-An **Initial GCN Notice** is issued after human vetting (see
+An **Initial Notice** is issued after human vetting (see
 :doc:`/analysis/vetting`). If the signal does not pass human vetting (e.g., it
 is a glitch), then instead of an initial alert there will be a retraction_. The
 initial alert is also accompanied by a GCN Circular, which should be considered
@@ -55,19 +55,19 @@ as the first formal publication of the candidate and can be cited as such.
 
 .. _update:
 
-An **Update GCN Notice** is issued whenever further analysis leads to improved
+An **Update Notice** is issued whenever further analysis leads to improved
 estimates of the sky localization, significance, or classification. There may
 be multiple updates for a given event, and updates may be issued hours, days,
 or even weeks after the event.
 
 .. _retraction:
 
-Lastly, a **Retraction GCN Notice** is issued if the candidate is rejected as a
+Lastly, a **Retraction Notice** is issued if the candidate is rejected as a
 result of vetting by human instrument scientists and data analysts. A
 retraction indicates that the candidate has been withdrawn because it is
 probably not astrophysical.
 
-All types of GCN Notices *except for Retraction notices* contain the following
+All types of Notices *except for Retraction notices* contain the following
 information, which are described in further detail below:
 
 * Name_: a unique identifier for the candidate
@@ -83,8 +83,152 @@ Initial and Update notices are accompanied by human-readable GCN Circulars,
 which restate all of the above information and also may include a `data quality
 assessment`_.
 
-Notice Contents
----------------
+Notice Formats
+--------------
+
+Notices essentially come in two different formats: a format that is distributed
+over :term:`Kafka` and a different format that is distributed using VOEvent
+brokers. These two formats contain the same information about the candidate but
+contain different metadata and follow different schema.
+
+Kafka Notice (GCN, SCiMMA)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Public LIGO/Virgo/KAGRA notices distributed over Kafka as either :term:`JSON`
+or :term:`Avro` follow the format of the table below. The ``event`` field will
+be null in retraction notices; the ``external_coinc`` field will only be
+non-null in the event of a coincidence between a gravitational-wave candidate
+and an alert from a third party.
+
+.. important::
+    The sky map field stores the raw byte-string representation of the sky
+    localization file (described below) in Avro notices, but stores the
+    :term:`Base64 encoded <base64>` byte-string representation in JSON notices.
+
+.. tabs::
+
+  .. tab:: JSON
+
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | alert_type                            | :samp:`{{EarlyWarning,Preliminary,Initial,Update,Retraction}}`                                            |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | time_created                          | Time notice was created (UTC, ISO-8601) :samp:`2018-11-01T22:34:20Z`                                      |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | superevent_id                         | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                   |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event**                                                                                                                                         |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | time                                  | Time of event (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654Z`                                      |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | far                                   | Estimated :term:`FAR` in Hz                                                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | instruments                           | List of detectors, e.g.  :samp:`['H1', 'L1','V1']`                                                        |
+     |                                       | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the        |
+     |                                       | preferred event for that particular :doc:`superevent </analysis/superevents>`                             |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | skymap                                | The contents of a sky map in a multi-order FITs format as a Base64-encoded string.                        |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | search                                | :samp:`{{AllSky, AllSkyLong, BBH, EarlyWarning, HighMass, IMBH, MDC}}`                                    |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | group                                 | :samp:`CBC`                                               | :samp:`Burst`                                 |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | pipeline                              | :samp:`{{gstlal,MBTAOnline,pycbc,spiir}}`                 | :samp:`{{CWB,oLIB}}`                          |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event.properties**                                                                                                                              |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | HasNS, HasRemnant,                    | Probability, under the assumption that the source is not  | N/A                                           |
+     | HasMassGap                            | noise, that at least one of the compact objects was a     |                                               |
+     |                                       | neutron star, that the system ejected a non-zero amount   |                                               |
+     |                                       | of neutron star matter, and that at least one of the      |                                               |
+     |                                       | compact objects has mass in the range 3-5 solar masses,   |                                               |
+     |                                       | respectively                                              |                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event.classification**                                                                                                                          |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | BNS, NSBH, BBH,                       | Probability that the source is a :term:`BNS`,             | N/A                                           |
+     | Noise                                 | :term:`NSBH`, :term:`BBH`, or                             |                                               |
+     |                                       | :term:`Terrestrial` (i.e, noise) respectively             |                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **external_coinc**                                                                                                                                |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | gcn_notice_id                         | :samp:`{{583417860, 583327924}}`                                                                          |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | ivorn                                 | External IVORN identification field                                                                       |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | observatory                           | :samp:`{{Fermi,Swift}}`                                                                                   |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | search                                | :samp:`{{GRB,SubGRB}}`                                                                                    |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_difference                       | Time between source and external event in seconds                                                         |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_coincidence_far                  | Estimated coincidence false alarm rate in Hz using timing                                                 |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_sky_position_coincidence_far     | Estimated coincidence false alarm rate in Hz using timing and sky position                                |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+
+  .. tab:: Avro
+
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | alert_type                            | :samp:`{{EarlyWarning,Preliminary,Initial,Update,Retraction}}`                                            |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | time_created                          | Time notice was created (UTC, ISO-8601) :samp:`2018-11-01T22:34:20Z`                                      |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | superevent_id                         | GraceDB ID: :samp:`[{{T,M}}]S{YYMMDDabc}`. Example: :samp:`MS181101abc`                                   |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event**                                                                                                                                         |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | time                                  | Time of event (UTC, ISO-8601), e.g. :samp:`2018-11-01T22:22:46.654Z`                                      |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | far                                   | Estimated :term:`FAR` in Hz                                                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | instruments                           | List of detectors, e.g.  :samp:`['H1', 'L1','V1']`                                                        |
+     |                                       | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the        |
+     |                                       | preferred event for that particular :doc:`superevent </analysis/superevents>`                             |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | skymap                                | The contents of a sky map in a multi-order FITs format as a byte-string.                                  |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | search                                | :samp:`{{AllSky, AllSkyLong, BBH, EarlyWarning, HighMass, IMBH, MDC}}`                                    |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | group                                 | :samp:`CBC`                                               | :samp:`Burst`                                 |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | pipeline                              | :samp:`{{gstlal,MBTAOnline,pycbc,spiir}}`                 | :samp:`{{CWB,oLIB}}`                          |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event.properties**                                                                                                                              |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | HasNS, HasRemnant,                    | Probability, under the assumption that the source is not  | N/A                                           |
+     | HasMassGap                            | noise, that at least one of the compact objects was a     |                                               |
+     |                                       | neutron star, that the system ejected a non-zero amount   |                                               |
+     |                                       | of neutron star matter, and that at least one of the      |                                               |
+     |                                       | compact objects has mass in the range 3-5 solar masses,   |                                               |
+     |                                       | respectively                                              |                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **event.classification**                                                                                                                          |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | BNS, NSBH, BBH,                       | Probability that the source is a :term:`BNS`,             | N/A                                           |
+     | Noise                                 | :term:`NSBH`, :term:`BBH`, or                             |                                               |
+     |                                       | :term:`Terrestrial` (i.e, noise) respectively             |                                               |
+     +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
+     | **external_coinc**                                                                                                                                |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | gcn_notice_id                         | :samp:`{{583417860, 583327924}}`                                                                          |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | ivorn                                 | External IVORN identification field                                                                       |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | observatory                           | :samp:`{{Fermi,Swift}}`                                                                                   |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | search                                | :samp:`{{GRB,SubGRB}}`                                                                                    |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_difference                       | Time between source and external event in seconds                                                         |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_coincidence_far                  | Estimated coincidence false alarm rate in Hz using timing                                                 |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | time_sky_position_coincidence_far     | Estimated coincidence false alarm rate in Hz using timing and sky position                                |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+
+
+
+VOEvent Notice (GCN Classic)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The table below is a representation of the contents of a LIGO/Virgo/KAGRA GCN
 Notice.
@@ -168,11 +312,15 @@ following fields will also be present:
 | Time Difference                       | Time between source and external event in seconds                                                                     |
 +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 
+Notice Contents
+---------------
+
 Name
 ~~~~
 
-The name of an event is its :term:`GraceDB` ID, a uniquely assigned identifier
-such as :samp:`MS181101abc`. A GraceDB ID has three parts:
+The name of an event is its :term:`GraceDB` ID (sometimes called the :doc:`superevent
+</analysis/superevents>` ID), a uniquely assigned identifier
+such as :samp:`MS181101abc`.  A GraceDB ID has three parts:
 
 * Prefix: ``S`` for normal candidates and ``MS`` or ``TS`` for mock or test
   events respectively. The S stands for
@@ -199,9 +347,12 @@ Sky Localization
 
 The sky localization consists of the posterior probability distribution of the
 source's sky position and (for :term:`CBC` events only) luminosity distance.
-The GCN Notice and Circular will provide a URL for the sky localization file
-stored in GraceDB. The sky localization is saved in a :term:`FITS` file as a
-:term:`HEALPix` [#HEALPixFramework]_ all-sky image. See our :doc:`sample code
+The Classic GCN Notice and Circular will provide a URL for the sky localization
+file stored in GraceDB, notices delivered over Kafka will provide byte-string
+representations of the localization file content. Avro notices will provide the
+raw bytes, JSON notices will provide :term:`base64 encoded<base64>` bytes.  The
+sky localization is saved in a :term:`FITS` file as a :term:`HEALPix`
+[#HEALPixFramework]_ all-sky image. See our :doc:`sample code
 </tutorial/skymaps>` for instructions on working with sky localization files.
 
 The sky map URL will generally be of the form
@@ -430,42 +581,85 @@ waveforms. After final analysis, those data products are released through the
 `Gravitational Wave Open Science Center
 <https://www.gw-openscience.org/about/>`_.
 
-Examples
---------
+Notice Examples
+---------------
 
-Below are some sample VOEvents to illustrate the formatting of the GCN Notices.
+Kafka
+~~~~~
+
+Below are examples of GCN notices to illustrate the formatting of the Notices.
+The ``skymap`` field has been truncated for display purposes, though links to the
+full files for both formats can be found in the :doc:`SCiMMA
+</tutorial/receiving/scimma>` and :doc:`GCN </tutorial/receiving/gcn>` sample
+code sections. Recall that SCiMMA notices follow the same schema as GCN
+notices, however the ``skymap`` field in SCiMMA notices contain raw bytes while
+the ``skymap`` field in GCN notices is :term:`base64 encoded <base64>`.
+
+*Coming Soon:* Example of a notice with an external coincident event.
 
 .. tabs::
 
-   .. tab:: EarlyWarning
+  .. tab:: EarlyWarning
 
-      .. literalinclude:: _static/MS181101ab-1-EarlyWarning.xml
-         :language: xml
+     .. literalinclude:: _static/MS181101ab-earlywarning_displayexample.json
+        :language: json
 
-   .. tab:: Preliminary
+  .. tab:: Preliminary
 
-      .. literalinclude:: _static/MS181101ab-2-Preliminary.xml
-         :language: xml
+     .. literalinclude:: _static/MS181101ab-preliminary_displayexample.json
+        :language: json
 
-   .. tab:: Initial
+  .. tab:: Initial
 
-      .. literalinclude:: _static/MS181101ab-3-Initial.xml
-         :language: xml
+     .. literalinclude:: _static/MS181101ab-initial_displayexample.json
+        :language: json
 
-   .. tab:: Update
+  .. tab:: Update
 
-      .. literalinclude:: _static/MS181101ab-4-Update.xml
-         :language: xml
+     .. literalinclude:: _static/MS181101ab-update_displayexample.json
+        :language: json
 
-   .. tab:: Retraction
+  .. tab:: Retraction
 
-      .. literalinclude:: _static/MS181101ab-5-Retraction.xml
-         :language: xml
+     .. literalinclude:: _static/MS181101ab-retraction.json
+        :language: json
 
-   .. tab:: External Coincidence
+GCN Classic
+~~~~~~~~~~~
 
-      .. literalinclude:: _static/MS181101ab-6-Update.xml
-         :language: xml
+Below are examples of VOEvent notices.
+
+.. tabs::
+
+  .. tab:: EarlyWarning
+
+     .. literalinclude:: _static/MS181101ab-1-EarlyWarning.xml
+        :language: xml
+
+  .. tab:: Preliminary
+
+     .. literalinclude:: _static/MS181101ab-2-Preliminary.xml
+        :language: xml
+
+  .. tab:: Initial
+
+     .. literalinclude:: _static/MS181101ab-3-Initial.xml
+        :language: xml
+
+  .. tab:: Update
+
+     .. literalinclude:: _static/MS181101ab-4-Update.xml
+        :language: xml
+
+  .. tab:: Retraction
+
+     .. literalinclude:: _static/MS181101ab-5-Retraction.xml
+        :language: xml
+
+  .. tab:: External Coincidence
+
+     .. literalinclude:: _static/MS181101ab-6-Update.xml
+        :language: xml
 
 .. _`from the HEALPix team`: https://healpix.sourceforge.io/data/examples/healpix_fits_specs.pdf
 .. _`NESTED numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION410

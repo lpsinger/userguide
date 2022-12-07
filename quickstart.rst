@@ -10,8 +10,8 @@ items on this checklist.
 
 Pay particular attention to the :doc:`content` section of this user guide to
 familiarize yourself with the contents of machine-readable LIGO/Virgo/KAGRA
-:term:`GCN Notices <GCN Notice>`. Play with the :doc:`tutorial/index` to
-receive example GCN Notices and practice working with :doc:`sky localization
+:term:`Notices <Notice>`. Play with the :doc:`tutorial/index` to
+receive example Notices and practice working with :doc:`sky localization
 maps <tutorial/skymaps>`.
 
 2. Subscribe to GCN Circulars

@@ -3,6 +3,13 @@ Glossary
 
 .. glossary::
 
+    Avro
+        Apache Avro is an open, binary data serialization format. See
+        https://avro.apache.org for more information.
+
+    Base64
+        A common binary encoding scheme supported by many open-source libraries, e.g. the `python stadard library <https://docs.python.org/3/library/base64.html>`_.
+
     BBH
         Binary black hole, a binary system composed of two black holes. See
         :term:`BH`.
@@ -50,17 +57,14 @@ Glossary
         documentation.
 
     GCN
-        The Gamma-ray Coordinates Network (https://gcn.gsfc.nasa.gov), a portal
-        for discoveries and observations of astronomical transients.
-        Historically, GCN has served high-energy satellites but now also other
-        electromagnetic wavelengths and also gravitational-wave, cosmic ray,
-        and neutrino facilities.
+        The General Coordinates Network (https://gcn.nasa.gov), a NASA-hosted
+        public portal for discoveries and observations of astronomical transients.
+        GCN hosts one of the :term:`Kafka` brokers used to distribute
+        LIGO/Virgo/KAGRA alerts.
+        See https://gcn.nasa.gov.
 
     GCN Circular
         A human-readable astronomical bulletin distributed through :term:`GCN`.
-
-    GCN Notice
-        A machine-readable alert distributed through :term:`GCN`.
 
     GraceDB
         Gravitational Wave Candidate Event Database (https://gracedb.ligo.org),
@@ -76,6 +80,15 @@ Glossary
     HEN
         High Energy Neutrino, particularly in the context of multi-messenger
         GW+HEN follow-up.
+
+    JSON
+        JavaScript Object Notation is an open data serialization format.
+        JSON-serialized data look like JavaScript literals. See
+        https://json.org for more information.
+
+    Kafka
+        Apache Kafka is an open-source distributed event streaming platform.
+        See https://kafka.apache.org for more information.
 
     KAGRA
         Kamioka Gravitational Wave Detector (see `KAGRA home page
@@ -108,6 +121,10 @@ Glossary
         arbitrary region on the unit sphere. A MOC consists of a list of
         :term:`HEALPix` cells at different depths. For the specification, see
         the `HiPS IVOA Recommendation <http://www.ivoa.net/documents/HiPS/>`_.
+
+    Notice
+        A machine-readable alert distributed through :term:`GCN` or
+        :term:`SCiMMA`.
 
     NS
         Neutron star.
@@ -194,6 +211,11 @@ Glossary
         astrophysical and not due to gravitational waves. Some examples of
         sources of terrestrial signals are statistical noise fluctuations,
         detector glitches, and ground motion.
+
+    SCiMMA
+        Scalable Cyberinfrastructure to support Multi-Messenger Astrophysics.
+        SCiMMA hosts one of the :term:`Kafka` brokers used to distribute
+        LIGO/Virgo/KAGRA alerts. See https://scimma.org.
 
     Virgo
         Virgo Observatory (see `Virgo observatory home page

@@ -132,3 +132,10 @@ validate-kafka-notices:
     - pip install -r requirements.txt
     # Fail if avro packets fail validation against schema or if deserialized avro and json packets are not equal
     - .gitlab/kafka_notices_validator.py
+
+validate-json-display:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    # Fail if avro packets fail validation against schema or if deserialized avro and json packets are not equal
+    - .gitlab/json_display_notices_validator.py

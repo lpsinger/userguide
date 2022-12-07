@@ -1,16 +1,20 @@
-Receiving GCNs
-==============
+VOEvent Notices via GCN Classic
+===============================
 
-Next, we'll write a GCN handler function that we want PyGCN to call every time
-it receives a GCN notice. We :term:`decorate <decorator>` the handler with
-``@gcn.handlers.include_notice_types`` to specify that we only want to process
-certain GCN notice types (``LVC_PRELIMINARY``, ``LVC_INITIAL``, and
-``LVC_UDPATE``).
+In this section, we'll write a GCN handler function, write a script to receive
+and parse VOEvent notices using PyGCN, and finally download and parse an
+example notice. You do not need to create an account or set up credentials to
+receive GCN classic notices.
 
-Events come in two very general flavors: 'CBC' for compact binary coalescence
-candidates detected by matched filtering, and 'Burst' for candidates detected
-by model-independent methods. Your handler can take different actions based on
-this. The example below will handle only 'CBC' events.
+Receiving and Parsing Notices
+-----------------------------
+
+The following basic handler function will parse out the URL of the FITS file,
+download it, and extract the probability sky map. We :term:`decorate
+<decorator>` the handler with ``@gcn.handlers.include_notice_types`` to specify
+that we only want to process certain GCN notice types (``LVC_PRELIMINARY``,
+``LVC_INITIAL``, and ``LVC_UDPATE``).
+
 
 .. important::
    Note that mock or 'test' observations are denoted by the ``role="test"``
@@ -26,9 +30,6 @@ this. The example below will handle only 'CBC' events.
    and save the FITS file in order to save it locally using
    :func:`astropy.utils.data.download_file`, :func:`requests.get`,
    :func:`urllib.request.urlopen`, or even curl_.
-
-The following basic handler function will parse out the URL of
-the FITS file, download it, and extract the probability sky map:
 
 .. testcode::
 
@@ -96,13 +97,13 @@ we defined above.
 
 When you run this script you should receive a sample LIGO/Virgo/KAGRA GCN
 Notice every hour. For each event received it will print output that looks like
-what is shown in the :ref:`offline-testing` example below.
+what is shown in the :ref:`offline-testing-voevent` example below.
 
 .. note::
    ``gcn.listen`` will try to automatically reconnect if the network connection
    is ever broken.
 
-.. _offline-testing:
+.. _offline-testing-voevent:
 
 Offline Testing
 ---------------
