@@ -110,6 +110,10 @@ in the table below.
 | :term:`KAGRA`   | :file:`kagra_10Mpc.txt`        | :file:`kagra_128Mpc.txt`       |
 +-----------------+--------------------------------+--------------------------------+
 
+These noise curves correspond to the high ends of the BNS ranges shown in the
+timeline figure above, with the exception of Virgo in O5, for which it
+represents the low end.
+
 We assume that each detector independent observing duty cycle of 70%.
 
 Source Distribution
