@@ -47,7 +47,7 @@
       <Description>Specific low-latency search</Description>
     </Param>
     <Group name="GW_SKYMAP" type="GW_SKYMAP">
-      <Param dataType="string" name="skymap_fits" ucd="meta.ref.url" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0">
+      <Param dataType="string" name="skymap_fits" ucd="meta.ref.url" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.multiorder.fits,0">
         <Description>Sky Map FITS</Description>
       </Param>
     </Group>

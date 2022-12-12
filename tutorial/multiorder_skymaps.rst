@@ -1,10 +1,11 @@
-Multi-Order Sky Maps (For Advanced Users)
-=========================================
+Working with Multi-Order Sky Maps
+=================================
 
-For most events, LIGO/Virgo/KAGRA distributes both the standard :term:`HEALPix`
-format with the file extension ``.fits.gz``, as well as an experimental
-multi-resolution HEALPix format, distinguished by the file extension
-``.multiorder.fits``.
+For all events, LIGO/Virgo/KAGRA distributes both the standard :term:`HEALPix`
+format with the file extension ``.fits.gz``, as well as the new multi-resolution
+HEALPix format, distinguished by the file extension ``.multiorder.fits``.
+The multi-resolution HEALPix format is the primary and preferred format, and the
+only format that is explicitly listed in the GCN Notices and Circulars. 
 
 What Problem Do Multi-Resolution Sky Maps Solve?
 ------------------------------------------------

@@ -257,12 +257,12 @@ Notice.
 | FAR               | Estimated :term:`FAR` in Hz                                                                                                   |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Sky Map           | Versioned URL of HEALPix FITS sky localization file in the format                                                             |
-|                   | :samp:`https://gracedb.ligo.org/api/superevents/[{{T,M}}]S{YYMMDDabc}/files/{{bayestar,LALInference,cWB}}.fits.gz,{[0-8]}`.   |
-|                   | Example: :samp:`https://gracedb.ligo.org/api/superevents/S190901ap/files/bayestar.fits.gz,0`                                  |
+|                   | :samp:`https://gracedb.ligo.org/api/superevents/[{{T,M}}]S{YYMMDDabc}/files/{{bayestar,LALInference,cWB}}.multiorder.fits,{[0-8]}`. |
+|                   | Example: :samp:`https://gracedb.ligo.org/api/superevents/S190901ap/files/bayestar.multiorder.fits,0`                          |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | Group             | :samp:`CBC`                                               | :samp:`Burst`                                                     |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
-| Pipeline          | :samp:`{{gstlal,MBTAOnline,pycbc,spiir}}`                 | :samp:`{{CWB,oLIB}}`                                              |
+| Pipeline          | :samp:`{{gstlal,MBTA,pycbc,spiir}}`                       | :samp:`{{CWB,oLIB}}`                                              |
 +-------------------+-----------------------------------------------------------+-------------------------------------------------------------------+
 | CentralFreq       | N/A                                                       | Central frequency in Hz                                           |
 +-------------------+                                                           +-------------------------------------------------------------------+
@@ -356,32 +356,20 @@ sky localization is saved in a :term:`FITS` file as a :term:`HEALPix`
 </tutorial/skymaps>` for instructions on working with sky localization files.
 
 The sky map URL will generally be of the form
-:samp:`https://gracedb.ligo.org/api/superevents/{sid}/files/{method}.fits.gz,{v}`,
+:samp:`https://gracedb.ligo.org/api/superevents/{sid}/files/{method}.multiorder.fits,{v}`,
 where :samp:`{sid}` is the :doc:`superevent </analysis/superevents>` ID,
 :samp:`{method}` is the sky localization algorithm (usually :samp:`bayestar`,
 :samp:`LALInference`, or :samp:`cWB`), and :samp:`{v}` is an integer that
 uniquely identifies different versions of the localization. The version number
 is automatically assigned by GraceDB, starting from 0, and increments for each
 file of the same name. For example, the first FITS file with the name
-``bayestar.fits.gz`` becomes ``bayestar.fits.gz,0``, then the next one is
-``bayestar.fits.gz,1``, and so on. The filename without the version suffix,
-such as ``bayestar.fits.gz``, always points to the most recent version.
+``bayestar.multiorder.fits`` becomes ``bayestar.multiorder.fits,0``, then the next one is
+``bayestar.multiorder.fits,1``, and so on. The filename without the version suffix,
+such as ``bayestar.multiorder.fits``, always points to the most recent version.
 
 ..  important::
     We generally provide localizations in two HEALPix formats, distinguished by
     file extension:
-
-    ..  rubric:: ``*.fits.gz``
-
-    A subset of the standard HEALPix-in-FITS format (see semi-official
-    specifications `from the HEALPix team`_ and :ref:`from the gamma-ray
-    community <gamma-astro-data-formats:healpix_skymap>`) that is recognized by
-    a wide variety of astronomical imaging programs including DS9_ and Aladin_.
-    It uses HEALPix :ref:`implicit indexing
-    <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering
-    scheme`_. **This is the primary and preferred format, and the only format
-    that is explicitly listed in the GCN Notices and Circulars.** See the
-    section :doc:`/tutorial/skymaps` for details.
 
     ..  rubric:: ``*.multiorder.fits``
 
@@ -391,10 +379,20 @@ such as ``bayestar.fits.gz``, always points to the most recent version.
     rationale in :dcc:`G1800186`). It uses HEALPix :ref:`explicit indexing
     <gamma-astro-data-formats:hpx_explicit>` and the `NUNIQ numbering scheme`_,
     which is closely related to `multi-order coverage (MOC) maps`_ in Aladin.
-    This is the internal format that is used by the LIGO/Virgo/KAGRA
-    low-latency alert pipeline. **This is an experimental format, and it is
-    currently recommended only for advanced users.** See the section
-    :doc:`/tutorial/multiorder_skymaps` for details.
+    This is the new format that is used by the LIGO/Virgo/KAGRA low-latency
+    alert pipeline. **This is the primary and preferred format, and the only
+    format that is explicitly listed in the GCN Notices and Circulars.**
+    See the section :doc:`/tutorial/multiorder_skymaps` for details.
+
+    ..  rubric:: ``*.fits.gz``
+
+    A subset of the standard HEALPix-in-FITS format (see semi-official
+    specifications `from the HEALPix team`_ and :ref:`from the gamma-ray
+    community <gamma-astro-data-formats:healpix_skymap>`) that is recognized by
+    a wide variety of astronomical imaging programs including DS9_ and Aladin_.
+    It uses HEALPix :ref:`implicit indexing
+    <gamma-astro-data-formats:hpx_implicit>` and the `NESTED numbering
+    scheme`_. See the section :doc:`/tutorial/skymaps` for details.
 
     Both formats always use celestial (equatorial, J2000) coordinates.
 

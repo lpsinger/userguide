@@ -23,8 +23,8 @@ tutorial is broken into the following subsections:
 
    prerequisites
    receiving/index
-   skymaps
    multiorder_skymaps
+   skymaps
    observability
    3d
 

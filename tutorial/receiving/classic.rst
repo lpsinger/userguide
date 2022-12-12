@@ -35,6 +35,8 @@ that we only want to process certain GCN notice types (``LVC_PRELIMINARY``,
 
     import gcn
     import healpy as hp
+    import ligo.skymap
+    import ligo.skymap.io
 
     # Function to call every time a GCN is received.
     # Run only for notices of type
@@ -73,12 +75,11 @@ that we only want to process certain GCN notice types (``LVC_PRELIMINARY``,
 
         if 'skymap_fits' in params:
             # Read the HEALPix sky map and the FITS header.
-            skymap, header = hp.read_map(params['skymap_fits'],
-                                         h=True)
+            skymap, header = ligo.skymap.io.read_sky_map(params['skymap_fits'])
             header = dict(header)
 
             # Print some values from the FITS header.
-            print('Distance =', header['DISTMEAN'], '+/-', header['DISTSTD'])
+            print('Distance =', header['distmean'], '+/-', header['diststd'])
 
 Listen for GCNs
 ---------------
@@ -168,7 +169,7 @@ Upon running this, you should see:
     Group = CBC
     Pipeline = gstlal
     Search = MDC
-    skymap_fits = https://emfollow.docs.ligo.org/userguide/_static/bayestar.fits.gz,0
+    skymap_fits = https://emfollow.docs.ligo.org/userguide/_static/bayestar.multiorder.fits,0
     BNS = 0.95
     NSBH = 0.01
     BBH = 0.03

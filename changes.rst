@@ -6,6 +6,8 @@ Version 17 (unreleased)
 
 .. rubric:: General
 
+*  Multi-resolution FITS files are now the preferred format for sky maps.
+
 *  Add tutorial on receiving and parsing notices distributed over Kafka via GCN
    and SCiMMA. This change is reflected in multiple sections: **Alert
    Contents** and **Sample Code**.
@@ -48,6 +50,9 @@ Version 17 (unreleased)
 
 .. rubric:: Sample Code
 
+*  Update information on working on multi-resolution sky maps. Changed the
+   presentation order to reflect that multi-resolution is now the default.
+  
 .. rubric:: Additional Resources
 
 Version 16 (2020-05-28)

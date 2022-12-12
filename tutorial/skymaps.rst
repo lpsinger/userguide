@@ -1,8 +1,9 @@
-Working with Sky Maps
-=====================
+Working with Flat Resolution Sky Maps
+=====================================
 
-Let's take a look at what is inside one of the LIGO/Virgo/KAGRA probability sky
-maps. They are FITS image files and can be manipulated and viewed with many
+For all events, LIGO/Virgo/KAGRA also distribute the standard :term:`HEALPix`
+format with the file extension ``.fits.gz``, that was the default format during
+the **O3** run. They are FITS image files and can be manipulated and viewed with many
 commonplace FITS tools. However, they are a little unusual in two regards.
 First, since they are all-sky images, they are stored in the :term:`HEALPix`
 [#HEALPixFramework]_ projection, a format that is used for Planck_ all-sky CMB
