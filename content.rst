@@ -126,7 +126,7 @@ and an alert from a third party.
      |                                       | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the        |
      |                                       | preferred event for that particular :doc:`superevent </analysis/superevents>`                             |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
-     | skymap                                | The contents of a sky map in a multi-order FITs format as a Base64-encoded string.                        |
+     | skymap                                | The contents of a sky map in a multi-order FITS format as a Base64-encoded string.                        |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
      | search                                | :samp:`{{AllSky, AllSkyLong, BBH, EarlyWarning, HighMass, IMBH, MDC}}`                                    |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
@@ -185,7 +185,7 @@ and an alert from a third party.
      |                                       | whose data have been used by the :doc:`online pipeline </analysis/searches>` that has produced the        |
      |                                       | preferred event for that particular :doc:`superevent </analysis/superevents>`                             |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
-     | skymap                                | The contents of a sky map in a multi-order FITs format as a byte-string.                                  |
+     | skymap                                | The contents of a sky map in a multi-order FITS format as a byte-string.                                  |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
      | search                                | :samp:`{{AllSky, AllSkyLong, BBH, EarlyWarning, HighMass, IMBH, MDC}}`                                    |
      +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------+
