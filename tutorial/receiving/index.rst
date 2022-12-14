@@ -16,5 +16,5 @@ this. The examples in the following sections will handle only 'CBC' events.
    :maxdepth: 1
 
    scimma
-   classic
    gcn
+   classic
