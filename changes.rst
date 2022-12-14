@@ -12,6 +12,8 @@ Version 18 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Remove LALInference, which has been replaced by Bilby.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code

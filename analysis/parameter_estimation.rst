@@ -25,28 +25,16 @@ Gaussian quadrature, lookup tables, and sampling on an adaptively refined
 :term:`HEALPix` grid. The sky localization takes tens of seconds and is
 included in the preliminary alert.
 
-**LALInference** [#LALInference]_ is a full CBC parameter estimation pipeline.
+**Bilby** [#Bilby]_ is a full CBC parameter estimation pipeline.
 It explores a greatly expanded parameter space including sky location,
 distance, masses, and spins, and performs full forward modeling of the
 gravitational-wave signal and the strain calibration of the gravitational-wave
 detectors. It explores the parameter space using :term:`MCMC` and nested
-sampling. For all events, there is an automated LALInference analysis that uses
+sampling. For all events, there is an automated Bilby analysis that uses
 the least expensive CBC waveform models and completes within hours and may be
 included in a subsequent alert. More time-consuming analyses with more
 sophisticated waveform models are started at the discretion of human analysts,
 and will complete days or weeks later.
-
-**Bilby** [#Bilby]_ is a next-generation python-based Bayesian inference
-parameter estimation code. Bilby provides a user-friendly and accessible
-interface with the latest stochastic sampling methods built-in. It can be used
-for gravitational-wave analyses to extract source properties of CBC events such
-as masses, spins, distance and sky location. These parameters are extracted by
-employing the use of stochastic sampling methods such as MCMC and nested
-sampling. An automated pipeline is used to perform a Bilby analysis on all CBC
-events. The automated parameter estimation pipeline uses less expensive default
-settings, including the use of simpler waveforms, to perform an initial
-analysis of the event. Further analyses with more complex waveforms are
-performed by a human analyst as needed.
 
 Unmodeled Events
 ----------------
@@ -58,7 +46,7 @@ detector network [#cWBLocalization]_. The cWB sky localization is included in
 the preliminary alert.
 
 Refined sky localizations for unmodeled bursts are provided by two algorithms
-that use the same :term:`MCMC` and nested sampling methodology as LALInference.
+that :term:`MCMC` and nested sampling methodologies, like Bilby.
 **LALInference Burst (LIB)** [#oLIB]_ models the signal as a single
 sinusoidally modulated Gaussian. **BayesWave** [#BayesWave]_ models the signal
 as a superposition of wavelets and jointly models the background with both a
@@ -70,10 +58,6 @@ in individual detectors.
 .. [#BAYESTAR]
    Singer, L. P., & Price, L. R. 2016, |PRD|, 93, 024013.
    :doi:`10.1103/PhysRevD.93.024013`
-
-.. [#LALInference]
-   Veitch, J., Raymond, V., Farr, B., et al. 2015, |PRD|, 91, 042003.
-   :doi:`10.1103/PhysRevD.91.042003`
 
 .. [#Bilby]
    Ashton, G., Hübner, M., Lasky, P. D., Talbot, C., et al. 2019, |ApJS|, 241, 27.
