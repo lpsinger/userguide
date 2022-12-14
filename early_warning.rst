@@ -3,11 +3,13 @@
 ✨Early-Warning Alerts
 ======================
 
-During O3, automated public alerts for :term:`CBC` events have been sent within
-as little as 2 minutes after merger. However, some :term:`BNS` mergers are
-detectable for up to tens of seconds *before* merger during the event's
-inspiral phase during which the signal sweeps in frequency from tens of hertz
-to kilohertz across LIGO's sensitive band.
+:term:`BNS` mergers spend several minutes in band of the Advanced ground-based
+gravitational-wave detectors.  For some loud and nearby :term:`BNS`
+mergers, it is possible to accumulate enough :term:`SNR` and detect them
+several tens of seconds before merger.  During O3, automated public alerts for
+:term:`CBC` events have been sent within as little as 2 minutes after merger.
+In O4, we will be deploying search pipelines that can in principle detect
+BNS events before merger.
 
 Since it is generally assumed that detectable electromagnetic (or neutrino)
 emission starts shortly *after* merger, a pre-merger gravitational-wave
@@ -16,17 +18,16 @@ transient and might make it possible for automated follow-up facilities to
 capture any prompt emission from the merger environment, the jet, and other
 unknown activity.
 
-**We have commissioned an experimental capability to produce and distribute
+We had previously conducted a trial early warning public alert infrastructure
+in June 2020 replaying an 8-day period of archival LIGO data from O3. Results
+from this study were published in [#FirstDemonstration]_. This study
+demonstrated that in principle it is possible to sent out GCN Notices in
+advance of a BNS merger. Based on the current expect BNS merger rate,  we expect O(1) event per year to be detected before merger in O4.
+
+**We have commissioned capability to produce and distribute
 early warning gravitational-wave alerts up to tens of seconds before merger. We
 have also reduced the latency of ordinary post-merger alerts to within tens of
 seconds after merger.**
-
-We are conducting a trial early warning public alert infrastructure. Since
-production analysis had to be suspended due to COVID-19 pandemic, we are
-replaying an 8-day period of saved LIGO data from O3 with a random (and
-undisclosed) time shift. **Starting on 2020-06-09 and lasting for one week,
-early-warning alerts arising from the replayed data will be publicly
-distributed as test alerts at a rate of approximately once per day.**
 
 Subscribe to Early-Warning Alerts
 ---------------------------------
@@ -70,15 +71,11 @@ your GCN Notice subscription settings`_.)
 Detection Method
 ----------------
 
-Three :term:`CBC` search pipelines are participating in early-warning alerts:
-GstLAL, SPIIR, and MBTA. See the :doc:`analysis/searches` section for details
+All of our :term:`CBC` search pipelines (GstLAL [#GstLALEarlyWarning]_, MBTA,
+PyCBC, and SPIIR) are participating in early-warning alerts. See the
+:doc:`analysis/searches` section for details
 on these analyses. Localizations will be produced with BAYESTAR; see the
 :doc:`analysis/parameter_estimation` section for details.
-
-.. note::
-    The following material, adapted from [#GstLALEarlyWarning]_, describes the
-    detection method and simulated observing capabilities with GstLAL, but is
-    also broadly applicable to SPIIR and MBTA.
 
 :term:`BNS` signals sweep up smoothly in frequency for a few minutes across the
 Advanced LIGO band. In that time, they may accumulate enough SNR to be detected
@@ -92,20 +89,14 @@ about a minute before merger.
    The time evolution of the gravitational-wave frequency and the cumulative
    :term:`SNR` for a GW170817-like :term:`BNS` system.
 
+
 The early warning search is a matched-filter search that uses templates that
 have been truncated at a selection of end frequencies---or equivalently, cut
-off at a selection of times before merger. The early warning template bank
-spans (source frame) component masses between 1 and 2 :math:`M_\odot` and
-:term:`chirp masses <chirp mass>` between 0.9 and 1.7 :math:`M_\odot`. The end
-frequencies are 29 Hz, 32 Hz, 38 Hz, 49 Hz, and 56 Hz, corresponding to about
-60 s, 45 s, 30 s, 15 s, and 10 s before merger.
+off at a selection of times before merger.
 
-Early warning events passing a :term:`FAR` threshold of one per week are sent
-as alerts.
 
 Source Classification
 ---------------------
-
 The automated :doc:`source classification and properties <analysis/inference>`
 have not been trained or tested extensively for early warning alerts. However,
 the early warning analysis is **only sensitive to BNS-mass mergers**. As a
@@ -122,8 +113,10 @@ and bandwidth of the gravitational-wave signal. The localization improves
 slowly up until the last second before merger, and then converges rapidly in
 the last second.
 
-The animations below show the evolution of early-warning sky maps for three
-representative events with different :term:`SNR` values.
+The animations below taken from the data release [#DataRelease]_ show the
+evolution of early-warning sky maps for three representative events with
+different :term:`SNR` values. Note that this study assumed the detectors to be
+operating at their final design sensitivity.
 
 .. only:: latex
 
@@ -167,45 +160,17 @@ representative events with different :term:`SNR` values.
 | 1024 Hz       | 10   |deg2|   | 31   |deg2|   | 5.4   |deg2|  |
 +---------------+---------------+---------------+---------------+
 
-Detection Rate and Localization Accuracy
-----------------------------------------
 
-In the figure below, we show predicted detection rates, distances, and
-localization uncertainties for simulated BNS events. Of all BNS events detected
-by LIGO and Virgo, only 5-30% will be amenable for sending early warning
-alerts. About 5% of all BNS events will be localized to an area of ~400 |deg2|
-by ~30 seconds before merger. At the time of merger, the sky localization will
-be reduced to about ~1 |deg2| for these events. At 60 s before merger, one
-event per year is expected to be localized to within 400 |deg2|. At 30 seconds
-before merger, at least one event per year is expected to be localized to
-within 40 |deg2| and ~4 events per year are expected to be localized to within
-400 |deg2|. By 10 seconds before merger, ~10 events per year are expected to be
-localized to within 400 |deg2|.
-
-.. figure:: _static/areatest_log.*
-    :alt: Cumulative distribution of localization area for early warning events
-
-    Cumulative distribution of localization accuracy for early warning events.
-    Assuming the median BNS merger rate, the right vertical axis shows the
-    number of expected events to be recovered per year as a function of the
-    90% credible area. *The detectors are considered to be operating at design
-    sensitivity in this simulation. The volume reach of the detectors at design
-    configuration is about 6-8 times larger than the current volume reach. This
-    means that the number of events shown in the plot here are about 6-8 times
-    more than the number of events we can currently detect.*
-
-The figure below shows the cumulative fraction of recovered injections as a
-function of distance. This figure shows the distance distribution of the events
-recovered at various early warning frequencies.
-
-.. figure:: _static/dist_hist.*
-    :alt: Cumulative distribution of distance for early warning events
-
-    Cumulative distribution of distance for early warning events.
+.. [#FirstDemonstration]
+   Magee, R., Chatterjee, D., Singer, L. P., Sachdev, S., et al. 2022.
+   :doi:`10.3847/2041-8213/abed54`
 
 .. [#GstLALEarlyWarning]
    Sachdev, S., Magee, R., Hanna, C., et al. 2020.
-   :arxiv:`2008.04288`
+   :doi:`10.3847/2041-8213/abc753`
+
+.. [#DataRelease]
+    https://gstlal.docs.ligo.org/ewgw-data-release/
 
 .. _`Advanced LIGO`: https://ligo.caltech.edu
 .. _`Advanced Virgo`: http://www.virgo-gw.eu
