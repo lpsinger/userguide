@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 17 (unreleased)
+Version 17 (2022-12-14)
 -----------------------
 
 .. rubric:: General
@@ -22,8 +22,6 @@ Version 17 (unreleased)
 *  Remove ``MassGap`` from source classification and add ``HasMassGap`` to
    source properties. This change is reflected in multiple sections:
    **Data Analysis**, **Alert Contents**, and **Sample Code**.
-
-.. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
