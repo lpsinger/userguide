@@ -163,11 +163,11 @@ operating at their final design sensitivity.
 
 .. [#FirstDemonstration]
    Magee, R., Chatterjee, D., Singer, L. P., Sachdev, S., et al. 2022.
-   :doi `10.3847/2041-8213/abed54`
+   :doi:`10.3847/2041-8213/abed54`
 
 .. [#GstLALEarlyWarning]
    Sachdev, S., Magee, R., Hanna, C., et al. 2020.
-   :doi `10.3847/2041-8213/abc753`
+   :doi:`10.3847/2041-8213/abc753`
 
 .. [#DataRelease]
     https://gstlal.docs.ligo.org/ewgw-data-release/
