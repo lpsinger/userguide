@@ -6,18 +6,18 @@ Version 17 (unreleased)
 
 .. rubric:: General
 
-*  Multi-resolution FITS files are now the preferred format for sky maps.
-
-*  Add tutorial on receiving and parsing notices distributed over Kafka via GCN
-   and SCiMMA. This change is reflected in multiple sections: **Alert
-   Contents** and **Sample Code**.
-
 *  Change the name of this document from "LIGO/Virgo Public Alerts User Guide"
    to "LIGO/Virgo/KAGRA Public Alerts User Guide".
 
 *  Use the new
    `sphinx-immaterial-igwn <https://pypi.org/project/sphinx-immaterial-igwn/>`_
    theme which is common to many LIGO/Virgo/KAGRA documents.
+
+*  Multi-resolution FITS files are now the preferred format for sky maps.
+
+*  Add tutorial on receiving and parsing notices distributed over Kafka via GCN
+   and SCiMMA. This change is reflected in multiple sections: **Alert
+   Contents** and **Sample Code**.
 
 *  Remove ``MassGap`` from source classification and add ``HasMassGap`` to
    source properties. This change is reflected in multiple sections:
@@ -54,6 +54,11 @@ Version 17 (unreleased)
    presentation order to reflect that multi-resolution is now the default.
   
 .. rubric:: Additional Resources
+
+*  Update information about early warning, pre-merger for compact binary
+   events.
+
+*  Add a link to the Gravitational Wave Treasure Map.
 
 Version 16 (2020-05-28)
 -----------------------
