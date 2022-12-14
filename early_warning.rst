@@ -4,7 +4,7 @@
 ======================
 
 :term:`BNS` mergers spend several minutes in band of the Advanced ground-based
-gravitational-wave detectors.  For a fraction of loud and nearby :term:`BNS`
+gravitational-wave detectors.  For some loud and nearby :term:`BNS`
 mergers, it is possible to accumulate enough :term:`SNR` and detect them
 several tens of seconds before merger.  During O3, automated public alerts for
 :term:`CBC` events have been sent within as little as 2 minutes after merger.
@@ -71,8 +71,9 @@ your GCN Notice subscription settings`_.)
 Detection Method
 ----------------
 
-The :term:`CBC` search pipelines participating in early-warning alerts are:
-GstLAL [#GstLALEarlyWarning]_, MBTA, PyCBC, and SPIIR. See the :doc:`analysis/searches` section for details
+All of our :term:`CBC` search pipelines (GstLAL [#GstLALEarlyWarning]_, MBTA,
+PyCBC, and SPIIR) are participating in early-warning alerts. See the
+:doc:`analysis/searches` section for details
 on these analyses. Localizations will be produced with BAYESTAR; see the
 :doc:`analysis/parameter_estimation` section for details.
 
@@ -96,7 +97,6 @@ off at a selection of times before merger.
 
 Source Classification
 ---------------------
-FIXME:
 The automated :doc:`source classification and properties <analysis/inference>`
 have not been trained or tested extensively for early warning alerts. However,
 the early warning analysis is **only sensitive to BNS-mass mergers**. As a
@@ -162,14 +162,16 @@ operating at their final design sensitivity.
 
 
 .. [#FirstDemonstration]
-   Magee, R., Chatterjee, D., Singer, L. P., Sachdev, S., et al. 2022.: https://iopscience.iop.org/article/10.3847/2041-8213/abed54
+   Magee, R., Chatterjee, D., Singer, L. P., Sachdev, S., et al. 2022.
+   :doi `10.3847/2041-8213/abed54`
 
 .. [#GstLALEarlyWarning]
    Sachdev, S., Magee, R., Hanna, C., et al. 2020.
-   : https://iopscience.iop.org/article/10.3847/2041-8213/abc753
+   :doi `10.3847/2041-8213/abc753`
 
 .. [#DataRelease]
     https://gstlal.docs.ligo.org/ewgw-data-release/
+
 .. _`Advanced LIGO`: https://ligo.caltech.edu
 .. _`Advanced Virgo`: http://www.virgo-gw.eu
 .. _`GW170817`: https://en.wikipedia.org/wiki/GW170817
