@@ -102,9 +102,9 @@ notice is received.
 
 When you run this script you should receive a sample LIGO/Virgo/KAGRA notice
 every hour. The output will be the same as the output in the
-offline-testing-json_ section below.
+:ref:`offline-testing-gcn` section below.
 
-.. _offline-testing-json:
+.. _offline-testing-gcn:
 
 Offline Testing
 ---------------

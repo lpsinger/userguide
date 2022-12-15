@@ -110,9 +110,9 @@ notice is received.
 
 When you run this script you should receive a sample LIGO/Virgo/KAGRA notice
 every hour. The output will be the same as the output in the
-offline-testing-avro_ section below.
+:ref:`offline-testing-scimma` section below.
 
-.. _offline-testing-avro:
+.. _offline-testing-scimma:
 
 Offline Testing
 ---------------
