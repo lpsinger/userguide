@@ -15,6 +15,6 @@ this. The examples in the following sections will handle only 'CBC' events.
 .. toctree::
    :maxdepth: 1
 
-   classic
    gcn
    scimma
+   classic
