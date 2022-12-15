@@ -1,24 +1,12 @@
 Change Log
 ==========
 
-Version 18 (unreleased)
------------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
-
-.. rubric:: Data Analysis
-
-.. rubric:: Alert Contents
+Version 17.1 (2022-12-14)
+-------------------------
 
 .. rubric:: Sample Code
 
 *  Fix a copy-paste error in the GCN sample code.
-
-.. rubric:: Additional Resources
 
 Version 17 (2022-12-14)
 -----------------------
