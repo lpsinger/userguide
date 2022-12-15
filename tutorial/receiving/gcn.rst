@@ -49,6 +49,8 @@ from GCN, we can write a function to parse them.
     import numpy as np
 
     def parse_notice(record):
+        record = json.loads(record)
+
         # Only respond to mock events. Real events have GraceDB IDs like
         # S1234567, mock events have GraceDB IDs like M1234567.
         # NOTE NOTE NOTE replace the conditional below with this commented out
@@ -98,7 +100,7 @@ notice is received.
 
     while True:
         for message in consumer.consume():
-            parse_notice(message.content)
+            parse_notice(message.value())
 
 When you run this script you should receive a sample LIGO/Virgo/KAGRA notice
 every hour. The output will be the same as the output in the
@@ -145,11 +147,9 @@ This file can be parsed as follows:
 
 .. testcode::
 
-    import json
-
     # Read the file and then parse it
-    with open('MS181101ab-preliminary.json', 'r') as fo:
-        record = json.load(fo)
+    with open('MS181101ab-preliminary.json', 'r') as f:
+        record = f.read()
 
     parse_notice(record)
 
