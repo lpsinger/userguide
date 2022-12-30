@@ -227,7 +227,7 @@ indexing scheme.
 
 First, we need the following imports:
 
-    >>> from astropy.table import Table
+    >>> from astropy.table import QTable
     >>> from astropy import units as u
     >>> import astropy_healpix as ah
     >>> import numpy as np
@@ -236,7 +236,7 @@ Next, let's read the sky map. Instead of a special-purpose HEALPix method, we
 just read the FITS file into an :ref:`Astropy table <astropy-table>` using
 Astropy's :ref:`unified file read/write interface <table_io>`:
 
-    >>> skymap = Table.read('bayestar.multiorder.fits')
+    >>> skymap = QTable.read('bayestar.multiorder.fits')
 
 Most Probable Sky Location
 --------------------------
@@ -251,8 +251,8 @@ three-step process.
 
     What is the probability density per square degree in that tile?
 
-        >>> skymap[i]['PROBDENSITY'] * (np.pi / 180)**2
-        0.0782516470191411
+        >>> skymap[i]['PROBDENSITY'].to_value(u.deg**-2)
+        0.07825164701914111
 
 2.  Unpack the **UNIQ** pixel index into the resolution, ``nside``, and the
     **NESTED** pixel index, ``ipix``, using the method
@@ -307,10 +307,11 @@ pixels.
         >>> i
         13484
 
-    That pixel contains the target sky position.
+    That pixel contains the target sky position. The probability density per
+    square degree at that position is
 
-        >>> skymap[i]['PROBDENSITY'] * (np.pi / 180)**2
-        0.03467919098907807
+        >>> skymap[i]['PROBDENSITY'].to_value(u.deg**-2)
+        0.034679190989078075
 
 .. rubric:: Fast Binary Search
 
@@ -345,13 +346,71 @@ tile, which is true for LIGO/Virgo/KAGRA multi-resolution sky maps.
         >>> i
         13484
 
-    That pixel contains the target sky position.
+    That pixel contains the target sky position. The probability density per
+    square degree at that position is
 
-        >>> skymap[i]['PROBDENSITY'] * (np.pi / 180)**2
-        0.03467919098907807
+        >>> skymap[i]['PROBDENSITY'].to_value(u.deg**-2)
+        0.034679190989078075
+
+Find the 90% Probability Region
+-------------------------------
+
+Follow these steps to find the 90% probability region.
+
+1.  Sort the pixels of the sky map by descending probability density.
+
+        >>> skymap.sort('PROBDENSITY', reverse=True)
+
+2.  Find the area of each pixel.
+
+        >>> level, ipix = ah.uniq_to_level_ipix(skymap['UNIQ'])
+        >>> pixel_area = ah.nside_to_pixel_area(ah.level_to_nside(level))
+
+3.  Calculate the probability within each pixel: the pixel area times the
+    probability density.
+
+        >>> prob = pixel_area * skymap['PROBDENSITY']
+
+4.  Calculate the cumulative sum of the probability.
+
+        >>> cumprob = np.cumsum(prob)
+
+5.  Find the pixel for which the probability sums to 0.9 (90%).
+
+        >>> i = cumprob.searchsorted(0.9)
+
+    The area of the 90% credible region is simply the sum of the areas of
+    the pixels up to that one.
+
+        >>> area_90 = pixel_area[:i].sum()
+        >>> area_90.to_value(u.deg**2)
+        30.975181093574633
+
+Save the 90% Probability Region Footprint as a MOC
+--------------------------------------------------
+
+Having found the 90% probability region, it's easy to now write it out its
+footprint as a MOC suitable for visualization in Aladin.
+
+1.  Keep only the pixels that are within the 90% credible region.
+
+        >>> skymap = skymap[:i]
+
+2.  Sort the pixels by their UNIQ pixel index.
+
+        >>> skymap.sort('UNIQ')
+
+3.  Delete all columns except for the UNIQ column.
+
+        >>> skymap = skymap['UNIQ',]
+
+4.  Write to a FITS file.
+
+        >>> skymap.write('90percent.moc.fits')
 
 .. testcleanup::
 
+   os.remove('90percent.moc.fits')
    os.chdir(old_dir)
 
 .. _astropy-healpix: https://pypi.org/project/astropy-healpix/
