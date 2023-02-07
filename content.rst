@@ -330,8 +330,8 @@ such as :samp:`MS181101abc`.  A GraceDB ID has three parts:
   month, and day of month.
 
 * Suffix: A lowercase alphabetic string that is incremented automatically
-  (``a``, ``b``, ..., ``z``, ``aa``, ``ab``, ... ``az``, ``aaa``, etc.)
-  whenever a candidate on a given date is added to GraceDB.
+  (``a``, ``b``, ..., ``z``, ``aa``, ``ab``, ... ``az``, ``ba``, etc.) whenever
+  a candidate on a given date is added to GraceDB.
 
 Significance
 ~~~~~~~~~~~~
