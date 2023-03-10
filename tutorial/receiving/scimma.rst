@@ -202,6 +202,7 @@ Below are some sample Avro alerts that can be used for testing purposes.
 * :download:`MS181101ab-initial.avro </_static/MS181101ab-initial.avro>`
 * :download:`MS181101ab-update.avro </_static/MS181101ab-update.avro>`
 * :download:`MS181101ab-retraction.avro </_static/MS181101ab-retraction.avro>`
+* :download:`MS181101ab-ext-update.avro </_static/MS181101ab-ext-update.avro>`
 
 .. _confluent-kafka: https://pypi.org/project/confluent-kafka/
 .. _Docker: https://docs.docker.com/get-docker/

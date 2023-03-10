@@ -193,6 +193,7 @@ Below are some sample JSON alerts that can be used for testing purposes.
 * :download:`MS181101ab-initial.json </_static/MS181101ab-initial.json>`
 * :download:`MS181101ab-update.json </_static/MS181101ab-update.json>`
 * :download:`MS181101ab-retraction.json </_static/MS181101ab-retraction.json>`
+* :download:`MS181101ab-ext-update.json </_static/MS181101ab-ext-update.json>`
 
 .. _confluent-kafka: https://pypi.org/project/confluent-kafka/
 .. _Docker: https://docs.docker.com/get-docker/

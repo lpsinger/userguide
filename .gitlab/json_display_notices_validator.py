@@ -30,6 +30,15 @@ for filename in glob('_static/MS181101ab-*_displayexample.json'):
         # Truncate skymap to same length as the display example
         original_alert_dict['event']['skymap'] = original_alert_dict['event']['skymap'][:len(display_alert_dict['event']['skymap'][:-3])] + '...'
 
+    if original_alert_dict.get('external_coinc', {}):
+        if not display_alert_dict.get('external_coinc', {}):
+            print(f'{filename} does not appear to be a display version of {original_filename}', file=sys.stderr)
+            failed = True
+            continue
+
+        # Truncate skymap to same length as the display example
+        original_alert_dict['external_coinc']['combined_skymap'] = original_alert_dict['external_coinc']['combined_skymap'][:len(display_alert_dict['external_coinc']['combined_skymap'][:-3])] + '...'
+
     if display_alert_dict != original_alert_dict:
         print(f'{filename} does not appear to be a display version of {original_filename}', file=sys.stderr)
         failed = True

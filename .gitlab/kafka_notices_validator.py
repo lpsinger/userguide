@@ -41,6 +41,10 @@ for filename in glob('_static/*.avro'):
         # Decode base64 encoded skymap in json notice
         json_alert_dict['event']['skymap'] = b64decode(json_alert_dict['event']['skymap'])
 
+    if avro_alert_dict.get('external_coinc', {}):
+        # Decode base64 encoded skymap in json notice
+        json_alert_dict['external_coinc']['combined_skymap'] = b64decode(json_alert_dict['external_coinc']['combined_skymap'])
+
     if avro_alert_dict != json_alert_dict:
         print(f'Deserialized {filename} does not equal deserialized {json_filename}', file=sys.stderr)
         failed = True

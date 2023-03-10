@@ -47,10 +47,10 @@
       <Description>Specific low-latency search</Description>
     </Param>
     <Group name="External Coincidence" type="External Coincidence">
-      <Param dataType="string" name="External_GCN_Notice_Id" ucd="meta.id" value="1234567">
+      <Param dataType="string" name="External_GCN_Notice_Id" ucd="meta.id" value="524666471">
         <Description>GCN trigger ID of external event</Description>
       </Param>
-      <Param dataType="string" name="External_Ivorn" ucd="meta.id" value="ivo://nasa.gsfc.gcn/Fermi#GBM_Gnd_Pos_2018-11-01T22:36:25.31_1234567_58-278">
+      <Param dataType="string" name="External_Ivorn" ucd="meta.id" value="ivo://nasa.gsfc.gcn/Fermi#GBM_Fin_Pos2017-08-17T12:41:06.47_524666471_0-389">
         <Description>IVORN of external event</Description>
       </Param>
       <Param dataType="string" name="External_Observatory" ucd="meta.code" value="Fermi">
@@ -59,14 +59,17 @@
       <Param dataType="string" name="External_Search" ucd="meta.code" value="GRB">
         <Description>External astrophysical search</Description>
       </Param>
-      <Param dataType="float" name="Time_Difference" ucd="meta.code" value="1.54">
+      <Param dataType="float" name="Time_Difference" ucd="meta.code" value="2.02">
         <Description>Time difference between GW candidate and external event, centered on the GW candidate</Description>
       </Param>
-      <Param dataType="float" name="Time_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="1e-16">
+      <Param dataType="float" name="Time_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="2.14387838137e-14">
         <Description>Estimated coincidence false alarm rate in Hz using timing</Description>
       </Param>
-      <Param dataType="float" name="Time_Sky_Position_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="1e-17">
+      <Param dataType="float" name="Time_Sky_Position_Coincidence_FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="6.410749524018777e-16">
         <Description>Estimated coincidence false alarm rate in Hz using timing and sky position</Description>
+      </Param>
+      <Param name="joint_skymap_fits" value="https://emfollow.docs.ligo.org/userguide/_static/combined-ext.multiorder.fits" ucd="meta.ref.url" dataType="string">
+        <Description>Combined GW-External Sky Map FITS</Description>
       </Param>
       <Description>Properties of joint coincidence found by RAVEN</Description>
     </Group>

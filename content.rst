@@ -165,6 +165,9 @@ and an alert from a third party.
      +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
      | time_sky_position_coincidence_far     | Estimated coincidence false alarm rate in Hz using timing and sky position                                |
      +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | combined_skymap                       | The contents of a sky map produced by combining the GW skymap and the external coincidence skymap in a    |
+     |                                       | multi-order FITS format as a Base64-encoded string.                                                       |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
 
   .. tab:: Avro
 
@@ -223,6 +226,9 @@ and an alert from a third party.
      | time_coincidence_far                  | Estimated coincidence false alarm rate in Hz using timing                                                 |
      +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
      | time_sky_position_coincidence_far     | Estimated coincidence false alarm rate in Hz using timing and sky position                                |
+     +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
+     | combined_skymap                       | The contents of a sky map produced by combining the GW skymap and the external coincidence skymap in a    |
+     |                                       | multi-order FITS format as a byte-string.                                                                 |
      +---------------------------------------+-----------------------------------------------------------------------------------------------------------+
 
 
@@ -586,14 +592,14 @@ Kafka
 ~~~~~
 
 Below are examples of GCN notices to illustrate the formatting of the Notices.
-The ``skymap`` field has been truncated for display purposes, though links to the
-full files for both formats can be found in the :doc:`SCiMMA
-</tutorial/receiving/scimma>` and :doc:`GCN </tutorial/receiving/gcn>` sample
-code sections. Recall that SCiMMA notices follow the same schema as GCN
-notices, however the ``skymap`` field in SCiMMA notices contain raw bytes while
-the ``skymap`` field in GCN notices is :term:`base64 encoded <base64>`.
-
-*Coming Soon:* Example of a notice with an external coincident event.
+The ``skymap`` and ``combined_skymap`` fields has been truncated for display
+purposes, though links to the full files for both formats can be found in the
+:doc:`SCiMMA </tutorial/receiving/scimma>` and :doc:`GCN
+</tutorial/receiving/gcn>` sample code sections. Recall that SCiMMA notices
+follow the same schema as GCN notices, however the ``skymap`` and
+``combined_skymap`` fields in SCiMMA notices contain raw bytes while the
+``skymap`` and ``combined_skymap`` fields in GCN notices is :term:`base64
+encoded <base64>`.
 
 .. tabs::
 
@@ -620,6 +626,11 @@ the ``skymap`` field in GCN notices is :term:`base64 encoded <base64>`.
   .. tab:: Retraction
 
      .. literalinclude:: _static/MS181101ab-retraction.json
+        :language: json
+
+  .. tab:: External Coincidence
+
+     .. literalinclude:: _static/MS181101ab-ext-update_displayexample.json
         :language: json
 
 GCN Classic
