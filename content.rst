@@ -307,7 +307,7 @@ following fields will also be present:
 +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Time and Sky Position Coincidence FAR | Estimated coincidence false alarm rate in Hz using timing and sky position                                            |
 +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-| Combined Sky Map                      | URL of combined GW-External HEALPix FITS sky localization file                                                        |
+| Joint Skymap Fits                     | URL of combined GW-External HEALPix FITS sky localization file                                                        |
 +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
 | Time Difference                       | Time between source and external event in seconds                                                                     |
 +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
