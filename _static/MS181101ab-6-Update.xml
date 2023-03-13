@@ -71,7 +71,7 @@
       <Description>Properties of joint coincidence found by RAVEN</Description>
     </Group>
     <Group name="GW_SKYMAP" type="GW_SKYMAP">
-      <Param dataType="string" name="skymap_fits" ucd="meta.ref.url" value="https://emfollow.docs.ligo.org/userguide/_staticb/bayestar.multiorder.fits,0">
+      <Param dataType="string" name="skymap_fits" ucd="meta.ref.url" value="https://emfollow.docs.ligo.org/userguide/_static/bayestar.multiorder.fits,0">
         <Description>Sky Map FITS</Description>
       </Param>
     </Group>
