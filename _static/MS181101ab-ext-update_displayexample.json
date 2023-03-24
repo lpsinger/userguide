@@ -28,6 +28,8 @@
             "BBH": 0.03,
             "Terrestrial": 0.01
         },
+        "duration": null,
+        "central_frequency": null,
         "skymap": "U0lNUExFICA9ICAgICAgICAgICAgICAgICAgICBUIC8gY29uZm..."
     },
     "external_coinc": {

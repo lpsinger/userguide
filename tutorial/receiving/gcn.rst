@@ -161,10 +161,12 @@ Running this should produce the following output:
    Distance = 39.76999609489013 +/- 8.308435058808886
    Record:
    {'alert_type': 'PRELIMINARY',
-    'event': {'classification': {'BBH': 0.03,
+    'event': {'central_frequency': None,
+              'classification': {'BBH': 0.03,
                                  'BNS': 0.95,
                                  'NSBH': 0.01,
                                  'Terrestrial': 0.01},
+              'duration': None,
               'far': 9.11069936486e-14,
               'group': 'CBC',
               'instruments': ['H1', 'L1', 'V1'],

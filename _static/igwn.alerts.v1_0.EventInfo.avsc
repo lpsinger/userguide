@@ -11,8 +11,10 @@
         {"name": "group", "type": "string", "doc": "The data analysis working group that uploaded the event."},
         {"name": "pipeline", "type": "string", "doc": "The data analysis pipeline that uploaded the event."},
         {"name": "search", "type": "string", "doc": "The type of search that uploaded the event."},
-        {"name": "classification", "type": {"type": "map", "values": "double", "default": {}}, "doc": "The probabilities that the event is of terrestrial origin or originates from various astrophysical categories, only provided for events uploaded by the CBC data analysis working group."},
+        {"name": "classification", "type": {"type": "map", "values": "double", "default": {}}, "doc": "The probabilities that the event is of terrestrial origin or originates from various astrophysical categories. Only present if group=CBC."},
         {"name": "properties", "type": {"type": "map", "values": "double", "default": {}}, "doc": "The probabilities that the source has various properties, assuming that the source is astrophysical."},
+        {"name": "duration", "type": ["null", "double"], "doc": "The duration of the burst in seconds. Only present if group=Burst."},
+        {"name": "central_frequency", "type": ["null", "double"], "doc": "The central frequency of the burst. Only present if group=Burst."},
         {"name": "skymap", "type": ["null", "bytes"], "doc": "A skymap in a multi-order FITS format."}
     ]
 }
