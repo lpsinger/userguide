@@ -200,8 +200,4 @@ Below are some sample JSON alerts that can be used for testing purposes.
 
 .. _confluent-kafka: https://pypi.org/project/confluent-kafka/
 .. _Docker: https://docs.docker.com/get-docker/
-.. _Alert: https://git.ligo.org/emfollow/userguide/-/raw/main/_static/igwn.alerts.v1_0.Alert.avsc
-.. _AlertType: https://git.ligo.org/emfollow/userguide/-/raw/main/_static/igwn.alerts.v1_0.AlertType.avsc
 .. _GCN: https://gcn.nasa.gov
-.. _EventInfo: https://git.ligo.org/emfollow/userguide/-/raw/main/_static/igwn.alerts.v1_0.EventInfo.avsc
-.. _ExternalCoincInfo: https://git.ligo.org/emfollow/userguide/-/raw/main/_static/igwn.alerts.v1_0.ExternalCoincInfo.avsc

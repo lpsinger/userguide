@@ -6,6 +6,7 @@ jsonschema[format]
 gcn-kafka
 healpy
 hop-client
+igwn-gwalert-schema
 ligo.skymap
 seaborn
 sphinx >= 4.0.0

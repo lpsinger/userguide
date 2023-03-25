@@ -1,7 +1,0 @@
-{
-    "name": "AlertType",
-    "namespace": "igwn.alerts.v1_0",
-    "type": "enum",
-    "doc": "The type of alert.",
-    "symbols": ["EARLYWARNING", "PRELIMINARY", "INITIAL", "UPDATE", "RETRACTION"]
-}

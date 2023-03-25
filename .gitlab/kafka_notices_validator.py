@@ -6,12 +6,34 @@ that deserialized notices are equivalent.
 
 from base64 import b64decode
 from glob import glob
+from importlib import resources
 import json
 import sys
 
 import fastavro
+import igwn_gwalert_schema
 
-parsed_schema = fastavro.schema.load_schema('_static/igwn.alerts.v1_0.Alert.avsc')
+
+# The order does not matter other than the Alert schema must be loaded last
+# because it references the other schema. All of the schema are saved in
+# named_schemas, but we only need to save a reference to the the Alert
+# schema to write the packet. We overwrite the schema variable each time to
+# avoid the schema being printed to stdout.
+# NOTE Specifying expand=True when calling parse_schema is okay when only
+# one schema contains references to other schema, in our case only the
+# alerts schema contains references to other schema. More complicated
+# relationships between schema though can lead to behavior that does not
+# conform to the avro spec, and a different method will need to be used to
+# load the schema. See https://github.com/fastavro/fastavro/issues/624 for
+# more info.
+named_schemas = {}
+for s in ['igwn.alerts.v1_0.ExternalCoincInfo.avsc',
+          'igwn.alerts.v1_0.EventInfo.avsc',
+          'igwn.alerts.v1_0.AlertType.avsc',
+          'igwn.alerts.v1_0.Alert.avsc']:
+    with resources.open_text(igwn_gwalert_schema, s) as f:
+        schema = fastavro.schema.parse_schema(json.load(f), named_schemas,
+                                              expand=True)
 
 failed = False
 
@@ -28,7 +50,7 @@ for filename in glob('_static/*.avro'):
 
     # Validate avro record against schema
     try:
-        fastavro.validation.validate(avro_alert_dict, parsed_schema, strict=True)
+        fastavro.validation.validate(avro_alert_dict, schema, strict=True)
     except fastavro._validate_common.ValidationError as e:
         print(f'{filename} failed validation with error {e.errors}', file=sys.stderr)
         failed = True
