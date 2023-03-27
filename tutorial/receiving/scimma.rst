@@ -182,6 +182,7 @@ Running this should produce the following output:
                              'HasNS': 0.95,
                              'HasRemnant': 0.91},
               'search': 'MDC',
+              'significant': True,
               'time': '2018-11-01T22:22:46.654Z'},
     'external_coinc': None,
     'superevent_id': 'MS181101ab',

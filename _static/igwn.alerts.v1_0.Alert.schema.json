@@ -34,6 +34,10 @@
                             "type": "number",
                             "description": "False alarm rate of the event in Hz."
                         },
+                        "significant": {
+                            "type": "boolean",
+                            "description": "True for significant alerts."
+                        },
                         "instruments": {
                             "type": "array",
                             "items": { "type": "string" },
@@ -73,7 +77,7 @@
                             ]
                         }
                     },
-                    "required": ["time", "far", "instruments", "group", "pipeline", "search", "classification", "properties", "skymap"]
+                    "required": ["time", "far", "significant", "instruments", "group", "pipeline", "search", "classification", "properties", "skymap"]
                 }
             ]
         },

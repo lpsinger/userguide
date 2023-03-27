@@ -6,6 +6,7 @@
     "fields": [
         {"name": "time", "type": "string", "doc": "Time of the event in ISO 8601 format."},
         {"name": "far", "type": "double", "doc": "False alarm rate of the event in Hz."},
+        {"name": "significant", "type": "boolean", "doc": "True for significant alerts."},
         {"name": "instruments", "type": {"type": "array", "items": "string", "default": []}, "doc": "Instruments that participated in the observation as an array."},
         {"name": "group", "type": "string", "doc": "The data analysis working group that uploaded the event."},
         {"name": "pipeline", "type": "string", "doc": "The data analysis pipeline that uploaded the event."},
