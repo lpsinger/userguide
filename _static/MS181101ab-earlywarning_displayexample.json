@@ -1,5 +1,5 @@
 {
-    "alert_type": "EARLY_WARNING",
+    "alert_type": "EARLYWARNING",
     "time_created": "2018-11-01T22:34:20Z",
     "superevent_id": "MS181101ab",
     "urls": {

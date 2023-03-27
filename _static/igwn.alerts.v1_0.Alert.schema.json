@@ -5,7 +5,7 @@
     "properties": {
         "alert_type": {
             "description": "The type of alert.",
-            "enum": ["EARLY_WARNING", "PRELIMINARY", "INITIAL", "UPDATE", "RETRACTION"]
+            "enum": ["EARLYWARNING", "PRELIMINARY", "INITIAL", "UPDATE", "RETRACTION"]
         },
         "time_created": {
             "type": "string",
