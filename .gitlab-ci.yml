@@ -115,7 +115,7 @@ avro:
   script:
     - pip install -r requirements.txt
     # Fail if avro schema not valid
-    - .gitlab/avro_schema_validator.py _static/*.avsc
+    - .gitlab/avro_schema_validator.py
 
 validate-jsonschema:
   stage: build

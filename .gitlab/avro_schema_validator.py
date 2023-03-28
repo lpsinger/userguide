@@ -7,17 +7,24 @@ Errors are output in the GNU error format
 
 Adapted from Leo Singer's CI scripts from TACH/GCN project.
 """
-from json.decoder import JSONDecodeError
+from importlib import resources
+import json
 import sys
 
-from fastavro.schema import load_schema, SchemaParseException, UnknownType
+from fastavro.schema import parse_schema, SchemaParseException, UnknownType
+import igwn_gwalert_schema
 
 failed = False
+named_schemas = {}
 
-for filename in sys.argv[1:]:
+for filename in ['igwn.alerts.v1_0.ExternalCoincInfo.avsc',
+          'igwn.alerts.v1_0.EventInfo.avsc',
+          'igwn.alerts.v1_0.AlertType.avsc',
+          'igwn.alerts.v1_0.Alert.avsc']:
     try:
-        load_schema(filename)
-    except JSONDecodeError as e:
+        with resources.open_text(igwn_gwalert_schema, filename) as f:
+            schema = parse_schema(json.load(f), named_schemas, expand=True)
+    except json.decoder.JSONDecodeError as e:
         print(f'{filename}:{e.lineno}:{e.colno}: error: {e.msg}', file=sys.stderr)
         failed = True
     except SchemaParseException as e:
