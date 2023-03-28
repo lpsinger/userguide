@@ -25,16 +25,19 @@ Gaussian quadrature, lookup tables, and sampling on an adaptively refined
 :term:`HEALPix` grid. The sky localization takes tens of seconds and is
 included in the preliminary alert.
 
-**Bilby** [#Bilby]_ is a full CBC parameter estimation pipeline.
-It explores a greatly expanded parameter space including sky location,
-distance, masses, and spins, and performs full forward modeling of the
-gravitational-wave signal and the strain calibration of the gravitational-wave
-detectors. It explores the parameter space using :term:`MCMC` and nested
-sampling. For all events, there is an automated Bilby analysis that uses
-the least expensive CBC waveform models and completes within hours and may be
-included in a subsequent alert. More time-consuming analyses with more
-sophisticated waveform models are started at the discretion of human analysts,
-and will complete days or weeks later.
+**Bilby** [#Bilby]_ is a full CBC parameter estimation pipeline in Python.
+Bilby provides a user-friendly and accessible interface with the latest
+stochastic sampling methods built-in. It explores a greatly expanded parameter
+space including sky location, distance, masses, and spins, and performs full
+forward modeling of the gravitational-wave signal and the strain calibration of
+the gravitational-wave detectors. It explores the parameter space using
+stochastic sampling methods such as :term:`MCMC` and nested sampling. For all
+events, there is an automated Bilby analysis that uses less expensive default
+settings, including simpler waveforms, to perform an initial analysis of the
+event; it completes within hours and may be included in a subsequent alert.
+More time-consuming analyses with more sophisticated waveform models are
+started at the discretion of human analysts, and will complete days or weeks
+later.
 
 Unmodeled Events
 ----------------
@@ -46,7 +49,7 @@ detector network [#cWBLocalization]_. The cWB sky localization is included in
 the preliminary alert.
 
 Refined sky localizations for unmodeled bursts are provided by two algorithms
-that :term:`MCMC` and nested sampling methodologies, like Bilby.
+that, like Bilby, use :term:`MCMC` and nested sampling methodologies.
 **LALInference Burst (LIB)** [#oLIB]_ models the signal as a single
 sinusoidally modulated Gaussian. **BayesWave** [#BayesWave]_ models the signal
 as a superposition of wavelets and jointly models the background with both a
