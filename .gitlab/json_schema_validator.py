@@ -25,16 +25,15 @@ except json.decoder.JSONDecodeError as e:
 try:
     jsonschema.Draft202012Validator.check_schema(schema)
 except jsonschema.exceptions.SchemaError as e:
-    print(f'igwn.alerts.v1_0.Alert.schema.json error: {e.message}', file=sys.stderr)
+    print(f'igwn.alerts.v1_0.Alert.schema.json: error: {e.message}', file=sys.stderr)
     failed = True
 
 for fname in sys.argv[1:]:
-    print(fname)
     with open(fname, 'r') as f:
         try:
             jsonschema.validate(json.load(f), schema)
         except jsonschema.exceptions.ValidationError as e:
-            print(f'{fname}: validation error: {e.message}', file=sys.stderr)
+            print(f'{fname}: error: {e.message}', file=sys.stderr)
             failed = True
 
 
