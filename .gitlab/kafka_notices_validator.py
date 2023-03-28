@@ -17,8 +17,7 @@ import igwn_gwalert_schema
 # The order does not matter other than the Alert schema must be loaded last
 # because it references the other schema. All of the schema are saved in
 # named_schemas, but we only need to save a reference to the the Alert
-# schema to write the packet. We overwrite the schema variable each time to
-# avoid the schema being printed to stdout.
+# schema to write the packet.
 # NOTE Specifying expand=True when calling parse_schema is okay when only
 # one schema contains references to other schema, in our case only the
 # alerts schema contains references to other schema. More complicated
