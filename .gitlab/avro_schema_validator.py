@@ -18,9 +18,9 @@ failed = False
 named_schemas = {}
 
 for filename in ['igwn.alerts.v1_0.ExternalCoincInfo.avsc',
-          'igwn.alerts.v1_0.EventInfo.avsc',
-          'igwn.alerts.v1_0.AlertType.avsc',
-          'igwn.alerts.v1_0.Alert.avsc']:
+                 'igwn.alerts.v1_0.EventInfo.avsc',
+                 'igwn.alerts.v1_0.AlertType.avsc',
+                 'igwn.alerts.v1_0.Alert.avsc']:
     try:
         with resources.open_text(igwn_gwalert_schema, filename) as f:
             schema = parse_schema(json.load(f), named_schemas, expand=True)
