@@ -121,10 +121,9 @@ validate-jsonschema:
   stage: build
   script:
     - pip install -r requirements.txt
-    # Fail if JSON Schema is not valid
-    - check-jsonschema --check-metaschema _static/*.schema.json
-    # Fail if any of the sample JSON alerts are not valid
-    - check-jsonschema --schemafile _static/igwn.alerts.v1_0.Alert.schema.json _static/MS*.json
+    # Fail if JSON Schema is not valid or if any of the sample JSON alerts are
+    # not valid
+    - .gitlab/json_schema_validator.py _static/MS181101ab-*json
 
 validate-kafka-notices:
   stage: build
