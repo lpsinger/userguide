@@ -166,7 +166,6 @@ Upon running this, you should see:
     EventPage = https://example.org/superevents/MS181101ab/view/
     Instruments = H1,L1,V1
     FAR = 9.11069936486e-14
-    Significant = 1
     Group = CBC
     Pipeline = gstlal
     Search = MDC

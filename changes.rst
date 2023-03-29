@@ -16,6 +16,8 @@ Version 18 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Included burst-specific information in the JSON and Avro notice formats.
+
 .. rubric:: Sample Code
 
 *  In the "Working with Multi-Order Sky Maps" section, add instructions for

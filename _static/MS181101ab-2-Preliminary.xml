@@ -37,9 +37,6 @@
     <Param dataType="float" name="FAR" ucd="arith.rate;stat.falsealarm" unit="Hz" value="9.11069936486e-14">
       <Description>False alarm rate for GW candidates with this strength or greater</Description>
     </Param>
-    <Param dataType="int" name="Significant" ucd="meta.number" value="1">
-      <Description>Indicates that this event is a significant alert if 1, no if 0</Description>
-    </Param>
     <Param dataType="string" name="Group" ucd="meta.code" value="CBC">
       <Description>Data analysis working group</Description>
     </Param>
