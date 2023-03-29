@@ -139,24 +139,25 @@ candidate. If it does, then an :doc:`Early Warning alert </content>` may be
 sent before the GW merger time.
 
 **Within 1–10 minutes after GW trigger time**, the first and second
-:doc:`preliminary notices </content>` will be sent fully autonomously. The
+:doc:`preliminary alerts</content>` will be sent fully autonomously. The
 trigger will be immediately and publicly visible in the :term:`GraceDB`
 database. Since the procedure is fully automatic, some preliminary alerts may
 be retracted after human inspection for data quality, instrumental conditions,
 and pipeline behavior.
 
-**Within 24 hours after the GW trigger time** (possibly within 4 hours for
-:term:`BNS` or :term:`NSBH` sources), the :doc:`Initial or Retraction notice
+**Within 24 hours after the trigger time** of any **significant**
+gravitational-wave alerts (possibly within 4 hours for :term:`BNS`
+or :term:`NSBH` sources), the :doc:`Initial or Retraction alert
 and circular </content>` will be distributed. It will include an updated sky
 localization and source classification. At this stage, the event will have been
 vetted by human instrument scientists and analysts. The candidate will either
-be **confirmed** by an Initial notice and circular or withdrawn by a Retraction
-notice and circular if the data quality is unsuitable.
+be **confirmed** by an Initial alert and circular or withdrawn by a Retraction
+alert and circular if the data quality is unsuitable.
 
 **Within a day**, black hole mergers will be fully vetted by experts and
 retraction or confirmation status will be reported.
 
-:doc:`Update notice and circulars </content>` are sent whenever the sky
+:doc:`Update alerts and circulars </content>` are sent whenever the sky
 localization area or significance accuracy improves (e.g. as a result of
 improved calibration, glitch removal, or computationally deeper parameter
 estimation). Updates will be sent up until the position is determined more
@@ -164,23 +165,52 @@ accurately by public announcement of an unambiguous counterpart. At that point,
 there will be no further sky localization updates until the publication of the
 event in a peer-reviewed journal.
 
-**At any time**, we can **promote** an extraordinary candidate that does not
-pass our public alert thresholds if it is compellingly associated with a
+**At any time**, we may **promote** a candidate a **significant**
+gravitational-wave alert if it is compellingly associated with a
 multimessenger signal (e.g. :term:`GRB`, core-collapse :term:`SN`). In this
-case, :doc:`Initial notices and circulars </content>` will be distributed.
+case, :doc:`Initial alert and circulars </content>` will be distributed.
 
 .. _alert-threshold:
 
 Alert Threshold
 ---------------
 
-Automated preliminary alerts are sent for all events that pass a false alarm
-rate (:term:`FAR`) threshold. The :term:`FAR` threshold is :math:`3.8 \times
-10^{-8}` Hz (one per 10 months) for :term:`CBC` searches and is :math:`7.9
-\times 10^{-9}` (one per 4 years) for unmodeled burst searches. Since there are
-4 independent :term:`CBC` searches and 3 independent :term:`burst` searches, as
-well as a coincidence search :doc:`RAVEN <searches>` that looks at the results
-from both the aforementioned :term:`CBC` and :term:`burst` searches, the
-effective rate of false alarms for :term:`CBC` sources is :math:`1.9 \times
-10^{-7}` Hz (one per 2 months), and for unmodeled bursts is :math:`3.2 \times
-10^{-8}` Hz (one per year).
+Automated preliminary alerts are sent out with an expected false alarm rate
+(:term:`FAR`) of :math:`2.31 \times  10^{-5}` Hz (two per day). Associated with
+false alarm rate there will be two categories of gravitational-wave alerts:
+(1) **low-significance** gravitational-wave alerts and (2) **significant**
+gravitational-wave alerts. **Significant** gravitational-wave alerts will be sent
+out with an expected false alarm rate of :math:`3.9 \times 10^{-7}` Hz (one
+per month) for :term:`CBC` sources, and of :math:`3.2 \times 10^{-8}` Hz (one per year)
+for unmodeled burst signals that do not have a CBC signature.
+This alert threshold aims to reach 90\% purity for  **significant**
+gravitational-wave alerts.
+
+The LVK will not perform any further analysis following **low-significance**
+gravitational-wave preliminary alerts or early warning alerts that are not followed
+by a **significant** preliminary alert. That means that the initial, retraction, and
+update alerts will be sent out only for those alerts that are associated with **significant**
+preliminary alerts.
+
+
+.. _alert-threshold-trial-factor:
+
+Alert Threshold Trials Factor
+-----------------------------
+
+The LVK collaboration runs both :term:`CBC`-focused and burst-focused searches. For :term:`CBC`,
+there are four independent searches (plus a :term:`CBC`-focused burst search); for burst, there
+are three independent searches. There is also an external coincidence search RAVEN that looks at
+results from both the aforementioned :term:`CBC` and burst searches. To account for the trials
+factor from the different searches with statistically independent false alarms, an alert will
+be marked as **significant** for events that generate a preliminary alert with a :term:`FAR`
+threshold of  :math:`6.4 \times 10^{-8}` Hz (one per 6 months) for :term:`CBC` target searches
+and of :math:`7.9 \times 10^{-9}` (one per four years) for unmodeled
+burst searches. That corresponds to the expected effective rate of **significant** false alarms
+of :math:`3.9 \times 10^{-7}` Hz (one per month) for :term:`CBC` sources,
+and :math:`3.2 \times 10^{-8}` Hz (one per year) for unmodeled burst sources.
+
+The presence of a trial factor (eight searches) will reflect on the fact that public alerts will
+be sent for all triggers that pass a false alarm rate (FAR) threshold of :math:`6.9 \times 10^{-5}` Hz
+(one per four days).
+

@@ -12,6 +12,11 @@ Version 18 (unreleased)
 
 .. rubric:: Data Analysis
 
+
+*  Document the FAR threshold for public alerts in O4.
+
+*  Introduce the "significant" and "less significant" alert categories.
+
 *  Remove LALInference, which has been replaced by Bilby.
 
 *  Add early warning alerts to the alert timeline figure.
