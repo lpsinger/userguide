@@ -25,6 +25,7 @@ Chatterjee
 Chu
 coalescences
 comoving
+convolutional
 cosmologically
 Coughlin
 cWB
@@ -99,6 +100,7 @@ mapmaking
 Messick
 metadata
 Mitselmakher
+MLy
 Mohanty
 Mollweide
 Mpc
@@ -127,6 +129,7 @@ Robinet
 Roukema
 runtime
 Sachdev
+Skliris
 skymap
 sinusoidally
 spatial-temporal

@@ -111,6 +111,17 @@ network of clusters within a 10 ms light travel time window are then analyzed
 with a coherent (i.e., correlated across the detector network) signal model to
 identify possible GW candidate events.
 
+**MLy** ("Emily") [#MLy]_ is a machine-learning-based search for generic 
+sub-second-duration transient gravitational wave signals in the 20 Hz to 500 Hz 
+frequency band. MLy works by passing data from the Hanford-Livingston-Virgo or 
+Hanford-Livingston networks through a pair of convolutional neural networks (CNNs) 
+trained to recognize signals that are simultaneous (up to the light travel time 
+across the network) and coherent between detectors. The training uses randomly 
+generated test signals rather than specific signal models, giving MLy sensitivity 
+to a wide range of signal morphologies. Events are ranked by their combined CNN 
+scores. MLy constructs a sky map of the direction to the source using 
+a maximum-likelihood approach.
+
 Coincident with External Trigger Search
 ---------------------------------------
 
@@ -204,6 +215,10 @@ Bayesian significance calculation to find joint GW+HEN triggers.
 .. [#oLIB]
    Lynch, R., Vitale, S., Essick, R., Katsavounidis, E., & Robinet, F. 2017, |PRD|, 95, 104046.
    :doi:`10.1103/PhysRevD.95.104046`
+
+.. [#MLy]
+   Skliris, V., Norman, M., Sutton, P. 2022,
+   :arXiv:`2009.1461`
 
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
