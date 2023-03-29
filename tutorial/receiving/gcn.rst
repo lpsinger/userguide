@@ -112,7 +112,7 @@ Offline Testing
 ---------------
 
 Sample files are available to download at any time for testing responses to
-notices without needing to wait for the one-per-hour example. 
+notices without needing to wait for the one-per-hour example.
 
 .. code-block:: shell-session
 

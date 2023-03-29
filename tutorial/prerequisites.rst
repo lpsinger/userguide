@@ -2,7 +2,7 @@ Prerequisites
 =============
 
 In order to run this sample code, you will need Python >= 3.8 on a Unix-like
-operating system (Linux or macOS) and a few third-party Python packages. 
+operating system (Linux or macOS) and a few third-party Python packages.
 
 Python Packages
 ---------------
@@ -18,7 +18,7 @@ If you want to consume notices over Kafka (recommended), you will need one of ei
    The Kafka servers hosted by `GCN Kafka`_ and `HOPSKOTCH`_ should be
    accessible using any Kafka client, however we will only provide directions
    in this guide that use gcn-kafka_ for the former and hop-client_ for the
-   latter. 
+   latter.
 
 If you want to consume notices from `GCN Classic`_, you will need:
 
@@ -40,7 +40,7 @@ Installation
 
 The fastest way to install the dependencies is with pip_, a package manager
 that comes with most Python distributions.  Another option is the `Anaconda`_
-Python distribution. 
+Python distribution.
 
 Pip
 ~~~
@@ -70,7 +70,7 @@ Anaconda
 ~~~~~~~~
 
 To install these packages using Anaconda, first :doc:`install conda
-<conda:user-guide/install/index>`. 
+<conda:user-guide/install/index>`.
 
 Run the following command to install gcn-kafka_ and the packages needed to
 work with sky maps:

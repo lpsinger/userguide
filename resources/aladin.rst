@@ -34,7 +34,7 @@ main distinction is that MOC maps encode *regions on the sphere*, whereas
 multi-order sky maps encode *sampled images or functions on the sphere*. The
 multi-order sky map FITS format is a superset of the MOC FITS format, the only
 difference being that a multi-order sky map has values attached to each cell
-(probability density, distance estimates) whereas a MOC map does not. 
+(probability density, distance estimates) whereas a MOC map does not.
 Aladin version v12 supports the LIGO/Virgo/KAGRA multi-resolution sky maps.
 
 Running Aladin Desktop
@@ -69,8 +69,8 @@ Loading a GW Sky Localization
 You can copy and paste the sky map URL from the `GraceDB`_ or drag and drop a
 HEALPix FITS file from your operating system's file browser in the main Aladin
 window. Aladin v12 recognizes both the standard HEALPix format with the file
-extension ``.fits.gz`` and the multi-resolution HEALPix format, distinguished 
-by the file extension ``.multiorder.fits``. Better performances are achieved with 
+extension ``.fits.gz`` and the multi-resolution HEALPix format, distinguished
+by the file extension ``.multiorder.fits``. Better performances are achieved with
 the multi-resolution format. Here we will work with the `LALInference sky map of
 GW170817`_.
 
@@ -86,12 +86,12 @@ probability skymap`.
    :alt: Create a MOC from a GW sky localization
 
 The :guilabel:`MOC generation` window has three options: the probability sky map,
-the threshold, and the MOC resolution. Make sure that the GW sky map 
-that we loaded in the previous step is selected in the :guilabel:`Proba skymap` 
+the threshold, and the MOC resolution. Make sure that the GW sky map
+that we loaded in the previous step is selected in the :guilabel:`Proba skymap`
 dropdown menu. Then enter a number between 0 and 1 for the credible level in the
-:guilabel:`Probability threshold` box. Finally, press the :guilabel:`CREATE` button. 
-The MOC for the credible region is created and loaded in the Aladin Stack. 
-If you repeat this process multiple times for different credible levels, 
+:guilabel:`Probability threshold` box. Finally, press the :guilabel:`CREATE` button.
+The MOC for the credible region is created and loaded in the Aladin Stack.
+If you repeat this process multiple times for different credible levels,
 then you can select each MOC independently from the Aladin stack.
 
 Area Within a Credible Region
@@ -219,7 +219,7 @@ The STMOC data structure allows you to perform operations in space and
 time simultaneously. We build a new STMOC with the `error box of GRB 170817`_
 provided by the GBM instrument on board the Fermi satellite.
 GRB170817 occurred at 2017-08-17T12:41:06 UTC [#Goldstein17]_.
- 
+
 The intersection is performed by opening the window :guilabel:`Logical operations`
 from :menuselection:`Coverage`. An additional MOC layer is loaded into the Aladin
 stack with information on the spatial and temporal coincident of the
@@ -260,5 +260,5 @@ two astrophysical events.
 .. _`DSS`: https://archive.stsci.edu/dss/index.html
 .. _`2MASS`: https://www.ipac.caltech.edu/2mass/
 .. _`preview page`: https://alasky.u-strasbg.fr/2MASS/Color/
-.. _`error box of GRB 170817`: https://gammaray.nsstc.nasa.gov/gbm/science/grbs/grb170817a/gbuts_healpix_systematic.fit 
+.. _`error box of GRB 170817`: https://gammaray.nsstc.nasa.gov/gbm/science/grbs/grb170817a/gbuts_healpix_systematic.fit
 

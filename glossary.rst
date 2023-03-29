@@ -38,7 +38,7 @@ Glossary
 
     CBC
         Compact binary coalescence.
-    
+
     EOS
         Equation of state. The equation of state determines the relation between
         mass and radius, or mass and compactness, or pressure and (mass, energy,

@@ -82,7 +82,7 @@ Version 17 (2022-12-14)
 
 *  Update information on working on multi-resolution sky maps. Changed the
    presentation order to reflect that multi-resolution is now the default.
-  
+
 .. rubric:: Additional Resources
 
 *  Update information about early warning, pre-merger for compact binary

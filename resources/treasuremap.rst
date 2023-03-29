@@ -1,4 +1,4 @@
-Gravitational Wave Treasure Map 
+Gravitational Wave Treasure Map
 ===============================
 
 This webpage is helpful for astronomers in coordinating electromagnetic follow-up of gravitational-wave events.
