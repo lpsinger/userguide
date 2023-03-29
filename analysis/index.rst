@@ -42,23 +42,29 @@ Network (:term:`GCN`) via notices and circulars (see the :doc:`/content` and
 
     gradient = np.linspace(0, 1, 256)[np.newaxis, :]**0.5
 
-    plot_data = [[['Rapid Sky Localization', 60 * u.second, 20 * u.second],
-                  ['Classification', 75 * u.second, 5 * u.second],
-                  ['Automated Vetting', 75 * u.second, 5 * u.second],
-                  ['Original Detection', 0 * u.second, 59.999 * u.second]],
+    plot_data = [[['Sky Localization', -20 * u.second, 5 * u.second],
+                  ['Classification', -20 * u.second, 5 * u.second],
+                  ['Detection', -50  * u.second, 30 * u.second]],
+                 [['Sky Localization', 30 * u.second, 5 * u.second],
+                  ['Classification', 30 * u.second, 5 * u.second],
+                  ['Automated Vetting', 30 * u.second, 5 * u.second],
+                  ['Detection', 16 * u.second, 14 * u.second]],
                  [['Re-annotate', 3.6 * u.min, 1 * u.min],
-                  ['Cluster additional events', 2.5 * u.min, 1 * u.min]],
+                  ['Cluster additional events', 0.8 * u.min, 2.8 * u.min]],
                  [['Classification', 4 * u.hour, 10 * u.minute],
                   ['Human Vetting', 5 * u.minute, 4 * u.hour],
                   ['Parameter Estimation', 75 * u.second, 4 * u.hour]],
                  [['Classification', 6 * u.day, 6 * u.hour],
                   ['Parameter Estimation', 4 * u.hour, 6 * u.day]]]
 
-    alert_labels = ['1st Preliminary\nAlert Sent',
+    alert_labels = ['Early Warning\nAlert Sent',
+                    '1st Preliminary\nAlert Sent',
                     '2nd Preliminary\nAlert Sent',
                     'Initial Alert or\nRetraction Sent',
                     'Update\nAlert Sent']
     bar_height = 0.8
+
+    xlim = [-10 * u.minute, 100 * u.day]
 
     fig, axs = plt.subplots(
         len(plot_data),
@@ -74,35 +80,46 @@ Network (:term:`GCN`) via notices and circulars (see the :doc:`/content` and
         ax.spines['right'].set_visible(False)
         ax.set_yticks([])
         ax.xaxis.label.set_visible(False)
+        ax.set_facecolor('0.95')
 
         labels, starts, durations = zip(*data)
         starts = u.Quantity(starts).to(u.second)
         durations = u.Quantity(durations).to(u.second)
 
-        t = max(starts + durations) * 1.1
-        ax.axvline(t, color='black')
-        ax.axvspan(1e-2 * u.second, t, color='0.95')
-        ax.text(t * 1.15, 0.5, alert_label,
+        t = max(starts + durations)
+        if t.value > 0:
+            tp = t * 1.1
+            tp2 = t * 1.25
+            tp10 = 10*t
+        else:
+            tp = t + 3 * u.second
+            tp2 = t + 8 * u.second
+            tp10 = t + 40 * u.second
+        ax.axvline(tp, color='black')
+        ax.text(tp2, 0.5, alert_label,
                 transform=blended_transform_factory(ax.transData, ax.transAxes),
-                fontweight='bold', va='center')
+                fontweight='bold', va='center', ha='left')
 
         ax.barh(np.arange(len(labels)), width=durations,
                 left=starts, height=bar_height,
                 facecolor=props['color'], edgecolor='black')
         for i, (start, duration, label) in enumerate(zip(starts, durations, labels)):
-            ax.text(max(start, 1 * u.minute), i,
+            ax.text(start, i,
                     ' ' + label + ' ', ha='right', va='center')
         ax.set_ylim(0.5 * bar_height - 1, len(labels) - 0.5 * bar_height)
-        ax.imshow(gradient, extent=[t.value, (10 * t).value, -10, 10], cmap='Greys_r', vmin=-1, vmax=1)
-        ax.set_aspect('auto')
+        ax.imshow(gradient, extent=[tp.value, tp10.value, -10, 10], cmap='Greys_r', vmin=-1, vmax=1, aspect='auto')
+        ax.axvspan(tp10, xlim[1], color='white')
 
-    fig.suptitle('Time since gravitational-wave signal')
-    ax.set_xscale('log')
-    ax.set_xlim(1 * u.second, 100 * u.day)
-    ticks = [10 * u.second, 1 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
+    fig.suptitle('Time relative to gravitational-wave merger')
+    ax.set_xscale('symlog', linthresh=40)
+    ax.set_xlim(-10 * u.minute, 100 * u.day)
+    ticks = [-30 * u.second, 0 * u.second, 30 * u.second, 3 * u.minute, 1 * u.hour, 1 * u.day, 1 * u.week]
     ax.set_xticks(ticks)
-    ax.set_xticklabels(
-        ['{0.value:g} {0.unit.long_names[0]}'.format(_) for _ in ticks])
+    ax.set_xticklabels([
+        '{0.value:g} {0.unit.short_names[0]}'.format(_) if abs(_) < 1 * u.minute else
+        '{0.value:g} {0.unit.long_names[0]}'.format(_)
+        for _ in ticks
+    ])
     ax.minorticks_off()
     ax.set_xlabel('Time since GW signal')
     axs[-1].arrow(0, 0, 1, 0,
@@ -114,6 +131,12 @@ Network (:term:`GCN`) via notices and circulars (see the :doc:`/content` and
                   length_includes_head=True)
     for ax in axs[:-1]:
         plt.setp(ax.xaxis.get_major_ticks(), visible=False)
+
+
+**Up to 1 min before the GW merger time**, an
+:doc:`early warning search </early_warning>` may find a pre-merger
+candidate. If it does, then an :doc:`Early Warning alert </content>` may be
+sent before the GW merger time.
 
 **Within 1–10 minutes after GW trigger time**, the first and second
 :doc:`preliminary notices </content>` will be sent fully autonomously. The

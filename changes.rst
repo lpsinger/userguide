@@ -14,6 +14,8 @@ Version 18 (unreleased)
 
 *  Remove LALInference, which has been replaced by Bilby.
 
+*  Add early warning alerts to the alert timeline figure.
+
 .. rubric:: Alert Contents
 
 *  Included burst-specific information in the JSON and Avro notice formats.
