@@ -24,7 +24,7 @@ from this study were published in [#FirstDemonstration]_. This study
 demonstrated that in principle it is possible to sent out GCN Notices in
 advance of a BNS merger. Based on the current expect BNS merger rate,  we expect O(1) event per year to be detected before merger in O4.
 
-**We have commissioned capability to produce and distribute
+**We have commissioned the capability to produce and distribute
 early warning gravitational-wave alerts up to tens of seconds before merger. We
 have also reduced the latency of ordinary post-merger alerts to within tens of
 seconds after merger.**
