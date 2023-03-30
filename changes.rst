@@ -10,6 +10,8 @@ Version 18 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+*  Update observing run plan timeline.
+
 .. rubric:: Data Analysis
 
 *  Document the FAR threshold for public alerts in O4.
