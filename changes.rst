@@ -1,12 +1,8 @@
 Change Log
 ==========
 
-Version 18 (unreleased)
+Version 18 (2023-03-30)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities
 
@@ -36,8 +32,6 @@ Version 18 (unreleased)
 *  In the "Working with Multi-Order Sky Maps" section, add instructions for
    finding the 90% credible region and saving it as a multi-order coverage
    (MOC) map. Thanks to Roy Williams for suggesting this.
-
-.. rubric:: Additional Resources
 
 Version 17.1 (2022-12-14)
 -------------------------
