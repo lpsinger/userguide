@@ -27,10 +27,10 @@ detections* in each observing run.
 
 We plan that following a one-month engineering run, Observing Run 4 (O4) will
 start on May 24. During O4, we expect that four facilities (:term:`LHO`,
-:term:`LLO`, :term:`Virgo`, and :term:`KAGRA`) will observe for over 18 months
-with one or two one-month breaks for maintenance. KAGRA will begin the run with
-LIGO and Virgo and then return to extended commissioning to re-join with
-greater sensitivity toward the end of O4.
+:term:`LLO`, :term:`Virgo`, and :term:`KAGRA`) will observe for 18 months with
+one or two one-month breaks for maintenance. KAGRA will begin the run with LIGO
+and Virgo and then return to extended commissioning to re-join with greater
+sensitivity toward the end of O4.
 
 Live Status
 -----------
