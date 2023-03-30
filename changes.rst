@@ -1,6 +1,23 @@
 Change Log
 ==========
 
+Version 19 (unreleased)
+-----------------------
+
+.. rubric:: General
+
+.. rubric:: Getting Started Checklist
+
+.. rubric:: Observing Capabilities
+
+.. rubric:: Data Analysis
+
+.. rubric:: Alert Contents
+
+.. rubric:: Sample Code
+
+.. rubric:: Additional Resources
+
 Version 18 (2023-03-30)
 -----------------------
 
