@@ -186,7 +186,7 @@ for unmodeled burst signals that do not have a CBC signature.
 This alert threshold aims to reach 90\% purity for  **significant**
 gravitational-wave alerts.
 
-The LVK will not perform any further analysis following **low-significance**
+We will not perform any further analysis following **low-significance**
 gravitational-wave preliminary alerts or early warning alerts that are not followed
 by a **significant** preliminary alert. That means that the initial, retraction, and
 update alerts will be sent out only for those alerts that are associated with **significant**
@@ -198,7 +198,7 @@ preliminary alerts.
 Alert Threshold Trials Factor
 -----------------------------
 
-The LVK collaboration runs both :term:`CBC`-focused and burst-focused searches. For :term:`CBC`,
+We run both :term:`CBC`-focused and burst-focused searches. For :term:`CBC`,
 there are four independent searches (plus a :term:`CBC`-focused burst search); for burst, there
 are three independent searches. There is also an external coincidence search RAVEN that looks at
 results from both the aforementioned :term:`CBC` and burst searches. To account for the trials
