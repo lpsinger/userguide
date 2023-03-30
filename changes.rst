@@ -26,7 +26,7 @@ Version 18 (unreleased)
 
 .. rubric:: Alert Contents
 
-*  Included burst-specific information in the JSON and Avro notice formats.
+*  Include burst-specific information in the JSON and Avro notice formats.
 
 *  Add the "significant" flag to the public alert schema, to indicate if the
    alert belongs to the "significant" or the "less significant" alert category.
