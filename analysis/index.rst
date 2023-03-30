@@ -213,4 +213,3 @@ and :math:`3.2 \times 10^{-8}` Hz (one per year) for unmodeled burst sources.
 The presence of a trial factor (eight searches) will reflect on the fact that public alerts will
 be sent for all triggers that pass a false alarm rate (FAR) threshold of :math:`6.9 \times 10^{-5}` Hz
 (one per four days).
-
