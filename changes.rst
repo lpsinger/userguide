@@ -26,6 +26,9 @@ Version 18 (unreleased)
 
 *  Included burst-specific information in the JSON and Avro notice formats.
 
+*  Add the "significant" flag to the public alert schema, to indicate if the
+   alert belongs to the "significant" or the "less significant" alert category.
+
 .. rubric:: Sample Code
 
 *  In the "Working with Multi-Order Sky Maps" section, add instructions for
