@@ -63,11 +63,6 @@ the notice type to your GCN handler::
 notice formats provided by GCN, then you will also need to `submit a change to
 your GCN Notice subscription settings`_.)
 
-.. important::
-    Since these early-warning events will arise from time-shifted and replayed
-    data and not live observations, the GCN notices will be flagged as test
-    events by setting the VOEvent ``role="test"`` attribute.
-
 Detection Method
 ----------------
 
