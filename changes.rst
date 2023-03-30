@@ -22,6 +22,8 @@ Version 18 (unreleased)
 
 *  Add early warning alerts to the alert timeline figure.
 
+*  Add a description of the new MLy burst search pipeline.
+
 .. rubric:: Alert Contents
 
 *  Included burst-specific information in the JSON and Avro notice formats.

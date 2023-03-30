@@ -142,11 +142,11 @@ and an alert from a third party.
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
       | pipeline                              | :samp:`{{gstlal,MBTAOnline,pycbc,spiir}}`                 | :samp:`{{CWB,oLIB,MLy}}`                                  |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-      | duration                              | N/A                                                       | Duration is the time interval for which the               |
-      |                                       |                                                           | signal is detected (above noise).                         |
+      | duration                              | N/A                                                       | time interval for which the signal is detected (above     |
+      |                                       |                                                           | noise)                                                    |
       +---------------------------------------+                                                           +-----------------------------------------------------------+
-      | CentralFreq                           |                                                           | Central frequency is the estimation of the                |
-      |                                       |                                                           | frequency of the signal's main component.                 |
+      | central_frequency                     |                                                           | estimation of the frequency of the signal's main          |
+      |                                       |                                                           | component                                                 |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
       | **event.properties**                                                                                                                                          |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
@@ -218,11 +218,11 @@ and an alert from a third party.
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
       | pipeline                              | :samp:`{{gstlal,MBTAOnline,pycbc,spiir}}`                 | :samp:`{{CWB,oLIB,MLy}}`                                  |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
-      | duration                              | N/A                                                       | Duration is the time interval for which the               |
-      |                                       |                                                           | signal is detected (above noise).                         |
+      | duration                              | N/A                                                       | time interval for which the signal is detected (above     |
+      |                                       |                                                           | noise)                                                    |
       +---------------------------------------+                                                           +-----------------------------------------------------------+
-      | CentralFreq                           |                                                           | Central frequency is the estimation of the                |
-      |                                       |                                                           | frequency of the signal's main component.                 |
+      | central_frequency                     |                                                           | estimation of the frequency of the signal's main          |
+      |                                       |                                                           | component                                                 |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
       | **event.properties**                                                                                                                                          |
       +---------------------------------------+-----------------------------------------------------------+-----------------------------------------------------------+
@@ -306,11 +306,11 @@ Notice.
   +-------------------+-----------------------------------------------------------+------------------------------------------------------------------+
   | Pipeline          | :samp:`{{gstlal,MBTA,pycbc,spiir}}`                       | :samp:`{{CWB,oLIB,MLy}}`                                         |
   +-------------------+-----------------------------------------------------------+------------------------------------------------------------------+
-  | CentralFreq       | N/A                                                       | Central frequency is the estimation of the frequency of the      |
-  |                   |                                                           | signal’s main component.                                         |
+  | central_frequency | N/A                                                       | estimation of the frequency of the signal’s main                 |
+  |                   |                                                           | component                                                        |
   +-------------------+                                                           +------------------------------------------------------------------+
-  | Duration          |                                                           | Duration is the time interval for which the signal is            |
-  |                   |                                                           | detected (above noise).                                          |
+  | duration          |                                                           | time interval for which the signal is detected (above            |
+  |                   |                                                           | noise)                                                           |
   +-------------------+-----------------------------------------------------------+------------------------------------------------------------------+
   | BNS, NSBH, BBH,   | Probability that the source is a :term:`BNS`,             | N/A                                                              |
   | Noise             | :term:`NSBH`, :term:`BBH`, or                             |                                                                  |
