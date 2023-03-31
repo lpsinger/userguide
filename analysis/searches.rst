@@ -218,7 +218,7 @@ Bayesian significance calculation to find joint GW+HEN triggers.
 
 .. [#MLy]
    Skliris, V., Norman, M., Sutton, P. 2022,
-   :arXiv:`2009.1461`
+   :arXiv:`2009.14611`
 
 .. [#RAVEN]
    Urban, A. L. 2016, Ph.D. Thesis.
