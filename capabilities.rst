@@ -46,7 +46,7 @@ LIGO/Virgo/KAGRA detectors and alert infrastructure.
 
 *  | **LIGO Data Grid Status**: Live dashboard showing up/down status of the
      detectors and online analyses. Status of the LIGO/Virgo/KAGRA alert
-     pipeline is indicated by the "EMFollow" box.
+     pipeline is indicated by the "GWCelery" box.
    | https://monitor.ligo.org/gwstatus
 
 Public Alert Rate and Localization Accuracy
