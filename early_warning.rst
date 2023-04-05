@@ -21,7 +21,7 @@ unknown activity.
 We had previously conducted a trial early warning public alert infrastructure
 in June 2020 replaying an 8-day period of archival LIGO data from O3. Results
 from this study were published in [#FirstDemonstration]_. This study
-demonstrated that in principle it is possible to sent out GCN Notices in
+demonstrated that in principle it is possible to send out GCN Notices in
 advance of a BNS merger. 
 
 Detection Method
@@ -49,7 +49,20 @@ about a minute before merger.
 
 The early warning search is a matched-filter search that uses templates that
 have been truncated at a selection of end frequencies---or equivalently, cut
-off at a selection of times before merger.
+off at a selection of times before merger. The ending frequencies being used by
+the pipelines are:
+
+GstLAL and PyCBC -- :math:`29 \, \text{Hz}, 32 \, \text{Hz}, 38 \, \text{Hz},
+49 \, \text{Hz}, 56 \, \text{Hz}.` For a :term:`BNS` with masses :math:`1.4 \,
+M_\odot` and :math:`1.4 \, M_\odot`, these ending frequencies correspond to
+roughly :math:`60 \, \text{s}, 46 \, \text{s}, 29 \, \text{s}, 15 \, \text{s},
+10 \, \text{s}` before merger.
+
+MBTA -- :math:`34 \, \text{Hz}, 42 \, \text{Hz}, 50 \, \text{Hz}, 58 \,
+\text{Hz}`. For a :term:`BNS` with masses :math:`1.4 \, M_\odot` and :math:`1.4
+\, M_\odot`, these ending frequencies correspond to roughly :math:`39 \,
+\text{s}, 22 \, \text{s}, 14 \, \text{s}, 9 \, \text{s}` before merger.
+
 
 
 Source Classification
