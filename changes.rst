@@ -16,6 +16,8 @@ Version 19 (unreleased)
 
 .. rubric:: Sample Code
 
+*  Update the GCN Classic sample code to subscribe to early warning alerts.
+
 .. rubric:: Additional Resources
 
 Version 18 (2023-03-30)

@@ -12,8 +12,8 @@ Receiving and Parsing Notices
 The following basic handler function will parse out the URL of the FITS file,
 download it, and extract the probability sky map. We :term:`decorate
 <decorator>` the handler with ``@gcn.handlers.include_notice_types`` to specify
-that we only want to process certain GCN notice types (``LVC_PRELIMINARY``,
-``LVC_INITIAL``, and ``LVC_UDPATE``).
+that we only want to process certain GCN notice types (``LVC_EARLY_WARNING``,
+``LVC_PRELIMINARY``, ``LVC_INITIAL``, ``LVC_UDPATE`` and ``LVC_RETRACTION``).
 
 
 .. important::
@@ -39,9 +39,10 @@ that we only want to process certain GCN notice types (``LVC_PRELIMINARY``,
     import ligo.skymap.io
 
     # Function to call every time a GCN is received.
-    # Run only for notices of type
-    # LVC_PRELIMINARY, LVC_INITIAL, LVC_UPDATE, or LVC_RETRACTION.
+    # Run only for notices of type LVC_EARLY_WARNING, LVC_PRELIMINARY,
+    # LVC_INITIAL, LVC_UPDATE, or LVC_RETRACTION.
     @gcn.handlers.include_notice_types(
+        gcn.notice_types.LVC_EARLY_WARNING,
         gcn.notice_types.LVC_PRELIMINARY,
         gcn.notice_types.LVC_INITIAL,
         gcn.notice_types.LVC_UPDATE,
