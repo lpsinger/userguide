@@ -28,7 +28,7 @@ Detection Method
 ----------------
 
 All of our :term:`CBC` search pipelines (GstLAL [#GstLALEarlyWarning]_, MBTA,
-PyCBC, and SPIIR) are participating in early-warning alerts. See the
+PyCBC [#PYCBCEWForeCast]_, and SPIIR) are participating in early-warning alerts. See the
 :doc:`content` section for details about alert types and contents. See the
 :doc:`analysis/searches` section for details
 on these analyses. Localizations will be produced with BAYESTAR; see the
@@ -125,6 +125,10 @@ operating at their final design sensitivity.
 .. [#GstLALEarlyWarning]
    Sachdev, S., Magee, R., Hanna, C., et al. 2020.
    :doi:`10.3847/2041-8213/abc753`
+
+.. [#PYCBCEWForeCast]
+   Nitz A. H., Schafer M., Canton T. D. 2020.
+   :doi:`10.3847/2041-8213/abbc10`
 
 .. [#DataRelease]
     https://gstlal.docs.ligo.org/ewgw-data-release/
