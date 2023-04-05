@@ -1,15 +1,15 @@
 .. |deg2| replace:: deg\ :superscript:`2`
 
-✨Early-Warning Alerts
-======================
+Early-Warning Alerts
+====================
 
 :term:`BNS` mergers spend several minutes in band of the Advanced ground-based
 gravitational-wave detectors.  For some loud and nearby :term:`BNS`
 mergers, it is possible to accumulate enough :term:`SNR` and detect them
 several tens of seconds before merger.  During O3, automated public alerts for
 :term:`CBC` events have been sent within as little as 2 minutes after merger.
-In O4, we will be deploying search pipelines that can in principle detect
-BNS events before merger.
+In O4, we have commissioned search pipelines that can detect
+:term:`BNS` events before merger if the signal is sufficiently strong. 
 
 Since it is generally assumed that detectable electromagnetic (or neutrino)
 emission starts shortly *after* merger, a pre-merger gravitational-wave
@@ -22,60 +22,22 @@ We had previously conducted a trial early warning public alert infrastructure
 in June 2020 replaying an 8-day period of archival LIGO data from O3. Results
 from this study were published in [#FirstDemonstration]_. This study
 demonstrated that in principle it is possible to sent out GCN Notices in
-advance of a BNS merger. Based on the current expect BNS merger rate,  we expect O(1) event per year to be detected before merger in O4.
-
-**We have commissioned the capability to produce and distribute
-early warning gravitational-wave alerts up to tens of seconds before merger. We
-have also reduced the latency of ordinary post-merger alerts to within tens of
-seconds after merger.**
-
-Subscribe to Early-Warning Alerts
----------------------------------
-
-Early warning alerts are publicly distributed as :term:`Notices <Notice>` just
-like ordinary gravitational-wave alerts (see the :doc:`content` section).
-**They have exactly the same format and content** as a :ref:`Preliminary Notice
-<preliminary>`. In particular, early warning GCN Notices have significance
-estimates, sky localizations, and source classifications. Also, like
-Preliminary GCN Notices, **Early Warning Notices are sent prior to vetting
-by humans, and are not accompanied by a GCN Circular.**
-
-Early warning GCN Notices are differentiated from ordinary GCN Notices by the
-new ``LVC_EARLY_WARNING`` GCN Notice type. If you are receiving GCN Notices via
-an anonymous VOEvent connection and you are using the Python sample code from
-the :doc:`tutorial/receiving/classic` section, then all you have to do is add
-the notice type to your GCN handler::
-
-    import gcn
-
-    @gcn.handlers.include_notice_types(
-        gcn.notice_types.LVC_EARLY_WARNING,  # <-- new notice type here
-        gcn.notice_types.LVC_PRELIMINARY,
-        gcn.notice_types.LVC_INITIAL,
-        gcn.notice_types.LVC_UPDATE,
-        gcn.notice_types.LVC_RETRACTION)
-    def process_gcn(payload, root):
-        ...  # <-- put your code here
-
-    gcn.listen(handler=process_gcn)
-
-(If you are using a non-anonymous GCN connection or one of the many other
-notice formats provided by GCN, then you will also need to `submit a change to
-your GCN Notice subscription settings`_.)
+advance of a BNS merger. 
 
 Detection Method
 ----------------
 
 All of our :term:`CBC` search pipelines (GstLAL [#GstLALEarlyWarning]_, MBTA,
 PyCBC, and SPIIR) are participating in early-warning alerts. See the
+:doc:`content` section for details about alert types and contents. See the
 :doc:`analysis/searches` section for details
 on these analyses. Localizations will be produced with BAYESTAR; see the
 :doc:`analysis/parameter_estimation` section for details.
 
 :term:`BNS` signals sweep up smoothly in frequency for a few minutes across the
-Advanced LIGO band. In that time, they may accumulate enough SNR to be detected
-before merger. A GW170817-like system with a total network SNR of 32 will
-already accumulate an SNR of 11 by the time the signal sweeps up to 30 Hz,
+Advanced LIGO band. In that time, they may accumulate enough :term:`SNR` to be detected
+before merger. A GW170817-like system with a total network :term:`SNR` of 32 will
+already accumulate an :term:`SNR` of 11 by the time the signal sweeps up to 30 Hz,
 about a minute before merger.
 
 .. figure:: _static/frqsnrtime.*
