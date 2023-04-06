@@ -140,7 +140,7 @@ operating at their final design sensitivity.
    :doi:`10.3847/2041-8213/abc753`
 
 .. [#PYCBCEWForeCast]
-   Nitz A. H., Schafer M., Canton T. D. 2020.
+   Nitz A. H., Schäfer M., Dal Canton T. 2020.
    :doi:`10.3847/2041-8213/abbc10`
 
 .. [#DataRelease]
