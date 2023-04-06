@@ -49,20 +49,59 @@ about a minute before merger.
 
 The early warning search is a matched-filter search that uses templates that
 have been truncated at a selection of end frequencies---or equivalently, cut
-off at a selection of times before merger. The ending frequencies being used by
-the pipelines are:
+off at a selection of times before merger. The following tables give, for each
+search pipeline, the ending frequencies and corresponding times before merger.
+The relationship between frequency and time is approximate and assumes
+a :term:`BNS` with masses :math:`1.4 \, M_\odot` and :math:`1.4 \, M_\odot`.
 
-GstLAL and PyCBC -- :math:`29 \, \text{Hz}, 32 \, \text{Hz}, 38 \, \text{Hz},
-49 \, \text{Hz}, 56 \, \text{Hz}.` For a :term:`BNS` with masses :math:`1.4 \,
-M_\odot` and :math:`1.4 \, M_\odot`, these ending frequencies correspond to
-roughly :math:`60 \, \text{s}, 46 \, \text{s}, 29 \, \text{s}, 15 \, \text{s},
-10 \, \text{s}` before merger.
+GstLAL:
 
-MBTA -- :math:`34 \, \text{Hz}, 42 \, \text{Hz}, 50 \, \text{Hz}, 58 \,
-\text{Hz}`. For a :term:`BNS` with masses :math:`1.4 \, M_\odot` and :math:`1.4
-\, M_\odot`, these ending frequencies correspond to roughly :math:`39 \,
-\text{s}, 22 \, \text{s}, 14 \, \text{s}, 9 \, \text{s}` before merger.
++----------------+------------------------+
+| Frequency (Hz) | Time before merger (s) |
++----------------+------------------------+
+| 29             | 60                     |
+| 32             | 46                     |
+| 38             | 29                     |
+| 49             | 15                     |
+| 56             | 10                     |
++----------------+------------------------+
 
+MBTA:
+
++----------------+------------------------+
+| Frequency (Hz) | Time before merger (s) |
++----------------+------------------------+
+| 34             | 39                     |
+| 42             | 22                     |
+| 50             | 14                     |
+| 58             | 9                      |
++----------------+------------------------+
+
+PyCBC Live:
+
++----------------+------------------------+
+| Frequency (Hz) | Time before merger (s) |
++----------------+------------------------+
+| 29             | 60                     |
+| 32             | 46                     |
+| 38             | 29                     |
+| 44             | 20                     |
+| 49             | 15                     |
+| 56             | 10                     |
++----------------+------------------------+
+
+SPIIR:
+
++----------------+------------------------+
+| Frequency (Hz) | Time before merger (s) |
++----------------+------------------------+
+|                | 60                     |
+|                | 50                     |
+|                | 40                     |
+|                | 30                     |
+|                | 20                     |
+|                | 10                     |
++----------------+------------------------+
 
 
 Source Classification
