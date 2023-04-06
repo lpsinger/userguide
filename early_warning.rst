@@ -28,10 +28,10 @@ Detection Method
 ----------------
 
 All of our :term:`CBC` search pipelines (GstLAL [#GstLALEarlyWarning]_, MBTA,
-PyCBC [#PYCBCEWForeCast]_, and SPIIR) are participating in early-warning alerts. See the
-:doc:`content` section for details about alert types and contents. See the
-:doc:`analysis/searches` section for details
-on these analyses. Localizations will be produced with BAYESTAR; see the
+PyCBC [#PYCBCEWForeCast]_, and SPIIR [#SPIIREarlyWarning]_) are participating
+in early-warning alerts. See the :doc:`content` section for details about alert
+types and contents. See the :doc:`analysis/searches` section for details on
+these analyses. Localizations will be produced with BAYESTAR; see the
 :doc:`analysis/parameter_estimation` section for details.
 
 :term:`BNS` signals sweep up smoothly in frequency for a few minutes across the
@@ -58,7 +58,7 @@ GstLAL:
 
 +----------------+------------------------+
 | Frequency (Hz) | Time before merger (s) |
-+----------------+------------------------+
++================+========================+
 | 29             | 60                     |
 | 32             | 46                     |
 | 38             | 29                     |
@@ -70,7 +70,7 @@ MBTA:
 
 +----------------+------------------------+
 | Frequency (Hz) | Time before merger (s) |
-+----------------+------------------------+
++================+========================+
 | 34             | 39                     |
 | 42             | 22                     |
 | 50             | 14                     |
@@ -81,7 +81,7 @@ PyCBC Live:
 
 +----------------+------------------------+
 | Frequency (Hz) | Time before merger (s) |
-+----------------+------------------------+
++================+========================+
 | 29             | 60                     |
 | 32             | 46                     |
 | 38             | 29                     |
@@ -94,7 +94,7 @@ SPIIR:
 
 +----------------+------------------------+
 | Frequency (Hz) | Time before merger (s) |
-+----------------+------------------------+
++================+========================+
 | 29             | 60                     |
 | 31             | 50                     |
 | 34             | 40                     |
@@ -181,6 +181,10 @@ operating at their final design sensitivity.
 .. [#PYCBCEWForeCast]
    Nitz A. H., Schäfer M., Dal Canton T. 2020.
    :doi:`10.3847/2041-8213/abbc10`
+
+.. [#SPIIREarlyWarning]
+   Kovalam, M., Anwarul Kaium Patwary, M., Sreekumar, et al. 2022.
+   :doi:`10.3847/2041-8213/ac5687`
 
 .. [#DataRelease]
     https://gstlal.docs.ligo.org/ewgw-data-release/
