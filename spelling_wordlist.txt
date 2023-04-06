@@ -4,6 +4,7 @@ Aitoff
 al
 Aladin
 AlertType
+Anwarul
 arXiv
 Ashton
 Astropy
@@ -80,12 +81,14 @@ isotropically
 ivorn
 JSON
 Kafka
+Kaium
 Kamioka
 Kapadia
 Katsavounidis
 Keivani
 kilonova
 Klimenko
+Kovalam
 Lasky
 latencies
 ligo
@@ -112,6 +115,7 @@ observability
 offline
 oLIB
 online
+Patwary
 Ph
 parameterize
 parameterizes
@@ -134,6 +138,7 @@ Skliris
 skymap
 sinusoidally
 spatial-temporal
+Sreekumar
 steradian
 superevent
 superevents
