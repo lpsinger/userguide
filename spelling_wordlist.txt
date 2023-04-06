@@ -129,6 +129,7 @@ Robinet
 Roukema
 runtime
 Sachdev
+Schäfer
 Skliris
 skymap
 sinusoidally
