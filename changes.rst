@@ -20,6 +20,14 @@ Version 19 (unreleased)
 
 .. rubric:: Additional Resources
 
+.. rubric:: Early-Warning Alerts
+
+*  Remove some outdated text that was left over from the O3 demonstration of
+   early-warning alerts on simulated data.
+
+*  Document frequencies and times before merger of search pipelines that are
+   producing early-warning alerts in O4.
+
 Version 18 (2023-03-30)
 -----------------------
 
