@@ -4,18 +4,21 @@ Aitoff
 al
 Aladin
 AlertType
-Anwarul
+Andres
 arXiv
 Ashton
+Assiduo
 Astropy
 ATel
 ATels
+Aubin
 Avro
 Banday
 Bartos
 Bilby
 bilinear
 Boch
+Brighenti
 Buskulic
 Calabretta
 capabilities
@@ -23,6 +26,7 @@ carée
 Cascina
 Caudill
 Chatterjee
+Chierici
 Chu
 coalescences
 comoving
@@ -52,6 +56,7 @@ fluence
 Fong
 Fortran
 Foucart
+Gadre
 gcn
 geocenter
 Germain
@@ -133,6 +138,7 @@ Robinet
 Roukema
 runtime
 Sachdev
+Sakon
 Schäfer
 Skliris
 skymap
@@ -146,6 +152,7 @@ superset
 TCP
 tesselations
 timeline
+Tsukada
 unmodeled
 unphysical
 upsampling

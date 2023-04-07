@@ -12,6 +12,8 @@ Version 19 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Updated references for GstLAL, MBTA, PyCBC Live, and SPIIR.
+
 .. rubric:: Alert Contents
 
 .. rubric:: Sample Code

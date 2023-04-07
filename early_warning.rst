@@ -200,7 +200,7 @@ operating at their final design sensitivity.
    :doi:`10.3847/2041-8213/abbc10`
 
 .. [#SPIIREarlyWarning]
-   Kovalam, M., Anwarul Kaium Patwary, M., Sreekumar, et al. 2022.
+   Kovalam, M., Kaium Patwary, Md A., Sreekumar, A. K., et. al. 2022.
    :doi:`10.3847/2041-8213/ac5687`
 
 .. [#DataRelease]

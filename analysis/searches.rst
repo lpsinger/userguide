@@ -59,9 +59,10 @@ find gravitational waves from compact binaries in low-latency. It uses a
 likelihood ratio, which increases monotonically with signal probability, to
 rank candidates, and then uses Monte Carlo sampling methods to estimate the
 distribution of likelihood-ratios in noise. This distribution can then be used
-to compute a :term:`FAR` and p-value.
+to compute a :term:`FAR` and a p-value. The template bank being used by GstLAL
+in O4 is described in [#GstLAL3]_.
 
-**MBTA** [#MBTA]_ constructs its background by making every possible
+**MBTA** [#MBTA1]_ [#MBTA2]_ constructs its background by making every possible
 coincidence from single detector triggers over a few hours of recent data. It
 then folds in the probability of a pair of triggers passing the time
 coincidence test.
@@ -184,6 +185,10 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    Sachdev, S., Caudill, S., Fong, H., et al. 2019.
    :arxiv:`1901.08580`
 
+.. [#GstLAL3]
+   Sakon, S., Tsukada, L., Fong, H., et al. 2023.
+   :arxiv:`2211.16674`
+
 .. [#SPIIR]
    Hooper, S., Chung, S. K., Luan, J., et al. 2012, |PRD|, 86, 024012.
    :doi:`10.1103/PhysRevD.86.024012`
@@ -192,17 +197,21 @@ Bayesian significance calculation to find joint GW+HEN triggers.
    Chu, Q. 2017, Ph.D. Thesis, The University of Western Australia.
    https://api.research-repository.uwa.edu.au/portalfiles/portal/18509751
 
-.. [#MBTA]
-   Adams, T., Buskulic, D., Germain, V., et al. 2016, |CQG|, 33, 175012.
-   :doi:`10.1088/0264-9381/33/17/175012`
+.. [#MBTA1]
+   Aubin, F., Brighenti, F., Chierici, R. et al. 2021, |CQG|, 38, 095004.
+   :doi:`10.1088/1361-6382/abe913`
+
+.. [#MBTA2]
+   Andres, N., Assiduo, M., Aubin, F. et al. 2022, |CQG|, 39, 055002.
+   :doi:`10.1088/1361-6382/ac482a`
 
 .. [#PyCBC1]
    Nitz, A. H., Dal Canton, T., Davis, D. & Reyes, S. 2018, |PRD|, 98, 024050.
    :doi:`10.1103/PhysRevD.98.024050`
 
 .. [#PyCBC2]
-   Dal Canton, T., & Harry, I. W. 2017.
-   :arxiv:`1705.01845`
+   Dal Canton, T., Nitz, A. H., Gadre, B., et al. 2021, |ApJ|, 923, 254.
+   :doi:`10.3847/1538-4357/ac2f9a`
 
 .. [#cWB1]
    Klimenko, S., Mohanty, S., Rakhmanov, M., Mitselmakher, |PRD|,  72, 122002.
