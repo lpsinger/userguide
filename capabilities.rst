@@ -94,7 +94,7 @@ approximately reproduce the rate of *public alerts that were sent in O3* (see
 Detector Network
 ~~~~~~~~~~~~~~~~
 
-The detector amplitude spectral density [1/sqrt(Hz)] curves used for the 
+The detector amplitude spectral density (Hz\ :math:`^{-1/2}`) curves used for the
 simulation are available in :dcc:`T2200043-v3`. The filenames for each 
 detector and observing run are given in the table below.
 

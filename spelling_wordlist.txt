@@ -144,7 +144,6 @@ Skliris
 skymap
 sinusoidally
 spatial-temporal
-sqrt
 Sreekumar
 steradian
 superevent
