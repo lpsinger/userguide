@@ -3,7 +3,7 @@ Superevents
 
 Superevents are an abstraction to unify gravitational-wave candidates from
 multiple search pipelines. Each superevent is intended to represent a single
-astrophysical event.
+astrophysical source.
 
 A superevent consists of one or more event candidates, possibly from
 :doc:`different pipelines </analysis/searches>`, that are neighbors in time. At
@@ -34,35 +34,20 @@ When multiple online searches report events at the same time, the preferred
 event is decided by applying the following rules, in order:
 
 1. A *publishable* event, meeting the public alert threshold, is given
-   preference over one that does not meet the criteria.
-2. An event from modeled :term:`CBC` searches is preferred over an event from
+   preference over one that does not meet the threshold.
+2. An event from :term:`CBC` searches is preferred over an event from
    unmodeled Burst searches (see :doc:`Searches </analysis/searches>` for
    details on search pipelines).
 3. In the case of multiple CBC events, three-interferometer events are
    preferred over two-interferometer events, and two-interferometer events are
    preferred over single-interferometer events.
 4. In the case of multiple CBC events with the same number of participating
-   interferometers, the event with the highest :term:`SNR` is preferred. In the
-   case of multiple Burst events, the event with the lowest :term:`FAR` is
-   preferred.
+   interferometers, the event with the highest :term:`SNR` is preferred. 
+   The :term:`SNR` is used to select the preferred event among `CBC`
+   candidates because higher :term:`SNR` implies better sky location and
+   parameter estimates from low-latency searches. In the case of multiple 
+   Burst events, the event with the lowest :term:`FAR` is preferred.
 
 See also the :ref:`preferred event selection flow chart
 <gwcelery.tasks.superevents:Selection of the preferred event>` in our software
 documentation.
-
-.. note::
-   * A Preliminary GCN is automatically issued for a superevent if the
-     preferred event's :term:`FAR` is less than the threshold value stated in
-     the :ref:`alert-threshold` section.
-   * A second Preliminary GCN is usually issued automatically after the first
-     one is successfully dispatched to the GCN broker. However, this may not be
-     sent if the superevent is vetoed on grounds of data quality before the
-     alert is sent.
-   * An additional preliminary notice may be issued by human intervention in
-     case of unexpected circumstances to help in time-sensitive follow-up
-     operations.
-   * In case of an event created by a pipeline due to an *offline* analysis, no
-     preliminary GCN will be sent.
-   * The :term:`SNR` is used to select the preferred event among `CBC`
-     candidates because higher :term:`SNR` implies better sky location and
-     parameter estimates from low-latency searches.
