@@ -149,8 +149,8 @@ Glossary
 
     range
         A figure of merit to describe the sensitivity of a gravitational-wave
-        detector to a given source population at cosmologically significant
-        distances. It is defined as the radius :math:`R` of a Euclidean sphere
+        detector to a given source population that is uniformly distributed in
+        volume. It is defined as the radius :math:`R` of a Euclidean sphere
         with the volume equal to the :term:`sensitive volume` :math:`V_z`. It
         may be written as:
 
