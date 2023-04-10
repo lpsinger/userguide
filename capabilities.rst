@@ -19,8 +19,8 @@ epochs of months to years of operation at fixed sensitivity, down time for
 construction and commissioning, and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
-signals, this figure gives the BNS :term:`range` *for highly confident
-detections* in each observing run.
+signals, this figure gives the BNS :term:`range` *for confident detections* 
+in each observing run.
 
 .. figure:: _static/ObsScen_timeline.*
    :alt: Long-term observing schedule
@@ -79,7 +79,7 @@ approximately reproduce the rate of *public alerts that were sent in O3* (see
 .. important::
    **This section predicts the rate of public alerts, not the rate of highly
    confident detections. Most public alerts do not survive as confident
-   detections in the authoritative end-of-run LIGO/Virgo/KAGRA compact binary
+   detections in the authoritative LIGO/Virgo/KAGRA compact binary
    catalogs.**
 
    Previous versions of this User Guide used a network SNR threshold of
@@ -94,9 +94,9 @@ approximately reproduce the rate of *public alerts that were sent in O3* (see
 Detector Network
 ~~~~~~~~~~~~~~~~
 
-The detector sensitivity curves used for the simulation are available in
-:dcc:`T2200043-v3`. The filenames for each detector and observing run are given
-in the table below.
+The detector amplitude spectral density [1/sqrt(Hz)] curves used for the 
+simulation are available in :dcc:`T2200043-v3`. The filenames for each 
+detector and observing run are given in the table below.
 
 +-----------------+--------------------------------+--------------------------------+
 | Detector        | Observing run                                                   |
