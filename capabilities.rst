@@ -19,8 +19,8 @@ epochs of months to years of operation at fixed sensitivity, down time for
 construction and commissioning, and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
-signals, this figure gives the BNS :term:`range` *for confident detections* 
-in each observing run.
+signals, this figure gives the BNS :term:`range` for a single-detector SNR 
+threshold of 8 in each observing run.
 
 .. figure:: _static/ObsScen_timeline.*
    :alt: Long-term observing schedule
