@@ -161,8 +161,8 @@ pairing function that weights binaries by mass ratio:
 
 defined for
 :math:`(m_1 \geq m_2) \cap ((m_1 \leq 60 M_\odot) \cup (m_2 \geq 2.5 M_\odot))`.
-The two figures below show the 1D and joint 2D component mass distributions. 
-We note that the axes in the figures below are approximate.
+The two figures below show the 1D and joint 2D component mass distributions 
+(using a linear probability density scale).
 
 .. plot::
    :context: reset
