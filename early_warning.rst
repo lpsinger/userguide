@@ -9,7 +9,7 @@ mergers, it is possible to accumulate enough :term:`SNR` and detect them
 several tens of seconds before merger.  During O3, automated public alerts for
 :term:`CBC` events have been sent within as little as 2 minutes after merger.
 In O4, we have commissioned search pipelines that can detect
-:term:`BNS` events before merger if the signal is sufficiently strong. 
+:term:`BNS` events before merger if the signal is sufficiently strong.
 
 Since it is generally assumed that detectable electromagnetic (or neutrino)
 emission starts shortly *after* merger, a pre-merger gravitational-wave
@@ -22,7 +22,7 @@ We had previously conducted a trial early warning public alert infrastructure
 in June 2020 replaying an 8-day period of archival LIGO data from O3. Results
 from this study were published in [#FirstDemonstration]_. This study
 demonstrated that in principle it is possible to send out GCN Notices in
-advance of a BNS merger. 
+advance of a BNS merger.
 
 Detection Method
 ----------------

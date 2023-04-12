@@ -19,7 +19,7 @@ epochs of months to years of operation at fixed sensitivity, down time for
 construction and commissioning, and transitional Engineering Runs between
 commissioning and observing runs. The long-term observing schedule is shown
 below. Since :term:`BNS` mergers are a well-studied class of gravitational-wave
-signals, this figure gives the BNS :term:`range` for a single-detector SNR 
+signals, this figure gives the BNS :term:`range` for a single-detector SNR
 threshold of 8 in each observing run.
 
 .. figure:: _static/ObsScen_timeline.*
@@ -28,9 +28,9 @@ threshold of 8 in each observing run.
 We plan that following a one-month engineering run, Observing Run 4 (O4) will
 start on May 24. During O4, we expect that four facilities (:term:`LHO`,
 :term:`LLO`, :term:`Virgo`, and :term:`KAGRA`) will contribute;
-LIGO and Virgo will run for 18 months with one or two one-month breaks for 
-maintenance; KAGRA will begin the run with LIGO and Virgo and then return 
-to extended commissioning to re-join with greater sensitivity toward the 
+LIGO and Virgo will run for 18 months with one or two one-month breaks for
+maintenance; KAGRA will begin the run with LIGO and Virgo and then return
+to extended commissioning to re-join with greater sensitivity toward the
 end of O4.
 
 Live Status
@@ -95,7 +95,7 @@ Detector Network
 ~~~~~~~~~~~~~~~~
 
 The detector amplitude spectral density (Hz\ :math:`^{-1/2}`) curves used for the
-simulation are available in :dcc:`T2200043-v3`. The filenames for each 
+simulation are available in :dcc:`T2200043-v3`. The filenames for each
 detector and observing run are given in the table below.
 
 +-----------------+--------------------------------+--------------------------------+
@@ -161,7 +161,7 @@ pairing function that weights binaries by mass ratio:
 
 defined for
 :math:`(m_1 \geq m_2) \cap ((m_1 \leq 60 M_\odot) \cup (m_2 \geq 2.5 M_\odot))`.
-The two figures below show the 1D and joint 2D component mass distributions 
+The two figures below show the 1D and joint 2D component mass distributions
 (using a linear probability density scale).
 
 .. plot::

@@ -173,7 +173,7 @@ Alert Threshold
 ---------------
 
 Automated preliminary alerts are sent out with an expected false alarm rate
-(:term:`FAR`) of :math:`2.31 \times  10^{-5}` Hz (two per day). We will divide 
+(:term:`FAR`) of :math:`2.31 \times  10^{-5}` Hz (two per day). We will divide
 gravitational-wave alerts into two categories:
 (1) **low-significance** gravitational-wave alerts and (2) **significant**
 gravitational-wave alerts. **Significant** gravitational-wave alerts will be sent

@@ -42,10 +42,10 @@ event is decided by applying the following rules, in order:
    preferred over two-interferometer events, and two-interferometer events are
    preferred over single-interferometer events.
 4. In the case of multiple CBC events with the same number of participating
-   interferometers, the event with the highest :term:`SNR` is preferred. 
+   interferometers, the event with the highest :term:`SNR` is preferred.
    The :term:`SNR` is used to select the preferred event among `CBC`
    candidates because higher :term:`SNR` implies better sky location and
-   parameter estimates from low-latency searches. In the case of multiple 
+   parameter estimates from low-latency searches. In the case of multiple
    Burst events, the event with the lowest :term:`FAR` is preferred.
 
 See also the :ref:`preferred event selection flow chart
