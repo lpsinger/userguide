@@ -6,7 +6,8 @@ multiple search pipelines. Each superevent is intended to represent a single
 astrophysical source.
 
 A superevent consists of one or more event candidates, possibly from
-:doc:`different pipelines </analysis/searches>`, that are neighbors in time. At
+:doc:`different pipelines </analysis/searches>`, that are clustered based on
+coalescence time for modeled searches, and trigger time for unmodeled searches. At
 any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
