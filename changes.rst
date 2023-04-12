@@ -13,7 +13,6 @@ Version 19 (unreleased)
 .. rubric:: Data Analysis
 
 *  Updated references for GstLAL, MBTA, PyCBC Live, and SPIIR.
-*  Clarify superevent description.
 
 .. rubric:: Alert Contents
 
