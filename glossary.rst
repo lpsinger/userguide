@@ -183,8 +183,11 @@ Glossary
         is differential comoving volume per unit redshift. The function
         :math:`z^*(\Theta)` is the *threshold redshift*, or the redshift at
         which a binary with parameters :math:`\Theta` is just at the limit of
-        detection. The factor of :math:`{1 + z}` in the denominator accounts
-        for time dilation from the source frame to the detector frame.
+        detection. Detection may be defined, for instance, by a threshold on
+        event SNR or FAR; see :ref:`capabilities:Detection Threshold` for
+        thresholds used in this guide. The factor of :math:`{1 + z}` in the
+        denominator accounts for time dilation from the source frame to the
+        detector frame.
 
         If a population of sources occurs at a fixed rate per unit comoving
         volume per unit proper time :math:`\dot{n}`, then the rate of observed
