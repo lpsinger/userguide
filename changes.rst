@@ -1,26 +1,16 @@
 Change Log
 ==========
 
-Version 19 (unreleased)
+Version 19 (2023-04-12)
 -----------------------
-
-.. rubric:: General
-
-.. rubric:: Getting Started Checklist
-
-.. rubric:: Observing Capabilities
 
 .. rubric:: Data Analysis
 
 *  Updated references for GstLAL, MBTA, PyCBC Live, and SPIIR.
 
-.. rubric:: Alert Contents
-
 .. rubric:: Sample Code
 
 *  Update the GCN Classic sample code to subscribe to early warning alerts.
-
-.. rubric:: Additional Resources
 
 .. rubric:: Early-Warning Alerts
 
