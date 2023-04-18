@@ -7,8 +7,17 @@ astrophysical source.
 
 A superevent consists of one or more event candidates, possibly from
 :doc:`different pipelines </analysis/searches>`, that are clustered based on
-coalescence time for modeled searches, and trigger time for unmodeled searches. At
-any given time, one event belonging to the superevent is identified as the
+coalescence time for modeled searches, and trigger time for unmodeled searches. 
+
+.. note:: While the initial clustering window for superevents is 1 second, 
+   this window can expand as event candidates are added. 
+   Concretely, if the time of the first event is :math:`t`, 
+   the window for the superevent is :math:`(t - 1, t + 1)`. 
+   If the next event candidate arrives at :math:`t + 0.1`, 
+   the window becomes :math:`(t - 1, t + 1.1)`. In this way, 
+   the superevent windows can become larger than 1 second.
+
+At any given time, one event belonging to the superevent is identified as the
 *preferred event*. The superevent inherits properties from the preferred event
 such as time, significance, sky localization, and classification.
 
