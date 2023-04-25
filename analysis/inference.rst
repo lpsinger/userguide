@@ -13,20 +13,22 @@ Classification
 The classification consists of four numbers, summing to unity, that
 give the probability that the source is either a :term:`BNS`,
 :term:`NSBH`, :term:`BBH` merger, or is of :term:`Terrestrial` (i.e. a
-background fluctuation or a glitch) origin. See the :ref:`figure in
-the alert contents section <classification-diagram>` for the
-boundaries of the source classification categories in
-the :math:`(m_1,m_2)` plane. The boundary between NSs and BHs
-is set to :math:`3 M_{\odot}`.
+background fluctuation or a glitch) origin.
 
-This assumes that terrestrial and astrophysical events occur as independent
-Poisson processes. A source-dependent weighting of matched-filter templates is
-used to compute the mean values of expected counts associated with each of
-these four categories. The mean values are updated weekly based on observed
-matched-filter count rates. They are then used to predict the category for new
-triggers uploaded by :doc:`search pipelines </analysis/searches>`.
+Our :doc:`search pipelines </analysis/searches>` use independent methods to
+assign those source probabilities to their own triggers. These methods all
+start from the common assumptions that terrestrial and astrophysical events
+occur as independent Poisson processes, and that NSs and BHs only exist below
+and above :math:`3 M_{\odot}` respectively (see the :ref:`figure in the alert
+contents section <classification-diagram>` for the boundaries of the source
+classification categories in the :math:`(m_1,m_2)` plane). The search pipelines
+then account for the rates of background and astrophysical events in ways that
+differ in detail, but are all based on the population of events observed during
+the O1, O2 and O3 runs.
 
-For details, see [#Pastro]_, especially Section II E. and Equation 18 therein.
+For details of the GstLAL method, see [#Pastro]_ (especially Equation 20).
+For MBTA, see [#SrcClassMBTA]_. For PyCBC Live, see [#SrcClassPyCBCLive]_.
+For SPIIR, see [#CountingAndConfusion]_ and [#SrcClassPyCBCLive]_.
 
 Properties
 ----------
@@ -67,9 +69,22 @@ uses the :doc:`online parameter estimation <parameter_estimation>` to compute th
    Kapadia, S. J., Caudill, S., Creighton, J. D. E., et al., 2020, |CQG|, 37, 045007.
    :doi:`10.1088/1361-6382/ab5f2d`
 
+.. [#SrcClassMBTA]
+   Andres, N., Assiduo, M., Aubin, F., et al., 2022, |CQG|, 39, 055002.
+   :doi:`10.1088/1361-6382/ac482a`
+
+.. [#SrcClassPyCBCLive]
+   Villa-Ortega, V., Dent, T., Curiel Barroso, A., 2022.
+   :arxiv:`2203.10080`
+
+.. [#CountingAndConfusion]
+   Farr, W. M., Gair, J. R., Mandel, I., et al, 2015, |PRD|, 91, 023005.
+   :doi:`10.1103/PhysRevD.91.023005`
+
 .. [#ModelSelection]
    Ghosh, S., Liu, X., Creighton, J., et. al., 2021, |PRD|, 104, 083003.
    :doi:`10.1103/PhysRevD.104.083003`
+
 .. [#DiskMass]
    Foucart, F., Hinderer, T. & Nissanke, S. 2018, |PRD|, 98, 081501.
    :doi:`10.1103/PhysRevD.98.081501`

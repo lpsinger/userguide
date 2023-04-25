@@ -21,8 +21,8 @@ unknown activity.
 We had previously conducted a trial early warning public alert infrastructure
 in June 2020 replaying an 8-day period of archival LIGO data from O3. Results
 from this study were published in [#FirstDemonstration]_. This study
-demonstrated that in principle it is possible to send out GCN Notices in
-advance of a BNS merger.
+demonstrated that in principle it is possible to send out :term:`GCN` Notices
+in advance of a :term:`BNS` merger.
 
 Detection Method
 ----------------
@@ -123,12 +123,14 @@ SPIIR:
 
 Source Classification
 ---------------------
+
 The automated :doc:`source classification and properties <analysis/inference>`
 have not been trained or tested extensively for early warning alerts. However,
-the early warning analysis is **only sensitive to BNS-mass mergers**. As a
-result, the favored source class in early warning GCN Notices will always be
-either BNS or Terrestrial, with a 0% chance of NSBH or BBH. The HasNS and
-HasRemnant fields will always show 100%.
+the early warning analysis is only optimized for :term:`BNS`-mass mergers.
+As a result, the assumed source class in early warning :term:`GCN` Notices will
+always be :term:`BNS` or :term:`Terrestrial`, with an assumption of a 0% chance
+of :term:`NSBH` or :term:`BBH`. The HasNS and HasRemnant fields will likewise
+always show 100%.
 
 Localization
 ------------
