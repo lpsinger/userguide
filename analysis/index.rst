@@ -173,7 +173,7 @@ Alert Threshold
 ---------------
 
 Automated preliminary alerts are sent out with an expected false alarm rate
-(:term:`FAR`) of :math:`2.31 \times  10^{-5}` Hz (two per day). We will divide
+(:term:`FAR`) of :math:`2.3 \times  10^{-5}` Hz (two per day). We will divide
 gravitational-wave alerts into two categories:
 (1) **low-significance** gravitational-wave alerts and (2) **significant**
 gravitational-wave alerts. **Significant** gravitational-wave alerts will be sent
@@ -208,5 +208,5 @@ of :math:`3.9 \times 10^{-7}` Hz (one per month) for :term:`CBC` sources,
 and :math:`3.2 \times 10^{-8}` Hz (one per year) for unmodeled burst sources.
 
 The presence of a trial factor (eight searches) implies that public alerts will
-be sent for all triggers that pass a false alarm rate (FAR) threshold of :math:`6.9 \times 10^{-5}` Hz
+be sent for all triggers that pass a false alarm rate (FAR) threshold of :math:`2.9 \times 10^{-6}` Hz
 (one per four days).
