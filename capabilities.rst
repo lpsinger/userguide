@@ -88,9 +88,9 @@ approximately reproduce the rate of *public alerts that were sent in O3* (see
    catalogs.**
 
    Previous versions of this User Guide used a network SNR threshold of
-   12, which roughly corresponds to the single-detector SNR threshold that is
-   assumed for the canonical BNS :term:`range` shown in the timeline figure
-   above.
+   12, which roughly corresponds to the single-detector SNR threshold of
+   :math:`12/\sqrt{2} \approx 8` that is assumed for the canonical BNS
+   :term:`range` shown in the timeline figure above.
 
    The change in the detection threshold from 12 to 8 accounts for an increase
    in the predicted number of events by a factor of
