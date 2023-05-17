@@ -213,4 +213,3 @@ operating at their final design sensitivity.
 .. _`GW170817`: https://en.wikipedia.org/wiki/GW170817
 .. _`GW170817 LSC`: https://www.ligo.org/detections/GW170817.php
 .. _`GW170817 Press Release`: https://www.ligo.caltech.edu/page/press-release-gw170817
-.. _`submit a change to your GCN Notice subscription settings`: https://gcn.gsfc.nasa.gov/gcn/config_builder.html
