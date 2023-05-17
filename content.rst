@@ -712,9 +712,9 @@ Below are examples of VOEvent notices.
 .. _`NESTED numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION410
 .. _`NUNIQ numbering scheme`: https://healpix.sourceforge.io/html/intro_Geometric_Algebraic_Propert.htm#SECTION420
 .. _`multi-order coverage (MOC) maps`: http://ivoa.net/documents/MOC/
-.. _`format and style`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
-.. _`subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
-.. _`GCN Circulars archive`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
+.. _`format and style`: https://gcn.nasa.gov/docs/circulars/styleguide
+.. _`subscribe to GCN Circulars`: https://gcn.nasa.gov/docs/circulars/subscribing
+.. _`GCN Circulars archive`: https://gcn.nasa.gov/circulars
 .. _`examples from GW170817`: https://gcn.gsfc.nasa.gov/other/G298048.gcn3
 .. _`several other legacy formats`: https://gcn.gsfc.nasa.gov/gcn_describe.html#tc7
 .. _`several other distribution methods`: https://gcn.gsfc.nasa.gov/tech_describe.html

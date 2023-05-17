@@ -49,9 +49,9 @@ and real-time results.
          astronomy communities use GCNs, whereas the supernova community uses
          ATels.
 
-.. _`Subscribe to GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn_circ_signup.html
-.. _`instructions for posting GCN Circulars`: https://gcn.gsfc.nasa.gov/gcn3_circulars.html
-.. _`archived online`: https://gcn.gsfc.nasa.gov/gcn3_archive.html
+.. _`Subscribe to GCN Circulars`: https://gcn.nasa.gov/docs/circulars/subscribing
+.. _`instructions for posting GCN Circulars`: https://gcn.nasa.gov/docs/circulars/submitting
+.. _`archived online`: https://gcn.nasa.gov/circulars
 .. _`OpenLVEM instructions`: https://wiki.gw-astronomy.org/OpenLVEM/OpenLVEMSignUp
 .. _`OpenLVEM wiki`: https://wiki.gw-astronomy.org/OpenLVEM/WebHome
 .. _GraceDB: https://gracedb.ligo.org
