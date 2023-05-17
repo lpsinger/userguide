@@ -10,6 +10,8 @@ Version 20 (unreleased)
 
 .. rubric:: Observing Capabilities
 
+*  Updated run timeline based on new Virgo participation plans.
+
 .. rubric:: Data Analysis
 
 .. rubric:: Alert Contents

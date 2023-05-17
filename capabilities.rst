@@ -25,13 +25,16 @@ threshold of 8 in each observing run.
 .. figure:: _static/ObsScen_timeline.*
    :alt: Long-term observing schedule
 
-We plan that following a one-month engineering run, Observing Run 4 (O4) will
-start on May 24. During O4, we expect that four facilities (:term:`LHO`,
-:term:`LLO`, :term:`Virgo`, and :term:`KAGRA`) will contribute;
-LIGO and Virgo will run for 18 months with one or two one-month breaks for
-maintenance; KAGRA will begin the run with LIGO and Virgo and then return
-to extended commissioning to re-join with greater sensitivity toward the
-end of O4.
+We plan that following a one-month engineering run, Observing Run 4 (O4) 
+will start on May 24. During O4, we expect that four facilities 
+(:term:`LHO`, :term:`LLO`, :term:`Virgo`, and :term:`KAGRA`) will contribute. 
+LIGO Hanford and Livingston plan to start the observing run on 24 May 2023; 
+while current sensitivities are 130-150 Mpc for binary neutron star 
+coalescences, work will continue to improve the sensitivity during the run. 
+Virgo plans to join toward the end of June, after commissioning to address 
+a damaged mirror that is limiting the performance. KAGRA will begin the run 
+with LIGO and then return to extended commissioning to re-join with greater 
+sensitivity toward the end of O4.
 
 Live Status
 -----------
@@ -55,7 +58,9 @@ Public Alert Rate and Localization Accuracy
 
 Here we provide predicted public alert rates, distances, and localization
 uncertainties for :term:`BNS`, :term:`NSBH`, and :term:`BBH` mergers in O4 and
-O5, based on a Monte Carlo simulation of detection and localization of events.
+O5, based on a Monte Carlo simulation of detection and localization of events. 
+We note that these numbers assume Virgo's participation, and so are optimistic 
+relative to what is expected early in O4.
 
 The methodology of the simulation is the same as described in [#LivingReview]_
 and [#DataDrivenExpectations]_, although the GW detector network
