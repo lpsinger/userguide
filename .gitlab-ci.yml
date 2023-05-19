@@ -21,7 +21,7 @@ validate-voevents:
     - *before-apt
     - apt-get update
     - apt-get -y install --no-install-recommends libxml2-utils curl
-    - curl -O http://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd
+    - curl -O https://www.ivoa.net/xml/VOEvent/VOEvent-v2.0.xsd
     - echo 99ba1e3b8351a6f792a2499d3acc70695898ae82588165b6599712a85df1a795  VOEvent-v2.0.xsd > hash
     - sha256sum --check hash
     - xmllint --schema VOEvent-v2.0.xsd _static/*.xml
