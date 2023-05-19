@@ -16,6 +16,8 @@ Version 20 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Remove MLy pipeline. It will be added back later in O4 when it is running.
+
 .. rubric:: Alert Contents
 
 *  Update GCN Circulars links to point to the new archive at https://gcn.nasa.gov/circulars.
