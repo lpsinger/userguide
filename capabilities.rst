@@ -45,8 +45,8 @@ LIGO/Virgo/KAGRA detectors and alert infrastructure.
 *  | **Detector Status Portal**: Daily summary of detector performance.
    | https://www.gw-openscience.org/detector_status/
 
-*  | **GWIStat**: Real-time detector up/down status.
-   | https://ldas-jobs.ligo.caltech.edu/~gwistat/gwistat/gwistat.html
+*  | **GWIStat**: Real-time detector up/down status and estimated range.
+   | https://online.ligo.org
 
 ..
 	*  | **LIGO Data Grid Status**: Live dashboard showing up/down status of the

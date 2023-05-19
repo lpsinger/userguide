@@ -17,6 +17,10 @@ Version 20 (unreleased)
 
 *  Remove link to a deprecated dashboard. It will be replaced by a new link in the future.
 
+*  Updated GWIStat entry to point to new Grafana dashboard.
+
+*  Update the GWIStat link to point to the new Grafana dashboard.
+
 .. rubric:: Data Analysis
 
 *  Remove MLy pipeline. It will be added back later in O4 when it is running.
