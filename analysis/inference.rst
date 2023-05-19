@@ -55,6 +55,34 @@ based on Bayes factors in reference mentioned above.
 the hypothetical “mass gap” between neutron stars and black holes, defined here
 as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`.
 
+The performance of these quantities across online :term:`CBC` pipelines is shown below.
+
+.. tabs::
+
+   .. tab:: HasNS
+      .. figure:: ../_static/hasNS.*
+         :alt: :term:`ROC` curve for HasNS
+         :align: center
+
+         The :term:`ROC` curve showing the performance of **HasNS**.
+
+   .. tab:: HasRemnant
+      .. figure:: ../_static/hasRemnant.*
+         :alt: :term:`ROC` curve for HasRemnant
+         :align: center
+         
+         The :term:`ROC` curve showing the performance of **HasRemnant**.
+
+   .. tab:: HasMassGap
+      .. figure:: ../_static/hasMassGap.*
+         :alt: :term:`ROC` curve for HasMassGap
+         :align: center
+         
+         The :term:`ROC` curve showing the performance of **HasMassGap**.
+
+The :term:`ROC` curves shown above were constructed using pipeline recovered injections from the O3 Mock Data Challenge (MDC). 
+For details see [#MDC]_.
+
 The mass values mentioned in this section are :term:`source-frame mass`. The value reported in
 the :ref:`preliminary <preliminary>` alert is calculated using a supervised machine learning
 classifier on a feature space consisting of the masses, spins, and :term:`SNR` of the best-matching
@@ -92,3 +120,7 @@ uses the :doc:`online parameter estimation <parameter_estimation>` to compute th
 .. [#MLEMBright]
    Chatterjee, D., Ghosh, S., Brady, P. R., et al. 2020, |ApJ|, 896, 54.
    :doi:`10.3847/1538-4357/ab8dbe`
+
+.. [#MDC]
+   Sharma Chaudhary, S., Toivonen, A., et al. 2023,
+   :arxiv:`2308.04545` 

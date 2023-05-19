@@ -171,6 +171,13 @@ Glossary
 
            R = \left(\frac{3 V_z}{4 \pi}\right)^{1/3}.
 
+    ROC
+        A receiver operating characteristic (ROC) curve is a plot that
+        illustrates the diagnostic ability of a binary classifier system with 
+        variable discrimination threshold. It is a plot of the true positive 
+        rate (TPR) against the false positive rate (FPR), at various 
+        threshold settings.
+
     secondary
         When referring to the two component compact objects or the masses of
         the two component compact objects in a binary, the `secondary` is the

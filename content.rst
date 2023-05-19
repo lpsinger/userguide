@@ -572,7 +572,7 @@ NSBH, or BBH merger):
   and are marginalized over.
 * **HasMassGap**: The mass of one or more of the binary's two companion object
   lies in the hypothetical "mass gap" between neutron stars and black holes, defined
-  here as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`.
+  here as :math:`3 M_{\odot} \leq m \leq 5 M_{\odot}`. 
 
 All of the quantities in the Classification and Properties sections are model
 dependent to some extent: the Classification section takes into consideration

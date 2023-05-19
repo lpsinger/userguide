@@ -14,6 +14,8 @@ Version 21 (unreleased)
 
 .. rubric:: Data Analysis
 
+*  Add receiver operating characteristic (ROC) curves for EM-Bright data products.
+
 .. rubric:: Alert Contents
 
 *  Update list of active online search pipelines.
