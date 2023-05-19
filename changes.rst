@@ -1,10 +1,8 @@
 Change Log
 ==========
 
-Version 20 (unreleased)
+Version 20 (2023-05-19)
 -----------------------
-
-.. rubric:: General
 
 .. rubric:: Getting Started Checklist
 
@@ -15,11 +13,14 @@ Version 20 (unreleased)
 
 *  Update run timeline based on new Virgo participation plans.
 
-*  Remove link to a deprecated dashboard. It will be replaced by a new link in the future.
+*  Remove link to a deprecated dashboard. It will be replaced by a new link in
+   the future.
 
 *  Update the GWIStat link to point to the new Grafana dashboard.
 
 .. rubric:: Data Analysis
+
+*  Correct some typographical errors related to the false alarm rate threshold.
 
 *  Remove MLy pipeline. It will be added back later in O4 when it is running.
 
@@ -28,13 +29,9 @@ Version 20 (unreleased)
 *  Update GCN Circulars links to point to the new archive at
    https://gcn.nasa.gov/circulars.
 
-.. rubric:: Sample Code
-
 .. rubric:: Additional Resources
 
 *  Remove the Chirp app because its web page has a broken SSL/TLS certificate.
-
-.. rubric:: Early-Warning Alerts
 
 Version 19 (2023-04-12)
 -----------------------
