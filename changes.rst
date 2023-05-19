@@ -15,6 +15,8 @@ Version 20 (unreleased)
 
 *  Update run timeline based on new Virgo participation plans.
 
+*  Remove link to a deprecated dashboard. It will be replaced by a new link in the future.
+
 .. rubric:: Data Analysis
 
 *  Remove MLy pipeline. It will be added back later in O4 when it is running.
