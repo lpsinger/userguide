@@ -8,7 +8,8 @@ Version 20 (unreleased)
 
 .. rubric:: Getting Started Checklist
 
-*  Update GCN Circulars links to point to the new archive at https://gcn.nasa.gov/circulars.
+*  Update GCN Circulars links to point to the new archive at
+   https://gcn.nasa.gov/circulars.
 
 .. rubric:: Observing Capabilities
 
@@ -20,7 +21,8 @@ Version 20 (unreleased)
 
 .. rubric:: Alert Contents
 
-*  Update GCN Circulars links to point to the new archive at https://gcn.nasa.gov/circulars.
+*  Update GCN Circulars links to point to the new archive at
+   https://gcn.nasa.gov/circulars.
 
 .. rubric:: Sample Code
 
