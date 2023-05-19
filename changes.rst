@@ -26,6 +26,8 @@ Version 20 (unreleased)
 
 .. rubric:: Additional Resources
 
+*  Remove the Chirp app because its web page has a broken SSL/TLS certificate.
+
 .. rubric:: Early-Warning Alerts
 
 Version 19 (2023-04-12)
