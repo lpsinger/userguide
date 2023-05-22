@@ -31,10 +31,10 @@ will start on May 24. During O4, we expect that four facilities
 LIGO Hanford and Livingston plan to start the observing run on 24 May 2023; 
 while current sensitivities are 130-150 Mpc for binary neutron star 
 coalescences, work will continue to improve the sensitivity during the run. 
-Virgo plans to join toward the end of June, after commissioning to address 
-a damaged mirror that is limiting the performance. KAGRA will begin the run 
-with LIGO and then return to extended commissioning to re-join with greater 
-sensitivity toward the end of O4.
+Virgo plans to join in Fall 2023, after commissioning to address a damaged
+mirror that is limiting the performance and to further improve sensitivity.
+KAGRA will begin the run with LIGO and then return to extended commissioning 
+to re-join with greater sensitivity toward the end of O4.
 
 Live Status
 -----------
@@ -117,8 +117,8 @@ detector and observing run are given in the table below.
 | :term:`KAGRA`   | :file:`kagra_10Mpc.txt`        | :file:`kagra_128Mpc.txt`       |
 +-----------------+--------------------------------+--------------------------------+
 
-These noise curves correspond to the high ends of the BNS ranges shown in the
-timeline figure above, with the exception of Virgo in O5, for which it
+These noise curves correspond to the high ends of the BNS ranges shown in the 
+timeline figure above, with the exception of Virgo in O4, for which it
 represents the low end.
 
 We assume that each detector has an independent observing duty cycle of 70%.
