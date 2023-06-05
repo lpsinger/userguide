@@ -447,7 +447,7 @@ The inference section is present for :term:`CBC` events *only*. It has two
 parts:
 
 **Classification**: Four numbers, summing to unity, giving probability that the
-source belongs to the following five mutually exclusive categories:
+source belongs to the following four mutually exclusive categories:
 
 * :term:`BNS` merger
 * :term:`NSBH` merger
