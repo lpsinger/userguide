@@ -74,11 +74,13 @@ Gpc
 Grafana
 GW
 Hanford
+Hannam
 Healpy
 Hinderer
 Hivon
 Holz
 Hübner
+Husa
 IDL
 IVOA
 indices
@@ -136,6 +138,7 @@ piecewise
 pixelation
 posteriori
 postprocessing
+Pratten
 pre
 preprint
 programmatically

@@ -6,4 +6,5 @@
 .. |LRR|    replace:: *Living Rev. Rel.*
 .. |MNRAS|  replace:: *Mon. Notices Royal Astron. Soc.*
 .. |PRD|    replace:: *Phys. Rev. D*
+.. |PRL|    replace:: *Phys. Rev. Lett.*
 .. |PRX|    replace:: *Phys. Rev. X*
