@@ -22,6 +22,7 @@ Boch
 Brighenti
 Buskulic
 Calabretta
+calorimeter
 capabilities
 carée
 Cascina
@@ -130,6 +131,7 @@ Ph
 parameterize
 parameterizes
 Petrov
+piecewise
 pixelation
 posteriori
 postprocessing
@@ -144,6 +146,7 @@ Roukema
 runtime
 Sachdev
 Sakon
+scalable
 Schäfer
 Skliris
 skymap
