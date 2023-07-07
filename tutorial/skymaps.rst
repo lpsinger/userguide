@@ -182,7 +182,7 @@ The image data is a 1D array of values:
 
     >>> hpx
     array([2.70726059e-66, 1.27374324e-66, 2.62611513e-67, ...,
-           2.04700874e-40, 1.05781210e-35, 4.44174764e-31])
+           2.04700874e-40, 1.05781210e-35, 4.44174764e-31], dtype='>f8')
 
 Healpy has :doc:`several useful plotting routines <healpy:healpy_visu>`
 including :func:`hp.mollview <healpy.visufunc.mollview>` for plotting a
@@ -280,7 +280,7 @@ In Python, you can use this simple recipe:
        >>> from ligo.skymap.postprocess import find_greedy_credible_levels
        >>> credible_levels = find_greedy_credible_levels(hpx)
        >>> credible_levels
-       array([1., 1., 1., ..., 1., 1., 1.])
+       array([1., 1., 1., ..., 1., 1., 1.], dtype='>f8')
 
 To check if the pixel that we identified in the previous section is within the
 90% credible level, simply test if the value of the credible level map is less
