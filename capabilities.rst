@@ -63,10 +63,8 @@ O5, based on a Monte Carlo simulation of detection and localization of events.
 We note that these numbers assume Virgo's participation, and so are optimistic 
 relative to what is expected early in O4.
 
-The methodology of the simulation is the same as described in [#LivingReview]_
-and [#DataDrivenExpectations]_, although the GW detector network
-configurations, sensitivity curves, astrophysical rates, and mass and spin
-distributions have been updated.
+The methodology and results of the simulation are described in 
+[#Kiendrebeogo2023]_ (also see [#LivingReview]_ and [#DataDrivenExpectations]_).
 
 **Source code to reproduce these simulations** is available at
 https://github.com/lpsinger/observing-scenarios-simulations/tree/v2 or
@@ -523,6 +521,11 @@ volume, and luminosity distance of detectable events in O3, O4, and O5.
 .. [#DataDrivenExpectations]
    Petrov, P., Singer, L. P., Coughlin, M. W., et al. 2022, |ApJ| 924, 54.
    :doi:`https://doi.org/10.3847/1538-4357/ac366d`
+
+.. [#Kiendrebeogo2023]
+   Kiendrebeogo, R. W., Farah, A. M., Foley E. M, et al. 2023, *Updated 
+   observing scenarios and multi-messenger implications for the International 
+   Gravitational-wave Network's O4 and O5*. :arxiv:`2306.09234`
 
 .. [#O3b_pop]
    LIGO Scientific Collaboration & Virgo Collaboration 2021, *The population of
