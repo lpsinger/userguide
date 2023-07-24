@@ -94,14 +94,14 @@ transient signals without relying on a specific waveform model. cWB searches
 for signals with durations of up to a few seconds that are coincident in
 multiple detectors. The analysis is performed on the time-frequency data
 obtained with a wavelet transform. cWB selects wavelet amplitudes above the
-fluctuations of the detector noise and groups them into clusters. Tuned
-versions for binary black holes (search name BBH and IMBH) choose
-time-frequency patterns with frequency increasing in time. For clusters
+fluctuations of the detector noise and groups them into clusters. For clusters
 correlated in multiple detectors, cWB reconstructs the direction to the source
 and the signal waveforms with the constrained maximum likelihood method. To
 assign detection significance to the found events, cWB ranks them by the
 coherent signal-to-noise ratio obtained from cross-correlation of the signal
-waveforms reconstructed in different detectors.
+waveforms reconstructed in different detectors. A tuned version of the search
+(**cWB-BBH**) chooses time-frequency patterns with frequency increasing in time
+to better match the signal associated with binary black holes mergers. 
 
 **oLIB** [#oLIB]_ uses the Q transform to decompose GW strain data into several
 time-frequency planes of constant quality factors :math:`Q`, where :math:`Q

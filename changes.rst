@@ -14,6 +14,8 @@ Version 21 (unreleased)
 
 .. rubric:: Alert Contents
 
+*  Update list of active online search pipelines.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources
