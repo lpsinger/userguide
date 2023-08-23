@@ -16,6 +16,8 @@ Version 21 (unreleased)
 
 *  Update list of active online search pipelines.
 
+*  Add description and citations for RapidPE-RIFT.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources
