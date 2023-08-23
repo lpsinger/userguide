@@ -50,6 +50,16 @@ and :term:`BBH`.
 | :math:`\mathcal{M} \geq 12M_{\odot}`                  | IMRPhenomXPHM [#IMRPhenomXPHM]_            |                                                                                   |
 +-------------------------------------------------------+--------------------------------------------+-----------------------------------------------------------------------------------+
 
+**RapidPE-RIFT** [#RapidPERIFT1]_ [#RapidPERIFT2]_ is a fast CBC parameter estimation pipeline
+in Python. RapidPE-RIFT parallelizes parameter estimation by fixing the
+intrinsic parameters (such as the masses and spins of the binary) to a grid
+around a search-identified intrinsic point and by integrating over the
+extrinsic parameters (such as sky location, distance, etc) via Monte Carlo
+sampling. For all events, there is an automated RapidPE-RIFT analysis that
+explores the masses holding the spins fixed to the search identified values.
+The analysis is accelerated using a variety of tricks and completes within a
+few minutes. 
+
 Unmodeled Events
 ----------------
 
@@ -76,6 +86,14 @@ in individual detectors.
 .. [#Bilby]
    Ashton, G., Hübner, M., Lasky, P. D., Talbot, C., et al. 2019, |ApJS|, 241, 27.
    :doi:`10.3847/1538-4365/ab06fc`
+
+.. [#RapidPERIFT1]
+   Pankow, C., Brady, P. R., Ochsner, E. and O’Shaughnessy, R. 2015, |PRD|, 92, 023002.
+   :doi:`10.1103/PhysRevD.92.023002`
+
+.. [#RapidPERIFT2]
+   Rose, C. A., Valsan, V., Brady, P. R., Walsh, S., Pankow, C. 2022, arXiv:`2201.05263`.
+   :doi:`10.48550/arXiv.2201.05263`
 
 .. [#IMRPhenomD1]
    Husa, S., et al. 2016, |PRD|, 93, 044006.
