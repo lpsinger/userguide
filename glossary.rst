@@ -8,7 +8,7 @@ Glossary
         https://avro.apache.org for more information.
 
     Base64
-        A common binary encoding scheme supported by many open-source libraries, e.g. the `python stadard library <https://docs.python.org/3/library/base64.html>`_.
+        A common binary encoding scheme supported by many open-source libraries, e.g. the `Python standard library <https://docs.python.org/3/library/base64.html>`_.
 
     BBH
         Binary black hole, a binary system composed of two black holes. See
