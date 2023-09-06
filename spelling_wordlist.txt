@@ -21,6 +21,7 @@ bilinear
 Boch
 Brighenti
 Buskulic
+Cabero
 Calabretta
 calorimeter
 capabilities
@@ -112,6 +113,7 @@ Luan
 macOS
 Magee
 magnetar
+Mahabal
 Mandel
 mapmaking
 Messick

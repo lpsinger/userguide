@@ -18,6 +18,10 @@ Version 21 (unreleased)
 
 *  Add description and citations for RapidPE-RIFT.
 
+*  Add a section for public annotations that are in GraceDB but not in GCN Notices or Circulars.
+
+*  Add GWSkyNet content to the public annotations section.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources

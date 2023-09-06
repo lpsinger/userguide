@@ -43,6 +43,14 @@ Glossary
         Equation of state. The equation of state determines the relation between
         mass and radius, or mass and compactness, or pressure and (mass, energy,
         or number) density, of neutron stars.
+    
+    FAP
+        False alarm probability, a measure of the fraction of noise events 
+        incorrectly classified as astrophysical events by a binary classifier.
+        
+    FNP
+        False negative probability, a measure of the fraction of astrophysical 
+        events incorrectly classified as noise by a binary classifier.
 
     FAR
         False alarm rate, a statistic that is used to describe the significance
@@ -72,6 +80,11 @@ Glossary
 
     GRB
         Gamma-ray burst.
+        
+    GWSkyNet
+        A machine learning classifier for the identification of multi-detector 
+        :term:`CBC` events and noise [#GWSkyNet]_. See section 
+        :ref:`GWSkyNet classification <gwskynetclass>` for details.
 
     HEALPix
         Hierarchical Equal Area isoLatitude Pixelation, a scheme for indexing
@@ -237,6 +250,12 @@ Glossary
         official `VTP IVOA recommendation
         <http://www.ivoa.net/documents/Notes/VOEventTransport/>`_.
 
+.. include:: /journals.rst
+
+.. [#GWSkyNet]
+   Cabero, M., Mahabal, A. and McIver, J. 2020, |ApJL|, 904, L9.
+   :doi:`10.3847/2041-8213/abc5b5`
+
 .. [#DistanceMeasuresInGWCosmology]
    Chen, H.-Y., Holz, D. E., et al. 2017, *Distance measures in
-   gravitational-wave astrophysics and cosmology*. :arxiv:`1709.08079`
+   gravitational-wave astrophysics and cosmology*. :arxiv:`1709.08079`   
