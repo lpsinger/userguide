@@ -22,6 +22,8 @@ Version 21 (unreleased)
 
 *  Add GWSkyNet content to the public annotations section.
 
+*  Add all available values for RAVEN searches and observatories.
+
 .. rubric:: Sample Code
 
 .. rubric:: Additional Resources
