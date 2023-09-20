@@ -6,6 +6,8 @@ Version 21 (unreleased)
 
 .. rubric:: General
 
+*  Change the CBC trials to 4.
+
 .. rubric:: Getting Started Checklist
 
 .. rubric:: Observing Capabilities

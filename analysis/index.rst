@@ -196,12 +196,12 @@ Alert Threshold Trials Factor
 -----------------------------
 
 We run both :term:`CBC`-focused and burst-focused searches. For :term:`CBC`,
-there are five independent searches, including a :term:`CBC`-focused burst search; for burst, there
+there are four independent searches; for burst, there
 are three independent searches. There is also an external coincidence search RAVEN that looks at
 results from both the aforementioned :term:`CBC` and burst searches. To account for the trials
 factor from the different searches with statistically independent false alarms, an alert will
 be marked as **significant** for events that generate a preliminary alert with a :term:`FAR`
-threshold of  :math:`6.4 \times 10^{-8}` Hz (one per 6 months) for :term:`CBC` target searches
+threshold of  :math:`7.7 \times 10^{-8}` Hz (one per 5 months) for :term:`CBC` target searches
 and of :math:`7.9 \times 10^{-9}` (one per four years) for unmodeled
 burst searches. That corresponds to the expected effective rate of **significant** false alarms
 of :math:`3.9 \times 10^{-7}` Hz (one per month) for :term:`CBC` sources,
