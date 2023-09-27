@@ -2,14 +2,30 @@ Online Pipelines
 ================
 
 A number of search pipelines run in a low latency, online mode. These can be
-divided into two groups, modeled and unmodeled. The modeled (:term:`CBC`)
+divided into two groups, :ref:`modeled <modeled>` and 
+:ref:`unmodeled <unmodeled>`. The modeled (:term:`CBC`)
 searches specifically look for signals from compact binary mergers of neutron
-stars and black holes (:term:`BNS`, :term:`NSBH`, and :term:`BBH` systems). The
-unmodeled (Burst) searches on the other hand, are capable of detecting signals
-from a wide variety of astrophysical sources in addition to compact binary
-mergers: core-collapse of massive stars, magnetar star-quakes, and more
-speculative sources such as intersecting cosmic strings or as-yet unknown GW
-sources.
+stars and black holes (:term:`BNS`, :term:`NSBH`, and :term:`BBH` systems). 
+The unmodeled (:term:`Burst <burst>`) searches on the other hand, are capable 
+of detecting signals from a wide variety of astrophysical sources in addition 
+to compact binary mergers: core-collapse of massive stars, magnetar 
+star-quakes, and more speculative sources such as intersecting cosmic strings 
+or as-yet unknown GW sources.
+
+.. _multi-pipeline-strategy:
+
+Why does LIGO/Virgo/KAGRA operate multiple search pipelines?
+------------------------------------------------------------
+
+Several analysis pipelines contribute to each type of search. 
+Searching with multiple pipelines has advantages and disadvantages
+compared to operating a single search of each type.
+On the practical and operational sides, greater redundancy results in higher
+overall coverage and reliability in low latency, though with the disadvantage
+of higher overall resource requirements.
+In addition, studies with simulated signals indicate that combining the results 
+of two or more pipelines searching for the same signal type can increase the
+expected number of detections over any single pipeline.
 
 .. _far-significance:
 
@@ -22,16 +38,18 @@ this would be the time of merger.
 
 Each candidate event is assigned a ranking statistic value by the search
 pipeline that produced it: higher statistic values correspond to a higher
-probability of astrophysical (signal), as opposed to terrestrial (noise)
-origin. The statistical significance of a candidate produced by a given
-pipeline is quantified by its :term:`false alarm rate <FAR>`. This is the
-expected number of events of noise origin produced by the pipeline with a
+probability of astrophysical (signal), as opposed to :term:`terrestrial` 
+(noise) origin. The statistical significance of a candidate produced by a 
+given pipeline is quantified by its :term:`false alarm rate <FAR>`. This is 
+the expected number of events of noise origin produced by the pipeline with a
 higher ranking statistic than the candidate, per unit of time searched.
 Since each search pipeline has an independent method of generating and ranking
 events, and of estimating the noise background, the false alarm rates assigned
 for events in the same superevent will in general be different. For an alert
 to be sent automatically, we require at least one event to have a false alarm
 rate below the :ref:`alert threshold <alert-threshold>`.
+
+.. _modeled:
 
 Modeled Search
 --------------
@@ -74,7 +92,7 @@ possible multiple of 100 ms, thus any resulting coincidence must be unphysical
 given the :math:`\sim 10` ms light travel time between detectors. All such
 coincidences are recorded and assigned a ranking statistic. The false alarm
 rate is then estimated by counting accidental coincidences ranked higher than a
-given candidate, i.e. with a higher statistic value. When three detectors are
+given candidate, i.e., with a higher statistic value. When three detectors are
 observing at the time of a particular candidate, the most significant double
 coincidence is selected, and its false alarm rate is modified to take into
 account the data from the remaining detector.
@@ -85,6 +103,8 @@ high-:term:`SNR` events from each detector and finds coherent responses from
 other detectors. It constructs a background statistical distribution by
 time-shifting detector data one hundred times over a week to evaluate
 foreground candidate significance.
+
+.. _unmodeled:
 
 Unmodeled Search
 ----------------
