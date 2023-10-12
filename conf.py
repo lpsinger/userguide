@@ -218,6 +218,7 @@ intersphinx_mapping = {
     'gwcelery': ('https://gwcelery.readthedocs.io/en/latest/', None),
     'healpy': ('https://healpy.readthedocs.io/en/stable/', None),
     'ligo.skymap': ('https://lscsoft.docs.ligo.org/ligo.skymap/', None),
+    'ligo-raven': ('https://ligo-raven.readthedocs.io/en/latest/', None),
     'numpy': ('https://numpy.org/doc/stable/', None),
     'observing-plan': ('https://observing.docs.ligo.org/plan/', None),
     'pyregion': ('https://pyregion.readthedocs.io/en/latest/', None),

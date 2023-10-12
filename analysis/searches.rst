@@ -147,7 +147,7 @@ identify possible GW candidate events.
 Coincident with External Trigger Search
 ---------------------------------------
 
-**RAVEN** [#RAVEN]_ In addition, we will operate the Rapid On-Source VOEvent
+**RAVEN** [#RAVEN]_ In addition, we operate the Rapid On-Source VOEvent
 Coincidence Monitor (RAVEN), a fast search for coincidences between GW and
 non-GW events. RAVEN will process alerts for gamma-ray bursts (GRBs) from the
 Gamma-ray Burst Monitor (GBM) onboard Fermi, the Burst Alert Telescope (BAT)
@@ -170,7 +170,6 @@ seconds after the GW.
 | | (*Fermi*, *Swift*,  |           |           |    | FERMI_GBM_FIN_POS    |
 |    *INTEGRAL*,        |           |           |    | FERMI_GBM_FLT_POS    |
 |    *AGILE*)           |           |           |    | FERMI_GBM_GND_POS    |
-|                       |           |           |    | FERMI_GBM_SUBTHRESH  |
 |                       |           |           |    | SWIFT_BAT_GRB_ALERT  |
 |                       |           |           |    | SWIFT_BAT_GRB_LC     |
 |                       |           |           |    | INTEGRAL_WAKEUP      |
@@ -178,14 +177,33 @@ seconds after the GW.
 |                       |           |           |    | INTEGRAL_OFFLINE     |
 |                       |           |           |    | AGILE_MCAL_ALERT     |
 +-----------------------+-----------+-----------+---------------------------+
-| | Low-energy Neutrinos| [-10,10]  | [-10,10]  |     SNEWS                 |
-| | (SNEWS)             |           |           |                           |
+| | SubGRB              | [-1,11]   | [-1,11]   |    | FERMI_GBM_SUBTHRESH  |
+| | (*Fermi*)           |           |           |                           |
++-----------------------+-----------+-----------+---------------------------+
+| | SubGRBTargeted      | [-1,11]   | [-1,11]   |    | via Kafka alert      |
+| | (*Fermi*)           |           |           |                           |
++-----------------------+-----------+-----------+---------------------------+
+| | SubGRBTargeted      | [-10,20]  | [-10,20]  |    | via Kafka alert      |
+| | (*Swift*)           |           |           |                           |
++-----------------------+-----------+-----------+---------------------------+
+| | Low-energy Neutrinos| [-10,10]  | [-10,10]  |    | SNEWS                |
+| | (*SNEWS*)           |           |           |                           |
 +-----------------------+-----------+-----------+---------------------------+
 
-In addition, RAVEN will calculate coincident :term:`FARs <FAR>`, one including
+In addition, RAVEN calculates coincident :term:`FARs <FAR>`, one including
 only timing information (temporal) and one including GRB/GW sky map information
-(space-time) as well. RAVEN is currently under review and is planned to be able
-to trigger preliminary alerts once this is finished.
+(space-time) as well; we require the latter to publish an alert.
+Both the GRB and SubGRB searches uses external candidates published via GCN
+independently, checking for potentially coincident GW candidates around these.
+Due to the high significance of these GRB candidates, we use the
+:doc:`untargeted search method<ligo-raven:joint_far>` where the astrophysical
+rate dominates.
+For the SubGRBTargeted search, our search partners analyze their sub-threshold
+data around our low-significance alerts. These GRB candidates typically are not
+significant, so their false alarm rate dominates and the
+:doc:`targeted search method<ligo-raven:joint_far>` is more appropriate.
+Regardless of method, every search uses the same format for their
+:doc:`alert contents</content>`.
 
 **LLAMA** [#LLAMA1]_ [#LLAMA2]_ The `Low-Latency Algorithm for Multi-messenger
 Astrophysics`_ is a an online search pipeline combining LIGO/Virgo/KAGRA GW

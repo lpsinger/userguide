@@ -18,6 +18,8 @@ Version 21 (unreleased)
 
 *  Add receiver operating characteristic (ROC) curves for EM-Bright data products.
 
+*  Update description of RAVEN searches.
+
 .. rubric:: Alert Contents
 
 *  Update list of active online search pipelines.
