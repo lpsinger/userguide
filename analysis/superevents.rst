@@ -61,3 +61,22 @@ event is decided by applying the following rules, in order:
 See also the :ref:`preferred event selection flow chart
 <gwcelery.tasks.superevents:Selection of the preferred event>` in our software
 documentation.
+
+.. _per-pipeline-info:
+
+Per Pipeline Event Information
+------------------------------
+
+.. image:: ../_static/per-pipeline-screenshot.png
+   :width: 600px
+   :alt: Per-pipeline information for S230927l
+   :align: center
+
+For many GW candidates, multiple pipelines will produce at least one event.
+The `Per Pipeline Event Information` table on :term:`GraceDB` for superevents
+associated with a :ref:`significant alert <alert-threshold>` displays properties
+of the highest :term:`SNR` event from each search pipeline. Specifically, we
+provide the estimated GW arrival time and significance (:term:`FAR`). In general,
+we expect significant :term:`CBC` candidates to be identified in more than one
+pipeline, though there may be exceptions for events seen in only a single
+detector.

@@ -728,6 +728,11 @@ Public Annotations
 
 This section summarizes additional information regarding GW candidates that is available on :term:`GraceDB` in GW candidate event annotations, but not in GCN Notices or Circulars.
 
+Per-Pipeline Event Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We provide supplementary information on the detection of a GW candidate in multiple pipelines in the :ref:`per-pipeline event information <per-pipeline-info>` table.
+
 .. _gwskynetclass:
 
 GWSkyNet Classification

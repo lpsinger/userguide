@@ -18,6 +18,8 @@ Version 21 (unreleased)
 
 *  Add receiver operating characteristic (ROC) curves for EM-Bright data products.
 
+*  Add short description of superevent per-pipeline information table.
+
 *  Update description of RAVEN searches.
 
 .. rubric:: Alert Contents
@@ -29,6 +31,8 @@ Version 21 (unreleased)
 *  Add a section for public annotations that are in GraceDB but not in GCN Notices or Circulars.
 
 *  Add GWSkyNet content to the public annotations section.
+
+*  Add a cross-reference from the public annotations section to per-pipeline info.
 
 *  Add all available values for RAVEN searches and observatories.
 
